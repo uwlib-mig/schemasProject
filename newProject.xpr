@@ -10,6 +10,51 @@
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
+                                    <String>xslt/identity.xsl</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>identity</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XML</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>xslt/dds-to-html-xsd0.2.xsl</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>dds-to-html-xsd0</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XML</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>xslt/dds-to-xmlSchema0.1.xsl</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>dds-to-xmlSchema0</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XML</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
                                     <String>../brumfield/brum-ld/rdf/remodel/remodelPipelineTests/_8a_russianWorksURIs.xsl</String>
                                 </field>
                                 <field name="scenarioIds">
@@ -537,36 +582,6 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>xslt/dds-to-html-xsd0.2.xsl</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>dds-to-html-xsd0</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XML</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>xslt/identity.xsl</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>identity</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XML</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
                                     <String>cdmData/countRecords.xsl</String>
                                 </field>
                                 <field name="scenarioIds">
@@ -587,21 +602,6 @@
                                 <field name="scenarioIds">
                                     <list>
                                         <String>testOK2DEL</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XML</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>xslt/dds-to-xmlSchema0.1.xsl</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>dds-to-xmlSchema0</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -2311,7 +2311,7 @@
                                     <Boolean>false</Boolean>
                                 </field>
                                 <field name="showInXMLPane">
-                                    <Boolean>true</Boolean>
+                                    <Boolean>false</Boolean>
                                 </field>
                                 <field name="showInSVGPane">
                                     <Boolean>false</Boolean>
@@ -2551,10 +2551,10 @@
                                     <Boolean>false</Boolean>
                                 </field>
                                 <field name="outputFile">
-                                    <File>ayp-dd-expanded.xml</File>
+                                    <File>${pd}/dataDictionaries/xmlExpanded/ayp-expanded.xml</File>
                                 </field>
                                 <field name="outputResource">
-                                    <String>ayp-dd-expanded.xml</String>
+                                    <String>${pd}/dataDictionaries/xmlExpanded/ayp-expanded.xml</String>
                                 </field>
                                 <field name="openOtherLocationInBrowser">
                                     <Boolean>false</Boolean>

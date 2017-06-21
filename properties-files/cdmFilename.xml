@@ -1,0 +1,79 @@
+<property xmlns="http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/ http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/schema-4-properties-0.1.xsd">
+    <labels>
+        <platformIndependent>cdmFilename</platformIndependent>
+        <dc>none</dc>
+    </labels>
+    <cdm>
+        <label>cdmfilename</label>
+        <cdmDatatype>cdmAdministrative</cdmDatatype>
+        <cdmLarge>no</cdmLarge>
+        <searchable>no</searchable>
+        <hidden>yes</hidden>
+        <required>yes</required>
+        <cdmControlledVocab>no</cdmControlledVocab>
+    </cdm>
+    <dspace>
+        <dspaceProperty/>
+    </dspace>
+    <descriptions>
+        <definition co="no">
+            <para>Unique filename for the resource; unique only within the context of the CONTENTdm digital collection the resource is a part of.</para>
+        </definition>
+        <instructions co="no">
+            <para>Do not input. Automatically created by CONTENTdm.</para>
+        </instructions>
+        
+    </descriptions>
+    <examples>
+        <example co="no">
+            <para>0381826102001_553.jpg</para>
+        </example>
+        
+        <!-- customization here is flawed.
+             I think we need
+             <customizations>
+                 <description | example>
+                     <para @co @dd @paraDec @paraEx> REPEATABLE
+                         <para>
+        -->
+        
+    </examples>
+    <additionalInfo>
+        <admin>
+            <para>CONTENTdm administrative field.</para>
+            <para>Does NOT output in OAI-PMH.</para>
+            <para>Not searchable in the cdm collection (default setting; can be changed); it does not appear to be an indexed field.</para>
+        </admin>
+        <generalNotes>
+            <para/>
+        </generalNotes>
+    </additionalInfo>
+    <marc>
+        <dcgMarcMapping/>
+        <marcNotes>
+            <para/>
+        </marcNotes>
+    </marc>
+    <xsd>
+        <typeAttribute>xs:string</typeAttribute>
+        <complexType/>
+        
+    </xsd>
+    <rdf>
+        <sameAs/>
+    </rdf>
+    <history>
+        <dateCreated>
+            <single>1999-01-01</single>
+            
+        </dateCreated>
+        <created4Coll>CONTENTdm</created4Coll>
+        <justification>Needed a system-created unique identifier for each file/resource in a given digital collection.</justification>
+        <changeLog>
+            <change/>
+        </changeLog>
+    </history>
+</property>

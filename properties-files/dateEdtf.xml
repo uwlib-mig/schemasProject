@@ -1,0 +1,76 @@
+<property xmlns="http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/ http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/schema-4-properties-0.1.xsd">
+    <labels>
+        <platformIndependent>dateEdtf</platformIndependent>
+        <dc>date</dc>
+    </labels>
+    <cdm>
+        <label>Date Edtf</label>
+        <cdmDatatype>text</cdmDatatype>
+        <cdmLarge>no</cdmLarge>
+        <searchable>no</searchable>
+        <hidden>yes</hidden>
+        <required>yes</required>
+        <cdmControlledVocab>no</cdmControlledVocab>
+    </cdm>
+    <dspace>
+        <dspaceProperty/>
+    </dspace>
+    <descriptions>
+        <definition co="no">
+            <para>Date the original resource was created.</para>
+        </definition>
+        <instructions co="no">
+            <para>Express all dates, including date ranges, using Library of Congress' Extended Date Time Format.</para>
+        </instructions>
+        
+    </descriptions>
+    <examples>
+        <example co="no">
+            <para>If the Date field = "1940," Date EDTF = "1940"</para>
+            <para>If the Date field = "ca. 1910," Date EDTF = "1915/1920"</para>
+        </example>
+        
+        <!-- customization here is flawed.
+             I think we need
+             <customizations>
+                 <description | example>
+                     <para @co @dd @paraDec @paraEx> REPEATABLE
+                         <para>
+        -->
+        
+    </examples>
+    <additionalInfo>
+        <admin>
+            <para>Instructions need to be completed. At the very least a reference to EDTF needs to be entered.</para>
+            <para>Examples needed.</para>
+            <para>For the xsd, datatype is xs:string; the datatype is more accurately http://id.loc.gov/datatypes/edtf, which is not a valid QName and is inavlis acc to schema-4-properties-0.1, but this does not seem to be machine-actionable; more exploration needed.</para>
+        </admin>
+        <generalNotes>
+            <para>EDTF is still a standard in progress. It has not yet been accpted as a full recommendation.</para>
+        </generalNotes>
+    </additionalInfo>
+    <marc>
+        <dcgMarcMapping/>
+        <marcNotes>
+            <para/>
+        </marcNotes>
+    </marc>
+    <xsd>
+        <typeAttribute>xs:string</typeAttribute>
+        <complexType/>
+        
+    </xsd>
+    <rdf>
+        <sameAs/>
+    </rdf>
+    <history>
+        <dateCreated>
+            <single>2017-06-21</single>
+        </dateCreated>
+        <created4Coll>Special Collections Photograph Collections</created4Coll>
+        <justification>Wanted to add standardized date forms (EDTF) required by Orbis Cascade Dublin Core Best Practices (https://www.orbiscascade.org/dublin-core-best-practices).</justification>
+        <changeLog>
+            <change/>
+        </changeLog>
+    </history>
+</property>

@@ -7,7 +7,7 @@
         <dc>rights</dc>
     </labels>
     <cdm>
-        <label>Rights URI</label>
+        <label>Rights Uri</label>
         <cdmDatatype>text</cdmDatatype>
         <cdmLarge>no</cdmLarge>
         <searchable>no</searchable>

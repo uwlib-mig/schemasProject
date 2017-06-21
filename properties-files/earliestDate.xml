@@ -1,0 +1,78 @@
+<property xmlns="http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/ http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/schema-4-properties-0.1.xsd">
+    <labels>
+        <platformIndependent>earliestDate</platformIndependent>
+        <dc>none</dc>
+    </labels>
+    <cdm>
+        <label>Earliest Date</label>
+        <cdmDatatype>text</cdmDatatype>
+        <cdmLarge>no</cdmLarge>
+        <searchable>no</searchable>
+        <hidden>yes</hidden>
+        <required>yes</required>
+        <cdmControlledVocab>no</cdmControlledVocab>
+    </cdm>
+    <dspace>
+        <dspaceProperty/>
+    </dspace>
+    <descriptions>
+        <definition co="no">
+            <para>Reflects the Date field, treating all Date values as date ranges. The value in this field is the earliest date in the date range.</para>
+        </definition>
+        <instructions co="no">
+            <para>If the date is a single year, it is the same in both the Date and the Earliest Date fields.</para>
+                <para>If the date in the Date field is a "circa" date (e.g. ca. 1895), the Earliest Date field contains the first date in the date range, in ISO 8601 format (YYYY, or YYYY-MM, or YYYY-MM-DD as needed).</para>
+        </instructions>
+        
+    </descriptions>
+    <examples>
+        <example co="no">
+            <para>If the Date field = "1940," Earliest Date = "1940"</para>
+            <para>If the Date field = "ca. 1910," Earliest Date = "1905"</para>
+        </example>
+        
+        <!-- customization here is flawed.
+             I think we need
+             <customizations>
+                 <description | example>
+                     <para @co @dd @paraDec @paraEx> REPEATABLE
+                         <para>
+        -->
+        
+    </examples>
+    <additionalInfo>
+        <admin>
+            <para>All values for this field should be ISO 8601 compliant.</para>
+        </admin>
+        <generalNotes>
+            <para/>
+        </generalNotes>
+    </additionalInfo>
+    <marc>
+        <dcgMarcMapping/>
+        <marcNotes>
+            <para/>
+        </marcNotes>
+    </marc>
+    <xsd>
+        <simpleType>
+            <xs:union memberTypes="xs:date xs:gYearMonth xs:gYear"/>
+        </simpleType>
+    </xsd>
+    <rdf>
+        <sameAs/>
+    </rdf>
+    <history>
+        <dateCreated>
+            <range>
+                <start>2000-01-01</start>
+                <end>2016-11-26</end>
+            </range>
+        </dateCreated>
+        <created4Coll>Special Collections Photograph Collections</created4Coll>
+        <justification>Wanted to add standardized date forms (ISO 8601) in all collections.</justification>
+        <changeLog>
+            <change/>
+        </changeLog>
+    </history>
+</property>

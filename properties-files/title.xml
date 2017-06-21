@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/ http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/schema-4-properties-0.1.xsd">
+    <labels>
+        <platformIndependent>title</platformIndependent>
+        <dc>title</dc>
+    </labels>
+    <cdm>
+        <label>Title</label>
+        <cdmDatatype>text</cdmDatatype>
+        <cdmLarge>no</cdmLarge>
+        <searchable>yes</searchable>
+        <hidden>no</hidden>
+        <required>yes</required>
+        <cdmControlledVocab>no</cdmControlledVocab>
+    </cdm>
+    <dspace>
+        <dspaceProperty/>
+    </dspace>
+    <descriptions>
+        <definition co="no">
+            <para>A brief descriptive phrase that includes these elements, generally in this order: who, what, where, when. The Title is a concise sentence which will be used to label the thumbnails; it will also be the first line of the descriptive information. The Title may be the caption assigned by the photographer or the collector, or it may be created by Special Collections staff from the given caption and from additional sources. In the absence of any caption, the Title will be provided by Special Collections staff.</para>
+        </definition>
+        <instructions co="no">
+            <para>If the caption provided by the photographer is adequate, place it in the Title field. Then, the Notes field should include this phrase: Title taken from photograph. If the caption provided by the photographer is inadequate, a created title should be placed in the Title field; the Notes field should then read: Caption on image: "Image title."</para>
+            <para>If there is a series caption, it should be added, in the Notes field, in sequence after the title on the image: Caption on image: "Image title"; "Series title." There should also be a separate notation in the Notes field in the form: Part of Hegg series entitled: "Series title."</para>
+        </instructions>   
+    </descriptions>
+    <examples>
+        <example co="no">
+            <para>Alger house, interior view of living room Seattle, Washington, 1955</para>
+            <para>Woman mushing wood, Chilkoot Trail, ca. 1898</para>
+        </example>
+        <customization co="no"></customization>
+    </examples>
+    <additionalInfo>
+        <admin/>
+        <generalNotes/>
+    </additionalInfo>
+    <marc>
+        <dcgMarcMapping/>
+        <marcNotes/>
+    </marc>
+    <xsd>
+        <typeAttribute>xs:string</typeAttribute>
+        <complexType/>
+        
+    </xsd>
+    <rdf>
+        <sameAs/>
+    </rdf>
+    <history>
+        <dateCreated>
+            <range>
+                <start>2000-01-01</start>
+                <end>2016-11-07</end>
+            </range>
+        </dateCreated>
+        <created4Coll>Special Collections Photograph Collections</created4Coll>
+        <justification>For CONTENTdm collections; all CONTENTdm collections require titles.</justification>
+        <changeLog>
+            <change></change>
+        </changeLog>
+    </history>
+</property>

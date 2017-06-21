@@ -1,0 +1,79 @@
+<property xmlns="http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/ http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/schema-4-properties-0.1.xsd">
+    <labels>
+        <platformIndependent>originalCreator</platformIndependent>
+        <dc>creator</dc>
+    </labels>
+    <cdm>
+        <label>Original Creator</label>
+        <cdmDatatype>text</cdmDatatype>
+        <cdmLarge>no</cdmLarge>
+        <searchable>yes</searchable>
+        <hidden>yes</hidden>
+        <required>no</required>
+        <cdmControlledVocab>no</cdmControlledVocab>
+    </cdm>
+    <dspace>
+        <dspaceProperty/>
+    </dspace>
+    <descriptions>
+        <definition co="no">
+            <para>This field to be used only if the entry in the Photographer field does not represent the original creator of the image. The Original creator is the name of the photographer or firm, artist, or architect associated with the creation of the original image. It should represent as closely as possible the creator’s name or the company’s name at the time of the creation of the original image. Includes both personal and corporate names.</para>
+        </definition>
+        <instructions co="no">
+            <para>Input Lastname, Firstname for all personal names. Use LC Authority File for form of name, if available.</para>
+        </instructions>
+        
+    </descriptions>
+    <examples>
+        <example co="no"><para>Kinsey, Clark</para></example>
+        <example co="no"><para>Boyd and Braas</para></example>
+        
+        <!-- customization here is flawed.
+             I think we need
+             <customizations>
+                 <description | example>
+                     <para @co @dd @paraDec @paraEx> REPEATABLE
+                         <para>
+        -->
+        
+    </examples>
+    <additionalInfo>
+        <admin>
+            <para>Additional information about the original creator, and corresponding photographer’s reference number and any other significant references, are placed in the Notes field.</para>
+        </admin>
+        <generalNotes>
+            <para/>
+        </generalNotes>
+    </additionalInfo>
+    <marc>
+        <dcgMarcMapping/>
+        <marcNotes>
+            <para/>
+        </marcNotes>
+    </marc>
+    <xsd>
+        <typeAttribute>xs:string</typeAttribute>
+        <complexType/>
+        
+    </xsd>
+    <rdf>
+        <sameAs/>
+    </rdf>
+    <history>
+        <dateCreated>
+            
+            <range>
+                <start>2000-01-01</start>
+                <end>2017-01-12</end>
+            </range>
+        </dateCreated>
+        <created4Coll>Special Collections Photograph Collections</created4Coll>
+        <justification>Special Collections found that distinguishing the original creator was needed so frequently that we created a property for it.</justification>
+        <changeLog>
+            <change />
+        </changeLog>
+    </history>
+</property>

@@ -14,22 +14,13 @@
         <xs:sequence>
             <xs:element name="Title" maxOccurs="unbounded" type="xs:string"/>
             <xs:element name="Photographer" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+            <xs:element name="DateEdtf" maxOccurs="unbounded" type="xs:string"/>
             <xs:element name="Date" maxOccurs="unbounded" type="xs:string"/>
             <xs:element name="Dates" maxOccurs="unbounded">
                 <xs:simpleType>
                     <xs:restriction base="xs:string">
                         <xs:pattern value="([0-9]{4}(\s|,)*([0-9]{4})*)+"/>
                     </xs:restriction>
-                </xs:simpleType>
-            </xs:element>
-            <xs:element name="EarliestDate" maxOccurs="unbounded">
-                <xs:simpleType>
-                    <xs:union memberTypes="xs:date xs:gYearMonth xs:gYear"/>
-                </xs:simpleType>
-            </xs:element>
-            <xs:element name="LatestDate" maxOccurs="unbounded">
-                <xs:simpleType>
-                    <xs:union memberTypes="xs:date xs:gYearMonth xs:gYear"/>
                 </xs:simpleType>
             </xs:element>
             <xs:element name="Notes" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
@@ -39,6 +30,8 @@
             <xs:element name="DigitalCollection" maxOccurs="unbounded" type="xs:string"/>
             <xs:element name="OrderNumber" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
             <xs:element name="OrderingInformation" maxOccurs="unbounded" type="xs:string"/>
+            <xs:element name="CitationInformation" minOccurs="0" maxOccurs="unbounded"
+                type="xs:string"/>
             <xs:element name="NegativeNumber" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
             <xs:element name="Repository" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
             <xs:element name="RepositoryCollection" minOccurs="0" maxOccurs="unbounded"
@@ -54,7 +47,8 @@
                 type="xs:string"/>
             <xs:element name="Contributor" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
             <xs:element name="Acquisition" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
-            <xs:element name="Restrictions" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+            <xs:element name="Restrictions" maxOccurs="unbounded" type="xs:string"/>
+            <xs:element name="RightsUri" maxOccurs="unbounded" type="xs:anyURI"/>
             <xs:element name="Type" maxOccurs="unbounded" type="xs:string"/>
             <xs:element name="Institution" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
             <xs:element name="cataloging" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>

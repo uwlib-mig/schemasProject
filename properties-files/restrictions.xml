@@ -1,0 +1,80 @@
+<property xmlns="http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/ http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/schema-4-properties-0.1.xsd">
+    <labels>
+        <platformIndependent>restrictions</platformIndependent>
+        <dc>rights</dc>
+    </labels>
+    <cdm>
+        <label>Restrictions</label>
+        <cdmDatatype>text</cdmDatatype>
+        <cdmLarge>no</cdmLarge>
+        <searchable>no</searchable>
+        <hidden>yes</hidden>
+        <required>yes</required>
+        <cdmControlledVocab>no</cdmControlledVocab>
+    </cdm>
+    <dspace>
+        <dspaceProperty/>
+    </dspace>
+    <descriptions>
+        <definition co="no">
+            <para>This field lists any restrictions on the use of an image.</para>
+        </definition>
+        <instructions co="no">
+            <para>Input the following text: "For information on permissions for use and reproductions please visit UW Libraries Special Collections "Reproductions: Order Photographs &amp; Scans" page: http://www.lib.washington.edu/specialcoll/service/reproduction.html."</para>
+        </instructions>
+        
+    </descriptions>
+    <examples>
+        <example co="no">
+            <para>[none]</para>
+        </example>
+        
+        <!-- customization here is flawed.
+             I think we need
+             <customizations>
+                 <description | example>
+                     <para @co @dd @paraDec @paraEx> REPEATABLE
+                         <para>
+        -->
+        
+    </examples>
+    <additionalInfo>
+        <admin>
+            <para/>
+        </admin>
+        <generalNotes>
+            <para/>
+        </generalNotes>
+    </additionalInfo>
+    <marc>
+        <dcgMarcMapping/>
+        <marcNotes>
+            <para/>
+        </marcNotes>
+    </marc>
+    <xsd>
+        <typeAttribute>xs:string</typeAttribute>
+        <complexType/>
+        
+    </xsd>
+    <rdf>
+        <sameAs/>
+    </rdf>
+    <history>
+        <dateCreated>
+            
+            <range>
+                <start>2000-01-01</start>
+                <end>2017-01-12</end>
+            </range>
+        </dateCreated>
+        <created4Coll>Special Collections Photograph Collections</created4Coll>
+        <justification>Special Collections needed a property whose value pointed to Special Collection's use policy.</justification>
+        <changeLog>
+            <change/>
+        </changeLog>
+    </history>
+</property>
