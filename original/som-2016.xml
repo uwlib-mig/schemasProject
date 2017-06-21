@@ -1,0 +1,1172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<migDataDictionary xmlns="http://faculty.washington.edu/tgis/xml/xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/xml/xsd schema-4-dds.xsd">
+    <ddName>Music Libraries Digital Scores Collection</ddName>
+    <ddPartOfProject>Music Libraries Digital Collection</ddPartOfProject>
+    <latestUpdate>2016-09-07</latestUpdate>
+    <metadataLiaisons>
+        <metadataLiaison>Verletta Kern</metadataLiaison>
+        <metadataLiaison>Theo Gerontakos</metadataLiaison>
+    </metadataLiaisons>
+    <cdmCo>yes</cdmCo>
+    <standalone>no</standalone>
+    <properties>
+        <property compoundObject="yes" coLevel="dual">
+            <cdmLabel>Title</cdmLabel>
+            <cdm-dc-label>Title</cdm-dc-label>
+            <dc>title</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>yes</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <coObject>yes</coObject>
+            <coItem>yes</coItem>
+            <stand>no</stand>
+            <description/>
+            <examples/>
+            <descriptionCoObject></descriptionCoObject>
+            <examplesCoObject></examplesCoObject>
+            <descriptionCoItem></descriptionCoItem>
+            <examplesCoItem></examplesCoItem>
+            <admin>Unicode</admin>
+            <generalNotes/>
+            <dcgMarcMapping/>
+            <marcNotes/>
+        </property>
+        <property compoundObject="yes" coLevel="dual">
+            <cdmLabel>Title (not Unicode)</cdmLabel>
+            <cdm-dc-label>Title</cdm-dc-label>
+            <dc>title</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>yes</hidden>
+            <required>yes</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <coObject></coObject>
+            <coItem></coItem>
+            <stand></stand>
+            <description/>
+            <examples/>
+            <descriptionCoObject></descriptionCoObject>
+            <examplesCoObject></examplesCoObject>
+            <descriptionCoItem></descriptionCoItem>
+            <examplesCoItem></examplesCoItem>
+            <admin>Not Unicode</admin>
+            <generalNotes/>
+            <dcgMarcMapping/>
+            <marcNotes/>
+        </property>
+        <property compoundObject="yes" coLevel="object">
+            <cdmLabel>Uniform Title</cdmLabel>
+            <cdm-dc-label>Title-Alternative</cdm-dc-label>
+            <dc>alternative</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <coObject></coObject>
+            <coItem></coItem>
+            <stand></stand>
+            <description/>
+            <examples/>
+            <descriptionCoObject></descriptionCoObject>
+            <examplesCoObject></examplesCoObject>
+            <descriptionCoItem></descriptionCoItem>
+            <examplesCoItem></examplesCoItem>
+            <admin>Unicode</admin>
+            <generalNotes/>
+            <dcgMarcMapping/>
+            <marcNotes/>
+        </property>
+        <property compoundObject="yes" coLevel="object">
+            <cdmLabel>Uniform Title (not Unicode)</cdmLabel>
+            <cdm-dc-label>Title-Alternative</cdm-dc-label>
+            <dc>alternative</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>yes</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <coObject></coObject>
+            <coItem></coItem>
+            <stand></stand>
+            <description/>
+            <examples/>
+            <descriptionCoObject></descriptionCoObject>
+            <examplesCoObject></examplesCoObject>
+            <descriptionCoItem></descriptionCoItem>
+            <examplesCoItem></examplesCoItem>
+            <admin>Not Unicode; required if Uniform Title (Unicode) is present.</admin>
+            <generalNotes/>
+            <dcgMarcMapping/>
+            <marcNotes/>
+        </property>
+        <property compoundObject="yes" coLevel="dual">
+            <cdmLabel>Composer</cdmLabel>
+            <cdm-dc-label>Creator</cdm-dc-label>
+            <dc>creator</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <coObject></coObject>
+            <coItem></coItem>
+            <stand></stand>
+            <description/>
+            <examples/>
+            <descriptionCoObject></descriptionCoObject>
+            <examplesCoObject></examplesCoObject>
+            <descriptionCoItem></descriptionCoItem>
+            <examplesCoItem></examplesCoItem>
+            <admin>With diacritics</admin>
+            <generalNotes/>
+            <dcgMarcMapping/>
+            <marcNotes/>
+        </property>
+        <property compoundObject="yes" coLevel="dual">
+            <cdmLabel>Composer (without diacritics)</cdmLabel>
+            <cdm-dc-label>Creator</cdm-dc-label>
+            <dc>creator</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>yes</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <coObject></coObject>
+            <coItem></coItem>
+            <stand></stand>
+            <description/>
+            <examples/>
+            <descriptionCoObject></descriptionCoObject>
+            <examplesCoObject></examplesCoObject>
+            <descriptionCoItem></descriptionCoItem>
+            <examplesCoItem></examplesCoItem>
+            <admin>Without diacritics; required, if Composer (with diacritics) is present</admin>
+            <generalNotes/>
+            <dcgMarcMapping/>
+            <marcNotes/>
+        </property>
+        <property compoundObject="yes" coLevel="object">
+            <cdmLabel>Contributors</cdmLabel>
+            <cdm-dc-label>Contributors</cdm-dc-label>
+            <dc>contributor</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <coObject></coObject>
+            <coItem></coItem>
+            <stand></stand>
+            <description/>
+            <examples/>
+            <descriptionCoObject></descriptionCoObject>
+            <examplesCoObject></examplesCoObject>
+            <descriptionCoItem></descriptionCoItem>
+            <examplesCoItem></examplesCoItem>
+            <admin>Unicode</admin>
+            <generalNotes/>
+            <dcgMarcMapping/>
+            <marcNotes/>
+        </property>
+        <property compoundObject="yes" coLevel="object">
+            <cdmLabel>Contributors (not Unicode)</cdmLabel>
+            <cdm-dc-label>Contributors</cdm-dc-label>
+            <dc>contributor</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>yes</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <coObject></coObject>
+            <coItem></coItem>
+            <stand></stand>
+            <description/>
+            <examples/>
+            <descriptionCoObject></descriptionCoObject>
+            <examplesCoObject></examplesCoObject>
+            <descriptionCoItem></descriptionCoItem>
+            <examplesCoItem></examplesCoItem>
+            <admin>Not Unicode; required if Contributors (Unicode) is present.</admin>
+            <generalNotes/>
+            <dcgMarcMapping/>
+            <marcNotes/>
+        </property>
+        <property compoundObject="yes" coLevel="dual">
+            <cdmLabel>Creation Date</cdmLabel>
+            <cdm-dc-label>Date-Created</cdm-dc-label>
+            <dc>created</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <coObject></coObject>
+            <coItem></coItem>
+            <stand></stand>
+            <description/>
+            <examples/>
+            <descriptionCoObject></descriptionCoObject>
+            <examplesCoObject></examplesCoObject>
+            <descriptionCoItem></descriptionCoItem>
+            <examplesCoItem></examplesCoItem>
+            <admin/>
+            <generalNotes/>
+            <dcgMarcMapping/>
+            <marcNotes/>
+        </property>
+        <property compoundObject="yes" coLevel="dual">
+            <cdmLabel>Dates (creation)</cdmLabel>
+            <cdm-dc-label>None</cdm-dc-label>
+            <dc>none</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>yes</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <coObject></coObject>
+            <coItem></coItem>
+            <stand></stand>
+            <description/>
+            <examples/>
+            <descriptionCoObject></descriptionCoObject>
+            <examplesCoObject></examplesCoObject>
+            <descriptionCoItem></descriptionCoItem>
+            <examplesCoItem></examplesCoItem>
+            <admin>Required, if Creation Date is present.</admin>
+            <generalNotes/>
+            <dcgMarcMapping/>
+            <marcNotes/>
+        </property>
+        <property compoundObject="yes" coLevel="dual">
+            <cdmLabel>Earliest date (creation)</cdmLabel>
+            <cdm-dc-label>None</cdm-dc-label>
+            <dc>none</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>no</searchable>
+            <hidden>yes</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <coObject></coObject>
+            <coItem></coItem>
+            <stand></stand>
+            <description/>
+            <examples/>
+            <descriptionCoObject></descriptionCoObject>
+            <examplesCoObject></examplesCoObject>
+            <descriptionCoItem></descriptionCoItem>
+            <examplesCoItem></examplesCoItem>
+            <admin>Required, if Creation Date is present.</admin>
+            <generalNotes/>
+            <dcgMarcMapping/>
+            <marcNotes/>
+        </property>
+        <property compoundObject="yes" coLevel="dual">
+            <cdmLabel>Latest Date (creation)</cdmLabel>
+            <cdm-dc-label>None</cdm-dc-label>
+            <dc>none</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>no</searchable>
+            <hidden>yes</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <coObject></coObject>
+            <coItem></coItem>
+            <stand></stand>
+            <description/>
+            <examples/>
+            <descriptionCoObject></descriptionCoObject>
+            <examplesCoObject></examplesCoObject>
+            <descriptionCoItem></descriptionCoItem>
+            <examplesCoItem></examplesCoItem>
+            <admin>Required, if Creation Date is present.</admin>
+            <generalNotes/>
+            <dcgMarcMapping/>
+            <marcNotes/>
+        </property>
+        <property compoundObject="yes" coLevel="object">
+            <cdmLabel>Publication Date</cdmLabel>
+            <cdm-dc-label>Date-Issued</cdm-dc-label>
+            <dc>issued</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <coObject></coObject>
+            <coItem></coItem>
+            <stand></stand>
+            <description/>
+            <examples/>
+            <descriptionCoObject></descriptionCoObject>
+            <examplesCoObject></examplesCoObject>
+            <descriptionCoItem></descriptionCoItem>
+            <examplesCoItem></examplesCoItem>
+            <admin/>
+            <generalNotes/>
+            <dcgMarcMapping/>
+            <marcNotes/>
+        </property>
+        <property compoundObject="yes" coLevel="object">
+            <cdmLabel>Dates (publication)</cdmLabel>
+            <cdm-dc-label>None</cdm-dc-label>
+            <dc>none</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>no</searchable>
+            <hidden>yes</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <coObject></coObject>
+            <coItem></coItem>
+            <stand></stand>
+            <description/>
+            <examples/>
+            <descriptionCoObject></descriptionCoObject>
+            <examplesCoObject></examplesCoObject>
+            <descriptionCoItem></descriptionCoItem>
+            <examplesCoItem></examplesCoItem>
+            <admin>Required, if Publication Date is present.</admin>
+            <generalNotes/>
+            <dcgMarcMapping/>
+            <marcNotes/>
+        </property>
+        <property compoundObject="yes" coLevel="object">
+            <cdmLabel>Earliest date (publication)</cdmLabel>
+            <cdm-dc-label>None</cdm-dc-label>
+            <dc>none</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>no</searchable>
+            <hidden>yes</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <coObject></coObject>
+            <coItem></coItem>
+            <stand></stand>
+            <description/>
+            <examples/>
+            <descriptionCoObject></descriptionCoObject>
+            <examplesCoObject></examplesCoObject>
+            <descriptionCoItem></descriptionCoItem>
+            <examplesCoItem></examplesCoItem>
+            <admin>Required, if Publication Date is present.</admin>
+            <generalNotes/>
+            <dcgMarcMapping/>
+            <marcNotes/>
+        </property>
+        <property compoundObject="yes" coLevel="object">
+            <cdmLabel>Latest Date (publication)</cdmLabel>
+            <cdm-dc-label>None</cdm-dc-label>
+            <dc>none</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>no</searchable>
+            <hidden>yes</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <coObject></coObject>
+            <coItem></coItem>
+            <stand></stand>
+            <description/>
+            <examples/>
+            <descriptionCoObject></descriptionCoObject>
+            <examplesCoObject></examplesCoObject>
+            <descriptionCoItem></descriptionCoItem>
+            <examplesCoItem></examplesCoItem>
+            <admin>Required, if Publication Date is present.</admin>
+            <generalNotes/>
+            <dcgMarcMapping/>
+            <marcNotes/>
+        </property>
+        <property compoundObject="yes" coLevel="dual">
+            <cdmLabel>Date</cdmLabel>
+            <cdm-dc-label>Date</cdm-dc-label>
+            <dc>date</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <coObject></coObject>
+            <coItem></coItem>
+            <stand></stand>
+            <description/>
+            <examples/>
+            <descriptionCoObject></descriptionCoObject>
+            <examplesCoObject></examplesCoObject>
+            <descriptionCoItem></descriptionCoItem>
+            <examplesCoItem></examplesCoItem>
+            <admin>Neither publication date not creation date.</admin>
+            <generalNotes/>
+            <dcgMarcMapping/>
+            <marcNotes/>
+        </property>
+        <property compoundObject="yes" coLevel="dual">
+            <cdmLabel>Dates</cdmLabel>
+            <cdm-dc-label>None</cdm-dc-label>
+            <dc>none</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <coObject></coObject>
+            <coItem></coItem>
+            <stand></stand>
+            <description/>
+            <examples/>
+            <descriptionCoObject></descriptionCoObject>
+            <examplesCoObject></examplesCoObject>
+            <descriptionCoItem></descriptionCoItem>
+            <examplesCoItem></examplesCoItem>
+            <admin>Required, if Date is present.</admin>
+            <generalNotes/>
+            <dcgMarcMapping/>
+            <marcNotes/>
+        </property>
+        <property compoundObject="yes" coLevel="dual">
+            <cdmLabel>Earliest date</cdmLabel>
+            <cdm-dc-label>None</cdm-dc-label>
+            <dc>none</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>no</searchable>
+            <hidden>yes</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <coObject></coObject>
+            <coItem></coItem>
+            <stand></stand>
+            <description/>
+            <examples/>
+            <descriptionCoObject></descriptionCoObject>
+            <examplesCoObject></examplesCoObject>
+            <descriptionCoItem></descriptionCoItem>
+            <examplesCoItem></examplesCoItem>
+            <admin>Required, if Date is present.</admin>
+            <generalNotes/>
+            <dcgMarcMapping/>
+            <marcNotes/>
+        </property>
+        <property compoundObject="yes" coLevel="dual">
+            <cdmLabel>Latest Date (other)</cdmLabel>
+            <cdm-dc-label>None</cdm-dc-label>
+            <dc>none</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>no</searchable>
+            <hidden>yes</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <coObject></coObject>
+            <coItem></coItem>
+            <stand></stand>
+            <description/>
+            <examples/>
+            <descriptionCoObject></descriptionCoObject>
+            <examplesCoObject></examplesCoObject>
+            <descriptionCoItem></descriptionCoItem>
+            <examplesCoItem></examplesCoItem>
+            <admin>Required, if Date is present.</admin>
+            <generalNotes/>
+            <dcgMarcMapping/>
+            <marcNotes/>
+        </property>
+        <property compoundObject="yes" coLevel="object">
+            <cdmLabel>Publisher</cdmLabel>
+            <cdm-dc-label>Publisher</cdm-dc-label>
+            <dc>publisher</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <coObject></coObject>
+            <coItem></coItem>
+            <stand></stand>
+            <description/>
+            <examples/>
+            <descriptionCoObject></descriptionCoObject>
+            <examplesCoObject></examplesCoObject>
+            <descriptionCoItem></descriptionCoItem>
+            <examplesCoItem></examplesCoItem>
+            <admin/>
+            <generalNotes/>
+            <dcgMarcMapping/>
+            <marcNotes/>
+        </property>
+        <property compoundObject="yes" coLevel="dual">
+            <cdmLabel>Notes</cdmLabel>
+            <cdm-dc-label>Description</cdm-dc-label>
+            <dc>description</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>yes</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <coObject></coObject>
+            <coItem></coItem>
+            <stand></stand>
+            <description/>
+            <examples/>
+            <descriptionCoObject></descriptionCoObject>
+            <examplesCoObject></examplesCoObject>
+            <descriptionCoItem></descriptionCoItem>
+            <examplesCoItem></examplesCoItem>
+            <admin>Unicode</admin>
+            <generalNotes/>
+            <dcgMarcMapping/>
+            <marcNotes/>
+        </property>
+        <property compoundObject="yes" coLevel="dual">
+            <cdmLabel>Notes (not Unicode)</cdmLabel>
+            <cdm-dc-label>Description</cdm-dc-label>
+            <dc>description</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>yes</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>yes</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <coObject></coObject>
+            <coItem></coItem>
+            <stand></stand>
+            <description/>
+            <examples/>
+            <descriptionCoObject></descriptionCoObject>
+            <examplesCoObject></examplesCoObject>
+            <descriptionCoItem></descriptionCoItem>
+            <examplesCoItem></examplesCoItem>
+            <admin>Not Unicode; required if Notes (Unicode) is present.</admin>
+            <generalNotes/>
+            <dcgMarcMapping/>
+            <marcNotes/>
+        </property>
+        <property compoundObject="yes" coLevel="dual">
+            <cdmLabel>Other Titles</cdmLabel>
+            <cdm-dc-label>Title-Alternative</cdm-dc-label>
+            <dc>alternative</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <coObject></coObject>
+            <coItem></coItem>
+            <stand></stand>
+            <description/>
+            <examples/>
+            <descriptionCoObject></descriptionCoObject>
+            <examplesCoObject></examplesCoObject>
+            <descriptionCoItem></descriptionCoItem>
+            <examplesCoItem></examplesCoItem>
+            <admin>Unicode</admin>
+            <generalNotes/>
+            <dcgMarcMapping/>
+            <marcNotes/>
+        </property>
+        <property compoundObject="yes" coLevel="dual">
+            <cdmLabel>Other Titles (not Unicode)</cdmLabel>
+            <cdm-dc-label>Title-Alternative</cdm-dc-label>
+            <dc>alternative</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>yes</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <coObject></coObject>
+            <coItem></coItem>
+            <stand></stand>
+            <description/>
+            <examples/>
+            <descriptionCoObject></descriptionCoObject>
+            <examplesCoObject></examplesCoObject>
+            <descriptionCoItem></descriptionCoItem>
+            <examplesCoItem></examplesCoItem>
+            <admin>Not Unicode; required if Other Titles (Unicode) is present.</admin>
+            <generalNotes/>
+            <dcgMarcMapping/>
+            <marcNotes/>
+        </property>
+        <property compoundObject="yes" coLevel="dual">
+            <cdmLabel>First Line</cdmLabel>
+            <cdm-dc-label>Title-Alternative</cdm-dc-label>
+            <dc>alternative</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <coObject></coObject>
+            <coItem></coItem>
+            <stand></stand>
+            <description/>
+            <examples/>
+            <descriptionCoObject></descriptionCoObject>
+            <examplesCoObject></examplesCoObject>
+            <descriptionCoItem></descriptionCoItem>
+            <examplesCoItem></examplesCoItem>
+            <admin>Unicode</admin>
+            <generalNotes/>
+            <dcgMarcMapping/>
+            <marcNotes/>
+        </property>
+        <property compoundObject="yes" coLevel="dual">
+            <cdmLabel>First Line (not Unicode)</cdmLabel>
+            <cdm-dc-label>Title-Alternative</cdm-dc-label>
+            <dc>alternative</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>yes</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <coObject></coObject>
+            <coItem></coItem>
+            <stand></stand>
+            <description/>
+            <examples/>
+            <descriptionCoObject></descriptionCoObject>
+            <examplesCoObject></examplesCoObject>
+            <descriptionCoItem></descriptionCoItem>
+            <examplesCoItem></examplesCoItem>
+            <admin>Not Unicode; required if First Line (Unicode) is present.</admin>
+            <generalNotes/>
+            <dcgMarcMapping/>
+            <marcNotes/>
+        </property>
+        <property compoundObject="yes" coLevel="page">
+            <cdmLabel>Type (DCMI)</cdmLabel>
+            <cdm-dc-label>Type</cdm-dc-label>
+            <dc>type</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>yes</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <coObject></coObject>
+            <coItem></coItem>
+            <stand></stand>
+            <description/>
+            <examples/>
+            <descriptionCoObject></descriptionCoObject>
+            <examplesCoObject></examplesCoObject>
+            <descriptionCoItem></descriptionCoItem>
+            <examplesCoItem></examplesCoItem>
+            <admin>Not used for object descriptions; required for every page description.</admin>
+            <generalNotes/>
+            <dcgMarcMapping/>
+            <marcNotes/>
+        </property>
+        <property compoundObject="yes" coLevel="object">
+            <cdmLabel>Object Type</cdmLabel>
+            <cdm-dc-label>Type</cdm-dc-label>
+            <dc>type</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>yes</cdmControlledVocab>
+            <coObject></coObject>
+            <coItem></coItem>
+            <stand></stand>
+            <description/>
+            <examples/>
+            <descriptionCoObject></descriptionCoObject>
+            <examplesCoObject></examplesCoObject>
+            <descriptionCoItem></descriptionCoItem>
+            <examplesCoItem></examplesCoItem>
+            <admin/>
+            <generalNotes/>
+            <dcgMarcMapping/>
+            <marcNotes/>
+        </property>
+        <property compoundObject="yes" coLevel="dual">
+            <cdmLabel>Digital Format</cdmLabel>
+            <cdm-dc-label>Format-Medium</cdm-dc-label>
+            <dc>medium</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>yes</required>
+            <cdmControlledVocab>yes</cdmControlledVocab>
+            <coObject></coObject>
+            <coItem></coItem>
+            <stand></stand>
+            <description/>
+            <examples/>
+            <descriptionCoObject></descriptionCoObject>
+            <examplesCoObject></examplesCoObject>
+            <descriptionCoItem></descriptionCoItem>
+            <examplesCoItem></examplesCoItem>
+            <admin/>
+            <generalNotes/>
+            <dcgMarcMapping/>
+            <marcNotes/>
+        </property>
+        <property compoundObject="yes" coLevel="object">
+            <cdmLabel>Original Format</cdmLabel>
+            <cdm-dc-label>Relation-Is Format Of</cdm-dc-label>
+            <dc>isFormatOf</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <coObject></coObject>
+            <coItem></coItem>
+            <stand></stand>
+            <description/>
+            <examples/>
+            <descriptionCoObject></descriptionCoObject>
+            <examplesCoObject></examplesCoObject>
+            <descriptionCoItem></descriptionCoItem>
+            <examplesCoItem></examplesCoItem>
+            <admin>Former label: Physical Description. Proper dcterms may be dcterms:source.</admin>
+            <generalNotes/>
+            <dcgMarcMapping/>
+            <marcNotes/>
+        </property>
+        <property compoundObject="yes" coLevel="dual">
+            <cdmLabel>Language</cdmLabel>
+            <cdm-dc-label>Language</cdm-dc-label>
+            <dc>language</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <coObject></coObject>
+            <coItem></coItem>
+            <stand></stand>
+            <description/>
+            <examples/>
+            <descriptionCoObject></descriptionCoObject>
+            <examplesCoObject></examplesCoObject>
+            <descriptionCoItem></descriptionCoItem>
+            <examplesCoItem></examplesCoItem>
+            <admin/>
+            <generalNotes/>
+            <dcgMarcMapping/>
+            <marcNotes/>
+        </property>
+        <property compoundObject="yes" coLevel="dual">
+            <cdmLabel>Subject (LCSH)</cdmLabel>
+            <cdm-dc-label>Subject</cdm-dc-label>
+            <dc>subject</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>yes</cdmControlledVocab>
+            <coObject></coObject>
+            <coItem></coItem>
+            <stand></stand>
+            <description/>
+            <examples/>
+            <descriptionCoObject></descriptionCoObject>
+            <examplesCoObject></examplesCoObject>
+            <descriptionCoItem></descriptionCoItem>
+            <examplesCoItem></examplesCoItem>
+            <admin/>
+            <generalNotes/>
+            <dcgMarcMapping/>
+            <marcNotes/>
+        </property>
+        <property compoundObject="yes" coLevel="dual">
+            <cdmLabel>Subject (Other)</cdmLabel>
+            <cdm-dc-label>Subject</cdm-dc-label>
+            <dc>subject</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>yes</cdmControlledVocab>
+            <coObject></coObject>
+            <coItem></coItem>
+            <stand></stand>
+            <description/>
+            <examples/>
+            <descriptionCoObject></descriptionCoObject>
+            <examplesCoObject></examplesCoObject>
+            <descriptionCoItem></descriptionCoItem>
+            <examplesCoItem></examplesCoItem>
+            <admin/>
+            <generalNotes/>
+            <dcgMarcMapping/>
+            <marcNotes/>
+        </property>
+        <property compoundObject="yes" coLevel="object">
+            <cdmLabel>LC Call Number</cdmLabel>
+            <cdm-dc-label>Identifier</cdm-dc-label>
+            <dc>identifier</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>yes</cdmControlledVocab>
+            <coObject></coObject>
+            <coItem></coItem>
+            <stand></stand>
+            <description/>
+            <examples/>
+            <descriptionCoObject></descriptionCoObject>
+            <examplesCoObject></examplesCoObject>
+            <descriptionCoItem></descriptionCoItem>
+            <examplesCoItem></examplesCoItem>
+            <admin/>
+            <generalNotes/>
+            <dcgMarcMapping/>
+            <marcNotes/>
+        </property>
+        <property compoundObject="yes" coLevel="object">
+            <cdmLabel>RISM A/II Number</cdmLabel>
+            <cdm-dc-label>Identifier</cdm-dc-label>
+            <dc>identifier</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>yes</cdmControlledVocab>
+            <coObject></coObject>
+            <coItem></coItem>
+            <stand></stand>
+            <description/>
+            <examples/>
+            <descriptionCoObject></descriptionCoObject>
+            <examplesCoObject></examplesCoObject>
+            <descriptionCoItem></descriptionCoItem>
+            <examplesCoItem></examplesCoItem>
+            <admin/>
+            <generalNotes/>
+            <dcgMarcMapping/>
+            <marcNotes/>
+        </property>
+        <property compoundObject="yes" coLevel="dual">
+            <cdmLabel>Digital Collection</cdmLabel>
+            <cdm-dc-label>Relation-Is Part Of</cdm-dc-label>
+            <dc>isPartOf</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>yes</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <coObject></coObject>
+            <coItem></coItem>
+            <stand></stand>
+            <description/>
+            <examples/>
+            <descriptionCoObject></descriptionCoObject>
+            <examplesCoObject></examplesCoObject>
+            <descriptionCoItem></descriptionCoItem>
+            <examplesCoItem></examplesCoItem>
+            <admin>Name of overall CONTENTdm database.</admin>
+            <generalNotes/>
+            <dcgMarcMapping/>
+            <marcNotes/>
+        </property>
+        <property compoundObject="yes" coLevel="dual">
+            <cdmLabel>Project</cdmLabel>
+            <cdm-dc-label>Relation-Is Part Of</cdm-dc-label>
+            <dc>isPartOf</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <coObject></coObject>
+            <coItem></coItem>
+            <stand></stand>
+            <description/>
+            <examples/>
+            <descriptionCoObject></descriptionCoObject>
+            <examplesCoObject></examplesCoObject>
+            <descriptionCoItem></descriptionCoItem>
+            <examplesCoItem></examplesCoItem>
+            <admin>Name of sub-collection in the CONTENTdm collection named above using the Digital
+                Collection property.</admin>
+            <generalNotes/>
+            <dcgMarcMapping/>
+            <marcNotes/>
+        </property>
+        <property compoundObject="yes" coLevel="object">
+            <cdmLabel>Contact Information</cdmLabel>
+            <cdm-dc-label>Description</cdm-dc-label>
+            <dc>description</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>no</searchable>
+            <hidden>yes</hidden>
+            <required>yes</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <coObject></coObject>
+            <coItem></coItem>
+            <stand></stand>
+            <description/>
+            <examples/>
+            <descriptionCoObject></descriptionCoObject>
+            <examplesCoObject></examplesCoObject>
+            <descriptionCoItem></descriptionCoItem>
+            <examplesCoItem></examplesCoItem>
+            <admin>OK to enter only into object description.</admin>
+            <generalNotes/>
+            <dcgMarcMapping/>
+            <marcNotes/>
+        </property>
+        <property compoundObject="yes" coLevel="object">
+            <cdmLabel>Ordering Information</cdmLabel>
+            <cdm-dc-label>Description</cdm-dc-label>
+            <dc>description</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>no</searchable>
+            <hidden>no</hidden>
+            <required>yes</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <coObject></coObject>
+            <coItem></coItem>
+            <stand></stand>
+            <description/>
+            <examples/>
+            <descriptionCoObject></descriptionCoObject>
+            <examplesCoObject></examplesCoObject>
+            <descriptionCoItem></descriptionCoItem>
+            <examplesCoItem></examplesCoItem>
+            <admin>OK to enter only into object description.</admin>
+            <generalNotes/>
+            <dcgMarcMapping/>
+            <marcNotes/>
+        </property>
+        <property compoundObject="yes" coLevel="object">
+            <cdmLabel>Digital ID Number</cdmLabel>
+            <cdm-dc-label>Identifier</cdm-dc-label>
+            <dc>identifier</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>no</searchable>
+            <hidden>no</hidden>
+            <required>yes</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <coObject></coObject>
+            <coItem></coItem>
+            <stand></stand>
+            <description/>
+            <examples/>
+            <descriptionCoObject></descriptionCoObject>
+            <examplesCoObject></examplesCoObject>
+            <descriptionCoItem></descriptionCoItem>
+            <examplesCoItem></examplesCoItem>
+            <admin>OK to enter only into object description.</admin>
+            <generalNotes/>
+            <dcgMarcMapping/>
+            <marcNotes/>
+        </property>
+        <property compoundObject="yes" coLevel="object">
+            <cdmLabel>Digital Copyright</cdmLabel>
+            <cdm-dc-label>Rights</cdm-dc-label>
+            <dc>rights</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>no</searchable>
+            <hidden>no</hidden>
+            <required>yes</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <coObject></coObject>
+            <coItem></coItem>
+            <stand></stand>
+            <description/>
+            <examples/>
+            <descriptionCoObject></descriptionCoObject>
+            <examplesCoObject></examplesCoObject>
+            <descriptionCoItem></descriptionCoItem>
+            <examplesCoItem></examplesCoItem>
+            <admin>See VK's message about license info sent week of Sept 5.</admin>
+            <generalNotes/>
+            <dcgMarcMapping/>
+            <marcNotes/>
+        </property>
+        <property compoundObject="yes" coLevel="object">
+            <cdmLabel>Repository</cdmLabel>
+            <cdm-dc-label>Source</cdm-dc-label>
+            <dc>source</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>yes</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <coObject></coObject>
+            <coItem></coItem>
+            <stand></stand>
+            <description/>
+            <examples/>
+            <descriptionCoObject></descriptionCoObject>
+            <examplesCoObject></examplesCoObject>
+            <descriptionCoItem></descriptionCoItem>
+            <examplesCoItem></examplesCoItem>
+            <admin>Dublin Core mapping is incorrect; may be changed in the near future.</admin>
+            <generalNotes/>
+            <dcgMarcMapping/>
+            <marcNotes/>
+        </property>
+        <property compoundObject="yes" coLevel="object">
+            <cdmLabel>Digital Reproduction Information</cdmLabel>
+            <cdm-dc-label>Format</cdm-dc-label>
+            <dc>format</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>no</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <coObject></coObject>
+            <coItem></coItem>
+            <stand></stand>
+            <description/>
+            <examples/>
+            <descriptionCoObject></descriptionCoObject>
+            <examplesCoObject></examplesCoObject>
+            <descriptionCoItem></descriptionCoItem>
+            <examplesCoItem></examplesCoItem>
+            <admin/>
+            <generalNotes/>
+            <dcgMarcMapping/>
+            <marcNotes/>
+        </property>
+        <property compoundObject="yes" coLevel="page">
+            <cdmLabel>Image Number</cdmLabel>
+            <cdm-dc-label>Identifier</cdm-dc-label>
+            <dc>identifier</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <coObject></coObject>
+            <coItem></coItem>
+            <stand></stand>
+            <description/>
+            <examples/>
+            <descriptionCoObject></descriptionCoObject>
+            <examplesCoObject></examplesCoObject>
+            <descriptionCoItem></descriptionCoItem>
+            <examplesCoItem></examplesCoItem>
+            <admin>Property label could also be "Filename."</admin>
+            <generalNotes/>
+            <dcgMarcMapping/>
+            <marcNotes/>
+        </property>
+        <property compoundObject="yes" coLevel="dual">
+            <cdmLabel>Admin Notes</cdmLabel>
+            <cdm-dc-label>None</cdm-dc-label>
+            <dc>none</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>yes</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <coObject></coObject>
+            <coItem></coItem>
+            <stand></stand>
+            <description/>
+            <examples/>
+            <descriptionCoObject></descriptionCoObject>
+            <examplesCoObject></examplesCoObject>
+            <descriptionCoItem></descriptionCoItem>
+            <examplesCoItem></examplesCoItem>
+            <admin>Searcahable until site goes live; when site goes live, search=no.</admin>
+            <generalNotes/>
+            <dcgMarcMapping/>
+            <marcNotes/>
+        </property>
+        <property compoundObject="yes" coLevel="object">
+            <cdmLabel>Institution</cdmLabel>
+            <cdm-dc-label>Provenance</cdm-dc-label>
+            <dc>provenance</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>yes</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <coObject></coObject>
+            <coItem></coItem>
+            <stand></stand>
+            <description/>
+            <examples/>
+            <descriptionCoObject></descriptionCoObject>
+            <examplesCoObject></examplesCoObject>
+            <descriptionCoItem></descriptionCoItem>
+            <examplesCoItem></examplesCoItem>
+            <admin>Use of dcterms:provenance is for Cdm admin convenience: it is a property not used
+                in any other collection; used for this purpose across collections. Some cdm
+                stuff...</admin>
+            <generalNotes/>
+            <dcgMarcMapping/>
+            <marcNotes/>
+        </property>
+        <property compoundObject="yes" coLevel="object">
+            <cdmLabel>Cataloging</cdmLabel>
+            <cdm-dc-label>None</cdm-dc-label>
+            <dc>none</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>yes</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <coObject></coObject>
+            <coItem></coItem>
+            <stand></stand>
+            <description/>
+            <examples/>
+            <descriptionCoObject></descriptionCoObject>
+            <examplesCoObject></examplesCoObject>
+            <descriptionCoItem></descriptionCoItem>
+            <examplesCoItem></examplesCoItem>
+            <admin>Catalogers delete xyz values when they finish their review of the
+                metadata.</admin>
+            <generalNotes/>
+            <dcgMarcMapping/>
+            <marcNotes/>
+        </property>
+    </properties>
+</migDataDictionary>

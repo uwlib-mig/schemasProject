@@ -1,0 +1,78 @@
+<property xmlns="http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/ http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/schema-4-properties-0.1.xsd">
+    <labels>
+        <platformIndependent>cdmFilePath</platformIndependent>
+        <dc>none</dc>
+    </labels>
+    <cdm>
+        <label>cdm File Path</label>
+        <cdmDatatype>text</cdmDatatype>
+        <cdmLarge>no</cdmLarge>
+        <searchable>no</searchable>
+        <hidden>yes</hidden>
+        <required>yes</required>
+        <cdmControlledVocab>no</cdmControlledVocab>
+    </cdm>
+    <dspace>
+        <dspaceProperty/>
+    </dspace>
+    <descriptions>
+        <definition co="no">
+            <para>Path to file as assigned by CONTENTdm.</para>
+        </definition>
+        <instructions co="no">
+            <para>Do not input. Automatically created by CONTENTdm.</para>
+        </instructions>
+        
+    </descriptions>
+    <examples>
+        <example co="no">
+            <para>/ayp/image/001826102001_285.JPG</para>
+        </example>
+        
+        <!-- customization here is flawed.
+             I think we need
+             <customizations>
+                 <description | example>
+                     <para @co @dd @paraDec @paraEx> REPEATABLE
+                         <para>
+        -->
+        
+    </examples>
+    <additionalInfo>
+        <admin>
+            <para>CONTENTdm administrative field.</para>
+            <para>Does NOT output in OAI-PMH.</para>
+        </admin>
+        <generalNotes>
+            <para/>
+        </generalNotes>
+    </additionalInfo>
+    <marc>
+        <dcgMarcMapping/>
+        <marcNotes>
+            <para/>
+        </marcNotes>
+    </marc>
+    <xsd>
+        <typeAttribute>xs:string</typeAttribute>
+        <complexType/>
+        
+    </xsd>
+    <rdf>
+        <sameAs/>
+    </rdf>
+    <history>
+        <dateCreated>
+            <single>1999-01-01</single>
+            
+        </dateCreated>
+        <created4Coll>CONTENTdm keeps a record of the internal path to the image file.</created4Coll>
+        <justification>CONTENTdm must need this reference to the image location.</justification>
+        <changeLog>
+            <change/>
+        </changeLog>
+    </history>
+</property>

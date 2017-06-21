@@ -1,0 +1,109 @@
+<property> 
+    <!--xmlns="http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/ http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/schema-4-properties-0.1.xsd" -->
+    
+    <!-- Group 1: labels outside specific implementations -->
+    <labels>
+        <platformIndependent/><!-- our permanent name for the property; must be formulated anew -->
+        <dc/><!-- Dubin Core equivalent; use properties in the /dc/terms namespace -->
+    </labels>
+    
+    <!-- Group 2: CONTENTdm properties -->
+    <cdm>
+        <label/><!-- custom label for a CONTENTdm implementation; human friendly label -->
+        <cdmDatatype/><!-- All UW Libraries Cdm data types are "text" -->
+        <cdmLarge/><!-- usually "no;" enter "yes" when values consistently will have more than 300 characters  -->
+        <searchable/><!-- Use value provided in MIG data dictionary -->
+        <hidden/><!-- Use value provided in MIG data dictionary -->
+        <required/><!-- Use value provided in MIG data dictionary -->
+        <cdmControlledVocab/><!-- Enter "yes" for values that must be indexed as a phrase -->
+    </cdm>
+    
+    <!-- Group 3: mapping to DSpace repository properties -->
+    <dspace>
+        <dspaceProperty/><!-- OK to leave blank; eventually we'll enumerate values for this in the schema. -->
+    </dspace>
+    
+    <!-- Group 4: Descriptions, where "description" is a property definition and "instructions" are instructions on inputting values  -->
+    <descriptions>
+        <description co=""><!-- Enter here the definition of the element, excluding instructions on how to input values. -->
+ <!-- the @co indicates whether or not the definition is intended for a "compound object;"
+      6 values are possible:
+      1) no - use when describing a property for a standalone resource (a resource that is not a compound object).
+      2) object - use when describing a property for an overall compound object.
+      3) item - use when describing a property for a single item in a compound object.
+      4) coAll - use when describing a property for both the full compound object and an item in the compound object, but not for a standalone resource.
+      5) all - use when describing a property for overall compound objects, items in compound objects, AND standalone resources.
+      6) agnostic - use when describing a property for which none of the above applies
+ -->
+            <para/><!-- Sometimes a definition requires more than one paragraph; wrap all paragraphs in this "para" element -->
+        </description>
+        <instructions co=""><!-- Enter here instructions on entering values for the property. Wrap paragraphs as described above in "description." Treat the @co as described above in "description."-->
+            <para/>
+        </instructions>
+        <customization co="" dd=""/><!-- do not use "customization" -->
+    </descriptions>
+    
+    <!-- Group 5: examples of property values -->
+    <examples><!-- place each example in its own <para>. Treat the @co as described above in "description." -->
+        <example co="">
+            <para/>
+        </example>
+        <customization co="" dd=""><!-- do not use "customization"-->
+            <para/>
+        </customization>
+    </examples>
+    
+    <!-- Group 6: additional information; there are two types: (1) notes to staff on how to administer the property; (2) "other" notes, "generalNotes," that seem important but are neither definitions, input instructions, examples, nor administrative notes. -->
+    <additionalInfo>
+        <admin>
+            <para/>
+        </admin>
+        <generalNotes>
+            <para/>
+        </generalNotes>
+    </additionalInfo>
+    
+    <!-- Group 7: mapping to MARC properties -->
+    <marc><!-- This is for use specifically with the OCLC Digital Collection Gateway (DCG). This is not a mapping to the full MARC specification but to the very limited subset available to the DCG. -->
+        <dcgMarcMapping/>
+        <marcNotes>
+            <para/>
+        </marcNotes>
+    </marc>
+    
+    <!-- Group 8: type information for use in XML Schema -->
+    <xsd>
+        <typeAttribute/><!-- This should be used most frequently. Needed to output something like this:
+                          <xs:element name="title" type="xs:string"/>.
+                          We anticipate only types enumerated in the XML Schema specification.
+                         -->
+        <complexType/> <!-- If an xs:complexType is needed, enter full xml markup here. -->
+        <simpleType/> <!-- If an xs:simpleType is needed, enter full xml markup here. -->
+    </xsd>
+    
+    <!-- Group 9: mappings to RDF properties in other datasets -->
+    <rdf>
+        <sameAs/><!-- enter URI for equivalent property. -->
+    </rdf>
+    
+    <!-- Group 10: history of the property -->
+    <history>
+        <dateCreated><!-- Date property was created.
+                          Either a "single" date or a date "range."
+                          The dateCreated for Photograph Collections properties are start="2000-01-01" and end="[today's date YYYY-MM-DD]"-->
+            <single/>
+            <range>
+                <start/>
+                <end/>
+            </range>
+        </dateCreated>
+        <created4Coll/><!-- Collection for which the property was originally created. -->
+        <justification/><!-- Reason why we needed the property; OK to leave blank. -->
+        <changeLog><!-- Only used for changes in the property's XML file; not needed at present. -->
+            <change date=""/>
+        </changeLog>
+    </history>
+</property>

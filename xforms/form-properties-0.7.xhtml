@@ -1,0 +1,741 @@
+<?xml-model href="http://www.oxygenxml.com/1999/xhtml/xhtml-xforms.nvdl" schematypens="http://purl.oclc.org/dsdl/nvdl/ns/structure/1.0"?><?xml-stylesheet href="../../../apps/xsltforms/xsltforms.xsl" type="text/xsl" ?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xf="http://www.w3.org/2002/xforms" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ev="http://www.w3.org/2001/xml-events">
+
+    <!-- Don't know why we'd need this namespace:
+  xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:my="test"-->
+
+    <!-- This is an oXygen artifact, I don't know why:
+  <meta:meta xmlns:meta="http://www.xsmiles.org/2002/metadata" name="XForms Controls"
+    description="Tests all XForms controls in single document"/>
+  -->
+    <head>
+        <title>Properties of Properties</title>
+        <xf:model id="m1">
+            <xf:instance xmlns="" id="i1" src="http://localhost:8080/exist/rest/db/xforms/DDs/instance/propertyInstance.xml"/>
+            <xf:instance id="i2" src="http://localhost:8080/exist/rest/db/xforms/DDs/instance/propertyInstance2.xml"/>
+            <xf:submission id="submit03" method="post" resource="http://localhost:8080/exist/rest/db/xforms/DDs/queries/getStore1.xq">
+                <!-- <xf:action ev:event="xforms-submit-error">
+            <xf:message>Ay ay ay, something's awry, try again.</xf:message>
+          </xf:action>
+          
+          <xf:action ev:event="xforms-submit-done">
+            <xf:message>Your data has been sent.</xf:message>
+          </xf:action>-->
+            </xf:submission>
+        </xf:model>
+    </head>
+    <body>
+        <h1>Properties of a single property</h1>
+        <h2>Create a new property below</h2>
+        <xf:group>
+            <xf:label>
+                <b>What are the labels?</b> Does not include labels for specific software platforms. </xf:label>
+            <xf:input ref="labels/platformIndependent">
+                <xf:label>Platform Independent: </xf:label>
+            </xf:input>
+            <br/>
+            <xf:select1 ref="labels/dc">
+                <xf:label>Dublin Core: </xf:label>
+                <xf:item>
+                    <xf:label>None</xf:label>
+                    <xf:value>none</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Abstract</xf:label>
+                    <xf:value>abstract</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Access Rights</xf:label>
+                    <xf:value>accessRights</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Accrual Method</xf:label>
+                    <xf:value>accrualMethod</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Accrual Periodicity</xf:label>
+                    <xf:value>accrualPeriodicity</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Accrual Policy</xf:label>
+                    <xf:value>accrualPolicy</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Alternative</xf:label>
+                    <xf:value>alternative</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Audience</xf:label>
+                    <xf:value>audience</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Available</xf:label>
+                    <xf:value>available</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Bibliographic Citation</xf:label>
+                    <xf:value>bibliographicCitation</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Conforms To</xf:label>
+                    <xf:value>conformsTo</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Contributor</xf:label>
+                    <xf:value>contributor</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Coverage</xf:label>
+                    <xf:value>coverage</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Created</xf:label>
+                    <xf:value>created</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Creator</xf:label>
+                    <xf:value>creator</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Date</xf:label>
+                    <xf:value>date</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Date Accepted</xf:label>
+                    <xf:value>dateAccepted</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Date Copyrighted</xf:label>
+                    <xf:value>dateCopyrighted</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Date Submitted</xf:label>
+                    <xf:value>dateSubmitted</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Description</xf:label>
+                    <xf:value>description</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Education Level</xf:label>
+                    <xf:value>educationLevel</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Extent</xf:label>
+                    <xf:value>extent</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Format</xf:label>
+                    <xf:value>format</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Has Format</xf:label>
+                    <xf:value>hasFormat</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Has Part</xf:label>
+                    <xf:value>hasPart</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Has Version</xf:label>
+                    <xf:value>hasVersion</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Identifier</xf:label>
+                    <xf:value>identifier</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Instructional Method</xf:label>
+                    <xf:value>instructionalMethod</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Is Format Of</xf:label>
+                    <xf:value>isFormatOf</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Is Part Of</xf:label>
+                    <xf:value>isPartOf</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Is Referenced By</xf:label>
+                    <xf:value>isReferencedBy</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Is Replaced By</xf:label>
+                    <xf:value>isReplacedBy</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Is Required By</xf:label>
+                    <xf:value>isRequiredBy</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Issued</xf:label>
+                    <xf:value>issued</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Is Version Of</xf:label>
+                    <xf:value>isVersionOf</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Language</xf:label>
+                    <xf:value>language</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>License</xf:label>
+                    <xf:value>license</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Mediator</xf:label>
+                    <xf:value>mediator</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Medium</xf:label>
+                    <xf:value>medium</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Modified</xf:label>
+                    <xf:value>modified</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Provenance</xf:label>
+                    <xf:value>provenance</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Publisher</xf:label>
+                    <xf:value>publisher</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>References</xf:label>
+                    <xf:value>references</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Relation</xf:label>
+                    <xf:value>relation</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Replaces</xf:label>
+                    <xf:value>replaces</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Requires</xf:label>
+                    <xf:value>requires</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Rights</xf:label>
+                    <xf:value>rights</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>RightsHolder</xf:label>
+                    <xf:value>rightsHolder</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Source</xf:label>
+                    <xf:value>source</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Spatial</xf:label>
+                    <xf:value>spatial</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Subject</xf:label>
+                    <xf:value>subject</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Table Of Contents</xf:label>
+                    <xf:value>tableOfContents</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Temporal</xf:label>
+                    <xf:value>temporal</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Title</xf:label>
+                    <xf:value>title</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Type</xf:label>
+                    <xf:value>type</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>valid</xf:label>
+                    <xf:value>valid</xf:value>
+                </xf:item>
+            </xf:select1>
+        </xf:group>
+        <br/>
+        <br/>
+        <xf:group>
+            <xf:label>
+                <b>What are the CONTENTdm properties?</b>
+            </xf:label>
+            <xf:input ref="cdm/label">
+                <xf:label>Label: </xf:label>
+            </xf:input>
+            <br/>
+            <xf:select1 ref="cdm/cdmDatatype">
+                <xf:label>Data Type: </xf:label>
+                <xf:item>
+                    <xf:label>Text</xf:label>
+                    <xf:value>text</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Date</xf:label>
+                    <xf:value>gate</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>Full Text</xf:label>
+                    <xf:value>fullText</xf:value>
+                </xf:item>
+            </xf:select1>
+            <br/>
+            <xf:select1 ref="cdm/cdmLarge">
+                <xf:label>Large Field: </xf:label>
+                <xf:item>
+                    <xf:label>Yes</xf:label>
+                    <xf:value>yes</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>No</xf:label>
+                    <xf:value>no</xf:value>
+                </xf:item>
+            </xf:select1>
+            <br/>
+            <xf:select1 ref="cdm/searchable">
+                <xf:label>Searchable: </xf:label>
+                <xf:item>
+                    <xf:label>Yes</xf:label>
+                    <xf:value>yes</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>No</xf:label>
+                    <xf:value>no</xf:value>
+                </xf:item>
+            </xf:select1>
+            <br/>
+            <xf:select1 ref="cdm/hidden">
+                <xf:label>Hidden: </xf:label>
+                <xf:item>
+                    <xf:label>Yes</xf:label>
+                    <xf:value>yes</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>No</xf:label>
+                    <xf:value>no</xf:value>
+                </xf:item>
+            </xf:select1>
+            <br/>
+            <xf:select1 ref="cdm/required">
+                <xf:label>Required: </xf:label>
+                <xf:item>
+                    <xf:label>Yes</xf:label>
+                    <xf:value>yes</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>No</xf:label>
+                    <xf:value>no</xf:value>
+                </xf:item>
+            </xf:select1>
+            <br/>
+            <xf:select1 ref="cdm/cdmControlledVocab">
+                <xf:label>Controlled Vocab: </xf:label>
+                <xf:item>
+                    <xf:label>Yes</xf:label>
+                    <xf:value>yes</xf:value>
+                </xf:item>
+                <xf:item>
+                    <xf:label>No</xf:label>
+                    <xf:value>no</xf:value>
+                </xf:item>
+            </xf:select1>
+        </xf:group>
+        <br/>
+        <xf:group>
+            <xf:label>
+                <b>What are the DSpace properties?</b>
+            </xf:label>
+            <xf:input ref="dspace/dspaceProperty">
+                <xf:label>Property/Label: </xf:label>
+            </xf:input>
+        </xf:group>
+        <br/>
+        <xf:group>
+            <xf:label>
+                <b>Descriptions of the property</b>
+            </xf:label>
+        <!-- 
+**********************************************************        
+************** definition               ******************
+********************************************************** 
+        -->
+            <xf:group>
+                <xf:label>
+                    <b>Definition</b>
+                </xf:label>
+                <xf:repeat nodeset="descriptions/description" id="rdef">
+                    <xf:select1 ref="@co">
+                        <xf:label>
+                            <i>Definition is for: </i>
+                        </xf:label>
+                        <xf:item>
+                            <xf:label>Compound Object, Full Object Description</xf:label>
+                            <xf:value>object</xf:value>
+                        </xf:item>
+                        <xf:item>
+                            <xf:label>Compound Object, Item Description</xf:label>
+                            <xf:value>item</xf:value>
+                        </xf:item>
+                        <xf:item>
+                            <xf:label>Compound Object, Full Objects and Items</xf:label>
+                            <xf:value>coAll</xf:value>
+                        </xf:item>
+                        <xf:item>
+                            <xf:label>Compound Objects and Standalone Resources</xf:label>
+                            <xf:value>all</xf:value>
+                        </xf:item>
+                        <xf:item>
+                            <xf:label>Standalone Resource (not a compound object)</xf:label>
+                            <xf:value>no</xf:value>
+                        </xf:item>
+                        <xf:item>
+                            <xf:label>Other</xf:label>
+                            <xf:value>agnostic</xf:value>
+                        </xf:item>
+                    </xf:select1>
+                    <xf:repeat nodeset="para" id="rparaDef">
+                        <xf:input ref=".">
+                            <xf:label>
+                                <i>Enter definition paragraph by parahraph: </i>
+                            </xf:label>
+                        </xf:input>
+                        <xf:trigger>
+                            <xf:label> Click here to enter paragraph <xf:output value="position()+1"/>
+                            </xf:label>
+                            <xf:insert ev:event="DOMActivate" nodeset="." position="after" origin="instance('i2')/descriptions/description/para"/>
+                        </xf:trigger>
+                    </xf:repeat>
+                    <xf:trigger>
+                        <xf:label>Insert an entirely different definition</xf:label>
+                        <xf:insert ev:event="DOMActivate" nodeset="." at="index('rdef')" position="after" origin="instance('i2')/descriptions/description"/>
+                    </xf:trigger>
+                </xf:repeat>
+            </xf:group>
+            <br/>
+            <!--
+            **********************************************************        
+            ************** INPUT                    ******************
+            **********************************************************   
+            -->
+            <xf:group>
+                <xf:label>
+                    <b>Input Instructions</b>
+                </xf:label>
+                <xf:repeat nodeset="descriptions/instructions" id="rinput">
+                    <xf:select1 ref="@co">
+                        <xf:label>
+                            <i>Instruction is for: </i>
+                        </xf:label>
+                        <xf:item>
+                            <xf:label>Compound Object, Full Object Description</xf:label>
+                            <xf:value>object</xf:value>
+                        </xf:item>
+                        <xf:item>
+                            <xf:label>Compound Object, Item Description</xf:label>
+                            <xf:value>item</xf:value>
+                        </xf:item>
+                        <xf:item>
+                            <xf:label>Compound Object, Full Objects and Items</xf:label>
+                            <xf:value>coAll</xf:value>
+                        </xf:item>
+                        <xf:item>
+                            <xf:label>Compound Objects and Standalone Resources</xf:label>
+                            <xf:value>all</xf:value>
+                        </xf:item>
+                        <xf:item>
+                            <xf:label>Standalone Resource (not a compound object)</xf:label>
+                            <xf:value>no</xf:value>
+                        </xf:item>
+                        <xf:item>
+                            <xf:label>Other</xf:label>
+                            <xf:value>agnostic</xf:value>
+                        </xf:item>
+                    </xf:select1>
+                    <xf:repeat nodeset="para" id="rparaInput">
+                        <xf:input ref=".">
+                            <xf:label>
+                                <i>Enter instruction paragraph by parahraph: </i>
+                            </xf:label>
+                        </xf:input>
+                        <xf:trigger>
+                            <xf:label> Click here to enter paragraph <xf:output value="position()+1"/>
+                            </xf:label>
+                            <xf:insert ev:event="DOMActivate" nodeset="." position="after" origin="instance('i2')/descriptions/instructions/para"/>
+                        </xf:trigger>
+                    </xf:repeat>
+                    <xf:trigger>
+                        <xf:label>Insert an entirely different definition</xf:label>
+                        <xf:insert ev:event="DOMActivate" nodeset="." at="index('rinput')" position="after" origin="instance('i2')/descriptions/instructions"/>
+                    </xf:trigger>
+                </xf:repeat>
+            
+            
+            <!--
+            <xf:repeat nodeset="descriptions/instructions" id="rinput">
+                <xf:select1 ref="@co">
+                    <xf:label><i>Instruction is for: </i></xf:label>
+                    <xf:item>
+                        <xf:label>Compound Object, Full Object Description</xf:label>
+                        <xf:value>object</xf:value>
+                    </xf:item>
+                    <xf:item>
+                        <xf:label>Compound Object, Item Description</xf:label>
+                        <xf:value>item</xf:value>
+                    </xf:item>
+                    <xf:item>
+                        <xf:label>Compound Object, Full Objects and Items</xf:label>
+                        <xf:value>coAll</xf:value>
+                    </xf:item>
+                    <xf:item>
+                        <xf:label>Compound Objects and Standalone Resources</xf:label>
+                        <xf:value>all</xf:value>
+                    </xf:item>
+                    <xf:item>
+                        <xf:label>Standalone Resource (not a compound object)</xf:label>
+                        <xf:value>no</xf:value>
+                    </xf:item>
+                    <xf:item>
+                        <xf:label>Other</xf:label>
+                        <xf:value>agnostic</xf:value>
+                    </xf:item>
+                </xf:select1>
+
+                <xf:repeat nodeset="para" id="rparaInput">
+                    <xf:input ref=".">
+                        <xf:label><i>Enter instruction paragraph by parahraph: </i></xf:label>
+                    </xf:input>
+                    <xf:trigger>
+                        <xf:label>Insert another paragraph</xf:label>
+                        <xf:insert nodeset="." at="index('rparaInput')" ev:event="DOMActivate"
+                        ></xf:insert>
+                    </xf:trigger>
+                </xf:repeat>
+
+            </xf:repeat>
+            <xf:trigger>
+                <xf:label>Insert another input instruction</xf:label>
+                <xf:insert nodeset="descriptions/instructions[index('rinput')]" at="index('rinput')"
+                    position="after" ev:event="DOMActivate"></xf:insert>
+            </xf:trigger>
+            -->
+            </xf:group>
+            <br/>
+            <xf:group>
+                <xf:label>
+                    <b>Examples</b>
+                </xf:label>
+                <xf:repeat nodeset="examples/example" id="rexamples">
+                    <xf:select1 ref="@co">
+                        <xf:label>
+                            <i>Example is for: </i>
+                        </xf:label>
+                        <xf:item>
+                            <xf:label>Compound Object, Full Object Description</xf:label>
+                            <xf:value>object</xf:value>
+                        </xf:item>
+                        <xf:item>
+                            <xf:label>Compound Object, Item Description</xf:label>
+                            <xf:value>item</xf:value>
+                        </xf:item>
+                        <xf:item>
+                            <xf:label>Compound Object, Full Objects and Items</xf:label>
+                            <xf:value>coAll</xf:value>
+                        </xf:item>
+                        <xf:item>
+                            <xf:label>Compound Objects and Standalone Resources</xf:label>
+                            <xf:value>all</xf:value>
+                        </xf:item>
+                        <xf:item>
+                            <xf:label>Standalone Resource (not a compound object)</xf:label>
+                            <xf:value>no</xf:value>
+                        </xf:item>
+                        <xf:item>
+                            <xf:label>Other</xf:label>
+                            <xf:value>agnostic</xf:value>
+                        </xf:item>
+                    </xf:select1>
+                    <xf:repeat nodeset="para" id="rparaExamples">
+                        <xf:input ref=".">
+                            <xf:label>
+                                <i>Enter example as a singe paragraph if possible: </i>
+                            </xf:label>
+                        </xf:input>
+                        <xf:trigger>
+                            <xf:label> Click here to enter paragraph <xf:output value="position()+1"/>
+                            </xf:label>
+                            <xf:insert ev:event="DOMActivate" nodeset="." position="after" origin="instance('i2')/examples/example/para"/>
+                        </xf:trigger>
+                    </xf:repeat>
+                    <xf:trigger>
+                        <xf:label>Insert an entirely different example for a different digitsl object</xf:label>
+                        <xf:insert ev:event="DOMActivate" nodeset="." at="index('rinput')" position="after" origin="instance('i2')/examples/example"/>
+                    </xf:trigger>
+                </xf:repeat>
+            
+            
+            <!--
+            <xf:repeat nodeset="examples/example" id="rexamples">
+                <xf:select1 ref="@co">
+                    <xf:label><i>Example is for: </i></xf:label>
+                    <xf:item>
+                        <xf:label>Compound Object, Full Object Description</xf:label>
+                        <xf:value>object</xf:value>
+                    </xf:item>
+                    <xf:item>
+                        <xf:label>Compound Object, Item Description</xf:label>
+                        <xf:value>item</xf:value>
+                    </xf:item>
+                    <xf:item>
+                        <xf:label>Compound Object, Full Objects and Items</xf:label>
+                        <xf:value>coAll</xf:value>
+                    </xf:item>
+                    <xf:item>
+                        <xf:label>Compound Objects and Standalone Resources</xf:label>
+                        <xf:value>all</xf:value>
+                    </xf:item>
+                    <xf:item>
+                        <xf:label>Standalone Resource (not a compound object)</xf:label>
+                        <xf:value>no</xf:value>
+                    </xf:item>
+                    <xf:item>
+                        <xf:label>Other</xf:label>
+                        <xf:value>agnostic</xf:value>
+                    </xf:item>
+                </xf:select1>
+
+                <xf:repeat nodeset="para" id="rparaExamples">
+                    <xf:input ref=".">
+                        <xf:label><i>Enter example as a single paragraph if possible:
+                            </i></xf:label>
+                    </xf:input>
+                    <xf:trigger>
+                        <xf:label>Insert another paragraph</xf:label>
+                        <xf:insert nodeset="." at="index('rparaExamples')" ev:event="DOMActivate"
+                        ></xf:insert>
+                    </xf:trigger>
+                </xf:repeat>
+
+            </xf:repeat>
+            <xf:trigger>
+                <xf:label>Insert another example</xf:label>
+                <xf:insert nodeset="examples/example[index('rexamples')]" at="index('rexamples')"
+                    position="after" ev:event="DOMActivate"></xf:insert>
+            </xf:trigger>
+            -->
+            </xf:group>
+            <br/>
+            <xf:group>
+                <xf:label>
+                    <b>Additional Information</b>
+                </xf:label>
+                <xf:repeat nodeset="additionalInfo/admin/para" id="raddInfo">
+                    <xf:input ref=".">
+                        <xf:label>
+                            <i>Special instructions to administer the property (one instruction
+                            per paragraph):</i>
+                        </xf:label>
+                    </xf:input>
+                    <xf:trigger>
+                        <xf:label>Enter another instruction/paragraph</xf:label>
+                        <xf:insert nodeset="." at="index('raddInfo')" position="after" ev:event="DOMActivate"/>
+                    </xf:trigger>
+                </xf:repeat>
+            </xf:group>
+        </xf:group>
+        
+        <!-- END OF GROUP CALLED PROPERTY DESCRIPTION -->
+        <br/>
+        <xf:group>
+            <xf:label>
+                <b>MARC Properties</b>
+            </xf:label>
+            <xf:input ref="marc/dcgMarcMapping">
+                <xf:label>Digital Collection Gateway Field</xf:label>
+            </xf:input>
+            <xf:input ref="marc/marcNotes/para">
+                <xf:label>MARC Notes</xf:label>
+            </xf:input>
+        </xf:group>
+        <br/>
+        <xf:group>
+            <xf:label>
+                <b>XML Schema Info</b>
+            </xf:label>
+            <xf:input ref="xsd/typeAttribute">
+                <xf:label>@type (type attribute)</xf:label>
+            </xf:input>
+            <xf:input ref="xsd/complexType">
+                <xf:label>Complex type (xml markup)</xf:label>
+            </xf:input>
+            <xf:input ref="xsd/simpleType">
+                <xf:label>Simple type (xml markup)</xf:label>
+            </xf:input>
+        </xf:group>
+        <br/>
+        <xf:group>
+            <xf:label>
+                <b>RDF/Linked Data/Semantic Web</b>
+            </xf:label>
+            <xf:input ref="rdf/sameAs">
+                <xf:label/>
+            </xf:input>
+        </xf:group>
+        <br/>
+        <xf:group ref="history">
+            <xf:label>
+                <b>History</b>
+            </xf:label>
+            <xf:group ref="dateCreated">
+                <xf:label>
+                    <i>Date property was created</i>
+                </xf:label>
+                <xf:switch>
+                    <xf:case id="single">
+                        <xf:input ref="single">
+                            <xf:label>Single date created: </xf:label>
+                        </xf:input>
+                        <xf:trigger>
+                            <xf:label>Enter a date range (rather than a single date)</xf:label>
+                            <xf:toggle ev:event="DOMActivate" case="range"/>
+                        </xf:trigger>
+                    </xf:case>
+                    <xf:case id="range">
+                        <xf:input ref="range/start">
+                            <xf:label>Earliest Date: </xf:label>
+                        </xf:input>
+                        <xf:input ref="range/end">
+                            <xf:label>Latest Date: </xf:label>
+                        </xf:input>
+                        <xf:trigger>
+                            <xf:label>Enter a single date (rather than a date range)</xf:label>
+                            <xf:toggle ev:event="DOMActivate" case="single"/>
+                        </xf:trigger>
+                    </xf:case>
+                </xf:switch>
+            </xf:group>
+            <xf:input ref="created4Coll">
+                <xf:label>
+                    <i>Created for (enter name of digital collection): </i>
+                </xf:label>
+            </xf:input>
+            <br/>
+            <xf:input ref="justification">
+                <xf:label>
+                    <i>Justification (reasons this property was needed): </i>
+                </xf:label>
+            </xf:input>
+        </xf:group>
+        <br/>
+        <xf:submit submission="submit03">
+            <xf:label>Please Send My Data!</xf:label>
+        </xf:submit>
+    </body>
+</html>

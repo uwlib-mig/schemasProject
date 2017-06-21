@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<migDataDictionary xmlns="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries"
+    xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries ../xsd4md/schema-4-dds-v0.2.xsd" >
+    <ddName>Alaska Yukon Pacific Exposition Photographs</ddName>
+    <ddPartOfProject></ddPartOfProject>
+    <latestUpdate>2017-02-22</latestUpdate>
+    <metadataLiaisons>
+        <metadataLiaison>TBD</metadataLiaison>
+    </metadataLiaisons>
+    <cdmCo>no</cdmCo>
+    <standalone>yes</standalone>
+    <properties>
+        <xi:include href="../properties-files/title-1.0.xml"/>
+        <xi:include href="../properties-files/photographer-1.0.xml"/>
+        <xi:include href="../properties-files/dateEdtf-1.0.xml"/>
+        <xi:include href="../properties-files/date-1.0.xml"/>
+        <xi:include href="../properties-files/dates-1.0.xml"/>
+        <!--<xi:include href="../properties-files/earliestDate-1.0.xml"/>
+        <xi:include href="../properties-files/latestDate-1.0.xml"/>
+        above two fields replaced by dateEdtf-->
+        <xi:include href="../properties-files/notes-1.0.xml"/>
+        <xi:include href="../properties-files/subjectsLctgm-1.0.xml"/>
+        <xi:include href="../properties-files/subjectsLcsh-1.0.xml"/>
+        <xi:include href="../properties-files/locationDepicted-1.0.xml"/>
+        <xi:include href="../properties-files/digitalCollection-1.0.xml"/>
+        <xi:include href="../properties-files/orderNumber-1.0.xml"/>
+        <xi:include href="../properties-files/orderingInformation-1.0.xml"/>
+        <xi:include href="../properties-files/negativeNumber-1.0.xml"/>
+        <xi:include href="../properties-files/repository-1.0.xml"/>
+        <xi:include href="../properties-files/repositoryCollection-1.0.xml"/>
+        <xi:include href="../properties-files/objectType-1.0.xml"/>
+        <xi:include href="../properties-files/physicalDescription-1.0.xml"/>
+        <xi:include href="../properties-files/digitalReproductionInformation-1.0.xml"/>
+        <xi:include href="../properties-files/studioName-1.0.xml"/>
+        <xi:include href="../properties-files/studioLocation-1.0.xml"/>
+        <xi:include href="../properties-files/photographersReferenceNumber-1.0.xml"/>
+        <xi:include href="../properties-files/contributor-1.0.xml"/>
+        <xi:include href="../properties-files/acquisition-1.0.xml"/>
+        <xi:include href="../properties-files/restrictions-1.0.xml"/>
+        <xi:include href="../properties-files/rightsUri.xml"/>
+        <xi:include href="../properties-files/type-1.0.xml"/><!-- labeled Type-DCMI in this coll-->
+        <xi:include href="../properties-files/institution-1.0.xml"/>
+        <xi:include href="../properties-files/cataloging-1.0.xml"/>
+        <xi:include href="../properties-files/itemUrl-1.0.xml"/>
+        <xi:include href="../properties-files/oclcNumber.xml"/>
+        <xi:include href="../properties-files/dateCreated-1.0.xml"/>
+        <xi:include href="../properties-files/dateModified-1.0.xml"/>
+        <xi:include href="../properties-files/cdmNumber-1.0.xml"/>
+        <xi:include href="../properties-files/cdmFilename-1.0.xml"/>
+        <xi:include href="../properties-files/cdmFilePath-1.0.xml"/>
+    </properties>
+</migDataDictionary>

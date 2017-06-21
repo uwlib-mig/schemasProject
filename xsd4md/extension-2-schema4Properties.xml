@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf>
+    <!-- This is a proposal to extend the schema for properties to accommodate ontologies.
+         In particular we need to accommodate that are local and notin external onologies;
+         the assumption in the earlier schema for properties is that it will be a property in an external schema
+         and all that's needed is owl:sameAs.
+    -->
+    <externalProperty>
+        <owl:sameAs/>
+    </externalProperty>
+    <extensions></extensions>
+    <local></local>
+</rdf>

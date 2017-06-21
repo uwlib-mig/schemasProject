@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<migDataDictionary year="2009" id="0001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../schema-4-dds.xsd">
+    <ddName>Special Collections Photograph Collections</ddName>
+    <latestUpdate>2015-12-10</latestUpdate>
+    <metadataLiaison>Kris Kinsey</metadataLiaison>
+    <properties>
+        <property>
+            <dc>title</dc>
+            <cdm-dc-label>Title</cdm-dc-label>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>yes</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <cdm-label>Title</cdm-label>
+            <anomalies></anomalies>
+            <description>A brief descriptive phrase that includes these elements, generally in this order: who, what, where, when. The Title is a concise sentence which will be used to label the thumbnails; it will also be the first line of the descriptive information. The Title may be the caption assigned by the photographer or the collector, or it may be created by Special Collections staff from the given caption and from additional sources. In the absence of any caption, the Title will be provided by Special Collections staff.&lt;p>If the caption provided by the photographer is adequate, place it in theTitle field. Then, the Notes field should include this phrase: Title taken from photograph. If the caption provided by the photographer is inadequate, a created title should be placed in the Title field; the Notesfield should then read: Caption on image: "Image title."&lt;p>If there is a series caption, it should be added, in the Notes field, in sequence after the title on the
+                image: Caption on image: "Image title"; "Series title." There should also be a separate notation in the Notes field in the form: Part of Hegg series entitled: "Series title."</description>
+            <examples/>
+            <dcgMarcMapping>245_00_$a</dcgMarcMapping>
+            <marcNotes>Maps to the title statement (245); a 245$h is automatically added by the DCG to complete the 245 field. Indicators are set manually to 00 for MARC 245; we expect this shouldn't cause too much trouble, as photograph titles generally do not start with nonfiling characters. Formerly we mapped also to 520_8#_$a, "Summary," which has been removed.</marcNotes>
+        </property>
+        <property>
+            <dc>creator</dc>
+            <cdm-dc-label>Creator</cdm-dc-label>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <cdm-label>Photographer</cdm-label>
+            <anomalies>FERA values for this property: 273 "Unidentified," 1 "Patterson." </anomalies>
+            <description>The name of the photographer or firm associated with the creation of the image in hand. It should represent as closely as possible the creator’s name or the company’s name at the time of the creation of the image. Can be the same entry as in the Studio Name field. Includes both personal and corporate names. Input Lastname, Firstname for all personal names. Use LC Authority File for form of name, if available.</description>
+            <examples/>
+            <dcgMarcMapping>[Undecided.]</dcgMarcMapping>
+            <marcNotes>FERA is an easy decision: it should not map. But many photograph collections should map to a 1XX or 7XX. What is best?</marcNotes>
+        </property>
+        <property>
+            <dc>creator</dc>
+            <cdm-dc-label>Creator</cdm-dc-label>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <cdm-label>Architect</cdm-label>
+            <anomalies>Fera: not used.</anomalies>
+            <description>The name of the architect or firm who created the architectural work depicted in the image. It should represent as closely as possible the creator’s name or the company’s name at the time of the creation of the image. Includes both personal and corporate names. Input Lastname, Firstname for all personal names. Use LC Authority File for form of name, if available.</description>
+            <examples/>
+            <dcgMarcMapping>None.</dcgMarcMapping>
+            <marcNotes>no FERA values for this property</marcNotes>
+        </property>
+        <property>
+            <dc>date</dc>
+            <cdm-dc-label>Date</cdm-dc-label>
+            <searchable>no</searchable>
+            <hidden>no</hidden>
+            <required>yes</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <cdm-label>Date</cdm-label>
+            <description>Ano text field. The date the original photograph was taken. In cases where a painting, engraving, or architectural drawing was photographed, the date the artwork was created. If the date when the image in hand was produced is known, and is different from that of the original image, so note in the Notes field. The date should be a specific year. If the date is unknown, an attempt should be made to assign an approximate date, using the form "ca." (circa).&lt;p> This field is used in combination with the Dates field to enable searching (see that entry for details). Specific dates (e.g., September 12, 1933; June 1912) are to be noted in the Notes field, and should also be incorporated in the Title field.</description>
+            <examples>Date: ca. 1904</examples>
+            <dcgMarcMapping>260_##_$c</dcgMarcMapping>
+            <marcNotes>Maps to Publication, distribution, etc field (260), subfield c "dtae of publication, distribution, etc." No indicators.</marcNotes>
+        </property>
+        <property>
+            <dc>[none]</dc>
+            <cdm-dc-label>[none]</cdm-dc-label>
+            <searchable>yes</searchable>
+            <hidden>yes</hidden>
+            <required>yes</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <cdm-label>Dates</cdm-label>
+            <description>Reflects the Date field. If the date is a single year, it is the same in both theDate and the Dates fields. If the date in the Date field is a "circa" date (e.g. ca. 1895), the Dates field contains the expanded version so that searching will find dates covered by the concept of a "circa" date. Five years on either side of the "ca." date is the preferred form.</description>
+            <examples>If the Date field reads "ca. 1910,": Dates: 1905, 1906, 1907, 1908, 1909, 1910, 1911, 1912, 1913, 1914, 1915</examples>
+            <dcgMarcMapping>None.</dcgMarcMapping>
+            <marcNotes>Since there is no DC mapping, there will be no MARC mapping.</marcNotes>
+        </property>
+        <property>
+            <dc>[none]</dc>
+            <cdm-dc-label>[none]</cdm-dc-label>
+            <searchable>no</searchable>
+            <hidden>yes</hidden>
+            <required>yes</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <cdm-label>Earliest Date</cdm-label>
+            <description>Reflects the Date field. If the date is a single year, it is the same in both theDate and the Earliest Date fields. If the date in the Date field is a "circa" date (e.g. ca. 1895), the Earliest Date field contains the first date in the date range, in ISO 8601 format (YYYY, or YYYY-MM, or YYYY-MM-DD as needed).</description>
+            <examples>If the Date field reads "1940,": Earliest Date: 1940&lt;p>If the Date field reads "ca. 1910,": Earliest Date: 1905</examples>
+            <dcgMarcMapping>None.</dcgMarcMapping>
+            <marcNotes>Since there is no DC mapping, there will be no MARC mapping.</marcNotes>
+        </property>
+        <property>
+            <dc>[none]</dc>
+            <cdm-dc-label>[none]</cdm-dc-label>
+            <searchable>no</searchable>
+            <hidden>yes</hidden>
+            <required>yes</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <cdm-label>Latest Date</cdm-label>
+            <description>Reflects the Date field. If the date is a single year, it is the same in both theDate and the Latest Date fields. If the date in the Date field is a "circa" date (e.g. ca. 1895), the Latest Date field contains the last date in the date range, in ISO 8601 format (YYYY, or YYYY-MM, or YYYY-MM-DD as needed).</description>
+            <examples>If the Date field reads "1940,":Latest Date: 1940&lt;p>If the Date field reads "ca. 1910,": Latest Date: 1915</examples>
+            <dcgMarcMapping>None.</dcgMarcMapping>
+            <marcNotes>Since there is no DC mapping, there will be no MARC mapping.</marcNotes>
+        </property>
+        <property>
+            <dc>description</dc>
+            <cdm-dc-label>Description</cdm-dc-label>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <cdm-label>Notes</cdm-label>
+            <description>Notes can include any information of importance that is not represented elsewhere. Each separate "note" under this heading should be its own paragraph, separated from one from another by a blank line.</description>
+            <examples/>
+            <dcgMarcMapping>500_##_$a</dcgMarcMapping>
+            <marcNotes>Maps to General Note (500$a); Note fields in CONTENTdm are not Controlled Vocabularies and cannot be split. Multiple notes separated by &lt;br&gt; or &lt;br&gt;&lt;br&gt; will output as a continuous note: the DCG can split fields using a single character delimiter; our notes are separated by 8 characters (&lt;br&gt; or &lt;br&gt;&lt;br&gt;).</marcNotes>
+        </property>
+        <property>
+            <dc>[none]</dc>
+            <cdm-dc-label>[none]</cdm-dc-label>
+            <searchable>no</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <cdm-label>Historical Notes</cdm-label>
+            <anomalies>FERA: not used.</anomalies>
+            <description>Notes that do not pertain directly to the image, but contain (possibly lengthy) historical background information about related topics.</description>
+            <examples/>
+            <dcgMarcMapping>None.</dcgMarcMapping>
+            <marcNotes>Since there is no DC mapping, there will be no MARC mapping.</marcNotes>
+        </property>
+        <property>
+            <dc>subject</dc>
+            <cdm-dc-label>Subject</cdm-dc-label>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>yes</cdmControlledVocab>
+            <cdm-label>Subjects (LCTGM)</cdm-label>
+            <description>Terms in this field are taken from the LC Thesaurus for Graphic Materials (http://www.loc.gov/pictures/collection/tgm/). Subject terms and phrases are displayed as a list in this field, with no blank lines between terms.</description>
+            <examples>Cities &amp; towns--Alaska</examples>
+            <dcgMarcMapping>653_##_$a</dcgMarcMapping>
+            <marcNotes>Subjects (LCTGM) are mapped to 653 "Index Term--Uncontrolled." The DCG allows us to assign it to 650$a with $2=aat (if we add that "aat" as a DCG "suffix") based on unpredictable positions (or quantities) of TGM subject headings. We cannot predict those positions/quantities so we are stuck with MARC 653. Here are some more observations/questions: (1) The subjects properties in FERA are cdm controlled vovabularies; multiple headings are separated by semi-colon; it appears the DCG recognized this and splits all values to create repeating MARC 653 fields. (2) Why does the DCG distinguish Subjects (LCTGM)from Subjects (LCSH) using dc:subject:[integer denoting position] for the former, subject:[integer denoting position] for the latter (that is, lacking the "dc:" prefix)? Why the former is prefixed dc: is not clear, as both are mapped to dc. (3) The DCG allows us to add prefix/suffix to values of dc properties, not distinguishing between "dc:subject" and plain "subject;" in our case that means whatever is appended to Subjects (LCTGM) must also be appended to Subjects (LCSH), further prohibing us from using MARC 650 even it was available (as LCSH would be 650_#0_$a[subject], LCTGM would be 650_#7$a[subject]$2aat.</marcNotes>
+        </property>
+        <property>
+            <dc>subject</dc>
+            <cdm-dc-label>Subject</cdm-dc-label>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>yes</cdmControlledVocab>
+            <cdm-label>Subjects (LCSH)</cdm-label>
+            <description>Terms in this field are taken from the LC Subject Headings list (LCSH). LCSH will be used only when TGM has no appropriate term for a particular object or concept. LCSH and the LC National Authority File will also be used for persons, objects, and places with proper names. Subject terms and phrases are displayed as a list in this field, with no blank lines between terms.</description>
+            <examples>Markets--Washington (State)--Seattle&lt;p>McGraw, John Harte, 1911---Statues--Washington (State)--Seattle&lt;p>Log buildings--Alaska--Fort Yukon</examples>
+            <dcgMarcMapping>653_##_$a</dcgMarcMapping>
+            <marcNotes>Subjects (LCTGM) are mapped to 653 "Index Term--Uncontrolled." The DCG allows us to assign it to 650$a with $2=aat (if we add that "aat" as a DCG "suffix") based on unpredictable positions (or quantities) of TGM subject headings. We cannot predict those positions/quantities so we are stuck with MARC 653. Here are some more observations/questions: (1) The subjects properties in FERA are cdm controlled vovabularies; multiple headings are separated by semi-colon; it appears the DCG recognized this and splits all values to create repeating MARC 653 fields. (2) Why does the DCG distinguish Subjects (LCTGM)from Subjects (LCSH) using dc:subject:[integer denoting position] for the former, subject:[integer denoting position] for the latter (that is, lacking the "dc:" prefix)? Why the former is prefixed dc: is not clear, as both are mapped to dc. (3) The DCG allows us to add prefix/suffix to values of dc properties, not distinguishing between "dc:subject" and plain "subject;" in our case that means whatever is appended to Subjects (LCTGM) must also be appended to Subjects (LCSH), further prohibing us from using MARC 650 even it was available (as LCSH would be 650_#0_$a[subject], LCTGM would be 650_#7$a[subject]$2aat.</marcNotes>
+        </property>
+        <property>
+            <dc>coverage</dc>
+            <cdm-dc-label>Coverage</cdm-dc-label>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <cdm-label>Location Depicted</cdm-label>
+            <anomalies>Probably DC mapping should be changed to dcterms:spatial</anomalies>
+            <description>The spatial characteristics of the intellectual content of the resource. Spatial coverage refers to a physical region. Places names are derived from the LC Authority File. Enter Country--State or Province--City.</description>
+            <examples>Format: &lt;p>United States--Washington (State)—Seattle&lt;p>United States--Alaska—Fort Yukon&lt;p>Canada—Yukon—Dawson &lt;p>Croatia--Zagreb (Use current form, even though Yugoslavia was the name when the photo was taken)&lt;p>Russia (Federation)--Leningradskaia oblast--Saint Petersburg (Use current form, even though it was called Leningrad in Soviet Union, when photo was taken)</examples>
+            <dcgMarcMapping>522_##_$a</dcgMarcMapping>
+            <marcNotes>Maps to MARC 522 "Geographic Coverage Note," with indicator 1 blank denoting the is "geographic coverage."</marcNotes>
+        </property>
+        <property>
+            <dc>isPartOf</dc>
+            <cdm-dc-label>Relation-Is Part Of</cdm-dc-label>
+            <searchable>no</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>yes</cdmControlledVocab>
+            <cdm-label>Digital Collection</cdm-label>
+            <anomalies>FERA: searchable=yes. Shouldn't the data dictionary be changed to searchable=yes? </anomalies>
+            <description>Name of the digital collection, may or may not be the same name as the original repository collection</description>
+            <examples/>
+            <dcgMarcMapping>773_08_$i Part of: $t Federal Emergency Relief Administration Photograph Collection. PH Coll 263</dcgMarcMapping>
+            <marcNotes>Only 1 DCG options for MARC mapping: 773 "Host Item Entry", which seems to work as follows: 773_08_$i Part of: $t Federal Emergency Relief Administration Photograph Collection. PH Coll 263 -- however this is not an option. The best we could do is 773_08_$t Federal Emergency Relief Administration Photograph Collection (Note the PH Coll # is stripped). This would likely have unpredictable results?</marcNotes>
+        </property>
+        <property>
+            <dc>identifier</dc>
+            <cdm-dc-label>Identifier</cdm-dc-label>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <cdm-label>Order number</cdm-label>
+            <description>Number that users can reference to order a copy of the digital image</description>
+            <examples/>
+            <dcgMarcMapping>024_8#_$a</dcgMarcMapping>
+            <marcNotes>Seems to map best to 024 as follows: 024_7#_OrderNumber12345 $2 local, but DCG does not allow $2.</marcNotes>
+        </property>
+        <property>
+            <dc>description</dc>
+            <cdm-dc-label>Description</cdm-dc-label>
+            <searchable>no</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <cdm-label>Ordering information</cdm-label>
+            <description>Instructions for ordering</description>
+            <examples/>
+            <dcgMarcMapping>None.</dcgMarcMapping>
+            <marcNotes>This can be mapped, perghaps to a MARC 500 "General Note?" Should it be mapped? Note: MARC 540 "Terma Governing Use and Reproduction Note" seems like a useful option, but is not available using the DCG. Note: MARC 037 "Source of Acquisition" is also not available using the DCG.</marcNotes>
+        </property>
+        <property>
+            <dc>identifier</dc>
+            <cdm-dc-label>Identifier</cdm-dc-label>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <cdm-label>Negative number</cdm-label>
+            <description>The Negative number refers to the reproduction number assigned to the image for purposes of duplication. It is the unique number by which Special Collections identifies the image. It may be identical to another number in the record. If two negatives numbers are associated with an image, these are to be separated by a semicolon.</description>
+            <examples>UW12456&lt;p>A. Curtis 2387&lt;p>NA563; UW3476&lt;p>La Roche 2056</examples>
+            <dcgMarcMapping>024_8#_$a</dcgMarcMapping>
+            <marcNotes>Seems to map best to 024 as follows: 024_7#_NegNumber12345 $2 local, but DCG does not allow $2.</marcNotes>
+        </property>
+        <property>
+            <dc>source</dc>
+            <cdm-dc-label>Source</cdm-dc-label>
+            <searchable>no</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <cdm-label>Repository</cdm-label>
+            <description>The institution where the item is physically located.</description>
+            <examples>University of Washington Libraries, Special Collections Division&lt;p>Eastern Washington State Historical Society/Cheney Cowles&lt;p>Museum Museum of History and Industry, Seattle</examples>
+            <dcgMarcMapping>None.</dcgMarcMapping>
+            <marcNotes>Can be mapped. Should it be?</marcNotes>
+        </property>
+        <property>
+            <dc>isPartOf</dc>
+            <cdm-dc-label>Relation-Is Part of</cdm-dc-label>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>yes</cdmControlledVocab>
+            <cdm-label>Repository Collection</cdm-label>
+            <anomalies>FERA: mapped to dc:source.</anomalies>
+            <description>This field contains the collection name and its number, represented as a phrase. The number is not a subfield.</description>
+            <examples>William E. Meed collection no. 246</examples>
+            <dcgMarcMapping>None.</dcgMarcMapping>
+            <marcNotes>Can be mapped. Should it be? MARC 773 "Host Item Entry?"</marcNotes>
+        </property>
+        <property>
+            <dc>[none]</dc>
+            <cdm-dc-label/>
+            <searchable>no</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <cdm-label>Repository Collection Guide</cdm-label>
+            <anomalies>FERA: not used.</anomalies>
+            <description>This field contains the URL link to the EAD finding aid.</description>
+            <examples/>
+            <dcgMarcMapping>None.</dcgMarcMapping>
+            <marcNotes>no FERA values for this property; no DC mapping for any collection.</marcNotes>
+        </property>
+        <property>
+            <dc>[none]</dc>
+            <cdm-dc-label/>
+            <searchable>yes</searchable>
+            <hidden>yes</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <cdm-label>Grant</cdm-label>
+            <anomalies>FERA: not used.</anomalies>
+            <description>This field contains the name of the grant or project that digitized the object.</description>
+            <examples/>
+            <dcgMarcMapping>None.</dcgMarcMapping>
+            <marcNotes>no FERA values for this property; no DC mapping for any collection.</marcNotes>
+        </property>
+        <property>
+            <dc>type</dc>
+            <cdm-dc-label>Type</cdm-dc-label>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>yes</required>
+            <cdmControlledVocab>yes</cdmControlledVocab>
+            <cdm-label>Object Type</cdm-label>
+            <anomalies>FERA: not required.</anomalies>
+            <description>Denotes genre or type of material. If more than one term is applicable, list the form of the item scanned first. Terms in this field are taken from the LC Thesaurus for Graphic Materials (http://www.loc.gov/pictures/collection/tgm/); when describing a single resource, use the singular form of the term; when describing multiple resources, use the plural form of the term.</description>
+            <examples>Photograph&lt;p>Lithograph&lt;p>Typescript&lt;br>Diary [typescript made from manuscript diary]&lt;p>Negatives [a collection of negatives described as a collection]</examples>
+            <dcgMarcMapping>655_#4_$a</dcgMarcMapping>
+            <marcNotes>Maps to MARC 655 "Index Term--Genre/Form." Photograph collections are expected to use TGM for sources of headings, and a more accurate mapping would be 655_#7_$a [henre/form term] $2 gmgpc. In FERA however there are two values for this property, one (image) that does not appear to be in the TGM. The second Object Type in FERA, Photograph, is a change from the actual thesaurus entry, Photographs. Finally, for some reason, the DCG drops the second FERA heading, image, so we can't map that anyway. All put together, it seemed best to make indicator 2 = 4 "source not specified."</marcNotes>
+        </property>
+        <property>
+            <dc>format</dc>
+            <cdm-dc-label>Format</cdm-dc-label>
+            <searchable>no</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <cdm-label>Physical Description</cdm-label>
+            <description>Includes additional descriptive information about type of material or medium, color, and dimensions. Terms for visual materials should be taken from Graphic Materials: Rules for Describing Original Items and Historical Collections (http://www.loc.gov/rr/print/gm/graphmat.html).</description>
+            <examples>Glass, b/w ; 6 1/2 x 8 1/2 in.</examples>
+            <dcgMarcMapping>None.</dcgMarcMapping>
+            <marcNotes>In FERA, this is a physical description of the original glass negative. Do we want to include the physical description of the original negative in our MARC record describing the digital image? If so, where? MARC 776/530? (Note: MARC 776 not availabvle in DCG; MARC 530 is available to the DCG.) Alternatively the record can describe the priginal, with a MARC 533 "Reproduction Note" decribing the digital image. Another option: MARC 534 "Original Version Note" -- but that is not an option using the DCG.</marcNotes>
+        </property>
+        <!-- the following Cdm/FERA property is not in the official DD -->
+        <property>
+            <dc>format</dc>
+            <cdm-dc-label>Format</cdm-dc-label>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <cdm-label>Format</cdm-label>
+            <anomalies>THIS IS NOT A PROPERTY OF THE PHOTOGRAPH COLLECTION DATA DICTIONARY. This property is used in the FERA collection.</anomalies>
+            <description>[Not in data dicitonary]</description>
+            <examples></examples>
+            <dcgMarcMapping>None.</dcgMarcMapping>
+            <marcNotes>In FERA, this is the value "jpeg." Where would this go in a MARC record? 856$q? That's not an option usinf DCG.</marcNotes>
+        </property>
+        <property>
+            <dc>format</dc>
+            <cdm-dc-label>Format</cdm-dc-label>
+            <searchable>no</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <cdm-label>Digital Reproduction Information</cdm-label>
+            <description>Describes the digital conversion process, date scanned, etc.</description>
+            <examples>Scanned from photographic print using.</examples>
+            <dcgMarcMapping>None.</dcgMarcMapping>
+            <marcNotes>Although there doesn't seem to be a place for this free text in the MARC record, we could put together a MARC 533 or some other note.</marcNotes>
+        </property>
+        <!-- the following Cdm/FERA property is not in the official DD -->
+        <property>
+            <dc>[none]</dc>
+            <cdm-dc-label></cdm-dc-label>
+            <searchable>no</searchable>
+            <hidden>yes</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <cdm-label>Acquisition</cdm-label>
+            <anomalies>THIS IS NOT A PROPERTY OF THE PHOTOGRAPH COLLECTION DATA DICTIONARY. This property is used in the FERA collection.</anomalies>
+            <description>[Not in data dicitonary]</description>
+            <examples></examples>
+            <dcgMarcMapping>None.</dcgMarcMapping>
+            <marcNotes>All 274 records in FERA fave no vlaue for this property.</marcNotes>
+        </property>
+        <property>
+            <dc>[none]</dc>
+            <cdm-dc-label/>
+            <searchable>no</searchable>
+            <hidden>yes</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <cdm-label>Studio Location</cdm-label>
+            <anomalies>FERA: not used. </anomalies>
+            <description>If the city of publication in which the photographer/publisher worked at the time the image was printed is noted on the front of the photograph, or is known to the cataloger, it is provided in Studio Location field. If there is more than one studio location noted, separate them by semi-colons. Input in standard hierarchical form separated by a dash (equivalent to two hyphens).</description>
+            <examples>United States—Washington (State)—Seattle&lt;p>Canada—Yukon Territory—Dawson</examples>
+            <dcgMarcMapping>None</dcgMarcMapping>
+            <marcNotes>Not in FERA</marcNotes>
+        </property>
+        <property>
+            <dc>creator</dc>
+            <cdm-dc-label>Creator</cdm-dc-label>
+            <searchable>yes</searchable>
+            <hidden>yes</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <cdm-label>Original creator</cdm-label>
+            <anomalies>FERA: not used. </anomalies>
+            <description>This field to be used only if the entry in the Photographer field does not represent the original creator of the image. The Original creator is the name of the photographer or firm, artist, or architect associated with the creation of the original image. It should represent as closely as possible the creator’s name or the company’s name at the time of the creation of the original image. Includes both personal and corporate names. InputLastname, Firstname for all personal names. Use LC Authority File for form of name, if available. Additional information about the original creator, and corresponding photographer’s reference number and any other significant references, are placed in the Notes field.</description>
+            <examples/>
+            <dcgMarcMapping>[Undecided.]</dcgMarcMapping>
+            <marcNotes>Not in FERA.</marcNotes>
+        </property>
+        <property>
+            <dc>publisher</dc>
+            <cdm-dc-label>Publisher</cdm-dc-label>
+            <searchable>no</searchable>
+            <hidden>yes</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <cdm-label>Studio Name</cdm-label>
+            <description>If the studio name/publisher of the photograph on hand is known, it is provided in the Studio Name field. This is often identical to the entry in the Photographer field. Input Lastname, Firstname for all personal names. Use LC Authority File for form of name, if available.</description>
+            <examples/>
+            <dcgMarcMapping>[Undecided.]</dcgMarcMapping>
+            <marcNotes>Not in FERA.</marcNotes>
+        </property>
+        <property>
+            <dc>identifier</dc>
+            <cdm-dc-label>Identifier</cdm-dc-label>
+            <searchable>yes</searchable>
+            <hidden>yes</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <cdm-label>Photographer's reference number</cdm-label>
+            <description>The Photographer's reference number along with the name of the photographer provides a unique identification for the image. Input along with photographer's name; usually linked with the entry in thePhotographer field.</description>
+            <examples>Hegg 236&lt;p>A. Curtis 23876</examples>
+            <dcgMarcMapping>[Undecided.]</dcgMarcMapping>
+            <marcNotes>Not in FERA.</marcNotes>
+        </property>
+        <property>
+            <dc>contributor</dc>
+            <cdm-dc-label>Contributor</cdm-dc-label>
+            <searchable>no</searchable>
+            <hidden>yes</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <cdm-label>Contributor</cdm-label>
+            <description>A person or organization not specified in the Creator field orPhotographer field who has made a significant contribution to the resource, but whose contribution is secondary to any person or organization specified in the Creator field.</description>
+            <examples>University of Washington Libraries, Special Collections Division</examples>
+            <dcgMarcMapping>[Undecided.]</dcgMarcMapping>
+            <marcNotes>Not in FERA.</marcNotes>
+        </property>
+        <property>
+            <dc>rights</dc>
+            <cdm-dc-label>Rights</cdm-dc-label>
+            <searchable>no</searchable>
+            <hidden>yes</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <cdm-label>Restrictions</cdm-label>
+            <description>This field lists any restrictions on the use of an image.&lt;p>For most collections, use the following: For information on permissions for use and reproductions please visit UW Libraries Special Collections "Reproductions: Order Photographs &amp; Scans" page: http://www.lib.washington.edu/specialcoll/service/reproduction.html </description>
+            <examples/>
+            <dcgMarcMapping>None.</dcgMarcMapping>
+            <marcNotes>In the MARC record, 540 would work, maybe 037, but these are unavailable to the DCG. Perhaps the 530?</marcNotes>
+        </property>
+        <property>
+            <dc>type</dc>
+            <cdm-dc-label>Type</cdm-dc-label>
+            <searchable>yes</searchable>
+            <hidden>yes</hidden>
+            <required>yes</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <cdm-label>Type</cdm-label>
+            <description>Describes the nature or genre of the content of the resource. Select a value from the Dublin Core Type Vocabulary at http://dublincore.org/documents/dcmi-terms/</description>
+            <examples>StillImage&lt;p>Text</examples>
+            <dcgMarcMapping>None.</dcgMarcMapping>
+            <marcNotes>Could be 655_#7_$a stillImage $2 dct, but this property does not output to the DCG, perhaps because it is hidden=yes in CONTENTdm?</marcNotes>
+        </property>
+        <property>
+            <dc>[none]</dc>
+            <cdm-dc-label>[none]</cdm-dc-label>
+            <searchable>no</searchable>
+            <hidden>yes</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <cdm-label>Staff notes</cdm-label>
+            <anomalies>labeled "Administrative Notes" in FERA.</anomalies>
+            <description>Notes for staff only, notes of an administrative nature.</description>
+            <examples/>
+            <generalNotes>"Staff Notes" are not searchable to the general public; however before the collection goes public -- when the collection is being described -- developers may wish to have the "Staff Notes" searchable.</generalNotes>
+            <dcgMarcMapping>None.</dcgMarcMapping>
+        </property>
+        <property>
+            <dc>[none]</dc>
+            <cdm-dc-label>[none]</cdm-dc-label>
+            <searchable>no</searchable>
+            <hidden>yes</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <cdm-label>Image file name</cdm-label>
+            <description>File name for the image, tiff file name, etc. Could include information like “CD number: UW__001” for things stored on discs.</description>
+            <examples/>
+            <dcgMarcMapping></dcgMarcMapping>
+            <marcNotes></marcNotes>
+        </property>
+    </properties>
+</migDataDictionary>

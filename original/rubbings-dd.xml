@@ -1,0 +1,1159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<migDataDictionary xmlns="http://faculty.washington.edu/tgis/xml/xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/xml/xsd schema-4-dds.xsd">
+    <ddName>University of Washington East Asia Library Digital Chinese Rubbings Collection</ddName>
+    <ddPartOfProject/>
+    <latestUpdate>October 11, 2016</latestUpdate>
+    <metadataLiaisons>
+        <metadataLiaison>Theodore Gerontakos, Ann Lally, Zhijia Shen</metadataLiaison>
+    </metadataLiaisons>
+    <cdmCo>no</cdmCo>
+    <standalone>yes</standalone>
+    <properties>
+        <property>
+            <cdmLabel>Title</cdmLabel>
+            <cdm-dc-label>Title</cdm-dc-label>
+            <dc>title</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>yes</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <description>
+                <para>Enter transcribed title or formulate a title. This title should be in English.</para>
+            </description>
+            <examples>
+                <para>Scroll prints with Xu Zhang’s cursive calligraphy</para>
+                <para>	Wuliang Shrine, North Wuzhaishan Village, Jiaxiang County, Jining City, Shandong Province, China</para>
+            </examples>
+            <descriptionCoObject/>
+            <descriptionCoItem/>
+        </property>
+        <property>
+            <cdmLabel>[Title-Chinese-Label undecided, see admin notes]</cdmLabel>
+            <cdm-dc-label>Title-Alternative</cdm-dc-label>
+            <dc>alternative</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>yes</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <description>
+                <para>Enter transcribed title or formulate a title. This title should be in Chinese.</para>
+            </description>
+            <examples>
+                <para>張旭草書拓本</para>
+                <para>韓寄生造像記</para>
+            </examples>
+            <descriptionCoObject/>
+            <descriptionCoItem/>
+            <admin>
+                <para>Undecided on Chinese field label.</para>
+                <para>學名</para>
+                <para>題名</para>
+            </admin>
+        </property>
+        <property>
+            <cdmLabel>[Title-Romanized]</cdmLabel>
+            <cdm-dc-label>Title-Alternative</cdm-dc-label>
+            <dc>alternative</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>yes</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <description>
+                <para>Romanize Chinese title using the appropriate ALA-LC Romanization Table.</para>
+            </description>
+            <examples>
+                <para>Han Chi-sheng tsao hsiang chi</para>
+            </examples>
+            <descriptionCoObject/>
+            <descriptionCoItem/>
+            <admin>
+                <para>Not sure we want this field. If we do, where else do we want romanization?</para>
+            </admin>
+        </property>
+        <property>
+            <cdmLabel>Original Creator</cdmLabel>
+            <cdm-dc-label>Creator</cdm-dc-label>
+            <dc>creator</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <description>
+                <para>Enter name of the creator of the original.</para>
+                <para>Enter the value in English.</para>
+                <para>If there are multiple creators, separate each creator with a semi-colon + space.</para>
+            </description>
+            <examples>
+                <para>Huai-su (725-85)</para>
+            </examples>
+            <descriptionCoObject/>
+            <descriptionCoItem/>
+            <admin>
+                <para>Will the creator usually be an author? Maybe an artist? Should we have more than one field with custom labels for each type of creator?</para>
+                <para>Other possibilities for "agents:" author/creator-or-contributor, calligrapher/creator-or-contributor, inscriber/creator-or-contributor, collector/contributor, rubbing maker/contributor</para>
+            </admin>
+        </property>
+        <property>
+            <cdmLabel>[Original Creator-Chinese]</cdmLabel>
+            <cdm-dc-label>Creator</cdm-dc-label>
+            <dc>creator</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <description>
+                <para>Enter name of the creator of the original.</para>
+                <para>Enter the value in English.</para>
+                <para>If there are multiple creators, separate each creator with a semi-colon + space.</para>
+            </description>
+            <examples>
+                <para>懷素</para>
+            </examples>
+            <descriptionCoObject/>
+            <descriptionCoItem/>
+            <admin>
+                <para>Undecided on Chinese field label.</para>
+                <para>作者</para>
+                <para>撰文㆟</para>
+                <para>创造者</para>
+            </admin>
+        </property>
+        <property>
+            <cdmLabel>[Original Creator-romanized]</cdmLabel>
+            <cdm-dc-label>Creator</cdm-dc-label>
+            <dc>creator</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>yes</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <description>
+                <para>Romanize Chinese title using the appropriate ALA-LC Romanization Table.</para>
+            </description>
+            <descriptionCoObject/>
+            <descriptionCoItem/>
+            <admin>
+                <para>Do we want this field? Is the name in "English" really a romanized version?</para>
+            </admin>
+        </property>
+        <property>
+            <cdmLabel>Date of Original</cdmLabel>
+            <cdm-dc-label>Date-Created</cdm-dc-label>
+            <dc>created</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>no</searchable>
+            <hidden>no</hidden>
+            <required>yes</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <description>
+                <para>Enter date the original artifact was created (if known).</para>
+                <para>	
+                Enter date or date range for all items.</para>
+                <para>This is the display field. Enter first the day if available, then the month</para>
+            </description>
+            <examples>
+                <para>23 April 2001</para>
+                <para>October-November 2006</para>
+            </examples>
+            <descriptionCoObject/>
+            <descriptionCoItem/>
+            <admin>
+                <para>Required if creation date is unknown.</para>
+                <para>Throughout the data dictionary, do we want to refer to the original artifact as "The original?"</para>
+            </admin>
+        </property>
+        <property>
+            <cdmLabel>[Date of Original with Chinese label]</cdmLabel>
+            <cdm-dc-label>Date-Created</cdm-dc-label>
+            <dc>created</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>no</searchable>
+            <hidden>no</hidden>
+            <required>yes</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <description>
+                <para>Enter date the original artifact was created (if known).</para>
+                <para>	
+                Enter date or date range for all items.</para>
+                <para>This is the display field. Enter first the day if available, then the month</para>
+            </description>
+            <examples>
+                <para>23 April 2001</para>
+                <para>October-November 2006</para>
+            </examples>
+            <descriptionCoObject/>
+            <descriptionCoItem/>
+            <admin>
+                <para>Required if creation date is unknown.</para>
+                <para>The value of this field is the same as "Date of original." The only difference between that field and this is the name of the field (i.e. the label). We could combine into one field with a bilingual label, if preferred.</para>
+                <para>Not sure what the field name will be.</para>
+                <para>年代</para>
+                <para>Please note only date types following the Gregorian Calendar are expected in our date fields; we have no date fields that expect dates using other systems.</para>
+            </admin>
+        </property>
+        <property>
+            <cdmLabel>DatesOfOriginal</cdmLabel>
+            <cdm-dc-label>None</cdm-dc-label>
+            <dc>none</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>yes</hidden>
+            <required>yes</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <description>
+                <para>Enter year only.</para>
+                <para>Separate additional years, even if sequential, with comma.</para>
+                <para>Approximate dates should include five years on either side.</para>
+            </description>
+            <examples>
+                <para>2004</para>
+                <para>2004, 2005</para>
+                <para>2005, 2006, 2007, 2008</para>
+                <para>[if Interview Date/s = “approximately 1991:”] 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996</para>
+            </examples>
+            <descriptionCoObject/>
+            <descriptionCoItem/>
+            <admin>
+                <para>Required if creation date is unknown.</para>
+                <para>One "Dates" for date created should work for English, Chinese and Romanized dates, right?</para>
+            </admin>
+        </property>
+        <property>
+            <cdmLabel>EarliestDateOfOriginal</cdmLabel>
+            <cdm-dc-label>None</cdm-dc-label>
+            <dc>none</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>no</searchable>
+            <hidden>yes</hidden>
+            <required>yes</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <description>
+                <para>Reflects the Date of Original field.</para>
+                <para>If the date is a single year, it is the same in both the Date of Original and the EarliestDateOfOriginal fields. If the date in the Date of Original field is a "circa" date (e.g. ca. 1895), the EarliestDateOfOriginal field contains the first date in the date range, in ISO 8601 format (YYYY, or YYYY-MM, or YYYY-MM-DD as needed).</para>
+            </description>
+            <examples>
+                <para>If Date of Original="1940" then EarliestDateOfOriginal="1940"</para>
+                <para>If Date of Original ="ca. 1910" then EarliestDateOfOriginal="1905"</para>
+            </examples>
+            <descriptionCoObject/>
+            <examplesCoObject/>
+            <descriptionCoItem/>
+            <examplesCoItem/>
+            <admin>
+                <para>Required, if Date is present.</para>
+            </admin>
+            <generalNotes>
+                <para>One "EarliestDateOfOriginal" for date created should work for English, Chinese and Romanized dates, right?</para>
+            </generalNotes>
+            <dcgMarcMapping/>
+            <marcNotes/>
+        </property>
+        <property>
+            <cdmLabel>LatestDateOfOriginal</cdmLabel>
+            <cdm-dc-label>None</cdm-dc-label>
+            <dc>none</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>no</searchable>
+            <hidden>yes</hidden>
+            <required>yes</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <description>
+                <para>Reflects the Date of Original field.</para>
+                <para>If the date is a single year, it is the same in both the Date of Original and the LatestDateOfOriginal fields. If the date in the Date of Original field is a "circa" date (e.g. ca. 1895), the LatestDateOfOriginal field contains the first date in the date range, in ISO 8601 format (YYYY, or YYYY-MM, or YYYY-MM-DD as needed).</para>
+            </description>
+            <examples>
+                <para>If Date of Original="1940" then LatestDateOfOriginal="1940"</para>
+                <para>If Date of Original ="ca. 1910" then LatestDateOfOriginal="1915"</para>
+            </examples>
+            <descriptionCoObject/>
+            <examplesCoObject/>
+            <descriptionCoItem/>
+            <examplesCoItem/>
+            <admin>
+                <para>Required, if Date is present.</para>
+                <para>One "EarliestDateOfOriginal" for date created should work for English, Chinese and Romanized dates, right?</para>
+            </admin>
+            <dcgMarcMapping/>
+            <marcNotes/>
+        </property>
+        <property>
+            <cdmLabel>Description</cdmLabel>
+            <cdm-dc-label>Description</cdm-dc-label>
+            <dc>description</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>yes</cdmLarge>
+            <searchable>no</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <description>
+                <para>This description should be written in English.</para>
+                <para>Notes can include any information of importance that is not represented elsewhere in the metadata. They can also provide a summary of the resource.</para>
+                <para>Each separate "note" should be its own paragraph, each separated by a blank line.</para>
+            </description>
+            <examples>
+                <para>Xu Zhang, (ca. 800) was a renowned Chinese calligrapher in Tang dynasty. He is well-known for his cursive calligraphy and behavior that is not following rules of decorum. “Crazy Zhang” is one of nicknames he earns for himself.</para>
+                <para>Pictorial relief. Eight views of the Kuan-chung region (modern Shan-hsi), with accompanying verse, by Chu Chi-i; with a colophon by Chou Wang-pao. The engraving of the verse and landscapes was commissioned and put in place by Chao Shih and Chin Wen-yü. Includes title inscription.</para>
+            </examples>
+            <descriptionCoObject/>
+            <descriptionCoItem/>
+            <admin>
+                <para>If this is where we enter metadata not represented elswhere, then this field include values for many properties of rubbings not included, like literary style, relief of the original, decoration information about the original or the rubbing, the shape of the original, seal on the rubbing, colophon on the rubbing, condition of the rubbing. Of course we could create a field for any of these properties.</para>
+            </admin>
+        </property>
+        <property>
+            <cdmLabel>[Description-Chinese]</cdmLabel>
+            <cdm-dc-label>Description</cdm-dc-label>
+            <dc>description</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>yes</cdmLarge>
+            <searchable>no</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <description>
+                <para>This description should be written in English.</para>
+                <para>Notes can include any information of importance that is not represented elsewhere in the metadata. They can also provide a summary of the resource.</para>
+                <para>Each separate "note" should be its own paragraph, each separated by a blank line.</para>
+            </description>
+            <examples>
+                <para>張旭 (ca. 800) 為唐朝著名的書法家, 擅長草書. 因為行為怪異且不拘禮節而被稱為「張顛」.</para>
+            </examples>
+            <descriptionCoObject/>
+            <descriptionCoItem/>
+            <admin>
+                <para>Not sure what the field name will be.</para>
+                <para>描述</para>
+            </admin>
+        </property>
+        <property>
+            <cdmLabel>Transcription</cdmLabel>
+            <cdm-dc-label>None</cdm-dc-label>
+            <dc>none</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>yes</cdmLarge>
+            <searchable>no</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <description>
+                <para>Transcribe pertinent text in language of original.</para>
+            </description>
+            <examples>
+                <para>	Suddenly, I have unbearable stomach ache. It may be caused by cold or fever. I like to take medicine called “Da Huang Tang “, because it can get rid of cold and heat in my body. Why does that happen? There is no way to know without doctor’s diagnosis.</para>
+            </examples>
+            <descriptionCoObject/>
+            <descriptionCoItem/>
+            <admin>
+                <para>Should the label for this field be something like "Transcription / 釋文 " ? Or perhaps the label should only be in Chinese?</para>
+                <para>How can one allow himself or herself not to study every day? I regret that I have not read as many books as I can.</para>
+            </admin>
+        </property>
+        <property>
+            <cdmLabel>Transcription (translated)</cdmLabel>
+            <cdm-dc-label>None</cdm-dc-label>
+            <dc>none</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>yes</cdmLarge>
+            <searchable>no</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <description>
+                <para>Translate transcription above into English.</para>
+            </description>
+            <examples>
+                <para>	忽肚痛不可堪，不知是冷熱所致，欲服大黃湯，冷熱俱有益。如何為計，非臨床。</para>
+                <para>	何可一日無竹；恨不十年讀書。</para>
+            </examples>
+            <descriptionCoObject/>
+            <descriptionCoItem/>
+        </property>
+        <property>
+            <cdmLabel>Subjects (LCSH)</cdmLabel>
+            <cdm-dc-label>Subject</cdm-dc-label>
+            <dc>subject</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>yes</cdmControlledVocab>
+            <description>
+                <para>Enter subject headings taken from the Library of Congress Subject Headings (LCSH): http://authorities.loc.gov/ or http://id.loc.gov/</para>
+                <para>Separate multiple entries with a semicolon.</para>
+            </description>
+            <descriptionCoObject/>
+            <descriptionCoItem/>
+        </property>
+        <property>
+            <cdmLabel>Subjects (AAT)</cdmLabel>
+            <cdm-dc-label>Subject</cdm-dc-label>
+            <dc>subject</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>yes</cdmControlledVocab>
+            <description>
+                <para>Enter subject headings taken from the Getty Art and Architecture Thesaurus (AAT): http://www.getty.edu/research/tools/vocabularies/aat/</para>
+                <para>Separate multiple entries with a semicolon.</para>
+            </description>
+            <examples>
+                <para>Calligraphy (visual work)</para>
+                <para>Poetry</para>
+                <para>Hanging scrolls</para>
+            </examples>
+            <descriptionCoObject/>
+            <descriptionCoItem/>
+            <admin>
+                <para>Usually we enter subject headings from LCSH and LCTGM; however in this case AAT allows us to enter some Chnese language headings in the following field using the AAT-Taiwan.</para>
+            </admin>
+        </property>
+        <property>
+            <cdmLabel>[Subjects (AAT-Taiwan)]</cdmLabel>
+            <cdm-dc-label>Subject</cdm-dc-label>
+            <dc>subject</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>yes</cdmControlledVocab>
+            <description>
+                <para>Enter subject headings taken from the Getty Art and Architecture Thesaurus Taiwan (AAT-Taiwan): http://aat.teldap.tw/index.php?_session=2Tz552ieYDx8Bp3.</para>
+                <para>Separate multiple entries with a semicolon.</para>
+            </description>
+            <examples>
+                <para>書法(視覺作品)</para>
+                <para>詩</para>
+                <para>立軸</para>
+            </examples>
+            <descriptionCoObject/>
+            <descriptionCoItem/>
+            <admin>
+                <para>Undecided on the label for this field.</para>
+                <para>I have no label options selected.</para>
+            </admin>
+        </property>
+        <property>
+            <cdmLabel>Spatial Coverage</cdmLabel>
+            <cdm-dc-label>Coverage-Spatial</cdm-dc-label>
+            <dc>spatial</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>yes</cdmControlledVocab>
+            <description>
+                <para>Enter broad and local geographic locations given significant attention in the resource.</para>
+                <para>Use LC Subject Headings for location when available.</para>
+                <para>Separate multiple entries with a semicolon .</para>
+            </description>
+            <examples>
+                <para>China--Tientsin</para>
+                <para>China--Shandong Province--Jiaxiang County</para>
+            </examples>
+            <descriptionCoObject/>
+            <descriptionCoItem/>
+            <admin>
+                <para>What will be the format of entries? For example, for U.S. states and cities, other collections use [Country]—[State]—[City].</para>
+                <para>This may not have much use in describing this collection.</para>
+            </admin>
+        </property>
+        <property>
+            <cdmLabel>[Spatial Coverage-Chinese]</cdmLabel>
+            <cdm-dc-label>Coverage-Spatial</cdm-dc-label>
+            <dc>spatial</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>yes</cdmControlledVocab>
+            <description>
+                <para>Enter Spatial Coverage in Chinese language.</para>
+                <para>Separate multiple entries with a semicolon.</para>
+            </description>
+            <examples>
+                <para>[none at present]</para>
+            </examples>
+            <descriptionCoObject/>
+            <descriptionCoItem/>
+            <admin>
+                <para>Undecided on the label for this field.</para>
+                <para>創作地</para>
+                <para>Can't use LCSH headings here - what do we use?</para>
+            </admin>
+        </property>
+        <property>
+            <cdmLabel>Temporal Coverage</cdmLabel>
+            <cdm-dc-label>Coverage-Temporal</cdm-dc-label>
+            <dc>temporal</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <description>
+                <para>Representation of time periods given significant attention in the resource.</para>
+                <para>Separate multiple entries with a semicolon.</para>
+                <para>This is a free text field with no authoritative source of terms. However most entries should be dates and date ranges. But if any time period can be described using LCSH headings, use the LCSH heading.</para>
+                <para>This may not have much use in describing this collection.</para>
+            </description>
+            <examples>
+                <para>[none at present]</para>
+            </examples>
+            <descriptionCoObject/>
+            <descriptionCoItem/>
+            <admin>
+                <para>Undecided on the label for this field.</para>
+                <para>創作地</para>
+                <para>Can't use LCSH headings here - what do we use?</para>
+                <para>This may not have much use in describing this collection.</para>
+            </admin>
+        </property>
+        <property>
+            <cdmLabel>[Temporal Coverage-Chinese]</cdmLabel>
+            <cdm-dc-label>Coverage-Temporal</cdm-dc-label>
+            <dc>temporal</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <description>
+                <para>Enter Temporal Coverage in Chinese language.</para>
+                <para>Separate multiple entries with a semicolon.</para>
+            </description>
+            <examples>
+                <para>[none at present]</para>
+            </examples>
+            <descriptionCoObject/>
+            <descriptionCoItem/>
+            <admin>
+                <para>Undecided on the label for this field.</para>
+                <para>創作地</para>
+                <para>Can't use LCSH headings here - what do we use?</para>
+            </admin>
+        </property>
+        <property>
+            <cdmLabel>Original Artifact Type</cdmLabel>
+            <cdm-dc-label>Type</cdm-dc-label>
+            <dc>type</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <description>
+                <para>Denotes genre or type of the original resource; what the resource "is"</para>
+                <para>Separate multiple types with semicolon.</para>
+                <para>Preferred: use terms from the LC Genre/Form Terms.</para>
+            </description>
+            <examples>
+                <para>rubbing; hanging scroll</para>
+            </examples>
+            <descriptionCoObject/>
+            <descriptionCoItem/>
+            <admin>
+                <para>If DCMI Types are used here (unlikely), consider the use of DCMI Type below.</para>
+                <para>What "original artifact type" do we want to enter here? The rubbing itself? </para>
+            </admin>
+        </property>
+        <property>
+            <cdmLabel>[Original Artifact Type-Chinese]</cdmLabel>
+            <cdm-dc-label>Type</cdm-dc-label>
+            <dc>type</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <description>
+                <para>Enter Original Artifact Type in Chinese language.</para>
+                <para>Separate multiple entries with a semicolon.</para>
+            </description>
+            <examples>
+                <para>[none at present]</para>
+            </examples>
+            <descriptionCoObject/>
+            <descriptionCoItem/>
+            <admin>
+                <para>Undecided on the label for this field.</para>
+            </admin>
+        </property>
+        <property>
+            <cdmLabel>Language</cdmLabel>
+            <cdm-dc-label>Language</cdm-dc-label>
+            <dc>language</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <description>
+                <para>Name of language(s) used in the interview fully spelled out.</para>
+            </description>
+            <examples>
+                <para>Chinese</para>
+            </examples>
+            <descriptionCoObject/>
+            <descriptionCoItem/>
+        </property>
+        <property>
+            <cdmLabel>[Language-Chinese]</cdmLabel>
+            <cdm-dc-label>Language</cdm-dc-label>
+            <dc>language</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <description>
+                <para>Enter Original Artifact Type in Chinese language.</para>
+            </description>
+            <examples>
+                <para>中文</para>
+            </examples>
+            <descriptionCoObject/>
+            <descriptionCoItem/>
+            <admin>
+                <para>Undecided on the label for this field.</para>
+            </admin>
+        </property>
+        <property>
+            <cdmLabel>Digital Collection</cdmLabel>
+            <cdm-dc-label>Relation-Is Part Of</cdm-dc-label>
+            <dc>isPartOf</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>yes</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <description>
+                <para>Name of the digital collection into which the digital objects will be uploaded in UW Libraries Digital Collections (CONTENTdm).</para>
+                <para>Value will be something like "University of Washington East Asia Library Digital Chinese Rubbings Collection."</para>
+            </description>
+            <examples>
+                <para>Oral History Collection</para>
+                <para>Robert Henry Chandless Collection</para>
+            </examples>
+            <descriptionCoObject/>
+            <descriptionCoItem/>
+        </property>
+        <property>
+            <cdmLabel>[Digital Collection-Chinese]</cdmLabel>
+            <cdm-dc-label>Relation-Is Part Of</cdm-dc-label>
+            <dc>isPartOf</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>yes</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <description>
+                <para>Enter Digital Collection information in Chinese language.</para>
+            </description>
+            <examples>
+                <para>[none at present]</para>
+            </examples>
+            <descriptionCoObject/>
+            <descriptionCoItem/>
+            <admin>
+                <para>Undecided on the label for this field.</para>
+            </admin>
+        </property>
+        <property>
+            <cdmLabel>Project</cdmLabel>
+            <cdm-dc-label>Relation-Is Part Of</cdm-dc-label>
+            <dc>isPartOf</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <description>
+                <para>Enter subcollection name.</para>
+            </description>
+            <examples>
+                <para>[none at present]</para>
+            </examples>
+            <descriptionCoObject/>
+            <descriptionCoItem/>
+        </property>
+        <property>
+            <cdmLabel>[Project-Chinese]</cdmLabel>
+            <cdm-dc-label>Relation-Is Part Of</cdm-dc-label>
+            <dc>isPartOf</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <description>
+                <para>Enter project/subcollection information in Chinese language.</para>
+            </description>
+            <examples>
+                <para>[none at present]</para>
+            </examples>
+            <descriptionCoObject/>
+            <descriptionCoItem/>
+        </property>
+        <property>
+            <cdmLabel>Digital ID Number</cdmLabel>
+            <cdm-dc-label>Identifier</cdm-dc-label>
+            <dc>identifier</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>yes</required>
+            <cdmControlledVocab>yes</cdmControlledVocab>
+            <description>
+                <para>Unique number assigned to each digital object in CONTENTdm for identification purposes</para>
+                <para>Identifiers can be produced by contacting either Kris Kinsey (Special Collections) or Anne Graham (Digital Initiatives).</para>
+                <para>Format of numbers: OHCxxx.</para>
+            </description>
+            <examples>
+                <para>OHC0847</para>
+            </examples>
+            <descriptionCoObject/>
+            <descriptionCoItem/>
+            <generalNotes>
+                <para>This field is a version of “Order Number” (as the field is called in other UW Libraries’ data dictionaries).</para>
+            </generalNotes>
+        </property>
+        <property>
+            <cdmLabel>Ordering Information</cdmLabel>
+            <cdm-dc-label>Description</cdm-dc-label>
+            <dc>description</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>no</searchable>
+            <hidden>no</hidden>
+            <required>yes</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <description>
+                <para>Instructions for ordering. The text for this field will be unique to each project, and should be created by the project manager for any given project.</para>
+            </description>
+            <examples>
+                <para>To request a high resolution or uncompressed reproduction, or to obtain permission to use any portion of this item, contact University of Washington Libraries, Special Collections. Email: photos@u.washington.edu.  Please reference the Digital ID Number.</para>
+            </examples>
+            <descriptionCoObject/>
+            <descriptionCoItem/>
+        </property>
+        <property>
+            <cdmLabel>[Ordering Information-Chinese]</cdmLabel>
+            <cdm-dc-label>Description</cdm-dc-label>
+            <dc>description</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>no</searchable>
+            <hidden>no</hidden>
+            <required>yes</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <description>
+                <para>Enter Ordering Information in Chinese lanhuage.</para>
+            </description>
+            <examples>
+                <para>要请求高分辨率或解压缩复制，或者获得使用该项目的任何部分权限，请联系华盛顿图书馆，特别收藏大学。电子邮件：photos@u.washington.edu请参考数字ID号。</para>
+            </examples>
+            <descriptionCoObject/>
+            <descriptionCoItem/>
+            <admin>
+                <para>Undecided on the label for this field.</para>
+            </admin>
+        </property>
+        <property>
+            <cdmLabel>Rights</cdmLabel>
+            <cdm-dc-label>Rights</cdm-dc-label>
+            <dc>rights</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>no</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <description>
+                <para>Identifies rights holder and restrictions.</para>
+            </description>
+            <examples>
+                <para>For information on permissions for use and reproductions please visit UW Libraries Special Collections "Reproductions: Order Photographs &amp; Scans" page: http://www.lib.washington.edu/specialcoll/service/reproduction.html</para>
+            </examples>
+            <descriptionCoObject/>
+            <descriptionCoItem/>
+        </property>
+        <property>
+            <cdmLabel>[Rights--Chinese]</cdmLabel>
+            <cdm-dc-label>Rights</cdm-dc-label>
+            <dc>rights</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>no</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <description>
+                <para>Enter Rights information in Chinese language.</para>
+            </description>
+            <examples>
+                <para>[None at present.]</para>
+            </examples>
+            <descriptionCoObject/>
+            <descriptionCoItem/>
+            <admin>
+                <para>Undecided on the label for this field.</para>
+            </admin>
+        </property>
+        <property>
+            <cdmLabel>Repository</cdmLabel>
+            <cdm-dc-label>Source</cdm-dc-label>
+            <dc>source</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>no</searchable>
+            <hidden>no</hidden>
+            <required>yes</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <description>
+                <para>The institution holding the materials.</para>
+                <para>Enter “University of Washington East Asia Library”</para>
+            </description>
+            <examples>
+                <para>University of Washington East Asia Library</para>
+            </examples>
+            <descriptionCoObject/>
+            <descriptionCoItem/>
+            <admin>
+                <para>The DC mapping to dcterms:source is absurd and needs to be repaired; discuss with MIG.</para>
+            </admin>
+        </property>
+        <property>
+            <cdmLabel>[Repository-Chinese]</cdmLabel>
+            <cdm-dc-label>Source</cdm-dc-label>
+            <dc>source</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>no</searchable>
+            <hidden>no</hidden>
+            <required>yes</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <description>
+                <para>The institution holding the materials.</para>
+                <para>Enter “University of Washington Libraries Special Collections”</para>
+            </description>
+            <examples>
+                <para>[None at present.]</para>
+            </examples>
+            <descriptionCoObject/>
+            <descriptionCoItem/>
+            <admin>
+                <para>Undecided on the label for this field.</para>
+                <para>The DC mapping to dcterms:source is absurd and needs to be repaired; discuss with MIG.</para>
+            </admin>
+        </property>
+        <property>
+            <cdmLabel>Repository Collection</cdmLabel>
+            <cdm-dc-label>Relation-Is Part Of</cdm-dc-label>
+            <dc>isPartOf</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>yes</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <description>
+                <para>Official name of the manuscript collection followed by the accession number assigned to the collection</para>
+            </description>
+            <examples>
+                <para>Anna Louise Strong papers, Accession No. 1309-001, Box 3/1</para>
+                <para>William E. Meed collection no. 246</para>
+            </examples>
+            <descriptionCoObject/>
+            <descriptionCoItem/>
+            <admin>
+                <para>DC map to dcterms:isPartOf seems incorrect; discuss with MIG.</para>
+            </admin>
+        </property>
+        <property>
+            <cdmLabel>[Repository Collection-Chinese]</cdmLabel>
+            <cdm-dc-label>Relation-Is Part Of</cdm-dc-label>
+            <dc>isPartOf</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>yes</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <description>
+                <para>Enter Repository Collection information in Chinese language.</para>
+            </description>
+            <examples>
+                <para>[None at present.]</para>
+            </examples>
+            <descriptionCoObject/>
+            <descriptionCoItem/>
+            <admin>
+                <para>Undecided on the label for this field.</para>
+                <para>DC map to dcterms:isPartOf seems incorrect; discuss with MIG.</para>
+            </admin>
+        </property>
+        <property>
+            <cdmLabel>Repository Collection Guide</cdmLabel>
+            <cdm-dc-label>Relation-Is Referenced By</cdm-dc-label>
+            <dc>isReferencedBy</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>no</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <description>
+                <para>Enter the prefix “To view the Finding Aid for this collection see:” then the url for the appropriate finding aid.</para>
+            </description>
+            <descriptionCoObject/>
+            <descriptionCoItem/>
+        </property>
+        <property>
+            <cdmLabel>[Repository Collection Guide-Chinese]</cdmLabel>
+            <cdm-dc-label>Relation-Is Referenced By</cdm-dc-label>
+            <dc>isReferencedBy</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>no</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <description>
+                <para>Enter Repository Collection Guide information in Chinese language.</para>
+            </description>
+            <examples>
+                <para>To view the Finding Aid for this collection see: http://digital.lib.washington.edu/findingaids/permalink/ArensbergRose2122/</para>
+            </examples>
+            <descriptionCoObject/>
+            <descriptionCoItem/>
+            <admin>
+                <para>Undecided on the label for this field.</para>
+            </admin>
+        </property>
+        <property>
+            <cdmLabel>Digital Format</cdmLabel>
+            <cdm-dc-label>Format</cdm-dc-label>
+            <dc>format</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>yes</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <description>
+                <para>Enter the file format of the access copy.</para>
+                <para>Use media types listed at http://www.iana.org/assignments/media-types/index.html</para>
+            </description>
+            <examples>
+                <para>image/jpeg</para>
+            </examples>
+            <descriptionCoObject/>
+            <descriptionCoItem/>
+        </property>
+        <property>
+            <cdmLabel>[Digital Format-Chinese]</cdmLabel>
+            <cdm-dc-label>Format</cdm-dc-label>
+            <dc>format</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>yes</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <description>
+                <para>Enter Digital Format information in Chinese language.</para>
+            </description>
+            <examples>
+                <para>[None at present.]</para>
+            </examples>
+            <descriptionCoObject/>
+            <descriptionCoItem/>
+            <admin>
+                <para>Undecided on the label for this field.</para>
+            </admin>
+        </property>
+        <property>
+            <cdmLabel>Digital File Name</cdmLabel>
+            <cdm-dc-label>None</cdm-dc-label>
+            <dc>none</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>no</searchable>
+            <hidden>yes</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <description>
+                <para>File name for the resource(s) being described. Separate multiple values with a semi-colon</para>
+            </description>
+            <examples>
+                <para>05000A.wav</para>
+            </examples>
+            <descriptionCoObject/>
+            <descriptionCoItem/>
+        </property>
+        <property>
+            <cdmLabel>Original Format</cdmLabel>
+            <cdm-dc-label>Relation-Is Format Of</cdm-dc-label>
+            <dc>isFormatOf</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>no</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <description>
+                <para>???</para>
+            </description>
+            <examples>
+                <para>[None at present.]</para>
+            </examples>
+            <descriptionCoObject/>
+            <descriptionCoItem/>
+            <admin>
+                <para>Difficult for this collection! Are we describing here the rubbing itself or the thing rubbed? And does RDA 3.3.1.3 offer adequate terms for this?</para>
+            </admin>
+        </property>
+        <property>
+            <cdmLabel>[Original Format-Chinese]</cdmLabel>
+            <cdm-dc-label>Relation-Is Format Of</cdm-dc-label>
+            <dc>isFormatOf</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>no</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <description>
+                <para>???</para>
+            </description>
+            <examples>
+                <para>[None at present.]</para>
+            </examples>
+            <descriptionCoObject/>
+            <descriptionCoItem/>
+            <admin>
+                <para>Undecided on the label for this field.</para>
+            </admin>
+        </property>
+        <property>
+            <cdmLabel>Digital Reproduction Information</cdmLabel>
+            <cdm-dc-label>Description</cdm-dc-label>
+            <dc>description</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>no</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <description>
+                <para>Full description of formats and digitization, as applicable.</para>
+                <para>Describes the digital conversion process from analog to digital with details about file size, file format, software applications and equipment used to create and any processes used to change the file followed by the year in which these processes occurred.</para>
+            </description>
+            <examples>
+                <para>Photographed with digital camera (JPG image); processed using Photoshop (resized to 550 pixels, quality level 5, label added)</para>
+            </examples>
+            <descriptionCoObject/>
+            <descriptionCoItem/>
+        </property>
+        <property>
+            <cdmLabel>[Digital Reproduction Information-Chinese]</cdmLabel>
+            <cdm-dc-label>Description</cdm-dc-label>
+            <dc>description</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>no</searchable>
+            <hidden>no</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <description>
+                <para>Enter Digital Reproduction Information in Chinese language.</para>
+            </description>
+            <examples>
+                <para>[None at present.]</para>
+            </examples>
+            <descriptionCoObject/>
+            <descriptionCoItem/>
+            <admin>
+                <para>Undecided on the label for this field.</para>
+            </admin>
+        </property>
+        <property>
+            <cdmLabel>DCMI Type</cdmLabel>
+            <cdm-dc-label>Type</cdm-dc-label>
+            <dc>type</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>yes</searchable>
+            <hidden>no</hidden>
+            <required>yes</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <description>
+                <para>Enter appropriate name from DCMI Type vocabulary: http://dublincore.org/documents/dcmi-type-vocabulary</para>
+            </description>
+            <examples>
+                <para>Text</para>
+                <para> Sound</para>
+                <para> StillImage</para>
+                <para>  MovingImage</para>
+            </examples>
+            <descriptionCoObject/>
+            <descriptionCoItem/>
+        </property>
+        <property>
+            <cdmLabel>Staff Notes</cdmLabel>
+            <cdm-dc-label>None</cdm-dc-label>
+            <dc>none</dc>
+            <cdmDatatype>text</cdmDatatype>
+            <cdmLarge>no</cdmLarge>
+            <searchable>no</searchable>
+            <hidden>yes</hidden>
+            <required>no</required>
+            <cdmControlledVocab>no</cdmControlledVocab>
+            <description>
+                <para>Notes for staff only, notes of an administrative nature.</para>
+            </description>
+            <examples>
+                <para>Mr. Anderson is going to comment on this on December 2, 2047.</para>
+                <para>Erin: please re-do this JPEG.</para>
+            </examples>
+            <descriptionCoObject/>
+            <descriptionCoItem/>
+        </property>
+    </properties>
+</migDataDictionary>

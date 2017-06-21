@@ -1,0 +1,749 @@
+<html xmlns:mig="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries" xmlns:mig2="http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Alaska Yukon Pacific Exposition Photographs</title>
+      <link rel="stylesheet" href="style.css" type="text/css">
+   </head>
+   <body>
+      <h1>Alaska Yukon Pacific Exposition Photographs</h1>
+      <h3>Revised: 2017-02-22</h3>
+      <h3>Metadata Liaison: TBD</h3>
+      <table border="1">
+         <tr>
+            <th>#</th>
+            <th>CONTENTdm Collection Property</th>
+            <th>DC Equivalent</th>
+            <th>Searchable</th>
+            <th>Hidden</th>
+            <th>Required</th>
+            <th>Cdm Controlled Vocabulary</th>
+            <th>Definition</th>
+            <th>Input Instructions</th>
+            <th>Examples</th>
+            <th>Additional notes on this property</th>
+         </tr>
+         <tr>
+            <td>1</td>
+            <td>Title</td>
+            <td>title</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>
+               <p>A brief descriptive phrase that includes these elements, generally in this order:
+                  who, what, where, when. The Title is a concise sentence which will be used to label
+                  the thumbnails; it will also be the first line of the descriptive information. The
+                  Title may be the caption assigned by the photographer or the collector, or it may
+                  be created by Special Collections staff from the given caption and from additional
+                  sources. In the absence of any caption, the Title will be provided by Special Collections
+                  staff.
+               </p>
+            </td>
+            <td>
+               <p>If the caption provided by the photographer is adequate, place it in the Title field.
+                  Then, the Notes field should include this phrase: Title taken from photograph. If
+                  the caption provided by the photographer is inadequate, a created title should be
+                  placed in the Title field; the Notes field should then read: Caption on image: "Image
+                  title."
+               </p>
+               <p>If there is a series caption, it should be added, in the Notes field, in sequence
+                  after the title on the image: Caption on image: "Image title"; "Series title." There
+                  should also be a separate notation in the Notes field in the form: Part of Hegg series
+                  entitled: "Series title."
+               </p>
+            </td>
+            <td>
+               <p>Alger house, interior view of living room Seattle, Washington, 1955</p>
+               <p>Woman mushing wood, Chilkoot Trail, ca. 1898</p>
+            </td>
+            <td></td>
+         </tr>
+         <tr>
+            <td>2</td>
+            <td>Photographer</td>
+            <td>creator</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+            <td>no</td>
+            <td>
+               <p>The name of the photographer or firm associated with the creation of the image in
+                  hand. It should represent as closely as possible the creator’s name or the company’s
+                  name at the time of the creation of the image. Can be the same entry as in the Studio
+                  Name field. Includes both personal and corporate names.
+               </p>
+            </td>
+            <td>
+               <p>Input Lastname, Firstname for all personal names. Use LC Authority File for form of
+                  name, if available.
+               </p>
+            </td>
+            <td>
+               <p>Kinsey, Clark</p>
+               <p>Boyd and Braas</p>
+            </td>
+            <td></td>
+         </tr>
+         <tr>
+            <td>3</td>
+            <td>Date</td>
+            <td>created</td>
+            <td>no</td>
+            <td>no</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>
+               <p>A non-searchable text field. The date the original photograph was taken. In cases
+                  where a painting, engraving, or architectural drawing was photographed, the date the
+                  artwork was created.
+               </p>
+               <p>This field is used in combination with the Dates field to enable searching (see that
+                  entry for details). Specific dates (e.g., September 12, 1933; June 1912) are to be
+                  noted in the Notes field, and should also be incorporated in the Title field.
+               </p>
+            </td>
+            <td>
+               <p>If the date when the image in hand was produced is known, and is different from that
+                  of the original image, so note in the Notes field. The date should be a specific year.
+                  If the date is unknown, an attempt should be made to assign an approximate date, using
+                  the form "ca." (circa).
+               </p>
+            </td>
+            <td>
+               <p>ca. 1904</p>
+            </td>
+            <td></td>
+         </tr>
+         <tr>
+            <td>4</td>
+            <td>Dates</td>
+            <td>none</td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>
+               <p>Reflects the Date field. If the date is a single year, it is the same in both the
+                  Date and the Dates fields. If the date in the Date field is a "circa" date (e.g. ca.
+                  1895), the Dates field contains the expanded version so that searching will find dates
+                  covered by the concept of a "circa" date. Five years on either side of the "ca." date
+                  is the preferred form.
+               </p>
+            </td>
+            <td>
+               <p>If the Date field reads "ca. 1910" enter "1905, 1906, 1907, 1908, 1909, 1910, 1911,
+                  1912, 1913, 1914, 1915"
+               </p>
+            </td>
+            <td>
+               <p>1905, 1906, 1907, 1908, 1909, 1910, 1911, 1912, 1913, 1914, 1915</p>
+            </td>
+            <td></td>
+         </tr>
+         <tr>
+            <td>5</td>
+            <td>Earliest Date</td>
+            <td>none</td>
+            <td>no</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+            <td>
+               <p>Reflects the Date field, treating all Date values as date ranges. The value in this
+                  field is the earliest date in the date range.
+               </p>
+            </td>
+            <td>
+               <p>If the date is a single year, it is the same in both the Date and the Earliest Date
+                  fields.
+               </p>
+               <p>If the date in the Date field is a "circa" date (e.g. ca. 1895), the Earliest Date
+                  field contains the first date in the date range, in ISO 8601 format (YYYY, or YYYY-MM,
+                  or YYYY-MM-DD as needed).
+               </p>
+            </td>
+            <td>
+               <p>If the Date field = "1940," Earliest Date = "1940"</p>
+               <p>If the Date field = "ca. 1910," Earliest Date = "1905"</p>
+            </td>
+            <td>
+               <p>All values for this field should be ISO 8601 compliant.</p>
+            </td>
+         </tr>
+         <tr>
+            <td>6</td>
+            <td>Latest Date</td>
+            <td>none</td>
+            <td>no</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+            <td>
+               <p>Reflects the Date field, treating all Date values as date ranges. The value in this
+                  field is the latest date in the date range.
+               </p>
+            </td>
+            <td>
+               <p>If the date is a single year, it is the same in both the Date and the Latest Date
+                  fields.
+               </p>
+               <p>If the date in the Date field is a "circa" date (e.g. ca. 1895), the Latest Date field
+                  contains the last date in the date range, in ISO 8601 format (YYYY, or YYYY-MM, or
+                  YYYY-MM-DD as needed).
+               </p>
+            </td>
+            <td>
+               <p>If the Date field = "1940," Latest Date = "1940"</p>
+               <p>If the Date field = "ca. 1910," Latest Date = "1915"</p>
+            </td>
+            <td>
+               <p>All values for this field should be ISO 8601 compliant.</p>
+            </td>
+         </tr>
+         <tr>
+            <td>7</td>
+            <td>Notes</td>
+            <td>description</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+            <td>no</td>
+            <td>
+               <p>Notes can include any information of importance that is not represented elsewhere.</p>
+            </td>
+            <td>
+               <p>Each separate "note" should be a paragraph. Additional notes can be added, separated
+                  from the previous note using a blank line.
+               </p>
+            </td>
+            <td>
+               <p>Photographs taken by Asahel Curtis during his trip to the Klondike in 1897-1899.</p>
+               <p>Caption on image: Curtis 319.</p>
+               <p>Handwritten on verso: Mrs. McLain with dog team.</p>
+               <p>PH Coll 519.319</p>
+            </td>
+            <td>
+               <p></p>
+            </td>
+         </tr>
+         <tr>
+            <td>8</td>
+            <td>Subjects (LCTGM)</td>
+            <td>subject</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+            <td>yes</td>
+            <td>
+               <p>Terms in this field are taken from the LC Thesaurus for Graphic Materials.</p>
+            </td>
+            <td>
+               <p>Enter subject terms and phrases as a list, with no blank lines between terms.</p>
+            </td>
+            <td>
+               <p>Cities &amp; towns--Alaska</p>
+            </td>
+            <td>
+               <p></p>
+            </td>
+         </tr>
+         <tr>
+            <td>9</td>
+            <td>Subjects (LCSH)</td>
+            <td>subject</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+            <td>yes</td>
+            <td>
+               <p>Terms in this field are taken from the LC Subject Headings list (LCSH).</p>
+               <p>Use LCSH only when TGM has no appropriate term to describe the resource.</p>
+               <p></p>
+            </td>
+            <td>
+               <p>Enter subject terms and phrases as a list, with no blank lines between terms.</p>
+            </td>
+            <td>
+               <p>Markets—Washington (State)—Seattle</p>
+               <p>McGraw, John Harte, 1911- —Statues—Washington (State)—Seattle</p>
+               <p>Log buildings—Alaska—Fort Yukon</p>
+            </td>
+            <td>
+               <p></p>
+            </td>
+         </tr>
+         <tr>
+            <td>10</td>
+            <td>Location Depicted</td>
+            <td>spatial</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+            <td>yes</td>
+            <td>
+               <p>The spatial characteristics of the intellectual content of the resource. </p>
+               <p>Spatial coverage refers to a physical region.</p>
+               <p>Places names are derived from the LC Authority File.</p>
+            </td>
+            <td>
+               <p>Enter Country--State or Province--City.</p>
+            </td>
+            <td>
+               <p>United States--Washington (State)—Seattle</p>
+               <p>United States--Alaska—Fort Yukon</p>
+               <p>Canada—Yukon—Dawson </p>
+               <p>Croatia--Zagreb [use current form, even though Yugoslavia was the name when the photo
+                  was taken]
+               </p>
+               <p>Russia (Federation)--Leningradskaia oblast--Saint Petersburg [use current form, even
+                  though it was called Leningrad in Soviet Union, when photo was taken]
+               </p>
+            </td>
+            <td>
+               <p></p>
+            </td>
+         </tr>
+         <tr>
+            <td>11</td>
+            <td>Digital Collection</td>
+            <td>isPartOf</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>
+               <p>Name of the digital collection; may be the same name as the original repository collection.</p>
+            </td>
+            <td>
+               <p>Enter the name given to the digital collection.</p>
+            </td>
+            <td>
+               <p>Napoleonic Period Collection</p>
+               <p>Civil War Letters Collection</p>
+            </td>
+            <td>
+               <p></p>
+            </td>
+         </tr>
+         <tr>
+            <td>12</td>
+            <td>Order Number</td>
+            <td>identifier</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+            <td>no</td>
+            <td>
+               <p>Number that users can reference to order a copy of the digital image.</p>
+            </td>
+            <td>
+               <p>Enter the order number.</p>
+            </td>
+            <td>
+               <p>CVW051</p>
+               <p>COS321</p>
+            </td>
+            <td>
+               <p></p>
+            </td>
+         </tr>
+         <tr>
+            <td>13</td>
+            <td>Ordering Information</td>
+            <td>description</td>
+            <td>no</td>
+            <td>no</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>
+               <p>Instructions for ordering.</p>
+            </td>
+            <td>
+               <p>Enter the instructions for ordering. If the item cannot be ordered, state that it
+                  cannot be ordered.
+               </p>
+            </td>
+            <td>
+               <p>To order a reproduction, inquire about permissions, or for information about prices
+                  see:  http://www.lib.washington.edu/specialcollections/services/reproduction/reproduction.
+               </p>
+               <p>Please cite the Order Number.</p>
+            </td>
+            <td>
+               <p></p>
+            </td>
+         </tr>
+         <tr>
+            <td>14</td>
+            <td>Negative Number</td>
+            <td>identifier</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+            <td>no</td>
+            <td>
+               <p>The Negative number refers to the reproduction number assigned to the image for purposes
+                  of duplication. It is the unique number by which Special Collections identifies the
+                  image. It may be identical to another number in the record.
+               </p>
+            </td>
+            <td>
+               <p>Enter the negative number. If two negatives numbers are associated with an image,
+                  these are to be separated by a semicolon.
+               </p>
+            </td>
+            <td>
+               <p>UW12456</p>
+               <p>A. Curtis 2387</p>
+               <p>NA563; UW3476</p>
+               <p>La Roche 2056</p>
+            </td>
+            <td>
+               <p></p>
+            </td>
+         </tr>
+         <tr>
+            <td>15</td>
+            <td>Repository</td>
+            <td>source</td>
+            <td>no</td>
+            <td>no</td>
+            <td>no</td>
+            <td>no</td>
+            <td>
+               <p>The institution where the item is physically located.</p>
+            </td>
+            <td>
+               <p>Enter the name of the repository in which the original item is held.</p>
+            </td>
+            <td>
+               <p>University of Washington Libraries, Special Collections Division</p>
+               <p>Eastern Washington State Historical Society/Cheney Cowles</p>
+               <p>Museum Museum of History and Industry, Seattle</p>
+            </td>
+            <td>
+               <p></p>
+            </td>
+         </tr>
+         <tr>
+            <td>16</td>
+            <td>Repository Collection</td>
+            <td>isPartOf</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+            <td>no</td>
+            <td>
+               <p>This field contains the collection name and its number, represented as a phrase.</p>
+            </td>
+            <td>
+               <p>nput the name assigned by the holding repository to the original collection.</p>
+            </td>
+            <td>
+               <p>William E. Meed collection no. 246</p>
+            </td>
+            <td>
+               <p></p>
+            </td>
+         </tr>
+         <tr>
+            <td>17</td>
+            <td>Object Type</td>
+            <td>type</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+            <td>no</td>
+            <td>
+               <p>Denotes genre or type of material.</p>
+            </td>
+            <td>
+               <p>Input a term taken from the LC Thesaurus for Graphic Materials.</p>
+               <p>If more than one term is applicable, list the form of the item scanned first.</p>
+               <p>When describing a single resource, use the singular form of the term; when describing
+                  multiple resources, use the plural form of the term.
+               </p>
+               <p>Separate multiple values with a semi-colon and space.</p>
+            </td>
+            <td>
+               <p>Photograph</p>
+               <p>Lithograph</p>
+               <p>Typescript; Diary [typescript made from manuscript diary]</p>
+               <p>Negatives [a collection of negatives described as a collection]</p>
+            </td>
+            <td>
+               <p></p>
+            </td>
+         </tr>
+         <tr>
+            <td>18</td>
+            <td>Physical Description</td>
+            <td>format</td>
+            <td>no</td>
+            <td>no</td>
+            <td>no</td>
+            <td>no</td>
+            <td>
+               <p>Includes additional descriptive information about type of material or medium, color,
+                  and dimensions.
+               </p>
+            </td>
+            <td>
+               <p>Input a term taken from Graphic Materials: Rules for Describing Original Items and
+                  Historical Collections.
+               </p>
+            </td>
+            <td>
+               <p>Glass, b/w ; 6 1/2 x 8 1/2 in.</p>
+            </td>
+            <td>
+               <p></p>
+            </td>
+         </tr>
+         <tr>
+            <td>19</td>
+            <td>Digital Reproduction Information</td>
+            <td>format</td>
+            <td>no</td>
+            <td>no</td>
+            <td>no</td>
+            <td>no</td>
+            <td>
+               <p>Describes the digital conversion process, date scanned, etc.</p>
+            </td>
+            <td>
+               <p>Input a paragraph with pertinent information on the digital conversion process.</p>
+            </td>
+            <td>
+               <p>Scanned from a photographic print using a Microtek Scanmaker 9600XL at 72 dpi in JPEG
+                  format at compression rate 3.      10/1998.
+               </p>
+            </td>
+            <td>
+               <p></p>
+            </td>
+         </tr>
+         <tr>
+            <td>20</td>
+            <td>Studio Name</td>
+            <td>publisher</td>
+            <td>no</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+            <td>
+               <p>If the studio name/publisher of the photograph on hand is known, it is provided in
+                  the Studio Name field. This is often identical to the entry in the Photographer field.
+               </p>
+            </td>
+            <td>
+               <p>Input the name of the studio. </p>
+               <p>Input Lastname, Firstname for all personal names. Use LC Authority File for form of
+                  name, if available.
+               </p>
+            </td>
+            <td>
+               <p>[none]</p>
+            </td>
+            <td>
+               <p></p>
+            </td>
+         </tr>
+         <tr>
+            <td>21</td>
+            <td>Studio Location</td>
+            <td>none</td>
+            <td>no</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+            <td>
+               <p>If the city of publication in which the photographer/publisher worked at the time
+                  the image was printed is noted on the front of the photograph, or is known to the
+                  cataloger, it is provided in Studio Location field.
+               </p>
+            </td>
+            <td>
+               <p>Input in standard hierarchical form separated by a dash (equivalent to two hyphens).</p>
+               <p>If there is more than one studio location noted, separate them by semi-colons. </p>
+            </td>
+            <td>
+               <p>United States—Washington (State)—Seattle</p>
+               <p>Canada—Yukon Territory—Dawson</p>
+            </td>
+            <td>
+               <p></p>
+            </td>
+         </tr>
+         <tr>
+            <td>22</td>
+            <td>Photographer's Reference Number</td>
+            <td>identifier</td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+            <td>
+               <p>The Photographer's Reference Number along with the name of the photographer provides
+                  a unique identification for the image.
+               </p>
+            </td>
+            <td>
+               <p>Input along with photographer's name; usually linked with the entry in the Photographer
+                  field.
+               </p>
+            </td>
+            <td>
+               <p>Hegg 236</p>
+               <p>A. Curtis 23876</p>
+            </td>
+            <td>
+               <p></p>
+            </td>
+         </tr>
+         <tr>
+            <td>23</td>
+            <td>Contributor</td>
+            <td>contributor</td>
+            <td>no</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+            <td>
+               <p>A person or organization not specified in the Creator field or Photographer field
+                  who has made a significant contribution to the resource, but whose contribution is
+                  secondary to any person or organization specified in the Creator field.
+               </p>
+            </td>
+            <td>
+               <p>Input name of the contributor.</p>
+               <p>Use LC Authority File for form of name, if available.</p>
+               <p>Input Lastname, Firstname for all personal names.</p>
+            </td>
+            <td>
+               <p>University of Washington Libraries, Special Collections Division</p>
+            </td>
+            <td>
+               <p></p>
+            </td>
+         </tr>
+         <tr>
+            <td>24</td>
+            <td>Acquisition</td>
+            <td>none</td>
+            <td>no</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+            <td>
+               <p>Source and date of acquisition of the resource.</p>
+            </td>
+            <td>
+               <p>Input text describing the source and date of acquisition of the resource.</p>
+            </td>
+            <td>
+               <p>Purchased from Fairlook Antiques, Seattle, 1989</p>
+               <p>Gift of Aubrey Watzek, 1953; acc. no. 53-1634</p>
+            </td>
+            <td>
+               <p>Some collections have mysterious values for this property; for example, the only value
+                  for this property in ayp is "KK."
+               </p>
+            </td>
+         </tr>
+         <tr>
+            <td>25</td>
+            <td>Restrictions</td>
+            <td>rights</td>
+            <td>no</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+            <td>
+               <p>This field lists any restrictions on the use of an image.</p>
+            </td>
+            <td>
+               <p>Input the following text: "For information on permissions for use and reproductions
+                  please visit UW Libraries Special Collections "Reproductions: Order Photographs &amp;
+                  Scans" page: http://www.lib.washington.edu/specialcoll/service/reproduction.html."
+               </p>
+            </td>
+            <td>
+               <p>[none]</p>
+            </td>
+            <td>
+               <p></p>
+            </td>
+         </tr>
+         <tr>
+            <td>26</td>
+            <td>Type</td>
+            <td>type</td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>
+               <p>Describes the nature or genre of the content of the resource. </p>
+            </td>
+            <td>
+               <p>Input a value from the Dublin Core Type Vocabulary at http://dublincore.org/documents/dcmi-terms/.</p>
+            </td>
+            <td>
+               <p>SillImage</p>
+            </td>
+            <td>
+               <p></p>
+            </td>
+         </tr>
+         <tr>
+            <td>27</td>
+            <td>Institution</td>
+            <td>provenance</td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+            <td>
+               <p>[Uncertain]</p>
+            </td>
+            <td>
+               <p>[Uncertain]</p>
+            </td>
+            <td>
+               <p>[none]</p>
+            </td>
+            <td>
+               <p>Seems to be a DI/ITS admin field.</p>
+               <p>For use with CONTENTdm "facets?"</p>
+               <p>This is a misuse of the property; we should repair this property?</p>
+            </td>
+         </tr>
+         <tr>
+            <td>28</td>
+            <td>cataloging</td>
+            <td>none</td>
+            <td>yes</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+            <td>
+               <p>[Unknown.]</p>
+            </td>
+            <td>
+               <p>[Unknown.]</p>
+            </td>
+            <td>
+               <p>[none]</p>
+            </td>
+            <td>
+               <p>Unique to ayp?</p>
+               <p>Does not seem to output using Cdm export.</p>
+               <p>Did not appear in DI/ITS output when all collections were output.</p>
+               <p>Delete this property?</p>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

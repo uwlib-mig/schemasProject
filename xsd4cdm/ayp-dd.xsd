@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:mig="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries"
+    xmlns:mig2="http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <xs:element name="metadata">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="record" maxOccurs="unbounded" type="recordType"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="recordType">
+        <xs:sequence>
+            <xs:element name="Title" maxOccurs="unbounded" type="xs:string"/>
+            <xs:element name="Photographer" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+            <xs:element name="Date" maxOccurs="unbounded" type="xs:string"/>
+            <xs:element name="Dates" maxOccurs="unbounded">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="([0-9]{4}(\s|,)*([0-9]{4})*)+"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="EarliestDate" maxOccurs="unbounded">
+                <xs:simpleType>
+                    <xs:union memberTypes="xs:date xs:gYearMonth xs:gYear"/>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="LatestDate" maxOccurs="unbounded">
+                <xs:simpleType>
+                    <xs:union memberTypes="xs:date xs:gYearMonth xs:gYear"/>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="Notes" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+            <xs:element name="SubjectsLCTGM" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+            <xs:element name="SubjectsLCSH" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+            <xs:element name="LocationDepicted" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+            <xs:element name="DigitalCollection" maxOccurs="unbounded" type="xs:string"/>
+            <xs:element name="OrderNumber" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+            <xs:element name="OrderingInformation" maxOccurs="unbounded" type="xs:string"/>
+            <xs:element name="NegativeNumber" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+            <xs:element name="Repository" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+            <xs:element name="RepositoryCollection" minOccurs="0" maxOccurs="unbounded"
+                type="xs:string"/>
+            <xs:element name="ObjectType" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+            <xs:element name="PhysicalDescription" minOccurs="0" maxOccurs="unbounded"
+                type="xs:string"/>
+            <xs:element name="DigitalReproductionInformation" minOccurs="0" maxOccurs="unbounded"
+                type="xs:string"/>
+            <xs:element name="StudioName" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+            <xs:element name="StudioLocation" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+            <xs:element name="PhotographersReferenceNumber" minOccurs="0" maxOccurs="unbounded"
+                type="xs:string"/>
+            <xs:element name="Contributor" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+            <xs:element name="Acquisition" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+            <xs:element name="Restrictions" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+            <xs:element name="Type" maxOccurs="unbounded" type="xs:string"/>
+            <xs:element name="Institution" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+            <xs:element name="cataloging" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+            <xs:element name="ItemURL" maxOccurs="unbounded" type="xs:anyUri"/>
+            <xs:element name="cdmnumber" maxOccurs="unbounded" type="xs:integer"/>
+            <xs:element name="cdmfilename" maxOccurs="unbounded" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

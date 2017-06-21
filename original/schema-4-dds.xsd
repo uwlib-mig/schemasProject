@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    targetNamespace="http://faculty.washington.edu/tgis/xml/xsd"
+    xmlns="http://faculty.washington.edu/tgis/xml/xsd">
+
+    <!-- Note from TG, 2015-12-10: I attempted to make the default namespace
+    http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries
+    but that made my references to global types unusable, I'm not sure why.
+    This can be resolved at a future date; for no I've fallen back to noNamespace.
+    -->
+    
+    <!--
+       This schema needs mechanisms to map properties to RDF properties
+       for use in producing an ontology;
+       we will need a property to map to already existing web resources
+       anther to map to a nonexistent property, or indicate that a search should be done
+       and another when we establish a local web resource to serve as a property.
+    -->
+
+    <xs:annotation>
+        <xs:documentation> This is a schema to validate MIG data dictionaries. The MIG data
+            dictionaries were written to CONTENTdm collection configurations and metadata input. The
+            official version of those data dictionaries are posted at
+            http://www.lib.washington.edu/msd/pubcat/mig/datadicts. MIG maintains a source XML file
+            for selected data dictionaries (as of 2015-12-10), which is an XML file that can be
+            validated using this schema. </xs:documentation>
+    </xs:annotation>
+
+    <xs:element name="migDataDictionary" type="ddType"/>
+
+    <xs:complexType name="ddType">
+        <xs:sequence>
+            <xs:element name="ddName"/>
+            <xs:element name="ddPartOfProject"/>
+            <xs:element name="latestUpdate"/>
+            <xs:element name="metadataLiaisons">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="metadataLiaison" type="xs:string" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="cdmCo" type="yesNo"/>
+            <!-- Element for recording whether or not CONTENTdm compound objects are permitted -->
+            <xs:element name="standalone" type="yesNo"/>
+            <!-- Element for recording whether or not CONTENTdm compound objects are permitted -->
+            <!-- Needed to state whether standalone can co-exist with compound objects -->
+            <xs:element name="properties">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="property" type="propertyType" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="year" type="xs:gYear"/>
+        <xs:attribute name="id" type="xs:integer"/>
+    </xs:complexType>
+
+    <xs:complexType name="propertyType">
+        <xs:sequence>
+            <xs:element name="cdmLabel" type="xs:string"/>
+            <!-- Element for the custom CONTENTdm field name -->
+            <xs:element name="cdm-dc-label" type="cdm-qdc"/>
+            <!-- CONTENTdm's label for the equivalent Dublin Core field; usually slightly different than DCMI's label -->
+            <xs:element name="dc" type="dcterms"/>
+            <!-- DCMI's official label for the equivalent Dublin Core property -->
+            <xs:element name="cdmDatatype" type="cdmDatatype"/>
+            <!-- The data type for CONTENTdm -->
+            <xs:element name="cdmLarge" type="yesNo"/>
+            <!-- The CONTENTdm text box size as it will appear in the CONTENTdm Admon Module-->
+            <xs:element name="searchable" type="yesNo"/>
+            <!-- Element for recording whether or not value will be indexed by CONTENTdm -->
+            <xs:element name="hidden" type="yesNo"/>
+            <!-- Element for recording whether or not CONTNETdm will display the element/value to the public -->
+            <xs:element name="required" type="yesNo"/>
+            <!-- Element for recording whether or not element value is required  -->
+            <xs:element name="cdmControlledVocab" type="yesNo"/>
+            <!-- Element for recording whether or not element is a CONTENTdm controlled vocabulary, thus enabling phrase indexing  -->
+            <!-- THE FOLLOWING ARE NOT NEEDED:
+            <xs:element name="coObject" type="yesNo"/>
+            <xs:element name="coItem" type="yesNo"/>
+            <xs:element name="stand" type="yesNo"/>
+            -->
+            <xs:element name="description" type="para"/>
+            <!-- Element to describe a property used to describe a CONTENTdm standalone object (i.e. item described is ~not~ a compound object). -->
+            <!-- Required for all properties used to describe standalone objects. -->
+            <xs:element name="examples" type="para" minOccurs="0"/>
+            <!-- Element for providing examples of the use of a property describing a CONTENTdm standalone object. -->
+            <xs:element name="descriptionCoObject" type="para"/>
+            <!-- Element to describe a property used to describe a CONTENTdm compound object at the full object level. -->
+            <!-- Required for all properties used to describe CONTENTdm compound objects. -->
+            <xs:element name="examplesCoObject" type="para" minOccurs="0"/>
+            <!-- Element for providing examples of the use of a property describing a CONTENTdm compound object at the full object level. -->
+            <xs:element name="descriptionCoItem" type="para"/>
+            <!-- Element to describe a property used to describe a CONTENTdm compound object at the item or "page" level. -->
+            <!-- Required for all properties used to describe CONTENTdm compound objects. -->
+            <xs:element name="examplesCoItem" type="para" minOccurs="0"/>
+            <!-- Element for providing examples of the use of a property describing a CONTENTdm compound object at the item or "page" level. -->
+            <xs:element name="admin" type="para" minOccurs="0"/>
+            <!-- Element for recording staff-only information to help adminster the property -->
+            <xs:element name="generalNotes" type="para" minOccurs="0"/>
+            <!-- Element for recording staff-only information hat further describes the propery -->
+            <xs:element name="dcgMarcMapping" minOccurs="0"/>
+            <!-- Element for mapping the property to MARC -->
+            <xs:element name="marcNotes" minOccurs="0"/>
+            <!-- Element to describe difficulties in mapping the property to MARC -->
+        </xs:sequence>
+        <xs:attribute name="oid" type="xs:ID"/>
+        <xs:attribute name="iid" type="xs:integer"/>
+    </xs:complexType>
+
+    <xs:simpleType name="yesNo">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="yes"/>
+            <xs:enumeration value="no"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="cdmDatatype">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="text"/>
+            <xs:enumeration value="date"/>
+            <xs:enumeration value="fullText"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="para">
+        <xs:sequence>
+            <xs:element name="para" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="cdm-qdc">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Accrual Method"/>
+            <xs:enumeration value="Accrual Periodicity"/>
+            <xs:enumeration value="Accrual Policy"/>
+            <xs:enumeration value="Audience"/>
+            <xs:enumeration value="Audience-Education Level"/>
+            <xs:enumeration value="Audience-Mediator"/>
+            <xs:enumeration value="Contributors"/>
+            <xs:enumeration value="Coverage"/>
+            <xs:enumeration value="Coverage-Spatial"/>
+            <xs:enumeration value="Coverage-Temporal"/>
+            <xs:enumeration value="Creator"/>
+            <xs:enumeration value="Date"/>
+            <xs:enumeration value="Date-Accepted"/>
+            <xs:enumeration value="Date-Available"/>
+            <xs:enumeration value="Date-Copyrighted"/>
+            <xs:enumeration value="Date-Created"/>
+            <xs:enumeration value="Date-Issued"/>
+            <xs:enumeration value="Date-Modified"/>
+            <xs:enumeration value="Date-Submitted"/>
+            <xs:enumeration value="Date-Valid"/>
+            <xs:enumeration value="Description"/>
+            <xs:enumeration value="Description-Abstract"/>
+            <xs:enumeration value="Description-Table Of Contents"/>
+            <xs:enumeration value="Format"/>
+            <xs:enumeration value="Format-Extent"/>
+            <xs:enumeration value="Format-Medium"/>
+            <xs:enumeration value="Identifier"/>
+            <xs:enumeration value="Identifier-Bibliographic Citation"/>
+            <xs:enumeration value="Instructional Method"/>
+            <xs:enumeration value="Language"/>
+            <xs:enumeration value="None"/>
+            <xs:enumeration value="Provenance"/>
+            <xs:enumeration value="Publisher"/>
+            <xs:enumeration value="Relation"/>
+            <xs:enumeration value="Relation-Conforms To"/>
+            <xs:enumeration value="Relation-Has Format Of"/>
+            <xs:enumeration value="Relation-Has Part"/>
+            <xs:enumeration value="Relation-Has Version"/>
+            <xs:enumeration value="Relation-Is Format Of"/>
+            <xs:enumeration value="Relation-Is Part Of"/>
+            <xs:enumeration value="Relation-Is Referenced By"/>
+            <xs:enumeration value="Relation-Is Replaced By"/>
+            <xs:enumeration value="Relation-Is Required By"/>
+            <xs:enumeration value="Relation-Is Version Of"/>
+            <xs:enumeration value="Relation-References"/>
+            <xs:enumeration value="Relation-Replaces"/>
+            <xs:enumeration value="Relation-Requires"/>
+            <xs:enumeration value="Rights"/>
+            <xs:enumeration value="Rights-Access Rights"/>
+            <xs:enumeration value="Rights-License"/>
+            <xs:enumeration value="Rights-Rights Holder"/>
+            <xs:enumeration value="Source"/>
+            <xs:enumeration value="Subject"/>
+            <xs:enumeration value="Title"/>
+            <xs:enumeration value="Title-Alternative"/>
+            <xs:enumeration value="Type"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="dcterms">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="none"/>
+            <xs:enumeration value="abstract"/>
+            <xs:enumeration value="accessRights"/>
+            <xs:enumeration value="accrualMethod"/>
+            <xs:enumeration value="accrualPeriodicity"/>
+            <xs:enumeration value="accrualPolicy"/>
+            <xs:enumeration value="alternative"/>
+            <xs:enumeration value="audience"/>
+            <xs:enumeration value="available"/>
+            <xs:enumeration value="bibliographicCitation"/>
+            <xs:enumeration value="conformsTo"/>
+            <xs:enumeration value="contributor"/>
+            <xs:enumeration value="coverage"/>
+            <xs:enumeration value="created"/>
+            <xs:enumeration value="creator"/>
+            <xs:enumeration value="date"/>
+            <xs:enumeration value="dateAccepted"/>
+            <xs:enumeration value="dateCopyrighted"/>
+            <xs:enumeration value="dateSubmitted"/>
+            <xs:enumeration value="description"/>
+            <xs:enumeration value="educationLevel"/>
+            <xs:enumeration value="extent"/>
+            <xs:enumeration value="format"/>
+            <xs:enumeration value="hasFormat"/>
+            <xs:enumeration value="hasPart"/>
+            <xs:enumeration value="hasVersion"/>
+            <xs:enumeration value="identifier"/>
+            <xs:enumeration value="instructionalMethod"/>
+            <xs:enumeration value="isFormatOf"/>
+            <xs:enumeration value="isPartOf"/>
+            <xs:enumeration value="isReferencedBy"/>
+            <xs:enumeration value="isReplacedBy"/>
+            <xs:enumeration value="isRequiredBy"/>
+            <xs:enumeration value="issued"/>
+            <xs:enumeration value="isVersionOf"/>
+            <xs:enumeration value="language"/>
+            <xs:enumeration value="license"/>
+            <xs:enumeration value="mediator"/>
+            <xs:enumeration value="medium"/>
+            <xs:enumeration value="modified"/>
+            <xs:enumeration value="provenance"/>
+            <xs:enumeration value="publisher"/>
+            <xs:enumeration value="references"/>
+            <xs:enumeration value="relation"/>
+            <xs:enumeration value="replaces"/>
+            <xs:enumeration value="requires"/>
+            <xs:enumeration value="rights"/>
+            <xs:enumeration value="rightsHolder"/>
+            <xs:enumeration value="source"/>
+            <xs:enumeration value="spatial"/>
+            <xs:enumeration value="subject"/>
+            <xs:enumeration value="tableOfContents"/>
+            <xs:enumeration value="temporal"/>
+            <xs:enumeration value="title"/>
+            <xs:enumeration value="type"/>
+            <xs:enumeration value="valid"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

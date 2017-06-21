@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:props="http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/"
+    targetNamespace="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries"
+    xmlns="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries">
+
+    <xs:import namespace="http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/"
+         schemaLocation="schema-4-properties-0.1.xsd"/>
+
+    <!-- Note from TG, 2015-12-10: I attempted to make the default namespace
+    http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries
+    but that made my references to global types unusable, I'm not sure why.
+    This can be resolved at a future date; for now I've fallen back to noNamespace.
+    -->
+
+    <xs:annotation>
+        <xs:documentation> This is a schema to validate MIG data dictionaries. The MIG data
+            dictionaries were written to guide CONTENTdm collection configurations and metadata input. The
+            official version of those data dictionaries are posted at
+            http://www.lib.washington.edu/msd/pubcat/mig/datadicts. MIG maintains a source XML file
+            for selected data dictionaries (as of 2015-12-10), which is an XML file that can be
+            validated using this schema. </xs:documentation>
+    </xs:annotation>
+
+    <xs:element name="migDataDictionary" type="ddType"/>
+
+    <xs:complexType name="ddType">
+        <xs:sequence>
+            <xs:element name="ddName"/>
+            <xs:element name="ddPartOfProject"/>
+            <xs:element name="originalCreationDate"/>
+            <xs:element name="latestUpdate"/>
+            <xs:element name="metadataLiaisons">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="metadataLiaison" type="xs:string" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="cdmCo" type="props:yesNo">
+                <xs:annotation>
+                    <xs:documentation>Element for recording whether or not CONTENTdm compound objects are permitted.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="standalone" type="props:yesNo">
+                <xs:annotation>
+                    <xs:documentation>Element for recording whether or not CONTENTdm compound objects are permitted. Needed to state whether standalone can co-exist with compound objects.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="properties"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:integer" use="required"/>
+    </xs:complexType>
+</xs:schema>
