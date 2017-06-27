@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<migDataDictionary id="0002" xmlns="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries"
+    xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/schema-4-dds-v0.3.xsd">
+    <ddName>Moden Photographers Collection</ddName>
+    <ddPartOfProject/>
+    <originalCreationDate>2017-06-22</originalCreationDate>
+    <latestUpdate>2017-06-22</latestUpdate>
+    <metadataLiaisons>
+        <metadataLiaison>TBD</metadataLiaison>
+    </metadataLiaisons>
+    <cdmCo>no</cdmCo>
+    <standalone>yes</standalone>
+    <properties>
+        <xi:include href="../../properties-files/title.xml"/>
+        <xi:include href="../../properties-files/photographer.xml"/>
+        <xi:include href="../../properties-files/dateEdtf.xml"/>
+        <xi:include href="../../properties-files/date.xml"/>
+        <xi:include href="../../properties-files/dates.xml"/>
+        <xi:include href="../../properties-files/historicalNotes.xml"/>
+        <xi:include href="../../properties-files/notes.xml"/>
+        <xi:include href="../../properties-files/subjectsLctgm.xml"/>
+        <xi:include href="../../properties-files/subjectsLcsh.xml"/>
+        <xi:include href="../../properties-files/locationDepicted.xml"/>
+        <xi:include href="../../properties-files/digitalCollection.xml"/>
+        <xi:include href="../../properties-files/orderNumber.xml"/>
+        <xi:include href="../../properties-files/orderingInformation.xml"/>
+        <xi:include href="../../properties-files/citationInformation.xml"/>
+        <xi:include href="../../properties-files/negativeNumber.xml"/>
+        <xi:include href="../../properties-files/repository.xml"/>
+        <xi:include href="../../properties-files/repositoryCollection.xml"/>
+        <xi:include href="../../properties-files/repositoryCollectionGuide.xml"/>
+        <xi:include href="../../properties-files/objectType.xml"/>
+        <xi:include href="../../properties-files/physicalDescription.xml"/>
+        <xi:include href="../../properties-files/staffNotes.xml"/>
+        <xi:include href="../../properties-files/digitalReproductionInformation.xml"/>
+        <xi:include href="../../properties-files/studioLocation.xml"/>
+        <xi:include href="../../properties-files/originalCreator.xml"/>
+        <xi:include href="../../properties-files/studioName.xml"/>
+        <xi:include href="../../properties-files/contributor.xml"/>
+        <xi:include href="../../properties-files/acquisition.xml"/>
+        <xi:include href="../../properties-files/restrictions.xml"/>
+        <xi:include href="../../properties-files/rightsUri.xml"/>
+        <xi:include href="../../properties-files/type.xml"/>
+        <xi:include href="../../properties-files/photographersReferenceNumber.xml"/>
+        <xi:include href="../../properties-files/review.xml"/>
+        <xi:include href="../../properties-files/institution.xml"/>
+        <xi:include href="../../properties-files/cataloging.xml"/>
+        <xi:include href="../../properties-files/itemUrl.xml"/>
+        <xi:include href="../../properties-files/oclcNumber.xml"/>
+        <xi:include href="../../properties-files/dateCreated.xml"/>
+        <xi:include href="../../properties-files/dateModified.xml"/>
+        <xi:include href="../../properties-files/cdmNumber.xml"/>
+        <xi:include href="../../properties-files/cdmFilename.xml"/>
+        <xi:include href="../../properties-files/cdmFilePath.xml"/>
+    </properties>
+</migDataDictionary>
