@@ -7,7 +7,7 @@
         <dc>none</dc>
     </labels>
     <cdm>
-        <label>cataloging</label>
+        <label>Cataloging</label>
         <cdmDatatype>text</cdmDatatype>
         <cdmLarge>no</cdmLarge>
         <searchable>yes</searchable>

@@ -13,7 +13,7 @@
         <searchable>yes</searchable>
         <hidden>no</hidden>
         <required>yes</required>
-        <cdmControlledVocab>yes</cdmControlledVocab>
+        <cdmControlledVocab>no</cdmControlledVocab>
     </cdm>
     <dspace>
         <dspaceProperty/>

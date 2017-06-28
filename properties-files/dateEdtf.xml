@@ -56,9 +56,11 @@
         </marcNotes>
     </marc>
     <xsd>
-        <typeAttribute>xs:string</typeAttribute>
-        <complexType/>
-        
+       <simpleType>
+           <xs:restriction base="xs:string">
+               <xs:minLength value="1"/>
+           </xs:restriction>
+       </simpleType>
     </xsd>
     <rdf>
         <sameAs/>

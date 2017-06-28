@@ -2,7 +2,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:mig="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries"
-    xmlns:mig2="http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/"
+    xmlns:mig2="http://faculty.washington.edu/tgis/schemasProject/xsd4md/"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0">
 
     <xsl:template match="/">
