@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:props="http://faculty.washington.edu/tgis/schemasProject/xsd4md/"
+    xmlns:props="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
     targetNamespace="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries"
     xmlns="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries">
 
-    <xs:import namespace="http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/"
+    <xs:import namespace="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
          schemaLocation="schema-4-properties-0.1.xsd"/>
 
     <!-- Note from TG, 2015-12-10: I attempted to make the default namespace
