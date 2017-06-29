@@ -261,6 +261,7 @@
         </xs:attribute>
     </xs:complexType>
 
+    <!-- below global attribute does not seem necessary
     <xs:attribute name="co">
         <xs:simpleType>
             <xs:restriction base="xs:string">
@@ -273,6 +274,7 @@
             </xs:restriction>
         </xs:simpleType>
     </xs:attribute>
+    -->
 
     <xs:element name="customization" type="custParaType"/>
 
