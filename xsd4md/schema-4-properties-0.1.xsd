@@ -70,8 +70,8 @@
 
     <xs:complexType name="descriptionsType">
         <xs:sequence>
-            <xs:element name="definition" type="paraType4co" maxOccurs="unbounded"/>
-            <xs:element name="instructions" type="paraType4co"/>
+            <xs:element name="definition" type="paraType" maxOccurs="unbounded"/>
+            <xs:element name="instructions" type="paraType4co" maxOccurs="unbounded"/>
             <xs:element ref="customization" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
@@ -89,8 +89,13 @@
      further assistance "understanding" the metadata: "generalNotes"-->
     <xs:complexType name="additionalInfoType">
         <xs:sequence>
-            <xs:element name="admin" type="paraType" minOccurs="0"/>
-            <xs:element name="generalNotes" type="paraType" minOccurs="0"/>
+            <!-- Originally thought 2 elements needed in this sequence;
+                 as work progressed, it seemed one was better;
+                 recommended: do not use <admin>, use <generalNotes> ;
+                 both will be retained to validate legacy data;
+                 XSLTs should output both elements as if they were the same-->
+            <xs:element name="admin" type="paraType4co" minOccurs="0"/>
+            <xs:element name="generalNotes" type="paraType4co" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
 
@@ -149,7 +154,11 @@
                     <xs:sequence>
                         <xs:element name="change">
                             <xs:complexType>
-                                <xs:attribute name="date" type="xs:date"/>
+                                <xs:simpleContent>
+                                    <xs:extension base="xs:string">
+                                        <xs:attribute name="date" type="xs:date"></xs:attribute>
+                                    </xs:extension>
+                                </xs:simpleContent>
                             </xs:complexType>
                         </xs:element>
                     </xs:sequence>
@@ -251,10 +260,13 @@
                     <xs:enumeration value="no"/>
                     <xs:enumeration value="object"/>
                     <xs:enumeration value="item"/>
+                <!-- the following 4 types of COs eliminated 2017-06-29;
+                     we may want them for generalNotes however:
                     <xs:enumeration value="objectAndStandalone"/>
                     <xs:enumeration value="itemAndStandalone/"/>
                     <xs:enumeration value="coAll"/>
                     <xs:enumeration value="all"/>
+                 -->
                     <xs:enumeration value="agnostic"/>
                 </xs:restriction>
             </xs:simpleType>
