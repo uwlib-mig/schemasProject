@@ -260,13 +260,12 @@
                     <xs:enumeration value="no"/>
                     <xs:enumeration value="object"/>
                     <xs:enumeration value="item"/>
-                <!-- the following 4 types of COs eliminated 2017-06-29;
+                <!-- the following 3 types of COs eliminated 2017-06-29;
                      we may want them for generalNotes however:
                     <xs:enumeration value="objectAndStandalone"/>
                     <xs:enumeration value="itemAndStandalone/"/>
-                    <xs:enumeration value="coAll"/>
+                    <xs:enumeration value="coAll"/>-->
                     <xs:enumeration value="all"/>
-                 -->
                     <xs:enumeration value="agnostic"/>
                 </xs:restriction>
             </xs:simpleType>
