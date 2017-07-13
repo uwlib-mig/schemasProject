@@ -1,7 +1,7 @@
-<property xmlns="http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/"
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xsi:schemaLocation="http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/ http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/schema-4-properties-0.1.xsd">
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties-0.1.xsd">
     <labels>
         <platformIndependent>orderNumber</platformIndependent>
         <dc>identifier</dc>
@@ -19,36 +19,27 @@
         <dspaceProperty/>
     </dspace>
     <descriptions>
-        <definition co="no">
+        <definition>
             <para>Number that users can reference to order a copy of the digital image.</para>
         </definition>
         <instructions co="no">
             <para>Enter the order number.</para>
         </instructions>
-        
+        <instructions co="object">
+            <para>Enter the order number.</para>
+        </instructions>
     </descriptions>
     <examples>
         <example co="no">
             <para>CVW051</para>
             <para>COS321</para>
         </example>
-        
-        <!-- customization here is flawed.
-             I think we need
-             <customizations>
-                 <description | example>
-                     <para @co @dd @paraDec @paraEx> REPEATABLE
-                         <para>
-        -->
-        
+        <example co="object">
+            <para>CVW051</para>
+            <para>COS321</para>
+        </example>
     </examples>
     <additionalInfo>
-        <admin>
-            <para/>
-        </admin>
-        <generalNotes>
-            <para/>
-        </generalNotes>
     </additionalInfo>
     <marc>
         <dcgMarcMapping/>
@@ -75,7 +66,7 @@
         <created4Coll>Special Collections Photograph Collections</created4Coll>
         <justification>Special Collections wants a identifier for the image in CONTENTdm</justification>
         <changeLog>
-            <change/>
+            <change date="2017-06-30">Added CO info</change>
         </changeLog>
     </history>
 </property>

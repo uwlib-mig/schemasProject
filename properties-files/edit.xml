@@ -1,0 +1,71 @@
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties-0.1.xsd">
+    <labels>
+        <platformIndependent>edit</platformIndependent>
+        <dc>none</dc>
+    </labels>
+    <cdm>
+        <label>Edit</label>
+        <cdmDatatype>text</cdmDatatype>
+        <cdmLarge>no</cdmLarge>
+        <searchable>yes</searchable>
+        <hidden>yes</hidden>
+        <required>no</required>
+        <cdmControlledVocab>no</cdmControlledVocab>
+    </cdm>
+    <dspace>
+        <dspaceProperty/>
+    </dspace>
+    <descriptions>
+        <definition>
+            <para>Code or initials denoting "edit" status.</para>
+        </definition>
+        <instructions co="object">
+            <para>Enter appropriate initials or code.</para>
+        </instructions>
+        <instructions co="no">
+            <para>Enter appropriate initials or code.</para>
+        </instructions>
+    </descriptions>
+    <examples>
+        <example co="object">
+            <para>jr</para>
+            <para>WN</para>
+        </example>
+        <example co="no">
+        <para>jr</para>
+        <para>WN</para>
+        </example>
+    </examples>
+    <additionalInfo>
+        <admin co="all">
+            <para>This property has an unknown purpose and unknown origin (TG, 2017-07-04).</para>
+            <para>Property found only in compound objects of the collections "Civil War Letters."</para>
+        </admin>
+    </additionalInfo>
+    <marc>
+        <dcgMarcMapping/>
+        <marcNotes>
+            <para/>
+        </marcNotes>
+    </marc>
+    <xsd>
+        <typeAttribute>xs:string</typeAttribute>
+        <complexType/>
+    </xsd>
+    <rdf>
+        <sameAs/>
+    </rdf>
+    <history>
+        <dateCreated>
+            <single>2017-07-04</single>
+        </dateCreated>
+        <created4Coll>Civil War Letters</created4Coll>
+        <justification>Unknown.</justification>
+        <changeLog>
+            <change/>
+        </changeLog>
+    </history>
+</property>

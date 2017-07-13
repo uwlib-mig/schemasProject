@@ -1,7 +1,7 @@
-<property xmlns="http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/"
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xsi:schemaLocation="http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/ http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/schema-4-properties-0.1.xsd">
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties-0.1.xsd">
     <labels>
         <platformIndependent>type</platformIndependent>
         <dc>type</dc>
@@ -11,7 +11,7 @@
         <cdmDatatype>text</cdmDatatype>
         <cdmLarge>no</cdmLarge>
         <searchable>yes</searchable>
-        <hidden>yes</hidden>
+        <hidden>no</hidden>
         <required>yes</required>
         <cdmControlledVocab>no</cdmControlledVocab>
     </cdm>
@@ -19,36 +19,31 @@
         <dspaceProperty/>
     </dspace>
     <descriptions>
-        <definition co="no">
-            <para>Describes the nature or genre of the content of the resource. </para>
+        <definition>
+            <para>Describes the nature or genre of the content of the resource.</para>
         </definition>
         <instructions co="no">
             <para>Input a value from the Dublin Core Type Vocabulary at http://dublincore.org/documents/dcmi-terms/.</para>
         </instructions>
-        
+        <instructions co="object">
+            <para>Input a value from the Dublin Core Type Vocabulary at http://dublincore.org/documents/dcmi-terms/.</para>
+        </instructions>
+        <instructions co="item">
+            <para>Input a value from the Dublin Core Type Vocabulary at http://dublincore.org/documents/dcmi-terms/.</para>
+        </instructions>
     </descriptions>
     <examples>
         <example co="no">
             <para>SillImage</para>
         </example>
-        
-        <!-- customization here is flawed.
-             I think we need
-             <customizations>
-                 <description | example>
-                     <para @co @dd @paraDec @paraEx> REPEATABLE
-                         <para>
-        -->
-        
+        <example co="object">
+            <para>SillImage</para>
+        </example>
+        <example co="item">
+            <para>SillImage</para>
+        </example>
     </examples>
-    <additionalInfo>
-        <admin>
-            <para/>
-        </admin>
-        <generalNotes>
-            <para/>
-        </generalNotes>
-    </additionalInfo>
+    <additionalInfo/>
     <marc>
         <dcgMarcMapping/>
         <marcNotes>
@@ -56,9 +51,11 @@
         </marcNotes>
     </marc>
     <xsd>
-        <typeAttribute>xs:string</typeAttribute>
-        <complexType/>
-        
+        <simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="1"/>
+            </xs:restriction>
+        </simpleType>
     </xsd>
     <rdf>
         <sameAs/>
@@ -74,7 +71,7 @@
         <created4Coll>Special Collections Photograph Collections</created4Coll>
         <justification>Special Collections wanted to be able to collocate theie digital images using the DCMI Type Vocabulary, so we created this property.</justification>
         <changeLog>
-            <change/>
+            <change date="2017-07-03">Added CO info.</change>
         </changeLog>
     </history>
 </property>

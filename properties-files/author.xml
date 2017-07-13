@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties-0.1.xsd">
+    <labels>
+        <platformIndependent>author</platformIndependent>
+        <dc>creator</dc>
+    </labels>
+    <cdm>
+        <label>Author</label>
+        <cdmDatatype>text</cdmDatatype>
+        <cdmLarge>no</cdmLarge>
+        <searchable>yes</searchable>
+        <hidden>no</hidden>
+        <required>no</required>
+        <cdmControlledVocab>no</cdmControlledVocab>
+    </cdm>
+    <dspace>
+        <dspaceProperty/>
+    </dspace>
+    <descriptions>
+        <definition>
+            <para>The person or the corporate body responsible for the textual content.</para>
+        </definition>
+        <instructions co="no">
+            <para>Input lastname, firstname or the corporate body name.</para>
+            <para>Use LC Authority File for form of name, if available.</para>
+            <para>Multiple names are okay; separate multiple names with a semi-colon.</para>
+            <para>If the Creator is determined from a resource other than the item, create a Note.</para>
+            <para>If there is no author, leave the field blank.</para>
+        </instructions>
+        <instructions co="object">
+            <para>Input lastname, firstname or the corporate body name.</para>
+            <para>Use LC Authority File for form of name, if available.</para>
+            <para>Multiple names are okay; separate multiple names with a semi-colon.</para>
+            <para>If the Creator is determined from a resource other than the item, create a Note.</para>
+            <para>If there is no author, leave the field blank.</para>
+        </instructions>
+    </descriptions>
+    <examples>
+        <example co="all">
+            <para>Strong, Lyman W.</para>
+        </example>
+    </examples>
+    <additionalInfo/>
+    <marc>
+        <dcgMarcMapping/>
+        <marcNotes/>
+    </marc>
+    <xsd>
+        <typeAttribute>xs:string</typeAttribute>
+        <complexType/>
+    </xsd>
+    <rdf>
+        <sameAs/>
+    </rdf>
+    <history>
+        <dateCreated>
+            <range>
+                <start>2000-01-01</start>
+                <end>2017-06-29</end>
+            </range>
+        </dateCreated>
+        <created4Coll>Special Collections Civil War Letters Collection, and Special Collections Pamphlet and Textul Collection</created4Coll>
+        <justification>Wanted a way to distinguish authors of text.</justification>
+       <changeLog>
+           <change/>
+       </changeLog>
+    </history>
+</property>

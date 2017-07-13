@@ -1,0 +1,64 @@
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties-0.1.xsd">
+    <labels>
+        <platformIndependent>transcript</platformIndependent>
+        <dc>description</dc>
+    </labels>
+    <cdm>
+        <label>Transcript</label>
+        <cdmDatatype>fullText</cdmDatatype>
+        <cdmLarge>yes</cdmLarge>
+        <searchable>yes</searchable>
+        <hidden>no</hidden>
+        <required>no</required>
+        <cdmControlledVocab>no</cdmControlledVocab>
+    </cdm>
+    <dspace>
+        <dspaceProperty/>
+    </dspace>
+    <descriptions>
+        <definition>
+            <para>Full text contained in the resource.</para>
+        </definition>
+        <instructions co="item">
+            <para>Enter the text as it appears in the resource.</para>
+        </instructions>
+    </descriptions>
+    <examples>
+        <example co="item">
+            <para>At a meeting of the officers and employes [sic] of the Coast Survey Office, held on the 12st inst, to give expression to their sense of the loss sustained by the death of Brig. Gen. I.I. Stevens, U.S. Volunteers, who had long filled an important position in the work, the following address prepared by Prof. Bache, who is absent from the City, was read, and the subjoined resolution passed.</para>
+        </example>
+    </examples>
+    <additionalInfo>
+    </additionalInfo>
+    <marc>
+        <dcgMarcMapping/>
+        <marcNotes>
+            <para/>
+        </marcNotes>
+    </marc>
+    <xsd>
+        <typeAttribute>xs:string</typeAttribute>
+        <complexType/>
+        
+    </xsd>
+    <rdf>
+        <sameAs/>
+    </rdf>
+    <history>
+        <dateCreated>
+            
+            <range>
+                <start>2000-01-01</start>
+                <end>2017-06-30</end>
+            </range>
+        </dateCreated>
+        <created4Coll>Special Collections Photograph Collections</created4Coll>
+        <justification>Needed a place to enter all "other" information valuable to the description of the resource.</justification>
+        <changeLog>
+            <change/>
+        </changeLog>
+    </history>
+</property>

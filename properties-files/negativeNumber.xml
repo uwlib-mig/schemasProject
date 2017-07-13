@@ -1,7 +1,7 @@
-<property xmlns="http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/"
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xsi:schemaLocation="http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/ http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/schema-4-properties-0.1.xsd">
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties-0.1.xsd">
     <labels>
         <platformIndependent>negativeNumber</platformIndependent>
         <dc>identifier</dc>
@@ -19,13 +19,12 @@
         <dspaceProperty/>
     </dspace>
     <descriptions>
-        <definition co="no">
+        <definition>
             <para>The Negative number refers to the reproduction number assigned to the image for purposes of duplication. It is the unique number by which Special Collections identifies the image. It may be identical to another number in the record.</para>
         </definition>
         <instructions co="no">
             <para>Enter the negative number. If two negatives numbers are associated with an image, these are to be separated by a semicolon.</para>
         </instructions>
-        
     </descriptions>
     <examples>
         <example co="no">
@@ -45,12 +44,6 @@
         
     </examples>
     <additionalInfo>
-        <admin>
-            <para/>
-        </admin>
-        <generalNotes>
-            <para/>
-        </generalNotes>
     </additionalInfo>
     <marc>
         <dcgMarcMapping/>

@@ -1,7 +1,7 @@
-<property xmlns="http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/"
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xsi:schemaLocation="http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/ http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/schema-4-properties-0.1.xsd">
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties-0.1.xsd">
     <labels>
         <platformIndependent>rightsUri</platformIndependent>
         <dc>rights</dc>
@@ -11,7 +11,7 @@
         <cdmDatatype>text</cdmDatatype>
         <cdmLarge>no</cdmLarge>
         <searchable>no</searchable>
-        <hidden>yes</hidden>
+        <hidden>no</hidden>
         <required>yes</required>
         <cdmControlledVocab>no</cdmControlledVocab>
     </cdm>
@@ -19,36 +19,39 @@
         <dspaceProperty/>
     </dspace>
     <descriptions>
-        <definition co="no">
+        <definition>
             <para>URI that dereferences to a rights statement.</para>
         </definition>
         <instructions co="no">
+            <para>Enter a rights statement from rightsstatements.org.</para>
             <para>For items with a date later than 1922, enter http://rightsstatements.org/vocab/InC/1.0/ ("In Copyright"); for all else enter http://rightsstatements.org/vocab/CNE/1.0/ ("Copyright Not Evaluated.")</para>
         </instructions>
-        
+        <instructions co="object">
+            <para>Enter a rights statement from rightsstatements.org that pertains to the entire object.</para>
+            <para>If all items have a date later than 1922, enter http://rightsstatements.org/vocab/InC/1.0/ ("In Copyright"); for all else enter http://rightsstatements.org/vocab/CNE/1.0/ ("Copyright Not Evaluated.")</para>
+        </instructions>
+        <instructions co="item">
+            <para>Enter a rights statement from rightsstatements.org.</para>
+            <para>For items with a date later than 1922, enter http://rightsstatements.org/vocab/InC/1.0/ ("In Copyright"); for all else enter http://rightsstatements.org/vocab/CNE/1.0/ ("Copyright Not Evaluated.")</para>
+        </instructions>
     </descriptions>
     <examples>
         <example co="no">
             <para>http://rightsstatements.org/vocab/CNE/1.0/</para>
             <para>http://rightsstatements.org/vocab/InC/1.0/</para>
         </example>
-        
-        <!-- customization here is flawed.
-             I think we need
-             <customizations>
-                 <description | example>
-                     <para @co @dd @paraDec @paraEx> REPEATABLE
-                         <para>
-        -->
-        
+        <example co="object">
+            <para>http://rightsstatements.org/vocab/CNE/1.0/</para>
+            <para>http://rightsstatements.org/vocab/InC/1.0/</para>
+        </example>
+        <example co="item">
+            <para>http://rightsstatements.org/vocab/CNE/1.0/</para>
+            <para>http://rightsstatements.org/vocab/InC/1.0/</para>
+        </example>
     </examples>
     <additionalInfo>
-        <admin>
-            <para>Decision made by Special Collections for all Special Collections items.</para>
-            <para>Value should be a URI from rightsstatements.org</para>
-        </admin>
-        <generalNotes>
-            <para/>
+        <generalNotes co="all">
+            <para>Decision made by Special Collections in 2017 for all Special Collections items.</para>
         </generalNotes>
     </additionalInfo>
     <marc>
@@ -58,22 +61,23 @@
         </marcNotes>
     </marc>
     <xsd>
-        <typeAttribute>xs:anyURI</typeAttribute>
-        <complexType/>
-        
+        <simpleType>
+            <xs:restriction base="xs:anyURI">
+                <xs:minLength value="1"/>
+            </xs:restriction>
+        </simpleType>
     </xsd>
     <rdf>
         <sameAs/>
     </rdf>
     <history>
         <dateCreated>
-            <single>2017-03-30</single>
-            
+            <single>2017-03-30</single>    
         </dateCreated>
         <created4Coll>All collections, Special Collections</created4Coll>
-        <justification>Wanted a machine-actionable rights statement, and the property allows us to be compliant with Orbis Cascade Alliance Dublin Core Best Practices</justification>
+        <justification>Wanted a machine-actionable rights statement, and the property allows us to be compliant with Orbis Cascade Alliance Dublin Core Best Practices at first experimental harvest in June 2017.</justification>
         <changeLog>
-            <change/>
+            <change date="2017-07-03">Added CO info.</change>
         </changeLog>
     </history>
 </property>

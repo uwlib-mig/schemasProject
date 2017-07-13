@@ -1,4 +1,7 @@
-<property xmlns="http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/ http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/schema-4-properties-0.1.xsd">
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties-0.1.xsd">
     <labels>
         <platformIndependent>earliestDate</platformIndependent>
         <dc>none</dc>
@@ -21,16 +24,16 @@
         </definition>
         <instructions co="no">
             <para>If the date is a single year, it is the same in both the Date and the Earliest Date fields.</para>
-                <para>If the date in the Date field is a "circa" date (e.g. ca. 1895), the Earliest Date field contains the first date in the date range, in ISO 8601 format (YYYY, or YYYY-MM, or YYYY-MM-DD as needed).</para>
+            <para>If the date in the Date field is a "circa" date (e.g. ca. 1895), the Earliest Date field contains the first date in the date range, in ISO 8601 format (YYYY, or YYYY-MM, or YYYY-MM-DD as needed).</para>
         </instructions>
-        
+
     </descriptions>
     <examples>
         <example co="no">
             <para>If the Date field = "1940," Earliest Date = "1940"</para>
             <para>If the Date field = "ca. 1910," Earliest Date = "1905"</para>
         </example>
-        
+
         <!-- customization here is flawed.
              I think we need
              <customizations>
@@ -38,7 +41,7 @@
                      <para @co @dd @paraDec @paraEx> REPEATABLE
                          <para>
         -->
-        
+
     </examples>
     <additionalInfo>
         <admin>

@@ -1,7 +1,7 @@
-<property xmlns="http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/"
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xsi:schemaLocation="http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/ http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/schema-4-properties-0.1.xsd">
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties-0.1.xsd">
     <labels>
         <platformIndependent>locationDepicted</platformIndependent>
         <dc>spatial</dc>
@@ -19,15 +19,18 @@
         <dspaceProperty/>
     </dspace>
     <descriptions>
-        <definition co="no">
+        <definition>
             <para>The spatial characteristics of the intellectual content of the resource. </para>
             <para>Spatial coverage refers to a physical region.</para>
-            <para>Places names are derived from the LC Authority File.</para>
         </definition>
         <instructions co="no">
             <para>Enter Country--State or Province--City.</para>
+            <para>Places names are derived from the LC Authority File.</para>
         </instructions>
-        
+        <instructions co="object">
+            <para>Enter Country--State or Province--City.</para>
+            <para>Places names are derived from the LC Authority File.</para>
+        </instructions>
     </descriptions>
     <examples>
         <example co="no">
@@ -37,23 +40,15 @@
             <para>Croatia--Zagreb [use current form, even though Yugoslavia was the name when the photo was taken]</para>
             <para>Russia (Federation)--Leningradskaia oblast--Saint Petersburg [use current form, even though it was called Leningrad in Soviet Union, when photo was taken]</para>
         </example>
-        
-        <!-- customization here is flawed.
-             I think we need
-             <customizations>
-                 <description | example>
-                     <para @co @dd @paraDec @paraEx> REPEATABLE
-                         <para>
-        -->
-        
+        <example co="object">
+            <para>United States--Washington (State)—Seattle</para>
+            <para>United States--Alaska—Fort Yukon</para>
+            <para>Canada—Yukon—Dawson </para>
+            <para>Croatia--Zagreb [use current form, even though Yugoslavia was the name when the photo was taken]</para>
+            <para>Russia (Federation)--Leningradskaia oblast--Saint Petersburg [use current form, even though it was called Leningrad in Soviet Union, when photo was taken]</para>
+        </example>
     </examples>
     <additionalInfo>
-        <admin>
-            <para/>
-        </admin>
-        <generalNotes>
-            <para/>
-        </generalNotes>
     </additionalInfo>
     <marc>
         <dcgMarcMapping/>
@@ -80,7 +75,7 @@
         <created4Coll>Special Collections Photograph Collections</created4Coll>
         <justification>We wanted a property dedicated to describing the location depicted in an image.</justification>
         <changeLog>
-            <change/>
+            <change date="2017-06-30">Added Co info.</change>
         </changeLog>
     </history>
 </property>

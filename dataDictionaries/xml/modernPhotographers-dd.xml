@@ -2,7 +2,7 @@
 <migDataDictionary id="0002" xmlns="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries"
     xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-dds-v0.3.xsd">
-    <ddName>Moden Photographers Collection</ddName>
+    <ddName>Modern Photographers Collection</ddName>
     <ddPartOfProject/>
     <originalCreationDate>2017-06-22</originalCreationDate>
     <latestUpdate>2017-06-22</latestUpdate>

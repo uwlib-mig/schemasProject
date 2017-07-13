@@ -1,7 +1,7 @@
-<property xmlns="http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/"
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xsi:schemaLocation="http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/ http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/schema-4-properties-0.1.xsd">
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties-0.1.xsd">
     <labels>
         <platformIndependent>restrictions</platformIndependent>
         <dc>rights</dc>
@@ -11,7 +11,7 @@
         <cdmDatatype>text</cdmDatatype>
         <cdmLarge>no</cdmLarge>
         <searchable>no</searchable>
-        <hidden>yes</hidden>
+        <hidden>no</hidden>
         <required>yes</required>
         <cdmControlledVocab>no</cdmControlledVocab>
     </cdm>
@@ -19,36 +19,31 @@
         <dspaceProperty/>
     </dspace>
     <descriptions>
-        <definition co="no">
-            <para>This field lists any restrictions on the use of an image.</para>
+        <definition>
+            <para>Any restrictions on the use of an image.</para>
         </definition>
         <instructions co="no">
             <para>Input the following text: "For information on permissions for use and reproductions please visit UW Libraries Special Collections "Reproductions: Order Photographs &amp; Scans" page: http://www.lib.washington.edu/specialcoll/service/reproduction.html."</para>
         </instructions>
-        
+        <instructions co="object">
+            <para>Input the following text: "For information on permissions for use and reproductions please visit UW Libraries Special Collections "Reproductions: Order Photographs &amp; Scans" page: http://www.lib.washington.edu/specialcoll/service/reproduction.html."</para>
+        </instructions>
+        <instructions co="item">
+            <para>Input the following text: "For information on permissions for use and reproductions please visit UW Libraries Special Collections "Reproductions: Order Photographs &amp; Scans" page: http://www.lib.washington.edu/specialcoll/service/reproduction.html."</para>
+        </instructions>
     </descriptions>
     <examples>
         <example co="no">
-            <para>[none]</para>
+            <para>For information on permissions for use and reproductions please visit UW Libraries Special Collections "Reproductions: Order Photographs &amp; Scans" page: http://www.lib.washington.edu/specialcoll/service/reproduction.html.</para>
         </example>
-        
-        <!-- customization here is flawed.
-             I think we need
-             <customizations>
-                 <description | example>
-                     <para @co @dd @paraDec @paraEx> REPEATABLE
-                         <para>
-        -->
-        
+        <example co="object">
+            <para>For information on permissions for use and reproductions please visit UW Libraries Special Collections "Reproductions: Order Photographs &amp; Scans" page: http://www.lib.washington.edu/specialcoll/service/reproduction.html.</para>
+        </example>
+        <example co="item">
+            <para>For information on permissions for use and reproductions please visit UW Libraries Special Collections "Reproductions: Order Photographs &amp; Scans" page: http://www.lib.washington.edu/specialcoll/service/reproduction.html.</para>
+        </example>
     </examples>
-    <additionalInfo>
-        <admin>
-            <para/>
-        </admin>
-        <generalNotes>
-            <para/>
-        </generalNotes>
-    </additionalInfo>
+    <additionalInfo/>
     <marc>
         <dcgMarcMapping/>
         <marcNotes>
@@ -56,16 +51,17 @@
         </marcNotes>
     </marc>
     <xsd>
-        <typeAttribute>xs:string</typeAttribute>
-        <complexType/>
-        
+        <simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="1"/>
+            </xs:restriction>
+        </simpleType>
     </xsd>
     <rdf>
         <sameAs/>
     </rdf>
     <history>
         <dateCreated>
-            
             <range>
                 <start>2000-01-01</start>
                 <end>2017-01-12</end>
@@ -74,7 +70,7 @@
         <created4Coll>Special Collections Photograph Collections</created4Coll>
         <justification>Special Collections needed a property whose value pointed to Special Collection's use policy.</justification>
         <changeLog>
-            <change/>
+            <change date="2017-07-03">Added Co info.</change>
         </changeLog>
     </history>
 </property>

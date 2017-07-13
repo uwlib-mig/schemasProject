@@ -1,7 +1,7 @@
-<property xmlns="http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/"
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xsi:schemaLocation="http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/ http://faculty.washington.edu/tgis/xml/xsd/modules/xsd4md/schema-4-properties-0.1.xsd">
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties-0.1.xsd">
     <labels>
         <platformIndependent>contributor</platformIndependent>
         <dc>contributor</dc>
@@ -19,7 +19,7 @@
         <dspaceProperty/>
     </dspace>
     <descriptions>
-        <definition co="no">
+        <definition>
             <para>A person or organization not specified in the Creator field or Photographer field who has made a significant contribution to the resource, but whose contribution is secondary to any person or organization specified in the Creator field.</para>
         </definition>
         <instructions co="no">
@@ -27,30 +27,21 @@
             <para>Use LC Authority File for form of name, if available.</para>
             <para>Input Lastname, Firstname for all personal names.</para>
         </instructions>
-        
+        <instructions co="object">
+            <para>Input name of the contributor.</para>
+            <para>Use LC Authority File for form of name, if available.</para>
+            <para>Input Lastname, Firstname for all personal names.</para>
+        </instructions>
     </descriptions>
     <examples>
         <example co="no">
             <para>University of Washington Libraries, Special Collections Division</para>
         </example>
-        
-        <!-- customization here is flawed.
-             I think we need
-             <customizations>
-                 <description | example>
-                     <para @co @dd @paraDec @paraEx> REPEATABLE
-                         <para>
-        -->
-        
+        <example co="object">
+            <para>University of Washington Libraries, Special Collections Division</para>
+        </example>
     </examples>
-    <additionalInfo>
-        <admin>
-            <para/>
-        </admin>
-        <generalNotes>
-            <para/>
-        </generalNotes>
-    </additionalInfo>
+    <additionalInfo/>
     <marc>
         <dcgMarcMapping/>
         <marcNotes>
@@ -60,14 +51,12 @@
     <xsd>
         <typeAttribute>xs:string</typeAttribute>
         <complexType/>
-        
     </xsd>
     <rdf>
         <sameAs/>
     </rdf>
     <history>
         <dateCreated>
-            
             <range>
                 <start>2000-01-01</start>
                 <end>2017-01-12</end>
@@ -76,7 +65,7 @@
         <created4Coll>Special Collections Photograph Collections</created4Coll>
         <justification>Special Collections wanted to use this property for describing the contribution of the University of Washington Libraries.</justification>
         <changeLog>
-            <change />
+            <change date="2017-07-03">Changed in accordance with changes to schema.</change>
         </changeLog>
     </history>
 </property>

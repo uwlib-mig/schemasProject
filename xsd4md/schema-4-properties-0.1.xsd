@@ -101,8 +101,17 @@
 
     <xs:complexType name="marcType">
         <xs:sequence>
-            <xs:element name="dcgMarcMapping" type="xs:string"/>
-            <xs:element name="marcNotes" type="paraType"/>
+            <xs:element name="dcgMarcMapping" type="dcgType"/>
+            <xs:element name="dcgNotes" type="paraType" minOccurs="0"/>
+            <xs:element name="marcNotes" type="paraType" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="dcgType">
+        <xs:sequence>
+            <xs:element name="field" type="xs:integer" minOccurs="0"/>
+            <xs:element name="subfield" type="xs:string" minOccurs="0"/>
+            <xs:element name="indicators" type="xs:integer" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
 
