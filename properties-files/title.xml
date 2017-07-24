@@ -67,6 +67,7 @@
             <para>Indicators must be set manually to 00.</para>
             <para>Former profile also mapped to 520_8#_$a, "Summary." This mapping no longer used.</para>
         </dcgNotes>
+        <marcNotes></marcNotes>
     </marc>
     <xsd>
         <simpleType>

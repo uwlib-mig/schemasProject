@@ -2,12 +2,13 @@
     <xsl:template match="/">
         <root>
             <xsl:apply-templates
-                select="collection('../properties-files?select=*.xml;recurse=no')/prop:property"
+                select="collection('../cdmData?select=*.xml;recurse=no')/metadata"
             />
         </root>
     </xsl:template>
+    <!-- file:///Users/theodore/Documents/uwl/schemasProject/cdmData?select=*.xml;recurse=no')/metadata -->
     
-    <xsl:template match="prop:property">
-        <xsl:value-of select="prop:labels"/>
+    <xsl:template match="record">
+        <xsl:value-of select="RepositoryCollectionGuide"/>
     </xsl:template>
 </xsl:stylesheet>
