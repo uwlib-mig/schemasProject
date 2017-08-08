@@ -1,0 +1,46 @@
+<!DOCTYPE html SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Exporting and Validating CONTENTdm metadata</title>
+    </head>
+    <body>
+        <p><i>Last update: 2017-07-24</i></p>
+        <h3>EXPORT AND VALIDATE COLLECTIONS WITH STANDALONE OBJECTS ONLY</h3>
+        <ul>
+            <li>match cdm field property labels with export labels
+            <ul><li>export labels should agree with the properties file and, by extension, with the xsd</li></ul>
+            </li>
+            <li>export cdm metadata</li>
+            <li>clean export until XML is well formed; known issues:
+            <ul>
+                <li>&lt;br&gt;</li>
+                <li>some headings contain &amp; but cdm inserts a line break at the semi-colon, causing malformed XML and headings that don't make sense</li>
+                <li></li>
+            </ul>
+            </li>
+            <li>Produce //schemasProject/xsd4cdm/collectionName.xsd using //schemasProject/xslt/dds-to-xmlSchema.xsl</li>
+            <li>Validate //schemasProject/cdmData/collectionName.xml using //schemasProject/xsd4cdm/collectionName.xsd</li>
+            <li>Make or request changes as appropriate:
+                <ul>
+                    <li>Make changes to cdm field properties and //schemasProject/cdmData/collectionName.xml</li>
+                    <li>Make changes to individual cdm records and //schemasProject/cdmData/collectionName.xml when there are not too many</li>
+                    <li>Request batch metadata editing of cdm is there are a lot of records requiring edits. After those edits are done, re-export and validate or edit //schemasProject/cdmData/collectionName.xml and validate.</li>
+                </ul>
+            </li>
+        </ul>
+        
+        
+        <h3>EXPORT AND VALIDATE COLLECTIONS WITH COMPOUND OBJECTS ONLY</h3>
+        
+        
+        <h3>EXPORT AND VALIDATE COLLECTIONS WITH STANDALONG ~AND~ COMPOUND OBJECTS</h3>
+        <ul>
+            <li>match cdm field property labels with export labels
+                <ul><li>export labels should agree with the properties file and, by extension, with the xsd</li></ul>
+            </li>
+            <li>export cdm metadata and store as //schemasProject/cdmData/collectionName.xml</li>
+            <li></li>
+        </ul>
+        
+    </body>
+</html>

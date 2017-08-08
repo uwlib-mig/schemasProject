@@ -4,6 +4,8 @@
     xmlns:mig="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries"
     xmlns:mig2="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0">
+    
+    <!-- version 0.1 2017-07-26 -->
 
     <xsl:template match="/">
         <xs:schema>

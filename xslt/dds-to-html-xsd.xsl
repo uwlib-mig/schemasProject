@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:mig="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries" 
     xmlns:mig2="http://faculty.washington.edu/tgis/schemasProject/xsd4md" exclude-result-prefixes="xs" version="2.0">
-
+<!-- version 0.2 2017-07-26 -->
     <xsl:output indent="yes" use-character-maps="angleBrackets"/>
 
     <xsl:character-map name="angleBrackets">

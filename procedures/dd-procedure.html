@@ -1,0 +1,77 @@
+<!DOCTYPE html SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Metadata Application Profile Procedure</title>
+    </head>
+    <body>
+        <p><i>Last update: 2017-07-24</i></p>
+        <p>There are two ways to produce a metadata application profile (MAP):</p>
+        <ol>
+            <li>Enter MAP information directly as XML usinf an XML editor;</li>
+            <li>Enter MAP information into an XForm embedded in an XHTML page using a web
+                browser.</li>
+        </ol>
+        <h3>Method 1: enter MAP information directly as XML using an XML editor</h3>
+        <ol>
+            <li>Make sure all updates to schema-4-dds.xsl are loaded at
+                http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-dds.xsl. The
+                procedure for this is at //schemasProject/procedures/gitRepoManagement.html.</li>
+            <li>Open a previously-created metadata application profile (MAP) XML file.</li>
+            <li>SAVE AS and enter the filename for the new MAP.</li>
+            <li>Edit values for the XML elements: <ul>
+                    <li>edit /migDataDictionary/@id <ul>
+                            <li>find last @id by running $sch/dataDictionaries/xml/listIDs.xsl</li>
+                        </ul></li>
+                    <li>Check all attributes in the root element /migDataDictionary; they're mostly
+                        namespaces and are probably correct, but correctness should be
+                        verified.</li>
+                    <li>Edit the child XML elements as appropriate: <ul>
+                            <li>//ddname #use name of collection on digital collection front
+                                page</li>
+                            <li>//ddPartOfProject #enter name of project if applicable</li>
+                            <li>//originalCreationDate #enter date MAP date of creation in EDTF
+                                format</li>
+                            <li>//latestUpdate #enter "today's date" in EDTF format</li>
+                            <li>//metadataLiaisons #enter appropriate names using child element
+                                //metadataLiaison</li>
+                            <li>//cdmCo #enter "yes" if the collection is a CONTENTdm collection
+                                that includes compound objects; otherwise enter "no." <ul>
+                                    <li>CONTENTdm compound object processing for MAPs is discussed
+                                        in detail at //procedures/cdmCompoundObjects.html</li>
+                                </ul>
+                            </li>
+                            <li>//standalone #enter "yes" if the collection is a CONTENTdm
+                                collection that includes individual items not contained in a
+                                compound object. <ul>
+                                    <li>CONTENTdm compound object processing for MAPs is discussed
+                                        in detail at //procedures/cdmCompoundObjects.html</li>
+                                </ul></li>
+                        </ul></li>
+                </ul>
+            </li>
+            <li>List the properties used to describe the collection: <ul>
+                    <li>Use xi:include to reference an XML property file previously created in
+                        //properties-files.</li>
+                    <li>Create a new property file when there is no corresponding file, store it in
+                        //properties-files, then reference that file using xi:include. <ul>
+                            <li>Use //procedures/propertyFiles.html to create property files.</li>
+                        </ul>
+                    </li>
+                    <li>There must be a property file for every property listed in the MAP.</li>
+                </ul>
+            </li>
+            <li>Compare MAP properties to CONTENTdm field properties <ul>
+                    <li>The MAP properties are the definitive definitive of the properties;
+                        CONTENTdm field properties must comply with the MAP.</li>
+                    <li>Change the CONTENTdm field properties as appropriate to comply with the
+                        MAP.</li>
+                    <li>CONTENTdm field properties can be obtained over http: <ul>
+                            <li>https://server16786.contentdm.oclc.org/dmwebservices/index.php?q=dmGetCollectionFieldInfo/ayp/xml</li>
+                            <li>Code can be written to alert us when CONTENTdm field properties need to be changed; we don't have to launch CONTENTdm administration windows.</li>
+                        </ul></li>
+                </ul>
+            </li>
+            <li>When CONTENTdm field properties are synced to the MAP, processing can move on to the next stage, as described in "Exporting and Validating CONTENTdm metadata" at //procedures/validateCdm.html</li>
+        </ol>
+    </body>
+</html>

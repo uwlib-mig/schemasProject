@@ -4,6 +4,8 @@
     xmlns:props="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
     targetNamespace="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries"
     xmlns="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries">
+    
+    <!-- version 0.3 2017-26 -->
 
     <xs:import namespace="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
          schemaLocation="schema-4-properties-0.1.xsd"/>
