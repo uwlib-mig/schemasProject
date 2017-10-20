@@ -2,7 +2,7 @@
 <property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties-0.1.xsd">
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
     <labels>
         <platformIndependent>dateCreated</platformIndependent>
         <dc>created</dc>
@@ -29,28 +29,40 @@
         <instructions co="no">
             <para>If the date when the image/resource in hand was produced is known, and is different from that of the original image, so note in the Notes field. The date should be a specific year. If the date is unknown, an attempt should be made to assign an approximate date, using the form "ca." (circa).</para>
             <para>In CONTENTdm, this field is used for display purposes and should be user-friendly. The Dates field is indexed, enabling searching (see that entry for details). Specific dates (e.g., September 12, 1933; June 1912) should be entered in this field, and should also be incorporated in the Title field.</para>
+            <para>If the date is a single year, enter the date in the following format: YYYY</para>
+            <para>If the date is a month and a year, enter name-of-month, YYYY</para>
+            <para>If the date is a month, day and year, enter name-of-month number-of-day, YYYY</para>
+            <para>If the date is a known date range, enter the two dates as above, separated with a dash</para>
+            <para>If the date between a date range or an approximate date, the date should be qualified with either the word "between" or "approximately."</para>
         </instructions>
         <instructions co="object">
             <para>If the date when the image/resource in hand was produced is known, and is different from that of the original image, so note in the Notes field. The date should be a specific year. If the date is unknown, an attempt should be made to assign an approximate date, using the form "ca." (circa).</para>
             <para>In CONTENTdm, this field is used for display purposes and should be user-friendly. The Dates field is indexed, enabling searching (see that entry for details). Specific dates (e.g., September 12, 1933; June 1912) should be entered in this field, and should also be incorporated in the Title field.</para>
+            <para>If the date is a single year, enter the date in the following format: YYYY</para>
+            <para>If the date is a month and a year, enter name-of-month, YYYY</para>
+            <para>If the date is a month, day and year, enter name-of-month number-of-day, YYYY</para>
+            <para>If the date is a known date range, enter the two dates as above, separated with a dash</para>
+            <para>If the date between a date range or an approximate date, the date should be qualified with either the word "between" or "approximately."</para>
         </instructions>
     </descriptions>
     <examples>
         <example co="no">
-            <para>I1940</para>
-            <para>Around 1910</para>
-            <para>Approximately 1930</para>
-            <para>Possibly 1901</para>
+            <para>1940</para>
+            <para>May, 2001</para>
             <para>May 9, 2001</para>
-            <para>January 2008</para>
+            <para>1946-1952</para>
+            <para>May 2, 1946-June 4, 1952</para>
+            <para>Between 1910 and 1923</para>
+            <para>Approximately 1930</para>
         </example>
         <example co="object">
-        <para>1940</para>
-        <para>Around 1910</para>
-        <para>Approximately 1930</para>
-        <para>Possibly 1901</para>
-        <para>May 9, 2001</para>
-        <para>January 2008</para>
+            <para>1940</para>
+            <para>May, 2001</para>
+            <para>May 9, 2001</para>
+            <para>1946-1952</para>
+            <para>May 2, 1946-June 4, 1952</para>
+            <para>Between 1910 and 1923</para>
+            <para>Approximately 1930</para>
         </example>
     </examples>
     <additionalInfo></additionalInfo>

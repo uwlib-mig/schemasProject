@@ -1,7 +1,7 @@
 <property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties-0.1.xsd">
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
     <labels>
         <platformIndependent>type</platformIndependent>
         <dc>type</dc>
@@ -11,7 +11,7 @@
         <cdmDatatype>text</cdmDatatype>
         <cdmLarge>no</cdmLarge>
         <searchable>yes</searchable>
-        <hidden>no</hidden>
+        <hidden>yes</hidden>
         <required>yes</required>
         <cdmControlledVocab>no</cdmControlledVocab>
     </cdm>
@@ -30,6 +30,7 @@
         </instructions>
         <instructions co="item">
             <para>Input a value from the Dublin Core Type Vocabulary at http://dublincore.org/documents/dcmi-terms/.</para>
+            <para>Not required for all compound object items. Use as needed. Recommended: enter type values when the collection resources are mixed media.</para>
         </instructions>
     </descriptions>
     <examples>
@@ -72,6 +73,7 @@
         <justification>Special Collections wanted to be able to collocate theie digital images using the DCMI Type Vocabulary, so we created this property.</justification>
         <changeLog>
             <change date="2017-07-03">Added CO info.</change>
+            <change date="2017-09-22">Added para to instructions for co="item" stating that type is reccommended for all cdm compound objects that contain mixed media. TG.</change>
         </changeLog>
     </history>
 </property>

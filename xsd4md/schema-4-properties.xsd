@@ -58,7 +58,8 @@
             <xs:element name="cdmLarge" type="yesNo"/>
             <xs:element name="searchable" type="yesNo"/>
             <xs:element name="hidden" type="yesNo"/>
-            <xs:element name="required" type="yesNo"/>
+            <xs:element name="cdmRequired" type="yesNo"/>
+            <xs:element name="uwRequired" type="yesNo"/>
             <xs:element name="cdmControlledVocab" type="yesNo"/>
         </xs:sequence>
     </xs:complexType>
@@ -163,7 +164,7 @@
             <xs:element name="changeLog">
                 <xs:complexType>
                     <xs:sequence>
-                        <xs:element name="change">
+                        <xs:element name="change" maxOccurs="unbounded">
                             <xs:complexType>
                                 <xs:simpleContent>
                                     <xs:extension base="xs:string">

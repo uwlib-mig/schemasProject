@@ -1,4 +1,4 @@
 ignore/
 .DS_Store
-newProject.xpr
-
+DS_Store
+./.DS_Store

@@ -10,7 +10,7 @@
         <label>Citation Information</label>
         <cdmDatatype>text</cdmDatatype>
         <cdmLarge>no</cdmLarge>
-        <searchable>yes</searchable>
+        <searchable>no</searchable>
         <hidden>no</hidden>
         <required>no</required>
         <cdmControlledVocab>no</cdmControlledVocab>
