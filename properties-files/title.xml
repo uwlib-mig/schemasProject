@@ -2,7 +2,7 @@
 <property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties-0.1.xsd">
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
     <labels>
         <platformIndependent>title</platformIndependent>
         <dc>title</dc>
@@ -13,7 +13,8 @@
         <cdmLarge>no</cdmLarge>
         <searchable>yes</searchable>
         <hidden>no</hidden>
-        <required>yes</required>
+        <cdmRequired>yes</cdmRequired>
+        <uwRequired>yes</uwRequired>
         <cdmControlledVocab>no</cdmControlledVocab>
     </cdm>
     <dspace>
@@ -67,7 +68,7 @@
             <para>Indicators must be set manually to 00.</para>
             <para>Former profile also mapped to 520_8#_$a, "Summary." This mapping no longer used.</para>
         </dcgNotes>
-        <marcNotes></marcNotes>
+        <marcNotes/>
     </marc>
     <xsd>
         <simpleType>
@@ -89,7 +90,8 @@
         <created4Coll>Special Collections Photograph Collections</created4Coll>
         <justification>For CONTENTdm collections; all CONTENTdm collections require titles.</justification>
         <changeLog>
-            <change date="2017-06-19">Added compound object information.</change>
+            <change/>
+            <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
         </changeLog>
     </history>
 </property>

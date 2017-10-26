@@ -1,7 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties-0.1.xsd">
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
     <labels>
         <platformIndependent>citationInformation</platformIndependent>
         <dc>bibliographicCitation</dc>
@@ -12,26 +13,27 @@
         <cdmLarge>no</cdmLarge>
         <searchable>no</searchable>
         <hidden>no</hidden>
-        <required>no</required>
+        <cdmRequired>no</cdmRequired>
+        <uwRequired>yes</uwRequired>
         <cdmControlledVocab>no</cdmControlledVocab>
     </cdm>
     <dspace>
         <dspaceProperty/>
     </dspace>
     <descriptions>
-        <definition co="no">
+        <definition>
             <para>Citation/identifier for the resource.</para>
         </definition>
         <instructions co="no">
             <para>Enter citation in accordance with procedure developed in UW Libraries Special Collections.</para>
         </instructions>
-        
+
     </descriptions>
     <examples>
         <example co="no">
             <para>[none]</para>
         </example>
-        
+
         <!-- customization here is flawed.
              I think we need
              <customizations>
@@ -39,16 +41,16 @@
                      <para @co @dd @paraDec @paraEx> REPEATABLE
                          <para>
         -->
-        
+
     </examples>
     <additionalInfo>
-        <admin>
+        <admin co="no">
             <para>Definition can be improved.</para>
             <para>Instructions needed; must be obtained from UW Libraries Special Collections.</para>
             <para>Need examples.</para>
         </admin>
-        <generalNotes>
-            <para></para>
+        <generalNotes co="no">
+            <para/>
         </generalNotes>
     </additionalInfo>
     <marc>
@@ -60,20 +62,21 @@
     <xsd>
         <typeAttribute>xs:string</typeAttribute>
         <complexType/>
-        
+
     </xsd>
     <rdf>
         <sameAs/>
     </rdf>
     <history>
         <dateCreated>
-            
+
             <single>2017-06-21</single>
         </dateCreated>
         <created4Coll>Special Collections Photograph Collections</created4Coll>
         <justification>Special Collections wanted an effective identifier for users to identify resources, especially when ordering items.</justification>
         <changeLog>
             <change/>
+            <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
         </changeLog>
     </history>
 </property>

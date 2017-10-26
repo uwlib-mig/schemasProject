@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+    <labels>
+        <platformIndependent>subjects</platformIndependent>
+        <dc>subject</dc>
+    </labels>
+    <cdm>
+        <label>Subjects</label>
+        <cdmDatatype>text</cdmDatatype>
+        <cdmLarge>no</cdmLarge>
+        <searchable>yes</searchable>
+        <hidden>no</hidden>
+        <cdmRequired>no</cdmRequired>
+        <uwRequired>no</uwRequired>
+        <cdmControlledVocab>yes</cdmControlledVocab>
+    </cdm>
+    <dspace>
+        <dspaceProperty/>
+    </dspace>
+    <descriptions>
+        <definition>
+            <para>The topic of the resource.</para>
+        </definition>
+        <instructions co="no">
+            <para>Terms in this field are not taken from and specific controlled vocabulary.</para>
+            <para>Preferred: use LC Thesaurus for Graphic Materials headings when possble, then LC Subject Headings if available. Anothe source can be used but is not preferred.</para>
+            <para>Separate multiple headings with a semi-colon.</para>
+        </instructions>
+    </descriptions>
+    <examples>
+        <example co="no">
+            <para>Markets—Washington (State)—Seattle</para>
+            <para>McGraw, John Harte, 1911- —Statues—Washington (State)—Seattle</para>
+            <para>Log buildings—Alaska—Fort Yukon</para>
+        </example>
+    </examples>
+    <additionalInfo>
+        <admin co="no">
+            <para>Subject field where LCTGM and LCSH terms were not separated. Assumptions were made in the instructions that LCTGM is preferred, that LCSH is next preferred, and that other sources of terms are permissable. However that instruction should be reviewed as it may be erroneous.</para>
+        </admin>
+    </additionalInfo>
+    <marc>
+        <dcgMarcMapping/>
+        <marcNotes>
+            <para/>
+        </marcNotes>
+    </marc>
+    <xsd>
+        <typeAttribute>xs:string</typeAttribute>
+        <complexType/>
+    </xsd>
+    <rdf>
+        <sameAs/>
+    </rdf>
+    <history>
+        <dateCreated>
+
+            <range>
+                <start>2000-01-01</start>
+                <end>2017-08-09</end>
+            </range>
+        </dateCreated>
+        <created4Coll>J. Willis Sayre Photographs</created4Coll>
+        <justification>This is a standard field to provide subject access that prefers LCSH or LCTGM.</justification>
+        <changeLog>
+            <change/>
+            <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
+        </changeLog>
+    </history>
+</property>

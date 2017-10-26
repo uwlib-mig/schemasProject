@@ -1,7 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties-0.1.xsd">
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
     <labels>
         <platformIndependent>repositoryCollectionGuide</platformIndependent>
         <dc>none</dc>
@@ -12,26 +13,27 @@
         <cdmLarge>no</cdmLarge>
         <searchable>no</searchable>
         <hidden>no</hidden>
-        <required>no</required>
+        <cdmRequired>no</cdmRequired>
+        <uwRequired>no</uwRequired>
         <cdmControlledVocab>no</cdmControlledVocab>
     </cdm>
     <dspace>
         <dspaceProperty/>
     </dspace>
     <descriptions>
-        <definition co="no">
+        <definition>
             <para>This field contains the URI to the EAD finding aid.</para>
         </definition>
         <instructions co="no">
             <para>Enter only the URI to the EAD finding aid.</para>
         </instructions>
-        
+
     </descriptions>
     <examples>
         <example co="no">
             <para>[none]</para>
         </example>
-        
+
         <!-- customization here is flawed.
              I think we need
              <customizations>
@@ -39,13 +41,13 @@
                      <para @co @dd @paraDec @paraEx> REPEATABLE
                          <para>
         -->
-        
+
     </examples>
     <additionalInfo>
-        <admin>
+        <admin co="no">
             <para/>
         </admin>
-        <generalNotes>
+        <generalNotes co="no">
             <para/>
         </generalNotes>
     </additionalInfo>
@@ -58,14 +60,14 @@
     <xsd>
         <typeAttribute>xs:anyURI</typeAttribute>
         <complexType/>
-        
+
     </xsd>
     <rdf>
         <sameAs/>
     </rdf>
     <history>
         <dateCreated>
-            
+
             <range>
                 <start>2000-01-01</start>
                 <end>2017-01-09</end>
@@ -74,7 +76,8 @@
         <created4Coll>Special Collections Photograph Collections</created4Coll>
         <justification>Special Collections wanted a link to the finding aid displayed.</justification>
         <changeLog>
-            <change />
+            <change/>
+            <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
         </changeLog>
     </history>
 </property>

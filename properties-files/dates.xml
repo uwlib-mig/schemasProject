@@ -2,7 +2,7 @@
 <property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties-0.1.xsd">
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
     <labels>
         <platformIndependent>datesAll</platformIndependent>
         <dc>none</dc>
@@ -13,24 +13,30 @@
         <cdmLarge>no</cdmLarge>
         <searchable>yes</searchable>
         <hidden>yes</hidden>
-        <required>yes</required>
+        <cdmRequired>no</cdmRequired>
+        <uwRequired>yes</uwRequired>
         <cdmControlledVocab>no</cdmControlledVocab>
     </cdm>
     <dspace>
-        <dspaceProperty></dspaceProperty>
+        <dspaceProperty/>
     </dspace>
     <descriptions>
         <definition>
             <para>Date of creation of the resource.</para>
+        </definition>
+        <instructions co="no">
             <para>If the resource is a photograph, the date the original photograph was taken.</para>
             <para>In cases where a painting, engraving, or architectural drawing was photographed, the date the artwork was created.</para>
             <para>Property to enable date searching in CONTENTdm.</para>
-        </definition>
-        <instructions co="no">
+            <para>Dates value should agree with date values entered in Date-Edtf and Date fields.</para>
             <para>Reflects the Date field. If the date is a single year, it is the same in both the Date and the Dates fields. If the date in the Date field is a "circa" date (e.g. ca. 1895), the Dates field contains the expanded version so that searching will find dates covered by the concept of a "circa" date. Five years on either side of the "ca." date is the preferred form.</para>
             <para>If the Date field reads "ca. 1910" enter "1905, 1906, 1907, 1908, 1909, 1910, 1911, 1912, 1913, 1914, 1915"</para>
         </instructions>
         <instructions co="object">
+            <para>If the resource is a photograph, the date the original photograph was taken.</para>
+            <para>In cases where a painting, engraving, or architectural drawing was photographed, the date the artwork was created.</para>
+            <para>Property to enable date searching in CONTENTdm.</para>
+            <para>Dates value should agree with date values entered in Date-Edtf and Date fields.</para>
             <para>Reflects the Date field. If the date is a single year, it is the same in both the Date and the Dates fields. If the date in the Date field is a "circa" date (e.g. ca. 1895), the Dates field contains the expanded version so that searching will find dates covered by the concept of a "circa" date. Five years on either side of the "ca." date is the preferred form.</para>
             <para>If the Date field reads "ca. 1910" enter "1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915"</para>
         </instructions>
@@ -43,18 +49,20 @@
             <para>1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915</para>
         </example>
     </examples>
-    <additionalInfo></additionalInfo>
+    <additionalInfo/>
     <marc>
-        <dcgMarcMapping></dcgMarcMapping>
-        <marcNotes></marcNotes>
+        <dcgMarcMapping/>
+        <marcNotes/>
     </marc>
     <xsd>
         <simpleType>
-         <xs:restriction base="xs:string"><xs:pattern value="([0-9]{4}(\s|,)*([0-9]{4})*)+"/></xs:restriction>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="([0-9]{4}(\s|,)*([0-9]{4})*)+"/>
+            </xs:restriction>
         </simpleType>
     </xsd>
     <rdf>
-        <sameAs></sameAs>
+        <sameAs/>
     </rdf>
     <history>
         <dateCreated>
@@ -66,7 +74,8 @@
         <created4Coll>Special Collections Photograph Collections</created4Coll>
         <justification>We need a field that can be indexed in CONTENTdm in a way that allows all the years in a date range to be indexed. It should not be mapped to a Dublin Core property and it should be hidden from the public.</justification>
         <changeLog>
-            <change date="2017-06-30">Added CO info.</change>
+            <change/>
+            <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation. Added an instruction.</change>
         </changeLog>
     </history>
 </property>

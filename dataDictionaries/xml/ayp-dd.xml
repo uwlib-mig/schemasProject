@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <migDataDictionary id="0001" xmlns="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries"
     xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-dds-v0.3.xsd" >
+    xsi:schemaLocation="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-dds.xsd" >
     <ddName>Alaska Yukon Pacific Exposition Photographs</ddName>
     <ddPartOfProject></ddPartOfProject>
     <originalCreationDate>2017-02-22</originalCreationDate>

@@ -14,11 +14,12 @@
         <cdmLarge>no</cdmLarge>
         <searchable>no</searchable>
         <hidden>no</hidden>
-        <required>yes</required>
+        <cdmRequired>no</cdmRequired>
+        <uwRequired>yes</uwRequired>
         <cdmControlledVocab>no</cdmControlledVocab>
     </cdm>
     <dspace>
-        <dspaceProperty></dspaceProperty>
+        <dspaceProperty/>
     </dspace>
     <descriptions>
         <definition>
@@ -29,6 +30,7 @@
         <instructions co="no">
             <para>If the date when the image/resource in hand was produced is known, and is different from that of the original image, so note in the Notes field. The date should be a specific year. If the date is unknown, an attempt should be made to assign an approximate date, using the form "ca." (circa).</para>
             <para>In CONTENTdm, this field is used for display purposes and should be user-friendly. The Dates field is indexed, enabling searching (see that entry for details). Specific dates (e.g., September 12, 1933; June 1912) should be entered in this field, and should also be incorporated in the Title field.</para>
+            <para>Date value should agree with date values entered in Date-Edtf and Dates fields.</para>
             <para>If the date is a single year, enter the date in the following format: YYYY</para>
             <para>If the date is a month and a year, enter name-of-month, YYYY</para>
             <para>If the date is a month, day and year, enter name-of-month number-of-day, YYYY</para>
@@ -38,6 +40,7 @@
         <instructions co="object">
             <para>If the date when the image/resource in hand was produced is known, and is different from that of the original image, so note in the Notes field. The date should be a specific year. If the date is unknown, an attempt should be made to assign an approximate date, using the form "ca." (circa).</para>
             <para>In CONTENTdm, this field is used for display purposes and should be user-friendly. The Dates field is indexed, enabling searching (see that entry for details). Specific dates (e.g., September 12, 1933; June 1912) should be entered in this field, and should also be incorporated in the Title field.</para>
+            <para>Date value should agree with date values entered in Date-Edtf and Dates fields.</para>
             <para>If the date is a single year, enter the date in the following format: YYYY</para>
             <para>If the date is a month and a year, enter name-of-month, YYYY</para>
             <para>If the date is a month, day and year, enter name-of-month number-of-day, YYYY</para>
@@ -65,10 +68,10 @@
             <para>Approximately 1930</para>
         </example>
     </examples>
-    <additionalInfo></additionalInfo>
+    <additionalInfo/>
     <marc>
-        <dcgMarcMapping></dcgMarcMapping>
-        <marcNotes></marcNotes>
+        <dcgMarcMapping/>
+        <marcNotes/>
     </marc>
     <xsd>
         <simpleType>
@@ -78,7 +81,7 @@
         </simpleType>
     </xsd>
     <rdf>
-        <sameAs></sameAs>
+        <sameAs/>
     </rdf>
     <history>
         <dateCreated>
@@ -90,7 +93,8 @@
         <created4Coll>Special Collections Photograph Collections</created4Coll>
         <justification>We need a display dates field that will be easy for users to understand. It does not need to be indexed but it seems OK to map to Dublin Core.</justification>
         <changeLog>
-            <change date="2017-06-30">Added CO info; added examples.</change>
+            <change/>
+            <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation. Also added instruction.</change>
         </changeLog>
     </history>
 </property>

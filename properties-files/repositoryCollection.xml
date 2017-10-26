@@ -1,7 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties-0.1.xsd">
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
     <labels>
         <platformIndependent>repositoryCollection</platformIndependent>
         <dc>isPartOf</dc>
@@ -12,7 +13,8 @@
         <cdmLarge>no</cdmLarge>
         <searchable>yes</searchable>
         <hidden>no</hidden>
-        <required>no</required>
+        <cdmRequired>no</cdmRequired>
+        <uwRequired>yes</uwRequired>
         <cdmControlledVocab>no</cdmControlledVocab>
     </cdm>
     <dspace>
@@ -37,8 +39,7 @@
             <para>William E. Meed collection no. 246</para>
         </example>
     </examples>
-    <additionalInfo>
-    </additionalInfo>
+    <additionalInfo> </additionalInfo>
     <marc>
         <dcgMarcMapping/>
         <marcNotes>
@@ -48,14 +49,14 @@
     <xsd>
         <typeAttribute>xs:string</typeAttribute>
         <complexType/>
-        
+
     </xsd>
     <rdf>
         <sameAs/>
     </rdf>
     <history>
         <dateCreated>
-            
+
             <range>
                 <start>2000-01-01</start>
                 <end>2017-01-09</end>
@@ -64,7 +65,8 @@
         <created4Coll>Special Collections Photograph Collections</created4Coll>
         <justification>Special Collections wanted the name of the originl collection represented.</justification>
         <changeLog>
-            <change date="2017-06-30">Added Co info.</change>
+            <change/>
+            <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation. Also made //uwRequired="yes".</change>
         </changeLog>
     </history>
 </property>

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
@@ -12,7 +13,8 @@
         <cdmLarge>no</cdmLarge>
         <searchable>yes</searchable>
         <hidden>yes</hidden>
-        <required>yes</required>
+        <cdmRequired>no</cdmRequired>
+        <uwRequired>yes</uwRequired>
         <cdmControlledVocab>no</cdmControlledVocab>
     </cdm>
     <dspace>
@@ -63,7 +65,7 @@
     </rdf>
     <history>
         <dateCreated>
-            
+
             <range>
                 <start>2000-01-01</start>
                 <end>2017-01-12</end>
@@ -72,8 +74,8 @@
         <created4Coll>Special Collections Photograph Collections</created4Coll>
         <justification>Special Collections wanted to be able to collocate theie digital images using the DCMI Type Vocabulary, so we created this property.</justification>
         <changeLog>
-            <change date="2017-07-03">Added CO info.</change>
-            <change date="2017-09-22">Added para to instructions for co="item" stating that type is reccommended for all cdm compound objects that contain mixed media. TG.</change>
+            <change/>
+            <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
         </changeLog>
     </history>
 </property>
