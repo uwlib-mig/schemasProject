@@ -29,10 +29,10 @@
 
     <xs:complexType name="ddType">
         <xs:sequence>
-            <xs:element name="ddName"/>
-            <xs:element name="ddPartOfProject"/>
-            <xs:element name="originalCreationDate"/>
-            <xs:element name="latestUpdate"/>
+            <xs:element name="ddName" type="xs:string"/>
+            <xs:element name="ddPartOfProject" type="xs:string"/>
+            <xs:element name="originalCreationDate" type="xs:date"/>
+            <xs:element name="latestUpdate" type="xs:date"/>
             <xs:element name="metadataLiaisons">
                 <xs:complexType>
                     <xs:sequence>
@@ -50,6 +50,7 @@
                     <xs:documentation>Element for recording whether or not CONTENTdm compound objects are permitted. Needed to state whether standalone can co-exist with compound objects.</xs:documentation>
                 </xs:annotation>
             </xs:element>
+            <xs:element name="cdmCode" type="xs:string"/>
             <xs:element name="properties"/>
         </xs:sequence>
         <xs:attribute name="id" type="xs:integer" use="required"/>
