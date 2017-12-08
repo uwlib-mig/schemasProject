@@ -1,97 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
-    <labels>
-        <platformIndependent>title</platformIndependent>
-        <dc>title</dc>
-    </labels>
-    <cdm>
-        <label>Title</label>
-        <cdmDatatype>text</cdmDatatype>
-        <cdmLarge>no</cdmLarge>
-        <searchable>yes</searchable>
-        <hidden>no</hidden>
-        <cdmRequired>yes</cdmRequired>
-        <uwRequired>yes</uwRequired>
-        <cdmControlledVocab>no</cdmControlledVocab>
-    </cdm>
-    <dspace>
-        <dspaceProperty/>
-    </dspace>
-    <descriptions>
-        <definition>
-            <para>A name given to the resource.</para>
-        </definition>
-        <instructions co="no">
-            <para>A brief descriptive phrase that includes these elements, generally in this order: who, what, where, when.</para>
-            <para>The Title is a concise sentence which will be used to label the thumbnails in CONTENTdm; it will also be the first line of the descriptive information. The Title may be the caption assigned by the photographer or the collector, or it may be created by Special Collections staff from the given caption and from additional sources. In the absence of any caption, the Title will be provided by Special Collections staff.</para>
-            <para>If the caption provided by the photographer is adequate, place it in the Title field. Then, the Notes field should include this phrase: Title taken from photograph.</para>
-            <para>If the caption provided by the photographer is inadequate, a created title should be placed in the Title field; the Notes field should then read: Caption on image: "Image title."</para>
-            <para>If there is a series caption, it should be added, in the Notes field, in sequence after the title on the image: Caption on image: "Image title"; "Series title." There should also be a separate notation in the Notes field in the form: Part of Hegg series entitled: "Series title."</para>
-        </instructions>
-        <instructions co="object">
-            <para>A brief descriptive phrase that includes these elements, generally in this order: who, what, where, when.</para>
-            <para>The Title is a concise sentence which will be used to label the thumbnails for the compound objects in CONTENTdm; it will also be the first line of the descriptive information. The Title may be a caption assigned by a photographer/creator/contributor or the collector, or it may be created by Special Collections staff from the given caption and from additional sources. In the absence of any caption, the Title will be provided by Special Collections staff.</para>
-            <para>If the caption provided by a photographer/creator/contributor is adequate, place it in the Title field. Then, the Notes field should include a phrase like this: "Title taken from photograph" or "Title taken from text attached to resource."</para>
-            <para>If the caption provided by a photographer/creator/contributor is inadequate, a created title should be placed in the Title field; the Notes field should then read something like: 'Caption on image: "Image title" ' or 'Title provided by University of Washington Libraries staff.'</para>
-            <para>If there is a series caption, it should be added in the Notes field; the note should begin "Series Title: "; the note should be in sequence after the notes describing the title (for example, the 'Caption on image: "Image title" ' note). There should also be a separate notation in the Notes field in the form: Part of Hegg series entitled: "Series title."</para>
-        </instructions>
-        <instructions co="item">
-            <para>Every page must have a title.</para>
-            <para>Enter a title for the single item/page. This could be a descriptive title for the content of the item, a transcribed title, or a title that helps administer the overall object, whatever works best for the project.</para>
-        </instructions>
-    </descriptions>
-    <examples>
-        <example co="no">
-            <para>Alger house, interior view of living room Seattle, Washington, 1955</para>
-            <para>Woman mushing wood, Chilkoot Trail, ca. 1898</para>
-        </example>
-        <example co="object">
-            <para>Lyman Whitney Strong Jr. letter to his brother Arthur Tappan Strong, February 23, 1862</para>
-        </example>
-        <example co="item">
-            <para>Page 6</para>
-        </example>
-        <customization co="no"/>
-    </examples>
-    <additionalInfo/>
-    <marc>
-        <dcgMarcMapping>
-            <field>245</field>
-            <subfield>a</subfield>
-            <indicators>00</indicators>
-        </dcgMarcMapping>
-        <dcgNotes>
-            <para>245$h subfield is automatically added.</para>
-            <para>Indicators must be set manually to 00.</para>
-            <para>Former profile also mapped to 520_8#_$a, "Summary." This mapping no longer used.</para>
-        </dcgNotes>
-        <marcNotes/>
-    </marc>
-    <xsd>
-        <simpleType>
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns:xs="http://www.w3.org/2001/XMLSchema"
+          xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+   <labels>
+      <platformIndependent>title</platformIndependent>
+      <dc>title</dc>
+   </labels>
+   <uwRequired>
+      <uwStandalone>yes</uwStandalone>
+      <uwObject>yes</uwObject>
+      <uwItem>yes</uwItem>
+   </uwRequired>
+   <cdm>
+      <label>Title</label>
+      <cdmDatatype>text</cdmDatatype>
+      <cdmLarge>no</cdmLarge>
+      <searchable>yes</searchable>
+      <hidden>no</hidden>
+      <cdmRequired>yes</cdmRequired>
+      <cdmControlledVocab>no</cdmControlledVocab>
+   </cdm>
+   <dspace>
+      <dspaceProperty/>
+   </dspace>
+   <descriptions>
+      <definition>
+         <para>A name given to the resource.</para>
+      </definition>
+      <instructions co="no">
+         <para>A brief descriptive phrase that includes these elements, generally in this order: who, what, where, when.</para>
+         <para>The Title is a concise sentence which will be used to label the thumbnails in CONTENTdm; it will also be the first line of the descriptive information. The Title may be the caption assigned by the photographer or the collector, or it may be created by Special Collections staff from the given caption and from additional sources. In the absence of any caption, the Title will be provided by Special Collections staff.</para>
+         <para>If the caption provided by the photographer is adequate, place it in the Title field. Then, the Notes field should include this phrase: Title taken from photograph.</para>
+         <para>If the caption provided by the photographer is inadequate, a created title should be placed in the Title field; the Notes field should then read: Caption on image: "Image title."</para>
+         <para>If there is a series caption, it should be added, in the Notes field, in sequence after the title on the image: Caption on image: "Image title"; "Series title." There should also be a separate notation in the Notes field in the form: Part of Hegg series entitled: "Series title."</para>
+      </instructions>
+      <instructions co="object">
+         <para>A brief descriptive phrase that includes these elements, generally in this order: who, what, where, when.</para>
+         <para>The Title is a concise sentence which will be used to label the thumbnails for the compound objects in CONTENTdm; it will also be the first line of the descriptive information. The Title may be a caption assigned by a photographer/creator/contributor or the collector, or it may be created by Special Collections staff from the given caption and from additional sources. In the absence of any caption, the Title will be provided by Special Collections staff.</para>
+         <para>If the caption provided by a photographer/creator/contributor is adequate, place it in the Title field. Then, the Notes field should include a phrase like this: "Title taken from photograph" or "Title taken from text attached to resource."</para>
+         <para>If the caption provided by a photographer/creator/contributor is inadequate, a created title should be placed in the Title field; the Notes field should then read something like: 'Caption on image: "Image title" ' or 'Title provided by University of Washington Libraries staff.'</para>
+         <para>If there is a series caption, it should be added in the Notes field; the note should begin "Series Title: "; the note should be in sequence after the notes describing the title (for example, the 'Caption on image: "Image title" ' note). There should also be a separate notation in the Notes field in the form: Part of Hegg series entitled: "Series title."</para>
+      </instructions>
+      <instructions co="item">
+         <para>Every page must have a title.</para>
+         <para>Enter a title for the single item/page. This could be a descriptive title for the content of the item, a transcribed title, or a title that helps administer the overall object, whatever works best for the project.</para>
+      </instructions>
+   </descriptions>
+   <examples>
+      <example co="no">
+         <para>Alger house, interior view of living room Seattle, Washington, 1955</para>
+         <para>Woman mushing wood, Chilkoot Trail, ca. 1898</para>
+      </example>
+      <example co="object">
+         <para>Lyman Whitney Strong Jr. letter to his brother Arthur Tappan Strong, February 23, 1862</para>
+      </example>
+      <example co="item">
+         <para>Page 6</para>
+      </example>
+      <customization co="no"/>
+   </examples>
+   <additionalInfo/>
+   <marc>
+      <dcgMarcMapping>
+         <field>245</field>
+         <subfield>a</subfield>
+         <indicators>00</indicators>
+      </dcgMarcMapping>
+      <dcgNotes>
+         <para>245$h subfield is automatically added.</para>
+         <para>Indicators must be set manually to 00.</para>
+         <para>Former profile also mapped to 520_8#_$a, "Summary." This mapping no longer used.</para>
+      </dcgNotes>
+      <marcNotes/>
+   </marc>
+   <xsd>
+      <typeInfo level="standalone object item">
+         <simpleType>
             <xs:restriction base="xs:string">
-                <xs:minLength value="1"/>
+               <xs:minLength value="1"/>
             </xs:restriction>
-        </simpleType>
-    </xsd>
-    <rdf>
-        <sameAs/>
-    </rdf>
-    <history>
-        <dateCreated>
-            <range>
-                <start>2000-01-01</start>
-                <end>2017-06-29</end>
-            </range>
-        </dateCreated>
-        <created4Coll>Special Collections Photograph Collections</created4Coll>
-        <justification>For CONTENTdm collections; all CONTENTdm collections require titles.</justification>
-        <changeLog>
-            <change/>
-            <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
-        </changeLog>
-    </history>
+         </simpleType>
+      </typeInfo>
+   </xsd>
+   <rdf>
+      <sameAs/>
+   </rdf>
+   <history>
+      <dateCreated>
+         <range>
+            <start>2000-01-01</start>
+            <end>2017-06-29</end>
+         </range>
+      </dateCreated>
+      <created4Coll>Special Collections Photograph Collections</created4Coll>
+      <justification>For CONTENTdm collections; all CONTENTdm collections require titles.</justification>
+      <changeLog>
+         <change/>
+         <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
+      </changeLog>
+   </history>
 </property>

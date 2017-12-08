@@ -3,7 +3,7 @@
     xmlns:c="http://www.w3.org/ns/xproc-step" version="1.0">
 
     <p:input port="source">
-        <p:document href="../cdmData/civilWar.xml"/>
+        <p:document href="../cdmData/civilwar.xml"/>
     </p:input>
    
     <p:output port="result">
@@ -22,6 +22,15 @@
     <p:xslt name="insert-objects">
         <p:input port="stylesheet">
             <p:document href="../xslt/2_insert-co-container-info.xsl"/>
+        </p:input>
+        <p:input port="parameters">
+            <p:empty/>
+        </p:input>
+    </p:xslt>
+    
+    <p:xslt name="insert-modes">
+        <p:input port="stylesheet">
+            <p:document href="../xslt/3_insert-mode-attribute.xsl"/>
         </p:input>
         <p:input port="parameters">
             <p:empty/>

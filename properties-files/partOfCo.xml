@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns:xs="http://www.w3.org/2001/XMLSchema"
+          xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+   <labels>
+      <platformIndependent>partOfCo</platformIndependent>
+      <dc>none</dc>
+   </labels>
+   <uwRequired>
+      <uwStandalone>no</uwStandalone>
+      <uwObject>no</uwObject>
+      <uwItem>yes</uwItem>
+   </uwRequired>
+   <cdm>
+      <label>partOfCo</label>
+      <cdmDatatype>uwAdministrative</cdmDatatype>
+      <cdmLarge>notApplicable</cdmLarge>
+      <searchable>notApplicable</searchable>
+      <hidden>notApplicable</hidden>
+      <cdmRequired>notApplicable</cdmRequired>
+      <cdmControlledVocab>notApplicable</cdmControlledVocab>
+   </cdm>
+   <dspace>
+      <dspaceProperty/>
+   </dspace>
+   <descriptions>
+      <definition>
+         <para>Wraps information about the CONTENTdm compound object wrapper.</para>
+      </definition>
+      <instructions co="item">
+         <para>No input required. Used by the metadata management application for compound object items only.</para>
+      </instructions>
+   </descriptions>
+   <examples>
+      <example co="agnostic"/>
+   </examples>
+   <additionalInfo/>
+   <marc>
+      <dcgMarcMapping/>
+      <marcNotes>
+         <para/>
+      </marcNotes>
+   </marc>
+   <xsd>
+      <typeInfo level="item">
+         <complexType>
+            <xs:sequence>
+               <xs:element name="cdmnumberCoRef" type="xs:integer"/>
+               <xs:element name="cdmfilenameRef" type="xs:string"/>
+            </xs:sequence>
+         </complexType>
+      </typeInfo>
+   </xsd>
+   <rdf>
+      <sameAs/>
+   </rdf>
+   <history>
+      <dateCreated>
+         <single>2017-11-25</single>
+      </dateCreated>
+      <created4Coll>civilwar</created4Coll>
+      <justification>Metadata admin app needs a way to oint from a cdm compound object item to the .cpd it is a part of.</justification>
+      <changeLog>
+         <change/>
+      </changeLog>
+   </history>
+</property>

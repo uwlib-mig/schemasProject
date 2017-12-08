@@ -7,40 +7,100 @@
         <p><i>Last update: 2017-07-24</i></p>
         <h3>EXPORT AND VALIDATE COLLECTIONS WITH STANDALONE OBJECTS ONLY</h3>
         <ul>
-            <li>match cdm field property labels with export labels
-            <ul><li>export labels should agree with the properties file and, by extension, with the xsd</li></ul>
-            </li>
+            <li>Open CONTENTdm admin.</li>
+            <li>Navigate to appropriate collection.</li>
+            <li>collections > Export > Custom XML : Include all page-level metadata > next </li>
+            <li>Enter values for right column "XML tag name" so that it matches the representation
+                of the left column "Field name" property labels in the collection-specific metadata
+                application profile (collection-dd.xml). This is represented in
+                /migDatadictionary/properties/property/cdm/label, retaining case but eliminating all spaces.<ul>
+                    <li>The CONTENTdm administrative metadata fields do not have uniform case for
+                        these labels; they should be as follows in the right column "XML Tag Name":<ul>
+                            <li>ItemURL</li>
+                            <li>oclcNumber</li>
+                            <li>dateCreated</li>
+                            <li>dateModified</li>
+                            <li>cdmnumber</li>
+                            <li>cdmfilename</li>
+                            <li>cdmFilePath </li>
+                        </ul></li>
+                    <li>"Repeat fields that use identical XML tags"</li>
+                    <li>"Repeat fields that contain multiple terms"</li>
+                </ul></li>
             <li>export cdm metadata</li>
-            <li>clean export until XML is well formed; known issues:
-            <ul>
-                <li>&lt;br&gt;</li>
-                <li>some headings contain &amp; but cdm inserts a line break at the semi-colon, causing malformed XML and headings that don't make sense</li>
-                <li></li>
-            </ul>
-            </li>
-            <li>Produce //schemasProject/xsd4cdm/collectionName.xsd using //schemasProject/xslt/dds-to-xmlSchema.xsl</li>
-            <li>Validate //schemasProject/cdmData/collectionName.xml using //schemasProject/xsd4cdm/collectionName.xsd</li>
-            <li>Make or request changes as appropriate:
-                <ul>
-                    <li>Make changes to cdm field properties and //schemasProject/cdmData/collectionName.xml</li>
-                    <li>Make changes to individual cdm records and //schemasProject/cdmData/collectionName.xml when there are not too many</li>
-                    <li>Request batch metadata editing of cdm is there are a lot of records requiring edits. After those edits are done, re-export and validate or edit //schemasProject/cdmData/collectionName.xml and validate.</li>
+            <li>Save exported file as /schemasProject/cdmData/collectionName.xml</li>
+            <li>Open file and review</li>
+            <li>clean the cdm export XML until it is well formed; known issues: <ul>
+                    <li>&lt;br&gt;</li>
+                    <li>some headings contain &amp; but cdm inserts a line break at the semi-colon,
+                        causing malformed XML and headings that don't make sense</li>
+                    <li></li>
+                </ul></li>
+            <li>Produce //schemasProject/xsd4cdm/collectionName.xsd using
+                //schemasProject/xslt/dds-to-xmlSchema.xsl</li>
+            <li>Validate //schemasProject/cdmData/collectionName.xml using
+                //schemasProject/xsd4cdm/collectionName.xsd</li>
+            <li>Make or request changes as appropriate: <ul>
+                    <li>Make changes to cdm field properties and
+                        //schemasProject/cdmData/collectionName.xml</li>
+                    <li>Make changes to individual cdm records and
+                        //schemasProject/cdmData/collectionName.xml when there are not too many</li>
+                    <li>Request batch metadata editing of cdm is there are a lot of records
+                        requiring edits. After those edits are done, re-export and validate or edit
+                        //schemasProject/cdmData/collectionName.xml and validate.</li>
                 </ul>
             </li>
         </ul>
-        
-        
         <h3>EXPORT AND VALIDATE COLLECTIONS WITH COMPOUND OBJECTS ONLY</h3>
-        
-        
-        <h3>EXPORT AND VALIDATE COLLECTIONS WITH STANDALONG ~AND~ COMPOUND OBJECTS</h3>
+        <p>Note: collections with only compound objects can be processed more easily that
+            collections with COs ~and~ standalone.</p>
+        <p>COs do not need to be distinguished from standalone; all items can be processed the same,
+            noting only when there is a .cpd item (in CONTENTdm File Name).</p>
+        <h3>EXPORT AND VALIDATE COLLECTIONS WITH STANDALONE ~AND~ COMPOUND OBJECTS</h3>
         <ul>
-            <li>match cdm field property labels with export labels
-                <ul><li>export labels should agree with the properties file and, by extension, with the xsd</li></ul>
-            </li>
-            <li>export cdm metadata and store as //schemasProject/cdmData/collectionName.xml</li>
-            <li></li>
+            <li>Open CONTENTdm admin.</li>
+            <li>Navigate to appropriate collection.</li>
+            <li>collections > Export > Custom XML : Include all page-level metadata > next </li>
+            <li>Enter values for right column "XML tag name" so that it matches the representation
+                of the left column "Field name" property labels in the collection-specific metadata
+                application profile (collection-dd.xml). This is represented in
+                /migDatadictionary/properties/property/cdm/label, retaining case but eliminating all spaces.<ul>
+                    <li>The CONTENTdm administrative metadata fields do not have uniform case for
+                        these labels; they should be as follows in the right column "XML Tag Name":<ul>
+                            <li>ItemURL</li>
+                            <li>oclcNumber</li>
+                            <li>dateCreated</li>
+                            <li>dateModified</li>
+                            <li>cdmnumber</li>
+                            <li>cdmfilename</li>
+                            <li>cdmFilePath </li>
+                        </ul></li>
+                    <li>"Repeat fields that use identical XML tags"</li>
+                    <li>"Repeat fields that contain multiple terms"</li>
+                </ul></li>
+            <li>export cdm metadata</li>
+            <li>Save exported file as //cdmData/collectionName.xml</li>
+            <li>Open file and review</li>
+            <li>clean the cdm export XML until it is well formed; known issues: <ul>
+                    <li>&lt;br&gt;</li>
+                    <li>some headings contain &amp; but cdm inserts a line break at the semi-colon,
+                        causing malformed XML and headings that don't make sense</li>
+                </ul></li>
+            <li>Process the cleaned file with the pipeline addCoInfo2Export.xpl<ul>
+                <li>Edit /p:declare-step/p:input/p:document; @href should be ../cdmData/[nameOfCollection].xml</li>
+                <li>Edit /p:declare-step/p:store; @href should be ../cdmData/[nameOfCollection]-co.xml</li>
+                <li>Run the script</li>
+            </ul></li>
+            <li>Produce .xsd file using the data dictionary using //xslt/dds-to-xmlSchema-combined.xsl<ul>
+                    <li>Input //dataDictionaries/xml/[collectionName]-dd.xml</li>
+                    <li>Output //xsd4cdm/[collectionName].xsd</li>
+                </ul></li>
+            <li>Use //xsd4cdm/[collectionName].xsd to validate //cdmData/[collectionName]-co.xml<ul>
+                <li>If necessary, edit the .xsd file and/or the xml file to achieve validation; note the errors so that they may be reported to whomever edits the actual CONTENTdm data.</li>
+            </ul></li>
+            <li>Edit actual CONTENTdm collection metadata as appropriate.</li>
+            <li>Prepare a report of additional edits needed for use by others who make additional
+                edits to the CONTENTdm metadata.</li>
         </ul>
-        
     </body>
 </html>

@@ -1,85 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
-    <labels>
-        <platformIndependent>cataloging</platformIndependent>
-        <dc>none</dc>
-    </labels>
-    <cdm>
-        <label>Cataloging</label>
-        <cdmDatatype>text</cdmDatatype>
-        <cdmLarge>no</cdmLarge>
-        <searchable>yes</searchable>
-        <hidden>yes</hidden>
-        <cdmRequired>no</cdmRequired>
-        <uwRequired>no</uwRequired>
-        <cdmControlledVocab>no</cdmControlledVocab>
-    </cdm>
-    <dspace>
-        <dspaceProperty/>
-    </dspace>
-    <descriptions>
-        <definition>
-            <para>[Unknown.]</para>
-        </definition>
-        <instructions co="no">
-            <para>[Unknown.]</para>
-        </instructions>
-        <instructions co="object">
-            <para>[Unknown.]</para>
-        </instructions>
-    </descriptions>
-    <examples>
-        <example co="no">
-            <para>[none]</para>
-        </example>
-        <example co="object">
-            <para>[none]</para>
-        </example>
-        <!-- customization here is flawed.
-             I think we need
-             <customizations>
-                 <description | example>
-                     <para @co @dd @paraDec @paraEx> REPEATABLE
-                         <para>
-        -->
-
-    </examples>
-    <additionalInfo>
-        <admin co="all">
-            <para>Unique to ayp? No, also in Civil War Letters, but there are no values in Civil War.</para>
-            <para>Does output using Cdm export.</para>
-            <para>Did not appear in DI/ITS output when all collections were output.</para>
-            <para>Delete this property?</para>
-        </admin>
-    </additionalInfo>
-    <marc>
-        <dcgMarcMapping/>
-        <marcNotes>
-            <para/>
-        </marcNotes>
-    </marc>
-    <xsd>
-        <typeAttribute>xs:string</typeAttribute>
-        <complexType/>
-    </xsd>
-    <rdf>
-        <sameAs/>
-    </rdf>
-    <history>
-        <dateCreated>
-            <range>
-                <start>2000-01-01</start>
-                <end>2017-02-22</end>
-            </range>
-        </dateCreated>
-        <created4Coll>ayp</created4Coll>
-        <justification>[unknown]</justification>
-        <changeLog>
-            <change/>
-            <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
-        </changeLog>
-    </history>
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns:xs="http://www.w3.org/2001/XMLSchema"
+          xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+   <labels>
+      <platformIndependent>cataloging</platformIndependent>
+      <dc>none</dc>
+   </labels>
+   <uwRequired>
+      <uwStandalone>no</uwStandalone>
+      <uwObject>no</uwObject>
+      <uwItem>no</uwItem>
+   </uwRequired>
+   <cdm>
+      <label>Cataloging</label>
+      <cdmDatatype>text</cdmDatatype>
+      <cdmLarge>no</cdmLarge>
+      <searchable>yes</searchable>
+      <hidden>yes</hidden>
+      <cdmRequired>no</cdmRequired>
+      <cdmControlledVocab>no</cdmControlledVocab>
+   </cdm>
+   <dspace>
+      <dspaceProperty/>
+   </dspace>
+   <descriptions>
+      <definition>
+         <para>[Unknown.]</para>
+      </definition>
+      <instructions co="no">
+         <para>[Unknown.]</para>
+      </instructions>
+      <instructions co="object">
+         <para>[Unknown.]</para>
+      </instructions>
+   </descriptions>
+   <examples>
+      <example co="no">
+         <para>[none]</para>
+      </example>
+      <example co="object">
+         <para>[none]</para>
+      </example>
+   </examples>
+   <additionalInfo>
+      <admin co="all">
+         <para>Unique to ayp? No, also in Civil War Letters, but there are no values in Civil War.</para>
+         <para>Does output using Cdm export.</para>
+         <para>Did not appear in DI/ITS output when all collections were output.</para>
+         <para>Delete this property?</para>
+      </admin>
+   </additionalInfo>
+   <marc>
+      <dcgMarcMapping/>
+      <marcNotes>
+         <para/>
+      </marcNotes>
+   </marc>
+   <xsd>
+      <typeInfo level="standalone object">
+         <typeAttribute>xs:string</typeAttribute>
+      </typeInfo>
+      <typeInfo level="item">
+         <empty/>
+      </typeInfo>
+   </xsd>
+   <rdf>
+      <sameAs/>
+   </rdf>
+   <history>
+      <dateCreated>
+         <range>
+            <start>2000-01-01</start>
+            <end>2017-02-22</end>
+         </range>
+      </dateCreated>
+      <created4Coll>ayp</created4Coll>
+      <justification>[unknown]</justification>
+      <changeLog>
+         <change/>
+         <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
+      </changeLog>
+   </history>
 </property>

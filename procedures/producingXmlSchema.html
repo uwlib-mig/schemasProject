@@ -1,0 +1,23 @@
+<!DOCTYPE html SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Producing XML schema files using xml data dictionaries</title>
+    </head>
+    <body>
+        <h2>Producing XML schema files using xml data dictionaries</h2>
+        <p><i>Latest update: 2017-12-01</i></p>
+        <p>Below are the steps for creating XML Schema files that can be used to validate CONTENTdm exports.</p>
+        <p>Note: this file can still be populated with information from producingXmlSchema.txt; then that .txt file can be deleted.</p>
+        <ol>
+            <li>Open the appropriate xslt file:<ul>
+                <li>For collections with standalone items only, use dds-to-xmlSchema_standalone.xsl <i>-- this file is not up to date; requires edits</i></li>
+                <li>For collection with compound objects only, use dds-to-xmlSchema_cos.xsl <i>-- this file is not yet created</i></li>
+                <li>For collections with standalone items <i>and</i> compound objects, use dds-to-xmlSchema_combined.xsl <i>-- this file is up to date and can serve as a model for the above two transforms</i></li>
+            </ul></li>
+            <li>Input the appropriate xml data dictionary; it does not have to be the expanded version (i.e. the version with the xInclude is fine)</li>
+            <li>Output //xsd4cdm/[cdmCollectionName].xsd</li>
+        </ol>
+      <h3>Notes on the XML schema information in the data dictionaries</h3>
+        <p>Enter here information taken from producingXmlSchema.txt</p>
+    </body>
+</html>

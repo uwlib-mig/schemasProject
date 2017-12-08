@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns:xs="http://www.w3.org/2001/XMLSchema"
+          xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+   <labels>
+      <platformIndependent>standaloneDeclaration</platformIndependent>
+      <dc>none</dc>
+   </labels>
+   <uwRequired>
+      <uwStandalone>no</uwStandalone>
+      <uwObject>no</uwObject>
+      <uwItem>no</uwItem>
+   </uwRequired>
+   <cdm>
+      <label>standaloneDeclaration</label>
+      <cdmDatatype>uwAdministrative</cdmDatatype>
+      <cdmLarge>notApplicable</cdmLarge>
+      <searchable>notApplicable</searchable>
+      <hidden>notApplicable</hidden>
+      <cdmRequired>notApplicable</cdmRequired>
+      <cdmControlledVocab>notApplicable</cdmControlledVocab>
+   </cdm>
+   <dspace>
+      <dspaceProperty/>
+   </dspace>
+   <descriptions>
+      <definition>
+         <para>For use with cdm items that are standalone (i.e. not part of a compound object) ~and~ are part of a collection that includes both standalone items and compound objects. </para>
+      </definition>
+      <instructions co="no">
+         <para>No input required. Used by the metadata management application; that application will enter the following text for standalone items in a "combined" collection: "Not contained in a compound object. This is a standalone item."</para>
+      </instructions>
+   </descriptions>
+   <examples>
+      <example co="agnostic"/>
+   </examples>
+   <additionalInfo/>
+   <marc>
+      <dcgMarcMapping/>
+      <marcNotes>
+         <para/>
+      </marcNotes>
+   </marc>
+   <xsd>
+      <typeInfo level="standalone">
+         <typeAttribute>xs:string</typeAttribute>
+      </typeInfo>
+   </xsd>
+   <rdf>
+      <sameAs/>
+   </rdf>
+   <history>
+      <dateCreated>
+         <single>2017-11-26</single>
+      </dateCreated>
+      <created4Coll>civilwar</created4Coll>
+      <justification>Metadata admin app needs a way to standalone items in collections that contain both standalone items and compound objects..</justification>
+      <changeLog>
+         <change/>
+      </changeLog>
+   </history>
+</property>

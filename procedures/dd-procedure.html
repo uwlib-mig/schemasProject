@@ -16,11 +16,19 @@
             <li>Make sure all updates to schema-4-dds.xsl are loaded at
                 http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-dds.xsl. The
                 procedure for this is at //schemasProject/procedures/gitRepoManagement.html.</li>
+            <li>After selecting a cdm collection, export the collection's metadata to a local
+                workstation (it can be deleted at the end of the metadata process). Analyze the
+                collection; deternine if it does or does not contain compound objects (this will
+                change the content of the data dictionary); if so, determine also if the collection
+                contains standalone alongside the compound objects. This information will go into
+                the data dictionary in steps below.</li>
             <li>Open a previously-created metadata application profile (MAP) XML file.</li>
             <li>SAVE AS and enter the filename for the new MAP.</li>
             <li>Edit values for the XML elements: <ul>
                     <li>edit /migDataDictionary/@id <ul>
-                            <li>find last @id by running $sch/dataDictionaries/xml/listIDs.xsl</li>
+                            <li>find last @id by running
+                                $sch/dataDictionaries/xml/queries/listIDs.xsl (this was recently
+                                moved; path in script needs to be updated)</li>
                         </ul></li>
                     <li>Check all attributes in the root element /migDataDictionary; they're mostly
                         namespaces and are probably correct, but correctness should be
@@ -38,8 +46,7 @@
                                 that includes compound objects; otherwise enter "no." <ul>
                                     <li>CONTENTdm compound object processing for MAPs is discussed
                                         in detail at //procedures/cdmCompoundObjects.html</li>
-                                </ul>
-                            </li>
+                                </ul></li>
                             <li>//standalone #enter "yes" if the collection is a CONTENTdm
                                 collection that includes individual items not contained in a
                                 compound object. <ul>
@@ -47,19 +54,16 @@
                                         in detail at //procedures/cdmCompoundObjects.html</li>
                                 </ul></li>
                         </ul></li>
-                </ul>
-            </li>
+                </ul></li>
             <li>List the properties used to describe the collection: <ul>
                     <li>Use xi:include to reference an XML property file previously created in
                         //properties-files.</li>
                     <li>Create a new property file when there is no corresponding file, store it in
                         //properties-files, then reference that file using xi:include. <ul>
                             <li>Use //procedures/propertyFiles.html to create property files.</li>
-                        </ul>
-                    </li>
+                        </ul></li>
                     <li>There must be a property file for every property listed in the MAP.</li>
-                </ul>
-            </li>
+                </ul></li>
             <li>Compare MAP properties to CONTENTdm field properties <ul>
                     <li>The MAP properties are the definitive definitive of the properties;
                         CONTENTdm field properties must comply with the MAP.</li>
@@ -67,11 +71,23 @@
                         MAP.</li>
                     <li>CONTENTdm field properties can be obtained over http: <ul>
                             <li>https://server16786.contentdm.oclc.org/dmwebservices/index.php?q=dmGetCollectionFieldInfo/ayp/xml</li>
-                            <li>Code can be written to alert us when CONTENTdm field properties need to be changed; we don't have to launch CONTENTdm administration windows.</li>
+                            <li>Code can be written to alert us when CONTENTdm field properties need
+                                to be changed; we don't have to launch CONTENTdm administration
+                                windows.</li>
                         </ul></li>
-                </ul>
-            </li>
-            <li>When CONTENTdm field properties are synced to the MAP, processing can move on to the next stage, as described in "Exporting and Validating CONTENTdm metadata" at //procedures/validateCdm.html</li>
+                </ul></li>
+            <li>Expand the xml using //xslt/identity-expand.xsl, for the following resons<ul>
+                <li>to produce a more human readable version of the complete data dictionary (the original xml data dictionary is useful for an "at a glance" view, but the expanded version displays every detail of every property);</li>
+                <li>for use by specific routines in the metadata management application that do not recognize xInclude<ul>
+                    <li><i>[begin a list of the routines that cannot use xInclude]</i></li>
+                </ul></li>
+            </ul></li>
+            <li>Create the HTML data dictionary using //xslt/dds-to-html-xsd.xsl; save it to
+                //dataDictionaries/html using the collection name as the filename with a .html
+                extension.</li>
+            <li>Processing can then move on to the next stage, using the data dictionary as
+                described in "Exporting and Validating CONTENTdm metadata" at
+                //procedures/validateCdm.html</li>
         </ol>
     </body>
 </html>

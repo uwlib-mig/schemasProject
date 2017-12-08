@@ -3,24 +3,29 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     targetNamespace="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
     xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md">
-    
-    <!-- vresion 0.1 2017-07-26 -->
+
+    <!-- vesion 0.2 2017-11-06 
+         1 added new element uwRequired with subelements
+         2 removed /cdm/uwRequired
+         3 added attribute to /property/xsd: @level
+         -->
 
     <xs:import namespace="http://www.w3.org/XML/1998/namespace"
         schemaLocation="http://www.w3.org/2001/03/xml.xsd"/>
-    
-    <xs:import namespace="http://www.w3.org/2001/XMLSchema" schemaLocation="https://www.w3.org/2001/XMLSchema.xsd"/>
+
+    <xs:import namespace="http://www.w3.org/2001/XMLSchema"
+        schemaLocation="https://www.w3.org/2001/XMLSchema.xsd"/>
 
     <xs:annotation>
         <xs:documentation>Schema to validate properties used by UW Libraries.</xs:documentation>
     </xs:annotation>
 
-    <xs:element name="property" type="propertyType">
-    </xs:element>
+    <xs:element name="property" type="propertyType"> </xs:element>
 
     <xs:complexType name="propertyType">
         <xs:sequence>
             <xs:element name="labels" type="labelType"/>
+            <xs:element name="uwRequired" type="uwRequiredType"/>
             <xs:element name="cdm" type="cdmType"/>
             <xs:element name="dspace" type="dspaceType"/>
             <xs:element name="descriptions" type="descriptionsType"/>
@@ -49,6 +54,32 @@
             </xs:element>
         </xs:sequence>
     </xs:complexType>
+    
+    <xs:complexType name="uwRequiredType">
+        <xs:sequence>
+            <xs:element name="uwStandalone" type="yesNo"/>
+            <xs:element name="uwObject" type="yesNo"/>
+            <xs:element name="uwItem" type="yesNo"/>
+            <xs:element name="uwCustom" type="uwCustomRequiredType" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="uwCustomRequiredType">
+        <xs:simpleContent>
+            <xs:extension base="yesNo">
+                <xs:attribute name="co">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="no"/>
+                            <xs:enumeration value="object"/>
+                            <xs:enumeration value="item"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:attribute>
+                <xs:attribute name="dd" type="xs:string"></xs:attribute>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
 
     <xs:complexType name="cdmType">
         <xs:sequence>
@@ -59,7 +90,6 @@
             <xs:element name="searchable" type="yesNo"/>
             <xs:element name="hidden" type="yesNo"/>
             <xs:element name="cdmRequired" type="yesNo"/>
-            <xs:element name="uwRequired" type="yesNo"/>
             <xs:element name="cdmControlledVocab" type="yesNo"/>
         </xs:sequence>
     </xs:complexType>
@@ -74,7 +104,7 @@
     <xs:complexType name="descriptionsType">
         <xs:sequence>
             <xs:element name="definition" type="paraType" maxOccurs="unbounded"/>
-            <xs:element name="instructions" type="paraType4co" maxOccurs="unbounded"/>
+            <xs:element name="instructions" type="paraType4co" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="customization" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
@@ -97,8 +127,8 @@
                  recommended: do not use <admin>, use <generalNotes> ;
                  both will be retained to validate legacy data;
                  XSLTs should output both elements as if they were the same-->
-            <xs:element name="admin" type="paraType4co" minOccurs="0"/>
-            <xs:element name="generalNotes" type="paraType4co" minOccurs="0"/>
+            <xs:element name="admin" type="paraType4co" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="generalNotes" type="paraType4co" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
 
@@ -109,7 +139,7 @@
             <xs:element name="marcNotes" type="paraType" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    
+
     <xs:complexType name="dcgType">
         <xs:sequence>
             <xs:element name="field" type="xs:integer" minOccurs="0"/>
@@ -117,22 +147,54 @@
             <xs:element name="indicators" type="xs:integer" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-
+    
     <xs:complexType name="xsdType">
         <xs:sequence>
-            <xs:element name="typeAttribute" type="xs:QName" maxOccurs="unbounded" minOccurs="0"/>
-            <xs:element name="simpleType" type="xs:localSimpleType" minOccurs="0"/>
-            <xs:element name="complexType" type="xs:localComplexType" minOccurs="0"/>
+            <xs:element name="typeInfo" minOccurs="0" maxOccurs="unbounded" type="typeInfoType"></xs:element>
+            <xs:element name="customTypeInfo" minOccurs="0" maxOccurs="unbounded" type="typeInfoType"></xs:element>
         </xs:sequence>
     </xs:complexType>
-    
+
+    <xs:complexType name="typeInfoType">
+        <xs:sequence>
+            <xs:element name="typeAttribute" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:QName">
+                            <xs:attribute name="minOccurs" type="xs:integer"/>
+                            <xs:attribute name="maxOccurs" type="xs:integer"/>
+                            <xs:attribute name="fixed"/>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="simpleType" type="xs:localSimpleType" minOccurs="0"/>
+            <xs:element name="complexType" type="xs:localComplexType" minOccurs="0"/>
+            <xs:element name="empty" minOccurs="0"></xs:element>
+        </xs:sequence>
+        <xs:attribute name="level">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="standalone"/>
+                    <xs:enumeration value="object"/>
+                    <xs:enumeration value="item"/>
+                    <xs:enumeration value="standalone object"/>
+                    <xs:enumeration value="standalone item"/>
+                    <xs:enumeration value="object item"/>
+                    <xs:enumeration value="standalone object item"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="dd" type="xs:string"/>
+    </xs:complexType>
+
     <xs:complexType name="simpleTypeType">
         <xs:sequence>
             <xs:element name="pattern" type="xs:string" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
 
-   <!-- might need other properties in addition to sameAs
+    <!-- might need other properties in addition to sameAs
         like maybe skos:exactMatch, etc.
    -->
     <xs:complexType name="rdfType">
@@ -168,7 +230,7 @@
                             <xs:complexType>
                                 <xs:simpleContent>
                                     <xs:extension base="xs:string">
-                                        <xs:attribute name="date" type="xs:date"></xs:attribute>
+                                        <xs:attribute name="date" type="xs:date"/>
                                     </xs:extension>
                                 </xs:simpleContent>
                             </xs:complexType>
@@ -246,6 +308,7 @@
             <xs:enumeration value="date"/>
             <xs:enumeration value="fullText"/>
             <xs:enumeration value="cdmAdministrative"/>
+            <xs:enumeration value="uwAdministrative"></xs:enumeration>
         </xs:restriction>
     </xs:simpleType>
 
@@ -253,6 +316,7 @@
         <xs:restriction base="xs:string">
             <xs:enumeration value="yes"/>
             <xs:enumeration value="no"/>
+            <xs:enumeration value="notApplicable"/>
         </xs:restriction>
     </xs:simpleType>
 
@@ -272,7 +336,7 @@
                     <xs:enumeration value="no"/>
                     <xs:enumeration value="object"/>
                     <xs:enumeration value="item"/>
-                <!-- the following 3 types of COs eliminated 2017-06-29;
+                    <!-- the following 3 types of COs eliminated 2017-06-29;
                      we may want them for generalNotes however:
                     <xs:enumeration value="objectAndStandalone"/>
                     <xs:enumeration value="itemAndStandalone/"/>

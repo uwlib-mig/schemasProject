@@ -1,79 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
-    <labels>
-        <platformIndependent>restrictions</platformIndependent>
-        <dc>rights</dc>
-    </labels>
-    <cdm>
-        <label>Restrictions</label>
-        <cdmDatatype>text</cdmDatatype>
-        <cdmLarge>no</cdmLarge>
-        <searchable>no</searchable>
-        <hidden>no</hidden>
-        <cdmRequired>no</cdmRequired>
-        <uwRequired>yes</uwRequired>
-        <cdmControlledVocab>no</cdmControlledVocab>
-    </cdm>
-    <dspace>
-        <dspaceProperty/>
-    </dspace>
-    <descriptions>
-        <definition>
-            <para>Any restrictions on the use of an image.</para>
-        </definition>
-        <instructions co="no">
-            <para>Input the following text: "For information on permissions for use and reproductions please visit UW Libraries Special Collections "Reproductions: Order Photographs &amp; Scans" page: http://www.lib.washington.edu/specialcoll/service/reproduction.html."</para>
-        </instructions>
-        <instructions co="object">
-            <para>Input the following text: "For information on permissions for use and reproductions please visit UW Libraries Special Collections "Reproductions: Order Photographs &amp; Scans" page: http://www.lib.washington.edu/specialcoll/service/reproduction.html."</para>
-        </instructions>
-        <instructions co="item">
-            <para>Input the following text: "For information on permissions for use and reproductions please visit UW Libraries Special Collections "Reproductions: Order Photographs &amp; Scans" page: http://www.lib.washington.edu/specialcoll/service/reproduction.html."</para>
-        </instructions>
-    </descriptions>
-    <examples>
-        <example co="no">
-            <para>For information on permissions for use and reproductions please visit UW Libraries Special Collections "Reproductions: Order Photographs &amp; Scans" page: http://www.lib.washington.edu/specialcoll/service/reproduction.html.</para>
-        </example>
-        <example co="object">
-            <para>For information on permissions for use and reproductions please visit UW Libraries Special Collections "Reproductions: Order Photographs &amp; Scans" page: http://www.lib.washington.edu/specialcoll/service/reproduction.html.</para>
-        </example>
-        <example co="item">
-            <para>For information on permissions for use and reproductions please visit UW Libraries Special Collections "Reproductions: Order Photographs &amp; Scans" page: http://www.lib.washington.edu/specialcoll/service/reproduction.html.</para>
-        </example>
-    </examples>
-    <additionalInfo/>
-    <marc>
-        <dcgMarcMapping/>
-        <marcNotes>
-            <para/>
-        </marcNotes>
-    </marc>
-    <xsd>
-        <simpleType>
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns:xs="http://www.w3.org/2001/XMLSchema"
+          xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+   <labels>
+      <platformIndependent>restrictions</platformIndependent>
+      <dc>rights</dc>
+   </labels>
+   <uwRequired>
+      <uwStandalone>yes</uwStandalone>
+      <uwObject>yes</uwObject>
+      <uwItem>no</uwItem>
+   </uwRequired>
+   <cdm>
+      <label>Restrictions</label>
+      <cdmDatatype>text</cdmDatatype>
+      <cdmLarge>no</cdmLarge>
+      <searchable>no</searchable>
+      <hidden>no</hidden>
+      <cdmRequired>no</cdmRequired>
+      <cdmControlledVocab>no</cdmControlledVocab>
+   </cdm>
+   <dspace>
+      <dspaceProperty/>
+   </dspace>
+   <descriptions>
+      <definition>
+         <para>Any restrictions on the use of an image.</para>
+      </definition>
+      <instructions co="no">
+         <para>Input the following text: "For information on permissions for use and reproductions please visit UW Libraries Special Collections "Reproductions: Order Photographs &amp; Scans" page: http://www.lib.washington.edu/specialcoll/service/reproduction.html."</para>
+      </instructions>
+      <instructions co="object">
+         <para>Input the following text: "For information on permissions for use and reproductions please visit UW Libraries Special Collections "Reproductions: Order Photographs &amp; Scans" page: http://www.lib.washington.edu/specialcoll/service/reproduction.html."</para>
+      </instructions>
+      <customization co="item" dd="civilwar">
+         <para>Enter "For information on permissions for use and reproductions please visit UW Libraries Special Collections Use Permissions page:  http://www.lib.washington.edu/specialcollections/services/permission-for-use"</para>
+      </customization>
+   </descriptions>
+   <examples>
+      <example co="no">
+         <para>For information on permissions for use and reproductions please visit UW Libraries Special Collections "Reproductions: Order Photographs &amp; Scans" page: http://www.lib.washington.edu/specialcoll/service/reproduction.html.</para>
+      </example>
+      <example co="object">
+         <para>For information on permissions for use and reproductions please visit UW Libraries Special Collections "Reproductions: Order Photographs &amp; Scans" page: http://www.lib.washington.edu/specialcoll/service/reproduction.html.</para>
+      </example>
+      <customization co="item" dd="civilwar">
+         <para>For information on permissions for use and reproductions please visit UW Libraries Special Collections Use Permissions page:  http://www.lib.washington.edu/specialcollections/services/permission-for-use</para>
+      </customization>
+   </examples>
+   <additionalInfo/>
+   <marc>
+      <dcgMarcMapping/>
+      <marcNotes>
+         <para/>
+      </marcNotes>
+   </marc>
+   <xsd>
+      <typeInfo level="standalone object">
+         <simpleType>
             <xs:restriction base="xs:string">
-                <xs:minLength value="1"/>
+               <xs:minLength value="1"/>
             </xs:restriction>
-        </simpleType>
-    </xsd>
-    <rdf>
-        <sameAs/>
-    </rdf>
-    <history>
-        <dateCreated>
-            <range>
-                <start>2000-01-01</start>
-                <end>2017-01-12</end>
-            </range>
-        </dateCreated>
-        <created4Coll>Special Collections Photograph Collections</created4Coll>
-        <justification>Special Collections needed a property whose value pointed to Special Collection's use policy.</justification>
-        <changeLog>
-            <change/>
-            <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
-        </changeLog>
-    </history>
+         </simpleType>
+      </typeInfo>
+      <typeInfo level="item">
+         <empty/>
+      </typeInfo>
+      <customTypeInfo level="item" dd="civilwar">
+         <typeAttribute fixed="For information on permissions for use and reproductions please visit UW Libraries Special Collections Use Permissions page: http://www.lib.washington.edu/specialcollections/services/permission-for-use">xs:string</typeAttribute> 
+      </customTypeInfo>
+   </xsd>
+   <rdf>
+      <sameAs/>
+   </rdf>
+   <history>
+      <dateCreated>
+         <range>
+            <start>2000-01-01</start>
+            <end>2017-01-12</end>
+         </range>
+      </dateCreated>
+      <created4Coll>Special Collections Photograph Collections</created4Coll>
+      <justification>Special Collections needed a property whose value pointed to Special Collection's use policy.</justification>
+      <changeLog>
+         <change/>
+         <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
+      </changeLog>
+   </history>
 </property>

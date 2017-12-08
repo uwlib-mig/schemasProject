@@ -1,22 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <migDataDictionary id="0003" xmlns="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries"
     xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-dds-v0.3.xsd" >
+    xsi:schemaLocation="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-dds.xsd" >
     <ddName>Washington State Localities Photographs</ddName>
     <ddPartOfProject></ddPartOfProject>
     <originalCreationDate>2017-06-27</originalCreationDate>
-    <latestUpdate>2017-06-27</latestUpdate>
+    <latestUpdate>2017-10-26</latestUpdate>
     <metadataLiaisons>
         <metadataLiaison>TBD</metadataLiaison>
     </metadataLiaisons>
     <cdmCo>no</cdmCo>
     <standalone>yes</standalone>
+    <cdmCode>wastate</cdmCode>
     <properties>  
         <xi:include href="../../properties-files/title.xml"/>
         <xi:include href="../../properties-files/photographer.xml"/>
         <xi:include href="../../properties-files/dateEdtf.xml"/>
         <xi:include href="../../properties-files/date.xml"/>
         <xi:include href="../../properties-files/dates.xml"/>
+        <xi:include href="../../properties-files/earliestDate.xml"/>
+        <xi:include href="../../properties-files/latestDate.xml"/>
         <xi:include href="../../properties-files/notes.xml"/>
         <xi:include href="../../properties-files/historicalNotes.xml"/>
         <xi:include href="../../properties-files/subjectsLctgm.xml"/>
@@ -33,8 +36,8 @@
         <xi:include href="../../properties-files/repositoryCollection.xml"/>
         <xi:include href="../../properties-files/repositoryCollectionGuide.xml"/>   
         <xi:include href="../../properties-files/acquisition.xml"/>  
-        <xi:include href="../../properties-files/restrictions.xml"/>
         <xi:include href="../../properties-files/rightsUri.xml"/>
+        <xi:include href="../../properties-files/restrictions.xml"/>
         <xi:include href="../../properties-files/objectType.xml"/>
         <xi:include href="../../properties-files/physicalDescription.xml"/>
         <xi:include href="../../properties-files/digitalReproductionInformation.xml"/>

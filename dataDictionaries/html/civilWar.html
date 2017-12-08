@@ -1,12 +1,33 @@
 <html xmlns:mig="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries" xmlns:mig2="http://faculty.washington.edu/tgis/schemasProject/xsd4md">
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      <title>Civil War Letters Collection</title>
-      <link rel="stylesheet" href="style.css" type="text/css">
-   </head>
+      <title>Civil War Letters Collection</title><style>
+                    table{
+                        border-collapse: collapse;
+                        width: 100%;
+                    }
+                    table,
+                    th,
+                    td{
+                        font-family: "Times New Roman", "Georgia", "Times";
+                        font-size: 11px;
+                        border: 1px solid black;
+                        border-color: #999999;
+                    }
+                    th,
+                    td{
+                        padding: 10px;
+                    }
+                    tr:hover{
+                        background-color: #f5f5f5;
+                    }
+                    td{
+                        vertical-align: top;
+                    }
+                </style></head>
    <body>
       <h1>Civil War Letters Collection</h1>
-      <h3>Revised: 2017-06-29</h3>
+      <h3>Most recent revision: 2017-06-29</h3>
       <h3>Metadata Liaison: TBD</h3>
       <h2 style="text-align:center">OBJECT DESCRIPTION</h2>
       <table border="1">
@@ -18,8 +39,9 @@
             <th>Cdm Large</th>
             <th>Searchable</th>
             <th>Hidden</th>
-            <th>Required</th>
+            <th>Required, CONTENTdm</th>
             <th>Cdm Controlled Vocabulary</th>
+            <th>Required for all UW collections</th>
             <th>Definition</th>
             <th>Input Instructions</th>
             <th>Examples</th>
@@ -35,6 +57,7 @@
             <td>no</td>
             <td>yes</td>
             <td>no</td>
+            <td>yes</td>
             <td>
                <p>A name given to the resource.</p>
             </td>
@@ -82,6 +105,7 @@
             <td>no</td>
             <td>no</td>
             <td>no</td>
+            <td>no</td>
             <td>
                <p>The person or the corporate body responsible for the textual content.</p>
             </td>
@@ -104,6 +128,7 @@
             <td>text</td>
             <td>no</td>
             <td>yes</td>
+            <td>no</td>
             <td>no</td>
             <td>no</td>
             <td>no</td>
@@ -135,31 +160,38 @@
             <td>no</td>
             <td>no</td>
             <td>yes</td>
-            <td>yes</td>
             <td>no</td>
+            <td>no</td>
+            <td>yes</td>
             <td>
-               <p>Date the original resource was created.</p>
+               <p>Date of creation of the original resource.</p>
             </td>
             <td>
                <p>Express all dates, including date ranges, using Library of Congress' Extended Date
                   Time Format.
                </p>
-               <p>Most recent version of EDTF available at https://www.loc.gov/standards/datetime/pre-submission.html.</p>
+               <p>Most recent version of EDTF available at https://www.loc.gov/standards/datetime/.</p>
+               <p>Date-Edtf value should agree with dates values entered in Date and Dates fields.</p>
             </td>
             <td>
-               <p>If the Date field = "1940," Date EDTF = "1940"</p>
-               <p>If the Date field = "ca. 1910," Date EDTF = "1905/1915"</p>
-               <p>If the Date field = "Approximately 1930," Date EDTF = "1930~" </p>
-               <p>If Date field = "Possibly 1901," Date EDTF = "1901?"</p>
-               <p>If Date field = "May 9, 2001,: Date EDTF = "2001-05-09"</p>
-               <p>If Date field = "January 2008," Date EDTF = "2008-01"</p>
+               <p>If the Date field = "1940" then Date EDTF = "1940"</p>
+               <p>If the Date field = "1910?" then Date EDTF = "1910?"</p>
+               <p>If Date field = "May 9, 2001" then Date EDTF = "2001-05-09"</p>
+               <p>If Date field = "January 2008" then Date EDTF = "2008-01"</p>
+               <p>If Date field = "between 1930 and 1939" then Date EDTF = "1930/1939"</p>
+               <p>If Date field = "between 1855 and 1999?" then Date EDTF can be one of several options including "1855?/1999?"</p>
+               <p>If Date field = "before 2007" then Date EDTF is either "/2007" or "../2007"</p>
+               <p>If Date field = "after 2001" then Date EDTF is either "2001/" or "2001/.."</p>
             </td>
             <td>
-               <p>EDTF is still a standard in progress. It has not yet been accpted as a full recommendation.</p>
-               <p>This document needs a reference to the spec.</p>
+               <p>This document needs a reference to the final spec.</p>
                <p>For the xsd, datatype is xs:string; the datatype is more accurately http://id.loc.gov/datatypes/edtf,
-                  which is not a valid QName and is inavlid according to schema-4-properties-0.1, but
-                  this does not seem to be machine-actionable; more exploration needed.
+                  which is not a valid QName and is inavlid according to schema-4-properties, but this
+                  does not seem to be machine-actionable; more exploration needed.
+               </p>
+               <p>EDTF is still a standard in progress. It has not yet been accpted as a full recommendation.
+                  It should be voted on in 2018 by ISO. We are anticipating it will becoming a 2-part
+                  ISO 8601-2018.
                </p>
             </td>
          </tr>
@@ -171,34 +203,44 @@
             <td>no</td>
             <td>no</td>
             <td>no</td>
-            <td>yes</td>
             <td>no</td>
+            <td>no</td>
+            <td>yes</td>
             <td>
-               <p>Date of creation of the resource.</p>
+               <p>Date of creation of the original resource.</p>
+            </td>
+            <td>
                <p>If the resource is a photograph, the date the original photograph was taken.</p>
                <p>In cases where a painting, engraving, or architectural drawing was photographed, the
                   date the artwork was created.
                </p>
-            </td>
-            <td>
+               <p>Enter the date using one of the following formats:</p>
+               <p>YYYY</p>
+               <p>YYYY?</p>
+               <p>[month spelled out] [day], YYYY</p>
+               <p>[month spelled out], YYYY</p>
+               <p>between YYYY and YYYY</p>
+               <p>between YYYY and YYYY?</p>
+               <p>before YYYY</p>
+               <p>after YYYY</p>
+               <p>In CONTENTdm, this field is used for display purposes only and should be user-friendly.</p>
+               <p>If none of the date formats above are adequate, use a custom date format.</p>
+               <p>Date value should agree with date values entered in Date-Edtf and Dates fields.</p>
                <p>If the date when the image/resource in hand was produced is known, and is different
-                  from that of the original image, so note in the Notes field. The date should be a
-                  specific year. If the date is unknown, an attempt should be made to assign an approximate
-                  date, using the form "ca." (circa).
+                  from that of the original image, so note in the Notes field.
                </p>
-               <p>In CONTENTdm, this field is used for display purposes and should be user-friendly.
-                  The Dates field is indexed, enabling searching (see that entry for details). Specific
-                  dates (e.g., September 12, 1933; June 1912) should be entered in this field, and should
-                  also be incorporated in the Title field.
+               <p>If the date is unknown, an attempt should be made to assign an approximate date, using
+                  an appropriate date format listed above.
                </p>
             </td>
             <td>
                <p>1940</p>
-               <p>Around 1910</p>
-               <p>Approximately 1930</p>
-               <p>Possibly 1901</p>
+               <p>May, 2001</p>
                <p>May 9, 2001</p>
-               <p>January 2008</p>
+               <p>1946-1952</p>
+               <p>May 2, 1946-June 4, 1952</p>
+               <p>Between 1910 and 1923</p>
+               <p>Approximately 1930</p>
             </td>
             <td></td>
          </tr>
@@ -210,26 +252,28 @@
             <td>no</td>
             <td>yes</td>
             <td>yes</td>
-            <td>yes</td>
             <td>no</td>
+            <td>no</td>
+            <td>yes</td>
             <td>
-               <p>Date of creation of the resource.</p>
-               <p>If the resource is a photograph, the date the original photograph was taken.</p>
-               <p>In cases where a painting, engraving, or architectural drawing was photographed, the
-                  date the artwork was created.
-               </p>
-               <p>Property to enable date searching in CONTENTdm.</p>
+               <p>Date of creation of the original resource.</p>
             </td>
             <td>
-               <p>Reflects the Date field. If the date is a single year, it is the same in both the
-                  Date and the Dates fields. If the date in the Date field is a "circa" date (e.g. ca.
-                  1895), the Dates field contains the expanded version so that searching will find dates
-                  covered by the concept of a "circa" date. Five years on either side of the "ca." date
-                  is the preferred form.
+               <p>Enter the year or years only.</p>
+               <p>If the resource is a photograph, the year the original photograph was taken.</p>
+               <p>In cases where a painting, engraving, or architectural drawing was photographed, the
+                  year the artwork was created.
                </p>
-               <p>If the Date field reads "ca. 1910" enter "1905 1906 1907 1908 1909 1910 1911 1912
-                  1913 1914 1915"
+               <p>If the date is a single year, year and month, or year month and day, enter the single
+                  year only in the Dates field.
                </p>
+               <p>If the date is an approximate year, enter that year plus five years on either side
+                  of that year; for example, if the Date field is "1910?" enter "1905 1906 1907 1908
+                  1909 1910 1911 1912 1913 1914 1915"
+               </p>
+               <p>If the year is a range of years, enter all the years in that range.</p>
+               <p>This field is indexed and enables date searching in CONTENTdm.</p>
+               <p>The Dates value should agree with date values entered in Date-Edtf and Date fields.</p>
             </td>
             <td>
                <p>1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915</p>
@@ -243,6 +287,7 @@
             <td>text</td>
             <td>yes</td>
             <td>yes</td>
+            <td>no</td>
             <td>no</td>
             <td>no</td>
             <td>no</td>
@@ -275,6 +320,7 @@
             <td>none</td>
             <td>text</td>
             <td>yes</td>
+            <td>no</td>
             <td>no</td>
             <td>no</td>
             <td>no</td>
@@ -321,6 +367,7 @@
             <td>no</td>
             <td>no</td>
             <td>yes</td>
+            <td>no</td>
             <td>
                <p>The topic of the resource.</p>
             </td>
@@ -343,6 +390,7 @@
             <td>no</td>
             <td>no</td>
             <td>yes</td>
+            <td>no</td>
             <td>
                <p>The topic of the resource.</p>
             </td>
@@ -367,6 +415,7 @@
             <td>yes</td>
             <td>no</td>
             <td>no</td>
+            <td>yes</td>
             <td>no</td>
             <td>
                <p>The spatial characteristics of the intellectual content of the resource. </p>
@@ -397,8 +446,9 @@
             <td>no</td>
             <td>yes</td>
             <td>no</td>
-            <td>yes</td>
             <td>no</td>
+            <td>yes</td>
+            <td>yes</td>
             <td>
                <p>Name of the digital collection; may be the same name as the original repository collection.</p>
             </td>
@@ -421,6 +471,7 @@
             <td>no</td>
             <td>no</td>
             <td>no</td>
+            <td>yes</td>
             <td>
                <p>Number that users can reference to order a copy of the digital image.</p>
             </td>
@@ -436,13 +487,14 @@
          <tr>
             <td>14</td>
             <td>Repository</td>
-            <td>source</td>
+            <td>none</td>
             <td>text</td>
             <td>no</td>
             <td>no</td>
             <td>no</td>
             <td>no</td>
             <td>no</td>
+            <td>yes</td>
             <td>
                <p>The institution where the item is physically located.</p>
             </td>
@@ -466,6 +518,7 @@
             <td>no</td>
             <td>no</td>
             <td>no</td>
+            <td>yes</td>
             <td>
                <p>This field contains the collection name and its number, represented as a phrase.</p>
             </td>
@@ -487,6 +540,7 @@
             <td>no</td>
             <td>no</td>
             <td>yes</td>
+            <td>no</td>
             <td>
                <p>Denotes genre or type of material.</p>
             </td>
@@ -495,9 +549,7 @@
                   Materials.
                </p>
                <p>If more than one term is applicable, list the form of the item scanned first.</p>
-               <p>When describing a single resource, use the singular form of the term; when describing
-                  multiple resources, use the plural form of the term.
-               </p>
+               <p>Enter the heading exactly as it appears in the controlled source.</p>
                <p>Separate multiple values with a semi-colon and space.</p>
             </td>
             <td>
@@ -513,6 +565,7 @@
             <td>Physical Description</td>
             <td>format</td>
             <td>text</td>
+            <td>no</td>
             <td>no</td>
             <td>no</td>
             <td>no</td>
@@ -538,6 +591,7 @@
             <td>Digital Reproduction Information</td>
             <td>format</td>
             <td>text</td>
+            <td>no</td>
             <td>no</td>
             <td>no</td>
             <td>no</td>
@@ -569,6 +623,7 @@
             <td>yes</td>
             <td>no</td>
             <td>no</td>
+            <td>no</td>
             <td>
                <p>A person or organization not specified in the Creator field or Photographer field
                   who has made a significant contribution to the resource, but whose contribution is
@@ -595,6 +650,7 @@
             <td>yes</td>
             <td>no</td>
             <td>no</td>
+            <td>no</td>
             <td>
                <p>Source and date of acquisition of the resource.</p>
             </td>
@@ -619,8 +675,9 @@
             <td>no</td>
             <td>no</td>
             <td>no</td>
-            <td>yes</td>
             <td>no</td>
+            <td>no</td>
+            <td>yes</td>
             <td>
                <p>URI that dereferences to a rights statement.</p>
             </td>
@@ -637,6 +694,7 @@
             </td>
             <td>
                <p>Decision made by Special Collections in 2017 for all Special Collections items.</p>
+               <p>Decision made by Special Collections in 2017 for all Special Collections items.</p>
             </td>
          </tr>
          <tr>
@@ -647,8 +705,9 @@
             <td>no</td>
             <td>no</td>
             <td>no</td>
-            <td>yes</td>
             <td>no</td>
+            <td>no</td>
+            <td>yes</td>
             <td>
                <p>Any restrictions on the use of an image.</p>
             </td>
@@ -672,9 +731,10 @@
             <td>text</td>
             <td>no</td>
             <td>yes</td>
-            <td>no</td>
             <td>yes</td>
             <td>no</td>
+            <td>no</td>
+            <td>yes</td>
             <td>
                <p>Describes the nature or genre of the content of the resource.</p>
             </td>
@@ -694,6 +754,7 @@
             <td>no</td>
             <td>yes</td>
             <td>yes</td>
+            <td>no</td>
             <td>no</td>
             <td>no</td>
             <td>
@@ -721,6 +782,7 @@
             <td>yes</td>
             <td>no</td>
             <td>no</td>
+            <td>no</td>
             <td>
                <p>[Uncertain]</p>
             </td>
@@ -729,6 +791,9 @@
             </td>
             <td></td>
             <td>
+               <p>Seems to be a DI/ITS admin field.</p>
+               <p>For use with CONTENTdm "facets?"</p>
+               <p>This is a misuse of the dc:provenance property; we should repair this property?</p>
                <p>Seems to be a DI/ITS admin field.</p>
                <p>For use with CONTENTdm "facets?"</p>
                <p>This is a misuse of the dc:provenance property; we should repair this property?</p>
@@ -742,6 +807,7 @@
             <td>no</td>
             <td>yes</td>
             <td>yes</td>
+            <td>no</td>
             <td>no</td>
             <td>no</td>
             <td>
@@ -771,8 +837,9 @@
             <th>Cdm Large</th>
             <th>Searchable</th>
             <th>Hidden</th>
-            <th>Required</th>
+            <th>Required, CONTENTdm</th>
             <th>Cdm Controlled Vocabulary</th>
+            <th>Required for all UW collections</th>
             <th>Definition</th>
             <th>Input Instructions</th>
             <th>Examples</th>
@@ -788,6 +855,7 @@
             <td>no</td>
             <td>yes</td>
             <td>no</td>
+            <td> yes </td>
             <td>
                <p>A name given to the resource.</p>
             </td>
@@ -813,6 +881,7 @@
             <td>no</td>
             <td>no</td>
             <td>no</td>
+            <td> no </td>
             <td>
                <p>Full text contained in the resource.</p>
             </td>
@@ -831,28 +900,6 @@
          </tr>
          <tr>
             <td>3</td>
-            <td>Digital Collection</td>
-            <td>isPartOf</td>
-            <td>text</td>
-            <td>no</td>
-            <td>yes</td>
-            <td>no</td>
-            <td>yes</td>
-            <td>no</td>
-            <td>
-               <p>Name of the digital collection; may be the same name as the original repository collection.</p>
-            </td>
-            <td>
-               <p>Enter the name given to the digital collection.</p>
-            </td>
-            <td>
-               <p>Napoleonic Period Collection</p>
-               <p>Civil War Letters Collection</p>
-            </td>
-            <td></td>
-         </tr>
-         <tr>
-            <td>4</td>
             <td>Object Type</td>
             <td>type</td>
             <td>text</td>
@@ -861,91 +908,69 @@
             <td>no</td>
             <td>no</td>
             <td>yes</td>
+            <td> no </td>
             <td>
                <p>Denotes genre or type of material.</p>
             </td>
             <td>
-               <p>Input a term taken from a controlled source. Recommended: LC Thesaurus for Graphic
-                  Materials.
-               </p>
-               <p>Use the singular form of the term for describing a single item.</p>
+               <p>Input a term taken from the Art and Architecture Thesaurus at http://www.getty.edu/research/tools/vocabularies/aat/.</p>
+               <p>Recommended but not required for all compound object items.</p>
+               <p>Especially important to enter when the collection resources are mixed media.</p>
+               <p>Enter the heading exactly as it appears in the controlled source.</p>
                <p>Separate multiple values with a semi-colon and space.</p>
             </td>
             <td>
                <p>Photograph</p>
                <p>Lithograph</p>
+               <p>Typescript; Diary [typescript made from manuscript diary]</p>
             </td>
             <td></td>
          </tr>
          <tr>
-            <td>5</td>
-            <td>Rights Uri</td>
-            <td>rights</td>
-            <td>text</td>
-            <td>no</td>
-            <td>no</td>
-            <td>no</td>
-            <td>yes</td>
-            <td>no</td>
-            <td>
-               <p>URI that dereferences to a rights statement.</p>
-            </td>
-            <td>
-               <p>Enter a rights statement from rightsstatements.org.</p>
-               <p>For items with a date later than 1922, enter http://rightsstatements.org/vocab/InC/1.0/
-                  ("In Copyright"); for all else enter http://rightsstatements.org/vocab/CNE/1.0/ ("Copyright
-                  Not Evaluated.")
-               </p>
-            </td>
-            <td>
-               <p>http://rightsstatements.org/vocab/CNE/1.0/</p>
-               <p>http://rightsstatements.org/vocab/InC/1.0/</p>
-            </td>
-            <td>
-               <p>Decision made by Special Collections in 2017 for all Special Collections items.</p>
-            </td>
-         </tr>
-         <tr>
-            <td>6</td>
+            <td>4</td>
             <td>Restrictions</td>
             <td>rights</td>
             <td>text</td>
             <td>no</td>
             <td>no</td>
             <td>no</td>
-            <td>yes</td>
             <td>no</td>
+            <td>no</td>
+            <td> no </td>
             <td>
                <p>Any restrictions on the use of an image.</p>
             </td>
             <td>
-               <p>Input the following text: "For information on permissions for use and reproductions
-                  please visit UW Libraries Special Collections "Reproductions: Order Photographs &amp;
-                  Scans" page: http://www.lib.washington.edu/specialcoll/service/reproduction.html."
+               <p>Enter "For information on permissions for use and reproductions please visit UW Libraries
+                  Special Collections Use Permissions page:  http://www.lib.washington.edu/specialcollections/services/permission-for-use"
                </p>
             </td>
             <td>
                <p>For information on permissions for use and reproductions please visit UW Libraries
-                  Special Collections "Reproductions: Order Photographs &amp; Scans" page: http://www.lib.washington.edu/specialcoll/service/reproduction.html.
+                  Special Collections Use Permissions page:  http://www.lib.washington.edu/specialcollections/services/permission-for-use
                </p>
             </td>
             <td></td>
          </tr>
          <tr>
-            <td>7</td>
+            <td>5</td>
             <td>Type</td>
             <td>type</td>
             <td>text</td>
             <td>no</td>
             <td>yes</td>
-            <td>no</td>
             <td>yes</td>
             <td>no</td>
+            <td>no</td>
+            <td> no </td>
             <td>
                <p>Describes the nature or genre of the content of the resource.</p>
             </td>
             <td>
-               <p>Input a value from the Dublin Core Type Vocabulary at http://dublincore.org/documents/dcmi-terms/.</p>
+               <p>Optional: input a value from the Dublin Core Type Vocabulary at http://dublincore.org/documents/dcmi-terms/.</p>
+               <p>Not required for all compound object items. Use as needed. Recommended: enter type
+                  values when the collection resources are mixed media.
+               </p>
             </td>
             <td>
                <p>SillImage</p>
@@ -953,7 +978,7 @@
             <td></td>
          </tr>
          <tr>
-            <td>8</td>
+            <td>6</td>
             <td>Institution</td>
             <td>provenance</td>
             <td>text</td>
@@ -962,14 +987,20 @@
             <td>yes</td>
             <td>no</td>
             <td>no</td>
+            <td> no </td>
             <td>
                <p>[Uncertain]</p>
             </td>
             <td>
-               <p>[Uncertain]</p>
+               <p>Enter "Special Collections"</p>
             </td>
-            <td></td>
             <td>
+               <p>Special Collections</p>
+            </td>
+            <td>
+               <p>Seems to be a DI/ITS admin field.</p>
+               <p>For use with CONTENTdm "facets?"</p>
+               <p>This is a misuse of the dc:provenance property; we should repair this property?</p>
                <p>Seems to be a DI/ITS admin field.</p>
                <p>For use with CONTENTdm "facets?"</p>
                <p>This is a misuse of the dc:provenance property; we should repair this property?</p>
@@ -986,8 +1017,9 @@
             <th>Cdm Large</th>
             <th>Searchable</th>
             <th>Hidden</th>
-            <th>Required</th>
+            <th>Required, CONTENTdm</th>
             <th>Cdm Controlled Vocabulary</th>
+            <th>Required for all UW collections</th>
             <th>Definition</th>
             <th>Input Instructions</th>
             <th>Examples</th>
@@ -1003,6 +1035,7 @@
             <td>no</td>
             <td>yes</td>
             <td>no</td>
+            <td>yes</td>
             <td>
                <p>A name given to the resource.</p>
             </td>
@@ -1045,6 +1078,7 @@
             <td>no</td>
             <td>no</td>
             <td>no</td>
+            <td>no</td>
             <td>
                <p>The person or the corporate body responsible for the textual content.</p>
             </td>
@@ -1067,6 +1101,7 @@
             <td>text</td>
             <td>no</td>
             <td>yes</td>
+            <td>no</td>
             <td>no</td>
             <td>no</td>
             <td>no</td>
@@ -1097,31 +1132,38 @@
             <td>no</td>
             <td>no</td>
             <td>yes</td>
-            <td>yes</td>
             <td>no</td>
+            <td>no</td>
+            <td>yes</td>
             <td>
-               <p>Date the original resource was created.</p>
+               <p>Date of creation of the original resource.</p>
             </td>
             <td>
                <p>Express all dates, including date ranges, using Library of Congress' Extended Date
                   Time Format.
                </p>
-               <p>Most recent version of EDTF available at https://www.loc.gov/standards/datetime/pre-submission.html.</p>
+               <p>Most recent version of EDTF available at https://www.loc.gov/standards/datetime/.</p>
+               <p>Date-Edtf value should agree with dates values entered in Date and Dates fields.</p>
             </td>
             <td>
-               <p>If the Date field = "1940," Date EDTF = "1940"</p>
-               <p>If the Date field = "ca. 1910," Date EDTF = "1905/1915"</p>
-               <p>If the Date field = "Approximately 1930," Date EDTF = "1930~" </p>
-               <p>If Date field = "Possibly 1901," Date EDTF = "1901?"</p>
-               <p>If Date field = "May 9, 2001,: Date EDTF = "2001-05-09"</p>
-               <p>If Date field = "January 2008," Date EDTF = "2008-01"</p>
+               <p>If the Date field = "1940" then Date EDTF = "1940"</p>
+               <p>If the Date field = "1910?" then Date EDTF = "1910?"</p>
+               <p>If Date field = "May 9, 2001" then Date EDTF = "2001-05-09"</p>
+               <p>If Date field = "January 2008" then Date EDTF = "2008-01"</p>
+               <p>If Date field = "between 1930 and 1939" then Date EDTF = "1930/1939"</p>
+               <p>If Date field = "between 1855 and 1999?" then Date EDTF can be one of several options including "1855?/1999?"</p>
+               <p>If Date field = "before 2007" then Date EDTF is either "/2007" or "../2007"</p>
+               <p>If Date field = "after 2001" then Date EDTF is either "2001/" or "2001/.."</p>
             </td>
             <td>
-               <p>EDTF is still a standard in progress. It has not yet been accpted as a full recommendation.</p>
-               <p>This document needs a reference to the spec.</p>
+               <p>This document needs a reference to the final spec.</p>
                <p>For the xsd, datatype is xs:string; the datatype is more accurately http://id.loc.gov/datatypes/edtf,
-                  which is not a valid QName and is inavlid according to schema-4-properties-0.1, but
-                  this does not seem to be machine-actionable; more exploration needed.
+                  which is not a valid QName and is inavlid according to schema-4-properties, but this
+                  does not seem to be machine-actionable; more exploration needed.
+               </p>
+               <p>EDTF is still a standard in progress. It has not yet been accpted as a full recommendation.
+                  It should be voted on in 2018 by ISO. We are anticipating it will becoming a 2-part
+                  ISO 8601-2018.
                </p>
             </td>
          </tr>
@@ -1133,34 +1175,43 @@
             <td>no</td>
             <td>no</td>
             <td>no</td>
-            <td>yes</td>
             <td>no</td>
+            <td>no</td>
+            <td>yes</td>
             <td>
-               <p>Date of creation of the resource.</p>
+               <p>Date of creation of the original resource.</p>
+            </td>
+            <td>
                <p>If the resource is a photograph, the date the original photograph was taken.</p>
                <p>In cases where a painting, engraving, or architectural drawing was photographed, the
                   date the artwork was created.
                </p>
-            </td>
-            <td>
+               <p>Enter the date using one of the following formats:</p>
+               <p>YYYY</p>
+               <p>YYYY?</p>
+               <p>[month spelled out] [day], YYYY</p>
+               <p>[month spelled out], YYYY</p>
+               <p>between YYYY and YYYY</p>
+               <p>between YYYY and YYYY?</p>
+               <p>before YYYY</p>
+               <p>after YYYY</p>
+               <p>In CONTENTdm, this field is used for display purposes only and should be user-friendly.</p>
+               <p>If none of the date formats above are adequate, use a custom date format.</p>
+               <p>Date value should agree with date values entered in Date-Edtf and Dates fields.</p>
                <p>If the date when the image/resource in hand was produced is known, and is different
-                  from that of the original image, so note in the Notes field. The date should be a
-                  specific year. If the date is unknown, an attempt should be made to assign an approximate
-                  date, using the form "ca." (circa).
+                  from that of the original image, so note in the Notes field.
                </p>
-               <p>In CONTENTdm, this field is used for display purposes and should be user-friendly.
-                  The Dates field is indexed, enabling searching (see that entry for details). Specific
-                  dates (e.g., September 12, 1933; June 1912) should be entered in this field, and should
-                  also be incorporated in the Title field.
-               </p>
+               <p>If the date is unknown, enter an approximate date using a date format listed above.</p>
             </td>
             <td>
-               <p>I1940</p>
-               <p>Around 1910</p>
-               <p>Approximately 1930</p>
-               <p>Possibly 1901</p>
+               <p>1940</p>
+               <p>1940?    [this expresses the probable year]</p>
                <p>May 9, 2001</p>
-               <p>January 2008</p>
+               <p>March, 2001</p>
+               <p>between 1946 and 1952</p>
+               <p>between 1877 and 1976?</p>
+               <p>before 1995</p>
+               <p>after 1921</p>
             </td>
             <td></td>
          </tr>
@@ -1172,26 +1223,28 @@
             <td>no</td>
             <td>yes</td>
             <td>yes</td>
-            <td>yes</td>
             <td>no</td>
+            <td>no</td>
+            <td>yes</td>
             <td>
-               <p>Date of creation of the resource.</p>
-               <p>If the resource is a photograph, the date the original photograph was taken.</p>
-               <p>In cases where a painting, engraving, or architectural drawing was photographed, the
-                  date the artwork was created.
-               </p>
-               <p>Property to enable date searching in CONTENTdm.</p>
+               <p>Date of creation of the original resource.</p>
             </td>
             <td>
-               <p>Reflects the Date field. If the date is a single year, it is the same in both the
-                  Date and the Dates fields. If the date in the Date field is a "circa" date (e.g. ca.
-                  1895), the Dates field contains the expanded version so that searching will find dates
-                  covered by the concept of a "circa" date. Five years on either side of the "ca." date
-                  is the preferred form.
+               <p>Enter the year or years only.</p>
+               <p>If the resource is a photograph, the year the original photograph was taken.</p>
+               <p>In cases where a painting, engraving, or architectural drawing was photographed, the
+                  year the artwork was created.
                </p>
-               <p>If the Date field reads "ca. 1910" enter "1905, 1906, 1907, 1908, 1909, 1910, 1911,
-                  1912, 1913, 1914, 1915"
+               <p>If the date is a single year, year and month, or year month and day, enter the single
+                  year only in the Dates field.
                </p>
+               <p>If the date is an approximate year, enter that year plus five years on either side
+                  of that year; for example, if the Date field is "1910?" enter "1905 1906 1907 1908
+                  1909 1910 1911 1912 1913 1914 1915"
+               </p>
+               <p>If the year is a range of years, enter all the years in that range.</p>
+               <p>This field is indexed and enables date searching in CONTENTdm.</p>
+               <p>The Dates value should agree with date values entered in Date-Edtf and Date fields.</p>
             </td>
             <td>
                <p>1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915</p>
@@ -1205,6 +1258,7 @@
             <td>text</td>
             <td>yes</td>
             <td>yes</td>
+            <td>no</td>
             <td>no</td>
             <td>no</td>
             <td>no</td>
@@ -1237,6 +1291,7 @@
             <td>none</td>
             <td>text</td>
             <td>yes</td>
+            <td>no</td>
             <td>no</td>
             <td>no</td>
             <td>no</td>
@@ -1283,6 +1338,7 @@
             <td>no</td>
             <td>no</td>
             <td>yes</td>
+            <td>no</td>
             <td>
                <p>The topic of the resource.</p>
             </td>
@@ -1305,6 +1361,7 @@
             <td>no</td>
             <td>no</td>
             <td>yes</td>
+            <td>no</td>
             <td>
                <p>The topic of the resource.</p>
             </td>
@@ -1329,6 +1386,7 @@
             <td>yes</td>
             <td>no</td>
             <td>no</td>
+            <td>yes</td>
             <td>no</td>
             <td>
                <p>The spatial characteristics of the intellectual content of the resource. </p>
@@ -1359,8 +1417,9 @@
             <td>no</td>
             <td>yes</td>
             <td>no</td>
-            <td>yes</td>
             <td>no</td>
+            <td>yes</td>
+            <td>yes</td>
             <td>
                <p>Name of the digital collection; may be the same name as the original repository collection.</p>
             </td>
@@ -1383,6 +1442,7 @@
             <td>no</td>
             <td>no</td>
             <td>no</td>
+            <td>yes</td>
             <td>
                <p>Number that users can reference to order a copy of the digital image.</p>
             </td>
@@ -1402,6 +1462,7 @@
             <td>text</td>
             <td>no</td>
             <td>yes</td>
+            <td>no</td>
             <td>no</td>
             <td>no</td>
             <td>no</td>
@@ -1427,13 +1488,14 @@
          <tr>
             <td>15</td>
             <td>Repository</td>
-            <td>source</td>
+            <td>none</td>
             <td>text</td>
             <td>no</td>
             <td>no</td>
             <td>no</td>
             <td>no</td>
             <td>no</td>
+            <td>yes</td>
             <td>
                <p>The institution where the item is physically located.</p>
             </td>
@@ -1457,6 +1519,7 @@
             <td>no</td>
             <td>no</td>
             <td>no</td>
+            <td>yes</td>
             <td>
                <p>This field contains the collection name and its number, represented as a phrase.</p>
             </td>
@@ -1478,6 +1541,7 @@
             <td>no</td>
             <td>no</td>
             <td>yes</td>
+            <td>no</td>
             <td>
                <p>Denotes genre or type of material.</p>
             </td>
@@ -1485,7 +1549,7 @@
                <p>Input a term taken from a controlled source. Recommended: LC Thesaurus for Graphic
                   Materials.
                </p>
-               <p>Use the singular form of the term for describing a single item.</p>
+               <p>Enter the heading exactly as it appears in the thesaurus.</p>
                <p>Separate multiple values with a semi-colon and space.</p>
             </td>
             <td>
@@ -1500,6 +1564,7 @@
             <td>Physical Description</td>
             <td>format</td>
             <td>text</td>
+            <td>no</td>
             <td>no</td>
             <td>no</td>
             <td>no</td>
@@ -1530,6 +1595,7 @@
             <td>no</td>
             <td>no</td>
             <td>no</td>
+            <td>no</td>
             <td>
                <p>Describes the digital conversion process, date scanned, etc.</p>
             </td>
@@ -1551,6 +1617,7 @@
             <td>no</td>
             <td>no</td>
             <td>yes</td>
+            <td>no</td>
             <td>no</td>
             <td>no</td>
             <td>
@@ -1579,6 +1646,7 @@
             <td>no</td>
             <td>yes</td>
             <td>yes</td>
+            <td>no</td>
             <td>no</td>
             <td>no</td>
             <td>
@@ -1614,6 +1682,7 @@
             <td>yes</td>
             <td>no</td>
             <td>no</td>
+            <td>no</td>
             <td>
                <p>Name of the studio and/or publisher of the photograph.</p>
             </td>
@@ -1639,6 +1708,7 @@
             <td>no</td>
             <td>yes</td>
             <td>yes</td>
+            <td>no</td>
             <td>no</td>
             <td>no</td>
             <td>
@@ -1669,6 +1739,7 @@
             <td>yes</td>
             <td>no</td>
             <td>no</td>
+            <td>no</td>
             <td>
                <p>A person or organization not specified in the Creator field or Photographer field
                   who has made a significant contribution to the resource, but whose contribution is
@@ -1695,6 +1766,7 @@
             <td>yes</td>
             <td>no</td>
             <td>no</td>
+            <td>no</td>
             <td>
                <p>Source and date of acquisition of the resource.</p>
             </td>
@@ -1719,8 +1791,9 @@
             <td>no</td>
             <td>no</td>
             <td>no</td>
-            <td>yes</td>
             <td>no</td>
+            <td>no</td>
+            <td>yes</td>
             <td>
                <p>URI that dereferences to a rights statement.</p>
             </td>
@@ -1737,6 +1810,7 @@
             </td>
             <td>
                <p>Decision made by Special Collections in 2017 for all Special Collections items.</p>
+               <p>Decision made by Special Collections in 2017 for all Special Collections items.</p>
             </td>
          </tr>
          <tr>
@@ -1747,8 +1821,9 @@
             <td>no</td>
             <td>no</td>
             <td>no</td>
-            <td>yes</td>
             <td>no</td>
+            <td>no</td>
+            <td>yes</td>
             <td>
                <p>Any restrictions on the use of an image.</p>
             </td>
@@ -1772,9 +1847,10 @@
             <td>text</td>
             <td>no</td>
             <td>yes</td>
-            <td>no</td>
             <td>yes</td>
             <td>no</td>
+            <td>no</td>
+            <td>yes</td>
             <td>
                <p>Describes the nature or genre of the content of the resource.</p>
             </td>
@@ -1794,6 +1870,7 @@
             <td>no</td>
             <td>yes</td>
             <td>yes</td>
+            <td>no</td>
             <td>no</td>
             <td>no</td>
             <td>
@@ -1821,6 +1898,7 @@
             <td>yes</td>
             <td>no</td>
             <td>no</td>
+            <td>no</td>
             <td>
                <p>[Uncertain]</p>
             </td>
@@ -1834,6 +1912,9 @@
                <p>Seems to be a DI/ITS admin field.</p>
                <p>For use with CONTENTdm "facets?"</p>
                <p>This is a misuse of the dc:provenance property; we should repair this property?</p>
+               <p>Seems to be a DI/ITS admin field.</p>
+               <p>For use with CONTENTdm "facets?"</p>
+               <p>This is a misuse of the dc:provenance property; we should repair this property?</p>
             </td>
          </tr>
          <tr>
@@ -1844,6 +1925,7 @@
             <td>no</td>
             <td>yes</td>
             <td>yes</td>
+            <td>no</td>
             <td>no</td>
             <td>no</td>
             <td>

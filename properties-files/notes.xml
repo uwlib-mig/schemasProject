@@ -1,77 +1,89 @@
-<?xml version="1.0" encoding="UTF-8"?><property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
-    <labels>
-        <platformIndependent>notes</platformIndependent>
-        <dc>description</dc>
-    </labels>
-    <cdm>
-        <label>Notes</label>
-        <cdmDatatype>text</cdmDatatype>
-        <cdmLarge>yes</cdmLarge>
-        <searchable>yes</searchable>
-        <hidden>no</hidden>
-        <cdmRequired>no</cdmRequired><uwRequired>no</uwRequired>
-        <cdmControlledVocab>no</cdmControlledVocab>
-    </cdm>
-    <dspace>
-        <dspaceProperty/>
-    </dspace>
-    <descriptions>
-        <definition>
-            <para>An account of the resource.</para>
-            <para>Notes include any information of importance that is not represented elsewhere.</para>
-        </definition>
-        <instructions co="no">
-            <para>Each separate "note" should be a paragraph. Additional notes can be added, separated from the previous note using a blank line.</para>
-        </instructions>
-        <instructions co="object">
-            <para>Each separate "note" should be a paragraph. Additional notes can be added, separated from the previous note using a blank line.</para>
-        </instructions>
-    </descriptions>
-    <examples>
-        <example co="no">
-            <para>Photographs taken by Asahel Curtis during his trip to the Klondike in 1897-1899.</para>
-            <para>Caption on image: Curtis 319.</para>
-            <para>Handwritten on verso: Mrs. McLain with dog team.</para>
-            <para>PH Coll 519.319</para>
-        </example>
-        <example co="object">
-            <para>Photographs taken by Asahel Curtis during his trip to the Klondike in 1897-1899.</para>
-            <para>Caption on image: Curtis 319.</para>
-            <para>Handwritten on verso: Mrs. McLain with dog team.</para>
-            <para>PH Coll 519.319</para>
-        </example>
-    </examples>
-    <additionalInfo>
-        <generalNotes co="all">
-            <para>"Notes" is distingushed from "Historical Notes" mainly because it descibes the image/resource only. Values in this field also may be considered more "indexable" insofar as they precisely descibe the image/resource. "HistoricalNotes" are more like "writing" and create a braod historical context.</para>
-        </generalNotes>
-    </additionalInfo>
-    <marc>
-        <dcgMarcMapping/>
-        <marcNotes>
-            <para/>
-        </marcNotes>
-    </marc>
-    <xsd>
-        <typeAttribute>xs:string</typeAttribute>
-        <complexType/>
-        
-    </xsd>
-    <rdf>
-        <sameAs/>
-    </rdf>
-    <history>
-        <dateCreated>
-            
-            <range>
-                <start>2000-01-01</start>
-                <end>2017-01-06</end>
-            </range>
-        </dateCreated>
-        <created4Coll>Special Collections Photograph Collections</created4Coll>
-        <justification>Needed a place to enter all "other" information valuable to the description of the resource.</justification>
-        <changeLog>
-            <change/><change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
-        </changeLog>
-    </history>
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns:xs="http://www.w3.org/2001/XMLSchema"
+          xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+   <labels>
+      <platformIndependent>notes</platformIndependent>
+      <dc>description</dc>
+   </labels>
+   <uwRequired>
+      <uwStandalone>no</uwStandalone>
+      <uwObject>no</uwObject>
+      <uwItem>no</uwItem>
+   </uwRequired>
+   <cdm>
+      <label>Notes</label>
+      <cdmDatatype>text</cdmDatatype>
+      <cdmLarge>yes</cdmLarge>
+      <searchable>yes</searchable>
+      <hidden>no</hidden>
+      <cdmRequired>no</cdmRequired>
+      <cdmControlledVocab>no</cdmControlledVocab>
+   </cdm>
+   <dspace>
+      <dspaceProperty/>
+   </dspace>
+   <descriptions>
+      <definition>
+         <para>An account of the resource.</para>
+         <para>Notes include any information of importance that is not represented elsewhere.</para>
+      </definition>
+      <instructions co="no">
+         <para>Each separate "note" should be a paragraph. Additional notes can be added, separated from the previous note using a blank line.</para>
+      </instructions>
+      <instructions co="object">
+         <para>Each separate "note" should be a paragraph. Additional notes can be added, separated from the previous note using a blank line.</para>
+      </instructions>
+   </descriptions>
+   <examples>
+      <example co="no">
+         <para>Photographs taken by Asahel Curtis during his trip to the Klondike in 1897-1899.</para>
+         <para>Caption on image: Curtis 319.</para>
+         <para>Handwritten on verso: Mrs. McLain with dog team.</para>
+         <para>PH Coll 519.319</para>
+      </example>
+      <example co="object">
+         <para>Photographs taken by Asahel Curtis during his trip to the Klondike in 1897-1899.</para>
+         <para>Caption on image: Curtis 319.</para>
+         <para>Handwritten on verso: Mrs. McLain with dog team.</para>
+         <para>PH Coll 519.319</para>
+      </example>
+   </examples>
+   <additionalInfo>
+      <generalNotes co="all">
+         <para>"Notes" is distingushed from "Historical Notes" mainly because it descibes the image/resource only. Values in this field also may be considered more "indexable" insofar as they precisely descibe the image/resource. "HistoricalNotes" are more like "writing" and create a braod historical context.</para>
+      </generalNotes>
+   </additionalInfo>
+   <marc>
+      <dcgMarcMapping/>
+      <marcNotes>
+         <para/>
+      </marcNotes>
+   </marc>
+   <xsd>
+      <typeInfo level="standalone object">
+         <typeAttribute>xs:string</typeAttribute>
+      </typeInfo>
+      <typeInfo level="item">
+         <empty/>
+      </typeInfo>
+   </xsd>
+   <rdf>
+      <sameAs/>
+   </rdf>
+   <history>
+      <dateCreated>
+         <range>
+            <start>2000-01-01</start>
+            <end>2017-01-06</end>
+         </range>
+      </dateCreated>
+      <created4Coll>Special Collections Photograph Collections</created4Coll>
+      <justification>Needed a place to enter all "other" information valuable to the description of the resource.</justification>
+      <changeLog>
+         <change/>
+         <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
+      </changeLog>
+   </history>
 </property>

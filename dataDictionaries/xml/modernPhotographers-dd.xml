@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<migDataDictionary id="0002" xmlns="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries"
+<migDataDictionary id="0004" xmlns="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries"
     xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-dds-v0.3.xsd">
+    xsi:schemaLocation="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-dds.xsd">
     <ddName>Modern Photographers Collection</ddName>
     <ddPartOfProject/>
     <originalCreationDate>2017-06-22</originalCreationDate>
-    <latestUpdate>2017-06-22</latestUpdate>
+    <latestUpdate>2017-10-26</latestUpdate>
     <metadataLiaisons>
         <metadataLiaison>TBD</metadataLiaison>
     </metadataLiaisons>
     <cdmCo>no</cdmCo>
     <standalone>yes</standalone>
+    <cdmCode>hupy</cdmCode>
     <properties>
         <xi:include href="../../properties-files/title.xml"/>
         <xi:include href="../../properties-files/photographer.xml"/>
@@ -25,7 +26,7 @@
         <xi:include href="../../properties-files/digitalCollection.xml"/>
         <xi:include href="../../properties-files/orderNumber.xml"/>
         <xi:include href="../../properties-files/orderingInformation.xml"/>
-        <xi:include href="../../properties-files/citationInformation.xml"/>
+        <!--<xi:include href="../../properties-files/citationInformation.xml"/> ***Will be added afetr 2017-10-26 -->
         <xi:include href="../../properties-files/negativeNumber.xml"/>
         <xi:include href="../../properties-files/repository.xml"/>
         <xi:include href="../../properties-files/repositoryCollection.xml"/>

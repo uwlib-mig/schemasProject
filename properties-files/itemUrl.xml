@@ -1,78 +1,88 @@
-<?xml version="1.0" encoding="UTF-8"?><property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
-    <labels>
-        <platformIndependent>itemUrl</platformIndependent>
-        <dc>identifier</dc>
-    </labels>
-    <cdm>
-        <label>ItemURL</label>
-        <cdmDatatype>cdmAdministrative</cdmDatatype>
-        <cdmLarge>no</cdmLarge>
-        <searchable>no</searchable>
-        <hidden>yes</hidden>
-        <cdmRequired>no</cdmRequired><uwRequired>yes</uwRequired>
-        <cdmControlledVocab>no</cdmControlledVocab>
-    </cdm>
-    <dspace>
-        <dspaceProperty/>
-    </dspace>
-    <descriptions>
-        <definition>
-            <para>http URI for the html page containing the resource with metadata.</para>
-        </definition>
-        <instructions co="no">
-            <para>Do not input. Automatically created by CONTENTdm.</para>
-        </instructions>
-        <instructions co="object">
-            <para>Do not input. Automatically created by CONTENTdm.</para>
-        </instructions>
-        <instructions co="item">
-            <para>Do not input. Automatically created by CONTENTdm.</para>
-        </instructions>
-    </descriptions>
-    <examples>
-        <example co="no">
-            <para>http://digitalcollections.lib.washington.edu/cdm/ref/collection/ayp/id/5</para>
-            <para>http://cdm16786.contentdm.oclc.org:80/cdm/ref/collection/civilwar/id/254</para>
-        </example>
-
-        <example co="object">
-            <para>http://digitalcollections.lib.washington.edu/cdm/ref/collection/ayp/id/5</para>
-            <para>http://cdm16786.contentdm.oclc.org:80/cdm/ref/collection/civilwar/id/254</para>
-        </example>
-        <example co="item">
-            <para>http://digitalcollections.lib.washington.edu/cdm/ref/collection/ayp/id/5</para>
-            <para>http://cdm16786.contentdm.oclc.org:80/cdm/ref/collection/civilwar/id/254</para>
-        </example>
-    </examples>
-    <additionalInfo>
-        <generalNotes co="all">
-            <para>CONTENTdm administrative field.</para>
-            <para>Does output in OAI-PMH, mapped to dc:identifier.</para>
-            <para>Does not appear to be searchable in the cdm collection; it does not appear to be an indexed field.</para>
-            <para>It does appear to be the persistent URI for the resource (in its context; not a uri for the actual resource, the image); however the reference URI outputs perfectly in OAI-PMH; it outputs however in cdm exports with port 80 added to the base URI (http://cdm16786.contentdm.oclc.org:80/). </para>
-        </generalNotes>
-    </additionalInfo>
-    <marc>
-        <dcgMarcMapping/>
-        <marcNotes>
-            <para/>
-        </marcNotes>
-    </marc>
-    <xsd>
-        <typeAttribute>xs:anyURI</typeAttribute>
-        <complexType/>
-    </xsd>
-    <rdf>
-        <sameAs/>
-    </rdf>
-    <history>
-        <dateCreated>
-            <single>1999-01-01</single>
-        </dateCreated>
-        <created4Coll>CONTENTdm</created4Coll>
-        <justification>Needed a system-created identifier.</justification>
-        <changeLog>
-            <change/><change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
-        </changeLog>
-    </history>
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns:xs="http://www.w3.org/2001/XMLSchema"
+          xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+   <labels>
+      <platformIndependent>itemUrl</platformIndependent>
+      <dc>identifier</dc>
+   </labels>
+   <uwRequired>
+      <uwStandalone>yes</uwStandalone>
+      <uwObject>yes</uwObject>
+      <uwItem>no</uwItem>
+   </uwRequired>
+   <cdm>
+      <label>ItemURL</label>
+      <cdmDatatype>cdmAdministrative</cdmDatatype>
+      <cdmLarge>no</cdmLarge>
+      <searchable>no</searchable>
+      <hidden>yes</hidden>
+      <cdmRequired>no</cdmRequired>
+      <cdmControlledVocab>no</cdmControlledVocab>
+   </cdm>
+   <dspace>
+      <dspaceProperty/>
+   </dspace>
+   <descriptions>
+      <definition>
+         <para>http URI for the html page containing the resource with metadata.</para>
+      </definition>
+      <instructions co="no">
+         <para>Do not input. Automatically created by CONTENTdm.</para>
+      </instructions>
+      <instructions co="object">
+         <para>Do not input. Automatically created by CONTENTdm.</para>
+      </instructions>
+      <instructions co="item">
+         <para>Do not input. Automatically created by CONTENTdm.</para>
+      </instructions>
+   </descriptions>
+   <examples>
+      <example co="no">
+         <para>http://digitalcollections.lib.washington.edu/cdm/ref/collection/ayp/id/5</para>
+         <para>http://cdm16786.contentdm.oclc.org:80/cdm/ref/collection/civilwar/id/254</para>
+      </example>
+      <example co="object">
+         <para>http://digitalcollections.lib.washington.edu/cdm/ref/collection/ayp/id/5</para>
+         <para>http://cdm16786.contentdm.oclc.org:80/cdm/ref/collection/civilwar/id/254</para>
+      </example>
+      <example co="item">
+         <para>http://digitalcollections.lib.washington.edu/cdm/ref/collection/ayp/id/5</para>
+         <para>http://cdm16786.contentdm.oclc.org:80/cdm/ref/collection/civilwar/id/254</para>
+      </example>
+   </examples>
+   <additionalInfo>
+      <generalNotes co="all">
+         <para>CONTENTdm administrative field.</para>
+         <para>Does output in OAI-PMH, mapped to dc:identifier.</para>
+         <para>Does not appear to be searchable in the cdm collection; it does not appear to be an indexed field.</para>
+         <para>It does appear to be the persistent URI for the resource (in its context; not a uri for the actual resource, the image); however the reference URI outputs perfectly in OAI-PMH; it outputs however in cdm exports with port 80 added to the base URI (http://cdm16786.contentdm.oclc.org:80/). </para>
+      </generalNotes>
+   </additionalInfo>
+   <marc>
+      <dcgMarcMapping/>
+      <marcNotes>
+         <para/>
+      </marcNotes>
+   </marc>
+   <xsd>
+      <typeInfo level="standalone object item">
+         <typeAttribute>xs:anyURI</typeAttribute>
+      </typeInfo>
+   </xsd>
+   <rdf>
+      <sameAs/>
+   </rdf>
+   <history>
+      <dateCreated>
+         <single>1999-01-01</single>
+      </dateCreated>
+      <created4Coll>CONTENTdm</created4Coll>
+      <justification>Needed a system-created identifier.</justification>
+      <changeLog>
+         <change/>
+         <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
+      </changeLog>
+   </history>
 </property>

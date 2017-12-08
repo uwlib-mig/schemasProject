@@ -1,73 +1,75 @@
-<?xml version="1.0" encoding="UTF-8"?><property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
-    <labels>
-        <platformIndependent>negativeNumber</platformIndependent>
-        <dc>identifier</dc>
-    </labels>
-    <cdm>
-        <label>Negative Number</label>
-        <cdmDatatype>text</cdmDatatype>
-        <cdmLarge>no</cdmLarge>
-        <searchable>yes</searchable>
-        <hidden>no</hidden>
-        <cdmRequired>no</cdmRequired><uwRequired>no</uwRequired>
-        <cdmControlledVocab>no</cdmControlledVocab>
-    </cdm>
-    <dspace>
-        <dspaceProperty/>
-    </dspace>
-    <descriptions>
-        <definition>
-            <para>The Negative number refers to the reproduction number assigned to the image for purposes of duplication. It is the unique number by which Special Collections identifies the image. It may be identical to another number in the record.</para>
-        </definition>
-        <instructions co="no">
-            <para>Enter the negative number. If two negatives numbers are associated with an image, these are to be separated by a semicolon.</para>
-        </instructions>
-    </descriptions>
-    <examples>
-        <example co="no">
-            <para>UW12456</para>
-            <para>A. Curtis 2387</para>
-            <para>NA563; UW3476</para>
-            <para>La Roche 2056</para>
-        </example>
-        
-        <!-- customization here is flawed.
-             I think we need
-             <customizations>
-                 <description | example>
-                     <para @co @dd @paraDec @paraEx> REPEATABLE
-                         <para>
-        -->
-        
-    </examples>
-    <additionalInfo>
-    </additionalInfo>
-    <marc>
-        <dcgMarcMapping/>
-        <marcNotes>
-            <para/>
-        </marcNotes>
-    </marc>
-    <xsd>
-        <typeAttribute>xs:string</typeAttribute>
-        <complexType/>
-        
-    </xsd>
-    <rdf>
-        <sameAs/>
-    </rdf>
-    <history>
-        <dateCreated>
-            
-            <range>
-                <start>2000-01-01</start>
-                <end>2017-01-08</end>
-            </range>
-        </dateCreated>
-        <created4Coll>Special Collections Photograph Collections</created4Coll>
-        <justification>Special Collections needed a place to record the negative number.</justification>
-        <changeLog>
-            <change/><change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
-        </changeLog>
-    </history>
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns:xs="http://www.w3.org/2001/XMLSchema"
+          xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+   <labels>
+      <platformIndependent>negativeNumber</platformIndependent>
+      <dc>identifier</dc>
+   </labels>
+   <uwRequired>
+      <uwStandalone>no</uwStandalone>
+      <uwObject>no</uwObject>
+      <uwItem>no</uwItem>
+   </uwRequired>
+   <cdm>
+      <label>Negative Number</label>
+      <cdmDatatype>text</cdmDatatype>
+      <cdmLarge>no</cdmLarge>
+      <searchable>yes</searchable>
+      <hidden>no</hidden>
+      <cdmRequired>no</cdmRequired>
+      <cdmControlledVocab>no</cdmControlledVocab>
+   </cdm>
+   <dspace>
+      <dspaceProperty/>
+   </dspace>
+   <descriptions>
+      <definition>
+         <para>The Negative number refers to the reproduction number assigned to the image for purposes of duplication. It is the unique number by which Special Collections identifies the image. It may be identical to another number in the record.</para>
+      </definition>
+      <instructions co="no">
+         <para>Enter the negative number. If two negatives numbers are associated with an image, these are to be separated by a semicolon.</para>
+      </instructions>
+   </descriptions>
+   <examples>
+      <example co="no">
+         <para>UW12456</para>
+         <para>A. Curtis 2387</para>
+         <para>NA563; UW3476</para>
+         <para>La Roche 2056</para>
+      </example>
+   </examples>
+   <additionalInfo/>
+   <marc>
+      <dcgMarcMapping/>
+      <marcNotes>
+         <para/>
+      </marcNotes>
+   </marc>
+   <xsd>
+      <typeInfo level="standalone object">
+         <typeAttribute>xs:string</typeAttribute>
+      </typeInfo>
+      <typeInfo level="item">
+         <empty/>
+      </typeInfo>
+   </xsd>
+   <rdf>
+      <sameAs/>
+   </rdf>
+   <history>
+      <dateCreated>
+         <range>
+            <start>2000-01-01</start>
+            <end>2017-01-08</end>
+         </range>
+      </dateCreated>
+      <created4Coll>Special Collections Photograph Collections</created4Coll>
+      <justification>Special Collections needed a place to record the negative number.</justification>
+      <changeLog>
+         <change/>
+         <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
+      </changeLog>
+   </history>
 </property>

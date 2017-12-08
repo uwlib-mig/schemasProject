@@ -1,90 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
-    <labels>
-        <platformIndependent>dateEdtf</platformIndependent>
-        <dc>date</dc>
-    </labels>
-    <cdm>
-        <label>Date Edtf</label>
-        <cdmDatatype>text</cdmDatatype>
-        <cdmLarge>no</cdmLarge>
-        <searchable>no</searchable>
-        <hidden>yes</hidden>
-        <cdmRequired>no</cdmRequired>
-        <uwRequired>yes</uwRequired>
-        <cdmControlledVocab>no</cdmControlledVocab>
-    </cdm>
-    <dspace>
-        <dspaceProperty/>
-    </dspace>
-    <descriptions>
-        <definition>
-            <para>Date the original resource was created.</para>
-        </definition>
-        <instructions co="no">
-            <para>Express all dates, including date ranges, using Library of Congress' Extended Date Time Format.</para>
-            <para>Most recent version of EDTF available at https://www.loc.gov/standards/datetime/.</para>
-            <para>Date-Edtf value should agree with dates values entered in Date and Dates fields.</para>
-        </instructions>
-        <instructions co="object">
-            <para>Express all dates, including date ranges, using Library of Congress' Extended Date Time Format.</para>
-            <para>Most recent version of EDTF available at https://www.loc.gov/standards/datetime/.</para>
-            <para>Date-Edtf value should agree with dates values entered in Date and Dates fields.</para>
-        </instructions>
-    </descriptions>
-    <examples>
-        <example co="no">
-            <para>If the Date field = "1940," Date EDTF = "1940"</para>
-            <para>If the Date field = "ca. 1910," Date EDTF = "1905/1915"</para>
-            <para>If the Date field = "Approximately 1930," Date EDTF = "1930~" </para>
-            <para>If Date field = "Possibly 1901," Date EDTF = "1901?"</para>
-            <para>If Date field = "May 9, 2001,: Date EDTF = "2001-05-09"</para>
-            <para>If Date field = "January 2008," Date EDTF = "2008-01"</para>
-        </example>
-        <example co="object">
-            <para>If the Date field = "1940," Date EDTF = "1940"</para>
-            <para>If the Date field = "ca. 1910," Date EDTF = "1905/1915"</para>
-            <para>If the Date field = "Approximately 1930," Date EDTF = "1930~" </para>
-            <para>If Date field = "Possibly 1901," Date EDTF = "1901?"</para>
-            <para>If Date field = "May 9, 2001,: Date EDTF = "2001-05-09"</para>
-            <para>If Date field = "January 2008," Date EDTF = "2008-01"</para>
-        </example>
-    </examples>
-    <additionalInfo>
-        <generalNotes co="all">
-            <para>EDTF is still a standard in progress. It has not yet been accpted as a full recommendation. It should be voted on in 2018 by ISO. We are anticipating it will becoming a 2-part ISO 8601-2018.</para>
-            <para>This document needs a reference to the spec.</para>
-            <para>For the xsd, datatype is xs:string; the datatype is more accurately http://id.loc.gov/datatypes/edtf, which is not a valid QName and is inavlid according to schema-4-properties-0.1, but this does not seem to be machine-actionable; more exploration needed.</para>
-        </generalNotes>
-    </additionalInfo>
-    <marc>
-        <dcgMarcMapping/>
-        <marcNotes>
-            <para/>
-        </marcNotes>
-    </marc>
-    <xsd>
-        <simpleType>
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns:xs="http://www.w3.org/2001/XMLSchema"
+          xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+   <labels>
+      <platformIndependent>dateEdtf</platformIndependent>
+      <dc>date</dc>
+   </labels>
+   <uwRequired>
+      <uwStandalone>yes</uwStandalone>
+      <uwObject>yes</uwObject>
+      <uwItem>no</uwItem>
+   </uwRequired>
+   <cdm>
+      <label>Date Edtf</label>
+      <cdmDatatype>text</cdmDatatype>
+      <cdmLarge>no</cdmLarge>
+      <searchable>no</searchable>
+      <hidden>yes</hidden>
+      <cdmRequired>no</cdmRequired>
+      <cdmControlledVocab>no</cdmControlledVocab>
+   </cdm>
+   <dspace>
+      <dspaceProperty/>
+   </dspace>
+   <descriptions>
+      <definition>
+         <para>Date of creation of the original resource.</para>
+      </definition>
+      <instructions co="no">
+         <para>Express all dates, including date ranges, using Library of Congress' Extended Date Time Format.</para>
+         <para>Most recent version of EDTF available at https://www.loc.gov/standards/datetime/.</para>
+         <para>Date-Edtf value should agree with dates values entered in Date and Dates fields.</para>
+      </instructions>
+      <instructions co="object">
+         <para>Express all dates, including date ranges, using Library of Congress' Extended Date Time Format.</para>
+         <para>Most recent version of EDTF available at https://www.loc.gov/standards/datetime/.</para>
+         <para>Date-Edtf value should agree with dates values entered in Date and Dates fields.</para>
+      </instructions>
+   </descriptions>
+   <examples>
+      <example co="no">
+         <para>If the Date field = "1940" then Date EDTF = "1940"</para>
+         <para>If the Date field = "1910?" then Date EDTF = "1910?"</para>
+         <para>If Date field = "May 9, 2001" then Date EDTF = "2001-05-09"</para>
+         <para>If Date field = "January 2008" then Date EDTF = "2008-01"</para>
+         <para>If Date field = "between 1930 and 1939" then Date EDTF = "1930/1939"</para>
+         <para>If Date field = "between 1855 and 1999?" then Date EDTF can be one of several options including "1855?/1999?"</para>
+         <para>If Date field = "before 2007" then Date EDTF is either "/2007" or "../2007"</para>
+         <para>If Date field = "after 2001" then Date EDTF is either "2001/" or "2001/.."</para>
+      </example>
+      <example co="object">
+         <para>If the Date field = "1940" then Date EDTF = "1940"</para>
+         <para>If the Date field = "1910?" then Date EDTF = "1910?"</para>
+         <para>If Date field = "May 9, 2001" then Date EDTF = "2001-05-09"</para>
+         <para>If Date field = "January 2008" then Date EDTF = "2008-01"</para>
+         <para>If Date field = "between 1930 and 1939" then Date EDTF = "1930/1939"</para>
+         <para>If Date field = "between 1855 and 1999?" then Date EDTF can be one of several options including "1855?/1999?"</para>
+         <para>If Date field = "before 2007" then Date EDTF is either "/2007" or "../2007"</para>
+         <para>If Date field = "after 2001" then Date EDTF is either "2001/" or "2001/.."</para>
+      </example>
+   </examples>
+   <additionalInfo>
+      <admin co="all">
+         <para>This document needs a reference to the final spec.</para>
+         <para>For the xsd, datatype is xs:string; the datatype is more accurately http://id.loc.gov/datatypes/edtf, which is not a valid QName and is inavlid according to schema-4-properties, but this does not seem to be machine-actionable; more exploration needed.</para>
+      </admin>
+      <generalNotes co="all">
+         <para>EDTF is still a standard in progress. It has not yet been accpted as a full recommendation. It should be voted on in 2018 by ISO. We are anticipating it will becoming a 2-part ISO 8601-2018.</para>
+      </generalNotes>
+   </additionalInfo>
+   <marc>
+      <dcgMarcMapping/>
+      <marcNotes>
+         <para/>
+      </marcNotes>
+   </marc>
+   <xsd>
+      <typeInfo level="standalone object">
+         <simpleType>
             <xs:restriction base="xs:string">
-                <xs:minLength value="1"/>
+               <xs:minLength value="1"/>
             </xs:restriction>
-        </simpleType>
-    </xsd>
-    <rdf>
-        <sameAs/>
-    </rdf>
-    <history>
-        <dateCreated>
-            <single>2017-06-21</single>
-        </dateCreated>
-        <created4Coll>Special Collections Photograph Collections</created4Coll>
-        <justification>Wanted to add standardized date forms (EDTF) required by Orbis Cascade Dublin Core Best Practices (https://www.orbiscascade.org/dublin-core-best-practices).</justification>
-        <changeLog>
-            <change/>
-            <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation. Also updated link to EDTF and added some instructions.</change>
-        </changeLog>
-    </history>
+         </simpleType>
+      </typeInfo>
+      <typeInfo level="item">
+         <empty/>
+      </typeInfo>
+   </xsd>
+   <rdf>
+      <sameAs/>
+   </rdf>
+   <history>
+      <dateCreated>
+         <single>2017-06-21</single>
+      </dateCreated>
+      <created4Coll>Special Collections Photograph Collections</created4Coll>
+      <justification>Wanted to add standardized date forms (EDTF) required by Orbis Cascade Dublin Core Best Practices (https://www.orbiscascade.org/dublin-core-best-practices).</justification>
+      <changeLog>
+         <change/>
+         <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation. Also updated link to EDTF and added some instructions.</change>
+      </changeLog>
+   </history>
 </property>

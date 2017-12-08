@@ -1,84 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
-    <labels>
-        <platformIndependent>orderingInformation</platformIndependent>
-        <dc>description</dc>
-    </labels>
-    <cdm>
-        <label>Ordering Information</label>
-        <cdmDatatype>text</cdmDatatype>
-        <cdmLarge>no</cdmLarge>
-        <searchable>no</searchable>
-        <hidden>no</hidden>
-        <cdmRequired>no</cdmRequired>
-        <uwRequired>yes</uwRequired>
-        <cdmControlledVocab>no</cdmControlledVocab>
-    </cdm>
-    <dspace>
-        <dspaceProperty/>
-    </dspace>
-    <descriptions>
-        <definition>
-            <para>Instructions for ordering.</para>
-        </definition>
-        <instructions co="no">
-            <para>Enter the instructions for ordering. If the item cannot be ordered, state that it cannot be ordered.</para>
-        </instructions>
-
-    </descriptions>
-    <examples>
-        <example co="no">
-            <para>To order a reproduction, inquire about permissions, or for information about prices see:  http://www.lib.washington.edu/specialcollections/services/reproduction/reproduction.</para>
-            <para>Please cite the Order Number.</para>
-        </example>
-
-        <!-- customization here is flawed.
-             I think we need
-             <customizations>
-                 <description | example>
-                     <para @co @dd @paraDec @paraEx> REPEATABLE
-                         <para>
-        -->
-
-    </examples>
-    <additionalInfo>
-        <admin co="no">
-            <para/>
-        </admin>
-        <generalNotes co="no">
-            <para/>
-        </generalNotes>
-    </additionalInfo>
-    <marc>
-        <dcgMarcMapping/>
-        <marcNotes>
-            <para/>
-        </marcNotes>
-    </marc>
-    <xsd>
-        <typeAttribute>xs:string</typeAttribute>
-        <complexType/>
-
-    </xsd>
-    <rdf>
-        <sameAs/>
-    </rdf>
-    <history>
-        <dateCreated>
-
-            <range>
-                <start>2000-01-01</start>
-                <end>2017-01-08</end>
-            </range>
-        </dateCreated>
-        <created4Coll>Special Collections Photograph Collections</created4Coll>
-        <justification>Special Collections wanted all items to have ordering instructions.</justification>
-        <changeLog>
-            <change/>
-            <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
-        </changeLog>
-    </history>
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns:xs="http://www.w3.org/2001/XMLSchema"
+          xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+   <labels>
+      <platformIndependent>orderingInformation</platformIndependent>
+      <dc>description</dc>
+   </labels>
+   <uwRequired>
+      <uwStandalone>yes</uwStandalone>
+      <uwObject>no</uwObject>
+      <uwItem>no</uwItem>
+   </uwRequired>
+   <cdm>
+      <label>Ordering Information</label>
+      <cdmDatatype>text</cdmDatatype>
+      <cdmLarge>no</cdmLarge>
+      <searchable>no</searchable>
+      <hidden>no</hidden>
+      <cdmRequired>no</cdmRequired>
+      <cdmControlledVocab>no</cdmControlledVocab>
+   </cdm>
+   <dspace>
+      <dspaceProperty/>
+   </dspace>
+   <descriptions>
+      <definition>
+         <para>Instructions for ordering.</para>
+      </definition>
+      <instructions co="no">
+         <para>Enter the instructions for ordering. If the item cannot be ordered, state that it cannot be ordered.</para>
+      </instructions>
+   </descriptions>
+   <examples>
+      <example co="no">
+         <para>To order a reproduction, inquire about permissions, or for information about prices see:  http://www.lib.washington.edu/specialcollections/services/reproduction/reproduction.</para>
+         <para>Please cite the Order Number.</para>
+      </example>
+   </examples>
+   <additionalInfo>
+      <admin co="no">
+         <para/>
+      </admin>
+      <generalNotes co="no">
+         <para/>
+      </generalNotes>
+   </additionalInfo>
+   <marc>
+      <dcgMarcMapping/>
+      <marcNotes>
+         <para/>
+      </marcNotes>
+   </marc>
+   <xsd>
+      <typeInfo level="standalone object">
+         <simpleType>
+            <xs:restriction base="xs:string">
+               <xs:minLength value="1"/>
+            </xs:restriction>
+         </simpleType>
+      </typeInfo>
+      <typeInfo level="item">
+         <empty/>
+      </typeInfo>
+   </xsd>
+   <rdf>
+      <sameAs/>
+   </rdf>
+   <history>
+      <dateCreated>
+         <range>
+            <start>2000-01-01</start>
+            <end>2017-01-08</end>
+         </range>
+      </dateCreated>
+      <created4Coll>Special Collections Photograph Collections</created4Coll>
+      <justification>Special Collections wanted all items to have ordering instructions.</justification>
+      <changeLog>
+         <change/>
+         <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
+      </changeLog>
+   </history>
 </property>

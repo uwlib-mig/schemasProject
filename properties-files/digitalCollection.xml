@@ -1,83 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
-    <labels>
-        <platformIndependent>digitalCollection</platformIndependent>
-        <dc>isPartOf</dc>
-    </labels>
-    <cdm>
-        <label>Digital Collection</label>
-        <cdmDatatype>text</cdmDatatype>
-        <cdmLarge>no</cdmLarge>
-        <searchable>yes</searchable>
-        <hidden>no</hidden>
-        <cdmRequired>no</cdmRequired>
-        <uwRequired>yes</uwRequired>
-        <cdmControlledVocab>yes</cdmControlledVocab>
-    </cdm>
-    <dspace>
-        <dspaceProperty/>
-    </dspace>
-    <descriptions>
-        <definition>
-            <para>Name of the digital collection; may be the same name as the original repository collection.</para>
-        </definition>
-        <instructions co="no">
-            <para>Enter the name given to the digital collection.</para>
-        </instructions>
-        <instructions co="object">
-            <para>Enter the name given to the digital collection.</para>
-        </instructions>
-        <instructions co="item">
-            <para>Enter the name given to the digital collection.</para>
-        </instructions>
-    </descriptions>
-    <examples>
-        <example co="no">
-            <para>Napoleonic Period Collection</para>
-            <para>Civil War Letters Collection</para>
-        </example>
-        <example co="object">
-            <para>Napoleonic Period Collection</para>
-            <para>Civil War Letters Collection</para>
-        </example>
-        <example co="item">
-            <para>Napoleonic Period Collection</para>
-            <para>Civil War Letters Collection</para>
-        </example>
-    </examples>
-    <additionalInfo> </additionalInfo>
-    <marc>
-        <dcgMarcMapping/>
-        <marcNotes>
-            <para/>
-        </marcNotes>
-    </marc>
-    <xsd>
-        <simpleType>
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns:xs="http://www.w3.org/2001/XMLSchema"
+          xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+   <labels>
+      <platformIndependent>digitalCollection</platformIndependent>
+      <dc>isPartOf</dc>
+   </labels>
+   <uwRequired>
+      <uwStandalone>yes</uwStandalone>
+      <uwObject>yes</uwObject>
+      <uwItem>no</uwItem>
+   </uwRequired>
+   <cdm>
+      <label>Digital Collection</label>
+      <cdmDatatype>text</cdmDatatype>
+      <cdmLarge>no</cdmLarge>
+      <searchable>yes</searchable>
+      <hidden>no</hidden>
+      <cdmRequired>no</cdmRequired>
+      <cdmControlledVocab>yes</cdmControlledVocab>
+   </cdm>
+   <dspace>
+      <dspaceProperty/>
+   </dspace>
+   <descriptions>
+      <definition>
+         <para>Name of the digital collection; may be the same name as the original repository collection.</para>
+      </definition>
+      <instructions co="no">
+         <para>Enter the name given to the digital collection.</para>
+      </instructions>
+      <instructions co="object">
+         <para>Enter the name given to the digital collection.</para>
+      </instructions>
+   </descriptions>
+   <examples>
+      <example co="no">
+         <para>Napoleonic Period Collection</para>
+         <para>Civil War Letters Collection</para>
+      </example>
+      <example co="object">
+         <para>Napoleonic Period Collection</para>
+         <para>Civil War Letters Collection</para>
+      </example>
+   </examples>
+   <additionalInfo/>
+   <marc>
+      <dcgMarcMapping/>
+      <marcNotes>
+         <para/>
+      </marcNotes>
+   </marc>
+   <xsd>
+      <typeInfo level="standalone object">
+         <simpleType>
             <xs:restriction base="xs:string">
-                <xs:minLength value="1"/>
+               <xs:minLength value="1"/>
             </xs:restriction>
-        </simpleType>
-    </xsd>
-    <rdf>
-        <sameAs/>
-    </rdf>
-    <history>
-        <dateCreated>
-
-            <range>
-                <start>2000-01-01</start>
-                <end>2017-01-07</end>
-            </range>
-        </dateCreated>
-        <created4Coll>Special Collections Photograph Collections</created4Coll>
-        <justification>Needed to specify which digital collection every item is a part of.</justification>
-        <changeLog>
-            <change/>
-            <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
-        </changeLog>
-    </history>
+         </simpleType>
+      </typeInfo>
+      <typeInfo level="item">
+         <empty/>
+      </typeInfo>
+   </xsd>
+   <rdf>
+      <sameAs/>
+   </rdf>
+   <history>
+      <dateCreated>
+         <range>
+            <start>2000-01-01</start>
+            <end>2017-01-07</end>
+         </range>
+      </dateCreated>
+      <created4Coll>Special Collections Photograph Collections</created4Coll>
+      <justification>Needed to specify which digital collection every item is a part of.</justification>
+      <changeLog>
+         <change/>
+         <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
+      </changeLog>
+   </history>
 </property>

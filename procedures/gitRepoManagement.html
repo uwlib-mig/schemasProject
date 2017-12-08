@@ -11,7 +11,9 @@
             <li>Commit on that MacBook Pro
             <ul>
                 <li>git status -s</li>
-                <li>git commit -a -m "message"</li>
+                <li>git commit -a -m "message"<br/>
+                Note that this commits all; to commit a single file:<br/>
+                git commit **filename** -m "message"</li>
             </ul>
             </li>
             <li>$git push -u origin --all <ul>
@@ -22,10 +24,13 @@
                         https://github.com/UniverityOfWashingtonLibrariesSchemas/schemasProject.git
                         (push)</li>
                 </ul></li>
+            <li>Or push a single file or a subset of all: <br/>
+            git push origin master</li>
             <li>Pull to faculty.washington.edu
             <ul>
                 <li>best practice for this not yet decided by project staff</li>
-                <li>$git pull origin master    -->  this works OK, but does not guarantee repos are synced.</li>
+                <li>$git pull origin master --> this works OK, but does not guarantee repos are
+                        synced. Will pull ALL or single file.</li>
                 <li>$git fetch   -->   some flavor of fetch should work</li>
                 <li>$git reset --hard origin/master   -->   may be required in some cases for sync.</li>
             </ul></li>

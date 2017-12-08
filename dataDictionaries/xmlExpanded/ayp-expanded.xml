@@ -1,13 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?><migDataDictionary xmlns="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="0001" xsi:schemaLocation="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-dds-v0.3.xsd">
+<?xml version="1.0" encoding="UTF-8"?><migDataDictionary xmlns="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="0001" xsi:schemaLocation="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-dds.xsd">
     <ddName>Alaska Yukon Pacific Exposition Photographs</ddName>
     <ddPartOfProject/>
     <originalCreationDate>2017-02-22</originalCreationDate>
-    <latestUpdate>2017-06-21</latestUpdate>
+    <latestUpdate>2017-10-26</latestUpdate>
     <metadataLiaisons>
         <metadataLiaison>TBD</metadataLiaison>
     </metadataLiaisons>
     <cdmCo>no</cdmCo>
     <standalone>yes</standalone>
+    <cdmCode>ayp</cdmCode>
     <properties>
         <property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd" xml:base="../../properties-files/title.xml">
     <labels>
@@ -203,27 +204,33 @@
     </descriptions>
     <examples>
         <example co="no">
-            <para>If the Date field = "1940," Date EDTF = "1940"</para>
-            <para>If the Date field = "ca. 1910," Date EDTF = "1905/1915"</para>
-            <para>If the Date field = "Approximately 1930," Date EDTF = "1930~" </para>
-            <para>If Date field = "Possibly 1901," Date EDTF = "1901?"</para>
-            <para>If Date field = "May 9, 2001,: Date EDTF = "2001-05-09"</para>
-            <para>If Date field = "January 2008," Date EDTF = "2008-01"</para>
+            <para>If the Date field = "1940" then Date EDTF = "1940"</para>
+            <para>If the Date field = "1910?" then Date EDTF = "1910?"</para>
+            <para>If Date field = "May 9, 2001" then Date EDTF = "2001-05-09"</para>
+            <para>If Date field = "January 2008" then Date EDTF = "2008-01"</para>
+            <para>If Date field = "between 1930 and 1939" then Date EDTF = "1930/1939"</para>
+            <para>If Date field = "between 1855 and 1999?" then Date EDTF can be one of several options including "1855?/1999?"</para>
+            <para>If Date field = "before 2007" then Date EDTF is either "/2007" or "../2007"</para>
+            <para>If Date field = "after 2001" then Date EDTF is either "2001/" or "2001/.."</para> 
         </example>
         <example co="object">
-            <para>If the Date field = "1940," Date EDTF = "1940"</para>
-            <para>If the Date field = "ca. 1910," Date EDTF = "1905/1915"</para>
-            <para>If the Date field = "Approximately 1930," Date EDTF = "1930~" </para>
-            <para>If Date field = "Possibly 1901," Date EDTF = "1901?"</para>
-            <para>If Date field = "May 9, 2001,: Date EDTF = "2001-05-09"</para>
-            <para>If Date field = "January 2008," Date EDTF = "2008-01"</para>
+            <para>If the Date field = "1940" then Date EDTF = "1940"</para>
+            <para>If the Date field = "1910?" then Date EDTF = "1910?"</para>
+            <para>If Date field = "May 9, 2001" then Date EDTF = "2001-05-09"</para>
+            <para>If Date field = "January 2008" then Date EDTF = "2008-01"</para>
+            <para>If Date field = "between 1930 and 1939" then Date EDTF = "1930/1939"</para>
+            <para>If Date field = "between 1855 and 1999?" then Date EDTF can be one of several options including "1855?/1999?"</para>
+            <para>If Date field = "before 2007" then Date EDTF is either "/2007" or "../2007"</para>
+            <para>If Date field = "after 2001" then Date EDTF is either "2001/" or "2001/.."</para> 
         </example>
     </examples>
     <additionalInfo>
+        <admin co="all">
+            <para>This document needs a reference to the final spec.</para>
+            <para>For the xsd, datatype is xs:string; the datatype is more accurately http://id.loc.gov/datatypes/edtf, which is not a valid QName and is inavlid according to schema-4-properties, but this does not seem to be machine-actionable; more exploration needed.</para>
+        </admin>
         <generalNotes co="all">
             <para>EDTF is still a standard in progress. It has not yet been accpted as a full recommendation. It should be voted on in 2018 by ISO. We are anticipating it will becoming a 2-part ISO 8601-2018.</para>
-            <para>This document needs a reference to the spec.</para>
-            <para>For the xsd, datatype is xs:string; the datatype is more accurately http://id.loc.gov/datatypes/edtf, which is not a valid QName and is inavlid according to schema-4-properties-0.1, but this does not seem to be machine-actionable; more exploration needed.</para>
         </generalNotes>
     </additionalInfo>
     <marc>
@@ -276,39 +283,54 @@
     <descriptions>
         <definition>
             <para>Date of creation of the resource.</para>
-            <para>If the resource is a photograph, the date the original photograph was taken.</para>
-            <para>In cases where a painting, engraving, or architectural drawing was photographed, the date the artwork was created.</para>
         </definition>
         <instructions co="no">
-            <para>If the date when the image/resource in hand was produced is known, and is different from that of the original image, so note in the Notes field. The date should be a specific year. If the date is unknown, an attempt should be made to assign an approximate date, using the form "ca." (circa).</para>
-            <para>In CONTENTdm, this field is used for display purposes and should be user-friendly. The Dates field is indexed, enabling searching (see that entry for details). Specific dates (e.g., September 12, 1933; June 1912) should be entered in this field, and should also be incorporated in the Title field.</para>
+            <para>If the resource is a photograph, the date the original photograph was taken.</para>
+            <para>In cases where a painting, engraving, or architectural drawing was photographed, the date the artwork was created.</para>
+            <para>Enter the date using one of the following formats:</para>
+            <para>YYYY</para>
+            <para>YYYY?</para>
+            <para>[month spelled out] [day], YYYY</para>
+            <para>[month spelled out], YYYY</para>
+            <para>between YYYY and YYYY</para>
+            <para>between YYYY and YYYY?</para>
+            <para>before YYYY</para>
+            <para>after YYYY</para>
+            <para>In CONTENTdm, this field is used for display purposes only and should be user-friendly.</para>
+            <para>If none of the date formats above are adequate, use a custom date format.</para>
             <para>Date value should agree with date values entered in Date-Edtf and Dates fields.</para>
-            <para>If the date is a single year, enter the date in the following format: YYYY</para>
-            <para>If the date is a month and a year, enter name-of-month, YYYY</para>
-            <para>If the date is a month, day and year, enter name-of-month number-of-day, YYYY</para>
-            <para>If the date is a known date range, enter the two dates as above, separated with a dash</para>
-            <para>If the date between a date range or an approximate date, the date should be qualified with either the word "between" or "approximately."</para>
+            <para>If the date when the image/resource in hand was produced is known, and is different from that of the original image, so note in the Notes field.</para>
+            <para>If the date is unknown, enter an approximate date using a date format listed above.</para>
         </instructions>
         <instructions co="object">
-            <para>If the date when the image/resource in hand was produced is known, and is different from that of the original image, so note in the Notes field. The date should be a specific year. If the date is unknown, an attempt should be made to assign an approximate date, using the form "ca." (circa).</para>
-            <para>In CONTENTdm, this field is used for display purposes and should be user-friendly. The Dates field is indexed, enabling searching (see that entry for details). Specific dates (e.g., September 12, 1933; June 1912) should be entered in this field, and should also be incorporated in the Title field.</para>
+            <para>If the resource is a photograph, the date the original photograph was taken.</para>
+            <para>In cases where a painting, engraving, or architectural drawing was photographed, the date the artwork was created.</para>
+            <para>Enter the date using one of the following formats:</para>
+            <para>YYYY</para>
+            <para>YYYY?</para>
+            <para>[month spelled out] [day], YYYY</para>
+            <para>[month spelled out], YYYY</para>
+            <para>between YYYY and YYYY</para>
+            <para>between YYYY and YYYY?</para>
+            <para>before YYYY</para>
+            <para>after YYYY</para>
+            <para>In CONTENTdm, this field is used for display purposes only and should be user-friendly.</para>
+            <para>If none of the date formats above are adequate, use a custom date format.</para>
             <para>Date value should agree with date values entered in Date-Edtf and Dates fields.</para>
-            <para>If the date is a single year, enter the date in the following format: YYYY</para>
-            <para>If the date is a month and a year, enter name-of-month, YYYY</para>
-            <para>If the date is a month, day and year, enter name-of-month number-of-day, YYYY</para>
-            <para>If the date is a known date range, enter the two dates as above, separated with a dash</para>
-            <para>If the date between a date range or an approximate date, the date should be qualified with either the word "between" or "approximately."</para>
+            <para>If the date when the image/resource in hand was produced is known, and is different from that of the original image, so note in the Notes field.</para>
+            <para>If the date is unknown, an attempt should be made to assign an approximate date, using an appropriate date format listed above.</para>
         </instructions>
     </descriptions>
     <examples>
         <example co="no">
             <para>1940</para>
-            <para>May, 2001</para>
+            <para>1940?    [this expresses the probable year]</para>
             <para>May 9, 2001</para>
-            <para>1946-1952</para>
-            <para>May 2, 1946-June 4, 1952</para>
-            <para>Between 1910 and 1923</para>
-            <para>Approximately 1930</para>
+            <para>March, 2001</para>
+            <para>between 1946 and 1952</para>
+            <para>between 1877 and 1976?</para>
+            <para>before 1995</para>
+            <para>after 1921</para>
         </example>
         <example co="object">
             <para>1940</para>
@@ -373,20 +395,24 @@
             <para>Date of creation of the resource.</para>
         </definition>
         <instructions co="no">
-            <para>If the resource is a photograph, the date the original photograph was taken.</para>
-            <para>In cases where a painting, engraving, or architectural drawing was photographed, the date the artwork was created.</para>
-            <para>Property to enable date searching in CONTENTdm.</para>
-            <para>Dates value should agree with date values entered in Date-Edtf and Date fields.</para>
-            <para>Reflects the Date field. If the date is a single year, it is the same in both the Date and the Dates fields. If the date in the Date field is a "circa" date (e.g. ca. 1895), the Dates field contains the expanded version so that searching will find dates covered by the concept of a "circa" date. Five years on either side of the "ca." date is the preferred form.</para>
-            <para>If the Date field reads "ca. 1910" enter "1905, 1906, 1907, 1908, 1909, 1910, 1911, 1912, 1913, 1914, 1915"</para>
+            <para>Enter the year or years only.</para>
+            <para>If the resource is a photograph, the year the original photograph was taken.</para>
+            <para>In cases where a painting, engraving, or architectural drawing was photographed, the year the artwork was created.</para>
+            <para>If the date is a single year, year and month, or year month and day, enter the single year only in the Dates field.</para>
+            <para>If the date is an approximate year, enter that year plus five years on either side of that year; for example, if the Date field is "1910?" enter "1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915"</para>
+            <para>If the year is a range of years, enter all the years in that range.</para>
+            <para>This field is indexed and enables date searching in CONTENTdm.</para>
+            <para>The Dates value should agree with date values entered in Date-Edtf and Date fields.</para>
         </instructions>
         <instructions co="object">
-            <para>If the resource is a photograph, the date the original photograph was taken.</para>
-            <para>In cases where a painting, engraving, or architectural drawing was photographed, the date the artwork was created.</para>
-            <para>Property to enable date searching in CONTENTdm.</para>
-            <para>Dates value should agree with date values entered in Date-Edtf and Date fields.</para>
-            <para>Reflects the Date field. If the date is a single year, it is the same in both the Date and the Dates fields. If the date in the Date field is a "circa" date (e.g. ca. 1895), the Dates field contains the expanded version so that searching will find dates covered by the concept of a "circa" date. Five years on either side of the "ca." date is the preferred form.</para>
-            <para>If the Date field reads "ca. 1910" enter "1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915"</para>
+            <para>Enter the year or years only.</para>
+            <para>If the resource is a photograph, the year the original photograph was taken.</para>
+            <para>In cases where a painting, engraving, or architectural drawing was photographed, the year the artwork was created.</para>
+            <para>If the date is a single year, year and month, or year month and day, enter the single year only in the Dates field.</para>
+            <para>If the date is an approximate year, enter that year plus five years on either side of that year; for example, if the Date field is "1910?" enter "1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915"</para>
+            <para>If the year is a range of years, enter all the years in that range.</para>
+            <para>This field is indexed and enables date searching in CONTENTdm.</para>
+            <para>The Dates value should agree with date values entered in Date-Edtf and Date fields.</para>
         </instructions>
     </descriptions>
     <examples>
@@ -855,9 +881,11 @@
         </marcNotes>
     </marc>
     <xsd>
-        <typeAttribute>xs:string</typeAttribute>
-        <complexType/>
-
+        <simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="1"/>
+            </xs:restriction>
+        </simpleType>
     </xsd>
     <rdf>
         <sameAs/>
@@ -935,9 +963,11 @@
         </marcNotes>
     </marc>
     <xsd>
-        <typeAttribute>xs:string</typeAttribute>
-        <complexType/>
-
+        <simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="1"/>
+            </xs:restriction>
+        </simpleType>
     </xsd>
     <rdf>
         <sameAs/>
@@ -1016,9 +1046,11 @@
         </marcNotes>
     </marc>
     <xsd>
-        <typeAttribute>xs:string</typeAttribute>
-        <complexType/>
-
+        <simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="1"/>
+            </xs:restriction>
+        </simpleType>
     </xsd>
     <rdf>
         <sameAs/>
@@ -1158,9 +1190,11 @@
         </marcNotes>
     </marc>
     <xsd>
-        <typeAttribute>xs:string</typeAttribute>
-        <complexType/>
-
+        <simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="1"/>
+            </xs:restriction>
+        </simpleType>
     </xsd>
     <rdf>
         <sameAs/>
@@ -1226,9 +1260,11 @@
         </marcNotes>
     </marc>
     <xsd>
-        <typeAttribute>xs:string</typeAttribute>
-        <complexType/>
-
+        <simpleType>
+            <xs:restriction base="xs:string">
+                <xs:minLength value="1"/>
+            </xs:restriction>
+        </simpleType>
     </xsd>
     <rdf>
         <sameAs/>
@@ -1273,18 +1309,18 @@
         </definition>
         <instructions co="no">
             <para>Input a term taken from a controlled source. Recommended: LC Thesaurus for Graphic Materials.</para>
-            <para>Use the singular form of the term for describing a single item.</para>
+            <para>Enter the heading exactly as it appears in the thesaurus.</para>
             <para>Separate multiple values with a semi-colon and space.</para>
         </instructions>
         <instructions co="object">
             <para>Input a term taken from a controlled source. Recommended: LC Thesaurus for Graphic Materials.</para>
             <para>If more than one term is applicable, list the form of the item scanned first.</para>
-            <para>When describing a single resource, use the singular form of the term; when describing multiple resources, use the plural form of the term.</para>
+            <para>Enter the heading exactly as it appears in the thesaurus.</para>
             <para>Separate multiple values with a semi-colon and space.</para>
         </instructions>
         <instructions co="item">
             <para>Input a term taken from a controlled source. Recommended: LC Thesaurus for Graphic Materials.</para>
-            <para>Use the singular form of the term for describing a single item.</para>
+            <para>Enter the heading exactly as it appears in the thesaurus.</para>
             <para>Separate multiple values with a semi-colon and space.</para>
         </instructions>
     </descriptions>
@@ -2014,7 +2050,18 @@
     <xsd>
         <simpleType>
             <xs:restriction base="xs:string">
-                <xs:minLength value="1"/>
+                <xs:enumeration value="Collection"/>
+                <xs:enumeration value="Dataset"/>
+                <xs:enumeration value="Event"/>
+                <xs:enumeration value="Image"/>
+                <xs:enumeration value="InteractiveResource"/>
+                <xs:enumeration value="MovingImage"/>
+                <xs:enumeration value="PhysicalObject"/>
+                <xs:enumeration value="Service"/>
+                <xs:enumeration value="Software"/>
+                <xs:enumeration value="Sound"/>
+                <xs:enumeration value="StillImage"/>
+                <xs:enumeration value="Text"/>
             </xs:restriction>
         </simpleType>
     </xsd>
@@ -2036,7 +2083,7 @@
             <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
         </changeLog>
     </history>
-</property><!-- labeled Type-DCMI in this coll-->
+</property>
         <property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd" xml:base="../../properties-files/institution.xml">
     <labels>
         <platformIndependent>institution</platformIndependent>

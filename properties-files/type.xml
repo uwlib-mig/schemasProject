@@ -1,81 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
-    <labels>
-        <platformIndependent>type</platformIndependent>
-        <dc>type</dc>
-    </labels>
-    <cdm>
-        <label>Type</label>
-        <cdmDatatype>text</cdmDatatype>
-        <cdmLarge>no</cdmLarge>
-        <searchable>yes</searchable>
-        <hidden>yes</hidden>
-        <cdmRequired>no</cdmRequired>
-        <uwRequired>yes</uwRequired>
-        <cdmControlledVocab>no</cdmControlledVocab>
-    </cdm>
-    <dspace>
-        <dspaceProperty/>
-    </dspace>
-    <descriptions>
-        <definition>
-            <para>Describes the nature or genre of the content of the resource.</para>
-        </definition>
-        <instructions co="no">
-            <para>Input a value from the Dublin Core Type Vocabulary at http://dublincore.org/documents/dcmi-terms/.</para>
-        </instructions>
-        <instructions co="object">
-            <para>Input a value from the Dublin Core Type Vocabulary at http://dublincore.org/documents/dcmi-terms/.</para>
-        </instructions>
-        <instructions co="item">
-            <para>Input a value from the Dublin Core Type Vocabulary at http://dublincore.org/documents/dcmi-terms/.</para>
-            <para>Not required for all compound object items. Use as needed. Recommended: enter type values when the collection resources are mixed media.</para>
-        </instructions>
-    </descriptions>
-    <examples>
-        <example co="no">
-            <para>SillImage</para>
-        </example>
-        <example co="object">
-            <para>SillImage</para>
-        </example>
-        <example co="item">
-            <para>SillImage</para>
-        </example>
-    </examples>
-    <additionalInfo/>
-    <marc>
-        <dcgMarcMapping/>
-        <marcNotes>
-            <para/>
-        </marcNotes>
-    </marc>
-    <xsd>
-        <simpleType>
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns:xs="http://www.w3.org/2001/XMLSchema"
+          xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+   <labels>
+      <platformIndependent>type</platformIndependent>
+      <dc>type</dc>
+   </labels>
+   <uwRequired>
+      <uwStandalone>yes</uwStandalone>
+      <uwObject>yes</uwObject>
+      <uwItem>no</uwItem>
+   </uwRequired>
+   <cdm>
+      <label>Type</label>
+      <cdmDatatype>text</cdmDatatype>
+      <cdmLarge>no</cdmLarge>
+      <searchable>yes</searchable>
+      <hidden>yes</hidden>
+      <cdmRequired>no</cdmRequired>
+      <cdmControlledVocab>no</cdmControlledVocab>
+   </cdm>
+   <dspace>
+      <dspaceProperty/>
+   </dspace>
+   <descriptions>
+      <definition>
+         <para>Describes the nature or genre of the content of the resource.</para>
+      </definition>
+      <instructions co="no">
+         <para>Input a value from the Dublin Core Type Vocabulary at http://dublincore.org/documents/dcmi-terms/.</para>
+      </instructions>
+      <instructions co="object">
+         <para>Input a value from the Dublin Core Type Vocabulary at http://dublincore.org/documents/dcmi-terms/.</para>
+      </instructions>
+      <instructions co="item">
+         <para>Optional: input a value from the Dublin Core Type Vocabulary at http://dublincore.org/documents/dcmi-terms/.</para>
+         <para>Not required for all compound object items. Use as needed. Recommended: enter type values when the collection resources are mixed media.</para>
+      </instructions>
+   </descriptions>
+   <examples>
+      <example co="no">
+         <para>SillImage</para>
+      </example>
+      <example co="object">
+         <para>SillImage</para>
+      </example>
+      <example co="item">
+         <para>SillImage</para>
+      </example>
+   </examples>
+   <additionalInfo/>
+   <marc>
+      <dcgMarcMapping/>
+      <marcNotes>
+         <para/>
+      </marcNotes>
+   </marc>
+   <xsd>
+      <typeInfo level="standalone object">
+         <simpleType>
             <xs:restriction base="xs:string">
-                <xs:minLength value="1"/>
+               <xs:enumeration value="Collection"/>
+               <xs:enumeration value="Dataset"/>
+               <xs:enumeration value="Event"/>
+               <xs:enumeration value="Image"/>
+               <xs:enumeration value="InteractiveResource"/>
+               <xs:enumeration value="MovingImage"/>
+               <xs:enumeration value="PhysicalObject"/>
+               <xs:enumeration value="Service"/>
+               <xs:enumeration value="Software"/>
+               <xs:enumeration value="Sound"/>
+               <xs:enumeration value="StillImage"/>
+               <xs:enumeration value="Text"/>
             </xs:restriction>
-        </simpleType>
-    </xsd>
-    <rdf>
-        <sameAs/>
-    </rdf>
-    <history>
-        <dateCreated>
-
-            <range>
-                <start>2000-01-01</start>
-                <end>2017-01-12</end>
-            </range>
-        </dateCreated>
-        <created4Coll>Special Collections Photograph Collections</created4Coll>
-        <justification>Special Collections wanted to be able to collocate theie digital images using the DCMI Type Vocabulary, so we created this property.</justification>
-        <changeLog>
-            <change/>
-            <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
-        </changeLog>
-    </history>
+         </simpleType>
+      </typeInfo>
+      <typeInfo level="item">
+         <empty/>
+      </typeInfo>
+      <customTypeInfo level="item" dd="civilwar">
+         <simpleType>
+            <xs:restriction base="xs:string">
+               <xs:enumeration value="Collection"/>
+               <xs:enumeration value="Dataset"/>
+               <xs:enumeration value="Event"/>
+               <xs:enumeration value="Image"/>
+               <xs:enumeration value="InteractiveResource"/>
+               <xs:enumeration value="MovingImage"/>
+               <xs:enumeration value="PhysicalObject"/>
+               <xs:enumeration value="Service"/>
+               <xs:enumeration value="Software"/>
+               <xs:enumeration value="Sound"/>
+               <xs:enumeration value="StillImage"/>
+               <xs:enumeration value="Text"/>
+            </xs:restriction>
+         </simpleType>
+      </customTypeInfo>
+   </xsd>
+   <rdf>
+      <sameAs/>
+   </rdf>
+   <history>
+      <dateCreated>
+         <range>
+            <start>2000-01-01</start>
+            <end>2017-01-12</end>
+         </range>
+      </dateCreated>
+      <created4Coll>Special Collections Photograph Collections</created4Coll>
+      <justification>Special Collections wanted to be able to collocate theie digital images using the DCMI Type Vocabulary, so we created this property.</justification>
+      <changeLog>
+         <change/>
+         <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
+      </changeLog>
+   </history>
 </property>

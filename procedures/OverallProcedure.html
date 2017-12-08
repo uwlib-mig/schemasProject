@@ -4,19 +4,80 @@
         <title>Metadata Management Application: Summary Procedure</title>
     </head>
     <body>
+        <h2>Metadata Management Application: Summary Procedure for CONTENT dm collections</h2>
+        <p><i>Latest update: 2017-11-30</i></p>
         <ol>
             <li>Create property file(s) <ul>
-                    <li>use procedure for creating property file()s: ./propertyFiles.html</li>
+                    <li>use procedure for creating property file(s): //procedures/propertyFiles.html
+                            <i>(document created but still has no content).</i></li>
+                    <li>use also //procedures/cdmCompoundObjects.html if the property is intended to
+                        describe entire cdm compound objects or cdm compound object items.</li>
+                    <li>explanation: there should be a property file for every property used to
+                        describe digital collections in UW Libraries repositories.</li>
                 </ul>
             </li>
-            <li>Create XML DD <ul>
-                    <li>use procedure for creating data dictionaries: ./dd-procedure.html</li>
+            <li>Create XML Data Dictionary <ul>
+                    <li>use procedure for creating data dictionaries: //procedures/dd-procedure.html
+                            <i>(Document is in progress).</i></li>
+                    <li>explanation: the XML data dictionary cherry picks the properties used by a
+                        given collection; it also contains some general information about itself as
+                        the metadata application profile for that collection.</li>
                 </ul>
             </li>
-            <li>
-                <ul>
-                    <li></li>
+            <li>Expand XML DD <ul>
+                    <li>use //procedures/dd-procedure.html (used above in step 2 above) <i>text not
+                            yet entered for this in the html file</i></li>
+                    <li>code: //xslt/identity-expand.xsl</li>
+                    <li>explanation: some routines require an expansion of the xml data dictionary
+                        because the xml data dictionary uses xi:include, which is not always
+                        recognized.</li>
                 </ul>
+            </li>
+            <li>Produce HTML DD <ul>
+                    <li>use //procedures/dd-procedure.html (used above in step 2 above) <i>text not
+                            yet entered for this in the html file</i></li>
+                    <li>code: //xslt/dds-to-html-xsd.xsl</li>
+                </ul>
+            </li>
+            <li>Produce XML Schema<ul>
+                <li>use: //procedures/producingXmlSchema.html</li>
+                    <li>code: <ul>
+                        <li>//xslt/dds-to-xmlSchema_standalone.xsl for collections that contain only
+                                standalone items; <i>code for this needs to be updated, similar to
+                                    the way dds-to-xmlSchema_combined.xsl was written. </i></li>
+                        <li>//xslt/dds-to-xmlSchema_combined.xsl for collections that have both
+                                standalone items and compound objects, <i>This is the most recently
+                                    created method for dds-to-xmlSchema files</i></li>
+                        <li><i>code for collections with compound objects only has not yet been written.</i></li>
+                    </ul></li>
+                    <li>explanation:</li>
+                </ul>
+            </li>
+            <li>Export cdm metadata<ul>
+                <li>use: //procedures/exportAndValidate.html ; <i>this document is in progress</i></li>
+                    <li>code: /xproc/addCoInfo2Export.xpl for collections containing compound
+                        objects; <i>note: this script was written for cdm combined collections; another script may be required for collection of compound objects only</i></li>
+                    <li>explanation: </li>
+                </ul>
+            </li>
+            <li>Validate collection metadata<ul>
+                <li>use: //procedures/exportAndValidate.html, also used in step 6 above </li>
+                    <li>code:</li>
+                    <li>explanation</li>
+                </ul>
+            </li>
+            <li>Prepare report of edits required to clean collection metadata<ul>
+                    <li>use: <i>no document yet begun for this step</i></li>
+                    <li>explanation </li>
+                </ul>
+            </li>
+            <li>Update all git repos, including Github<ul>
+                <li>use: //procedures/gitRepoManagement.html ; <i>additional information may be available in the soon-to-be deleted file backupRoutine.html</i></li>
+            </ul>
+            </li>
+            <li>Record all notes on things-to-be-done in passing<ul>
+                <li>use (i.e. enter these notes in the following document): //procedures/notesForFutureTasks.</li>
+            </ul>
             </li>
         </ol>
     </body>

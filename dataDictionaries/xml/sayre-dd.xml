@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <migDataDictionary id="0002" xmlns="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries"
     xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-dds-v0.3.xsd">
+    xsi:schemaLocation="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-dds.xsd">
     <ddName>J. Willis Sayre Photographs</ddName>
     <ddPartOfProject/>
     <originalCreationDate>2017-08-09</originalCreationDate>
-    <latestUpdate>2017-08-09</latestUpdate>
+    <latestUpdate>2017-10-27</latestUpdate>
     <metadataLiaisons>
         <metadataLiaison>TBD</metadataLiaison>
     </metadataLiaisons>
     <cdmCo>no</cdmCo>
     <standalone>yes</standalone>
+    <cdmCode>sayre</cdmCode>
     <properties>
         <xi:include href="../../properties-files/title.xml"/>
         <xi:include href="../../properties-files/photographer.xml"/>

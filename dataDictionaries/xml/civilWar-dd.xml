@@ -2,9 +2,9 @@
 <!-- This is the first DD to accommodate compound Objects (COs).
      There will be errors.
 -->
-<migDataDictionary id="0001" xmlns="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries"
+<migDataDictionary id="0005" xmlns="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries"
     xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-dds-v0.3.xsd" >
+    xsi:schemaLocation="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-dds.xsd" >
     <ddName>Civil War Letters Collection</ddName>
     <ddPartOfProject></ddPartOfProject>
     <originalCreationDate>2017-06-29</originalCreationDate>
@@ -14,6 +14,7 @@
     </metadataLiaisons>
     <cdmCo>yes</cdmCo>
     <standalone>yes</standalone>
+    <cdmCode>civilwar</cdmCode>
     <properties>
         <xi:include href="../../properties-files/title.xml"/>
         <xi:include href="../../properties-files/author.xml"/>
@@ -54,7 +55,10 @@
         <xi:include href="../../properties-files/dateCreated.xml"/>
         <xi:include href="../../properties-files/dateModified.xml"/>
         <xi:include href="../../properties-files/cdmNumber.xml"/>
+        <xi:include href="../../properties-files/partOfCo.xml"/> 
+        <xi:include href="../../properties-files/standaloneDeclaration.xml"/>
         <xi:include href="../../properties-files/cdmFilename.xml"/>
+        <xi:include href="../../properties-files/coitems.xml"/>
         <xi:include href="../../properties-files/cdmFilePath.xml"/>
     </properties>
 </migDataDictionary>

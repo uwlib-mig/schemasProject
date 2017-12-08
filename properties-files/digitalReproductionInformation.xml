@@ -1,65 +1,78 @@
-<?xml version="1.0" encoding="UTF-8"?><property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
-    <labels>
-        <platformIndependent>digitalReproductionInformation</platformIndependent>
-        <dc>format</dc>
-    </labels>
-    <cdm>
-        <label>Digital Reproduction Information</label>
-        <cdmDatatype>text</cdmDatatype>
-        <cdmLarge>no</cdmLarge>
-        <searchable>no</searchable>
-        <hidden>no</hidden>
-        <cdmRequired>no</cdmRequired><uwRequired>no</uwRequired>
-        <cdmControlledVocab>no</cdmControlledVocab>
-    </cdm>
-    <dspace>
-        <dspaceProperty/>
-    </dspace>
-    <descriptions>
-        <definition>
-            <para>Describes the digital conversion process, date scanned, etc.</para>
-        </definition>
-        <instructions co="no">
-            <para>Input a paragraph with pertinent information on the digital conversion process.</para>
-        </instructions>
-        <instructions co="object">
-            <para>Input a paragraph with pertinent information on the digital conversion process of the overall object.</para>
-        </instructions>
-    </descriptions>
-    <examples>
-        <example co="no">
-            <para>Scanned from a photographic print using a Microtek Scanmaker 9600XL at 72 dpi in JPEG format at compression rate 3.      10/1998.</para>
-        </example>
-      <example co="object">
-          <para>Scanned from original text or image at 400 dpi saved in TIFF format, resized and enhanced using Adobe Photoshop, and imported as JPEG2000 using Contentdm software's JPEG2000 Extension. 2006.</para>
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns:xs="http://www.w3.org/2001/XMLSchema"
+          xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+   <labels>
+      <platformIndependent>digitalReproductionInformation</platformIndependent>
+      <dc>format</dc>
+   </labels>
+   <uwRequired>
+      <uwStandalone>no</uwStandalone>
+      <uwObject>no</uwObject>
+      <uwItem>no</uwItem>
+   </uwRequired>
+   <cdm>
+      <label>Digital Reproduction Information</label>
+      <cdmDatatype>text</cdmDatatype>
+      <cdmLarge>no</cdmLarge>
+      <searchable>no</searchable>
+      <hidden>no</hidden>
+      <cdmRequired>no</cdmRequired>
+      <cdmControlledVocab>no</cdmControlledVocab>
+   </cdm>
+   <dspace>
+      <dspaceProperty/>
+   </dspace>
+   <descriptions>
+      <definition>
+         <para>Describes the digital conversion process, date scanned, etc.</para>
+      </definition>
+      <instructions co="no">
+         <para>Input a paragraph with pertinent information on the digital conversion process.</para>
+      </instructions>
+      <instructions co="object">
+         <para>Input a paragraph with pertinent information on the digital conversion process of the overall object.</para>
+      </instructions>
+   </descriptions>
+   <examples>
+      <example co="no">
+         <para>Scanned from a photographic print using a Microtek Scanmaker 9600XL at 72 dpi in JPEG format at compression rate 3.      10/1998.</para>
       </example>
-    </examples>
-    <additionalInfo/>
-    <marc>
-        <dcgMarcMapping/>
-        <marcNotes>
-            <para/>
-        </marcNotes>
-    </marc>
-    <xsd>
-        <typeAttribute>xs:string</typeAttribute>
-        <complexType/>
-    </xsd>
-    <rdf>
-        <sameAs/>
-    </rdf>
-    <history>
-        <dateCreated>
-            
-            <range>
-                <start>2000-01-01</start>
-                <end>2017-01-12</end>
-            </range>
-        </dateCreated>
-        <created4Coll>Special Collections Photograph Collections</created4Coll>
-        <justification>Special Collections wanted a description of the digitization process.</justification>
-        <changeLog>
-            <change/><change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
-        </changeLog>
-    </history>
+      <example co="object">
+         <para>Scanned from original text or image at 400 dpi saved in TIFF format, resized and enhanced using Adobe Photoshop, and imported as JPEG2000 using Contentdm software's JPEG2000 Extension. 2006.</para>
+      </example>
+   </examples>
+   <additionalInfo/>
+   <marc>
+      <dcgMarcMapping/>
+      <marcNotes>
+         <para/>
+      </marcNotes>
+   </marc>
+   <xsd>
+      <typeInfo level="standalone object">
+         <typeAttribute>xs:string</typeAttribute>
+      </typeInfo>
+      <typeInfo level="item">
+         <empty/>
+      </typeInfo>
+   </xsd>
+   <rdf>
+      <sameAs/>
+   </rdf>
+   <history>
+      <dateCreated>
+         <range>
+            <start>2000-01-01</start>
+            <end>2017-01-12</end>
+         </range>
+      </dateCreated>
+      <created4Coll>Special Collections Photograph Collections</created4Coll>
+      <justification>Special Collections wanted a description of the digitization process.</justification>
+      <changeLog>
+         <change/>
+         <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
+      </changeLog>
+   </history>
 </property>
