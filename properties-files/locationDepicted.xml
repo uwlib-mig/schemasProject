@@ -53,6 +53,14 @@
          <para>Croatia--Zagreb [use current form, even though Yugoslavia was the name when the photo was taken]</para>
          <para>Russia (Federation)--Leningradskaia oblast--Saint Petersburg [use current form, even though it was called Leningrad in Soviet Union, when photo was taken]</para>
       </example>
+      <customization co="no" dd="neareast">
+         <para>Egypt</para>
+         <para>Egypt--Alexandria</para>
+         <para>Egypt--Cairo--Jizah</para>
+         <para>Egypt--Dayr al-Bahri Site</para>
+         <para>Egypt--Nile River Delta</para>
+         <para>Israel--West Bank--Jericho</para>
+      </customization>
    </examples>
    <additionalInfo/>
    <marc>

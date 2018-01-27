@@ -4,9 +4,13 @@
         <title>Exporting and Validating CONTENTdm metadata</title>
     </head>
     <body>
-        <p><i>Last update: 2017-07-24</i></p>
+        <p><i>Last update: 2018-01-26</i></p>
         <h3>EXPORT AND VALIDATE COLLECTIONS WITH STANDALONE OBJECTS ONLY</h3>
         <ul>
+            <li><i>Note: An export is recommended in dd-procedure.html, step 2; if that export can
+                    be used here (if no changes were made while creating the data dictionary) skip
+                    to the bullet below that starts "clean the cdm export XML until it is well
+                    formed."</i></li>
             <li>Open CONTENTdm admin.</li>
             <li>Navigate to appropriate collection.</li>
             <li>collections > Export > Custom XML : Include all page-level metadata > next </li>
@@ -28,7 +32,11 @@
                     <li>"Repeat fields that contain multiple terms"</li>
                 </ul></li>
             <li>export cdm metadata</li>
-            <li>Save exported file as /schemasProject/cdmData/collectionName.xml</li>
+            <li>Save exported file as /schemasProject/cdmData/collectionName.xml<ul>
+                <li>NOTE: IF THE FILE > 50 MB, SAVE EXPORTED FILE INTO /schemasProject/ignore/cdmDate-gt-50mb/collectionName.xml<ul>
+                    <li>Doing this prevents the cdm data from being uploaded to Github, which has a recommended max file size of 50 MB. We don't really need this in the app, so it can be saved locally. In fact, we probably don't need to save the cdm data at all, as the export will likely be re-done if a future validation is performed.</li>
+                </ul></li>
+            </ul></li>
             <li>Open file and review</li>
             <li>clean the cdm export XML until it is well formed; known issues: <ul>
                     <li>&lt;br&gt;</li>

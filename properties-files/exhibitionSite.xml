@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns:xs="http://www.w3.org/2001/XMLSchema"
+          xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+   <labels>
+      <platformIndependent>exhibitionSite</platformIndependent>
+      <dc>none</dc>
+   </labels>
+   <uwRequired>
+      <uwStandalone>no</uwStandalone>
+      <uwObject>no</uwObject>
+      <uwItem>no</uwItem>
+   </uwRequired>
+   <cdm>
+      <label>Exhibition Site</label>
+      <cdmDatatype>text</cdmDatatype>
+      <cdmLarge>no</cdmLarge>
+      <searchable>yes</searchable>
+      <hidden>no</hidden>
+      <cdmRequired>no</cdmRequired>
+      <cdmControlledVocab>no</cdmControlledVocab>
+   </cdm>
+   <dspace>
+      <dspaceProperty/>
+   </dspace>
+   <descriptions>
+      <definition>
+         <para>The place or repository displaying the original resource when the photo was taken.</para>
+      </definition>
+      <instructions co="no">
+         <para>Enter the name of the place or repository as it is commonly known. If there is a form of the name listed in the LC Authority File, use that form of the name.</para>
+      </instructions>
+   </descriptions>
+   <examples>
+      <example co="no">
+         <para>United States--Washington (State)—Seattle</para>
+         <para>United States--Alaska—Fort Yukon</para>
+         <para>Canada—Yukon—Dawson </para>
+         <para>Croatia--Zagreb [use current form, even though Yugoslavia was the name when the photo was taken]</para>
+         <para>Russia (Federation)--Leningradskaia oblast--Saint Petersburg [use current form, even though it was called Leningrad in Soviet Union, when photo was taken]</para>
+      </example>
+      <customization co="no" dd="neareast">
+         <para>Elephantine Museum (Elephantine, Egypt)</para>
+         <para>Kom el-Shoqafa (Alexandria, Egypt)</para>
+         <para>Muzeon Yisrael (Jerusalem)</para>
+      </customization>
+   </examples>
+   <additionalInfo/>
+   <marc>
+      <dcgMarcMapping/>
+      <marcNotes>
+         <para/>
+      </marcNotes>
+   </marc>
+   <xsd>
+      <typeInfo level="standalone">
+         <typeAttribute>xs:string</typeAttribute>
+      </typeInfo>
+   </xsd>
+   <rdf>
+      <sameAs/>
+   </rdf>
+   <history>
+      <dateCreated>
+         <range>
+            <start>2000-01-01</start>
+            <end>2018-01-25</end>
+         </range>
+      </dateCreated>
+      <created4Coll>Ancient Near East Photograph Collection</created4Coll>
+      <justification>Somebody, probably Professor Scott Noegel, wanted to be able to describe the organization or place exhibiting the resource.</justification>
+      <changeLog>
+         <change/>
+      </changeLog>
+   </history>
+</property>

@@ -12,6 +12,17 @@
         <countRecords>
             <xsl:value-of select="count(record)"/>
         </countRecords>
+        <imageNos><xsl:value-of select="//ImageNumber"/><xsl:text>  </xsl:text></imageNos>
+        <sites>
+           <xsl:for-each select="record">
+           <record>    
+            <site><xsl:value-of select="Site"/></site>
+               <title><xsl:value-of select="Title"/></title>
+               <subject><xsl:value-of select="Subject"/></subject>
+               <links><xsl:value-of select="Links"/></links>
+               </record>
+        </xsl:for-each>
+        </sites>
         <objectTypes>
             <xsl:value-of select="distinct-values(//ObjectType)"/>
         </objectTypes>

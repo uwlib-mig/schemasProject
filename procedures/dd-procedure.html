@@ -4,7 +4,7 @@
         <title>Metadata Application Profile Procedure</title>
     </head>
     <body>
-        <p><i>Last update: 2017-07-24</i></p>
+        <p><i>Last update: 2018-01-26</i></p>
         <p>There are two ways to produce a metadata application profile (MAP):</p>
         <ol>
             <li>Enter MAP information directly as XML usinf an XML editor;</li>
@@ -27,8 +27,7 @@
             <li>Edit values for the XML elements: <ul>
                     <li>edit /migDataDictionary/@id <ul>
                             <li>find last @id by running
-                                $sch/dataDictionaries/xml/queries/listIDs.xsl (this was recently
-                                moved; path in script needs to be updated)</li>
+                                $sch/dataDictionaries/xml/queries/listIDs.xsl (if an xml source file is needed, use a dummy.xml such as $sch/xslt/dummy.xml)</li>
                         </ul></li>
                     <li>Check all attributes in the root element /migDataDictionary; they're mostly
                         namespaces and are probably correct, but correctness should be
@@ -53,6 +52,7 @@
                                     <li>CONTENTdm compound object processing for MAPs is discussed
                                         in detail at //procedures/cdmCompoundObjects.html</li>
                                 </ul></li>
+                                <li>//cdmCode #enter the cdm databse code for the collection, it applicable.</li>
                         </ul></li>
                 </ul></li>
             <li>List the properties used to describe the collection: <ul>
@@ -63,31 +63,52 @@
                             <li>Use //procedures/propertyFiles.html to create property files.</li>
                         </ul></li>
                     <li>There must be a property file for every property listed in the MAP.</li>
+                    <li>There are 13 required fields for all collections:
+                        <ul>
+                            <li>Title</li>
+                            <li>Date-EDTF</li>
+                            <li>Date</li>
+                            <li>Dates</li>
+                            <li>Digital Collection</li>
+                            <li>Order Number</li>
+                            <li>Ordering Information</li>
+                            <li>Citation Information</li>
+                            <li>Repository</li>
+                            <li>Repository collection</li>
+                            <li>Restrictions</li>
+                            <li>RightsURI</li>
+                            <li>Type</li>
+                        </ul>
+                    </li>
                 </ul></li>
             <li>Compare MAP properties to CONTENTdm field properties <ul>
+                    <li>Compare properties in the MAP against the properties used in the CONTENTdm
+                        database using compareProps-dd-v-cdm.xsl.</li>
                     <li>The MAP properties are the definitive definitive of the properties;
-                        CONTENTdm field properties must comply with the MAP.</li>
+                        CONTENTdm field properties should comply with the MAP.</li>
                     <li>Change the CONTENTdm field properties as appropriate to comply with the
-                        MAP.</li>
-                    <li>CONTENTdm field properties can be obtained over http: <ul>
-                            <li>https://server16786.contentdm.oclc.org/dmwebservices/index.php?q=dmGetCollectionFieldInfo/ayp/xml</li>
-                            <li>Code can be written to alert us when CONTENTdm field properties need
-                                to be changed; we don't have to launch CONTENTdm administration
-                                windows.</li>
+                        MAP, or devise an alternate solution.</li>
+                    <li>CONTENTdm field properties can be obtained over http; use //sch/xslt/compareProps-dd-v-cdm.xsl <ul>
+                            <li>edit the $doc variable; https://server16786.contentdm.oclc.org/dmwebservices/index.php?q=dmGetCollectionFieldInfo/ayp/xml is the correct @select value (wrapped in a document() function) except the penultimate token should be the cdmCode name of the digital collection.</li>
+                            <li>In the oXygen transformation scenario, enter the path to the data dictionary.</li>
+                            <li>This transform outputs an html file; name it and store in //sch/ignore/dd-v-cdm/</li> 
                         </ul></li>
                 </ul></li>
-            <li>Expand the xml using //xslt/identity-expand.xsl, for the following resons<ul>
-                <li>to produce a more human readable version of the complete data dictionary (the original xml data dictionary is useful for an "at a glance" view, but the expanded version displays every detail of every property);</li>
-                <li>for use by specific routines in the metadata management application that do not recognize xInclude<ul>
-                    <li><i>[begin a list of the routines that cannot use xInclude]</i></li>
+            <li>Expand the xml using //xslt/identity-expand.xsl, for the following reasons<ul>
+                    <li>to produce a more human readable version of the complete data dictionary
+                        (the original xml data dictionary is useful for an "at a glance" view, but
+                        the expanded version displays every detail of every property);</li>
+                    <li>for use by specific routines in the metadata management application that do
+                        not recognize xInclude<ul>
+                            <li><i>[begin a list of the routines that cannot use xInclude]</i></li>
+                        </ul></li>
                 </ul></li>
-            </ul></li>
             <li>Create the HTML data dictionary using //xslt/dds-to-html-xsd.xsl; save it to
                 //dataDictionaries/html using the collection name as the filename with a .html
                 extension.</li>
             <li>Processing can then move on to the next stage, using the data dictionary as
                 described in "Exporting and Validating CONTENTdm metadata" at
-                //procedures/validateCdm.html</li>
+                //procedures/exportAndValidateCdm.html</li>
         </ol>
     </body>
 </html>

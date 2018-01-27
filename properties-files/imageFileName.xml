@@ -34,7 +34,9 @@
    </descriptions>
    <examples>
       <example co="no">
-         <para>CD number: UW__001</para>
+         <para>asw13.jpg</para>
+         <para>b_34.jpg</para>
+         <para>east_detail_471.png</para>
       </example>
    </examples>
    <additionalInfo>
@@ -52,7 +54,7 @@
       </marcNotes>
    </marc>
    <xsd>
-      <typeInfo level="standalone object">
+      <typeInfo level="standalone">
          <typeAttribute>xs:string</typeAttribute>
       </typeInfo>
       <typeInfo level="item">

@@ -40,8 +40,7 @@
                     }
                     td{
                         vertical-align: top;
-                    }
-                </style>
+                    }</style>
                 <!-- <link rel="stylesheet" href="/Users/theodore/Documents/uwl/schemasProject/xslt/css4htmlDds.css" type="text/css"/> -->
             </head>
             <body>
@@ -138,8 +137,10 @@
                     </td>
                     <td>
                         <xsl:choose>
-                            <xsl:when test="../../mig:cdmCode = mig2:descriptions/mig2:customizations/@dd">
-                                <xsl:for-each select="mig2:descriptions/mig2:customization[@co='no']/mig2:para">
+                            <xsl:when
+                                test="../../mig:cdmCode = mig2:descriptions/mig2:customization/@dd">
+                                <xsl:for-each
+                                    select="mig2:descriptions/mig2:customization[@co = 'no']/mig2:para">
                                     <p>
                                         <xsl:value-of select="."/>
                                     </p>
@@ -155,14 +156,27 @@
                             </xsl:otherwise>
                         </xsl:choose>
                     </td>
-                    <!-- left off here -->
                     <td>
-                        <xsl:for-each
-                            select="mig2:examples/mig2:example[@co = 'no' or @co = 'all']/mig2:para">
-                            <p>
-                                <xsl:value-of select="."/>
-                            </p>
-                        </xsl:for-each>
+                        <xsl:choose>
+                            <xsl:when
+                                test="../../mig:cdmCode = mig2:examples/mig2:customization/@dd">
+
+                                <xsl:for-each
+                                    select="mig2:examples/mig2:customization[@co = 'no']/mig2:para">
+                                    <p>
+                                        <xsl:value-of select="."/>
+                                    </p>
+                                </xsl:for-each>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:for-each
+                                    select="mig2:examples/mig2:example[@co = 'no' or @co = 'all']/mig2:para">
+                                    <p>
+                                        <xsl:value-of select="."/>
+                                    </p>
+                                </xsl:for-each>
+                            </xsl:otherwise>
+                        </xsl:choose>
                     </td>
                     <td>
                         <!-- make sure all CO status include both note types ~and~ co=all below. -->
@@ -200,7 +214,8 @@
                 <th>Examples</th>
                 <th>Additional notes on this property</th>
             </tr>
-            <xsl:for-each select="mig2:property[mig2:descriptionCoObject/mig2:para/text()][not(mig2:cdm/mig2:cdmDatatype = 'uwAdministrative')]">
+            <xsl:for-each
+                select="mig2:property[mig2:descriptionCoObject/mig2:para/text()][not(mig2:cdm/mig2:cdmDatatype = 'uwAdministrative')]">
                 <tr>
                     <td>
                         <xsl:value-of select="position()"/>
@@ -275,7 +290,8 @@
                 <th>Examples</th>
                 <th>Notes on this property</th>
             </tr>
-            <xsl:for-each select="mig2:property[mig2:descriptionCoItem/text()][not(mig2:cdm/mig2:cdmDatatype = 'uwAdministrative')]">
+            <xsl:for-each
+                select="mig2:property[mig2:descriptionCoItem/text()][not(mig2:cdm/mig2:cdmDatatype = 'uwAdministrative')]">
                 <tr>
                     <td>
                         <xsl:value-of select="position()"/>
@@ -356,7 +372,7 @@
                 <th>Additional notes on this property</th>
             </tr>
             <xsl:for-each
-                select="mig2:property[not(mig2:cdm/mig2:cdmDatatype = 'cdmAdministrative')][not(mig2:cdm/mig2:cdmDatatype = 'uwAdministrative')][mig2:descriptions/mig2:instructions/@co = 'object' or mig2:descriptions/mig2:customization/@co='object']">
+                select="mig2:property[not(mig2:cdm/mig2:cdmDatatype = 'cdmAdministrative')][not(mig2:cdm/mig2:cdmDatatype = 'uwAdministrative')][mig2:descriptions/mig2:instructions/@co = 'object' or mig2:descriptions/mig2:customization/@co = 'object']">
                 <tr>
                     <td>
                         <xsl:value-of select="position()"/>
@@ -446,7 +462,7 @@
                 <th>Additional notes on this property</th>
             </tr>
             <xsl:for-each
-                select="mig2:property[not(mig2:cdm/mig2:cdmDatatype = 'cdmAdministrative')][not(mig2:cdm/mig2:cdmDatatype = 'uwAdministrative')][mig2:descriptions/mig2:instructions/@co = 'item' or mig2:descriptions/mig2:customization/@co='item']">
+                select="mig2:property[not(mig2:cdm/mig2:cdmDatatype = 'cdmAdministrative')][not(mig2:cdm/mig2:cdmDatatype = 'uwAdministrative')][mig2:descriptions/mig2:instructions/@co = 'item' or mig2:descriptions/mig2:customization/@co = 'item']">
                 <tr>
                     <td>
                         <xsl:value-of select="position()"/>
@@ -491,8 +507,10 @@
                     </td>
                     <td>
                         <xsl:choose>
-                            <xsl:when test="../../mig:cdmCode = mig2:descriptions/mig2:customization/@dd">
-                                <xsl:for-each select="mig2:descriptions/mig2:customization[@co='item' or @co='all']/mig2:para">
+                            <xsl:when
+                                test="../../mig:cdmCode = mig2:descriptions/mig2:customization/@dd">
+                                <xsl:for-each
+                                    select="mig2:descriptions/mig2:customization[@co = 'item' or @co = 'all']/mig2:para">
                                     <p>
                                         <xsl:value-of select="."/>
                                     </p>
@@ -500,7 +518,7 @@
                             </xsl:when>
                             <xsl:otherwise>
                                 <xsl:for-each
-                                    select="mig2:descriptions/mig2:instructions[@co = 'item' or @co='all']/mig2:para">
+                                    select="mig2:descriptions/mig2:instructions[@co = 'item' or @co = 'all']/mig2:para">
                                     <p>
                                         <xsl:value-of select="."/>
                                     </p>
@@ -510,8 +528,10 @@
                     </td>
                     <td>
                         <xsl:choose>
-                            <xsl:when test="../../mig:cdmCode = mig2:examples/mig2:customization/@dd">
-                                <xsl:for-each select="mig2:examples/mig2:customization[@co='item' or @co='all']/mig2:para">
+                            <xsl:when
+                                test="../../mig:cdmCode = mig2:examples/mig2:customization/@dd">
+                                <xsl:for-each
+                                    select="mig2:examples/mig2:customization[@co = 'item' or @co = 'all']/mig2:para">
                                     <p>
                                         <xsl:value-of select="."/>
                                     </p>
@@ -519,7 +539,7 @@
                             </xsl:when>
                             <xsl:otherwise>
                                 <xsl:for-each
-                                    select="mig2:examples/mig2:example[@co = 'item' or @co='all']/mig2:para">
+                                    select="mig2:examples/mig2:example[@co = 'item' or @co = 'all']/mig2:para">
                                     <p>
                                         <xsl:value-of select="."/>
                                     </p>
@@ -564,7 +584,7 @@
                 <th>Additional notes on this property</th>
             </tr>
             <xsl:for-each
-                select="mig2:property[not(mig2:cdm/mig2:cdmDatatype = 'cdmAdministrative')][not(mig2:cdm/mig2:cdmDatatype = 'uwAdministrative')][mig2:descriptions/mig2:instructions/@co = 'no' or mig2:descriptions/mig2:customization/@co='no']">
+                select="mig2:property[not(mig2:cdm/mig2:cdmDatatype = 'cdmAdministrative')][not(mig2:cdm/mig2:cdmDatatype = 'uwAdministrative')][mig2:descriptions/mig2:instructions/@co = 'no' or mig2:descriptions/mig2:customization/@co = 'no']">
                 <tr>
                     <td>
                         <xsl:value-of select="position()"/>

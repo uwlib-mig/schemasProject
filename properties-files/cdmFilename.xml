@@ -18,7 +18,7 @@
       <cdmLarge>no</cdmLarge>
       <searchable>no</searchable>
       <hidden>yes</hidden>
-      <cdmRequired>no</cdmRequired>
+      <cdmRequired>yes</cdmRequired>
       <cdmControlledVocab>no</cdmControlledVocab>
    </cdm>
    <dspace>

@@ -33,6 +33,11 @@
          <para>Preferred: use LC Thesaurus for Graphic Materials headings when possble, then LC Subject Headings if available. Anothe source can be used but is not preferred.</para>
          <para>Separate multiple headings with a semi-colon.</para>
       </instructions>
+      <customization co="no" dd="neareast">
+         <para>Enter a heading naming the specific building or object; also enter a term describing the general type of object or building pictured.</para>
+         <para>When possible, the name of the object should be taken from the Library of Congress Authority File.</para>
+         <para>When possible, use a term from Art and Architecture Thesaurus when describing the general type of object.</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="no">
@@ -40,10 +45,16 @@
          <para>McGraw, John Harte, 1911- —Statues—Washington (State)—Seattle</para>
          <para>Log buildings—Alaska—Fort Yukon</para>
       </example>
+      <customization co="no" dd="neareast">
+         <para>Thoth (Egyptian deity)</para>
+         <para>Obelisks</para>
+         <para>Columns (architectural elements)</para>
+         <para>Masada Site (Israel)</para>
+      </customization>
    </examples>
    <additionalInfo>
       <admin co="no">
-         <para>Subject field where LCTGM and LCSH terms were not separated. Assumptions were made in the instructions that LCTGM is preferred, that LCSH is next preferred, and that other sources of terms are permissable. However that instruction should be reviewed as it may be erroneous.</para>
+         <para>For UW Libraries Special Collections Photograph Collections, this is a Subject field where LCTGM and LCSH terms were not separated. Assumptions were made in the instructions that LCTGM is preferred, that LCSH is next preferred, and that other sources of terms are permissable. However that instruction should be reviewed as it may be erroneous.</para>
       </admin>
    </additionalInfo>
    <marc>
@@ -71,7 +82,7 @@
          </range>
       </dateCreated>
       <created4Coll>J. Willis Sayre Photographs</created4Coll>
-      <justification>This is a standard field to provide subject access that prefers LCSH or LCTGM.</justification>
+      <justification>This is a standard field to provide subject access that prefers LCSH or LCTGM. </justification>
       <changeLog>
          <change/>
          <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>

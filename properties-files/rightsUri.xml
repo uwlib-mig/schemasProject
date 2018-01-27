@@ -47,14 +47,7 @@
          <para>http://rightsstatements.org/vocab/InC/1.0/</para>
       </example>
    </examples>
-   <additionalInfo>
-      <generalNotes co="no">
-         <para>Decision made by Special Collections in 2017 for all Special Collections items.</para>
-      </generalNotes>
-      <generalNotes co="object">
-         <para>Decision made by Special Collections in 2017 for all Special Collections items.</para>
-      </generalNotes>
-   </additionalInfo>
+   <additionalInfo/>
    <marc>
       <dcgMarcMapping/>
       <marcNotes>

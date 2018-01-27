@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns:xs="http://www.w3.org/2001/XMLSchema"
+          xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+   <labels>
+      <platformIndependent>site</platformIndependent>
+      <dc>isPartOf</dc>
+   </labels>
+   <uwRequired>
+      <uwStandalone>yes</uwStandalone>
+      <uwObject>no</uwObject>
+      <uwItem>no</uwItem>
+   </uwRequired>
+   <cdm>
+      <label>Site</label>
+      <cdmDatatype>text</cdmDatatype>
+      <cdmLarge>no</cdmLarge>
+      <searchable>yes</searchable>
+      <hidden>no</hidden>
+      <cdmRequired>no</cdmRequired>
+      <cdmControlledVocab>no</cdmControlledVocab>
+   </cdm>
+   <dspace>
+      <dspaceProperty/>
+   </dspace>
+   <descriptions>
+      <definition>
+         <para>Name of the site in which the resource pictured is located.</para>
+      </definition>
+      <instructions co="no">
+         <para>Enter the form of the name as it is listed in the LC Authority File.</para>
+      </instructions>
+      <!--<instructions co="object">
+         <para/></para>
+      </instructions> -->
+      <!--<instructions co="item">
+         <para/>
+      </instructions> -->
+   </descriptions>
+   <examples>
+      <example co="no">
+         <para>Pyramids of Giza (Egypt)</para>
+         <para>Temple of Khnum (Elephantine, Egypt)</para>
+      </example>
+      <!--<example co="object">
+         <para/>
+      </example> -->
+      <!-- <example co="item">
+         <para/>
+      </example> -->
+      <!--<customization co="no"/> -->
+   </examples>
+   <additionalInfo/>
+   <marc>
+      <dcgMarcMapping>
+         <!--<field>245</field>
+         <subfield>a</subfield>
+         <indicators>00</indicators>-->
+      </dcgMarcMapping>
+      <dcgNotes>
+         <para/>
+      </dcgNotes>
+      <marcNotes/>
+   </marc>
+   <xsd>
+      <typeInfo level="standalone">
+         <typeAttribute>xs:string</typeAttribute>
+      </typeInfo>
+   </xsd>
+   <rdf>
+      <sameAs/>
+   </rdf>
+   <history>
+      <dateCreated>
+         <range>
+            <start>2000-01-01</start>
+            <end>2018-01-24</end>
+         </range>
+      </dateCreated>
+      <created4Coll>Ancient near East Photograph Collection</created4Coll>
+      <justification>The encapsulating site should be named, indexed and searchable.</justification>
+      <changeLog>
+         <change/>
+      </changeLog>
+   </history>
+</property>

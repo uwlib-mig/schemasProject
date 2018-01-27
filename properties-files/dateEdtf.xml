@@ -5,7 +5,7 @@
           xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
    <labels>
       <platformIndependent>dateEdtf</platformIndependent>
-      <dc>date</dc>
+      <dc>created</dc>
    </labels>
    <uwRequired>
       <uwStandalone>yes</uwStandalone>

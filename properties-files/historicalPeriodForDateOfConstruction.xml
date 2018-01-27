@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns:xs="http://www.w3.org/2001/XMLSchema"
+          xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+   <labels>
+      <platformIndependent>historicalPeriodForDateOfConstruction</platformIndependent>
+      <dc>temporal</dc>
+      <!-- I don't think we need schemaLabel; shemas are to be produced for validating cdm exports; look at thos exports and see how the property labels export; the cdmLabel might be adequate for producing the schema -->
+   </labels>
+   <uwRequired>
+      <uwStandalone>no</uwStandalone>
+      <uwObject>no</uwObject>
+      <uwItem>no</uwItem>
+   </uwRequired>
+   <cdm>
+      <label>Historical Period for Date of Construction </label>
+      <cdmDatatype>text</cdmDatatype>
+      <cdmLarge>no</cdmLarge>
+      <searchable>yes</searchable>
+      <hidden>no</hidden>
+      <cdmRequired>no</cdmRequired>
+      <cdmControlledVocab>no</cdmControlledVocab>
+   </cdm>
+   <dspace>
+      <dspaceProperty/>
+   </dspace>
+   <descriptions>
+      <definition>
+         <para>Historical period of creation of the original resource.</para>
+      </definition>
+      <instructions co="no">
+         <para>Enter a representation of the historical period.</para>
+         <para>Entries can include any of the following: a dynasty, a century, a particular year, etc.</para>
+         <para>Multiple entries should be separated by <![CDATA[<br>]]></para>         
+      </instructions>
+   </descriptions>
+   <examples>
+      <example co="no">
+         <para>11th dynasty</para>
+         <para>21 century B.C.</para>
+         <para>16th century B.C.</para>
+         <para>1279 A.D.</para>
+      </example>
+   </examples>
+   <additionalInfo/>
+   <marc>
+      <dcgMarcMapping/>
+      <marcNotes/>
+   </marc>
+   <xsd>
+      <typeInfo level="standalone">
+         <typeAttribute>xs:string</typeAttribute>
+      </typeInfo>
+   </xsd>
+   <rdf>
+      <sameAs/>
+   </rdf>
+   <history>
+      <dateCreated>
+         <range>
+            <start>2000-01-01</start>
+            <end>2018-12-25</end>
+         </range>
+      </dateCreated>
+      <created4Coll>Ancient Near East Photograph Collection</created4Coll>
+      <justification>Somebody, probably Professor Scott Noegel, wanted to be able to describe the historical period in which the resource pictured was created.</justification>
+      <changeLog>
+         <change/>
+      </changeLog>
+   </history>
+</property>

@@ -11,7 +11,7 @@
    <uwRequired>
       <uwStandalone>yes</uwStandalone>
       <uwObject>yes</uwObject>
-      <uwItem>no</uwItem>
+      <uwItem>no</uwItem> 
    </uwRequired>
    <cdm>
       <label>Date</label>
