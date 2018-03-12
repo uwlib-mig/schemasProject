@@ -29,7 +29,7 @@
          <para>Denotes genre or type of material.</para>
       </definition>
       <instructions co="no">
-         <para>Input a term taken from a controlled source. Recommended: LC Thesaurus for Graphic Materials.</para>
+         <para>Input a term or terms taken from a controlled source. Recommended: LC Thesaurus for Graphic Materials.</para>
          <para>Enter the heading exactly as it appears in the thesaurus.</para>
          <para>Separate multiple values with a semi-colon and space.</para>
       </instructions>

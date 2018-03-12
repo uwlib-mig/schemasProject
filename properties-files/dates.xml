@@ -47,7 +47,16 @@
          <para>If the year is a range of years, enter all the years in that range.</para>
          <para>This field is indexed and enables date searching in CONTENTdm.</para>
          <para>The Dates value should agree with date values entered in Date-Edtf and Date fields.</para>
+         <para>If the date is a single year, year and month, or year month and day, enter the single year only in the Dates field.</para>
+         <para>If the date is an approximate year, enter that year plus five years on either side of that year; for example, if the Date field is "1910?" enter "1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915"</para>
+         <para>If the year is a range of years, enter all the years in that range.</para>
+         <para>This field is indexed and enables date searching in CONTENTdm.</para>
+         <para>The Dates value should agree with date values entered in Date-Edtf and Date fields.</para>
       </instructions>
+      <customization co="no" dd="ac">
+         <para>Enter the date of the execution of the drawing.</para>
+         <para>Enter the year or years only.</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="no">

@@ -38,6 +38,12 @@
          <para>Most recent version of EDTF available at https://www.loc.gov/standards/datetime/.</para>
          <para>Date-Edtf value should agree with dates values entered in Date and Dates fields.</para>
       </instructions>
+      <customization co="no" dd="ac">
+         <para>Enter the date of the execution of the drawing.</para>
+         <para>Express all dates, including date ranges, using Library of Congress' Extended Date Time Format.</para>
+         <para>Most recent version of EDTF available at https://www.loc.gov/standards/datetime/.</para>
+         <para>Date-Edtf value should agree with dates values entered in Date and Dates fields.</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="no">

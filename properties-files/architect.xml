@@ -26,15 +26,22 @@
    </dspace>
    <descriptions>
       <definition>
-         <para>The name of the architect or firm who created the architectural work depicted in the image. It should represent as closely as possible the creator’s name or the company’s name at the time of the creation of the image. Includes both personal and corporate names.
+         <para>The name of the architect or firm who created the architectural work depicted in the image. I
         </para>
       </definition>
       <instructions co="no">
          <para>Input Lastname, Firstname for all personal names. Use LC Authority File for form of name, if available.</para>
+         <para>The name should represent as closely as possible the creator’s name or the company’s name at the time of the creation of the image.</para>
+         <para>Includes both personal and corporate names.</para>
+         <para>The name should represent as closely as possible the creator’s name or the company’s name at the time of the creation of the image. Includes both personal and corporate names.</para>
       </instructions>
    </descriptions>
    <examples>
-      <example co="no"/>
+      <example co="no">
+         <para>Bebb &amp; Mendel</para>
+         <para>Bebb, Charles H</para>
+         <para>Mendel, Louis Leonard, 1867-1940</para>
+      </example>
    </examples>
    <additionalInfo/>
    <marc>

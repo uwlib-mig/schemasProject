@@ -46,6 +46,9 @@
          <para>Every page must have a title.</para>
          <para>Enter a title for the single item/page. This could be a descriptive title for the content of the item, a transcribed title, or a title that helps administer the overall object, whatever works best for the project.</para>
       </instructions>
+      <customization co="no" dd="ac">
+         <para>Enter a descriptive title, minimally stating the name of the building (or proposed building), a description of the drawing (for example, "interior details"), and a description of the area of the building represented in the drawing (for example, "ground floor entrance and corridor").</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="no">
@@ -58,7 +61,12 @@
       <example co="item">
          <para>Page 6</para>
       </example>
-      <customization co="no"/>
+      <customization co="no" dd="ac">
+         <para>White Building (Seattle, Wash.), interior details for the ground floor entrance and corridor</para>
+         <para>Albert S. Kerry residence (Seattle, Wash.), dining room details</para>
+         <para>B.P.O. Elk's Lodge (Centralia, Wash.), Pearl Street elevation</para>
+         <para>Bjarne Moe student drawing of a commemorative tablet</para>
+      </customization>
    </examples>
    <additionalInfo/>
    <marc>

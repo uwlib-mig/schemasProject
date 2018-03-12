@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns:xs="http://www.w3.org/2001/XMLSchema"
+          xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+   <labels>
+      <platformIndependent>fullResolution</platformIndependent>
+      <dc>none</dc>
+   </labels>
+   <uwRequired>
+      <uwStandalone>no</uwStandalone>
+      <uwObject>no</uwObject>
+      <uwItem>no</uwItem>
+   </uwRequired>
+   <cdm>
+      <label>Full Resolution</label>
+      <cdmDatatype>cdmAdministrative</cdmDatatype>
+      <cdmLarge>no</cdmLarge>
+      <searchable>no</searchable>
+      <hidden>yes</hidden>
+      <cdmRequired>no</cdmRequired>
+      <cdmControlledVocab>no</cdmControlledVocab>
+   </cdm>
+   <dspace>
+      <dspaceProperty/>
+   </dspace>
+   <descriptions>
+      <definition>
+         <para>Path to full resolution image.</para>
+      </definition>
+      <instructions co="no">
+         <para>Enter the path to the full resolution image.</para>
+      </instructions>
+      <customization co="no" dd="ac">
+         <para>Enter the volume that is the folder in which the TIFF is stored, a backward slash, then the file name.</para>
+         <para>If there is no TIFF image, enter the path to the JPEG that serves as the master image. </para>
+      </customization>
+   </descriptions>
+   <examples>
+      <example co="no">
+        
+      </example>
+      <customization co="no" dd="ac">
+         <para>Volume7\map100405-10 copy.tif</para>
+         <para>Volume5\B40-5.tif</para>
+         <para>Volume63/Jones W 1 copy.jpg</para>
+      </customization>
+   </examples>
+   <additionalInfo>
+     
+   </additionalInfo>
+   <marc>
+      <dcgMarcMapping/>
+      <marcNotes>
+         <para/>
+      </marcNotes>
+   </marc>
+   <xsd>
+      <typeInfo level="standalone">
+         <typeAttribute>xs:string</typeAttribute>
+      </typeInfo>
+   </xsd>
+   <rdf>
+      <sameAs/>
+   </rdf>
+   <history>
+      <dateCreated>
+         <single>2006-01-01</single>
+      </dateCreated>
+      <created4Coll>CONTENTdm</created4Coll>
+      <justification>CONTENTdm service for providing access to the full resolution image.</justification>
+      <changeLog>
+         <change/>
+      </changeLog>
+   </history>
+</property>

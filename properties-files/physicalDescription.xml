@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
-          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-          xmlns:xs="http://www.w3.org/2001/XMLSchema"
-          xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+   xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
    <labels>
       <platformIndependent>physicalDescription</platformIndependent>
       <dc>format</dc>
@@ -42,6 +41,11 @@
       <example co="object">
          <para>Glass, b/w ; 6 1/2 x 8 1/2 in.</para>
       </example>
+      <customization co="no" dd="ac">
+         <para>Ink and watercolor on drafting cloth: 48 x 46 cm.</para>
+         <para>Gouache/watercolor with graphite and ink on paper with cheesecloth backing ; 40 in x 29 3/4 in</para>
+         <para>Ink and graphite on drafting cloth: 61 x 93 cm</para>
+      </customization>
    </examples>
    <additionalInfo/>
    <marc>
@@ -73,6 +77,7 @@
       <changeLog>
          <change/>
          <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
+         <change date="2018-02-27">Added customization for Architecture of the Pacific Northwest collection.</change>
       </changeLog>
    </history>
 </property>

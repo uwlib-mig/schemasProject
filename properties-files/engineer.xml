@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns:xs="http://www.w3.org/2001/XMLSchema"
+          xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+   <labels>
+      <platformIndependent>engineer</platformIndependent>
+      <dc>creator</dc>
+   </labels>
+   <uwRequired>
+      <uwStandalone>no</uwStandalone>
+      <uwObject>no</uwObject>
+      <uwItem>no</uwItem>
+   </uwRequired>
+   <cdm>
+      <label>Engineer</label>
+      <cdmDatatype>text</cdmDatatype>
+      <cdmLarge>no</cdmLarge>
+      <searchable>yes</searchable>
+      <hidden>no</hidden>
+      <cdmRequired>no</cdmRequired>
+      <cdmControlledVocab>no</cdmControlledVocab>
+   </cdm>
+   <dspace>
+      <dspaceProperty/>
+   </dspace>
+   <descriptions>
+      <definition>
+         <para>The name of the engineer or firm who helped create the architectural work depicted in the image. It should represent as closely as possible the engineer’s name or the company’s name at the time of the creation of the image. Includes both personal and corporate names.
+        </para>
+      </definition>
+      <instructions co="no">
+         <para>Input Lastname, Firstname for all personal names. Use LC Authority File for form of name, if available.</para>
+      </instructions>
+   </descriptions>
+   <examples>
+      <example co="no">
+         <para>Bittman, Henry W., 1882-1953</para>
+         <para>Hall, John, L.</para>
+      </example>
+   </examples>
+   <additionalInfo/>
+   <marc>
+      <dcgMarcMapping/>
+      <marcNotes/>
+   </marc>
+   <xsd>
+      <typeInfo level="standalone">
+         <typeAttribute>xs:string</typeAttribute>
+      </typeInfo>
+      
+   </xsd>
+   <rdf>
+      <sameAs/>
+   </rdf>
+   <history>
+      <dateCreated>
+         <range>
+            <start>2006-01-01</start>
+            <end>2018-02-20</end>
+         </range>
+      </dateCreated>
+      <created4Coll>Architecture of the Pacific Northwest</created4Coll>
+      <justification>Engineer was known frequently enough in Architecture of the Pacific Northwest to warrant the use of this field.</justification>
+      <changeLog>
+         <change/>
+         
+      </changeLog>
+   </history>
+</property>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<migDataDictionary xmlns="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries"
+    xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    id="0001"
+    xsi:schemaLocation="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-dds.xsd">
+    <ddName>Architecture of the Pacific Northwest</ddName>
+    <ddPartOfProject/>
+    <originalCreationDate>2018-02-16</originalCreationDate>
+    <latestUpdate>2018-02-16</latestUpdate>
+    <metadataLiaisons>
+        <metadataLiaison>TBD</metadataLiaison>
+    </metadataLiaisons>
+    <cdmCo>no</cdmCo>
+    <standalone>yes</standalone>
+    <cdmCode>ac</cdmCode>
+    <properties>
+        <xi:include href="../../properties-files/title.xml"/>
+        <xi:include href="../../properties-files/alternativeTitle.xml"/>
+        <xi:include href="../../properties-files/architect.xml"/>
+        <!-- The above property proposes to replace 2 properties, "Architectural Firm Name" and "Architects." Pending 2018-02-27. -->
+        <xi:include href="../../properties-files/associateArchitect.xml"/>
+        <xi:include href="../../properties-files/engineer.xml"/>
+        <xi:include href="../../properties-files/artist.xml"/>
+        <xi:include href="../../properties-files/client.xml"/>
+        <xi:include href="../../properties-files/dateEdtf.xml"/>
+        <xi:include href="../../properties-files/date.xml"/>
+        <!-- The above property proposes to replace "Date of Drawing Execution." Pending 2018-02-27. -->
+        <xi:include href="../../properties-files/dates.xml"/>
+        <!-- Proposal: eliminate "Earliest Drawing Date." Pending 2018-02-27. -->
+        <!-- Proposal: eliminate "Latest Drawing Date." Pending 2018-02-27. -->
+        <xi:include href="../../properties-files/objectType.xml"/>
+        <xi:include href="../../properties-files/physicalDescription.xml"/>
+        <xi:include href="../../properties-files/buildingStreetAddress.xml"/>
+        <xi:include href="../../properties-files/buildingLocation.xml"/>
+        <xi:include href="../../properties-files/purpose.xml"/>
+        <xi:include href="../../properties-files/representation.xml"/>        
+        <xi:include href="../../properties-files/notes.xml"/>
+        <!-- The above property proposes to replace "Descriptive Notes." Pending 2018-03-01. -->
+        <xi:include href="../../properties-files/buildingStyle.xml"/>
+        <xi:include href="../../properties-files/buildingNotes.xml"/>
+        <xi:include href="../../properties-files/subjectsLctgm.xml"/>
+        <xi:include href="../../properties-files/subjectsLcsh.xml"/>
+        <xi:include href="../../properties-files/digitalCollection.xml"/>
+        <xi:include href="../../properties-files/orderNumber.xml"/>
+        <!-- he above property proposes to replace "Digial ID Number." Pending 2018-03-08. -->
+        <xi:include href="../../properties-files/orderingInformation.xml"/>
+        <xi:include href="../../properties-files/citationInformation.xml"/>
+        <xi:include href="../../properties-files/negativeNumber.xml"/>
+        <xi:include href="../../properties-files/repository.xml"/>
+        <xi:include href="../../properties-files/repositoryCollection.xml"/>
+        <xi:include href="../../properties-files/repositoryCollectionGuide.xml"/>
+        <xi:include href="../../properties-files/digitalReproductionInformation.xml"/>
+        <xi:include href="../../properties-files/contributor.xml"/>
+        <xi:include href="../../properties-files/acquisition.xml"/>
+        <xi:include href="../../properties-files/rightsUri.xml"/>
+        <xi:include href="../../properties-files/restrictions.xml"/>
+        <xi:include href="../../properties-files/type.xml"/>
+        <xi:include href="../../properties-files/institution.xml"/>
+        <xi:include href="../../properties-files/cataloging.xml"/>
+        <xi:include href="../../properties-files/itemUrl.xml"/>
+        <xi:include href="../../properties-files/fullResolution.xml"/>
+        <xi:include href="../../properties-files/oclcNumber.xml"/>
+        <xi:include href="../../properties-files/dateCreated.xml"/>
+        <xi:include href="../../properties-files/dateModified.xml"/>
+        <xi:include href="../../properties-files/cdmNumber.xml"/>
+        <xi:include href="../../properties-files/cdmFilename.xml"/>
+        <xi:include href="../../properties-files/cdmFilePath.xml"/>
+    </properties>
+</migDataDictionary>

@@ -35,6 +35,10 @@
       <instructions co="object">
          <para>Each separate "note" should be a paragraph. Additional notes can be added, separated from the previous note using a blank line.</para>
       </instructions>
+      <customization co="no" dd="ac">
+         <para>An account of the drawing.</para>
+         <para>Notes include any information of importance that is not represented elsewhere.</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="no">
@@ -49,6 +53,15 @@
          <para>Handwritten on verso: Mrs. McLain with dog team.</para>
          <para>PH Coll 519.319</para>
       </example>
+      <customization co="no" dd="ac">
+         <para>Handwritten in title block: Apartment house. Osborn, Architect. 325 Leary Bldg., Seattle, Wash. E.C.R. [drawn by?]</para>
+         <para>Handwritten beneath drawing: First floor plan. Scale: 1/16" to 1'</para>
+         <para>Plans for a frame hotel to be erected by the Lake View Land Co. at Lakeview, Wash.</para>
+         <para>Stamped on cover sheet: Farrell and Darmer, Architects, Tacoma, Wash. Ter.</para>
+         <para>From inventory: (1890)</para>
+         <para>Residence for Mr. C.J. Lord</para>
+         <para>Written in title block: Residence for Mr. C.J. Lord; 21st and Columbia Streets, Olympia, Washington; Basement and Foundation plan; Joseph H. Wohleb, Architect. Olympia, Wash.; Drawn by Y.D.W.; Traced by W.W.; Date Feb. 1923;Comm. No. 251; Sheet no. 2; Scale: 1/4" to 1'</para>
+      </customization>
    </examples>
    <additionalInfo>
       <generalNotes co="all">
@@ -84,6 +97,7 @@
       <changeLog>
          <change/>
          <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
+         <change date="2018-02-27">Added customization for Architecture of the Pacific Northwest.</change>
       </changeLog>
    </history>
 </property>
