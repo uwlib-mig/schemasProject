@@ -16,7 +16,7 @@
       <label>Building Notes</label>
       <cdmDatatype>text</cdmDatatype>
       <cdmLarge>yes</cdmLarge>
-      <searchable>yes</searchable>
+      <searchable>no</searchable>
       <hidden>no</hidden>
       <cdmRequired>no</cdmRequired>
       <cdmControlledVocab>no</cdmControlledVocab>

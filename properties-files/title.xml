@@ -15,7 +15,7 @@
    <cdm>
       <label>Title</label>
       <cdmDatatype>text</cdmDatatype>
-      <cdmLarge>no</cdmLarge>
+      <cdmLarge>yes</cdmLarge>
       <searchable>yes</searchable>
       <hidden>no</hidden>
       <cdmRequired>yes</cdmRequired>

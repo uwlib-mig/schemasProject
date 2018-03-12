@@ -5,7 +5,7 @@
 
     <!-- change collection code in penultimate segment of document URL in variable below -->
     <xsl:variable name="doc"
-        select="document('https://server16786.contentdm.oclc.org/dmwebservices/index.php?q=dmGetCollectionFieldInfo/neareast/xml')"/>
+        select="document('https://server16786.contentdm.oclc.org/dmwebservices/index.php?q=dmGetCollectionFieldInfo/ac/xml')"/>
 
     <xsl:key name="cdmProp" match="field" use="name"/>
 
