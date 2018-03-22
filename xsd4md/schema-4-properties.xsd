@@ -105,14 +105,14 @@
         <xs:sequence>
             <xs:element name="definition" type="paraType" maxOccurs="unbounded"/>
             <xs:element name="instructions" type="paraType4co" maxOccurs="unbounded" minOccurs="0"/>
-            <xs:element ref="customization" minOccurs="0"/>
+            <xs:element ref="customization" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
 
     <xs:complexType name="examplesType">
         <xs:sequence>
             <xs:element name="example" type="paraType4co" maxOccurs="unbounded"/>
-            <xs:element ref="customization" minOccurs="0"/>
+            <xs:element ref="customization" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
 
