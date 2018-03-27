@@ -50,7 +50,7 @@
                     <xs:documentation>Element for recording whether or not CONTENTdm compound objects are permitted. Needed to state whether standalone can co-exist with compound objects.</xs:documentation>
                 </xs:annotation>
             </xs:element>
-            <xs:element name="suppressItemProp" type="props:yesNo" minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="suppressItemProp" type="xs:string" minOccurs="0" maxOccurs="unbounded">
                 <xs:annotation>
                     <xs:documentation>Element for enumerating the name of any property listed in the xml data dictionary that should not be output to the item description in the authoritative data dictionary. This happens because different projects are selective about what properties can go into the item description; just because we list it in the xml data dictionary for use in the object or standalone data dictionary, does not necessarily mean it is going into the item description, but those properties that have @co="item" will be output into the authoritative dictionary. This element allows us to suppress those properties as needed. To do this, the value at /property/labels/platformIndependant should be used as the value of the suppressItemProp element.</xs:documentation>
                 </xs:annotation>
