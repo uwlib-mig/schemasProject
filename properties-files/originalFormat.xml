@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd"><uid>p62</uid><labels>
+      <platformIndependent>originalFormat</platformIndependent>
+      <dc>isFormatOf</dc>
+   </labels><uwRequired>
+      <uwStandalone>no</uwStandalone>
+      <uwObject>no</uwObject>
+      <uwItem>no</uwItem>
+   </uwRequired><cdm>
+      <label>Original Format</label>
+      <cdmDatatype>text</cdmDatatype>
+      <cdmLarge>no</cdmLarge>
+      <searchable>no</searchable>
+      <hidden>no</hidden>
+      <cdmRequired>no</cdmRequired>
+      <cdmControlledVocab>no</cdmControlledVocab>
+   </cdm><dspace>
+      <dspaceProperty/>
+   </dspace><descriptions>
+      <definition>
+         <para>File format, physical medium, or dimensions of the original resource.</para>
+      </definition>
+      <instructions co="item">
+         <para>Enter the original format.</para>
+         <para>When the original is non-digital, use a label from one of the entries of the RDA Registry's RDA Carrier Type Vocabulary currently available at https://www.rdaregistry.info/termList/RDACarrierType/</para>
+         <para>When the original is digital, use media types listed at http://www.iana.org/assignments/media-types/index.html</para>
+         <para>For audio WAVE files, enter audio/wav.</para>
+         <para>When 'Original Format' is the same as the 'Digital Format,' enter the mime type in both fields.</para>
+      </instructions>
+   </descriptions><examples>
+      <example co="item">
+         <para>image/tiff</para>
+         <para>audio/wav</para>
+         <para>audiotape reel</para>
+         <para>online resource</para>
+         <para>computer disc</para>
+         <para>videocassette</para>
+      </example>
+   </examples><additionalInfo/><marc>
+      <dcgMarcMapping/>
+      <marcNotes>
+         <para/>
+      </marcNotes>
+   </marc><xsd>
+      <typeInfo level="item">
+         <typeAttribute>xs:string</typeAttribute>
+      </typeInfo>
+   </xsd><rdf>
+      <sameAs/>
+   </rdf><history>
+      <dateCreated>
+         <single>2012-01-01</single>
+      </dateCreated>
+      <created4Coll>Special Collections Oral Histories Collections</created4Coll>
+      <justification>Special Collections wanted a place to describe the format of the original resource. </justification>
+      <changeLog>
+         <change/>
+      </changeLog>
+   </history></property>

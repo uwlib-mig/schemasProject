@@ -26,7 +26,7 @@
         <xi:include href="../../properties-files/digitalCollection.xml"/>
         <xi:include href="../../properties-files/photographer.xml"/>
         <xi:include href="../../properties-files/dateOfPhotograph.xml"/>
-        <xi:include href="../../properties-files/imageFileName.xml"/>
+        <xi:include href="../../properties-files/fileName.xml"/>
         <xi:include href="../../properties-files/orderingInformation.xml"/>
         <!-- REQUIRED: no "CITATION INFORMATION" field in this coll; should be added -->
         <xi:include href="../../properties-files/repository.xml"/>

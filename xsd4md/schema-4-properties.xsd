@@ -24,6 +24,13 @@
 
     <xs:complexType name="propertyType">
         <xs:sequence>
+            <xs:element name="uid">
+                <xs:simpleType>
+                    <xs:restriction base="xs:ID">
+                        <xs:pattern value="p[0-9]+"></xs:pattern>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
             <xs:element name="labels" type="labelType"/>
             <xs:element name="uwRequired" type="uwRequiredType"/>
             <xs:element name="cdm" type="cdmType"/>
@@ -194,14 +201,55 @@
         </xs:sequence>
     </xs:complexType>
 
-    <!-- might need other properties in addition to sameAs
-        like maybe skos:exactMatch, etc.
-   -->
     <xs:complexType name="rdfType">
         <xs:sequence>
-            <xs:element name="sameAs" type="xs:string"/>
+            <xs:element name="type" minOccurs="0" maxOccurs="unbounded" type="xs:anyURI"/><!-- this is required; change minOccurs -->
+            <xs:element name="isDefinedBy" minOccurs="0" maxOccurs="unbounded" type="xs:anyURI"/>
+            <xs:element name="seeAlso" minOccurs="0" maxOccurs="unbounded" type="xs:anyURI"/>
+            <xs:element name="externalProperty" minOccurs="0" maxOccurs="unbounded" type="externalPropertyType"/>
+            <xs:element name="localNote" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+            <xs:element name="applicationProfile" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+            <xs:element name="sameAs"/><!-- this element should be deleted; not part of the model; needed for historical validation -->
         </xs:sequence>
     </xs:complexType>
+
+    
+    <xs:complexType name="externalPropertyType">
+        <xs:sequence>
+            <xs:element name="uri" type="xs:anyURI"/>
+            <xs:element name="relation" type="xs:anyURI"/>
+            <!-- The above is the relation of the current external property to the local property -->
+            <xs:element name="domain" minOccurs="0" type="xs:anyURI"/>
+            <xs:element name="range" minOccurs="0" type="xs:anyURI"></xs:element>
+            <xs:element name="equivalentProperty" minOccurs="0" maxOccurs="unbounded" type="xs:anyURI"/>
+            <xs:element name="sameAs" minOccurs="0" maxOccurs="unbounded" type="xs:anyURI"/>
+            <xs:element name="inverseOf" minOccurs="0" maxOccurs="unbounded" type="xs:anyURI"/>
+            <!-- other relations of the external property can be added as needed -->
+        </xs:sequence>
+    </xs:complexType>
+       <!-- below are the expected prefixes listed as elements:
+            <xs:element name="dc"/>
+            <xs:element name="dct" type="dcterms"/>
+            <xs:element name="dpla"/>
+            <xs:element name="edm"/>
+            <xs:element name="foaf"/>
+            <xs:element name="gn"/>
+            <xs:element name="madsrdf"/>
+            <xs:element name="owl"/>
+            <xs:element name="rdf"/>
+            <xs:element name="rdfs"/>
+            <xs:element name="schema"/>
+            <xs:element name="skos"/>
+            <xs:element name="uwext"/>
+            <xs:element name="uwp"/>
+            <xs:element name="uwrecon"/>
+            <xs:element name="void"/>
+            <xs:element name="vra"/>
+            <xs:element name="wao"/>
+            <xs:element name="wgs84"/>
+            <xs:element name="other"/>
+            <xs:element name="rdfEmpty"/>
+       -->
 
     <xs:complexType name="historyType">
         <xs:sequence>
@@ -317,6 +365,7 @@
             <xs:enumeration value="yes"/>
             <xs:enumeration value="no"/>
             <xs:enumeration value="notApplicable"/>
+            <xs:enumeration value="ifApplicable"/>
         </xs:restriction>
     </xs:simpleType>
 

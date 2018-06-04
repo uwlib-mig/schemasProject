@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd"><uid>p38</uid><labels>
+      <platformIndependent>fileName</platformIndependent>
+      <dc>none</dc>
+   </labels><uwRequired>
+      <uwStandalone>no</uwStandalone>
+      <uwObject>no</uwObject>
+      <uwItem>no</uwItem>
+   </uwRequired><cdm>
+      <label>File Name</label>
+      <cdmDatatype>text</cdmDatatype>
+      <cdmLarge>no</cdmLarge>
+      <searchable>no</searchable>
+      <hidden>yes</hidden>
+      <cdmRequired>no</cdmRequired>
+      <cdmControlledVocab>no</cdmControlledVocab>
+   </cdm><dspace>
+      <dspaceProperty/>
+   </dspace><descriptions>
+      <definition>
+         <para>File name for the resource.</para>
+      </definition>
+      <instructions co="no">
+         <para>Input file name.</para>
+      </instructions>
+      <instructions co="item">
+         <para>Input file name.</para>
+      </instructions>
+   </descriptions><examples>
+      <example co="no">
+         <para>asw13.tif</para>
+         <para>b_34.jpg</para>
+         <para>east_detail_471.png</para>
+         <para>14_east_door_carrots_empty_Venezuela_p-76532-08719_collins_arguello_1987_empty_empty_empty_empty_42_457_empty_04780937266354773662551442.wav</para>
+      </example>
+      <example co="item">
+         <para>asw13.tif</para>
+         <para>b_34.jpg</para>
+         <para>east_detail_471.png</para>
+         <para>14_east_door_carrots_empty_Venezuela_p-76532-08719_collins_arguello_1987_empty_empty_empty_empty_42_457_empty_04780937266354773662551442.wav</para>
+      </example>
+   </examples><additionalInfo>
+      <admin co="all">
+         <para>Could include information like “CD number: UW__001” for things stored on discs.</para>
+      </admin>
+      <generalNotes co="no">
+         <para/>
+      </generalNotes>
+   </additionalInfo><marc>
+      <dcgMarcMapping/>
+      <marcNotes>
+         <para/>
+      </marcNotes>
+   </marc><xsd>
+      <typeInfo level="standalone">
+         <typeAttribute>xs:string</typeAttribute>
+      </typeInfo>
+      <typeInfo level="item">
+         <typeAttribute>xs:string</typeAttribute>
+      </typeInfo>
+   </xsd><rdf>
+      <sameAs/>
+   </rdf><history>
+      <dateCreated>
+         <range>
+            <start>2000-01-01</start>
+            <end>2018-03-27</end>
+         </range>
+      </dateCreated>
+      <created4Coll>Special Collections Photograph Collections and UW Tacoma Oral Histories</created4Coll>
+      <justification>Entering the file name that is external to CONTENTdm was considered helpful for administering the resource, so we added this property.</justification>
+      <changeLog>
+         <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
+         <change date="2018-03-27">merged File Name, Image File Name and TIFF File Name properties here. Also added co="item" info.</change>
+      </changeLog>
+   </history></property>

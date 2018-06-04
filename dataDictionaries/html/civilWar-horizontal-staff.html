@@ -23,8 +23,7 @@
                     }
                     td{
                         vertical-align: top;
-                    }
-                </style></head>
+                    }</style></head>
    <body>
       <h1>Civil War Letters Collection</h1>
       <h3>Most recent revision: 2017-06-29</h3>
@@ -52,7 +51,7 @@
             <td>Title</td>
             <td>title</td>
             <td>text</td>
-            <td>no</td>
+            <td>yes</td>
             <td>yes</td>
             <td>no</td>
             <td>yes</td>
@@ -155,7 +154,7 @@
          <tr>
             <td>4</td>
             <td>Date Edtf</td>
-            <td>date</td>
+            <td>created</td>
             <td>text</td>
             <td>no</td>
             <td>no</td>
@@ -167,10 +166,23 @@
                <p>Date of creation of the original resource.</p>
             </td>
             <td>
+               <p>Reflects the date in the "Date" field.</p>
                <p>Express all dates, including date ranges, using Library of Congress' Extended Date
                   Time Format.
                </p>
                <p>Most recent version of EDTF available at https://www.loc.gov/standards/datetime/.</p>
+               <p>Six formats are recommended for values in Date, each corresponding to a specific EDTF
+                  format:
+               </p>
+               <p>If the value of Date is YYYY, enter YYYY.</p>
+               <p>If the value of Date is YYYY, enter YYYY?</p>
+               <p>If the value of Daye is [month] DD, YYYY, enter YYYY-MM-DD.</p>
+               <p>If the value of Date is [month], YYYY, ebter YYYY-MM.</p>
+               <p>If the value of Date is between YYYY and YYYY, enter YYYY/YYYY</p>
+               <p>If the value of Date is between YYYY and YYYY, enter YYYY?/YYYY?</p>
+               <p>If the value of Date is not any of the above, consult the EDTF spedification to determine
+                  the appropriate notation.
+               </p>
                <p>Date-Edtf value should agree with dates values entered in Date and Dates fields.</p>
             </td>
             <td>
@@ -179,9 +191,7 @@
                <p>If Date field = "May 9, 2001" then Date EDTF = "2001-05-09"</p>
                <p>If Date field = "January 2008" then Date EDTF = "2008-01"</p>
                <p>If Date field = "between 1930 and 1939" then Date EDTF = "1930/1939"</p>
-               <p>If Date field = "between 1855 and 1999?" then Date EDTF can be one of several options including "1855?/1999?"</p>
-               <p>If Date field = "before 2007" then Date EDTF is either "/2007" or "../2007"</p>
-               <p>If Date field = "after 2001" then Date EDTF is either "2001/" or "2001/.."</p>
+               <p>If Date field = "between 1855 and 1999?" then Date EDTF = "1855?/1999?"</p>
             </td>
             <td>
                <p>This document needs a reference to the final spec.</p>
@@ -221,26 +231,23 @@
                <p>[month spelled out], YYYY</p>
                <p>between YYYY and YYYY</p>
                <p>between YYYY and YYYY?</p>
-               <p>before YYYY</p>
-               <p>after YYYY</p>
                <p>In CONTENTdm, this field is used for display purposes only and should be user-friendly.</p>
-               <p>If none of the date formats above are adequate, use a custom date format.</p>
                <p>Date value should agree with date values entered in Date-Edtf and Dates fields.</p>
                <p>If the date when the image/resource in hand was produced is known, and is different
                   from that of the original image, so note in the Notes field.
                </p>
-               <p>If the date is unknown, an attempt should be made to assign an approximate date, using
-                  an appropriate date format listed above.
+               <p>If the date is unknown, enter an approximate date using one of the two above formats
+                  that express uncertainty, namely YYYY? or between YYYY and YYYY?.
                </p>
+               <p>If none of the date formats above are adequate, use a custom date format.</p>
             </td>
             <td>
                <p>1940</p>
-               <p>May, 2001</p>
+               <p>1940?    [this expresses a probable year, an uncertain year, etc.]</p>
                <p>May 9, 2001</p>
-               <p>1946-1952</p>
-               <p>May 2, 1946-June 4, 1952</p>
-               <p>Between 1910 and 1923</p>
-               <p>Approximately 1930</p>
+               <p>May, 2001</p>
+               <p>between 1946 and 1952</p>
+               <p>between 1901 and 1960?</p>
             </td>
             <td></td>
          </tr>
@@ -259,24 +266,33 @@
                <p>Date of creation of the original resource.</p>
             </td>
             <td>
+               <p>Reflects the date in the "Date" field.</p>
                <p>Enter the year or years only.</p>
-               <p>If the resource is a photograph, the year the original photograph was taken.</p>
-               <p>In cases where a painting, engraving, or architectural drawing was photographed, the
-                  year the artwork was created.
+               <p>When the value of Date is YYYY, enter YYYY.</p>
+               <p>When the value of Date is YYYY?, enter an eleven year date range, five years on either
+                  side of the uncertain date.
                </p>
-               <p>If the date is a single year, year and month, or year month and day, enter the single
-                  year only in the Dates field.
+               <p>When the value of Date is [month] DD, YYYY, enter the year only in the following format:
+                  YYYY.
                </p>
-               <p>If the date is an approximate year, enter that year plus five years on either side
-                  of that year; for example, if the Date field is "1910?" enter "1905 1906 1907 1908
-                  1909 1910 1911 1912 1913 1914 1915"
+               <p>When the value of Date is [month], YYYY, enter the year only in the following format:
+                  YYYY.
                </p>
-               <p>If the year is a range of years, enter all the years in that range.</p>
+               <p>When the value of Date is between YYYY and YYYY, enter all years in the date range
+                  in the following format: YYYY YYYY YYYY etc.
+               </p>
+               <p>When the value of Date is between YYYY and YYYY?, enter all years in the date range
+                  plus five years before the earliest date and five years after the latest date, in
+                  the following format: YYYY YYYY YYYY etc.
+               </p>
                <p>This field is indexed and enables date searching in CONTENTdm.</p>
                <p>The Dates value should agree with date values entered in Date-Edtf and Date fields.</p>
             </td>
             <td>
-               <p>1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915</p>
+               <p>1939</p>
+               <p>1939?</p>
+               <p>1939 1940 1941 1942 1943 1944 1945</p>
+               <p>1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950</p>
             </td>
             <td></td>
          </tr>
@@ -293,9 +309,9 @@
             <td>no</td>
             <td>
                <p>An account of the resource.</p>
-               <p>Notes include any information of importance that is not represented elsewhere.</p>
             </td>
             <td>
+               <p>Enter any information of importance that is not represented elsewhere.</p>
                <p>Each separate "note" should be a paragraph. Additional notes can be added, separated
                   from the previous note using a blank line.
                </p>
@@ -310,7 +326,7 @@
                <p>"Notes" is distingushed from "Historical Notes" mainly because it descibes the image/resource
                   only. Values in this field also may be considered more "indexable" insofar as they
                   precisely descibe the image/resource. "HistoricalNotes" are more like "writing" and
-                  create a braod historical context.
+                  create a broad historical context.
                </p>
             </td>
          </tr>
@@ -395,8 +411,10 @@
                <p>The topic of the resource.</p>
             </td>
             <td>
-               <p>Terms in this field are taken from the LC Subject Headings list (LCSH).</p>
-               <p>Use LCSH only when TGM has no appropriate term to describe the resource.</p>
+               <p>Values in this property are taken from the LC Subject Headings list (LCSH) at http://authorities.loc.gov
+                  or http://id.loc.gov.
+               </p>
+               <p>For images, use LCSH only when TGM has no appropriate term to describe the resource.</p>
                <p>Separate multiple headings with a semi-colon.</p>
             </td>
             <td>
@@ -418,12 +436,16 @@
             <td>yes</td>
             <td>no</td>
             <td>
-               <p>The spatial characteristics of the intellectual content of the resource. </p>
-               <p>Spatial coverage refers to a physical region.</p>
+               <p>The spatial characteristics of the resource; refers to a physical region.</p>
             </td>
             <td>
+               <p>Enter broad and local geographic locations given significant attention in the resource.</p>
                <p>Enter Country--State or Province--City.</p>
                <p>Places names are derived from the LC Authority File.</p>
+               <p>For neighborhoods or other types of locales below the city level, enter an LCSH heading
+                  in the Subjects (LCSH) field above.
+               </p>
+               <p>Separate multiple entries with a semicolon .</p>
             </td>
             <td>
                <p>United States--Washington (State)—Seattle</p>
@@ -436,7 +458,11 @@
                   though it was called Leningrad in Soviet Union, when photo was taken]
                </p>
             </td>
-            <td></td>
+            <td>
+               <p>SC Photographs collections DD uses the label "Location Depicted." SC Oral Histories
+                  DD uses the label "Geographic Coverage." Both properties appear to be equivalent.
+               </p>
+            </td>
          </tr>
          <tr>
             <td>12</td>
@@ -450,7 +476,7 @@
             <td>yes</td>
             <td>yes</td>
             <td>
-               <p>Name of the digital collection; may be the same name as the original repository collection.</p>
+               <p>Name of the digital collection.</p>
             </td>
             <td>
                <p>Enter the name given to the digital collection.</p>
@@ -496,10 +522,10 @@
             <td>no</td>
             <td>yes</td>
             <td>
-               <p>The institution where the item is physically located.</p>
+               <p>The institution holding the resource.</p>
             </td>
             <td>
-               <p>Enter the name of the repository in which the original item is held.</p>
+               <p>Enter the name of the institution in which the original item is held.</p>
             </td>
             <td>
                <p>University of Washington Libraries, Special Collections Division</p>
@@ -520,10 +546,11 @@
             <td>no</td>
             <td>yes</td>
             <td>
-               <p>This field contains the collection name and its number, represented as a phrase.</p>
+               <p>Collection in which the original resource is a part.</p>
             </td>
             <td>
-               <p>Input the name assigned by the holding repository to the original collection.</p>
+               <p>Enter collection name and number, represented as a phrase.</p>
+               <p>Collection name is the name assigned by the holding repository to the original collection.</p>
             </td>
             <td>
                <p>William E. Meed collection no. 246</p>
@@ -542,13 +569,13 @@
             <td>yes</td>
             <td>no</td>
             <td>
-               <p>Denotes genre or type of material.</p>
+               <p>The nature or genre of the resource.</p>
             </td>
             <td>
                <p>Input a term taken from a controlled source. Recommended: LC Thesaurus for Graphic
-                  Materials.
+                  Materials (still images), Library of Congress Subject Headings (oral histories).
                </p>
-               <p>If more than one term is applicable, list the form of the item scanned first.</p>
+               <p>If more than one term is applicable, list the form of the item digitaized first.</p>
                <p>Enter the heading exactly as it appears in the controlled source.</p>
                <p>Separate multiple values with a semi-colon and space.</p>
             </td>
@@ -558,7 +585,12 @@
                <p>Typescript; Diary [typescript made from manuscript diary]</p>
                <p>Negatives [a collection of negatives described as a collection]</p>
             </td>
-            <td></td>
+            <td>
+               <p>There's a difference between SC DDs for photograph collections and oral history collections;
+                  the former uses "Object Type," the latter uses "Genre." Proposal: "Object Type" applies
+                  to all resources more than "Genre." Let's use "Object Type" in all cases, as here.
+               </p>
+            </td>
          </tr>
          <tr>
             <td>17</td>
@@ -572,24 +604,43 @@
             <td>no</td>
             <td>no</td>
             <td>
-               <p>Includes additional descriptive information about type of material or medium, color,
-                  and dimensions.
+               <p>The physical medium in which data, sound, images, etc., are stored; the carrier; may
+                  include an extent statement.
                </p>
             </td>
             <td>
-               <p>Input a term taken from Graphic Materials: Rules for Describing Original Items and
-                  Historical Collections.
+               <p>Input a term describing the physical medium of the original resource in which data,
+                  sound, images, etc., are stored.
+               </p>
+               <p>The term should be taken from an authoritative source.</p>
+               <p>Recommended source: RDA 3.3 and 3.4.</p>
+               <p>Former recommended source: Graphic Materials: Rules for Describing Original Items
+                  and Historical Collections. Use of this source is no longer recommended.
+               </p>
+               <p>Entry may include an extent statement, dimensions, base material, or any other carrier
+                  description, as described in detail in RDA chapter 3.
                </p>
             </td>
             <td>
+               <p>Following RDA:</p>
+               <p>1 online resource</p>
+               <p>1 computer disc</p>
+               <p>2 audiotape reels</p>
+               <p>1 volume</p>
+               <p>3 photographs</p>
+               <p>1 map</p>
+               <p>Other possibilities:</p>
                <p>Glass, b/w ; 6 1/2 x 8 1/2 in.</p>
+               <p>Silver gelatin, b&amp;w; 6 x 8 in.</p>
+               <p>1 leaf : 20 x 12.5 cm, folded to 19.5 x 12.25 cm.</p>
+               <p>Pencil and watercolor on board: 32 x 43 cm.</p>
             </td>
             <td></td>
          </tr>
          <tr>
             <td>18</td>
             <td>Digital Reproduction Information</td>
-            <td>format</td>
+            <td>description</td>
             <td>text</td>
             <td>no</td>
             <td>no</td>
@@ -598,7 +649,7 @@
             <td>no</td>
             <td>no</td>
             <td>
-               <p>Describes the digital conversion process, date scanned, etc.</p>
+               <p>Description of the digital conversion process, date scanned, etc.</p>
             </td>
             <td>
                <p>Input a paragraph with pertinent information on the digital conversion process of
@@ -683,19 +734,16 @@
             </td>
             <td>
                <p>Enter a rights statement from rightsstatements.org that pertains to the entire object.</p>
-               <p>If all items have a date later than 1922, enter http://rightsstatements.org/vocab/InC/1.0/
-                  ("In Copyright"); for all else enter http://rightsstatements.org/vocab/CNE/1.0/ ("Copyright
-                  Not Evaluated.")
+               <p>UW Libraries Special Collections policy: for items with a date later than 1922, enter
+                  http://rightsstatements.org/vocab/InC/1.0/ ("In Copyright"); for all else enter http://rightsstatements.org/vocab/CNE/1.0/
+                  ("Copyright Not Evaluated.")
                </p>
             </td>
             <td>
                <p>http://rightsstatements.org/vocab/CNE/1.0/</p>
                <p>http://rightsstatements.org/vocab/InC/1.0/</p>
             </td>
-            <td>
-               <p>Decision made by Special Collections in 2017 for all Special Collections items.</p>
-               <p>Decision made by Special Collections in 2017 for all Special Collections items.</p>
-            </td>
+            <td></td>
          </tr>
          <tr>
             <td>22</td>
@@ -740,9 +788,12 @@
             </td>
             <td>
                <p>Input a value from the Dublin Core Type Vocabulary at http://dublincore.org/documents/dcmi-terms/.</p>
+               <p>Separate multiple values with a semi-colon.</p>
             </td>
             <td>
-               <p>SillImage</p>
+               <p>Sound</p>
+               <p>Sound; SillImage</p>
+               <p>Sound; Text; StillImage</p>
             </td>
             <td></td>
          </tr>
@@ -811,20 +862,15 @@
             <td>no</td>
             <td>no</td>
             <td>
-               <p>[Unknown.]</p>
+               <p>Messages for local catalogers.</p>
             </td>
             <td>
-               <p>[Unknown.]</p>
+               <p>Enter "xyz" to denote that the item requires subject headings from local catalogers.</p>
             </td>
             <td>
-               <p>[none]</p>
+               <p>xyz</p>
             </td>
-            <td>
-               <p>Unique to ayp? No, also in Civil War Letters, but there are no values in Civil War.</p>
-               <p>Does output using Cdm export.</p>
-               <p>Did not appear in DI/ITS output when all collections were output.</p>
-               <p>Delete this property?</p>
-            </td>
+            <td></td>
          </tr>
       </table>
       <h2 style="text-align:center">ITEM DESCRIPTION</h2>
@@ -850,7 +896,7 @@
             <td>Title</td>
             <td>title</td>
             <td>text</td>
-            <td>no</td>
+            <td>yes</td>
             <td>yes</td>
             <td>no</td>
             <td>yes</td>
@@ -900,6 +946,29 @@
          </tr>
          <tr>
             <td>3</td>
+            <td>Digital Collection</td>
+            <td>isPartOf</td>
+            <td>text</td>
+            <td>no</td>
+            <td>yes</td>
+            <td>no</td>
+            <td>no</td>
+            <td>yes</td>
+            <td> no </td>
+            <td>
+               <p>Name of the digital collection.</p>
+            </td>
+            <td>
+               <p>Enter the name given to the digital collection.</p>
+            </td>
+            <td>
+               <p>Napoleonic Period Collection</p>
+               <p>Civil War Letters Collection</p>
+            </td>
+            <td></td>
+         </tr>
+         <tr>
+            <td>4</td>
             <td>Object Type</td>
             <td>type</td>
             <td>text</td>
@@ -910,7 +979,7 @@
             <td>yes</td>
             <td> no </td>
             <td>
-               <p>Denotes genre or type of material.</p>
+               <p>The nature or genre of the resource.</p>
             </td>
             <td>
                <p>Input a term taken from the Art and Architecture Thesaurus at http://www.getty.edu/research/tools/vocabularies/aat/.</p>
@@ -918,16 +987,49 @@
                <p>Especially important to enter when the collection resources are mixed media.</p>
                <p>Enter the heading exactly as it appears in the controlled source.</p>
                <p>Separate multiple values with a semi-colon and space.</p>
+               <p>Enter "Oral histories"</p>
             </td>
             <td>
                <p>Photograph</p>
                <p>Lithograph</p>
                <p>Typescript; Diary [typescript made from manuscript diary]</p>
             </td>
+            <td>
+               <p>There's a difference between SC DDs for photograph collections and oral history collections;
+                  the former uses "Object Type," the latter uses "Genre." Proposal: "Object Type" applies
+                  to all resources more than "Genre." Let's use "Object Type" in all cases, as here.
+               </p>
+            </td>
+         </tr>
+         <tr>
+            <td>5</td>
+            <td>Digital Reproduction Information</td>
+            <td>description</td>
+            <td>text</td>
+            <td>no</td>
+            <td>no</td>
+            <td>no</td>
+            <td>no</td>
+            <td>no</td>
+            <td> no </td>
+            <td>
+               <p>Description of the digital conversion process, date scanned, etc.</p>
+            </td>
+            <td>
+               <p>Input a paragraph with pertinent information on the digital conversion process of
+                  the compound object item.
+               </p>
+            </td>
+            <td>
+               <p>Scanned from original text or image at 400 dpi saved in TIFF format, resized and enhanced
+                  using Adobe Photoshop, and imported as JPEG2000 using Contentdm software's JPEG2000
+                  Extension. 2006.
+               </p>
+            </td>
             <td></td>
          </tr>
          <tr>
-            <td>4</td>
+            <td>6</td>
             <td>Restrictions</td>
             <td>rights</td>
             <td>text</td>
@@ -953,7 +1055,7 @@
             <td></td>
          </tr>
          <tr>
-            <td>5</td>
+            <td>7</td>
             <td>Type</td>
             <td>type</td>
             <td>text</td>
@@ -978,7 +1080,7 @@
             <td></td>
          </tr>
          <tr>
-            <td>6</td>
+            <td>8</td>
             <td>Institution</td>
             <td>provenance</td>
             <td>text</td>
@@ -1030,7 +1132,7 @@
             <td>Title</td>
             <td>title</td>
             <td>text</td>
-            <td>no</td>
+            <td>yes</td>
             <td>yes</td>
             <td>no</td>
             <td>yes</td>
@@ -1127,7 +1229,7 @@
          <tr>
             <td>4</td>
             <td>Date Edtf</td>
-            <td>date</td>
+            <td>created</td>
             <td>text</td>
             <td>no</td>
             <td>no</td>
@@ -1139,10 +1241,23 @@
                <p>Date of creation of the original resource.</p>
             </td>
             <td>
+               <p>Reflects the date in the "Date" field.</p>
                <p>Express all dates, including date ranges, using Library of Congress' Extended Date
                   Time Format.
                </p>
                <p>Most recent version of EDTF available at https://www.loc.gov/standards/datetime/.</p>
+               <p>Six formats are recommended for values in Date, each corresponding to a specific EDTF
+                  format:
+               </p>
+               <p>If the value of Date is YYYY, enter YYYY.</p>
+               <p>If the value of Date is YYYY?, enter YYYY?</p>
+               <p>If the value of Date is [month] DD, YYYY, enter YYYY-MM-DD.</p>
+               <p>If the value of Date is [month], YYYY, enter YYYY-MM.</p>
+               <p>If the value of Date is between YYYY and YYYY, enter YYYY/YYYY</p>
+               <p>If the value of Date is between YYYY and YYYY?, enter YYYY?/YYYY?</p>
+               <p>If the value of Date is not any of the above, consult the EDTF spedification to determine
+                  the appropriate notation.
+               </p>
                <p>Date-Edtf value should agree with dates values entered in Date and Dates fields.</p>
             </td>
             <td>
@@ -1151,9 +1266,7 @@
                <p>If Date field = "May 9, 2001" then Date EDTF = "2001-05-09"</p>
                <p>If Date field = "January 2008" then Date EDTF = "2008-01"</p>
                <p>If Date field = "between 1930 and 1939" then Date EDTF = "1930/1939"</p>
-               <p>If Date field = "between 1855 and 1999?" then Date EDTF can be one of several options including "1855?/1999?"</p>
-               <p>If Date field = "before 2007" then Date EDTF is either "/2007" or "../2007"</p>
-               <p>If Date field = "after 2001" then Date EDTF is either "2001/" or "2001/.."</p>
+               <p>If Date field = "between 1855 and 1999?" then Date EDTF = "1855?/1999?"</p>
             </td>
             <td>
                <p>This document needs a reference to the final spec.</p>
@@ -1193,25 +1306,23 @@
                <p>[month spelled out], YYYY</p>
                <p>between YYYY and YYYY</p>
                <p>between YYYY and YYYY?</p>
-               <p>before YYYY</p>
-               <p>after YYYY</p>
                <p>In CONTENTdm, this field is used for display purposes only and should be user-friendly.</p>
-               <p>If none of the date formats above are adequate, use a custom date format.</p>
                <p>Date value should agree with date values entered in Date-Edtf and Dates fields.</p>
                <p>If the date when the image/resource in hand was produced is known, and is different
                   from that of the original image, so note in the Notes field.
                </p>
-               <p>If the date is unknown, enter an approximate date using a date format listed above.</p>
+               <p>If the date is unknown, enter an approximate date using one of the two above formats
+                  that express uncertainty, namely YYYY? or between YYYY and YYYY?.
+               </p>
+               <p>If none of the date formats above are adequate, use a custom date format.</p>
             </td>
             <td>
                <p>1940</p>
-               <p>1940?    [this expresses the probable year]</p>
+               <p>1940?    [this expresses a probable year, an uncertain year, etc.]</p>
                <p>May 9, 2001</p>
                <p>March, 2001</p>
                <p>between 1946 and 1952</p>
                <p>between 1877 and 1976?</p>
-               <p>before 1995</p>
-               <p>after 1921</p>
             </td>
             <td></td>
          </tr>
@@ -1230,24 +1341,33 @@
                <p>Date of creation of the original resource.</p>
             </td>
             <td>
+               <p>Reflects the date in the "Date" field.</p>
                <p>Enter the year or years only.</p>
-               <p>If the resource is a photograph, the year the original photograph was taken.</p>
-               <p>In cases where a painting, engraving, or architectural drawing was photographed, the
-                  year the artwork was created.
+               <p>When the value of Date is YYYY, enter YYYY.</p>
+               <p>When the value of Date is YYYY?, enter an eleven year date range, five years on either
+                  side of the uncertain date.
                </p>
-               <p>If the date is a single year, year and month, or year month and day, enter the single
-                  year only in the Dates field.
+               <p>When the value of Date is [month] DD, YYYY, enter the year only in the following format:
+                  YYYY.
                </p>
-               <p>If the date is an approximate year, enter that year plus five years on either side
-                  of that year; for example, if the Date field is "1910?" enter "1905 1906 1907 1908
-                  1909 1910 1911 1912 1913 1914 1915"
+               <p>When the value of Date is [month], YYYY, enter the year only in the following format:
+                  YYYY.
                </p>
-               <p>If the year is a range of years, enter all the years in that range.</p>
+               <p>When the value of Date is between YYYY and YYYY, enter all years in the date range
+                  in the following format: YYYY YYYY YYYY etc.
+               </p>
+               <p>When the value of Date is between YYYY and YYYY?, enter all years in the date range
+                  plus five years before the earliest date and five years after the latest date, in
+                  the following format: YYYY YYYY YYYY etc.
+               </p>
                <p>This field is indexed and enables date searching in CONTENTdm.</p>
                <p>The Dates value should agree with date values entered in Date-Edtf and Date fields.</p>
             </td>
             <td>
-               <p>1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915</p>
+               <p>1939</p>
+               <p>1939?</p>
+               <p>1939 1940 1941 1942 1943 1944 1945</p>
+               <p>1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950</p>
             </td>
             <td></td>
          </tr>
@@ -1264,9 +1384,9 @@
             <td>no</td>
             <td>
                <p>An account of the resource.</p>
-               <p>Notes include any information of importance that is not represented elsewhere.</p>
             </td>
             <td>
+               <p>Enter any information of importance that is not represented elsewhere.</p>
                <p>Each separate "note" should be a paragraph. Additional notes can be added, separated
                   from the previous note using a blank line.
                </p>
@@ -1281,7 +1401,7 @@
                <p>"Notes" is distingushed from "Historical Notes" mainly because it descibes the image/resource
                   only. Values in this field also may be considered more "indexable" insofar as they
                   precisely descibe the image/resource. "HistoricalNotes" are more like "writing" and
-                  create a braod historical context.
+                  create a broad historical context.
                </p>
             </td>
          </tr>
@@ -1366,8 +1486,10 @@
                <p>The topic of the resource.</p>
             </td>
             <td>
-               <p>Terms in this field are taken from the LC Subject Headings list (LCSH).</p>
-               <p>Use LCSH only when TGM has no appropriate term to describe the resource.</p>
+               <p>Values for this property are taken from the LC Subject Headings list (LCSH) at http://authorities.loc.gov
+                  or http://id.loc.gov.
+               </p>
+               <p>For images, use LCSH only when TGM has no appropriate term to describe the resource.</p>
                <p>Separate multiple headings with a semi-colon.</p>
             </td>
             <td>
@@ -1389,12 +1511,16 @@
             <td>yes</td>
             <td>no</td>
             <td>
-               <p>The spatial characteristics of the intellectual content of the resource. </p>
-               <p>Spatial coverage refers to a physical region.</p>
+               <p>The spatial characteristics of the resource; refers to a physical region.</p>
             </td>
             <td>
+               <p>Enter broad and local geographic locations given significant attention in the resource.</p>
                <p>Enter Country--State or Province--City.</p>
-               <p>Places names are derived from the LC Authority File.</p>
+               <p>Forms of the names should be derived from the LC Authority File.</p>
+               <p>For neighborhoods or other types of locales below the city level, enter an LCSH heading
+                  in the Subjects (LCSH) field above.
+               </p>
+               <p>Separate multiple entries with a semicolon .</p>
             </td>
             <td>
                <p>United States--Washington (State)—Seattle</p>
@@ -1407,7 +1533,11 @@
                   though it was called Leningrad in Soviet Union, when photo was taken]
                </p>
             </td>
-            <td></td>
+            <td>
+               <p>SC Photographs collections DD uses the label "Location Depicted." SC Oral Histories
+                  DD uses the label "Geographic Coverage." Both properties appear to be equivalent.
+               </p>
+            </td>
          </tr>
          <tr>
             <td>12</td>
@@ -1421,7 +1551,7 @@
             <td>yes</td>
             <td>yes</td>
             <td>
-               <p>Name of the digital collection; may be the same name as the original repository collection.</p>
+               <p>Name of the digital collection.</p>
             </td>
             <td>
                <p>Enter the name given to the digital collection.</p>
@@ -1452,6 +1582,7 @@
             <td>
                <p>CVW051</p>
                <p>COS321</p>
+               <p>ARC0443</p>
             </td>
             <td></td>
          </tr>
@@ -1497,10 +1628,10 @@
             <td>no</td>
             <td>yes</td>
             <td>
-               <p>The institution where the item is physically located.</p>
+               <p>The institution holding the resource.</p>
             </td>
             <td>
-               <p>Enter the name of the repository in which the original item is held.</p>
+               <p>Enter the name of the institution in which the original item is held.</p>
             </td>
             <td>
                <p>University of Washington Libraries, Special Collections Division</p>
@@ -1521,10 +1652,11 @@
             <td>no</td>
             <td>yes</td>
             <td>
-               <p>This field contains the collection name and its number, represented as a phrase.</p>
+               <p>Collection in which the original resource is a part.</p>
             </td>
             <td>
-               <p>Input the name assigned by the holding repository to the original collection.</p>
+               <p>Enter collection name and number, represented as a phrase.</p>
+               <p>Collection name is the name assigned by the holding repository to the original collection.</p>
             </td>
             <td>
                <p>William E. Meed collection no. 246</p>
@@ -1543,11 +1675,11 @@
             <td>yes</td>
             <td>no</td>
             <td>
-               <p>Denotes genre or type of material.</p>
+               <p>The nature or genre of the resource.</p>
             </td>
             <td>
-               <p>Input a term taken from a controlled source. Recommended: LC Thesaurus for Graphic
-                  Materials.
+               <p>Input a term or terms taken from a controlled source. Recommended: LC Thesaurus for
+                  Graphic Materials.
                </p>
                <p>Enter the heading exactly as it appears in the thesaurus.</p>
                <p>Separate multiple values with a semi-colon and space.</p>
@@ -1557,7 +1689,12 @@
                <p>Lithograph</p>
                <p>Typescript; Diary [typescript made from manuscript diary]</p>
             </td>
-            <td></td>
+            <td>
+               <p>There's a difference between SC DDs for photograph collections and oral history collections;
+                  the former uses "Object Type," the latter uses "Genre." Proposal: "Object Type" applies
+                  to all resources more than "Genre." Let's use "Object Type" in all cases, as here.
+               </p>
+            </td>
          </tr>
          <tr>
             <td>18</td>
@@ -1571,24 +1708,43 @@
             <td>no</td>
             <td>no</td>
             <td>
-               <p>Includes additional descriptive information about type of material or medium, color,
-                  and dimensions.
+               <p>The physical medium in which data, sound, images, etc., are stored; the carrier; may
+                  include an extent statement.
                </p>
             </td>
             <td>
-               <p>Input a term taken from Graphic Materials: Rules for Describing Original Items and
-                  Historical Collections.
+               <p>Input a term describing the physical medium of the original resource in which data,
+                  sound, images, etc., are stored.
+               </p>
+               <p>The term should be taken from an authoritative source.</p>
+               <p>Recommended source: RDA chapter 3, especually 3.3.</p>
+               <p>Former recommended source: Graphic Materials: Rules for Describing Original Items
+                  and Historical Collections. Use of this source is no longer recommended.
+               </p>
+               <p>Entry may include an extent statement, dimensions, base material, or any other carrier
+                  description, as described in detail in RDA chapter 3.
                </p>
             </td>
             <td>
+               <p>Following RDA:</p>
+               <p>1 online resource</p>
+               <p>1 computer disc</p>
+               <p>2 audiotape reels</p>
+               <p>1 volume</p>
+               <p>3 photographs</p>
+               <p>1 map</p>
+               <p>Other possibilities:</p>
                <p>Glass, b/w ; 6 1/2 x 8 1/2 in.</p>
+               <p>Silver gelatin, b&amp;w; 6 x 8 in.</p>
+               <p>1 leaf : 20 x 12.5 cm, folded to 19.5 x 12.25 cm.</p>
+               <p>Pencil and watercolor on board: 32 x 43 cm.</p>
             </td>
             <td></td>
          </tr>
          <tr>
             <td>19</td>
             <td>Digital Reproduction Information</td>
-            <td>format</td>
+            <td>description</td>
             <td>text</td>
             <td>no</td>
             <td>no</td>
@@ -1597,7 +1753,7 @@
             <td>no</td>
             <td>no</td>
             <td>
-               <p>Describes the digital conversion process, date scanned, etc.</p>
+               <p>Description of the digital conversion process, date scanned, etc.</p>
             </td>
             <td>
                <p>Input a paragraph with pertinent information on the digital conversion process.</p>
@@ -1799,19 +1955,16 @@
             </td>
             <td>
                <p>Enter a rights statement from rightsstatements.org.</p>
-               <p>For items with a date later than 1922, enter http://rightsstatements.org/vocab/InC/1.0/
-                  ("In Copyright"); for all else enter http://rightsstatements.org/vocab/CNE/1.0/ ("Copyright
-                  Not Evaluated.")
+               <p>UW Libraries Special Collections policy: for items with a date later than 1922, enter
+                  http://rightsstatements.org/vocab/InC/1.0/ ("In Copyright"); for all else enter http://rightsstatements.org/vocab/CNE/1.0/
+                  ("Copyright Not Evaluated.")
                </p>
             </td>
             <td>
                <p>http://rightsstatements.org/vocab/CNE/1.0/</p>
                <p>http://rightsstatements.org/vocab/InC/1.0/</p>
             </td>
-            <td>
-               <p>Decision made by Special Collections in 2017 for all Special Collections items.</p>
-               <p>Decision made by Special Collections in 2017 for all Special Collections items.</p>
-            </td>
+            <td></td>
          </tr>
          <tr>
             <td>27</td>
@@ -1929,20 +2082,15 @@
             <td>no</td>
             <td>no</td>
             <td>
-               <p>[Unknown.]</p>
+               <p>Messages for local catalogers.</p>
             </td>
             <td>
-               <p>[Unknown.]</p>
+               <p>Enter "xyz" to denote that the item requires subject headings from local catalogers.</p>
             </td>
             <td>
-               <p>[none]</p>
+               <p>xyx</p>
             </td>
-            <td>
-               <p>Unique to ayp? No, also in Civil War Letters, but there are no values in Civil War.</p>
-               <p>Does output using Cdm export.</p>
-               <p>Did not appear in DI/ITS output when all collections were output.</p>
-               <p>Delete this property?</p>
-            </td>
+            <td></td>
          </tr>
       </table>
    </body>

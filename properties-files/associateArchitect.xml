@@ -1,18 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
-          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-          xmlns:xs="http://www.w3.org/2001/XMLSchema"
-          xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
-   <labels>
+<?xml version="1.0" encoding="UTF-8"?><property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd"><uid>p5</uid><labels>
       <platformIndependent>associateArchitect</platformIndependent>
       <dc>contributor</dc>
-   </labels>
-   <uwRequired>
+   </labels><uwRequired>
       <uwStandalone>no</uwStandalone>
       <uwObject>no</uwObject>
       <uwItem>no</uwItem>
-   </uwRequired>
-   <cdm>
+   </uwRequired><cdm>
       <label>Associate Architect</label>
       <cdmDatatype>text</cdmDatatype>
       <cdmLarge>no</cdmLarge>
@@ -20,11 +13,9 @@
       <hidden>no</hidden>
       <cdmRequired>no</cdmRequired>
       <cdmControlledVocab>no</cdmControlledVocab>
-   </cdm>
-   <dspace>
+   </cdm><dspace>
       <dspaceProperty/>
-   </dspace>
-   <descriptions>
+   </dspace><descriptions>
       <definition>
          <para>The name of the associate architect or firm who helped create the architectural work depicted in the image. It should represent as closely as possible the creator’s name or the company’s name at the time of the creation of the image. Includes both personal and corporate names.
         </para>
@@ -32,27 +23,21 @@
       <instructions co="no">
          <para>Input Lastname, Firstname for all personal names. Use LC Authority File for form of name, if available.</para>
       </instructions>
-   </descriptions>
-   <examples>
+   </descriptions><examples>
       <example co="no">
          <para>Wilson, Joseph Wade, 1878-1968</para>
          <para>Heide, A. F.</para>
       </example>
-   </examples>
-   <additionalInfo/>
-   <marc>
+   </examples><additionalInfo/><marc>
       <dcgMarcMapping/>
       <marcNotes/>
-   </marc>
-   <xsd>
+   </marc><xsd>
       <typeInfo level="standalone">
          <typeAttribute>xs:string</typeAttribute>
       </typeInfo>
-   </xsd>
-   <rdf>
+   </xsd><rdf>
       <sameAs/>
-   </rdf>
-   <history>
+   </rdf><history>
       <dateCreated>
          <range>
             <start>2006-01-01</start>
@@ -65,5 +50,4 @@
          <change/>
   
       </changeLog>
-   </history>
-</property>
+   </history></property>

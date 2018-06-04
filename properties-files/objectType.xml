@@ -1,18 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
-          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-          xmlns:xs="http://www.w3.org/2001/XMLSchema"
-          xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
-   <labels>
+<?xml version="1.0" encoding="UTF-8"?><property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd"><uid>p57</uid><labels>
       <platformIndependent>objectType</platformIndependent>
       <dc>type</dc>
-   </labels>
-   <uwRequired>
+   </labels><uwRequired>
       <uwStandalone>no</uwStandalone>
       <uwObject>no</uwObject>
       <uwItem>no</uwItem>
-   </uwRequired>
-   <cdm>
+   </uwRequired><cdm>
       <label>Object Type</label>
       <cdmDatatype>text</cdmDatatype>
       <cdmLarge>no</cdmLarge>
@@ -20,13 +13,11 @@
       <hidden>no</hidden>
       <cdmRequired>no</cdmRequired>
       <cdmControlledVocab>yes</cdmControlledVocab>
-   </cdm>
-   <dspace>
+   </cdm><dspace>
       <dspaceProperty/>
-   </dspace>
-   <descriptions>
+   </dspace><descriptions>
       <definition>
-         <para>Denotes genre or type of material.</para>
+         <para>The nature or genre of the resource.</para>
       </definition>
       <instructions co="no">
          <para>Input a term or terms taken from a controlled source. Recommended: LC Thesaurus for Graphic Materials.</para>
@@ -34,13 +25,13 @@
          <para>Separate multiple values with a semi-colon and space.</para>
       </instructions>
       <instructions co="object">
-         <para>Input a term taken from a controlled source. Recommended: LC Thesaurus for Graphic Materials.</para>
-         <para>If more than one term is applicable, list the form of the item scanned first.</para>
+         <para>Input a term taken from a controlled source. Recommended: LC Thesaurus for Graphic Materials (still images), Library of Congress Subject Headings (oral histories).</para>
+         <para>If more than one term is applicable, list the form of the item digitaized first.</para>
          <para>Enter the heading exactly as it appears in the controlled source.</para>
          <para>Separate multiple values with a semi-colon and space.</para>
       </instructions>
       <instructions co="item">
-         <para>Optional: input a term taken from a controlled source. Recommended: LC Thesaurus for Graphic Materials.</para>
+         <para>Optional: input a term taken from a controlled source. Recommended: LC Thesaurus for Graphic Materials (still images), Library of Congress Subject Headings (oral histories).</para>
          <para>Not required for all compound object items. Use as needed. Recommended: enter type values when the collection resources are mixed media.</para>
          <para>Enter the heading exactly as it appears in the controlled source.</para>
          <para>Separate multiple values with a semi-colon and space.</para>
@@ -52,8 +43,13 @@
          <para>Enter the heading exactly as it appears in the controlled source.</para>
          <para>Separate multiple values with a semi-colon and space.</para>
       </customization>
-   </descriptions>
-   <examples>
+      <customization co="object" dd="uwtoh">
+         <para>Enter "Oral histories"</para>
+      </customization>
+      <customization co="item" dd="uwtoh">
+         <para>Enter "Oral histories"</para>
+      </customization>
+   </descriptions><examples>
       <example co="no">
          <para>Photograph</para>
          <para>Lithograph</para>
@@ -70,15 +66,22 @@
          <para>Lithograph</para>
          <para>Typescript; Diary [typescript made from manuscript diary]</para>
       </example>
-   </examples>
-   <additionalInfo/>
-   <marc>
+      <customization co="object" dd="uwtoh">
+         <para>Oral histories</para>
+      </customization>
+      <customization co="item" dd="uwtoh">
+         <para>Oral histories</para>
+      </customization>
+   </examples><additionalInfo>
+      <admin co="object">
+         <para>There's a difference between SC DDs for photograph collections and oral history collections; the former uses "Object Type," the latter uses "Genre." Proposal: "Object Type" applies to all resources more than "Genre." Let's use "Object Type" in all cases, as here.</para>
+      </admin>
+   </additionalInfo><marc>
       <dcgMarcMapping/>
       <marcNotes>
          <para/>
       </marcNotes>
-   </marc>
-   <xsd>
+   </marc><xsd>
       <typeInfo level="standalone object">
          <typeAttribute>xs:string</typeAttribute>
       </typeInfo>
@@ -86,11 +89,9 @@
       <customTypeInfo level="item" dd="civilwar">
          <typeAttribute>xs:string</typeAttribute>
       </customTypeInfo>
-   </xsd>
-   <rdf>
+   </xsd><rdf>
       <sameAs/>
-   </rdf>
-   <history>
+   </rdf><history>
       <dateCreated>
          <range>
             <start>2000-01-01</start>
@@ -102,6 +103,7 @@
       <changeLog>
          <change/>
          <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
+         <change date="2018-03-23">Saw a difference between SC DDs for photograph collections and oral history collections; the former uses "Object Type," the latter uses "Genre." Merged the two and tried to make the property properties apply more generally. </change>
+         <change date="2018-03-26">Added info for uwtoh.</change>
       </changeLog>
-   </history>
-</property>
+   </history></property>

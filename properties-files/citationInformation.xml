@@ -1,18 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
-          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-          xmlns:xs="http://www.w3.org/2001/XMLSchema"
-          xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
-   <labels>
+<?xml version="1.0" encoding="UTF-8"?><property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd"><uid>p15</uid><labels>
       <platformIndependent>citationInformation</platformIndependent>
-      <dc>bibliographicCitation</dc>
-   </labels>
-   <uwRequired>
+      <dc>none</dc>
+   </labels><uwRequired>
       <uwStandalone>yes</uwStandalone>
       <uwObject>yes</uwObject>
       <uwItem>no</uwItem>
-   </uwRequired>
-   <cdm>
+   </uwRequired><cdm>
       <label>Citation Information</label>
       <cdmDatatype>text</cdmDatatype>
       <cdmLarge>no</cdmLarge>
@@ -20,40 +13,44 @@
       <hidden>no</hidden>
       <cdmRequired>no</cdmRequired>
       <cdmControlledVocab>no</cdmControlledVocab>
-   </cdm>
-   <dspace>
+   </cdm><dspace>
       <dspaceProperty/>
-   </dspace>
-   <descriptions>
+   </dspace><descriptions>
       <definition>
-         <para>Citation/identifier for the resource.</para>
+         <para>Brief citation/identifier format for the resource.</para>
       </definition>
       <instructions co="no">
-         <para>Enter citation in accordance with procedure developed in UW Libraries Special Collections.</para>
+         <para>Enter citation format information in accordance with the procedure developed in UW Libraries Special Collections.</para>
       </instructions>
-   </descriptions>
-   <examples>
+      <instructions co="object">
+      <para>Enter a citation format for the resource using only the following elements: (1) name of organization, (2) name of department, (3) the text "[Order Number or Negative Number]."</para>
+      </instructions>
+      <customization co="object" dd="uwtoh">
+         <para>Enter a citation for the resource using only the following elements: (1) name of organization, (2) name of department, (3) the text "[Digital ID Number]."</para>
+      </customization>
+   </descriptions><examples>
       <example co="no">
-         <para>[none]</para>
+         <para>University of Washington Libraries, Special Collections, [Order Number or Negative Number]</para>
       </example>
-   </examples>
-   <additionalInfo>
+      <example co="object">
+         <para>University of Washington Libraries, Special Collections, [Order Number or Negative Number]</para>
+      </example>
+      <customization co="object" dd="uwtoh">
+         <para>University of Washington Libraries, University of Washington Tacoma Library, [Digital ID Number]</para>
+      </customization>
+   </examples><additionalInfo>
       <admin co="no">
-         <para>Definition can be improved.</para>
-         <para>Instructions needed; must be obtained from UW Libraries Special Collections.</para>
-         <para>Need examples.</para>
+         <para>Definition, instructions and examples not approved by Special Collections.</para>
       </admin>
       <generalNotes co="no">
          <para/>
       </generalNotes>
-   </additionalInfo>
-   <marc>
+   </additionalInfo><marc>
       <dcgMarcMapping/>
       <marcNotes>
          <para/>
       </marcNotes>
-   </marc>
-   <xsd>
+   </marc><xsd>
       <typeInfo level="standalone object">
          <simpleType>
             <xs:restriction base="xs:string">
@@ -64,11 +61,9 @@
       <typeInfo level="item">
          <empty/>
       </typeInfo>
-   </xsd>
-   <rdf>
+   </xsd><rdf>
       <sameAs/>
-   </rdf>
-   <history>
+   </rdf><history>
       <dateCreated>
          <single>2017-06-21</single>
       </dateCreated>
@@ -77,6 +72,6 @@
       <changeLog>
          <change/>
          <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
+         <change date="2018-03-26">Expanded instructions to include uwt-oh. Added examples using current values. Wrote a more specific definition but not sure its accurate!</change>
       </changeLog>
-   </history>
-</property>
+   </history></property>

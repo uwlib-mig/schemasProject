@@ -42,7 +42,13 @@
         <xi:include href="../../properties-files/subjectsLcsh.xml"/>
         <xi:include href="../../properties-files/digitalCollection.xml"/>
         <xi:include href="../../properties-files/orderNumber.xml"/>
-        <!-- he above property proposes to replace "Digial ID Number." Pending 2018-03-08. -->
+        <!-- he above property proposes to replace "Digial ID Number." Pending 2018-03-08.
+             adjustment 2018-03-22. SC Oral Histories DD uses "Digial ID Number." 
+             This will in fact be a property.
+             They can live side by side, but we should clarify the diff.
+             If there is no diff, let's change to one or the other for all collectiions.
+             If there is a diff, let's clarify when to use one, when to use the other.
+        -->
         <xi:include href="../../properties-files/orderingInformation.xml"/>
         <xi:include href="../../properties-files/citationInformation.xml"/>
         <xi:include href="../../properties-files/negativeNumber.xml"/>

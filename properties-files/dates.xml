@@ -1,18 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
-          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-          xmlns:xs="http://www.w3.org/2001/XMLSchema"
-          xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
-   <labels>
+<?xml version="1.0" encoding="UTF-8"?><property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd"><uid>p26</uid><labels>
       <platformIndependent>datesAll</platformIndependent>
       <dc>none</dc>
-   </labels>
-   <uwRequired>
+   </labels><uwRequired>
       <uwStandalone>yes</uwStandalone>
       <uwObject>yes</uwObject>
       <uwItem>no</uwItem>
-   </uwRequired>
-   <cdm>
+   </uwRequired><cdm>
       <label>Dates</label>
       <cdmDatatype>text</cdmDatatype>
       <cdmLarge>no</cdmLarge>
@@ -20,36 +13,33 @@
       <hidden>yes</hidden>
       <cdmRequired>no</cdmRequired>
       <cdmControlledVocab>no</cdmControlledVocab>
-   </cdm>
-   <dspace>
+   </cdm><dspace>
       <dspaceProperty/>
-   </dspace>
-   <descriptions>
+   </dspace><descriptions>
       <definition>
          <para>Date of creation of the original resource.</para>
       </definition>
       <instructions co="no">
+         <para>Reflects the date in the "Date" field.</para>
          <para>Enter the year or years only.</para>
-         <para>If the resource is a photograph, the year the original photograph was taken.</para>
-         <para>In cases where a painting, engraving, or architectural drawing was photographed, the year the artwork was created.</para>
-         <para>If the date is a single year, year and month, or year month and day, enter the single year only in the Dates field.</para>
-         <para>If the date is an approximate year, enter that year plus five years on either side of that year; for example, if the Date field is "1910?" enter "1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915"</para>
-         <para>If the year is a range of years, enter all the years in that range.</para>
+         <para>When the value of Date is YYYY, enter YYYY.</para>
+         <para>When the value of Date is YYYY?, enter an eleven year date range, five years on either side of the uncertain date.</para>
+         <para>When the value of Date is [month] DD, YYYY, enter the year only in the following format: YYYY.</para>
+         <para>When the value of Date is [month], YYYY, enter the year only in the following format: YYYY.</para>
+         <para>When the value of Date is between YYYY and YYYY, enter all years in the date range in the following format: YYYY YYYY YYYY etc.</para>
+         <para>When the value of Date is between YYYY and YYYY?, enter all years in the date range plus five years before the earliest date and five years after the latest date, in the following format: YYYY YYYY YYYY etc.</para>
          <para>This field is indexed and enables date searching in CONTENTdm.</para>
          <para>The Dates value should agree with date values entered in Date-Edtf and Date fields.</para>
       </instructions>
       <instructions co="object">
+         <para>Reflects the date in the "Date" field.</para>
          <para>Enter the year or years only.</para>
-         <para>If the resource is a photograph, the year the original photograph was taken.</para>
-         <para>In cases where a painting, engraving, or architectural drawing was photographed, the year the artwork was created.</para>
-         <para>If the date is a single year, year and month, or year month and day, enter the single year only in the Dates field.</para>
-         <para>If the date is an approximate year, enter that year plus five years on either side of that year; for example, if the Date field is "1910?" enter "1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915"</para>
-         <para>If the year is a range of years, enter all the years in that range.</para>
-         <para>This field is indexed and enables date searching in CONTENTdm.</para>
-         <para>The Dates value should agree with date values entered in Date-Edtf and Date fields.</para>
-         <para>If the date is a single year, year and month, or year month and day, enter the single year only in the Dates field.</para>
-         <para>If the date is an approximate year, enter that year plus five years on either side of that year; for example, if the Date field is "1910?" enter "1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915"</para>
-         <para>If the year is a range of years, enter all the years in that range.</para>
+         <para>When the value of Date is YYYY, enter YYYY.</para>
+         <para>When the value of Date is YYYY?, enter an eleven year date range, five years on either side of the uncertain date.</para>
+         <para>When the value of Date is [month] DD, YYYY, enter the year only in the following format: YYYY.</para>
+         <para>When the value of Date is [month], YYYY, enter the year only in the following format: YYYY.</para>
+         <para>When the value of Date is between YYYY and YYYY, enter all years in the date range in the following format: YYYY YYYY YYYY etc.</para>
+         <para>When the value of Date is between YYYY and YYYY?, enter all years in the date range plus five years before the earliest date and five years after the latest date, in the following format: YYYY YYYY YYYY etc.</para>
          <para>This field is indexed and enables date searching in CONTENTdm.</para>
          <para>The Dates value should agree with date values entered in Date-Edtf and Date fields.</para>
       </instructions>
@@ -57,21 +47,23 @@
          <para>Enter the date of the execution of the drawing.</para>
          <para>Enter the year or years only.</para>
       </customization>
-   </descriptions>
-   <examples>
+   </descriptions><examples>
       <example co="no">
-         <para>1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915</para>
+         <para>1939</para>
+         <para>1939?</para>
+         <para>1939 1940 1941 1942 1943 1944 1945</para>
+         <para>1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950</para>
       </example>
       <example co="object">
-         <para>1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915</para>
+         <para>1939</para>
+         <para>1939?</para>
+         <para>1939 1940 1941 1942 1943 1944 1945</para>
+         <para>1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950</para>
       </example>
-   </examples>
-   <additionalInfo/>
-   <marc>
+   </examples><additionalInfo/><marc>
       <dcgMarcMapping/>
       <marcNotes/>
-   </marc>
-   <xsd>
+   </marc><xsd>
       <typeInfo level="standalone object">
          <simpleType>
             <xs:restriction base="xs:string">
@@ -82,11 +74,9 @@
       <typeInfo level="item">
          <empty/>
       </typeInfo>
-   </xsd>
-   <rdf>
+   </xsd><rdf>
       <sameAs/>
-   </rdf>
-   <history>
+   </rdf><history>
       <dateCreated>
          <range>
             <start>2000-01-01</start>
@@ -96,8 +86,7 @@
       <created4Coll>Special Collections Photograph Collections</created4Coll>
       <justification>We need a field that can be indexed in CONTENTdm in a way that allows all the years in a date range to be indexed. It should not be mapped to a Dublin Core property and it should be hidden from the public.</justification>
       <changeLog>
-         <change/>
          <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation. Added an instruction.</change>
+         <change date="2018-03-26">Changed instructions to state that this field should merely reflect the "Date" field.</change>
       </changeLog>
-   </history>
-</property>
+   </history></property>

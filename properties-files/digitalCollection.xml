@@ -1,18 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
-          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-          xmlns:xs="http://www.w3.org/2001/XMLSchema"
-          xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
-   <labels>
+<?xml version="1.0" encoding="UTF-8"?><property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd"><uid>p28</uid><labels>
       <platformIndependent>digitalCollection</platformIndependent>
       <dc>isPartOf</dc>
-   </labels>
-   <uwRequired>
+   </labels><uwRequired>
       <uwStandalone>yes</uwStandalone>
       <uwObject>yes</uwObject>
       <uwItem>no</uwItem>
-   </uwRequired>
-   <cdm>
+   </uwRequired><cdm>
       <label>Digital Collection</label>
       <cdmDatatype>text</cdmDatatype>
       <cdmLarge>no</cdmLarge>
@@ -20,13 +13,11 @@
       <hidden>no</hidden>
       <cdmRequired>no</cdmRequired>
       <cdmControlledVocab>yes</cdmControlledVocab>
-   </cdm>
-   <dspace>
+   </cdm><dspace>
       <dspaceProperty/>
-   </dspace>
-   <descriptions>
+   </dspace><descriptions>
       <definition>
-         <para>Name of the digital collection; may be the same name as the original repository collection.</para>
+         <para>Name of the digital collection.</para>
       </definition>
       <instructions co="no">
          <para>Enter the name given to the digital collection.</para>
@@ -34,8 +25,14 @@
       <instructions co="object">
          <para>Enter the name given to the digital collection.</para>
       </instructions>
-   </descriptions>
-   <examples>
+      <instructions co="item">
+         <para>Enter the name given to the digital collection.</para>
+      </instructions>
+      <customization co="object" dd="uwtoh">
+         <para>Enter the name given to the digital collection.</para>
+         <para>Enter "University of Washington Tacoma Oral History: Founding Stories"</para>
+      </customization>
+   </descriptions><examples>
       <example co="no">
          <para>Napoleonic Period Collection</para>
          <para>Civil War Letters Collection</para>
@@ -44,15 +41,19 @@
          <para>Napoleonic Period Collection</para>
          <para>Civil War Letters Collection</para>
       </example>
-   </examples>
-   <additionalInfo/>
-   <marc>
+      <example co="item">
+         <para>Napoleonic Period Collection</para>
+         <para>Civil War Letters Collection</para>
+      </example>
+      <customization co="object" dd="uwtoh">
+         <para>University of Washington Tacoma Oral History: Founding Stories</para>
+      </customization>
+   </examples><additionalInfo/><marc>
       <dcgMarcMapping/>
       <marcNotes>
          <para/>
       </marcNotes>
-   </marc>
-   <xsd>
+   </marc><xsd>
       <typeInfo level="standalone object">
          <simpleType>
             <xs:restriction base="xs:string">
@@ -63,11 +64,9 @@
       <typeInfo level="item">
          <empty/>
       </typeInfo>
-   </xsd>
-   <rdf>
+   </xsd><rdf>
       <sameAs/>
-   </rdf>
-   <history>
+   </rdf><history>
       <dateCreated>
          <range>
             <start>2000-01-01</start>
@@ -77,8 +76,7 @@
       <created4Coll>Special Collections Photograph Collections</created4Coll>
       <justification>Needed to specify which digital collection every item is a part of.</justification>
       <changeLog>
-         <change/>
          <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
+         <change date="2018-05-25">Entered UWTOH example customization.</change>
       </changeLog>
-   </history>
-</property>
+   </history></property>

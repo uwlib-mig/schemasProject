@@ -1,18 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
-          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-          xmlns:xs="http://www.w3.org/2001/XMLSchema"
-          xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
-   <labels>
+<?xml version="1.0" encoding="UTF-8"?><property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd"><uid>p85</uid><labels>
       <platformIndependent>subjectsLcsh</platformIndependent>
       <dc>subject</dc>
-   </labels>
-   <uwRequired>
+   </labels><uwRequired>
       <uwStandalone>no</uwStandalone>
       <uwObject>no</uwObject>
       <uwItem>no</uwItem>
-   </uwRequired>
-   <cdm>
+   </uwRequired><cdm>
       <label>Subjects (LCSH)</label>
       <cdmDatatype>text</cdmDatatype>
       <cdmLarge>no</cdmLarge>
@@ -20,26 +13,30 @@
       <hidden>no</hidden>
       <cdmRequired>no</cdmRequired>
       <cdmControlledVocab>yes</cdmControlledVocab>
-   </cdm>
-   <dspace>
+   </cdm><dspace>
       <dspaceProperty/>
-   </dspace>
-   <descriptions>
+   </dspace><descriptions>
       <definition>
          <para>The topic of the resource.</para>
       </definition>
       <instructions co="no">
-         <para>Terms in this field are taken from the LC Subject Headings list (LCSH).</para>
-         <para>Use LCSH only when TGM has no appropriate term to describe the resource.</para>
+         <para>Values for this property are taken from the LC Subject Headings list (LCSH) at http://authorities.loc.gov or http://id.loc.gov.</para>
+         <para>For images, use LCSH only when TGM has no appropriate term to describe the resource.</para>
          <para>Separate multiple headings with a semi-colon.</para>
       </instructions>
       <instructions co="object">
-         <para>Terms in this field are taken from the LC Subject Headings list (LCSH).</para>
-         <para>Use LCSH only when TGM has no appropriate term to describe the resource.</para>
+         <para>Values in this property are taken from the LC Subject Headings list (LCSH) at http://authorities.loc.gov or http://id.loc.gov.</para>
+         <para>For images, use LCSH only when TGM has no appropriate term to describe the resource.</para>
          <para>Separate multiple headings with a semi-colon.</para>
       </instructions>
-   </descriptions>
-   <examples>
+      <customization co="object" dd="uwtoh">
+         <para>Leave empty; UW Libraries catalogers will provide LSCH subjects.</para>
+         <para>Be sure to enter the value "xyz" in the "Cataloging" field to alert catalogers that these items need subject headings.</para>
+         <para>Values for this property will be taken from the LC Subject Headings list (LCSH) at http://authorities.loc.gov or http://id.loc.gov.</para>
+         <para>Multiple headings will be separated with a semi-colon.</para>
+         <para>topical headings and headings for places with proper names which are not entered in the Geographic Coverage field below (this includes neighborhoods) will be entered here..</para>
+      </customization>
+   </descriptions><examples>
       <example co="no">
          <para>Markets—Washington (State)—Seattle</para>
          <para>McGraw, John Harte, 1911- —Statues—Washington (State)—Seattle</para>
@@ -50,26 +47,21 @@
          <para>McGraw, John Harte, 1911- —Statues—Washington (State)—Seattle</para>
          <para>Log buildings—Alaska—Fort Yukon</para>
       </example>
-   </examples>
-   <additionalInfo/>
-   <marc>
+   </examples><additionalInfo/><marc>
       <dcgMarcMapping/>
       <marcNotes>
          <para/>
       </marcNotes>
-   </marc>
-   <xsd>
+   </marc><xsd>
       <typeInfo level="standalone object">
          <typeAttribute>xs:string</typeAttribute>
       </typeInfo>
       <typeInfo level="item">
          <empty/>
       </typeInfo>
-   </xsd>
-   <rdf>
+   </xsd><rdf>
       <sameAs/>
-   </rdf>
-   <history>
+   </rdf><history>
       <dateCreated>
          <range>
             <start>2000-01-01</start>
@@ -82,5 +74,4 @@
          <change/>
          <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
       </changeLog>
-   </history>
-</property>
+   </history></property>

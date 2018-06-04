@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd"><uid>p47</uid><labels>
+      <platformIndependent>interviewer</platformIndependent>
+      <dc>creator</dc>
+   </labels><uwRequired>
+      <uwStandalone>yes</uwStandalone>
+      <uwObject>yes</uwObject>
+      <uwItem>no</uwItem>
+   </uwRequired><cdm>
+      <label>Interviewer</label>
+      <cdmDatatype>text</cdmDatatype>
+      <cdmLarge>no</cdmLarge>
+      <searchable>yes</searchable>
+      <hidden>no</hidden>
+      <cdmRequired>no</cdmRequired>
+      <cdmControlledVocab>no</cdmControlledVocab>
+   </cdm><dspace>
+      <dspaceProperty/>
+   </dspace><descriptions>
+      <definition>
+         <para>The person who interviewed the interviewee.</para>
+      </definition>
+      <instructions co="no">
+         <para>Enter the name of the person who interviewed the subject.</para>
+         <para>Format of personal name: Lastname, Firstname.</para>
+         <para>Use LC Name Authority File for form of name when available: http://authorities.loc.gov or http://id.loc.gov/</para>
+         <para>Separate multiple values with a semi-colon.</para>
+      </instructions>
+      <instructions co="object">
+         <para>Enter the name of the person who interviewed the subject.</para>
+         <para>Format of personal name: Lastname, Firstname.</para>
+         <para>Use LC Name Authority File for form of name when available: http://authorities.loc.gov or http://id.loc.gov/</para>
+         <para>Separate multiple values with a semi-colon.</para>
+      </instructions>
+   </descriptions><examples>
+      <example co="object">
+         <para>Kinsey, Clark</para>
+         <para>Daiber, Ome</para>
+         <para>Daiber, Ome; Armstrong, Calvin</para>
+         <para>Colbert, Curt, 1947- </para>
+         <para>Boeing Company. Boeing Military Aircraft and Missile Systems Group</para>
+      </example>
+      <example co="all">
+         <para>Boyd and Braas</para>
+      </example>
+      <customization co="no" dd="neareast">
+         <para>Noegel, Scott B.</para>
+      </customization>
+      <customization co="object" dd="uwtoh">
+         <para>Williams, Charles</para>
+         <para>Meyers, Richard D.</para>
+         <para>Colbert, Curt, 1947-</para>
+      </customization>
+   </examples><additionalInfo/><marc>
+      <dcgMarcMapping/>
+      <marcNotes/>
+   </marc><xsd>
+      <typeInfo level="standalone object">
+         <typeAttribute>xs:string</typeAttribute>
+      </typeInfo>
+      <typeInfo level="item">
+         <empty/>
+      </typeInfo>
+   </xsd><rdf>
+      <sameAs/>
+   </rdf><history>
+      <dateCreated>
+         <range>
+            <start>2012-01-01</start>
+            <end>2018-03-21</end>
+         </range>
+      </dateCreated>
+      <created4Coll>Special Collections Oral History Collections</created4Coll>
+      <justification>Every oral history that involves an interview has an interviewer. Special Collections believed the interview should be described and indexed./</justification>
+      <changeLog>
+         <change/>
+      </changeLog>
+   </history></property>

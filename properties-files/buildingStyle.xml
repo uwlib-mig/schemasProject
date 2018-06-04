@@ -1,18 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
-          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-          xmlns:xs="http://www.w3.org/2001/XMLSchema"
-          xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
-   <labels>
+<?xml version="1.0" encoding="UTF-8"?><property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd"><uid>p10</uid><labels>
       <platformIndependent>buildingStyle</platformIndependent>
       <dc>description</dc>
-   </labels>
-   <uwRequired>
+   </labels><uwRequired>
       <uwStandalone>no</uwStandalone>
       <uwObject>no</uwObject>
       <uwItem>no</uwItem>
-   </uwRequired>
-   <cdm>
+   </uwRequired><cdm>
       <label>Building Style</label>
       <cdmDatatype>text</cdmDatatype>
       <cdmLarge>no</cdmLarge>
@@ -20,11 +13,9 @@
       <hidden>no</hidden>
       <cdmRequired>no</cdmRequired>
       <cdmControlledVocab>yes</cdmControlledVocab>
-   </cdm>
-   <dspace>
+   </cdm><dspace>
       <dspaceProperty/>
-   </dspace>
-   <descriptions>
+   </dspace><descriptions>
       <definition>
          <para>Architectural style, chronological period, nationality, and/or culture that describes structure represented by the drawing.</para>
       </definition>
@@ -32,30 +23,24 @@
          <para>Enter a term or terms that best describes the architectural style, chronological period, nationality, and/or culture that describes structure represented by the drawing.</para>
          <para>Recommended: use a term from the Getty Art and Architecture Thesaurus.</para>
       </instructions>
-   </descriptions>
-   <examples>
+   </descriptions><examples>
       <example co="no">
          <para>Futurist</para>
          <para>Tudor Revival</para>
          <para>Classical Revival</para>
       </example>
-   </examples>
-   <additionalInfo/>
-   <marc>
+   </examples><additionalInfo/><marc>
       <dcgMarcMapping/>
       <marcNotes>
          <para/>
       </marcNotes>
-   </marc>
-   <xsd>
+   </marc><xsd>
       <typeInfo level="standalone">
          <typeAttribute>xs:string</typeAttribute>
       </typeInfo>
-   </xsd>
-   <rdf>
+   </xsd><rdf>
       <sameAs/>
-   </rdf>
-   <history>
+   </rdf><history>
       <dateCreated>
          <range>
             <start>2006-01-01</start>
@@ -67,5 +52,4 @@
       <changeLog>
          <change/>
       </changeLog>
-   </history>
-</property>
+   </history></property>

@@ -1,18 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
-          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-          xmlns:xs="http://www.w3.org/2001/XMLSchema"
-          xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
-   <labels>
+<?xml version="1.0" encoding="UTF-8"?><property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd"><uid>p25</uid><labels>
       <platformIndependent>dateOfPhotograph</platformIndependent>
       <dc>created</dc>
-   </labels>
-   <uwRequired>
+   </labels><uwRequired>
       <uwStandalone>no</uwStandalone>
       <uwObject>no</uwObject>
       <uwItem>no</uwItem>
-   </uwRequired>
-   <cdm>
+   </uwRequired><cdm>
       <label>Date Of Photograph</label>
       <cdmDatatype>text</cdmDatatype>
       <cdmLarge>no</cdmLarge>
@@ -20,11 +13,9 @@
       <hidden>no</hidden>
       <cdmRequired>no</cdmRequired>
       <cdmControlledVocab>no</cdmControlledVocab>
-   </cdm>
-   <dspace>
+   </cdm><dspace>
       <dspaceProperty/>
-   </dspace>
-   <descriptions>
+   </dspace><descriptions>
       <definition>
          <para>Date of creation of the photograph of the original resource.</para>
       </definition>
@@ -41,8 +32,7 @@
          <para>after YYYY</para>
          <para>If none of the date formats above are adequate, use a custom date format.</para>
       </instructions>
-   </descriptions>
-   <examples>
+   </descriptions><examples>
       <example co="no">
          <para>2000</para>
          <para>2000-03</para>
@@ -56,23 +46,18 @@
          <para>before 1995</para>
          <para>after 1921</para>
       </example>
-   </examples>
-   <additionalInfo/>
-   <marc>
+   </examples><additionalInfo/><marc>
       <dcgMarcMapping/>
       <marcNotes>
          <para/>
       </marcNotes>
-   </marc>
-   <xsd>
+   </marc><xsd>
       <typeInfo level="standalone">
          <typeAttribute>xs:string</typeAttribute>
       </typeInfo>
-   </xsd>
-   <rdf>
+   </xsd><rdf>
       <sameAs/>
-   </rdf>
-   <history>
+   </rdf><history>
       <dateCreated>
          <range>
             <start>2000-01-01</start>
@@ -84,5 +69,4 @@
       <changeLog>
          <change/>
       </changeLog>
-   </history>
-</property>
+   </history></property>

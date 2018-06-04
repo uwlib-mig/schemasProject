@@ -7,7 +7,9 @@
         <root>
             <xsl:apply-templates
                 select="collection('file:///Users/theodore/Documents/uwl/schemasProject/dataDictionaries/xml?select=*.xml;recurse=no')/dd:migDataDictionary"
-            />
+            >
+                <xsl:sort order="descending" select="@id"></xsl:sort>
+            </xsl:apply-templates>
         </root>
     </xsl:template>
 

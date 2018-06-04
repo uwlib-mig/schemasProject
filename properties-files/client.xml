@@ -1,18 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
-          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-          xmlns:xs="http://www.w3.org/2001/XMLSchema"
-          xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
-   <labels>
+<?xml version="1.0" encoding="UTF-8"?><property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd"><uid>p16</uid><labels>
       <platformIndependent>client</platformIndependent>
       <dc>none</dc>
-   </labels>
-   <uwRequired>
+   </labels><uwRequired>
       <uwStandalone>no</uwStandalone>
       <uwObject>no</uwObject>
       <uwItem>no</uwItem>
-   </uwRequired>
-   <cdm>
+   </uwRequired><cdm>
       <label>Client</label>
       <cdmDatatype>text</cdmDatatype>
       <cdmLarge>no</cdmLarge>
@@ -20,11 +13,9 @@
       <hidden>no</hidden>
       <cdmRequired>no</cdmRequired>
       <cdmControlledVocab>no</cdmControlledVocab>
-   </cdm>
-   <dspace>
+   </cdm><dspace>
       <dspaceProperty/>
-   </dspace>
-   <descriptions>
+   </dspace><descriptions>
       <definition>
          <para>Name of the entity using the services provided by the entities to whom the resource is attributed.</para>
       </definition>
@@ -33,37 +24,31 @@
          <para>More often than not the entry represents the entity that will make use of the building.</para>
          <para>The form of the name should be the form at the time of the creation of the image.</para>
       </instructions>
-   </descriptions>
-   <examples>
+   </descriptions><examples>
       <example co="no">
          <para>Mercer Island Presbyterian Church</para>
          <para>Neterer, Jeremiah, 1862-1943</para>
       </example>
-   </examples>
-   <additionalInfo>
+   </examples><additionalInfo>
       <admin co="no">
          <para/>
       </admin>
       <generalNotes co="no">
          <para/>
       </generalNotes>
-   </additionalInfo>
-   <marc>
+   </additionalInfo><marc>
       <dcgMarcMapping/>
       <marcNotes>
          <para/>
       </marcNotes>
-   </marc>
-   <xsd>
+   </marc><xsd>
       <typeInfo level="standalone">
          <typeAttribute>xs:string</typeAttribute>
       </typeInfo>
       
-   </xsd>
-   <rdf>
+   </xsd><rdf>
       <sameAs/>
-   </rdf>
-   <history>
+   </rdf><history>
       <dateCreated>
          <range>
             <start>2005-01-01</start>
@@ -75,5 +60,4 @@
       <changeLog>
          <change/>
       </changeLog>
-   </history>
-</property>
+   </history></property>

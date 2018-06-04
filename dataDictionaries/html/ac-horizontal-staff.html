@@ -239,10 +239,7 @@
                <p>Mercer Island Presbyterian Church</p>
                <p>Neterer, Jeremiah, 1862-1943</p>
             </td>
-            <td>
-               <p></p>
-               <p></p>
-            </td>
+            <td></td>
          </tr>
          <tr>
             <td>8</td>
@@ -258,6 +255,7 @@
             </td>
             <td>
                <p>Enter the date of the execution of the drawing.</p>
+               <p>Reflects the date in the "Date" field.</p>
                <p>Express all dates, including date ranges, using Library of Congress' Extended Date
                   Time Format.
                </p>
@@ -270,9 +268,7 @@
                <p>If Date field = "May 9, 2001" then Date EDTF = "2001-05-09"</p>
                <p>If Date field = "January 2008" then Date EDTF = "2008-01"</p>
                <p>If Date field = "between 1930 and 1939" then Date EDTF = "1930/1939"</p>
-               <p>If Date field = "between 1855 and 1999?" then Date EDTF can be one of several options including "1855?/1999?"</p>
-               <p>If Date field = "before 2007" then Date EDTF is either "/2007" or "../2007"</p>
-               <p>If Date field = "after 2001" then Date EDTF is either "2001/" or "2001/.."</p>
+               <p>If Date field = "between 1855 and 1999?" then Date EDTF = "1855?/1999?"</p>
             </td>
             <td>
                <p>This document needs a reference to the final spec.</p>
@@ -307,22 +303,20 @@
                <p>[month spelled out], YYYY</p>
                <p>between YYYY and YYYY</p>
                <p>between YYYY and YYYY?</p>
-               <p>before YYYY</p>
-               <p>after YYYY</p>
                <p>In CONTENTdm, this field is used for display purposes only and should be user-friendly.</p>
-               <p>If none of the date formats above are adequate, use a custom date format.</p>
                <p>Date value should agree with date values entered in Date-Edtf and Dates fields.</p>
-               <p>If the date is unknown, enter an approximate date using a date format listed above.</p>
+               <p>If the date is unknown, enter an approximate date using one of the two above formats
+                  that express uncertainty, namely YYYY? or between YYYY and YYYY?.
+               </p>
+               <p>If none of the date formats above are adequate, use a custom date format.</p>
             </td>
             <td>
                <p>1940</p>
-               <p>1940?    [this expresses the probable year]</p>
+               <p>1940?    [this expresses a probable year, an uncertain year, etc.]</p>
                <p>May 9, 2001</p>
                <p>March, 2001</p>
                <p>between 1946 and 1952</p>
                <p>between 1877 and 1976?</p>
-               <p>before 1995</p>
-               <p>after 1921</p>
             </td>
             <td></td>
          </tr>
@@ -343,7 +337,10 @@
                <p>Enter the year or years only.</p>
             </td>
             <td>
-               <p>1905 1906 1907 1908 1909 1910 1911 1912 1913 1914 1915</p>
+               <p>1939</p>
+               <p>1939?</p>
+               <p>1939 1940 1941 1942 1943 1944 1945</p>
+               <p>1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950</p>
             </td>
             <td></td>
          </tr>
@@ -357,7 +354,7 @@
             <td>yes</td>
             <td>no</td>
             <td>
-               <p>Denotes genre or type of material.</p>
+               <p>The nature or genre of the resource.</p>
             </td>
             <td>
                <p>Input a term or terms taken from a controlled source. Recommended: LC Thesaurus for
@@ -371,7 +368,12 @@
                <p>Lithograph</p>
                <p>Typescript; Diary [typescript made from manuscript diary]</p>
             </td>
-            <td></td>
+            <td>
+               <p>There's a difference between SC DDs for photograph collections and oral history collections;
+                  the former uses "Object Type," the latter uses "Genre." Proposal: "Object Type" applies
+                  to all resources more than "Genre." Let's use "Object Type" in all cases, as here.
+               </p>
+            </td>
          </tr>
          <tr>
             <td>12</td>
@@ -383,13 +385,21 @@
             <td>no</td>
             <td>no</td>
             <td>
-               <p>Includes additional descriptive information about type of material or medium, color,
-                  and dimensions.
+               <p>The physical medium in which data, sound, images, etc., are stored; the carrier; may
+                  include an extent statement.
                </p>
             </td>
             <td>
-               <p>Input a term taken from Graphic Materials: Rules for Describing Original Items and
-                  Historical Collections.
+               <p>Input a term describing the physical medium of the original resource in which data,
+                  sound, images, etc., are stored.
+               </p>
+               <p>The term should be taken from an authoritative source.</p>
+               <p>Recommended source: RDA chapter 3, especually 3.3.</p>
+               <p>Former recommended source: Graphic Materials: Rules for Describing Original Items
+                  and Historical Collections. Use of this source is no longer recommended.
+               </p>
+               <p>Entry may include an extent statement, dimensions, base material, or any other carrier
+                  description, as described in detail in RDA chapter 3.
                </p>
             </td>
             <td>
@@ -517,7 +527,6 @@
             <td>no</td>
             <td>
                <p>An account of the resource.</p>
-               <p>Notes include any information of importance that is not represented elsewhere.</p>
             </td>
             <td>
                <p>An account of the drawing.</p>
@@ -542,7 +551,7 @@
                <p>"Notes" is distingushed from "Historical Notes" mainly because it descibes the image/resource
                   only. Values in this field also may be considered more "indexable" insofar as they
                   precisely descibe the image/resource. "HistoricalNotes" are more like "writing" and
-                  create a braod historical context.
+                  create a broad historical context.
                </p>
             </td>
          </tr>
@@ -644,8 +653,10 @@
                <p>The topic of the resource.</p>
             </td>
             <td>
-               <p>Terms in this field are taken from the LC Subject Headings list (LCSH).</p>
-               <p>Use LCSH only when TGM has no appropriate term to describe the resource.</p>
+               <p>Values for this property are taken from the LC Subject Headings list (LCSH) at http://authorities.loc.gov
+                  or http://id.loc.gov.
+               </p>
+               <p>For images, use LCSH only when TGM has no appropriate term to describe the resource.</p>
                <p>Separate multiple headings with a semi-colon.</p>
             </td>
             <td>
@@ -665,7 +676,7 @@
             <td>yes</td>
             <td>yes</td>
             <td>
-               <p>Name of the digital collection; may be the same name as the original repository collection.</p>
+               <p>Name of the digital collection.</p>
             </td>
             <td>
                <p>Enter the name given to the digital collection.</p>
@@ -722,33 +733,35 @@
                <p>Please cite the Order Number.</p>
             </td>
             <td>
-               <p></p>
-               <p></p>
+               <p>The text for this field will be unique to each project, and should be created by the
+                  project manager for any given project.
+               </p>
             </td>
          </tr>
          <tr>
             <td>25</td>
             <td>Citation Information</td>
-            <td>bibliographicCitation</td>
+            <td>none</td>
             <td>no</td>
             <td>no</td>
             <td>no</td>
             <td>no</td>
             <td>yes</td>
             <td>
-               <p>Citation/identifier for the resource.</p>
+               <p>Brief citation/identifier format for the resource.</p>
             </td>
             <td>
-               <p>Enter citation in accordance with procedure developed in UW Libraries Special Collections.</p>
+               <p>Enter citation format information in accordance with the procedure developed in UW
+                  Libraries Special Collections.
+               </p>
             </td>
             <td>
-               <p>[none]</p>
+               <p>University of Washington Libraries, Special Collections, [Order Number or Negative
+                  Number]
+               </p>
             </td>
             <td>
-               <p>Definition can be improved.</p>
-               <p>Instructions needed; must be obtained from UW Libraries Special Collections.</p>
-               <p>Need examples.</p>
-               <p></p>
+               <p>Definition, instructions and examples not approved by Special Collections.</p>
             </td>
          </tr>
          <tr>
@@ -789,10 +802,10 @@
             <td>no</td>
             <td>yes</td>
             <td>
-               <p>The institution where the item is physically located.</p>
+               <p>The institution holding the resource.</p>
             </td>
             <td>
-               <p>Enter the name of the repository in which the original item is held.</p>
+               <p>Enter the name of the institution in which the original item is held.</p>
             </td>
             <td>
                <p>University of Washington Libraries, Special Collections Division</p>
@@ -811,10 +824,11 @@
             <td>no</td>
             <td>yes</td>
             <td>
-               <p>This field contains the collection name and its number, represented as a phrase.</p>
+               <p>Collection in which the original resource is a part.</p>
             </td>
             <td>
-               <p>Input the name assigned by the holding repository to the original collection.</p>
+               <p>Enter collection name and number, represented as a phrase.</p>
+               <p>Collection name is the name assigned by the holding repository to the original collection.</p>
             </td>
             <td>
                <p>William E. Meed collection no. 246</p>
@@ -839,22 +853,19 @@
             <td>
                <p>[none]</p>
             </td>
-            <td>
-               <p></p>
-               <p></p>
-            </td>
+            <td></td>
          </tr>
          <tr>
             <td>30</td>
             <td>Digital Reproduction Information</td>
-            <td>format</td>
+            <td>description</td>
             <td>no</td>
             <td>no</td>
             <td>no</td>
             <td>no</td>
             <td>no</td>
             <td>
-               <p>Describes the digital conversion process, date scanned, etc.</p>
+               <p>Description of the digital conversion process, date scanned, etc.</p>
             </td>
             <td>
                <p>Input a paragraph with pertinent information on the digital conversion process.</p>
@@ -930,9 +941,9 @@
             </td>
             <td>
                <p>Enter a rights statement from rightsstatements.org.</p>
-               <p>For items with a date later than 1922, enter http://rightsstatements.org/vocab/InC/1.0/
-                  ("In Copyright"); for all else enter http://rightsstatements.org/vocab/CNE/1.0/ ("Copyright
-                  Not Evaluated.")
+               <p>UW Libraries Special Collections policy: for items with a date later than 1922, enter
+                  http://rightsstatements.org/vocab/InC/1.0/ ("In Copyright"); for all else enter http://rightsstatements.org/vocab/CNE/1.0/
+                  ("Copyright Not Evaluated.")
                </p>
             </td>
             <td>
@@ -1023,20 +1034,15 @@
             <td>no</td>
             <td>no</td>
             <td>
-               <p>[Unknown.]</p>
+               <p>Messages for local catalogers.</p>
             </td>
             <td>
-               <p>[Unknown.]</p>
+               <p>Enter "xyz" to denote that the item requires subject headings from local catalogers.</p>
             </td>
             <td>
-               <p>[none]</p>
+               <p>xyx</p>
             </td>
-            <td>
-               <p>Unique to ayp? No, also in Civil War Letters, but there are no values in Civil War.</p>
-               <p>Does output using Cdm export.</p>
-               <p>Did not appear in DI/ITS output when all collections were output.</p>
-               <p>Delete this property?</p>
-            </td>
+            <td></td>
          </tr>
       </table>
    </body>

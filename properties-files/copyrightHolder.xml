@@ -1,18 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
-          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-          xmlns:xs="http://www.w3.org/2001/XMLSchema"
-          xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
-   <labels>
+<?xml version="1.0" encoding="UTF-8"?><property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd"><uid>p20</uid><labels>
       <platformIndependent>copyrightHolder</platformIndependent>
       <dc>rightsHolder</dc>
-   </labels>
-   <uwRequired>
+   </labels><uwRequired>
       <uwStandalone>no</uwStandalone>
       <uwObject>no</uwObject>
       <uwItem>no</uwItem>
-   </uwRequired>
-   <cdm>
+   </uwRequired><cdm>
       <label>Copyright Holder</label>
       <cdmDatatype>text</cdmDatatype>
       <cdmLarge>no</cdmLarge>
@@ -20,11 +13,9 @@
       <hidden>no</hidden>
       <cdmRequired>no</cdmRequired>
       <cdmControlledVocab>no</cdmControlledVocab>
-   </cdm>
-   <dspace>
+   </cdm><dspace>
       <dspaceProperty/>
-   </dspace>
-   <descriptions>
+   </dspace><descriptions>
       <definition>
          <para>Name of the person or entity that holds copyright.</para>
       </definition>
@@ -36,8 +27,7 @@
          <para>If there is a form of the name in an authority file (preferably the Library of Congress Name Authority File) use that form of the name.</para>
          <para>For all images by Scott Noegel, enter "Noegel,Scott B."</para>
       </customization>
-   </descriptions>
-   <examples>
+   </descriptions><examples>
       <example co="no">
          <para>Clark Kinsey</para>
          <para>Boyd and Braas</para>
@@ -45,24 +35,19 @@
       <customization co="no" dd="neareast">
          <para>Noegel,Scott B.</para>
       </customization>
-   </examples>
-   <additionalInfo/>
-   <marc>
+   </examples><additionalInfo/><marc>
       <dcgMarcMapping/>
       <marcNotes/>
-   </marc>
-   <xsd>
+   </marc><xsd>
       <typeInfo level="standalone">
          <typeAttribute>xs:string</typeAttribute>
       </typeInfo>
       <typeInfo level="item">
          <empty/>
       </typeInfo>
-   </xsd>
-   <rdf>
+   </xsd><rdf>
       <sameAs/>
-   </rdf>
-   <history>
+   </rdf><history>
       <dateCreated>
          <range>
             <start>2000-01-01</start>
@@ -74,5 +59,4 @@
       <changeLog>
          <change/>
       </changeLog>
-   </history>
-</property>
+   </history></property>

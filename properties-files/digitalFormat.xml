@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd"><uid>p29</uid><labels>
+      <platformIndependent>digitalFormat</platformIndependent>
+      <dc>format</dc>
+   </labels><uwRequired>
+      <uwStandalone>no</uwStandalone>
+      <uwObject>no</uwObject>
+      <uwItem>no</uwItem>
+   </uwRequired><cdm>
+      <label>Digital Format</label>
+      <cdmDatatype>text</cdmDatatype>
+      <cdmLarge>no</cdmLarge>
+      <searchable>yes</searchable>
+      <hidden>no</hidden>
+      <cdmRequired>no</cdmRequired>
+      <cdmControlledVocab>no</cdmControlledVocab>
+   </cdm><dspace>
+      <dspaceProperty/>
+   </dspace><descriptions>
+      <definition>
+         <para>File format of a digital resource.</para>
+      </definition>
+      <instructions co="item">
+         <para>Enter the file format of the access item.</para>
+         <para>Use media types listed at http://www.iana.org/assignments/media-types/index.html</para>
+         <para>For audio WAVE files, enter audio/wav.</para>
+      </instructions>
+   </descriptions><examples>
+      <example co="item">
+         <para>audio/mpeg</para>
+         <para>image/jpeg</para>
+         <para>application/pdf</para>
+         <para>text/plain</para>
+      </example>
+   </examples><additionalInfo/><marc>
+      <dcgMarcMapping/>
+      <marcNotes>
+         <para/>
+      </marcNotes>
+   </marc><xsd>
+      <typeInfo level="item">
+         <typeAttribute>xs:string</typeAttribute>
+      </typeInfo>
+   </xsd><rdf>
+      <sameAs/>
+   </rdf><history>
+      <dateCreated>
+         <single>2012-01-01</single>
+      </dateCreated>
+      <created4Coll>Special Collections Oral Histories Collections</created4Coll>
+      <justification>Special Collections wanted a place to describe the file format of the service copy of the resource..</justification>
+      <changeLog>
+         <change/>
+      </changeLog>
+      
+   </history></property>

@@ -1,18 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
-          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-          xmlns:xs="http://www.w3.org/2001/XMLSchema"
-          xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
-   <labels>
+<?xml version="1.0" encoding="UTF-8"?><property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd"><uid>p88</uid><uid>p00001</uid><labels>
       <platformIndependent>title</platformIndependent>
       <dc>title</dc>
-   </labels>
-   <uwRequired>
+   </labels><uwRequired>
       <uwStandalone>yes</uwStandalone>
       <uwObject>yes</uwObject>
       <uwItem>yes</uwItem>
-   </uwRequired>
-   <cdm>
+   </uwRequired><cdm>
       <label>Title</label>
       <cdmDatatype>text</cdmDatatype>
       <cdmLarge>yes</cdmLarge>
@@ -20,11 +13,9 @@
       <hidden>no</hidden>
       <cdmRequired>yes</cdmRequired>
       <cdmControlledVocab>no</cdmControlledVocab>
-   </cdm>
-   <dspace>
+   </cdm><dspace>
       <dspaceProperty/>
-   </dspace>
-   <descriptions>
+   </dspace><descriptions>
       <definition>
          <para>A name given to the resource.</para>
       </definition>
@@ -49,8 +40,17 @@
       <customization co="no" dd="ac">
          <para>Enter a descriptive title, minimally stating the name of the building (or proposed building), a description of the drawing (for example, "interior details"), and a description of the area of the building represented in the drawing (for example, "ground floor entrance and corridor").</para>
       </customization>
-   </descriptions>
-   <examples>
+      <customization co="object" dd="uwtoh">
+         <para>All items must have a title.</para>
+         <para>Enter a brief descriptive phrase. Do not use initial articles, if possible.</para>
+         <para>Construct as follows: [Name of interviewee] interview</para>  
+      </customization>
+      <customization co="item" dd="uwtoh">
+         <para>All items must have a title.</para>
+         <para>Enter a brief descriptive phrase. Do not use initial articles, if possible.</para>
+         <para>Construct as follows: [Name of interviewee] interview, [item format]</para>
+      </customization>
+   </descriptions><examples>
       <example co="no">
          <para>Alger house, interior view of living room Seattle, Washington, 1955</para>
          <para>Woman mushing wood, Chilkoot Trail, ca. 1898</para>
@@ -67,9 +67,15 @@
          <para>B.P.O. Elk's Lodge (Centralia, Wash.), Pearl Street elevation</para>
          <para>Bjarne Moe student drawing of a commemorative tablet</para>
       </customization>
-   </examples>
-   <additionalInfo/>
-   <marc>
+      <customization co="object" dd="uwtoh">
+         <para>Michael Sullivan interview</para>
+      </customization>
+      <customization co="item" dd="uwtoh">
+         <para>Michael Sullivan interview, audio</para>
+         <para>Michael Sullivan interview, transcript</para>
+         <para>Michael Sullivan interview, photograph</para>
+      </customization>
+   </examples><additionalInfo/><marc>
       <dcgMarcMapping>
          <field>245</field>
          <subfield>a</subfield>
@@ -81,8 +87,7 @@
          <para>Former profile also mapped to 520_8#_$a, "Summary." This mapping no longer used.</para>
       </dcgNotes>
       <marcNotes/>
-   </marc>
-   <xsd>
+   </marc><xsd>
       <typeInfo level="standalone object item">
          <simpleType>
             <xs:restriction base="xs:string">
@@ -90,11 +95,25 @@
             </xs:restriction>
          </simpleType>
       </typeInfo>
-   </xsd>
-   <rdf>
-      <sameAs/>
-   </rdf>
-   <history>
+   </xsd><rdf>
+      <type>https://www.w3.org/2002/07/owl#DatatypeProperty</type>
+      <isDefinedBy>http://faculty.washington.edu/tgis/schemasProject/properties-files/title.xml</isDefinedBy>
+      <externalProperty>
+         <uri>http://purl.org/dc/terms/title</uri>
+         <relation>https://www.w3.org/2000/01/rdf-schema#subPropertyOf</relation>
+         <domain>undefined</domain>
+         <range>http://www.w3.org/2000/01/rdfschema#Literal</range>
+      </externalProperty>
+      <externalProperty>
+         <uri>http://purl.org/vra/name</uri>
+         <relation>https://www.w3.org/2000/01/rdf-schema#subPropertyOf</relation>
+         <domain>http://www.w3.org/2002/07/owl#Thing</domain>
+         <range>http://www.w3.org/2001/XMLSchema#string</range>
+         <equivalentProperty>http://schema.org/name</equivalentProperty>
+      </externalProperty> 
+      <localNote>We are claiming that our local title is always a Dublin Core title, although a Dublin Core title may not always be a local title; similarly are claiming that each local title is a VRA name and, by extension, a schema.org name, but not all such names are local titles.</localNote>
+      <applicationProfile>dpla</applicationProfile>
+   </rdf><history>
       <dateCreated>
          <range>
             <start>2000-01-01</start>
@@ -106,6 +125,6 @@
       <changeLog>
          <change/>
          <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
+         <change date="2018-03-26">added info for uwtoh</change>
       </changeLog>
-   </history>
-</property>
+   </history></property>

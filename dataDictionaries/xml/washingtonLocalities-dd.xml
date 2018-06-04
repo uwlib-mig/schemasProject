@@ -30,7 +30,7 @@
         <xi:include href="../../properties-files/orderingInformation.xml"/>
         <xi:include href="../../properties-files/citationInformation.xml"/>
         <xi:include href="../../properties-files/negativeNumber.xml"/>
-        <xi:include href="../../properties-files/tiffFileName.xml"/>
+        <xi:include href="../../properties-files/fileName.xml"/>
         <xi:include href="../../properties-files/repository.xml"/>
         <xi:include href="../../properties-files/contributor.xml"/>
         <xi:include href="../../properties-files/repositoryCollection.xml"/>

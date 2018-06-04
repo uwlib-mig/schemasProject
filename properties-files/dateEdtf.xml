@@ -1,18 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
-          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-          xmlns:xs="http://www.w3.org/2001/XMLSchema"
-          xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
-   <labels>
+<?xml version="1.0" encoding="UTF-8"?><property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd"><uid>p23</uid><labels>
       <platformIndependent>dateEdtf</platformIndependent>
       <dc>created</dc>
-   </labels>
-   <uwRequired>
+   </labels><uwRequired>
       <uwStandalone>yes</uwStandalone>
       <uwObject>yes</uwObject>
       <uwItem>no</uwItem>
-   </uwRequired>
-   <cdm>
+   </uwRequired><cdm>
       <label>Date Edtf</label>
       <cdmDatatype>text</cdmDatatype>
       <cdmLarge>no</cdmLarge>
@@ -20,41 +13,55 @@
       <hidden>yes</hidden>
       <cdmRequired>no</cdmRequired>
       <cdmControlledVocab>no</cdmControlledVocab>
-   </cdm>
-   <dspace>
+   </cdm><dspace>
       <dspaceProperty/>
-   </dspace>
-   <descriptions>
+   </dspace><descriptions>
       <definition>
          <para>Date of creation of the original resource.</para>
       </definition>
       <instructions co="no">
+         <para>Reflects the date in the "Date" field.</para>
          <para>Express all dates, including date ranges, using Library of Congress' Extended Date Time Format.</para>
          <para>Most recent version of EDTF available at https://www.loc.gov/standards/datetime/.</para>
+         <para>Six formats are recommended for values in Date, each corresponding to a specific EDTF format:</para>
+         <para>If the value of Date is YYYY, enter YYYY.</para>
+         <para>If the value of Date is YYYY?, enter YYYY?</para>
+         <para>If the value of Date is [month] DD, YYYY, enter YYYY-MM-DD.</para>
+         <para>If the value of Date is [month], YYYY, enter YYYY-MM.</para>
+         <para>If the value of Date is between YYYY and YYYY, enter YYYY/YYYY</para>
+         <para>If the value of Date is between YYYY and YYYY?, enter YYYY?/YYYY?</para>
+         <para>If the value of Date is not any of the above, consult the EDTF spedification to determine the appropriate notation.</para>
          <para>Date-Edtf value should agree with dates values entered in Date and Dates fields.</para>
       </instructions>
       <instructions co="object">
+         <para>Reflects the date in the "Date" field.</para>
          <para>Express all dates, including date ranges, using Library of Congress' Extended Date Time Format.</para>
          <para>Most recent version of EDTF available at https://www.loc.gov/standards/datetime/.</para>
+         <para>Six formats are recommended for values in Date, each corresponding to a specific EDTF format:</para>
+         <para>If the value of Date is YYYY, enter YYYY.</para>
+         <para>If the value of Date is YYYY, enter YYYY?</para>
+         <para>If the value of Daye is [month] DD, YYYY, enter YYYY-MM-DD.</para>
+         <para>If the value of Date is [month], YYYY, ebter YYYY-MM.</para>
+         <para>If the value of Date is between YYYY and YYYY, enter YYYY/YYYY</para>
+         <para>If the value of Date is between YYYY and YYYY, enter YYYY?/YYYY?</para>
+         <para>If the value of Date is not any of the above, consult the EDTF spedification to determine the appropriate notation.</para>
          <para>Date-Edtf value should agree with dates values entered in Date and Dates fields.</para>
       </instructions>
       <customization co="no" dd="ac">
          <para>Enter the date of the execution of the drawing.</para>
+         <para>Reflects the date in the "Date" field.</para>
          <para>Express all dates, including date ranges, using Library of Congress' Extended Date Time Format.</para>
          <para>Most recent version of EDTF available at https://www.loc.gov/standards/datetime/.</para>
          <para>Date-Edtf value should agree with dates values entered in Date and Dates fields.</para>
       </customization>
-   </descriptions>
-   <examples>
+   </descriptions><examples>
       <example co="no">
          <para>If the Date field = "1940" then Date EDTF = "1940"</para>
          <para>If the Date field = "1910?" then Date EDTF = "1910?"</para>
          <para>If Date field = "May 9, 2001" then Date EDTF = "2001-05-09"</para>
          <para>If Date field = "January 2008" then Date EDTF = "2008-01"</para>
          <para>If Date field = "between 1930 and 1939" then Date EDTF = "1930/1939"</para>
-         <para>If Date field = "between 1855 and 1999?" then Date EDTF can be one of several options including "1855?/1999?"</para>
-         <para>If Date field = "before 2007" then Date EDTF is either "/2007" or "../2007"</para>
-         <para>If Date field = "after 2001" then Date EDTF is either "2001/" or "2001/.."</para>
+         <para>If Date field = "between 1855 and 1999?" then Date EDTF = "1855?/1999?"</para>
       </example>
       <example co="object">
          <para>If the Date field = "1940" then Date EDTF = "1940"</para>
@@ -62,12 +69,9 @@
          <para>If Date field = "May 9, 2001" then Date EDTF = "2001-05-09"</para>
          <para>If Date field = "January 2008" then Date EDTF = "2008-01"</para>
          <para>If Date field = "between 1930 and 1939" then Date EDTF = "1930/1939"</para>
-         <para>If Date field = "between 1855 and 1999?" then Date EDTF can be one of several options including "1855?/1999?"</para>
-         <para>If Date field = "before 2007" then Date EDTF is either "/2007" or "../2007"</para>
-         <para>If Date field = "after 2001" then Date EDTF is either "2001/" or "2001/.."</para>
+         <para>If Date field = "between 1855 and 1999?" then Date EDTF = "1855?/1999?"</para>
       </example>
-   </examples>
-   <additionalInfo>
+   </examples><additionalInfo>
       <admin co="all">
          <para>This document needs a reference to the final spec.</para>
          <para>For the xsd, datatype is xs:string; the datatype is more accurately http://id.loc.gov/datatypes/edtf, which is not a valid QName and is inavlid according to schema-4-properties, but this does not seem to be machine-actionable; more exploration needed.</para>
@@ -75,14 +79,12 @@
       <generalNotes co="all">
          <para>EDTF is still a standard in progress. It has not yet been accpted as a full recommendation. It should be voted on in 2018 by ISO. We are anticipating it will becoming a 2-part ISO 8601-2018.</para>
       </generalNotes>
-   </additionalInfo>
-   <marc>
+   </additionalInfo><marc>
       <dcgMarcMapping/>
       <marcNotes>
          <para/>
       </marcNotes>
-   </marc>
-   <xsd>
+   </marc><xsd>
       <typeInfo level="standalone object">
          <simpleType>
             <xs:restriction base="xs:string">
@@ -93,11 +95,9 @@
       <typeInfo level="item">
          <empty/>
       </typeInfo>
-   </xsd>
-   <rdf>
+   </xsd><rdf>
       <sameAs/>
-   </rdf>
-   <history>
+   </rdf><history>
       <dateCreated>
          <single>2017-06-21</single>
       </dateCreated>
@@ -107,5 +107,4 @@
          <change/>
          <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation. Also updated link to EDTF and added some instructions.</change>
       </changeLog>
-   </history>
-</property>
+   </history></property>

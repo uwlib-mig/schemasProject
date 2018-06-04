@@ -1,18 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
-          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-          xmlns:xs="http://www.w3.org/2001/XMLSchema"
-          xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
-   <labels>
+<?xml version="1.0" encoding="UTF-8"?><property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd"><uid>p41</uid><labels>
       <platformIndependent>historicalNotes</platformIndependent>
       <dc>none</dc>
-   </labels>
-   <uwRequired>
+   </labels><uwRequired>
       <uwStandalone>no</uwStandalone>
       <uwObject>no</uwObject>
       <uwItem>no</uwItem>
-   </uwRequired>
-   <cdm>
+   </uwRequired><cdm>
       <label>Historical Notes</label>
       <cdmDatatype>text</cdmDatatype>
       <cdmLarge>yes</cdmLarge>
@@ -20,11 +13,9 @@
       <hidden>no</hidden>
       <cdmRequired>no</cdmRequired>
       <cdmControlledVocab>no</cdmControlledVocab>
-   </cdm>
-   <dspace>
+   </cdm><dspace>
       <dspaceProperty/>
-   </dspace>
-   <descriptions>
+   </dspace><descriptions>
       <definition>
          <para>Notes that do not pertain directly to the image/resource, but contain (possibly lengthy) historical/contextual background information about related topics.</para>
       </definition>
@@ -34,8 +25,7 @@
       <instructions co="object">
          <para>Each separate "note" should be a paragraph. Additional notes can be added, separated from the previous note using a blank line.</para>
       </instructions>
-   </descriptions>
-   <examples>
+   </descriptions><examples>
       <example co="no">
          <para>This drawing refers to a series of blockades enacted by the British and the French in 1806/1807.</para>
          <para>The British began in May 1806 by issuing Orders in Council that placed the entire coast of Europe under a naval blockade. France retaliated with a series of decrees collectively known as the Continental System. The Berlin Decrees (Nov 1806) prohibited any vessel coming from Britain from landing at a port under French control. Britain's naval supremacy, however, allowed her to force ships from neutral countries to stop in Britain on their way to the continent, lessening the economic impact of the blockade. Napoleon's Milan Decree (March 1807) authorized any ship coming from Britain to the continent to be confiscated. Ultimately, the blockade hurt France more than it did England, causing widespread food shortages and a general recession.</para>
@@ -44,30 +34,25 @@
          <para>This drawing refers to a series of blockades enacted by the British and the French in 1806/1807.</para>
          <para>The British began in May 1806 by issuing Orders in Council that placed the entire coast of Europe under a naval blockade. France retaliated with a series of decrees collectively known as the Continental System. The Berlin Decrees (Nov 1806) prohibited any vessel coming from Britain from landing at a port under French control. Britain's naval supremacy, however, allowed her to force ships from neutral countries to stop in Britain on their way to the continent, lessening the economic impact of the blockade. Napoleon's Milan Decree (March 1807) authorized any ship coming from Britain to the continent to be confiscated. Ultimately, the blockade hurt France more than it did England, causing widespread food shortages and a general recession.</para>
       </example>
-   </examples>
-   <additionalInfo>
+   </examples><additionalInfo>
       <generalNotes co="all">
          <para>"Historical Notes" is distingushed from "Notes" mainly because it is more like "writing" and creates a braod historical context. Values in the "Notes" field may be considered more "indexable" insofar as they precisely descibe the image.</para>
       </generalNotes>
-   </additionalInfo>
-   <marc>
+   </additionalInfo><marc>
       <dcgMarcMapping/>
       <marcNotes>
          <para/>
       </marcNotes>
-   </marc>
-   <xsd>
+   </marc><xsd>
       <typeInfo level="standalone object">
          <typeAttribute>xs:string</typeAttribute>
       </typeInfo>
       <typeInfo level="item">
          <empty/>
       </typeInfo>
-   </xsd>
-   <rdf>
+   </xsd><rdf>
       <sameAs/>
-   </rdf>
-   <history>
+   </rdf><history>
       <dateCreated>
          <range>
             <start>2000-01-01</start>
@@ -80,5 +65,4 @@
          <change/>
          <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
       </changeLog>
-   </history>
-</property>
+   </history></property>

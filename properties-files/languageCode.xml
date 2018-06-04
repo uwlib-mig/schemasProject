@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd"><uid>p51</uid><labels>
+      <platformIndependent>languageCode</platformIndependent>
+      <dc>language</dc>
+   </labels><uwRequired>
+      <uwStandalone>no</uwStandalone>
+      <uwObject>no</uwObject>
+      <uwItem>no</uwItem>
+   </uwRequired><cdm>
+      <label>Language Code</label>
+      <cdmDatatype>text</cdmDatatype>
+      <cdmLarge>no</cdmLarge>
+      <searchable>yes</searchable>
+      <hidden>yes</hidden>
+      <cdmRequired>no</cdmRequired>
+      <cdmControlledVocab>no</cdmControlledVocab>
+   </cdm><dspace>
+      <dspaceProperty/>
+   </dspace><descriptions>
+      <definition>
+         <para>A language of the resource expressed as a code.</para>
+      </definition>
+      <instructions co="object">
+         <para>Enter the name of the language(s) used in the interview using a code from ISO 639-3.</para>
+      </instructions>
+   </descriptions>
+   <examples>
+      <example co="object">
+         <para>eng</para>
+         <para>spa</para>
+      </example>
+   </examples>
+   <additionalInfo>
+      <admin co="object">
+         <para>Option for dSpace (not currently in input instructions): instead of using ISO 639-3, use the default DSpace rendering of languages: a 2 letter code from ISO 639-1 followed by an underscore and then an optional 2 letter country code from ISO 3166-1.</para>
+      </admin>
+   </additionalInfo><marc>
+      <dcgMarcMapping/>
+      <marcNotes/>
+   </marc><xsd>
+      <typeInfo level="object">
+         <typeAttribute>xs:string</typeAttribute>
+      </typeInfo>
+   </xsd><rdf>
+      <sameAs/>
+   </rdf><history>
+      <dateCreated>
+         <single>2018-03-26</single>
+      </dateCreated>
+      <created4Coll>University of Washington Tacoma Oral Histories</created4Coll>
+      <justification>MIG requested this field for UWT Oral Histories, allowing language code to be indexed, as we do with other oral histories.</justification>
+      <changeLog>
+         <change/>
+      </changeLog>
+   </history></property>

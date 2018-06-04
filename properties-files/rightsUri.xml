@@ -1,18 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
-          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-          xmlns:xs="http://www.w3.org/2001/XMLSchema"
-          xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
-   <labels>
+<?xml version="1.0" encoding="UTF-8"?><property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd"><uid>p77</uid><labels>
       <platformIndependent>rightsUri</platformIndependent>
       <dc>rights</dc>
-   </labels>
-   <uwRequired>
+   </labels><uwRequired>
       <uwStandalone>yes</uwStandalone>
       <uwObject>yes</uwObject>
       <uwItem>no</uwItem>
-   </uwRequired>
-   <cdm>
+   </uwRequired><cdm>
       <label>Rights Uri</label>
       <cdmDatatype>text</cdmDatatype>
       <cdmLarge>no</cdmLarge>
@@ -20,24 +13,24 @@
       <hidden>no</hidden>
       <cdmRequired>no</cdmRequired>
       <cdmControlledVocab>no</cdmControlledVocab>
-   </cdm>
-   <dspace>
+   </cdm><dspace>
       <dspaceProperty/>
-   </dspace>
-   <descriptions>
+   </dspace><descriptions>
       <definition>
          <para>URI that dereferences to a rights statement.</para>
       </definition>
       <instructions co="no">
          <para>Enter a rights statement from rightsstatements.org.</para>
-         <para>For items with a date later than 1922, enter http://rightsstatements.org/vocab/InC/1.0/ ("In Copyright"); for all else enter http://rightsstatements.org/vocab/CNE/1.0/ ("Copyright Not Evaluated.")</para>
+         <para>UW Libraries Special Collections policy: for items with a date later than 1922, enter http://rightsstatements.org/vocab/InC/1.0/ ("In Copyright"); for all else enter http://rightsstatements.org/vocab/CNE/1.0/ ("Copyright Not Evaluated.")</para>
       </instructions>
       <instructions co="object">
          <para>Enter a rights statement from rightsstatements.org that pertains to the entire object.</para>
-         <para>If all items have a date later than 1922, enter http://rightsstatements.org/vocab/InC/1.0/ ("In Copyright"); for all else enter http://rightsstatements.org/vocab/CNE/1.0/ ("Copyright Not Evaluated.")</para>
+         <para>UW Libraries Special Collections policy: for items with a date later than 1922, enter http://rightsstatements.org/vocab/InC/1.0/ ("In Copyright"); for all else enter http://rightsstatements.org/vocab/CNE/1.0/ ("Copyright Not Evaluated.")</para>
       </instructions>
-   </descriptions>
-   <examples>
+      <customization co="object" dd="uwtoh">
+         <para>Enter the following URI from rightsstatements.org: http://rightsstatements.org/vocab/InC-EDU/1.0/ .</para>
+      </customization>
+   </descriptions><examples>
       <example co="no">
          <para>http://rightsstatements.org/vocab/CNE/1.0/</para>
          <para>http://rightsstatements.org/vocab/InC/1.0/</para>
@@ -46,15 +39,16 @@
          <para>http://rightsstatements.org/vocab/CNE/1.0/</para>
          <para>http://rightsstatements.org/vocab/InC/1.0/</para>
       </example>
+      <customization co="object" dd="uwtoh">
+         <para>http://rightsstatements.org/vocab/InC-EDU/1.0/</para>
+      </customization>
    </examples>
-   <additionalInfo/>
-   <marc>
+   <additionalInfo/><marc>
       <dcgMarcMapping/>
       <marcNotes>
          <para/>
       </marcNotes>
-   </marc>
-   <xsd>
+   </marc><xsd>
       <typeInfo level="standalone object">
          <simpleType>
             <xs:restriction base="xs:anyURI">
@@ -65,11 +59,9 @@
       <typeInfo level="item">
          <empty/>
       </typeInfo>
-   </xsd>
-   <rdf>
+   </xsd><rdf>
       <sameAs/>
-   </rdf>
-   <history>
+   </rdf><history>
       <dateCreated>
          <single>2017-03-30</single>
       </dateCreated>
@@ -79,5 +71,4 @@
          <change/>
          <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
       </changeLog>
-   </history>
-</property>
+   </history></property>

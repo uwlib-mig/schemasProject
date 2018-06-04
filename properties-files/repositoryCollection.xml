@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
-          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-          xmlns:xs="http://www.w3.org/2001/XMLSchema"
-          xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+   xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+   <uid>p72</uid>
    <labels>
       <platformIndependent>repositoryCollection</platformIndependent>
       <dc>isPartOf</dc>
@@ -26,14 +26,18 @@
    </dspace>
    <descriptions>
       <definition>
-         <para>This field contains the collection name and its number, represented as a phrase.</para>
+         <para>Collection in which the original resource is a part.</para>
       </definition>
       <instructions co="no">
-         <para>Input the name assigned by the holding repository to the original collection.</para>
+         <para>Enter collection name and number, represented as a phrase.</para>
+         <para>Collection name is the name assigned by the holding repository to the original collection.</para>
       </instructions>
       <instructions co="object">
-         <para>Input the name assigned by the holding repository to the original collection.</para>
+         <para>Enter collection name and number, represented as a phrase.</para>
+         <para>Collection name is the name assigned by the holding repository to the original collection.</para>
       </instructions>
+      <customization co="object" dd="uwtoh">
+         <para>Enter collection name: "University of Washington Tacoma Oral History: Founding Stories."</para></customization>
    </descriptions>
    <examples>
       <example co="no">
@@ -42,6 +46,9 @@
       <example co="object">
          <para>William E. Meed collection no. 246</para>
       </example>
+      <customization co="object" dd="uwtoh">
+         <para>University of Washington Tacoma Oral History: Founding Stories</para>
+      </customization>
    </examples>
    <additionalInfo/>
    <marc>
@@ -77,6 +84,7 @@
       <changeLog>
          <change/>
          <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation. Also made //uwRequired="yes".</change>
+         <change date="2018-03-26">Updated def and instructions.</change>
       </changeLog>
    </history>
 </property>

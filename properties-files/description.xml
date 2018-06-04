@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd"><uid>p27</uid><labels>
+      <platformIndependent>description</platformIndependent>
+      <dc>description</dc>
+   </labels><uwRequired>
+      <uwStandalone>no</uwStandalone>
+      <uwObject>no</uwObject>
+      <uwItem>no</uwItem>
+   </uwRequired><cdm>
+      <label>Description</label>
+      <cdmDatatype>text</cdmDatatype>
+      <cdmLarge>no</cdmLarge>
+      <searchable>yes</searchable>
+      <hidden>no</hidden>
+      <cdmRequired>no</cdmRequired>
+      <cdmControlledVocab>no</cdmControlledVocab>
+   </cdm><dspace>
+      <dspaceProperty/>
+   </dspace><descriptions>
+      <definition>
+         <para>An account of the resource.</para>
+      </definition>
+      <instructions co="object"/>
+      <customization co="object" dd="uwtoh">
+         <para>Provide a brief abstract of the interview, summarizing the topics discussed.</para>
+         <para>Note any key events, organizations, perspectives, and significant names that may have come up in the interview.</para>
+         <para>When appropriate, note interviewees contributions to encouraging a diverse and inclusive campus.</para>
+      </customization>
+   </descriptions><examples>
+      <example co="object"/>
+      
+      <customization co="object" dd="uwtoh">
+         <para>Joao Fonseca discusses his years in the UWT Liberal Studies / Interdisciplinary Arts and Sciences from 1990 to present. Fonseca addresses the development of the department from its founding to its establishment as a school in 2014. Describes the many contributions of Wiliam Richardson and Michael Allen. Includes a description of the acquisition and display of Buster Simpson's "Parapet Relay" iron and bronze sidewalk plaques, referencing the role of the Washington State Art Commission.</para>
+      </customization>
+   </examples><additionalInfo>
+      <admin co="object"/>
+   </additionalInfo><marc>
+      <dcgMarcMapping/>
+      <marcNotes/>
+   </marc><xsd>
+      <typeInfo level="object">
+         <typeAttribute>xs:string</typeAttribute>
+      </typeInfo>
+   </xsd><rdf>
+      <sameAs/>
+   </rdf><history>
+      <dateCreated>
+         <single>2018-03-23</single>
+      </dateCreated>
+      <created4Coll>University of Washington Tacoma Oral Histories</created4Coll>
+      <justification>The UWT Oral Histories project wanted to use a single field to index things like organizations and individuals discussed, interview abstract, ideas/concepts, place, time, etc.</justification>
+      <changeLog>
+         <change/>
+      </changeLog>
+   </history></property>

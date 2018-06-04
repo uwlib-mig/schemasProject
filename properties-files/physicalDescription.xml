@@ -1,17 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
-   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema"
-   xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
-   <labels>
+<?xml version="1.0" encoding="UTF-8"?><property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd"><uid>p67</uid><labels>
       <platformIndependent>physicalDescription</platformIndependent>
       <dc>format</dc>
-   </labels>
-   <uwRequired>
+   </labels><uwRequired>
       <uwStandalone>no</uwStandalone>
       <uwObject>no</uwObject>
       <uwItem>no</uwItem>
-   </uwRequired>
-   <cdm>
+   </uwRequired><cdm>
       <label>Physical Description</label>
       <cdmDatatype>text</cdmDatatype>
       <cdmLarge>no</cdmLarge>
@@ -19,53 +13,98 @@
       <hidden>no</hidden>
       <cdmRequired>no</cdmRequired>
       <cdmControlledVocab>no</cdmControlledVocab>
-   </cdm>
-   <dspace>
+   </cdm><dspace>
       <dspaceProperty/>
-   </dspace>
-   <descriptions>
+   </dspace><descriptions>
       <definition>
-         <para>Includes additional descriptive information about type of material or medium, color, and dimensions.</para>
+         <para>The physical medium in which data, sound, images, etc., are stored; the carrier; may include an extent statement.</para>
       </definition>
       <instructions co="no">
-         <para>Input a term taken from Graphic Materials: Rules for Describing Original Items and Historical Collections.</para>
+         <para>Input a term describing the physical medium of the original resource in which data, sound, images, etc., are stored.</para>
+         <para>The term should be taken from an authoritative source.</para>
+         <para>Recommended source: RDA chapter 3, especually 3.3.</para>
+         <para>Former recommended source: Graphic Materials: Rules for Describing Original Items and Historical Collections. Use of this source is no longer recommended.</para>
+         <para>Entry may include an extent statement, dimensions, base material, or any other carrier description, as described in detail in RDA chapter 3.</para>
       </instructions>
       <instructions co="object">
-         <para>Input a term taken from Graphic Materials: Rules for Describing Original Items and Historical Collections.</para>
+         <para>Input a term describing the physical medium of the original resource in which data, sound, images, etc., are stored.</para>
+         <para>The term should be taken from an authoritative source.</para>
+         <para>Recommended source: RDA 3.3 and 3.4.</para>
+         <para>Former recommended source: Graphic Materials: Rules for Describing Original Items and Historical Collections. Use of this source is no longer recommended.</para>
+         <para>Entry may include an extent statement, dimensions, base material, or any other carrier description, as described in detail in RDA chapter 3.</para>
       </instructions>
-   </descriptions>
-   <examples>
+      <instructions co="item">
+         <para>Input a term describing the physical medium of the original resource in which data, sound, images, etc., are stored.</para>
+         <para>The term should be taken from an authoritative source.</para>
+         <para>Recommended source: RDA 3.3 and 3.4.</para>
+         <para>Former recommended source: Graphic Materials: Rules for Describing Original Items and Historical Collections. Use of this source is no longer recommended.</para>
+         <para>Entry may include an extent statement, dimensions, base material, or any other carrier description, as described in detail in RDA chapter 3.</para>
+         <para>When the original format is one digital file, enter "1 online resource" or just "online resource."</para>
+      </instructions>
+      <customization co="item" dd="civilwar"/>
+   </descriptions><examples>
       <example co="no">
+         <para>Following RDA:</para>
+         <para>1 online resource</para>
+         <para>1 computer disc</para>
+         <para>2 audiotape reels</para>
+         <para>1 volume</para>
+         <para>3 photographs</para>
+         <para>1 map</para>
+         <para>Other possibilities:</para>
          <para>Glass, b/w ; 6 1/2 x 8 1/2 in.</para>
+         <para>Silver gelatin, b&amp;w; 6 x 8 in.</para>
+         <para>1 leaf : 20 x 12.5 cm, folded to 19.5 x 12.25 cm.</para>
+         <para>Pencil and watercolor on board: 32 x 43 cm.</para>
       </example>
       <example co="object">
+         <para>Following RDA:</para>
+         <para>1 online resource</para>
+         <para>1 computer disc</para>
+         <para>2 audiotape reels</para>
+         <para>1 volume</para>
+         <para>3 photographs</para>
+         <para>1 map</para>
+         <para>Other possibilities:</para>
          <para>Glass, b/w ; 6 1/2 x 8 1/2 in.</para>
+         <para>Silver gelatin, b&amp;w; 6 x 8 in.</para>
+         <para>1 leaf : 20 x 12.5 cm, folded to 19.5 x 12.25 cm.</para>
+         <para>Pencil and watercolor on board: 32 x 43 cm.</para>
+      </example>
+      <example co="item">
+         <para>Following RDA:</para>
+         <para>1 online resource</para>
+         <para>1 computer disc</para>
+         <para>2 audiotape reels</para>
+         <para>1 volume</para>
+         <para>3 photographs</para>
+         <para>1 map</para>
+         <para>Other possibilities:</para>
+         <para>Glass, b/w ; 6 1/2 x 8 1/2 in.</para>
+         <para>Silver gelatin, b&amp;w; 6 x 8 in.</para>
+         <para>1 leaf : 20 x 12.5 cm, folded to 19.5 x 12.25 cm.</para>
+         <para>Pencil and watercolor on board: 32 x 43 cm.</para>
       </example>
       <customization co="no" dd="ac">
          <para>Ink and watercolor on drafting cloth: 48 x 46 cm.</para>
          <para>Gouache/watercolor with graphite and ink on paper with cheesecloth backing ; 40 in x 29 3/4 in</para>
          <para>Ink and graphite on drafting cloth: 61 x 93 cm</para>
       </customization>
-   </examples>
-   <additionalInfo/>
-   <marc>
+   </examples><additionalInfo/><marc>
       <dcgMarcMapping/>
       <marcNotes>
          <para/>
       </marcNotes>
-   </marc>
-   <xsd>
+   </marc><xsd>
       <typeInfo level="standalone object">
          <typeAttribute>xs:string</typeAttribute>
       </typeInfo>
       <typeInfo level="item">
          <empty/>
       </typeInfo>
-   </xsd>
-   <rdf>
+   </xsd><rdf>
       <sameAs/>
-   </rdf>
-   <history>
+   </rdf><history>
       <dateCreated>
          <range>
             <start>2000-01-01</start>
@@ -78,6 +117,6 @@
          <change/>
          <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
          <change date="2018-02-27">Added customization for Architecture of the Pacific Northwest collection.</change>
+         <change date="2018-03-27">Improved definition; added item info.</change>
       </changeLog>
-   </history>
-</property>
+   </history></property>

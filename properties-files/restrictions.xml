@@ -1,18 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
-          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-          xmlns:xs="http://www.w3.org/2001/XMLSchema"
-          xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
-   <labels>
+<?xml version="1.0" encoding="UTF-8"?><property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd"><uid>p75</uid><labels>
       <platformIndependent>restrictions</platformIndependent>
       <dc>rights</dc>
-   </labels>
-   <uwRequired>
+   </labels><uwRequired>
       <uwStandalone>yes</uwStandalone>
       <uwObject>yes</uwObject>
       <uwItem>no</uwItem>
-   </uwRequired>
-   <cdm>
+   </uwRequired><cdm>
       <label>Restrictions</label>
       <cdmDatatype>text</cdmDatatype>
       <cdmLarge>no</cdmLarge>
@@ -20,11 +13,9 @@
       <hidden>no</hidden>
       <cdmRequired>no</cdmRequired>
       <cdmControlledVocab>no</cdmControlledVocab>
-   </cdm>
-   <dspace>
+   </cdm><dspace>
       <dspaceProperty/>
-   </dspace>
-   <descriptions>
+   </dspace><descriptions>
       <definition>
          <para>Any restrictions on the use of an image.</para>
       </definition>
@@ -37,6 +28,9 @@
       <customization co="item" dd="civilwar">
          <para>Enter "For information on permissions for use and reproductions please visit UW Libraries Special Collections Use Permissions page:  http://www.lib.washington.edu/specialcollections/services/permission-for-use"</para>
       </customization>
+      <customization co="object" dd="uwtoh">
+         <para>Input the following text: "Individuals may use project materials for scholarly or research purposes, according to the provisions of fair use, but reproducing, publishing, or broadcasting any oral history project materials requires permission. For more information, see: http://content.lib.washington.edu/tacomacommweb/using-projects.html"</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="no">
@@ -48,15 +42,17 @@
       <customization co="item" dd="civilwar">
          <para>For information on permissions for use and reproductions please visit UW Libraries Special Collections Use Permissions page:  http://www.lib.washington.edu/specialcollections/services/permission-for-use</para>
       </customization>
+      <customization co="object" dd="uwtoh">
+         <para>Individuals may use project materials for scholarly or research purposes, according to the provisions of fair use, but reproducing, publishing, or broadcasting any oral history project materials requires permission. For more information, see: http://content.lib.washington.edu/tacomacommweb/using-projects.html
+         </para>
+      </customization>
    </examples>
-   <additionalInfo/>
-   <marc>
+   <additionalInfo/><marc>
       <dcgMarcMapping/>
       <marcNotes>
          <para/>
       </marcNotes>
-   </marc>
-   <xsd>
+   </marc><xsd>
       <typeInfo level="standalone object">
          <simpleType>
             <xs:restriction base="xs:string">
@@ -70,11 +66,9 @@
       <customTypeInfo level="item" dd="civilwar">
          <typeAttribute fixed="For information on permissions for use and reproductions please visit UW Libraries Special Collections Use Permissions page: http://www.lib.washington.edu/specialcollections/services/permission-for-use">xs:string</typeAttribute> 
       </customTypeInfo>
-   </xsd>
-   <rdf>
+   </xsd><rdf>
       <sameAs/>
-   </rdf>
-   <history>
+   </rdf><history>
       <dateCreated>
          <range>
             <start>2000-01-01</start>
@@ -87,5 +81,4 @@
          <change/>
          <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
       </changeLog>
-   </history>
-</property>
+   </history></property>

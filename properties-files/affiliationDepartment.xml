@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd"><uid>p91</uid><labels>
+      <platformIndependent>affiliationDepartment</platformIndependent>
+      <dc>none</dc>
+   </labels><uwRequired>
+      <uwStandalone>no</uwStandalone>
+      <uwObject>no</uwObject>
+      <uwItem>no</uwItem>
+   </uwRequired><cdm>
+      <label>Affiliation (Department)</label>
+      <cdmDatatype>text</cdmDatatype>
+      <cdmLarge>no</cdmLarge>
+      <searchable>yes</searchable>
+      <hidden>no</hidden>
+      <cdmRequired>no</cdmRequired>
+      <cdmControlledVocab>no</cdmControlledVocab>
+   </cdm><dspace>
+      <dspaceProperty/>
+   </dspace><descriptions>
+      <definition>
+         <para>Name of a department at an organization with which a person is affiliated.</para>
+      </definition>
+      <instructions co="object">
+         <para>Enter the names of university departments or groups represented in the resource.</para>
+         <para>Enter historical names, if known, and current names, if appropriate.</para>
+         <para>Separate multiple entries with semicolon.</para>
+      </instructions>
+      <customization co="object" dd="uwtoh">
+         <para>Enter the names of significant university departments or groups in which the interviewee was involved, as described during the interview.</para>
+         <para>If available, use form of the department name found at https://www.tacoma.uw.edu/about-uw-tacoma/founding-faculty-program. If not available, use a commonly found form of the name.</para>
+         <para>If deemed appropriate, add another form of the name (for example, enter both “University of Washington Tacoma Liberal Studies” and “University of Washington Tacoma School of Interdisciplinary Arts and Sciences”).</para>
+         <para>Separate multiple entries with semicolon.</para>
+         <para>Not every interview requires a departmental affiliation; enter when it is addressed in the interview.</para>
+      </customization>
+   </descriptions><examples>
+      <example co="object">
+         <para>University of Washington Tacoma Advisory Board</para>
+         <para>University of Washington Tacoma Liberal Studies</para>
+         <para>University of Washington Tacoma Library</para>
+      </example>
+   </examples><additionalInfo>
+      <admin co="object">
+         <para>To re-use this property, existing property properties should be reorganized as customizations for UWT-OH, then general properties of this property can be made more universal.</para>
+      </admin>
+   </additionalInfo><marc>
+      <dcgMarcMapping/>
+      <marcNotes/>
+   </marc><xsd>
+      <typeInfo level="object">
+         <typeAttribute>xs:string</typeAttribute>
+      </typeInfo>
+   </xsd><rdf>
+      <sameAs/>
+   </rdf><history>
+      <dateCreated>
+         <single>2018-03-23</single>
+      </dateCreated>
+      <created4Coll>University of Washington Tacoma Oral Histories</created4Coll>
+      <justification>The UWT Oral Histories project interviewed university-related people and wanted to index their department affiliations at the university.</justification>
+      <changeLog>
+         <change date="2018-05-25">changed label.</change>
+      </changeLog>
+   </history></property>

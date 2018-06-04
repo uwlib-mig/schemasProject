@@ -1,7 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- This is the first DD to accommodate compound Objects (COs).
-     There will be errors.
--->
 <migDataDictionary id="0005" xmlns="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries"
     xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-dds.xsd" >
@@ -14,6 +11,7 @@
     </metadataLiaisons>
     <cdmCo>yes</cdmCo>
     <standalone>yes</standalone>
+    <suppressItemProp>physicalDescription</suppressItemProp>
     <cdmCode>civilwar</cdmCode>
     <properties>
         <xi:include href="../../properties-files/title.xml"/>

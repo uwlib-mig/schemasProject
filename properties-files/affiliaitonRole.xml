@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+   xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+   <uid>p92</uid>
+   <labels>
+      <platformIndependent>affiliationRole</platformIndependent>
+      <dc>none</dc>
+   </labels>
+   <uwRequired>
+      <uwStandalone>no</uwStandalone>
+      <uwObject>no</uwObject>
+      <uwItem>no</uwItem>
+   </uwRequired>
+   <cdm>
+      <label>Affiliation (Role)</label>
+      <cdmDatatype>text</cdmDatatype>
+      <cdmLarge>no</cdmLarge>
+      <searchable>yes</searchable>
+      <hidden>no</hidden>
+      <cdmRequired>no</cdmRequired>
+      <cdmControlledVocab>no</cdmControlledVocab>
+   </cdm>
+   <dspace>
+      <dspaceProperty/>
+   </dspace>
+   <descriptions>
+      <definition>
+         <para>Name of a person's role(s) at an organization with which they are affiliated.</para>
+      </definition>
+      <instructions co="object">
+         <para>Enter the interviewee’s primary role(s) at the university as described during the interview.</para>
+         <para>An interviewee may have multiple roles; separate each with semicolon.</para>
+         <para>Choose from the following:</para>
+         <para>Faculty</para>
+         <para>Staff</para>
+         <para>University administrator</para>
+         <para>Student</para>
+         <para>Alumni</para>
+         <para>Advisory board member</para>
+         <para>Community member</para>
+         <para>Government official</para>
+      </instructions>
+   </descriptions>
+   <examples>
+      <example co="object">
+         <para>University administrator</para>
+         <para>Student</para>
+      </example>
+   </examples>
+   <additionalInfo>
+      <admin co="object">
+         <para>To re-use this property, existing property properties should be reorganized as customizations for UWT-OH, then general properties of this property can be made more universal.</para>
+      </admin>
+   </additionalInfo>
+   <marc>
+      <dcgMarcMapping/>
+      <marcNotes/>
+   </marc>
+   <xsd>
+      <typeInfo level="object">
+         <simpleType>
+            <xs:restriction base="xs:string">
+               <xs:enumeration value="Faculty"/>
+               <xs:enumeration value="Staff"/>
+               <xs:enumeration value="University administrator"/>
+               <xs:enumeration value="Student"/>
+               <xs:enumeration value="Alumni"/>
+               <xs:enumeration value="Advisory board member"/>
+               <xs:enumeration value="Community member"/>
+               <xs:enumeration value="Government official"/>
+            </xs:restriction>
+         </simpleType>
+      </typeInfo>
+   </xsd>
+   <rdf>
+      <sameAs/>
+   </rdf>
+   <history>
+      <dateCreated>
+         <single>2018-03-23</single>
+      </dateCreated>
+      <created4Coll>University of Washington Tacoma Oral Histories</created4Coll>
+      <justification>The UWT Oral Histories project interviewed university-related people and wanted to index their role at the university.</justification>
+      <changeLog>
+         <change date="2018-05-25">changed label.</change>
+      </changeLog>
+   </history>
+</property>

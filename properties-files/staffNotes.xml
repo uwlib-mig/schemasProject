@@ -1,18 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
-          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-          xmlns:xs="http://www.w3.org/2001/XMLSchema"
-          xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
-   <labels>
+<?xml version="1.0" encoding="UTF-8"?><property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd"><uid>p79</uid><labels>
       <platformIndependent>staffNotes</platformIndependent>
       <dc>none</dc>
-   </labels>
-   <uwRequired>
+   </labels><uwRequired>
       <uwStandalone>no</uwStandalone>
       <uwObject>no</uwObject>
       <uwItem>no</uwItem>
-   </uwRequired>
-   <cdm>
+   </uwRequired><cdm>
       <label>Staff Notes</label>
       <cdmDatatype>text</cdmDatatype>
       <cdmLarge>no</cdmLarge>
@@ -20,47 +13,50 @@
       <hidden>yes</hidden>
       <cdmRequired>no</cdmRequired>
       <cdmControlledVocab>no</cdmControlledVocab>
-   </cdm>
-   <dspace>
+   </cdm><dspace>
       <dspaceProperty/>
-   </dspace>
-   <descriptions>
+   </dspace><descriptions>
       <definition>
          <para>Notes for staff only, notes of an administrative nature.</para>
       </definition>
       <instructions co="no">
          <para>Input your staff notes however you wish.</para>
       </instructions>
-   </descriptions>
-   <examples>
+      <instructions co="object">
+         <para>Input your staff notes however you wish.</para>
+      </instructions>
+      <instructions co="item">
+         <para>Input your staff notes however you wish.</para>
+      </instructions>
+   </descriptions><examples>
       <example co="no">
          <para>Al, could you look at this one?</para>
          <para>Still need to research the difference between the saws pictured.</para>
       </example>
-   </examples>
-   <additionalInfo>
-      <admin co="no">
+      <example co="object">
+         <para>Al, could you look at this one?</para>
+         <para>Still need to research the difference between the saws pictured.</para>
+      </example>
+      <example co="item">
+         <para>Al, could you look at this one?</para>
+         <para>Still need to research the difference between the saws pictured.</para>
+      </example>
+   </examples><additionalInfo>
+      <admin co="all">
          <para>Customarily this field is searchable in CONTENTdm while the collection is being developed; when the collection is done, the field should not be searchable.</para>
       </admin>
-   </additionalInfo>
-   <marc>
+   </additionalInfo><marc>
       <dcgMarcMapping/>
       <marcNotes>
          <para/>
       </marcNotes>
-   </marc>
-   <xsd>
-      <typeInfo level="standalone object">
+   </marc><xsd>
+      <typeInfo level="standalone object item">
          <typeAttribute>xs:string</typeAttribute>
       </typeInfo>
-      <typeInfo level="item">
-         <empty/>
-      </typeInfo>
-   </xsd>
-   <rdf>
+   </xsd><rdf>
       <sameAs/>
-   </rdf>
-   <history>
+   </rdf><history>
       <dateCreated>
          <range>
             <start>2000-01-01</start>
@@ -70,8 +66,8 @@
       <created4Coll>Special Collections Photograph Collections</created4Coll>
       <justification>Staff needed a way to communicate about administering the resource inside CONTENTdm, so we created this property.</justification>
       <changeLog>
-         <change/>
          <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
+         <change date="2018-03-23">Added some cdm compound object information</change>
+         <change date="2018-03-27">Added item info</change>
       </changeLog>
-   </history>
-</property>
+   </history></property>

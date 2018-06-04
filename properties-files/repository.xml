@@ -1,18 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
-          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-          xmlns:xs="http://www.w3.org/2001/XMLSchema"
-          xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
-   <labels>
+<?xml version="1.0" encoding="UTF-8"?><property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd"><uid>p71</uid><labels>
       <platformIndependent>repository</platformIndependent>
       <dc>none</dc>
-   </labels>
-   <uwRequired>
+   </labels><uwRequired>
       <uwStandalone>yes</uwStandalone>
       <uwObject>yes</uwObject>
       <uwItem>no</uwItem>
-   </uwRequired>
-   <cdm>
+   </uwRequired><cdm>
       <label>Repository</label>
       <cdmDatatype>text</cdmDatatype>
       <cdmLarge>no</cdmLarge>
@@ -20,22 +13,23 @@
       <hidden>no</hidden>
       <cdmRequired>no</cdmRequired>
       <cdmControlledVocab>no</cdmControlledVocab>
-   </cdm>
-   <dspace>
+   </cdm><dspace>
       <dspaceProperty/>
-   </dspace>
-   <descriptions>
+   </dspace><descriptions>
       <definition>
-         <para>The institution where the item is physically located.</para>
+         <para>The institution holding the resource.</para>
       </definition>
       <instructions co="no">
-         <para>Enter the name of the repository in which the original item is held.</para>
+         <para>Enter the name of the institution in which the original item is held.</para>
       </instructions>
       <instructions co="object">
-         <para>Enter the name of the repository in which the original item is held.</para>
+         <para>Enter the name of the institution in which the original item is held.</para>
       </instructions>
-   </descriptions>
-   <examples>
+      <customization co="object" dd="uwtoh">
+         <para>Enter the name of the institution in which the original item is held: "University of Washington Tacoma Library."</para>
+      </customization>
+      <!-- removed item instructions -->
+   </descriptions><examples>
       <example co="no">
          <para>University of Washington Libraries, Special Collections Division</para>
          <para>Eastern Washington State Historical Society/Cheney Cowles</para>
@@ -46,15 +40,16 @@
          <para>Eastern Washington State Historical Society/Cheney Cowles</para>
          <para>Museum Museum of History and Industry, Seattle</para>
       </example>
-   </examples>
-   <additionalInfo/>
-   <marc>
+      <customization co="object" dd="uwtoh">
+         <para>University of Washington Tacoma Library</para>
+      </customization>
+      <!-- removed item examples -->
+   </examples><additionalInfo/><marc>
       <dcgMarcMapping/>
       <marcNotes>
          <para/>
       </marcNotes>
-   </marc>
-   <xsd>
+   </marc><xsd>
       <typeInfo level="standalone object">
          <simpleType>
             <xs:restriction base="xs:string">
@@ -65,11 +60,9 @@
       <typeInfo level="item">
          <empty/>
       </typeInfo>
-   </xsd>
-   <rdf>
+   </xsd><rdf>
       <sameAs/>
-   </rdf>
-   <history>
+   </rdf><history>
       <dateCreated>
          <range>
             <start>2000-01-01</start>
@@ -81,6 +74,7 @@
       <changeLog>
          <change/>
          <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation. Also made //uwRequired="yes".</change>
+         <change date="2018-03-26">Added uwtoh info</change>
+         <change date="2018-05-09">Removed instructions for items as well as examples, added for uwtoh; a compundObject should not need to repeat repository info at the item level. If it's needed later we'll add it.</change>
       </changeLog>
-   </history>
-</property>
+   </history></property>

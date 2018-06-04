@@ -1,18 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
-          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-          xmlns:xs="http://www.w3.org/2001/XMLSchema"
-          xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
-   <labels>
+<?xml version="1.0" encoding="UTF-8"?><property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd"><uid>p53</uid><labels>
       <platformIndependent>locationDepicted</platformIndependent>
       <dc>spatial</dc>
-   </labels>
-   <uwRequired>
+   </labels><uwRequired>
       <uwStandalone>no</uwStandalone>
       <uwObject>no</uwObject>
       <uwItem>no</uwItem>
-   </uwRequired>
-   <cdm>
+   </uwRequired><cdm>
       <label>Location Depicted</label>
       <cdmDatatype>text</cdmDatatype>
       <cdmLarge>no</cdmLarge>
@@ -20,25 +13,27 @@
       <hidden>no</hidden>
       <cdmRequired>no</cdmRequired>
       <cdmControlledVocab>yes</cdmControlledVocab>
-   </cdm>
-   <dspace>
+   </cdm><dspace>
       <dspaceProperty/>
-   </dspace>
-   <descriptions>
+   </dspace><descriptions>
       <definition>
-         <para>The spatial characteristics of the intellectual content of the resource. </para>
-         <para>Spatial coverage refers to a physical region.</para>
+         <para>The spatial characteristics of the resource; refers to a physical region.</para>
       </definition>
       <instructions co="no">
+         <para>Enter broad and local geographic locations given significant attention in the resource.</para>
          <para>Enter Country--State or Province--City.</para>
-         <para>Places names are derived from the LC Authority File.</para>
+         <para>Forms of the names should be derived from the LC Authority File.</para>
+         <para>For neighborhoods or other types of locales below the city level, enter an LCSH heading in the Subjects (LCSH) field above.</para>
+         <para>Separate multiple entries with a semicolon .</para>
       </instructions>
       <instructions co="object">
+         <para>Enter broad and local geographic locations given significant attention in the resource.</para>
          <para>Enter Country--State or Province--City.</para>
          <para>Places names are derived from the LC Authority File.</para>
+         <para>For neighborhoods or other types of locales below the city level, enter an LCSH heading in the Subjects (LCSH) field above.</para>
+         <para>Separate multiple entries with a semicolon .</para>
       </instructions>
-   </descriptions>
-   <examples>
+   </descriptions><examples>
       <example co="no">
          <para>United States--Washington (State)—Seattle</para>
          <para>United States--Alaska—Fort Yukon</para>
@@ -61,26 +56,25 @@
          <para>Egypt--Nile River Delta</para>
          <para>Israel--West Bank--Jericho</para>
       </customization>
-   </examples>
-   <additionalInfo/>
-   <marc>
+   </examples><additionalInfo>
+      <admin co="object">
+         <para>SC Photographs collections DD uses the label "Location Depicted." SC Oral Histories DD uses the label "Geographic Coverage." Both properties appear to be equivalent.</para>
+      </admin>
+   </additionalInfo><marc>
       <dcgMarcMapping/>
       <marcNotes>
          <para/>
       </marcNotes>
-   </marc>
-   <xsd>
+   </marc><xsd>
       <typeInfo level="standalone object">
          <typeAttribute>xs:string</typeAttribute>
       </typeInfo>
       <typeInfo level="item">
          <empty/>
       </typeInfo>
-   </xsd>
-   <rdf>
+   </xsd><rdf>
       <sameAs/>
-   </rdf>
-   <history>
+   </rdf><history>
       <dateCreated>
          <range>
             <start>2000-01-01</start>
@@ -90,8 +84,7 @@
       <created4Coll>Special Collections Photograph Collections</created4Coll>
       <justification>We wanted a property dedicated to describing the location depicted in an image.</justification>
       <changeLog>
-         <change/>
          <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
+         <change date="2018-03-23">Added property description from the SC Oral Histories Data Dictionary and cleaned up some ambiguous language; the idea was to merge all geographic coverage info under one property "Location Depicted."</change>
       </changeLog>
-   </history>
-</property>
+   </history></property>
