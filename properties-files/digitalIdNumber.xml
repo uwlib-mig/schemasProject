@@ -50,8 +50,9 @@
          <para>OWTOH201702</para>
       </customization>
       <customization co="item" dd="uwtoh">
-         <para>OWTOH201701</para>
-         <para>OWTOH201702</para>
+         <para>OWTOH201802-Audio</para>
+         <para>UWTOH201802-Image</para>
+         <para>UWTOH201802-Transcript</para>
       </customization>
    </examples><additionalInfo>
       <admin co="no">

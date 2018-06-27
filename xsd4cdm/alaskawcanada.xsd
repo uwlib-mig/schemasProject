@@ -6,10 +6,11 @@
    <xs:element name="metadata">
       <xs:complexType>
          <xs:sequence>
-            <xs:element name="record" maxOccurs="unbounded" type="recordType"/>
+            <xs:element ref="record" maxOccurs="unbounded"/>
          </xs:sequence>
       </xs:complexType>
    </xs:element>
+   <xs:element name="record" type="recordType"/>
    <xs:complexType name="recordType">
       <xs:sequence>
          <xs:element name="Title" minOccurs="1" maxOccurs="unbounded">
@@ -23,7 +24,7 @@
          <xs:element name="DateEdtf" minOccurs="1" maxOccurs="unbounded">
             <xs:simpleType>
                <xs:restriction base="xs:string">
-                  <xs:minLength value="0"/>
+                  <xs:minLength value="1"/>
                </xs:restriction>
             </xs:simpleType>
          </xs:element>
@@ -34,35 +35,39 @@
                </xs:restriction>
             </xs:simpleType>
          </xs:element>
-         <xs:element name="Dates" minOccurs="1" maxOccurs="unbounded">
+         <xs:element name="Dates" minOccurs="0" maxOccurs="unbounded">
             <xs:simpleType>
                <xs:restriction base="xs:string">
                   <xs:minLength value="0"/>
                </xs:restriction>
             </xs:simpleType>
          </xs:element>
-         <xs:element name="EarliestDate" minOccurs="0" maxOccurs="unbounded" type="xs:string">
-            
+         <xs:element name="EarliestDate" minOccurs="0" maxOccurs="unbounded">
+            <xs:simpleType>
+               <xs:union memberTypes="xs:date xs:gYearMonth xs:gYear"/>
+            </xs:simpleType>
          </xs:element>
-         <xs:element name="LatestDate" minOccurs="0" maxOccurs="unbounded" type="xs:string">
-            
+         <xs:element name="LatestDate" minOccurs="0" maxOccurs="unbounded">
+            <xs:simpleType>
+               <xs:union memberTypes="xs:date xs:gYearMonth xs:gYear"/>
+            </xs:simpleType>
          </xs:element>
          <xs:element name="Notes" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
-         <xs:element name="ContextualNotes" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+         <xs:element name="HistoricalNotes" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
          <xs:element name="SubjectsLCTGM" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
          <xs:element name="SubjectsLCSH" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
          <xs:element name="LocationDepicted" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
          <xs:element name="DigitalCollection" minOccurs="1" maxOccurs="unbounded">
             <xs:simpleType>
                <xs:restriction base="xs:string">
-                  <xs:minLength value="0"/>
+                  <xs:minLength value="1"/>
                </xs:restriction>
             </xs:simpleType>
          </xs:element>
          <xs:element name="OrderNumber" minOccurs="1" maxOccurs="unbounded">
             <xs:simpleType>
                <xs:restriction base="xs:string">
-                  <xs:minLength value="1"/>
+                  <xs:minLength value="0"/>
                </xs:restriction>
             </xs:simpleType>
          </xs:element>
@@ -108,7 +113,7 @@
             type="xs:string"/>
          <xs:element name="Contributor" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
          <xs:element name="Acquisition" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
-         <xs:element name="RightsUri" minOccurs="1" maxOccurs="unbounded">
+         <xs:element name="RightsUri" minOccurs="0" maxOccurs="unbounded">
             <xs:simpleType>
                <xs:restriction base="xs:anyURI">
                   <xs:minLength value="0"/>
@@ -136,8 +141,8 @@
                   <xs:enumeration value="Software"/>
                   <xs:enumeration value="Sound"/>
                   <xs:enumeration value="StillImage"/>
+                  <xs:enumeration value="Stillimage"/>
                   <xs:enumeration value="Text"/>
-                  <xs:enumeration value="[bogus]"/>
                </xs:restriction>
             </xs:simpleType>
          </xs:element>

@@ -40,7 +40,7 @@
          <para>Six formats are recommended for values in Date, each corresponding to a specific EDTF format:</para>
          <para>If the value of Date is YYYY, enter YYYY.</para>
          <para>If the value of Date is YYYY, enter YYYY?</para>
-         <para>If the value of Daye is [month] DD, YYYY, enter YYYY-MM-DD.</para>
+         <para>If the value of Date is [month] DD, YYYY, enter YYYY-MM-DD.</para>
          <para>If the value of Date is [month], YYYY, ebter YYYY-MM.</para>
          <para>If the value of Date is between YYYY and YYYY, enter YYYY/YYYY</para>
          <para>If the value of Date is between YYYY and YYYY, enter YYYY?/YYYY?</para>

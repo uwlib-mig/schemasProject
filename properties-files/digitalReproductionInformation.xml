@@ -44,10 +44,7 @@
          <para/>
       </marcNotes>
    </marc><xsd>
-      <typeInfo level="standalone object">
-         <typeAttribute>xs:string</typeAttribute>
-      </typeInfo>
-      <typeInfo level="item">
+      <typeInfo level="standalone object item">
          <typeAttribute>xs:string</typeAttribute>
       </typeInfo>
    </xsd><rdf>

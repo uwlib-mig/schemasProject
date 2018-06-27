@@ -47,6 +47,8 @@
                </xs:restriction>
             </xs:simpleType>
          </xs:element>
+         <xs:element name="EarliestDrawingDate" type="xs:string"/>
+         <xs:element name="LatestDrawingDate" type="xs:string"/>
          <xs:element name="ObjectType" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
          <xs:element name="PhysicalDescription" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
          <xs:element name="BuildingStreetAddress" minOccurs="0" maxOccurs="unbounded"
@@ -57,8 +59,8 @@
          <xs:element name="Notes" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
          <xs:element name="BuildingStyle" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
          <xs:element name="BuildingNotes" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
-         <xs:element name="SubjectsLCTGM" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
-         <xs:element name="SubjectsLCSH" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+         <xs:element name="SubjectsLctgm" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+         <xs:element name="SubjectsLcsh" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
          <xs:element name="DigitalCollection" minOccurs="1" maxOccurs="unbounded">
             <xs:simpleType>
                <xs:restriction base="xs:string">
@@ -136,12 +138,15 @@
                   <xs:enumeration value="Software"/>
                   <xs:enumeration value="Sound"/>
                   <xs:enumeration value="StillImage"/>
+                  <xs:enumeration value="Stillimage"/>
                   <xs:enumeration value="Text"/>
+                  <xs:enumeration value=""/>
                </xs:restriction>
             </xs:simpleType>
          </xs:element>
          <xs:element name="Institution" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
          <xs:element name="Cataloging" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+         <xs:element name="Type-DCMI" type="xs:string"/>
          <xs:element name="ItemURL" minOccurs="1" maxOccurs="unbounded" type="xs:anyURI"/>
          <xs:element name="FullResolution" minOccurs="0"/>
          <xs:element name="oclcNumber" minOccurs="0" maxOccurs="unbounded">
