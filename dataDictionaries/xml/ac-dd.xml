@@ -6,7 +6,7 @@
     <ddName>Architecture of the Pacific Northwest</ddName>
     <ddPartOfProject/>
     <originalCreationDate>2018-02-16</originalCreationDate>
-    <latestUpdate>2018-02-16</latestUpdate>
+    <latestUpdate>2018-06-28</latestUpdate>
     <metadataLiaisons>
         <metadataLiaison>TBD</metadataLiaison>
     </metadataLiaisons>
@@ -16,18 +16,15 @@
     <properties>
         <xi:include href="../../properties-files/title.xml"/>
         <xi:include href="../../properties-files/alternativeTitle.xml"/>
-        <xi:include href="../../properties-files/architect.xml"/>
-        <!-- The above property proposes to replace 2 properties, "Architectural Firm Name" and "Architects." Pending 2018-02-27. -->
+        <xi:include href="../../properties-files/architectFirm.xml"/>
+        <xi:include href="../../properties-files/architectPerson.xml"/>
         <xi:include href="../../properties-files/associateArchitect.xml"/>
         <xi:include href="../../properties-files/engineer.xml"/>
         <xi:include href="../../properties-files/artist.xml"/>
         <xi:include href="../../properties-files/client.xml"/>
         <xi:include href="../../properties-files/dateEdtf.xml"/>
         <xi:include href="../../properties-files/date.xml"/>
-        <!-- The above property proposes to replace "Date of Drawing Execution." Pending 2018-02-27. -->
         <xi:include href="../../properties-files/dates.xml"/>
-        <!-- Proposal: eliminate "Earliest Drawing Date." Pending 2018-02-27. -->
-        <!-- Proposal: eliminate "Latest Drawing Date." Pending 2018-02-27. -->
         <xi:include href="../../properties-files/objectType.xml"/>
         <xi:include href="../../properties-files/physicalDescription.xml"/>
         <xi:include href="../../properties-files/buildingStreetAddress.xml"/>
@@ -52,9 +49,9 @@
         <xi:include href="../../properties-files/acquisition.xml"/>
         <xi:include href="../../properties-files/rightsUri.xml"/>
         <xi:include href="../../properties-files/restrictions.xml"/>
-        <xi:include href="../../properties-files/type.xml"/>
         <xi:include href="../../properties-files/institution.xml"/>
         <xi:include href="../../properties-files/cataloging.xml"/>
+        <xi:include href="../../properties-files/type.xml"/>
         <xi:include href="../../properties-files/itemUrl.xml"/>
         <xi:include href="../../properties-files/fullResolution.xml"/>
         <xi:include href="../../properties-files/oclcNumber.xml"/>

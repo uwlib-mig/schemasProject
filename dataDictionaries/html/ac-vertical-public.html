@@ -26,7 +26,7 @@
                     }</style></head>
    <body>
       <h1>Architecture of the Pacific Northwest</h1>
-      <h3>Most recent revision: 2018-02-16</h3>
+      <h3>Most recent revision: 2018-06-28</h3>
       <h3>Metadata Liaison: TBD</h3>
       <h3 style="text-align:center">1. Title</h3>
       <table border="1">
@@ -147,15 +147,15 @@
             </td>
          </tr>
       </table>
-      <h3 style="text-align:center">3. Architect</h3>
+      <h3 style="text-align:center">3. Architectural Firm Name</h3>
       <table border="1">
          <tr>
             <td>Label</td>
-            <td>Architect</td>
+            <td>Architectural Firm Name</td>
          </tr>
          <tr>
             <td>URI</td>
-            <td>[baseURI-toBeDetermined]/architect</td>
+            <td>[baseURI-toBeDetermined]/architectFirm</td>
          </tr>
          <tr>
             <td>Dublin Core Equivalent</td>
@@ -184,8 +184,8 @@
          <tr>
             <td>Definition</td>
             <td>
-               <p>The name of the architect or firm who created the architectural work depicted in the
-                  image. I
+               <p>The name of the architectal firm who created the architectural work depicted in the
+                  image.
                   
                </p>
             </td>
@@ -193,29 +193,81 @@
          <tr>
             <td>Input instructions</td>
             <td>
-               <p>Input Lastname, Firstname for all personal names. Use LC Authority File for form of
-                  name, if available.
-               </p>
-               <p>The name should represent as closely as possible the creator’s name or the company’s
-                  name at the time of the creation of the image.
-               </p>
-               <p>Includes both personal and corporate names.</p>
-               <p>The name should represent as closely as possible the creator’s name or the company’s
-                  name at the time of the creation of the image. Includes both personal and corporate
-                  names.
+               <p>Input the name of the firm. Use LC Authority File for form of name, if available.</p>
+               <p>The name should represent as closely as possible the firm’s name at the time of the
+                  creation of the image.
                </p>
             </td>
          </tr>
          <tr>
             <td>Input examples</td>
             <td>
-               <p>Bebb &amp; Mendel</p>
+               <p>John Graham Company</p>
+               <p>Darmer and Farrell</p>
+            </td>
+         </tr>
+      </table>
+      <h3 style="text-align:center">4. Architects</h3>
+      <table border="1">
+         <tr>
+            <td>Label</td>
+            <td>Architects</td>
+         </tr>
+         <tr>
+            <td>URI</td>
+            <td>[baseURI-toBeDetermined]/architectsPeople</td>
+         </tr>
+         <tr>
+            <td>Dublin Core Equivalent</td>
+            <td>http://purl.org/dc/terms/creator</td>
+         </tr>
+         <tr>
+            <td>CONTENTdm searchable?</td>
+            <td>yes</td>
+         </tr>
+         <tr>
+            <td>CONTENTdm hidden?</td>
+            <td>no</td>
+         </tr>
+         <tr>
+            <td>Required by CONTENTdm?</td>
+            <td>no</td>
+         </tr>
+         <tr>
+            <td>CONTENTdm controlled Vocabulary?</td>
+            <td>no</td>
+         </tr>
+         <tr>
+            <td>Required by UW Libraries?</td>
+            <td>no</td>
+         </tr>
+         <tr>
+            <td>Definition</td>
+            <td>
+               <p>The personal name of the architect who created the architectural work depicted in
+                  the image.
+                  
+               </p>
+            </td>
+         </tr>
+         <tr>
+            <td>Input instructions</td>
+            <td>
+               <p>Input Lastname, Firstname. Use LC Authority File for form of name, if available.</p>
+               <p>The name should represent as closely as possible the creator’s name at the time of
+                  the creation of the image.
+               </p>
+            </td>
+         </tr>
+         <tr>
+            <td>Input examples</td>
+            <td>
                <p>Bebb, Charles H</p>
                <p>Mendel, Louis Leonard, 1867-1940</p>
             </td>
          </tr>
       </table>
-      <h3 style="text-align:center">4. Associate Architect</h3>
+      <h3 style="text-align:center">5. Associate Architect</h3>
       <table border="1">
          <tr>
             <td>Label</td>
@@ -276,7 +328,7 @@
             </td>
          </tr>
       </table>
-      <h3 style="text-align:center">5. Engineer</h3>
+      <h3 style="text-align:center">6. Engineer</h3>
       <table border="1">
          <tr>
             <td>Label</td>
@@ -337,7 +389,7 @@
             </td>
          </tr>
       </table>
-      <h3 style="text-align:center">6. Artist</h3>
+      <h3 style="text-align:center">7. Artist</h3>
       <table border="1">
          <tr>
             <td>Label</td>
@@ -399,7 +451,7 @@
             </td>
          </tr>
       </table>
-      <h3 style="text-align:center">7. Client</h3>
+      <h3 style="text-align:center">8. Client</h3>
       <table border="1">
          <tr>
             <td>Label</td>
@@ -457,7 +509,7 @@
             </td>
          </tr>
       </table>
-      <h3 style="text-align:center">8. Date Edtf</h3>
+      <h3 style="text-align:center">9. Date Edtf</h3>
       <table border="1">
          <tr>
             <td>Label</td>
@@ -521,7 +573,7 @@
             </td>
          </tr>
       </table>
-      <h3 style="text-align:center">9. Date</h3>
+      <h3 style="text-align:center">10. Date</h3>
       <table border="1">
          <tr>
             <td>Label</td>
@@ -592,7 +644,7 @@
             </td>
          </tr>
       </table>
-      <h3 style="text-align:center">10. Dates</h3>
+      <h3 style="text-align:center">11. Dates</h3>
       <table border="1">
          <tr>
             <td>Label</td>
@@ -649,7 +701,7 @@
             </td>
          </tr>
       </table>
-      <h3 style="text-align:center">11. Object Type</h3>
+      <h3 style="text-align:center">12. Object Type</h3>
       <table border="1">
          <tr>
             <td>Label</td>
@@ -708,7 +760,7 @@
             </td>
          </tr>
       </table>
-      <h3 style="text-align:center">12. Physical Description</h3>
+      <h3 style="text-align:center">13. Physical Description</h3>
       <table border="1">
          <tr>
             <td>Label</td>
@@ -777,7 +829,7 @@
             </td>
          </tr>
       </table>
-      <h3 style="text-align:center">13. Building Street Address</h3>
+      <h3 style="text-align:center">14. Building Street Address</h3>
       <table border="1">
          <tr>
             <td>Label</td>
@@ -835,7 +887,7 @@
             </td>
          </tr>
       </table>
-      <h3 style="text-align:center">14. Building Location</h3>
+      <h3 style="text-align:center">15. Building Location</h3>
       <table border="1">
          <tr>
             <td>Label</td>
@@ -897,7 +949,7 @@
             </td>
          </tr>
       </table>
-      <h3 style="text-align:center">15. Purpose</h3>
+      <h3 style="text-align:center">16. Purpose</h3>
       <table border="1">
          <tr>
             <td>Label</td>
@@ -955,7 +1007,7 @@
             </td>
          </tr>
       </table>
-      <h3 style="text-align:center">16. Representation</h3>
+      <h3 style="text-align:center">17. Representation</h3>
       <table border="1">
          <tr>
             <td>Label</td>
@@ -1014,7 +1066,7 @@
             </td>
          </tr>
       </table>
-      <h3 style="text-align:center">17. Notes</h3>
+      <h3 style="text-align:center">18. Notes</h3>
       <table border="1">
          <tr>
             <td>Label</td>
@@ -1080,7 +1132,7 @@
             </td>
          </tr>
       </table>
-      <h3 style="text-align:center">18. Building Style</h3>
+      <h3 style="text-align:center">19. Building Style</h3>
       <table border="1">
          <tr>
             <td>Label</td>
@@ -1140,7 +1192,7 @@
             </td>
          </tr>
       </table>
-      <h3 style="text-align:center">19. Building Notes</h3>
+      <h3 style="text-align:center">20. Building Notes</h3>
       <table border="1">
          <tr>
             <td>Label</td>
@@ -1210,7 +1262,7 @@
             </td>
          </tr>
       </table>
-      <h3 style="text-align:center">20. Subjects (LCTGM)</h3>
+      <h3 style="text-align:center">21. Subjects (LCTGM)</h3>
       <table border="1">
          <tr>
             <td>Label</td>
@@ -1264,7 +1316,7 @@
             </td>
          </tr>
       </table>
-      <h3 style="text-align:center">21. Subjects (LCSH)</h3>
+      <h3 style="text-align:center">22. Subjects (LCSH)</h3>
       <table border="1">
          <tr>
             <td>Label</td>
@@ -1323,7 +1375,7 @@
             </td>
          </tr>
       </table>
-      <h3 style="text-align:center">22. Digital Collection</h3>
+      <h3 style="text-align:center">23. Digital Collection</h3>
       <table border="1">
          <tr>
             <td>Label</td>
@@ -1377,7 +1429,7 @@
             </td>
          </tr>
       </table>
-      <h3 style="text-align:center">23. Order Number</h3>
+      <h3 style="text-align:center">24. Order Number</h3>
       <table border="1">
          <tr>
             <td>Label</td>
@@ -1432,7 +1484,7 @@
             </td>
          </tr>
       </table>
-      <h3 style="text-align:center">24. Ordering Information</h3>
+      <h3 style="text-align:center">25. Ordering Information</h3>
       <table border="1">
          <tr>
             <td>Label</td>
@@ -1490,7 +1542,7 @@
             </td>
          </tr>
       </table>
-      <h3 style="text-align:center">25. Citation Information</h3>
+      <h3 style="text-align:center">26. Citation Information</h3>
       <table border="1">
          <tr>
             <td>Label</td>
@@ -1547,7 +1599,7 @@
             </td>
          </tr>
       </table>
-      <h3 style="text-align:center">26. Negative Number</h3>
+      <h3 style="text-align:center">27. Negative Number</h3>
       <table border="1">
          <tr>
             <td>Label</td>
@@ -1608,7 +1660,7 @@
             </td>
          </tr>
       </table>
-      <h3 style="text-align:center">27. Repository</h3>
+      <h3 style="text-align:center">28. Repository</h3>
       <table border="1">
          <tr>
             <td>Label</td>
@@ -1663,7 +1715,7 @@
             </td>
          </tr>
       </table>
-      <h3 style="text-align:center">28. Repository Collection</h3>
+      <h3 style="text-align:center">29. Repository Collection</h3>
       <table border="1">
          <tr>
             <td>Label</td>
@@ -1717,7 +1769,7 @@
             </td>
          </tr>
       </table>
-      <h3 style="text-align:center">29. Repository Collection Guide</h3>
+      <h3 style="text-align:center">30. Repository Collection Guide</h3>
       <table border="1">
          <tr>
             <td>Label</td>
@@ -1770,7 +1822,7 @@
             </td>
          </tr>
       </table>
-      <h3 style="text-align:center">30. Digital Reproduction Information</h3>
+      <h3 style="text-align:center">31. Digital Reproduction Information</h3>
       <table border="1">
          <tr>
             <td>Label</td>
@@ -1825,7 +1877,7 @@
             </td>
          </tr>
       </table>
-      <h3 style="text-align:center">31. Contributor</h3>
+      <h3 style="text-align:center">32. Contributor</h3>
       <table border="1">
          <tr>
             <td>Label</td>
@@ -1883,7 +1935,7 @@
             </td>
          </tr>
       </table>
-      <h3 style="text-align:center">32. Acquisition</h3>
+      <h3 style="text-align:center">33. Acquisition</h3>
       <table border="1">
          <tr>
             <td>Label</td>
@@ -1937,7 +1989,7 @@
             </td>
          </tr>
       </table>
-      <h3 style="text-align:center">33. Rights Uri</h3>
+      <h3 style="text-align:center">34. Rights Uri</h3>
       <table border="1">
          <tr>
             <td>Label</td>
@@ -1995,7 +2047,7 @@
             </td>
          </tr>
       </table>
-      <h3 style="text-align:center">34. Restrictions</h3>
+      <h3 style="text-align:center">35. Restrictions</h3>
       <table border="1">
          <tr>
             <td>Label</td>
@@ -2050,59 +2102,6 @@
                <p>For information on permissions for use and reproductions please visit UW Libraries
                   Special Collections "Reproductions: Order Photographs &amp; Scans" page: http://www.lib.washington.edu/specialcoll/service/reproduction.html.
                </p>
-            </td>
-         </tr>
-      </table>
-      <h3 style="text-align:center">35. Type</h3>
-      <table border="1">
-         <tr>
-            <td>Label</td>
-            <td>Type</td>
-         </tr>
-         <tr>
-            <td>URI</td>
-            <td>[baseURI-toBeDetermined]/type</td>
-         </tr>
-         <tr>
-            <td>Dublin Core Equivalent</td>
-            <td>http://purl.org/dc/terms/type</td>
-         </tr>
-         <tr>
-            <td>CONTENTdm searchable?</td>
-            <td>yes</td>
-         </tr>
-         <tr>
-            <td>CONTENTdm hidden?</td>
-            <td>yes</td>
-         </tr>
-         <tr>
-            <td>Required by CONTENTdm?</td>
-            <td>no</td>
-         </tr>
-         <tr>
-            <td>CONTENTdm controlled Vocabulary?</td>
-            <td>no</td>
-         </tr>
-         <tr>
-            <td>Required by UW Libraries?</td>
-            <td>yes</td>
-         </tr>
-         <tr>
-            <td>Definition</td>
-            <td>
-               <p>Describes the nature or genre of the content of the resource.</p>
-            </td>
-         </tr>
-         <tr>
-            <td>Input instructions</td>
-            <td>
-               <p>Input a value from the Dublin Core Type Vocabulary at http://dublincore.org/documents/dcmi-terms/.</p>
-            </td>
-         </tr>
-         <tr>
-            <td>Input examples</td>
-            <td>
-               <p>SillImage</p>
             </td>
          </tr>
       </table>
@@ -2209,6 +2208,59 @@
             <td>Input examples</td>
             <td>
                <p>xyx</p>
+            </td>
+         </tr>
+      </table>
+      <h3 style="text-align:center">38. Type</h3>
+      <table border="1">
+         <tr>
+            <td>Label</td>
+            <td>Type</td>
+         </tr>
+         <tr>
+            <td>URI</td>
+            <td>[baseURI-toBeDetermined]/type</td>
+         </tr>
+         <tr>
+            <td>Dublin Core Equivalent</td>
+            <td>http://purl.org/dc/terms/type</td>
+         </tr>
+         <tr>
+            <td>CONTENTdm searchable?</td>
+            <td>yes</td>
+         </tr>
+         <tr>
+            <td>CONTENTdm hidden?</td>
+            <td>yes</td>
+         </tr>
+         <tr>
+            <td>Required by CONTENTdm?</td>
+            <td>no</td>
+         </tr>
+         <tr>
+            <td>CONTENTdm controlled Vocabulary?</td>
+            <td>no</td>
+         </tr>
+         <tr>
+            <td>Required by UW Libraries?</td>
+            <td>yes</td>
+         </tr>
+         <tr>
+            <td>Definition</td>
+            <td>
+               <p>Describes the nature or genre of the content of the resource.</p>
+            </td>
+         </tr>
+         <tr>
+            <td>Input instructions</td>
+            <td>
+               <p>Input a value from the Dublin Core Type Vocabulary at http://dublincore.org/documents/dcmi-terms/.</p>
+            </td>
+         </tr>
+         <tr>
+            <td>Input examples</td>
+            <td>
+               <p>SillImage</p>
             </td>
          </tr>
       </table>

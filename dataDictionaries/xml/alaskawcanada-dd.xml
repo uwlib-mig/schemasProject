@@ -5,7 +5,7 @@
     <ddName>Alaska, Western Canada and United States Collection</ddName>
     <ddPartOfProject></ddPartOfProject>
     <originalCreationDate>2017-12-11</originalCreationDate>
-    <latestUpdate>2017-12-12</latestUpdate>
+    <latestUpdate>2018-06-28</latestUpdate>
     <metadataLiaisons>
         <metadataLiaison>TBD</metadataLiaison>
     </metadataLiaisons>
@@ -18,8 +18,6 @@
         <xi:include href="../../properties-files/dateEdtf.xml"/>
         <xi:include href="../../properties-files/date.xml"/>
         <xi:include href="../../properties-files/dates.xml"/>
-        <xi:include href="../../properties-files/earliestDate.xml"/>
-        <xi:include href="../../properties-files/latestDate.xml"/>
         <xi:include href="../../properties-files/notes.xml"/>
         <xi:include href="../../properties-files/historicalNotes.xml"/>
         <xi:include href="../../properties-files/subjectsLctgm.xml"/>
@@ -53,10 +51,7 @@
         <xi:include href="../../properties-files/dateCreated.xml"/>
         <xi:include href="../../properties-files/dateModified.xml"/>
         <xi:include href="../../properties-files/cdmNumber.xml"/>
-        <xi:include href="../../properties-files/partOfCo.xml"/> 
-        <xi:include href="../../properties-files/standaloneDeclaration.xml"/>
         <xi:include href="../../properties-files/cdmFilename.xml"/>
-        <xi:include href="../../properties-files/coitems.xml"/>
         <xi:include href="../../properties-files/cdmFilePath.xml"/>
     </properties>
 </migDataDictionary>

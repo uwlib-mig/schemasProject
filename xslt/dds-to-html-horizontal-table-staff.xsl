@@ -8,7 +8,7 @@
     <xsl:output method="html" indent="yes" use-character-maps="angleBrackets"/>
 
     <xsl:character-map name="angleBrackets">
-        <xsl:output-character character="&lt;" string="&lt;"/>
+        <xsl:output-character character="&lt;" string="&lt;"/> 
         <xsl:output-character character="&gt;" string="&gt;"/>
     </xsl:character-map>
 

@@ -10,8 +10,8 @@
          3 added attribute to /property/xsd: @level
          -->
 
-    <xs:import namespace="http://www.w3.org/XML/1998/namespace"
-        schemaLocation="http://www.w3.org/2001/03/xml.xsd"/>
+        <xs:import namespace="http://www.w3.org/XML/1998/namespace"
+        schemaLocation="http://www.w3.org/2001/03/xml.xsd"/> 
 
     <xs:import namespace="http://www.w3.org/2001/XMLSchema"
         schemaLocation="https://www.w3.org/2001/XMLSchema.xsd"/>
@@ -203,27 +203,96 @@
 
     <xs:complexType name="rdfType">
         <xs:sequence>
-            <xs:element name="type" minOccurs="0" maxOccurs="unbounded" type="xs:anyURI"/><!-- this is required; change minOccurs -->
-            <xs:element name="isDefinedBy" minOccurs="0" maxOccurs="unbounded" type="xs:anyURI"/>
-            <xs:element name="seeAlso" minOccurs="0" maxOccurs="unbounded" type="xs:anyURI"/>
+            <xs:element name="type" minOccurs="1" maxOccurs="unbounded">
+                <xs:simpleType>
+                    <xs:restriction base="xs:anyURI">
+                        <xs:pattern value="(http|https):\/\/[\w\W]+"></xs:pattern>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="isDefinedBy" minOccurs="0" maxOccurs="unbounded">
+                <xs:simpleType>
+                    <xs:restriction base="xs:anyURI">
+                        <xs:pattern value="(http|https):\/\/[\w\W]+"></xs:pattern>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="seeAlso" minOccurs="0" maxOccurs="unbounded">
+                <xs:simpleType>
+                    <xs:restriction base="xs:anyURI">
+                        <xs:pattern value="(http|https):\/\/[\w\W]+"></xs:pattern>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
             <xs:element name="externalProperty" minOccurs="0" maxOccurs="unbounded" type="externalPropertyType"/>
             <xs:element name="localNote" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
-            <xs:element name="applicationProfile" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
-            <xs:element name="sameAs"/><!-- this element should be deleted; not part of the model; needed for historical validation -->
         </xs:sequence>
     </xs:complexType>
 
     
     <xs:complexType name="externalPropertyType">
         <xs:sequence>
-            <xs:element name="uri" type="xs:anyURI"/>
-            <xs:element name="relation" type="xs:anyURI"/>
-            <!-- The above is the relation of the current external property to the local property -->
-            <xs:element name="domain" minOccurs="0" type="xs:anyURI"/>
-            <xs:element name="range" minOccurs="0" type="xs:anyURI"></xs:element>
-            <xs:element name="equivalentProperty" minOccurs="0" maxOccurs="unbounded" type="xs:anyURI"/>
-            <xs:element name="sameAs" minOccurs="0" maxOccurs="unbounded" type="xs:anyURI"/>
-            <xs:element name="inverseOf" minOccurs="0" maxOccurs="unbounded" type="xs:anyURI"/>
+            <xs:element name="uri">
+                <xs:simpleType>
+                    <xs:restriction base="xs:anyURI">
+                        <xs:pattern value="(http|https):\/\/[\w\W]+"></xs:pattern>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="relation">
+                <xs:simpleType>
+                    <xs:restriction base="xs:anyURI">
+                        <xs:pattern value="(http|https):\/\/[\w\W]+"></xs:pattern>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <!-- Above: "relation" as a pseudo-triple: subject=local property, predicate=value of "relation," object=external property. -->
+            <xs:element name="domain">
+                <xs:simpleType>
+                   <xs:union>
+                       <xs:simpleType>
+                           <xs:restriction base="xs:anyURI">
+                               <xs:pattern value="(http|https):\/\/[\w\W]+"></xs:pattern>
+                           </xs:restriction>
+                       </xs:simpleType>
+                       <xs:simpleType>
+                           <xs:restriction base="xs:string">
+                               <xs:enumeration value="undefined"/>
+                           </xs:restriction>
+                       </xs:simpleType>
+                   </xs:union> 
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="range">
+                <xs:simpleType>
+                    <xs:union>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:anyURI">
+                                <xs:pattern value="(http|https):\/\/[\w\W]+"></xs:pattern>
+                            </xs:restriction>
+                        </xs:simpleType>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:enumeration value="undefined"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:union> 
+                </xs:simpleType>
+            </xs:element> 
+            <xs:element name="equivalentProperty" minOccurs="0" maxOccurs="unbounded">
+                <xs:simpleType>
+                    <xs:restriction base="xs:anyURI">
+                        <xs:pattern value="(http|https):\/\/[\w\W]+"></xs:pattern>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="inverseOf" minOccurs="0" maxOccurs="unbounded">
+                <xs:simpleType>
+                    <xs:restriction base="xs:anyURI">
+                        <xs:pattern value="(http|https):\/\/[\w\W]+"></xs:pattern>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
             <!-- other relations of the external property can be added as needed -->
         </xs:sequence>
     </xs:complexType>
