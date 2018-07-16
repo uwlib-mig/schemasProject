@@ -144,7 +144,7 @@
       </typeInfo>
    </xsd>
    <rdf>
-      <type>htt://www.w3.org/2002/07/owl#DatatypeProperty</type>
+      <type>http://www.w3.org/2002/07/owl#DatatypeProperty</type>
       <isDefinedBy>
          https://github.com/UniverityOfWashingtonLibrariesSchemas/schemasProject/blob/master/properties-files/title.xml</isDefinedBy>
       <externalProperty>
@@ -156,7 +156,7 @@
       <externalProperty>
          <uri>http://purl.org/vra/name</uri>
          <relation>https://www.w3.org/2000/01/rdf-schema#subPropertyOf</relation>
-         <domain>http://www.w3.org/2002/07/owl#Thing</domain>
+         <domain>undefined</domain>
          <range>http://www.w3.org/2001/XMLSchema#string</range>
          <equivalentProperty>http://schema.org/name</equivalentProperty>
       </externalProperty>
