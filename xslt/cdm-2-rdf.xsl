@@ -320,20 +320,31 @@
     </xsl:template>
     <xsl:template match="SubjectsLCSH">
         <xsl:param name="lcshID"/>
-        <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{../cdmnumber}">
-            <dct:subject rdf:nodeID="{$lcshID}"/>
-        </rdf:Description>
-        <rdf:Description rdf:nodeID="{$lcshID}">
-            <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        </rdf:Description>
-        <rdf:Description rdf:nodeID="{$lcshID}">
-            <skos:inScheme rdf:resource="http://id.loc.gov/authorities/subjects"/>
-        </rdf:Description>
-        <rdf:Description rdf:nodeID="{$lcshID}">
-            <dpla:providedLabel>
-                <xsl:value-of select="."/>
-            </dpla:providedLabel>
-        </rdf:Description>
+        <xsl:choose>
+            <xsl:when test="contains(., '; ')">
+                <xsl:call-template name="SubjectsLcsh">
+                    <xsl:with-param name="lcshID" select="concat('S2', generate-id())"/>
+                    <xsl:with-param name="CdmNumber" select="../cdmnumber"/>
+                    <xsl:with-param name="Tokens" select="tokenize(., '; ')"/>
+                </xsl:call-template>
+            </xsl:when>
+            <xsl:otherwise>
+                <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{../cdmnumber}">
+                    <dct:subject rdf:nodeID="{$lcshID}"/>
+                </rdf:Description>
+                <rdf:Description rdf:nodeID="{$lcshID}">
+                    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+                </rdf:Description>
+                <rdf:Description rdf:nodeID="{$lcshID}">
+                    <skos:inScheme rdf:resource="http://id.loc.gov/authorities/subjects"/>
+                </rdf:Description>
+                <rdf:Description rdf:nodeID="{$lcshID}">
+                    <dpla:providedLabel>
+                        <xsl:value-of select="."/>
+                    </dpla:providedLabel>
+                </rdf:Description>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     <xsl:template match="LocationDepicted">
         <xsl:param name="locID"/>
@@ -406,9 +417,10 @@
     </xsl:template>
     <xsl:template match="Type">
         <!-- this template is incomplete; only one DCMI type in enumerated -->
+        <!-- BMR: All 1425 records in the AYP metadata have Stillimage as the Type value -->
         <xsl:choose>
             <xsl:when
-                test=". = 'StillImage' or . = 'Stillimage' or . = 'stillimage' or . = 'still image' or . = 'Still Image'">
+                test=". = 'StillImage' or . = 'Stillimage' or . = 'stillImage' or . = 'stillimage' or . = 'still image' or . = 'Still Image' or . = 'Still image' or . = 'still Image'">
                 <dct:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
             </xsl:when>
             <xsl:otherwise>UNACCOUNTED-FOR DCMI TYPE!</xsl:otherwise>
@@ -421,7 +433,7 @@
         <edm:isShownAt rdf:resource="{.}"/>
     </xsl:template>
 
-    <!-- Named template for Notes -->
+    <!-- Named templates -->
     <xsl:template name="Notes">
         <xsl:param name="Tokens"/>
         <xsl:param name="CdmNumber"/>
@@ -433,5 +445,26 @@
             </rdf:Description>
         </xsl:for-each>
     </xsl:template>
-    
+    <xsl:template name="SubjectsLcsh">
+        <xsl:param name="lcshID"/>
+        <xsl:param name="CdmNumber"/>
+        <xsl:param name="Tokens"/>
+        <xsl:for-each select="$Tokens">
+            <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{$CdmNumber}">
+                <dct:subject rdf:nodeID="{$lcshID}"/>
+            </rdf:Description>
+            <rdf:Description rdf:nodeID="{$lcshID}">
+                <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+            </rdf:Description>
+            <rdf:Description rdf:nodeID="{$lcshID}">
+                <skos:inScheme rdf:resource="http://id.loc.gov/authorities/subjects"/>
+            </rdf:Description>
+            <rdf:Description rdf:nodeID="{$lcshID}">
+                <dpla:providedLabel>
+                    <xsl:value-of select="."/>
+                </dpla:providedLabel>
+            </rdf:Description>
+        </xsl:for-each>
+    </xsl:template>
+
 </xsl:stylesheet>
