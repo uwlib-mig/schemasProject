@@ -194,10 +194,10 @@
         <xsl:apply-templates select="DateEdtf">
             <xsl:with-param name="dateID" select="concat('D', generate-id())"/>
         </xsl:apply-templates>
-        <xsl:apply-templates select="SubjectsLCTGM">
+        <xsl:apply-templates select="SubjectsLctgm">
             <xsl:with-param name="lctgmID" select="concat('S1', generate-id())"/>
         </xsl:apply-templates>
-        <xsl:apply-templates select="SubjectsLCSH">
+        <xsl:apply-templates select="SubjectsLcsh">
             <xsl:with-param name="lcshID" select="concat('S2', generate-id())"/>
         </xsl:apply-templates>
         <xsl:apply-templates select="LocationDepicted">
@@ -301,7 +301,7 @@
             </xsl:choose>
         </xsl:if>
     </xsl:template>
-    <xsl:template match="SubjectsLCTGM">
+    <xsl:template match="SubjectsLctgm">
         <xsl:param name="lctgmID"/>
         <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{../cdmnumber}">
             <dct:subject rdf:nodeID="{$lctgmID}"/>
@@ -318,22 +318,34 @@
             </dpla:providedLabel>
         </rdf:Description>
     </xsl:template>
-    <xsl:template match="SubjectsLCSH">
+    <xsl:template match="SubjectsLcsh">
         <xsl:param name="lcshID"/>
-        <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{../cdmnumber}">
-            <dct:subject rdf:nodeID="{$lcshID}"/>
-        </rdf:Description>
-        <rdf:Description rdf:nodeID="{$lcshID}">
-            <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        </rdf:Description>
-        <rdf:Description rdf:nodeID="{$lcshID}">
-            <skos:inScheme rdf:resource="http://id.loc.gov/authorities/subjects"/>
-        </rdf:Description>
-        <rdf:Description rdf:nodeID="{$lcshID}">
-            <dpla:providedLabel>
-                <xsl:value-of select="."/>
-            </dpla:providedLabel>
-        </rdf:Description>
+        <xsl:choose>
+            <xsl:when test="contains(., '; ')">
+                <xsl:call-template name="SubjectsLcsh">
+                    <xsl:with-param name="Tokens" select="tokenize(., '; ')"/>
+                    <xsl:with-param name="CdmNumber" select="../cdmnumber"/>
+                    <xsl:with-param name="lcshID" select="concat('S2', generate-id())"/>
+                </xsl:call-template>
+            </xsl:when>
+            <xsl:otherwise>
+                <rdf:Description
+                    rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{../cdmnumber}">
+                    <dct:subject rdf:nodeID="{$lcshID}"/>
+                </rdf:Description>
+                <rdf:Description rdf:nodeID="{$lcshID}">
+                    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+                </rdf:Description>
+                <rdf:Description rdf:nodeID="{$lcshID}">
+                    <skos:inScheme rdf:resource="http://id.loc.gov/authorities/subjects"/>
+                </rdf:Description>
+                <rdf:Description rdf:nodeID="{$lcshID}">
+                    <dpla:providedLabel>
+                        <xsl:value-of select="."/>
+                    </dpla:providedLabel>
+                </rdf:Description>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     <xsl:template match="LocationDepicted">
         <xsl:param name="locID"/>
@@ -421,7 +433,7 @@
         <edm:isShownAt rdf:resource="{.}"/>
     </xsl:template>
 
-    <!-- Named template for Notes -->
+    <!-- Named templateses -->
     <xsl:template name="Notes">
         <xsl:param name="Tokens"/>
         <xsl:param name="CdmNumber"/>
@@ -430,6 +442,28 @@
                 <dct:description>
                     <xsl:value-of select="."/>
                 </dct:description>
+            </rdf:Description>
+        </xsl:for-each>
+    </xsl:template>
+    <xsl:template name="SubjectsLcsh">
+        <xsl:param name="Tokens"/>
+        <xsl:param name="CdmNumber"/>
+        <xsl:param name="lcshID"/>
+        <xsl:for-each select="$Tokens">
+            <rdf:Description
+                rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{$CdmNumber}">
+                <dct:subject rdf:nodeID="{$lcshID}"/>
+            </rdf:Description>
+            <rdf:Description rdf:nodeID="{$lcshID}">
+                <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+            </rdf:Description>
+            <rdf:Description rdf:nodeID="{$lcshID}">
+                <skos:inScheme rdf:resource="http://id.loc.gov/authorities/subjects"/>
+            </rdf:Description>
+            <rdf:Description rdf:nodeID="{$lcshID}">
+                <dpla:providedLabel>
+                    <xsl:value-of select="."/>
+                </dpla:providedLabel>
             </rdf:Description>
         </xsl:for-each>
     </xsl:template>
