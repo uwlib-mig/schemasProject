@@ -165,9 +165,7 @@
         <xsl:apply-templates select="NegativeNumber"/>
         <xsl:apply-templates select="ObjectType"/>
         <xsl:apply-templates select="PhysicalDescription"/>
-        <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{cdmnumber}">
-            <xsl:apply-templates select="PhotographersReferenceNumber"/>
-        </rdf:Description>
+        <xsl:apply-templates select="PhotographersReferenceNumber"/>
         <!-- below require nodes with locally minted IRIs -->
         <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{cdmnumber}">
             <xsl:apply-templates select="Photographer"/>
@@ -415,9 +413,13 @@
         </xsl:if>
     </xsl:template>
     <xsl:template match="PhotographersReferenceNumber">
-        <dct:identifier>
-            <xsl:value-of select="."/>
-        </dct:identifier>
+        <xsl:if test="text()">
+            <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{cdmnumber}">
+                <dct:identifier>
+                    <xsl:value-of select="."/>
+                </dct:identifier>
+            </rdf:Description>
+        </xsl:if>
     </xsl:template>
     <xsl:template match="RightsUri">
         <edm:rights rdf:resource="{.}"/>
@@ -439,7 +441,7 @@
         <edm:isShownAt rdf:resource="{.}"/>
     </xsl:template>
 
-    <!-- Named templateses -->
+    <!-- Named templates -->
     <xsl:template name="Notes">
         <xsl:param name="Tokens"/>
         <xsl:param name="CdmNumber"/>
