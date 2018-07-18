@@ -162,13 +162,9 @@
             <xsl:apply-templates select="Title"/>
         </rdf:Description>
         <xsl:apply-templates select="Notes"/>
-        <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{cdmnumber}">
-            <xsl:apply-templates select="NegativeNumber"/>
-        </rdf:Description>
+        <xsl:apply-templates select="NegativeNumber"/>
         <xsl:apply-templates select="ObjectType"/>
-        <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{cdmnumber}">
-            <xsl:apply-templates select="PhysicalDescription"/>
-        </rdf:Description>
+        <xsl:apply-templates select="PhysicalDescription"/>
         <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{cdmnumber}">
             <xsl:apply-templates select="PhotographersReferenceNumber"/>
         </rdf:Description>
@@ -182,9 +178,7 @@
         <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{cdmnumber}">
             <xsl:apply-templates select="RepositoryCollection"/>
         </rdf:Description>
-        <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{cdmnumber}">
-            <xsl:apply-templates select="StudioName"/>
-        </rdf:Description>
+        <xsl:apply-templates select="StudioName"/>
         <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.3#cdm{cdmnumber}">
             <xsl:apply-templates select="Type"/>
         </rdf:Description>
@@ -372,9 +366,13 @@
         <edm:rights rdf:resource="https://doi.org/10.6069/uwlib.55.A.3.5#orderingInformation"/>
     </xsl:template>
     <xsl:template match="NegativeNumber">
-        <dc:identifier>
-            <xsl:value-of select="."/>
-        </dc:identifier>
+        <xsl:if test="text()">
+            <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{cdmnumber}">
+                <dc:identifier>
+                    <xsl:value-of select="."/>
+                </dc:identifier>
+            </rdf:Description>
+        </xsl:if>
     </xsl:template>
     <xsl:template match="Repository" mode="sr">
         <dct:rightsHolder
@@ -387,16 +385,20 @@
         />
     </xsl:template>
     <xsl:template match="ObjectType">
-            <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{cdmnumber}">
-                <dc:type>
-                    <xsl:value-of select="translate(., 'image', 'Image')"/>
-                </dc:type>
-            </rdf:Description>
+        <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{cdmnumber}">
+            <dc:type>
+                <xsl:value-of select="translate(., 'image', 'Image')"/>
+            </dc:type>
+        </rdf:Description>
     </xsl:template>
     <xsl:template match="PhysicalDescription">
-        <dct:extent>
-            <xsl:value-of select="."/>
-        </dct:extent>
+        <xsl:if test="text()">
+            <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{cdmnumber}">
+                <dct:extent>
+                    <xsl:value-of select="."/>
+                </dct:extent>
+            </rdf:Description>
+        </xsl:if>
     </xsl:template>
     <xsl:template match="DigitalReproductionInformation">
         <dct:description>
@@ -404,9 +406,13 @@
         </dct:description>
     </xsl:template>
     <xsl:template match="StudioName">
-        <dct:contributor
-            rdf:resource="{concat('https:/doi.org/10.6069/uwlib.55.A.3.6#',translate(.,' '',''.',''))}"
-        />
+        <xsl:if test="text()">
+            <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{cdmnumber}">
+                <dct:contributor
+                    rdf:resource="{concat('https:/doi.org/10.6069/uwlib.55.A.3.6#',translate(.,' '',''.',''))}"
+                />
+            </rdf:Description>
+        </xsl:if>
     </xsl:template>
     <xsl:template match="PhotographersReferenceNumber">
         <dct:identifier>
