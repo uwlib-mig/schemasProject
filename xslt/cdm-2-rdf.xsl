@@ -165,9 +165,7 @@
         <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{cdmnumber}">
             <xsl:apply-templates select="NegativeNumber"/>
         </rdf:Description>
-        <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{cdmnumber}">
-            <xsl:apply-templates select="ObjectType"/>
-        </rdf:Description>
+        <xsl:apply-templates select="ObjectType"/>
         <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{cdmnumber}">
             <xsl:apply-templates select="PhysicalDescription"/>
         </rdf:Description>
@@ -389,9 +387,11 @@
         />
     </xsl:template>
     <xsl:template match="ObjectType">
-        <dc:type>
-            <xsl:value-of select="."/>
-        </dc:type>
+            <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{cdmnumber}">
+                <dc:type>
+                    <xsl:value-of select="translate(., 'image', 'Image')"/>
+                </dc:type>
+            </rdf:Description>
     </xsl:template>
     <xsl:template match="PhysicalDescription">
         <dct:extent>
@@ -450,8 +450,7 @@
         <xsl:param name="CdmNumber"/>
         <xsl:param name="lcshID"/>
         <xsl:for-each select="$Tokens">
-            <rdf:Description
-                rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{$CdmNumber}">
+            <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{$CdmNumber}">
                 <dct:subject rdf:nodeID="{$lcshID}"/>
             </rdf:Description>
             <rdf:Description rdf:nodeID="{$lcshID}">
@@ -467,5 +466,5 @@
             </rdf:Description>
         </xsl:for-each>
     </xsl:template>
-    
+
 </xsl:stylesheet>
