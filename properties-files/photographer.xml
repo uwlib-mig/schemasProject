@@ -48,9 +48,25 @@
       <typeInfo level="item">
          <empty/>
       </typeInfo>
-   </xsd><rdf>
-      <sameAs/>
-   </rdf><history>
+   </xsd>
+   <rdf>
+      <cdmRdf>
+         <dpla>
+            <object>uri</object>
+            <node>
+               <triple>
+                  <p>rdf:type</p>
+                  <o>http://www.europeana.eu/schemas/edm/Agent</o>
+               </triple>
+               <triple>
+                  <p>dpla:providedLabel</p>
+                  <o>value-of</o>
+               </triple>
+            </node>
+         </dpla>
+      </cdmRdf>
+   </rdf>
+   <history>
       <dateCreated>
          <range>
             <start>2000-01-01</start>
