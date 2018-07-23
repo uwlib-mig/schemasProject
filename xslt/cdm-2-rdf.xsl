@@ -195,6 +195,9 @@
     <xsl:template match="record" mode="wr">
         <!-- below require simple outputs of literals or URIs already in XML metadata or in this transform -->
         <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.3#cdm{cdmnumber}">
+            <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/WebResource"/>
+        </rdf:Description>
+        <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.3#cdm{cdmnumber}">
             <xsl:apply-templates select="Title"/>
         </rdf:Description>
         <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.3#cdm{cdmnumber}">
@@ -223,6 +226,9 @@
     <!-- sub-template for aggregation file -->
     <xsl:template match="record" mode="agg">
         <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.2#cdm{cdmnumber}">
+            <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
+        </rdf:Description>
+        <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.2#cdm{cdmnumber}">
             <xsl:apply-templates select="Repository" mode="agg"/>
         </rdf:Description>
         <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.2#cdm{cdmnumber}">
@@ -230,6 +236,9 @@
         </rdf:Description>
         <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.2#cdm{cdmnumber}">
             <xsl:apply-templates select="ItemURL"/>
+        </rdf:Description>
+        <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.2#cdm{cdmnumber}">
+            <xsl:apply-templates select="OrderingInformation"/>
         </rdf:Description>
     </xsl:template>
 
@@ -313,7 +322,6 @@
                 </rdf:Description>
             </xsl:otherwise>
         </xsl:choose>
-        
     </xsl:template>
     <xsl:template match="SubjectsLcsh">
         <xsl:choose>
@@ -431,7 +439,7 @@
         <edm:rights rdf:resource="{.}"/>
     </xsl:template>
     <xsl:template match="Type">
-        <!-- this template is incomplete; only one DCMI type in enumerated -->
+        <!-- this template is incomplete; only one DCMI type is enumerated -->
         <xsl:choose>
             <xsl:when
                 test=". = 'StillImage' or . = 'Stillimage' or . = 'stillimage' or . = 'still image' or . = 'Still Image'">
