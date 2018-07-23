@@ -6,6 +6,8 @@
     xmlns:edm="http://www.europeana.eu/schemas/edm/" xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns:foaf="http://xmlns.com/foaf/0.1/">
 
+<!-- Testing here -->
+
     <xsl:output indent="yes"/>
 
     <!-- template for result documents -->
