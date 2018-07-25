@@ -240,7 +240,7 @@
         </rdf:Description>
     </xsl:template>
 
-    <!-- below are templates by CONTENTdm element -->
+    <!-- templates by CONTENTdm element -->
     <xsl:template match="Title">
         <dct:title>
             <xsl:value-of select="."/>
@@ -362,10 +362,10 @@
         <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{../cdmnumber}">
             <dct:spatial rdf:nodeID="{$locID}"/>
         </rdf:Description>
-        <rdf:Description rdf:about="{$locID}">
+        <rdf:Description rdf:nodeID="{$locID}">
             <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Place"/>
         </rdf:Description>
-        <rdf:Description rdf:about="{$locID}">
+        <rdf:Description rdf:nodeID="{$locID}">
             <dpla:providedLabel>
                 <xsl:value-of select="."/>
             </dpla:providedLabel>
@@ -385,7 +385,7 @@
     </xsl:template>
     <xsl:template match="NegativeNumber">
         <xsl:if test="text()">
-            <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{cdmnumber}">
+            <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{../cdmnumber}">
                 <dct:identifier>
                     <xsl:value-of select="."/>
                 </dct:identifier>
@@ -403,7 +403,7 @@
         />
     </xsl:template>
     <xsl:template match="ObjectType">
-        <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{cdmnumber}">
+        <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{../cdmnumber}">
             <dc:type>
                 <xsl:value-of select="translate(., 'image', 'Image')"/>
             </dc:type>
@@ -445,7 +445,7 @@
         <edm:rights rdf:resource="{.}"/>
     </xsl:template>
     <xsl:template match="Type">
-        <!-- Only one DCMI type is enumerated in AYP metadata, this template may need to be expanded for use with metadata from other collections -->
+        <!-- only one DCMI type is enumerated in AYP metadata, this template may need to be expanded for use with metadata from other collections -->
         <xsl:choose>
             <xsl:when
                 test=". = 'StillImage' or . = 'Stillimage' or . = 'stillimage' or . = 'still image' or . = 'Still Image'">
@@ -461,7 +461,7 @@
         <edm:isShownAt rdf:resource="{.}"/>
     </xsl:template>
 
-    <!-- Named templates -->
+    <!-- named templates -->
     <xsl:template name="Notes">
         <xsl:param name="Tokens"/>
         <xsl:param name="CdmNumber"/>
