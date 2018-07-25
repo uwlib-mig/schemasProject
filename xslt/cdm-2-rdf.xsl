@@ -6,8 +6,6 @@
     xmlns:edm="http://www.europeana.eu/schemas/edm/" xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns:foaf="http://xmlns.com/foaf/0.1/">
 
-<!-- Testing here -->
-
     <xsl:output indent="yes"/>
 
     <!-- template for result documents -->
@@ -61,7 +59,7 @@
 
     <!-- template for agent file -->
     <xsl:template match="metadata" mode="agent">
-        <xsl:for-each-group select="record" group-by="Photographer">
+        <xsl:for-each-group select="record" group-by="Photographer[text() != '']">
             <rdf:Description
                 rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(),' '',''.',''))}">
                 <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
@@ -73,7 +71,7 @@
                 </dpla:providedLabel>
             </rdf:Description>
         </xsl:for-each-group>
-        <xsl:for-each-group select="record" group-by="Repository">
+        <xsl:for-each-group select="record" group-by="Repository[text() != '']">
             <rdf:Description
                 rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(),' '',''.',''))}">
                 <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
@@ -85,23 +83,23 @@
                 </dpla:providedLabel>
             </rdf:Description>
         </xsl:for-each-group>
-        <xsl:for-each-group select="record" group-by="StudioName">
-            <rdf:Description
-                rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(),' '',''.',''))}">
-                <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
-            </rdf:Description>
-            <rdf:Description
-                rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(),' '',''.',''))}">
-                <dpla:providedLabel>
-                    <xsl:value-of select="current-grouping-key()"/>
-                </dpla:providedLabel>
-            </rdf:Description>
-            <rdf:Description
-                rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(),' '',''.',''))}">
-                <foaf:basedNear>
-                    <xsl:value-of select="StudioLocation"/>
-                </foaf:basedNear>
-            </rdf:Description>
+        <xsl:for-each-group select="record" group-by="StudioName[text() != '']">
+                <rdf:Description
+                    rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(),' '',''.',''))}">
+                    <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+                </rdf:Description>
+                <rdf:Description
+                    rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(),' '',''.',''))}">
+                    <dpla:providedLabel>
+                        <xsl:value-of select="current-grouping-key()"/>
+                    </dpla:providedLabel>
+                </rdf:Description>
+                <rdf:Description
+                    rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(),' '',''.',''))}">
+                    <foaf:basedNear>
+                        <xsl:value-of select="StudioLocation"/>
+                    </foaf:basedNear>
+                </rdf:Description>
         </xsl:for-each-group>
     </xsl:template>
 
@@ -308,7 +306,8 @@
             </xsl:when>
             <xsl:otherwise>
                 <xsl:variable name="lctgmID" select="concat('S1', generate-id())"/>
-                <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{../cdmnumber}">
+                <rdf:Description
+                    rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{../cdmnumber}">
                     <dct:subject rdf:nodeID="{$lctgmID}"/>
                 </rdf:Description>
                 <rdf:Description rdf:nodeID="{$lctgmID}">
