@@ -334,6 +334,7 @@
         </xsl:if>
     </xsl:template>
     <xsl:template match="SubjectsLcsh">
+        <xsl:if test="text()">
         <xsl:choose>
             <xsl:when test="contains(., ';')">
                 <xsl:call-template name="SubjectsLcsh">
@@ -360,6 +361,7 @@
                 </rdf:Description>
             </xsl:otherwise>
         </xsl:choose>
+        </xsl:if>
     </xsl:template>
     <xsl:template match="LocationDepicted">
         <xsl:param name="locID"/>
