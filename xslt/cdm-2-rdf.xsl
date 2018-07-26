@@ -59,7 +59,7 @@
 
     <!-- template for agent file -->
     <xsl:template match="metadata" mode="agent">
-        <xsl:for-each-group select="record" group-by="Photographer[text() != '']">
+        <xsl:for-each-group select="record" group-by="Photographer[text() != '' and text() != 'Unidentified' and text() != 'unidentified']">
             <rdf:Description
                 rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(),' '',''.',''))}">
                 <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
@@ -93,6 +93,10 @@
                 <dpla:providedLabel>
                     <xsl:value-of select="current-grouping-key()"/>
                 </dpla:providedLabel>
+            </rdf:Description>
+            <rdf:Description
+                rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(),' '',''.',''))}">
+                <dct:description>Studio</dct:description>
             </rdf:Description>
             <rdf:Description
                 rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(),' '',''.',''))}">
@@ -247,7 +251,7 @@
         </dct:title>
     </xsl:template>
     <xsl:template match="Photographer">
-        <xsl:if test="text()">
+        <xsl:if test="(text()) and (. != 'Unidentified') and (. != 'unidentified')">
             <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{cdmnumber}">
                 <rel:pht
                     rdf:resource="{concat('https:/doi.org/10.6069/uwlib.55.A.3.6#',translate(.,' '',''.',''))}"
