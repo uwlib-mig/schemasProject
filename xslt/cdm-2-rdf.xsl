@@ -59,7 +59,7 @@
 
     <!-- template for agent file -->
     <xsl:template match="metadata" mode="agent">
-        <xsl:for-each-group select="record" group-by="Photographer">
+        <xsl:for-each-group select="record" group-by="Photographer[text() != '' and text() != 'Unidentified' and text() != 'unidentified']">
             <rdf:Description
                 rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(),' '',''.',''))}">
                 <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
@@ -71,7 +71,7 @@
                 </dpla:providedLabel>
             </rdf:Description>
         </xsl:for-each-group>
-        <xsl:for-each-group select="record" group-by="Repository">
+        <xsl:for-each-group select="record" group-by="Repository[text() != '']">
             <rdf:Description
                 rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(),' '',''.',''))}">
                 <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
@@ -83,7 +83,7 @@
                 </dpla:providedLabel>
             </rdf:Description>
         </xsl:for-each-group>
-        <xsl:for-each-group select="record" group-by="StudioName">
+        <xsl:for-each-group select="record" group-by="StudioName[text() != '']">
             <rdf:Description
                 rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(),' '',''.',''))}">
                 <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
@@ -96,9 +96,13 @@
             </rdf:Description>
             <rdf:Description
                 rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(),' '',''.',''))}">
-                <foaf:basedNear>
+                <dct:description>Studio</dct:description>
+            </rdf:Description>
+            <rdf:Description
+                rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(),' '',''.',''))}">
+                <foaf:based_near>
                     <xsl:value-of select="StudioLocation"/>
-                </foaf:basedNear>
+                </foaf:based_near>
             </rdf:Description>
         </xsl:for-each-group>
     </xsl:template>
@@ -167,9 +171,7 @@
         <xsl:apply-templates select="PhysicalDescription"/>
         <xsl:apply-templates select="PhotographersReferenceNumber"/>
         <!-- below require nodes with locally minted IRIs -->
-        <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{cdmnumber}">
-            <xsl:apply-templates select="Photographer"/>
-        </rdf:Description>
+        <xsl:apply-templates select="Photographer"/>
         <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{cdmnumber}">
             <xsl:apply-templates select="Repository" mode="sr"/>
         </rdf:Description>
@@ -195,6 +197,9 @@
     <xsl:template match="record" mode="wr">
         <!-- below require simple outputs of literals or URIs already in XML metadata or in this transform -->
         <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.3#cdm{cdmnumber}">
+            <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/WebResource"/>
+        </rdf:Description>
+        <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.3#cdm{cdmnumber}">
             <xsl:apply-templates select="Title"/>
         </rdf:Description>
         <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.3#cdm{cdmnumber}">
@@ -216,12 +221,15 @@
         <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.3#cdm{cdmnumber}">
             <xsl:apply-templates select="Restrictions"/>
         </rdf:Description>
-        <!-- below require blank nodes -->
+        <!-- Are any blank nodes required here? -->
 
     </xsl:template>
 
     <!-- sub-template for aggregation file -->
     <xsl:template match="record" mode="agg">
+        <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.2#cdm{cdmnumber}">
+            <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
+        </rdf:Description>
         <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.2#cdm{cdmnumber}">
             <xsl:apply-templates select="Repository" mode="agg"/>
         </rdf:Description>
@@ -231,18 +239,25 @@
         <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.2#cdm{cdmnumber}">
             <xsl:apply-templates select="ItemURL"/>
         </rdf:Description>
+        <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.2#cdm{cdmnumber}">
+            <xsl:apply-templates select="OrderingInformation"/>
+        </rdf:Description>
     </xsl:template>
 
-    <!-- below are templates by property -->
+    <!-- templates by CONTENTdm element -->
     <xsl:template match="Title">
         <dct:title>
             <xsl:value-of select="."/>
         </dct:title>
     </xsl:template>
     <xsl:template match="Photographer">
-        <rel:pht
-            rdf:resource="{concat('https:/doi.org/10.6069/uwlib.55.A.3.6#',translate(.,' '',''.',''))}"
-        />
+        <xsl:if test="(text()) and (. != 'Unidentified') and (. != 'unidentified')">
+            <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{cdmnumber}">
+                <rel:pht
+                    rdf:resource="{concat('https:/doi.org/10.6069/uwlib.55.A.3.6#',translate(.,' '',''.',''))}"
+                />
+            </rdf:Description>
+        </xsl:if>
     </xsl:template>
     <xsl:template match="RepositoryCollection">
         <dct:isPartOf
@@ -288,34 +303,38 @@
         </xsl:if>
     </xsl:template>
     <xsl:template match="SubjectsLctgm">
-        <xsl:choose>
-            <xsl:when test="contains(., ';')">
-                <xsl:call-template name="SubjectsLctgm">
-                    <xsl:with-param name="Tokens" select="tokenize(., ';')"/>
-                    <xsl:with-param name="CdmNumber" select="../cdmnumber"/>
-                </xsl:call-template>
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:variable name="lctgmID" select="concat('S1', generate-id())"/>
-                <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{../cdmnumber}">
-                    <dct:subject rdf:nodeID="{$lctgmID}"/>
-                </rdf:Description>
-                <rdf:Description rdf:nodeID="{$lctgmID}">
-                    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-                </rdf:Description>
-                <rdf:Description rdf:nodeID="{$lctgmID}">
-                    <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/graphicMaterials"/>
-                </rdf:Description>
-                <rdf:Description rdf:nodeID="{$lctgmID}">
-                    <dpla:providedLabel>
-                        <xsl:value-of select="."/>
-                    </dpla:providedLabel>
-                </rdf:Description>
-            </xsl:otherwise>
-        </xsl:choose>
-        
+        <xsl:if test="text()">
+            <xsl:choose>
+                <xsl:when test="contains(., ';')">
+                    <xsl:call-template name="SubjectsLctgm">
+                        <xsl:with-param name="Tokens" select="tokenize(., ';')"/>
+                        <xsl:with-param name="CdmNumber" select="../cdmnumber"/>
+                    </xsl:call-template>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:variable name="lctgmID" select="concat('S1', generate-id())"/>
+                    <rdf:Description
+                        rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{../cdmnumber}">
+                        <dct:subject rdf:nodeID="{$lctgmID}"/>
+                    </rdf:Description>
+                    <rdf:Description rdf:nodeID="{$lctgmID}">
+                        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    </rdf:Description>
+                    <rdf:Description rdf:nodeID="{$lctgmID}">
+                        <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/graphicMaterials"
+                        />
+                    </rdf:Description>
+                    <rdf:Description rdf:nodeID="{$lctgmID}">
+                        <dpla:providedLabel>
+                            <xsl:value-of select="."/>
+                        </dpla:providedLabel>
+                    </rdf:Description>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:if>
     </xsl:template>
     <xsl:template match="SubjectsLcsh">
+        <xsl:if test="text()">
         <xsl:choose>
             <xsl:when test="contains(., ';')">
                 <xsl:call-template name="SubjectsLcsh">
@@ -342,16 +361,17 @@
                 </rdf:Description>
             </xsl:otherwise>
         </xsl:choose>
+        </xsl:if>
     </xsl:template>
     <xsl:template match="LocationDepicted">
         <xsl:param name="locID"/>
         <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{../cdmnumber}">
             <dct:spatial rdf:nodeID="{$locID}"/>
         </rdf:Description>
-        <rdf:Description rdf:about="{$locID}">
+        <rdf:Description rdf:nodeID="{$locID}">
             <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Place"/>
         </rdf:Description>
-        <rdf:Description rdf:about="{$locID}">
+        <rdf:Description rdf:nodeID="{$locID}">
             <dpla:providedLabel>
                 <xsl:value-of select="."/>
             </dpla:providedLabel>
@@ -371,7 +391,7 @@
     </xsl:template>
     <xsl:template match="NegativeNumber">
         <xsl:if test="text()">
-            <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{cdmnumber}">
+            <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{../cdmnumber}">
                 <dct:identifier>
                     <xsl:value-of select="."/>
                 </dct:identifier>
@@ -389,7 +409,7 @@
         />
     </xsl:template>
     <xsl:template match="ObjectType">
-        <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{cdmnumber}">
+        <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{../cdmnumber}">
             <dc:type>
                 <xsl:value-of select="translate(., 'image', 'Image')"/>
             </dc:type>
@@ -431,7 +451,7 @@
         <edm:rights rdf:resource="{.}"/>
     </xsl:template>
     <xsl:template match="Type">
-        <!-- this template is incomplete; only one DCMI type in enumerated -->
+        <!-- only one DCMI type is enumerated in AYP metadata, this template may need to be expanded for use with metadata from other collections -->
         <xsl:choose>
             <xsl:when
                 test=". = 'StillImage' or . = 'Stillimage' or . = 'stillimage' or . = 'still image' or . = 'Still Image'">
@@ -447,7 +467,7 @@
         <edm:isShownAt rdf:resource="{.}"/>
     </xsl:template>
 
-    <!-- Named templates -->
+    <!-- named templates -->
     <xsl:template name="Notes">
         <xsl:param name="Tokens"/>
         <xsl:param name="CdmNumber"/>
