@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+<xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dct="http://purl.org/dc/terms/"
     xmlns:dpla="http://dp.la/about/map/" xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-    version="2.0" xmlns:rel="http://id.loc.gov/vocabulary/relators/"
+    xmlns:rel="http://id.loc.gov/vocabulary/relators/"
     xmlns:edm="http://www.europeana.eu/schemas/edm/" xmlns:dc="http://purl.org/dc/elements/1.1/"
-    xmlns:foaf="http://xmlns.com/foaf/0.1/">
+    xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:bf="http://id.loc.gov/ontologies/bibframe/">
 
     <xsl:output indent="yes"/>
 
@@ -182,10 +182,8 @@
         <!-- below require simple outputs of literals or URIs already in XML metadata or in this transform -->
         <xsl:apply-templates select="Title" mode="sr"/>
         <xsl:apply-templates select="Notes"/>
-        <xsl:apply-templates select="NegativeNumber"/>
         <xsl:apply-templates select="ObjectType"/>
         <xsl:apply-templates select="PhysicalDescription"/>
-        <xsl:apply-templates select="PhotographersReferenceNumber"/>
         <!-- below require nodes with locally minted IRIs -->
         <xsl:apply-templates select="Photographer" mode="sr"/>
         <xsl:apply-templates select="Repository" mode="sr"/>
@@ -193,13 +191,19 @@
         <xsl:apply-templates select="StudioName"/>
         <xsl:apply-templates select="Type"/>
         <!-- below require blank nodes -->
+        <xsl:apply-templates select="SubjectsLctgm"/>
+        <xsl:apply-templates select="SubjectsLcsh"/>
         <xsl:apply-templates select="DateEdtf">
             <xsl:with-param name="dateID" select="concat('D', generate-id())"/>
         </xsl:apply-templates>
-        <xsl:apply-templates select="SubjectsLctgm"/>
-        <xsl:apply-templates select="SubjectsLcsh"/>
         <xsl:apply-templates select="LocationDepicted">
             <xsl:with-param name="locID" select="concat('L', generate-id())"/>
+        </xsl:apply-templates>
+        <xsl:apply-templates select="NegativeNumber">
+            <xsl:with-param name="nnID" select="concat('NN', generate-id())"/>
+        </xsl:apply-templates>
+        <xsl:apply-templates select="PhotographersReferenceNumber">
+            <xsl:with-param name="prnID" select="concat('PRN', generate-id())"/>
         </xsl:apply-templates>
     </xsl:template>
 
@@ -211,14 +215,16 @@
         </rdf:Description>
         <!-- below require simple outputs of literals or URIs already in XML metadata or in this transform -->
         <xsl:apply-templates select="Title" mode="wr"/>
-        <xsl:apply-templates select="OrderNumber"/>
         <xsl:apply-templates select="DigitalReproductionInformation"/>
         <!-- below require nodes with locally minted IRIs -->
         <xsl:apply-templates select="DigitalCollection"/>
         <xsl:apply-templates select="OrderingInformation" mode="wr"/>
         <xsl:apply-templates select="RightsUri"/>
         <xsl:apply-templates select="Restrictions" mode="wr"/>
-        <!-- Are any blank nodes required here? -->
+        <!-- below requires blank node -->
+        <xsl:apply-templates select="OrderNumber">
+            <xsl:with-param name="onID" select="concat('ON', generate-id())"/>
+        </xsl:apply-templates>
     </xsl:template>
 
     <!-- templates by CONTENTdm element -->
@@ -374,10 +380,17 @@
         </rdf:Description>
     </xsl:template>
     <xsl:template match="OrderNumber">
+        <xsl:param name="onID"/>
         <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.3#cdm{../cdmnumber}">
-            <dct:identifier>
+            <bf:identifiedBy rdf:nodeID="{$onID}"/>
+        </rdf:Description>
+        <rdf:Description rdf:nodeID="{$onID}">
+            <rdf:type rdf:resource="http://tbd/OrderNumber"/>
+        </rdf:Description>
+        <rdf:Description rdf:nodeID="{$onID}">
+            <skos:prefLabel>
                 <xsl:value-of select="."/>
-            </dct:identifier>
+            </skos:prefLabel>
         </rdf:Description>
     </xsl:template>
     <xsl:template match="OrderingInformation" mode="agg">
@@ -391,11 +404,18 @@
         </rdf:Description>
     </xsl:template>
     <xsl:template match="NegativeNumber">
+        <xsl:param name="nnID"/>
         <xsl:if test="text()">
             <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{../cdmnumber}">
-                <dct:identifier>
+                <bf:identifiedBy rdf:nodeID="{$nnID}"/>
+            </rdf:Description>
+            <rdf:Description rdf:nodeID="{$nnID}">
+                <rdf:type rdf:resource="http://tbd/NegativeNumber"/>
+            </rdf:Description>
+            <rdf:Description rdf:nodeID="{$nnID}">
+                <skos:prefLabel>
                     <xsl:value-of select="."/>
-                </dct:identifier>
+                </skos:prefLabel>
             </rdf:Description>
         </xsl:if>
     </xsl:template>
@@ -446,11 +466,18 @@
         </xsl:if>
     </xsl:template>
     <xsl:template match="PhotographersReferenceNumber">
+        <xsl:param name="prnID"/>
         <xsl:if test="text()">
-            <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{cdmnumber}">
-                <dct:identifier>
+            <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{../cdmnumber}">
+                <bf:identifiedBy rdf:nodeID="{$prnID}"/>
+            </rdf:Description>
+            <rdf:Description rdf:nodeID="{$prnID}">
+                <rdf:type rdf:resource="http://tbd/PhotographersReferenceNumber"/>
+            </rdf:Description>
+            <rdf:Description rdf:nodeID="{$prnID}">
+                <skos:prefLabel>
                     <xsl:value-of select="."/>
-                </dct:identifier>
+                </skos:prefLabel>
             </rdf:Description>
         </xsl:if>
     </xsl:template>
