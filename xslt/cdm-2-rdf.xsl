@@ -6,6 +6,8 @@
     xmlns:edm="http://www.europeana.eu/schemas/edm/" xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:bf="http://id.loc.gov/ontologies/bibframe/">
 
+    <xsl:variable name="aypDigiCollUrl" select="'http://content.lib.washington.edu/aypweb/index.html'"/>
+
     <xsl:output indent="yes"/>
 
     <!-- template for result documents -->
@@ -122,6 +124,9 @@
                 <dct:title>
                     <xsl:value-of select="current-grouping-key()"/>
                 </dct:title>
+            </rdf:Description>
+            <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.4#{translate(current-grouping-key(),' ','')}">
+                <edm:isShownAt rdf:resource="{$aypDigiCollUrl}"/>
             </rdf:Description>
         </xsl:for-each-group>
     </xsl:template>
