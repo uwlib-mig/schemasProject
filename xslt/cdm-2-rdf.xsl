@@ -307,7 +307,7 @@
             <xsl:choose>
                 <xsl:when test="contains(., ';')">
                     <xsl:call-template name="SubjectsLctgm">
-                        <xsl:with-param name="Tokens" select="tokenize(., ';')"/>
+                        <xsl:with-param name="Tokens" select="tokenize(., ';\s*')"/>
                         <xsl:with-param name="CdmNumber" select="../cdmnumber"/>
                     </xsl:call-template>
                 </xsl:when>
@@ -338,7 +338,7 @@
             <xsl:choose>
                 <xsl:when test="contains(., ';')">
                     <xsl:call-template name="SubjectsLcsh">
-                        <xsl:with-param name="Tokens" select="tokenize(., ';')"/>
+                        <xsl:with-param name="Tokens" select="tokenize(., ';\s*')"/>
                         <xsl:with-param name="CdmNumber" select="../cdmnumber"/>
                     </xsl:call-template>
                 </xsl:when>
