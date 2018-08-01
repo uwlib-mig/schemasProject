@@ -6,7 +6,7 @@
     xmlns:edm="http://www.europeana.eu/schemas/edm/" xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:bf="http://id.loc.gov/ontologies/bibframe/">
 
-    <xsl:variable name="aypDigiCollUrl" select="'http://content.lib.washington.edu/aypweb/index.html'"/>
+    <xsl:variable name="aypDigiCollUrl">http://content.lib.washington.edu/aypweb/index.html</xsl:variable>
 
     <xsl:output indent="yes"/>
 
@@ -84,11 +84,11 @@
             </rdf:Description>
             <rdf:Description
                 rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(),' '',''.',''))}">
-                <dct:description>Studio</dct:description>
+                <dct:description xml:lang="en">Studio</dct:description>
             </rdf:Description>
             <rdf:Description
                 rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(),' '',''.',''))}">
-                <foaf:based_near>
+                <foaf:based_near xml:lang="en">
                     <xsl:value-of select="StudioLocation"/>
                 </foaf:based_near>
             </rdf:Description>
@@ -109,7 +109,7 @@
             </rdf:Description>
             <rdf:Description
                 rdf:about="http://doi.org/10.6069/uwlib.55.A.3.4#{translate(current-grouping-key(),' ','')}">
-                <dct:title>
+                <dct:title xml:lang="en">
                     <xsl:value-of select="current-grouping-key()"/>
                 </dct:title>
             </rdf:Description>
@@ -121,7 +121,7 @@
             </rdf:Description>
             <rdf:Description
                 rdf:about="http://doi.org/10.6069/uwlib.55.A.3.4#{translate(current-grouping-key(),' ','')}">
-                <dct:title>
+                <dct:title xml:lang="en">
                     <xsl:value-of select="current-grouping-key()"/>
                 </dct:title>
             </rdf:Description>
@@ -138,7 +138,7 @@
                 <rdf:type rdf:resource="http://purl.org/dc/terms/RightsStatement"/>
             </rdf:Description>
             <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.5#restrictions">
-                <skos:prefLabel>
+                <skos:prefLabel xml:lang="en">
                     <xsl:value-of select="current-grouping-key()"/>
                 </skos:prefLabel>
             </rdf:Description>
@@ -148,7 +148,7 @@
                 <rdf:type rdf:resource="http://purl.org/dc/terms/RightsStatement"/>
             </rdf:Description>
             <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.5#orderingInformation">
-                <skos:note>
+                <skos:note xml:lang="en">
                     <xsl:value-of select="current-grouping-key()"/>
                 </skos:note>
             </rdf:Description>
@@ -235,14 +235,14 @@
     <!-- templates by CONTENTdm element -->
     <xsl:template match="Title" mode="sr">
         <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{../cdmnumber}">
-            <dct:title>
+            <dct:title xml:lang="en">
                 <xsl:value-of select="."/>
             </dct:title>
         </rdf:Description>
     </xsl:template>
     <xsl:template match="Title" mode="wr">
         <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.3#cdm{../cdmnumber}">
-            <dct:title>
+            <dct:title xml:lang="en">
                 <xsl:value-of select="."/>
             </dct:title>
         </rdf:Description>
@@ -294,7 +294,7 @@
                 <xsl:otherwise>
                     <rdf:Description
                         rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{../cdmnumber}">
-                        <dct:description>
+                        <dct:description xml:lang="en">
                             <xsl:value-of select="."/>
                         </dct:description>
                     </rdf:Description>
@@ -325,7 +325,7 @@
                         />
                     </rdf:Description>
                     <rdf:Description rdf:nodeID="{$lctgmID}">
-                        <dpla:providedLabel>
+                        <dpla:providedLabel xml:lang="en">
                             <xsl:value-of select="."/>
                         </dpla:providedLabel>
                     </rdf:Description>
@@ -355,7 +355,7 @@
                         <skos:inScheme rdf:resource="http://id.loc.gov/authorities/subjects"/>
                     </rdf:Description>
                     <rdf:Description rdf:nodeID="{$lcshID}">
-                        <dpla:providedLabel>
+                        <dpla:providedLabel xml:lang="en">
                             <xsl:value-of select="."/>
                         </dpla:providedLabel>
                     </rdf:Description>
@@ -372,7 +372,7 @@
             <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Place"/>
         </rdf:Description>
         <rdf:Description rdf:nodeID="{$locID}">
-            <dpla:providedLabel>
+            <dpla:providedLabel xml:lang="en">
                 <xsl:value-of select="."/>
             </dpla:providedLabel>
         </rdf:Description>
@@ -440,7 +440,7 @@
     </xsl:template>
     <xsl:template match="ObjectType">
         <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{../cdmnumber}">
-            <dc:type>
+            <dc:type xml:lang="en">
                 <xsl:value-of select="translate(., 'image', 'Image')"/>
             </dc:type>
         </rdf:Description>
@@ -456,7 +456,7 @@
     </xsl:template>
     <xsl:template match="DigitalReproductionInformation">
         <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.3#cdm{../cdmnumber}">
-            <dct:description>
+            <dct:description xml:lang="en">
                 <xsl:value-of select="."/>
             </dct:description>
         </rdf:Description>
@@ -530,7 +530,7 @@
         <xsl:param name="CdmNumber"/>
         <xsl:for-each select="$Tokens">
             <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{$CdmNumber}">
-                <dct:description>
+                <dct:description xml:lang="en">
                     <xsl:value-of select="."/>
                 </dct:description>
             </rdf:Description>
@@ -551,7 +551,7 @@
                 <skos:inScheme rdf:resource="http://id.loc.gov/authorities/subjects"/>
             </rdf:Description>
             <rdf:Description rdf:nodeID="{concat($lctgmID, position())}">
-                <dpla:providedLabel>
+                <dpla:providedLabel xml:lang="en">
                     <xsl:value-of select="."/>
                 </dpla:providedLabel>
             </rdf:Description>
@@ -572,7 +572,7 @@
                 <skos:inScheme rdf:resource="http://id.loc.gov/authorities/subjects"/>
             </rdf:Description>
             <rdf:Description rdf:nodeID="{concat($lcshID, position())}">
-                <dpla:providedLabel>
+                <dpla:providedLabel xml:lang="en">
                     <xsl:value-of select="."/>
                 </dpla:providedLabel>
             </rdf:Description>
