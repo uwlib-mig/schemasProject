@@ -6,7 +6,8 @@
     xmlns:edm="http://www.europeana.eu/schemas/edm/" xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:bf="http://id.loc.gov/ontologies/bibframe/">
 
-    <xsl:variable name="aypDigiCollUrl">http://content.lib.washington.edu/aypweb/index.html</xsl:variable>
+    <xsl:variable name="aypDigiCollUrl"
+        >http://content.lib.washington.edu/aypweb/index.html</xsl:variable>
 
     <xsl:output indent="yes"/>
 
@@ -104,11 +105,11 @@
     <xsl:template match="metadata" mode="collection">
         <xsl:for-each-group select="record" group-by="RepositoryCollection">
             <rdf:Description
-                rdf:about="http://doi.org/10.6069/uwlib.55.A.3.4#{translate(current-grouping-key(),' ','')}">
+                rdf:about="http://doi.org/10.6069/uwlib.55.A.3.4#{translate(current-grouping-key(),' .()-,','')}">
                 <rdf:type rdf:resource="http://purl.org/dc/dcmitype/Collection"/>
             </rdf:Description>
             <rdf:Description
-                rdf:about="http://doi.org/10.6069/uwlib.55.A.3.4#{translate(current-grouping-key(),' ','')}">
+                rdf:about="http://doi.org/10.6069/uwlib.55.A.3.4#{translate(current-grouping-key(),' .()-,','')}">
                 <dct:title xml:lang="en">
                     <xsl:value-of select="current-grouping-key()"/>
                 </dct:title>
@@ -116,16 +117,17 @@
         </xsl:for-each-group>
         <xsl:for-each-group select="record" group-by="DigitalCollection">
             <rdf:Description
-                rdf:about="http://doi.org/10.6069/uwlib.55.A.3.4#{translate(current-grouping-key(),' ','')}">
+                rdf:about="http://doi.org/10.6069/uwlib.55.A.3.4#{translate(current-grouping-key(),' .()-,','')}">
                 <rdf:type rdf:resource="http://purl.org/dc/dcmitype/Collection"/>
             </rdf:Description>
             <rdf:Description
-                rdf:about="http://doi.org/10.6069/uwlib.55.A.3.4#{translate(current-grouping-key(),' ','')}">
+                rdf:about="http://doi.org/10.6069/uwlib.55.A.3.4#{translate(current-grouping-key(),' .()-,','')}">
                 <dct:title xml:lang="en">
                     <xsl:value-of select="current-grouping-key()"/>
                 </dct:title>
             </rdf:Description>
-            <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.4#{translate(current-grouping-key(),' ','')}">
+            <rdf:Description
+                rdf:about="http://doi.org/10.6069/uwlib.55.A.3.4#{translate(current-grouping-key(),' .()-,','')}">
                 <edm:isShownAt rdf:resource="{$aypDigiCollUrl}"/>
             </rdf:Description>
         </xsl:for-each-group>
@@ -259,7 +261,7 @@
     <xsl:template match="RepositoryCollection">
         <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{../cdmnumber}">
             <dct:isPartOf
-                rdf:resource="{concat('https:/doi.org/10.6069/uwlib.55.A.3.4#',translate(.,' ',''))}"
+                rdf:resource="{concat('https:/doi.org/10.6069/uwlib.55.A.3.4#',translate(.,' .()-,',''))}"
             />
         </rdf:Description>
     </xsl:template>
@@ -380,7 +382,7 @@
     <xsl:template match="DigitalCollection">
         <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.3#cdm{../cdmnumber}">
             <dct:isPartOf
-                rdf:resource="{translate(concat('https:/doi.org/10.6069/uwlib.55.A.3.4#',.),' ','')}"
+                rdf:resource="{concat('https:/doi.org/10.6069/uwlib.55.A.3.4#',translate(.,' .()-,',''))}"
             />
         </rdf:Description>
     </xsl:template>
@@ -448,7 +450,7 @@
     <xsl:template match="PhysicalDescription">
         <xsl:if test="text()">
             <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{cdmnumber}">
-                <dct:extent>
+                <dct:extent xml:lang="en">
                     <xsl:value-of select="."/>
                 </dct:extent>
             </rdf:Description>
