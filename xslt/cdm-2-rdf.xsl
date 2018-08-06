@@ -55,7 +55,7 @@
             </rdf:Description>
             <rdf:Description
                 rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(),' '',''.',''))}">
-                <dpla:providedLabel>
+                <dpla:providedLabel xml:lang="en">
                     <xsl:value-of select="current-grouping-key()"/>
                 </dpla:providedLabel>
             </rdf:Description>
@@ -67,7 +67,7 @@
             </rdf:Description>
             <rdf:Description
                 rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(),' '',''.',''))}">
-                <dpla:providedLabel>
+                <dpla:providedLabel xml:lang="en">
                     <xsl:value-of select="current-grouping-key()"/>
                 </dpla:providedLabel>
             </rdf:Description>
@@ -79,7 +79,7 @@
             </rdf:Description>
             <rdf:Description
                 rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(),' '',''.',''))}">
-                <dpla:providedLabel>
+                <dpla:providedLabel xml:lang="en">
                     <xsl:value-of select="current-grouping-key()"/>
                 </dpla:providedLabel>
             </rdf:Description>
