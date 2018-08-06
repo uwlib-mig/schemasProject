@@ -392,7 +392,7 @@
             <bf:identifiedBy rdf:nodeID="{$onID}"/>
         </rdf:Description>
         <rdf:Description rdf:nodeID="{$onID}">
-            <rdf:type rdf:resource="http://tbd/OrderNumber"/>
+            <rdf:type rdf:resource="https://doi.org/10.6069/uwlib.55.D.1#OrderNumber"/>
         </rdf:Description>
         <rdf:Description rdf:nodeID="{$onID}">
             <skos:prefLabel>
@@ -417,7 +417,7 @@
                 <bf:identifiedBy rdf:nodeID="{$nnID}"/>
             </rdf:Description>
             <rdf:Description rdf:nodeID="{$nnID}">
-                <rdf:type rdf:resource="http://tbd/NegativeNumber"/>
+                <rdf:type rdf:resource="https://doi.org/10.6069/uwlib.55.D.1#NegativeNumber"/>
             </rdf:Description>
             <rdf:Description rdf:nodeID="{$nnID}">
                 <skos:prefLabel>
@@ -479,7 +479,7 @@
                 <bf:identifiedBy rdf:nodeID="{$prnID}"/>
             </rdf:Description>
             <rdf:Description rdf:nodeID="{$prnID}">
-                <rdf:type rdf:resource="http://tbd/PhotographersReferenceNumber"/>
+                <rdf:type rdf:resource="https://doi.org/10.6069/uwlib.55.D.1#PhotographersReferenceNumber"/>
             </rdf:Description>
             <rdf:Description rdf:nodeID="{$prnID}">
                 <skos:prefLabel>
