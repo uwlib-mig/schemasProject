@@ -6,6 +6,7 @@
     xmlns:edm="http://www.europeana.eu/schemas/edm/" xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:bf="http://id.loc.gov/ontologies/bibframe/">
 
+    <!-- variables -->
     <xsl:variable name="aypDigiCollUrl"
         >http://content.lib.washington.edu/aypweb/index.html</xsl:variable>
 
@@ -50,11 +51,11 @@
         <xsl:for-each-group select="record"
             group-by="Photographer[text() != '' and text() != 'Unidentified' and text() != 'unidentified']">
             <rdf:Description
-                rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(),' '',''.',''))}">
+                rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(), ''&#x27; #.,:;()- ', ''))}">
                 <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
             </rdf:Description>
             <rdf:Description
-                rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(),' '',''.',''))}">
+                rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(), ''&#x27; #.,:;()- ', ''))}">
                 <dpla:providedLabel xml:lang="en">
                     <xsl:value-of select="current-grouping-key()"/>
                 </dpla:providedLabel>
@@ -62,11 +63,11 @@
         </xsl:for-each-group>
         <xsl:for-each-group select="record" group-by="Repository[text() != '']">
             <rdf:Description
-                rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(),' '',''.',''))}">
+                rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(), ''&#x27; #.,:;()- ', ''))}">
                 <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
             </rdf:Description>
             <rdf:Description
-                rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(),' '',''.',''))}">
+                rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(), ''&#x27; #.,:;()- ', ''))}">
                 <dpla:providedLabel xml:lang="en">
                     <xsl:value-of select="current-grouping-key()"/>
                 </dpla:providedLabel>
@@ -74,21 +75,21 @@
         </xsl:for-each-group>
         <xsl:for-each-group select="record" group-by="StudioName[text() != '']">
             <rdf:Description
-                rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(),' '',''.',''))}">
+                rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(), ''&#x27; #.,:;()- ', ''))}">
                 <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
             </rdf:Description>
             <rdf:Description
-                rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(),' '',''.',''))}">
+                rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(), ''&#x27; #.,:;()- ', ''))}">
                 <dpla:providedLabel xml:lang="en">
                     <xsl:value-of select="current-grouping-key()"/>
                 </dpla:providedLabel>
             </rdf:Description>
             <rdf:Description
-                rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(),' '',''.',''))}">
+                rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(), ''&#x27; #.,:;()- ', ''))}">
                 <dct:description xml:lang="en">Studio</dct:description>
             </rdf:Description>
             <rdf:Description
-                rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(),' '',''.',''))}">
+                rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(), ''&#x27; #.,:;()- ', ''))}">
                 <foaf:based_near xml:lang="en">
                     <xsl:value-of select="StudioLocation"/>
                 </foaf:based_near>
@@ -105,11 +106,11 @@
     <xsl:template match="metadata" mode="collection">
         <xsl:for-each-group select="record" group-by="RepositoryCollection">
             <rdf:Description
-                rdf:about="http://doi.org/10.6069/uwlib.55.A.3.4#{translate(current-grouping-key(),' .()-,','')}">
+                rdf:about="http://doi.org/10.6069/uwlib.55.A.3.4#{translate(current-grouping-key(), ''&#x27; #.,:;()- ', '')}">
                 <rdf:type rdf:resource="http://purl.org/dc/dcmitype/Collection"/>
             </rdf:Description>
             <rdf:Description
-                rdf:about="http://doi.org/10.6069/uwlib.55.A.3.4#{translate(current-grouping-key(),' .()-,','')}">
+                rdf:about="http://doi.org/10.6069/uwlib.55.A.3.4#{translate(current-grouping-key(), ''&#x27; #.,:;()- ', '')}">
                 <dct:title xml:lang="en">
                     <xsl:value-of select="current-grouping-key()"/>
                 </dct:title>
@@ -117,17 +118,17 @@
         </xsl:for-each-group>
         <xsl:for-each-group select="record" group-by="DigitalCollection">
             <rdf:Description
-                rdf:about="http://doi.org/10.6069/uwlib.55.A.3.4#{translate(current-grouping-key(),' .()-,','')}">
+                rdf:about="http://doi.org/10.6069/uwlib.55.A.3.4#{translate(current-grouping-key(), ''&#x27; #.,:;()- ', '')}">
                 <rdf:type rdf:resource="http://purl.org/dc/dcmitype/Collection"/>
             </rdf:Description>
             <rdf:Description
-                rdf:about="http://doi.org/10.6069/uwlib.55.A.3.4#{translate(current-grouping-key(),' .()-,','')}">
+                rdf:about="http://doi.org/10.6069/uwlib.55.A.3.4#{translate(current-grouping-key(), ''&#x27; #.,:;()- ', '')}">
                 <dct:title xml:lang="en">
                     <xsl:value-of select="current-grouping-key()"/>
                 </dct:title>
             </rdf:Description>
             <rdf:Description
-                rdf:about="http://doi.org/10.6069/uwlib.55.A.3.4#{translate(current-grouping-key(),' .()-,','')}">
+                rdf:about="http://doi.org/10.6069/uwlib.55.A.3.4#{translate(current-grouping-key(), ''&#x27; #.,:;()- ', '')}">
                 <edm:isShownAt rdf:resource="{$aypDigiCollUrl}"/>
             </rdf:Description>
         </xsl:for-each-group>
@@ -253,7 +254,7 @@
         <xsl:if test="(text()) and (. != 'Unidentified') and (. != 'unidentified')">
             <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{../cdmnumber}">
                 <rel:pht
-                    rdf:resource="{concat('https:/doi.org/10.6069/uwlib.55.A.3.6#',translate(.,' '',''.',''))}"
+                    rdf:resource="{concat('https:/doi.org/10.6069/uwlib.55.A.3.6#',translate(., ''&#x27; #.,:;()- ', ''))}"
                 />
             </rdf:Description>
         </xsl:if>
@@ -261,7 +262,7 @@
     <xsl:template match="RepositoryCollection">
         <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{../cdmnumber}">
             <dct:isPartOf
-                rdf:resource="{concat('https:/doi.org/10.6069/uwlib.55.A.3.4#',translate(.,' .()-,',''))}"
+                rdf:resource="{concat('https:/doi.org/10.6069/uwlib.55.A.3.4#',translate(., ''&#x27; #.,:;()- ', ''))}"
             />
         </rdf:Description>
     </xsl:template>
@@ -382,7 +383,7 @@
     <xsl:template match="DigitalCollection">
         <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.3#cdm{../cdmnumber}">
             <dct:isPartOf
-                rdf:resource="{concat('https:/doi.org/10.6069/uwlib.55.A.3.4#',translate(.,' .()-,',''))}"
+                rdf:resource="{concat('https:/doi.org/10.6069/uwlib.55.A.3.4#',translate(., ''&#x27; #.,:;()- ', ''))}"
             />
         </rdf:Description>
     </xsl:template>
@@ -429,14 +430,14 @@
     <xsl:template match="Repository" mode="agg">
         <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.2#cdm{../cdmnumber}">
             <edm:provider
-                rdf:resource="{concat('https:/doi.org/10.6069/uwlib.55.A.3.6#',translate(.,' '',''.',''))}"
+                rdf:resource="{concat('https:/doi.org/10.6069/uwlib.55.A.3.6#',translate(., ''&#x27; #.,:;()- ', ''))}"
             />
         </rdf:Description>
     </xsl:template>
     <xsl:template match="Repository" mode="sr">
         <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{../cdmnumber}">
             <dct:rightsHolder
-                rdf:resource="{concat('https:/doi.org/10.6069/uwlib.55.A.3.6#',translate(.,' '',''.',''))}"
+                rdf:resource="{concat('https:/doi.org/10.6069/uwlib.55.A.3.6#',translate(., ''&#x27; #.,:;()- ', ''))}"
             />
         </rdf:Description>
     </xsl:template>
@@ -467,7 +468,7 @@
         <xsl:if test="text()">
             <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{cdmnumber}">
                 <dct:contributor
-                    rdf:resource="{concat('https:/doi.org/10.6069/uwlib.55.A.3.6#',translate(.,' '',''.',''))}"
+                    rdf:resource="{concat('https:/doi.org/10.6069/uwlib.55.A.3.6#',translate(., ''&#x27; #.,:;()- ', ''))}"
                 />
             </rdf:Description>
         </xsl:if>
