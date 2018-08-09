@@ -51,11 +51,11 @@
         <xsl:for-each-group select="record"
             group-by="Photographer[text() != '' and text() != 'Unidentified' and text() != 'unidentified']">
             <rdf:Description
-                rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(), ''&#x27; #.,:;()- ', ''))}">
+                rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(), ''&#x27; #.,:;()/\- ', ''))}">
                 <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
             </rdf:Description>
             <rdf:Description
-                rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(), ''&#x27; #.,:;()- ', ''))}">
+                rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(), ''&#x27; #.,:;()/\- ', ''))}">
                 <dpla:providedLabel xml:lang="en">
                     <xsl:value-of select="current-grouping-key()"/>
                 </dpla:providedLabel>
@@ -63,11 +63,11 @@
         </xsl:for-each-group>
         <xsl:for-each-group select="record" group-by="Repository[text() != '']">
             <rdf:Description
-                rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(), ''&#x27; #.,:;()- ', ''))}">
+                rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(), ''&#x27; #.,:;()/\- ', ''))}">
                 <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
             </rdf:Description>
             <rdf:Description
-                rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(), ''&#x27; #.,:;()- ', ''))}">
+                rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(), ''&#x27; #.,:;()/\- ', ''))}">
                 <dpla:providedLabel xml:lang="en">
                     <xsl:value-of select="current-grouping-key()"/>
                 </dpla:providedLabel>
@@ -75,21 +75,21 @@
         </xsl:for-each-group>
         <xsl:for-each-group select="record" group-by="StudioName[text() != '']">
             <rdf:Description
-                rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(), ''&#x27; #.,:;()- ', ''))}">
+                rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(), ''&#x27; #.,:;()/\- ', ''))}">
                 <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
             </rdf:Description>
             <rdf:Description
-                rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(), ''&#x27; #.,:;()- ', ''))}">
+                rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(), ''&#x27; #.,:;()/\- ', ''))}">
                 <dpla:providedLabel xml:lang="en">
                     <xsl:value-of select="current-grouping-key()"/>
                 </dpla:providedLabel>
             </rdf:Description>
             <rdf:Description
-                rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(), ''&#x27; #.,:;()- ', ''))}">
+                rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(), ''&#x27; #.,:;()/\- ', ''))}">
                 <dct:description xml:lang="en">Studio</dct:description>
             </rdf:Description>
             <rdf:Description
-                rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(), ''&#x27; #.,:;()- ', ''))}">
+                rdf:about="{concat('http://doi.org/10.6069/uwlib.55.A.3.6#',translate(current-grouping-key(), ''&#x27; #.,:;()/\- ', ''))}">
                 <foaf:based_near xml:lang="en">
                     <xsl:value-of select="StudioLocation"/>
                 </foaf:based_near>
@@ -106,11 +106,11 @@
     <xsl:template match="metadata" mode="collection">
         <xsl:for-each-group select="record" group-by="RepositoryCollection">
             <rdf:Description
-                rdf:about="http://doi.org/10.6069/uwlib.55.A.3.4#{translate(current-grouping-key(), ''&#x27; #.,:;()- ', '')}">
+                rdf:about="http://doi.org/10.6069/uwlib.55.A.3.4#{translate(current-grouping-key(), ''&#x27; #.,:;()/\- ', '')}">
                 <rdf:type rdf:resource="http://purl.org/dc/dcmitype/Collection"/>
             </rdf:Description>
             <rdf:Description
-                rdf:about="http://doi.org/10.6069/uwlib.55.A.3.4#{translate(current-grouping-key(), ''&#x27; #.,:;()- ', '')}">
+                rdf:about="http://doi.org/10.6069/uwlib.55.A.3.4#{translate(current-grouping-key(), ''&#x27; #.,:;()/\- ', '')}">
                 <dct:title xml:lang="en">
                     <xsl:value-of select="current-grouping-key()"/>
                 </dct:title>
@@ -118,17 +118,17 @@
         </xsl:for-each-group>
         <xsl:for-each-group select="record" group-by="DigitalCollection">
             <rdf:Description
-                rdf:about="http://doi.org/10.6069/uwlib.55.A.3.4#{translate(current-grouping-key(), ''&#x27; #.,:;()- ', '')}">
+                rdf:about="http://doi.org/10.6069/uwlib.55.A.3.4#{translate(current-grouping-key(), ''&#x27; #.,:;()/\- ', '')}">
                 <rdf:type rdf:resource="http://purl.org/dc/dcmitype/Collection"/>
             </rdf:Description>
             <rdf:Description
-                rdf:about="http://doi.org/10.6069/uwlib.55.A.3.4#{translate(current-grouping-key(), ''&#x27; #.,:;()- ', '')}">
+                rdf:about="http://doi.org/10.6069/uwlib.55.A.3.4#{translate(current-grouping-key(), ''&#x27; #.,:;()/\- ', '')}">
                 <dct:title xml:lang="en">
                     <xsl:value-of select="current-grouping-key()"/>
                 </dct:title>
             </rdf:Description>
             <rdf:Description
-                rdf:about="http://doi.org/10.6069/uwlib.55.A.3.4#{translate(current-grouping-key(), ''&#x27; #.,:;()- ', '')}">
+                rdf:about="http://doi.org/10.6069/uwlib.55.A.3.4#{translate(current-grouping-key(), ''&#x27; #.,:;()/\- ', '')}">
                 <edm:isShownAt rdf:resource="{$aypDigiCollUrl}"/>
             </rdf:Description>
         </xsl:for-each-group>
@@ -190,6 +190,7 @@
         <!-- below require simple outputs of literals or URIs already in XML metadata or in this transform -->
         <xsl:apply-templates select="Title" mode="sr"/>
         <xsl:apply-templates select="Notes"/>
+        <xsl:apply-templates select="Type"/>
         <xsl:apply-templates select="ObjectType"/>
         <xsl:apply-templates select="PhysicalDescription"/>
         <!-- below require nodes with locally minted IRIs -->
@@ -197,7 +198,6 @@
         <xsl:apply-templates select="Repository" mode="sr"/>
         <xsl:apply-templates select="RepositoryCollection"/>
         <xsl:apply-templates select="StudioName"/>
-        <xsl:apply-templates select="Type"/>
         <!-- below require blank nodes -->
         <xsl:apply-templates select="SubjectsLctgm"/>
         <xsl:apply-templates select="SubjectsLcsh"/>
@@ -254,7 +254,7 @@
         <xsl:if test="(text()) and (. != 'Unidentified') and (. != 'unidentified')">
             <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{../cdmnumber}">
                 <rel:pht
-                    rdf:resource="{concat('https:/doi.org/10.6069/uwlib.55.A.3.6#',translate(., ''&#x27; #.,:;()- ', ''))}"
+                    rdf:resource="{concat('https:/doi.org/10.6069/uwlib.55.A.3.6#',translate(., ''&#x27; #.,:;()/\- ', ''))}"
                 />
             </rdf:Description>
         </xsl:if>
@@ -262,7 +262,7 @@
     <xsl:template match="RepositoryCollection">
         <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{../cdmnumber}">
             <dct:isPartOf
-                rdf:resource="{concat('https:/doi.org/10.6069/uwlib.55.A.3.4#',translate(., ''&#x27; #.,:;()- ', ''))}"
+                rdf:resource="{concat('https:/doi.org/10.6069/uwlib.55.A.3.4#',translate(., ''&#x27; #.,:;()/\- ', ''))}"
             />
         </rdf:Description>
     </xsl:template>
@@ -383,7 +383,7 @@
     <xsl:template match="DigitalCollection">
         <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.3#cdm{../cdmnumber}">
             <dct:isPartOf
-                rdf:resource="{concat('https:/doi.org/10.6069/uwlib.55.A.3.4#',translate(., ''&#x27; #.,:;()- ', ''))}"
+                rdf:resource="{concat('https:/doi.org/10.6069/uwlib.55.A.3.4#',translate(., ''&#x27; #.,:;()/\- ', ''))}"
             />
         </rdf:Description>
     </xsl:template>
@@ -430,23 +430,67 @@
     <xsl:template match="Repository" mode="agg">
         <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.2#cdm{../cdmnumber}">
             <edm:provider
-                rdf:resource="{concat('https:/doi.org/10.6069/uwlib.55.A.3.6#',translate(., ''&#x27; #.,:;()- ', ''))}"
+                rdf:resource="{concat('https:/doi.org/10.6069/uwlib.55.A.3.6#',translate(., ''&#x27; #.,:;()/\- ', ''))}"
             />
         </rdf:Description>
     </xsl:template>
     <xsl:template match="Repository" mode="sr">
         <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{../cdmnumber}">
             <dct:rightsHolder
-                rdf:resource="{concat('https:/doi.org/10.6069/uwlib.55.A.3.6#',translate(., ''&#x27; #.,:;()- ', ''))}"
+                rdf:resource="{concat('https:/doi.org/10.6069/uwlib.55.A.3.6#',translate(., ''&#x27; #.,:;()/\- ', ''))}"
             />
         </rdf:Description>
     </xsl:template>
     <xsl:template match="ObjectType">
-        <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{../cdmnumber}">
-            <dc:type xml:lang="en">
-                <xsl:value-of select="translate(., 'image', 'Image')"/>
-            </dc:type>
-        </rdf:Description>
+        <xsl:for-each select=".">
+            <xsl:choose>
+                <xsl:when test="text() = 'image'">
+                    <rdf:Description
+                        rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{../cdmnumber}">
+                        <dct:type rdf:resource="http://vocab.getty.edu/aat/300264387"/>
+                    </rdf:Description>
+                </xsl:when>
+                <xsl:when test="text() = 'photograph'">
+                    <rdf:Description
+                        rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{../cdmnumber}">
+                        <dct:type rdf:resource="http://vocab.getty.edu/aat/300046300"/>
+                    </rdf:Description>
+                </xsl:when>
+                <xsl:when test="text() = 'Photograph'">
+                    <rdf:Description
+                        rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{../cdmnumber}">
+                        <dct:type rdf:resource="http://vocab.getty.edu/aat/300046300"/>
+                    </rdf:Description>
+                </xsl:when>
+                <xsl:when test="text() = 'Postcard'">
+                    <rdf:Description
+                        rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{../cdmnumber}">
+                        <dct:type rdf:resource="http://vocab.getty.edu/aat/300026816"/>
+                    </rdf:Description>
+                </xsl:when>
+                <xsl:when test="text() = 'Map'">
+                    <rdf:Description
+                        rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{../cdmnumber}">
+                        <dct:type rdf:resource="http://vocab.getty.edu/aat/300028094"/>
+                    </rdf:Description>
+                </xsl:when>
+                <xsl:when test="text() = 'Negative'">
+                    <rdf:Description
+                        rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{../cdmnumber}">
+                        <dct:type rdf:resource="http://vocab.getty.edu/aat/300127173"/>
+                    </rdf:Description>
+                </xsl:when>
+                <xsl:when test="text() = 'Book Cover'">
+                    <rdf:Description
+                        rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{../cdmnumber}">
+                        <dct:type rdf:resource="http://vocab.getty.edu/aat/300417756"/>
+                    </rdf:Description>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:text>&#xA;---UNACCOUNTED-FOR AAT TYPE!---&#xA;</xsl:text>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:for-each>
     </xsl:template>
     <xsl:template match="PhysicalDescription">
         <xsl:if test="text()">
@@ -468,7 +512,7 @@
         <xsl:if test="text()">
             <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{cdmnumber}">
                 <dct:contributor
-                    rdf:resource="{concat('https:/doi.org/10.6069/uwlib.55.A.3.6#',translate(., ''&#x27; #.,:;()- ', ''))}"
+                    rdf:resource="{concat('https:/doi.org/10.6069/uwlib.55.A.3.6#',translate(., ''&#x27; #.,:;()/\- ', ''))}"
                 />
             </rdf:Description>
         </xsl:if>
@@ -480,7 +524,9 @@
                 <bf:identifiedBy rdf:nodeID="{$prnID}"/>
             </rdf:Description>
             <rdf:Description rdf:nodeID="{$prnID}">
-                <rdf:type rdf:resource="https://doi.org/10.6069/uwlib.55.D.1#PhotographersReferenceNumber"/>
+                <rdf:type
+                    rdf:resource="https://doi.org/10.6069/uwlib.55.D.1#PhotographersReferenceNumber"
+                />
             </rdf:Description>
             <rdf:Description rdf:nodeID="{$prnID}">
                 <skos:prefLabel>
@@ -505,9 +551,7 @@
                 </rdf:Description>
             </xsl:when>
             <xsl:otherwise>
-                <xsl:text>
-                    UNACCOUNTED-FOR DCMI TYPE!
-                </xsl:text>
+                <xsl:text>&#xA;---UNACCOUNTED-FOR DCMI TYPE!---&#xA;</xsl:text>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
