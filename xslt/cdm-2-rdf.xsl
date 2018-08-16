@@ -486,7 +486,7 @@
     </xsl:template>
     <xsl:template match="PhysicalDescription">
         <xsl:if test="text()">
-            <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{cdmnumber}">
+            <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{../cdmnumber}">
                 <dct:extent xml:lang="en">
                     <xsl:value-of select="."/>
                 </dct:extent>
@@ -502,7 +502,7 @@
     </xsl:template>
     <xsl:template match="StudioName">
         <xsl:if test="text()">
-            <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{cdmnumber}">
+            <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{../cdmnumber}">
                 <dct:contributor
                     rdf:resource="{concat('https://doi.org/10.6069/uwlib.55.A.3.6#',translate(., ''&#x27; #.,:;()/\- ', ''))}"
                 />
