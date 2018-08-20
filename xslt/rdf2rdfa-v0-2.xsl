@@ -11,19 +11,24 @@
     version="2.0">
     
     <xsl:variable name="datasetName">RDF Dataset for the Alaska-Yukon-Pacific Exposition Collection</xsl:variable><!-- Title of dataset -->
-    <xsl:variable name="datasetPartName">Part VI: Agents</xsl:variable><!-- Title of dataset part -->
     <xsl:variable name="path">https://www.lib.washington.edu/static/public/cams/data/datasets/</xsl:variable> <!-- path to dataset, up to file name -->
     <xsl:variable name="filename">ayp-agents</xsl:variable><!-- filename of dataset without file extension -->
     <xsl:variable name="findingAidUrl">http://pathToFindingAid.edu</xsl:variable><!-- URL to finding aid for physical collection -->
     <xsl:variable name="digiCollUrl">http://content.lib.washington.edu/aypweb/index.html</xsl:variable><!-- URL to digital collection -->
-    <xsl:variable name="collDesc">The University of Washington Libraries’ <a href="{$findingAidUrl}"><xsl:value-of select="$pCollName"/></a> includes a large number and variety of photographic and other materials. Selections are available online as a <a href="{$digiCollUrl}">digital collection.</a></xsl:variable>
-    <xsl:variable name="pCollName">Alaska-Yukon-Pacific Exposition Collection</xsl:variable>
+    <xsl:variable name="collDesc">The University of Washington Libraries’ <a href="{$findingAidUrl}"><xsl:value-of select="$pCollName"/></a> include numerous physical collections comprising a large number and variety of photographic and other materials. Selections are available online as a <a href="{$digiCollUrl}">digital collection.</a></xsl:variable>
+    <xsl:variable name="pCollName">Alaska-Yukon-Pacific Exposition Collections</xsl:variable>
     <xsl:variable name="srDoi">https://doi.org/10.6069/uwlib.55.A.3.1</xsl:variable>
     <xsl:variable name="aggrDoi">https://doi.org/10.6069/uwlib.55.A.3.2</xsl:variable>
     <xsl:variable name="wrDoi">https://doi.org/10.6069/uwlib.55.A.3.3</xsl:variable>
     <xsl:variable name="collDoi">https://doi.org/10.6069/uwlib.55.A.3.4</xsl:variable>
     <xsl:variable name="rightsDoi">https://doi.org/10.6069/uwlib.55.A.3.5</xsl:variable>
     <xsl:variable name="agentDoi">https://doi.org/10.6069/uwlib.55.A.3.6</xsl:variable>
+    <xsl:variable name="srPartName">Part I: Source Resource Class</xsl:variable>
+    <xsl:variable name="aggrPartName">Part II: Aggregation Class</xsl:variable>
+    <xsl:variable name="wrPartName">Part III: Web Resource Class</xsl:variable>
+    <xsl:variable name="rightsPartName">Part IV: Rights Statement Class</xsl:variable>
+    <xsl:variable name="collPartName">Part V: Collection Class</xsl:variable>
+    <xsl:variable name="agentPartName">Part VI: Agents</xsl:variable>
     
     
     <xsl:template match="/">
@@ -38,29 +43,30 @@
                  title
                  links to alternative serializations using <LINK> -->
             <head>
-                <title><xsl:value-of select="concat($datasetName,', ',$datasetPartName)"/></title>
+                <title>
+                    <xsl:value-of select="concat($datasetName,', ',$agentPartName)"/>
+                </title>
                 <link rel="alternate" type="application/n-triples"
                     href="{concat($path,$filename,'.nt')}"/>
                 <link rel="alternate" type="application/rdf+xml"
                     href="{concat($path,$filename,'.rdf')}"/>
                 <link rel="alternate" type="application/turtle"
-                    href="{concat($path,$filename,'.ttl')}"
-                />
+                    href="{concat($path,$filename,'.ttl')}"/>
             </head>
             
             <body about="{$agentDoi}">
                 <!-- Title of dataset -->
-                <h1><xsl:value-of select="concat($datasetName,', ',$datasetPartName)"/></h1>
+                <h1><xsl:value-of select="concat($datasetName,', ',$agentPartName)"/></h1>
                 <!-- Links to other parts in the parent dataset, if applicable -->
                 <!-- How to include links to parts other than current part? -->
                 <h2>Access Other Parts of the Dataset:</h2>
                 <ul>
-                    <ol><a href="{$srDoi}">Part I: Source Resource Class</a></ol>
-                    <ol><a href="{$aggrDoi}">Part II: Aggregation Class</a></ol>
-                    <ol><a href="{$wrDoi}">Part III: Web Resource Class</a></ol>
-                    <ol><a href="{$rightsDoi}">Part IV: Rights Statement Class</a></ol>
-                    <ol><a href="{$collDoi}">Part V: Collection Class</a></ol>
-                    <!-- <ol><a href="{$agentDoi}">Part VI: Agent Class</a></ol> -->
+                    <ol><a href="{$srDoi}"><xsl:value-of select="$srPartName"/></a></ol>
+                    <ol><a href="{$aggrDoi}"><xsl:value-of select="$aggrPartName"/></a></ol>
+                    <ol><a href="{$wrDoi}"><xsl:value-of select="$wrPartName"/></a></ol>
+                    <ol><a href="{$rightsDoi}"><xsl:value-of select="$rightsPartName"/></a></ol>
+                    <ol><a href="{$collDoi}"><xsl:value-of select="$collPartName"/></a></ol>
+                    <ol><a href="{$agentDoi}"><xsl:value-of select="$agentPartName"/></a></ol>
                 </ul>
                 
                 <!-- About the physical collection, if applicable -->
@@ -75,7 +81,7 @@
                 <p>All parts and file formats are accessible online. The HTML format contains machine-readable RDFa data, and also serves as a human-readable landing page for each part. Links to alternate serializations are contained in the introductory material. No zipped downloads or SPARQL endpoints are currently available.</p>
                 
                 <!-- Links to alternate serializations -->
-                <h2>Links to Alternate Serializations for <xsl:value-of select="$datasetPartName"/></h2>
+                <h2>Links to Alternate Serializations for <xsl:value-of select="$agentPartName"/></h2>
                 <ul>
                     <ol><a href="{concat($path,$filename,'.nt')}">N-Triples</a></ol>
                     <ol><a href="{concat($path,$filename,'.rdf')}">RDF/XML</a></ol>
@@ -85,7 +91,7 @@
                 <!-- we have no info about the curent dataset part, ok?? -->
                 
                 <!-- Table headline -->
-                <h2>RDF Triples for <xsl:value-of select="$datasetPartName"/></h2>               
+                <h2>RDF Triples for <xsl:value-of select="$agentPartName"/></h2>               
                 <!-- Table setup below always stays the same -->
                 <table border="1" cellpadding="6">
                     <tr>
