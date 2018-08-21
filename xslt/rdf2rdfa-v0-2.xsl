@@ -10,13 +10,16 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xml="http://www.w3.org/XML/1998/namespace"
     version="2.0">
     
-    <xsl:variable name="datasetName">RDF Dataset for the Alaska-Yukon-Pacific Exposition Collection</xsl:variable><!-- Title of dataset -->
+    <!-- Variables -->
+    <xsl:variable name="datasetName">RDF Dataset for the <xsl:value-of select="$digiCollName"/></xsl:variable><!-- Title of dataset -->
     <xsl:variable name="path">https://www.lib.washington.edu/static/public/cams/data/datasets/</xsl:variable> <!-- path to dataset, up to file name -->
     <xsl:variable name="filename">ayp-agents</xsl:variable><!-- filename of dataset without file extension -->
-    <xsl:variable name="findingAidUrl">http://pathToFindingAid.edu</xsl:variable><!-- URL to finding aid for physical collection -->
+    <xsl:variable name="findingAidUrl">http://guides.lib.uw.edu/research/pnw/exploration/ayp_exposition</xsl:variable><!-- URL to finding aid for physical collection -->
     <xsl:variable name="digiCollUrl">http://content.lib.washington.edu/aypweb/index.html</xsl:variable><!-- URL to digital collection -->
-    <xsl:variable name="collDesc">The University of Washington Libraries’ <a href="{$findingAidUrl}"><xsl:value-of select="$pCollName"/></a> include numerous physical collections comprising a large number and variety of photographic and other materials. Selections are available online as a <a href="{$digiCollUrl}">digital collection.</a></xsl:variable>
-    <xsl:variable name="pCollName">Alaska-Yukon-Pacific Exposition Collections</xsl:variable>
+    <xsl:variable name="physCollName">Alaska-Yukon-Pacific Exposition Collections</xsl:variable>
+    <xsl:variable name="digiCollName">Alaska-Yukon-Pacific Exposition Collection</xsl:variable>
+    
+    <!-- More variables: DOIs and titles for each part of the dataset -->
     <xsl:variable name="srDoi">https://doi.org/10.6069/uwlib.55.A.3.1</xsl:variable>
     <xsl:variable name="aggrDoi">https://doi.org/10.6069/uwlib.55.A.3.2</xsl:variable>
     <xsl:variable name="wrDoi">https://doi.org/10.6069/uwlib.55.A.3.3</xsl:variable>
@@ -70,8 +73,10 @@
                 </ul>
                 
                 <!-- About the physical collection, if applicable -->
-                <h2>About the <xsl:value-of select="$pCollName"/></h2>
-                <p><xsl:value-of select="$collDesc"/></p>
+                <h2>About the <xsl:value-of select="$physCollName"/></h2>
+                <p>
+                    The University of Washington Libraries’ <a href="{$findingAidUrl}"><xsl:value-of select="$physCollName"/></a> include numerous physical collections comprising a large number and variety of photographic and other materials. Selections are available online as a <a href="{$digiCollUrl}">digital collection</a>.
+                </p>
                 
                 <!-- About the parent dataset, if applicable -->
                 <!-- NOTE on this section: Number of parts may vary from dataset to dataset -->
