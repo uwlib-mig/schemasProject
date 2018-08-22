@@ -192,9 +192,9 @@
 
                 <!-- About the parent dataset, if applicable -->
                 <h2>About the <xsl:value-of select="$datasetName"/></h2>
-                <p>The RDF triples below are part of a larger dataset consisting of five parts, each
+                <p>The RDF triples below are part of a larger dataset consisting of six parts, each
                     describing a particular class of resource. Each part is available in the
-                    following file formats: HTML with embedded RDFa, N-Triples, RDF/XML, and Turtle.
+                    following file formats: HTML with embedded RDFa, N-Triples, Turtle, and RDF/XML.
                     All data is in the public domain and may be used without restriction. The
                     resources described by the data, however, do have restrictions on use.</p>
                 <p>The dataset is structured primarily using classes and properties taken from the
