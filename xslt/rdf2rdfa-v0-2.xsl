@@ -55,10 +55,10 @@
                 <xsl:value-of select="$wrPartName"/>
             </part>
             <part>
-                <xsl:value-of select="$rightsPartName"/>
+                <xsl:value-of select="$collPartName"/>
             </part>
             <part>
-                <xsl:value-of select="$collPartName"/>
+                <xsl:value-of select="$rightsPartName"/>
             </part>
             <part>
                 <xsl:value-of select="$agentPartName"/>
