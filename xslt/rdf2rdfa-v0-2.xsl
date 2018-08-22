@@ -79,11 +79,11 @@
     <xsl:variable name="wrFile">ayp-webResource-1-0-1</xsl:variable>
     <!-- Collection -->
     <xsl:variable name="collDoi">https://doi.org/10.6069/uwlib.55.A.3.4</xsl:variable>
-    <xsl:variable name="collPartName">Part V: Collection Class</xsl:variable>
+    <xsl:variable name="collPartName">Part IV: Collection Class</xsl:variable>
     <xsl:variable name="collFile">ayp-collections-1-1-1</xsl:variable>
     <!-- Rights statement -->
     <xsl:variable name="rightsDoi">https://doi.org/10.6069/uwlib.55.A.3.5</xsl:variable>
-    <xsl:variable name="rightsPartName">Part IV: Rights Statement Class</xsl:variable>
+    <xsl:variable name="rightsPartName">Part V: Rights Statement Class</xsl:variable>
     <xsl:variable name="rightsFile">ayp-rights-1-0-1</xsl:variable>
     <!-- Agent -->
     <xsl:variable name="agentDoi">https://doi.org/10.6069/uwlib.55.A.3.6</xsl:variable>
@@ -161,13 +161,13 @@
                                         </xsl:when>
                                     </xsl:choose>
                                     <xsl:choose>
-                                        <xsl:when test=". = $rightsPartName">
-                                            <xsl:value-of select="$rightsDoi"/>
+                                        <xsl:when test=". = $collPartName">
+                                            <xsl:value-of select="$collDoi"/>
                                         </xsl:when>
                                     </xsl:choose>
                                     <xsl:choose>
-                                        <xsl:when test=". = $collPartName">
-                                            <xsl:value-of select="$collDoi"/>
+                                        <xsl:when test=". = $rightsPartName">
+                                            <xsl:value-of select="$rightsDoi"/>
                                         </xsl:when>
                                     </xsl:choose>
                                     <xsl:choose>
