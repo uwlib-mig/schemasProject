@@ -30,13 +30,13 @@
     </xsl:variable>
     <!-- Variables defining current dataset part (name, DOI, filename) -->
     <xsl:variable name="currentPartName">
-        <xsl:value-of select="$agentPartName"/>
+        <xsl:value-of select="$aggrPartName"/>
     </xsl:variable>
     <xsl:variable name="currentPartDoi">
-        <xsl:value-of select="$agentDoi"/>
+        <xsl:value-of select="$aggrDoi"/>
     </xsl:variable>
     <xsl:variable name="currentPartFile">
-        <xsl:value-of select="$agentFile"/>
+        <xsl:value-of select="$aggrFile"/>
     </xsl:variable>
 
     <!-- Filepath for generating links to serializations (path *up to filename*) -->
@@ -68,11 +68,11 @@
     <!-- Source resource -->
     <xsl:variable name="srDoi">https://doi.org/10.6069/uwlib.55.A.3.1</xsl:variable>
     <xsl:variable name="srPartName">Part I: Source Resource Class</xsl:variable>
-    <xsl:variable name="srFile">ayp-sourceResource-1-0-1</xsl:variable>
+    <xsl:variable name="srFile">ayp-sourceResource-1-1-0</xsl:variable>
     <!-- Aggregation -->
     <xsl:variable name="aggrDoi">https://doi.org/10.6069/uwlib.55.A.3.2</xsl:variable>
     <xsl:variable name="aggrPartName">Part II: Aggregation Class</xsl:variable>
-    <xsl:variable name="aggrFile">ayp-aggregation-1-0-2</xsl:variable>
+    <xsl:variable name="aggrFile">ayp-aggregation-1-2-0</xsl:variable>
     <!-- Web resource -->
     <xsl:variable name="wrDoi">https://doi.org/10.6069/uwlib.55.A.3.3</xsl:variable>
     <xsl:variable name="wrPartName">Part III: Web Resource Class</xsl:variable>
@@ -87,7 +87,7 @@
     <xsl:variable name="rightsFile">ayp-rights-1-0-1</xsl:variable>
     <!-- Agent -->
     <xsl:variable name="agentDoi">https://doi.org/10.6069/uwlib.55.A.3.6</xsl:variable>
-    <xsl:variable name="agentPartName">Part VI: Agents</xsl:variable>
+    <xsl:variable name="agentPartName">Part VI: Agents Class</xsl:variable>
     <xsl:variable name="agentFile">ayp-agents-1-1-1</xsl:variable>
 
     <!-- Dataset serializations: Tree, serialization names -->
