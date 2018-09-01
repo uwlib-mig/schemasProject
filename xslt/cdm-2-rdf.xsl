@@ -174,11 +174,18 @@
         <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.2#cdm{cdmnumber}">
             <rdf:type rdf:resource="http://www.openarchives.org/ore/terms/Aggregation"/>
         </rdf:Description>
+        <!-- Properties linking to SR, WR -->
+        <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.2#cdm{cdmnumber}">
+            <edm:aggregatedCHO rdf:resource="https://doi.org/10.6069/uwlib.55.A.3.1#cdm{cdmnumber}"/>
+        </rdf:Description>
+        <rdf:Description rdf:about="https://doi.org/10.6069/uwlib.55.A.3.2#cdm{cdmnumber}">
+            <edm:hasView rdf:resource="https://doi.org/10.6069/uwlib.55.A.3.3#cdm{cdmnumber}"/>
+        </rdf:Description>
         <!-- simple outputs -->
         <xsl:apply-templates select="Repository" mode="agg"/>
         <xsl:apply-templates select="Restrictions" mode="agg"/>
-        <xsl:apply-templates select="ItemURL"/>
         <xsl:apply-templates select="OrderingInformation" mode="agg"/>
+        <xsl:apply-templates select="ItemURL"/>
     </xsl:template>
 
     <!-- sub-template for source resource file -->
