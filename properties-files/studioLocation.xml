@@ -42,7 +42,7 @@
          <empty/>
       </typeInfo>
    </xsd><rdf>
-      <sameAs/>
+      <!--  should not require rdf info; folded into info about the studio and, therefore, part of Property file -->
    </rdf><history>
       <dateCreated>
          <range>

@@ -76,7 +76,13 @@
       </customTypeInfo>
    </xsd>
    <rdf>
-      <sameAs/>
+      <cdmRdf>
+         <!-- Not output to dpla metadata;
+              at present only ayp had values for Institution;
+              repeated the Repository value in some abbreviated form
+              which seems unnecessary
+         -->
+      </cdmRdf>
    </rdf>
    <history>
       <dateCreated>

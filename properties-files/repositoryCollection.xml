@@ -70,7 +70,24 @@
       </typeInfo>
    </xsd>
    <rdf>
-      <sameAs/>
+      <cdmRdf>
+         <dpla>
+            <map>dct:isPartOf</map>
+            <object>uri</object>
+            <class>Collection</class>
+            <class>SourceResource</class>
+            <node>
+               <triple>
+                  <p>rdf:type</p>
+                  <o>http://purl.org/dc/dcmitype/Collection</o>
+               </triple>
+               <triple>
+                  <p xml:lang="en">dct:title</p>
+                  <o>value-of</o>
+               </triple>
+            </node>
+         </dpla>
+      </cdmRdf>
    </rdf>
    <history>
       <dateCreated>

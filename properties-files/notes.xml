@@ -78,7 +78,15 @@
          <empty/>
       </typeInfo>
    </xsd><rdf>
-      <sameAs/>
+      <cdmRdf>
+         <dpla>
+            <map xml:lang="en">dct:description</map>
+            <object>literal</object>
+            <class>SourceResource</class>
+            <process>cleanNotes</process>
+            <node/>
+         </dpla>
+      </cdmRdf>
    </rdf><history>
       <dateCreated>
          <range>

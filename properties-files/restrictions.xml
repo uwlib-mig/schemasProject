@@ -67,7 +67,25 @@
          <typeAttribute fixed="For information on permissions for use and reproductions please visit UW Libraries Special Collections Use Permissions page: http://www.lib.washington.edu/specialcollections/services/permission-for-use">xs:string</typeAttribute> 
       </customTypeInfo>
    </xsd><rdf>
-      <sameAs/>
+      <cdmRdf>
+         <dpla>
+            <map>edm:rights</map>
+            <object>uri</object>
+            <class>Rights</class>
+            <class>Aggregation</class>
+            <class>WebResource</class>
+            <node>
+               <triple>
+                  <p>rdf:type</p>
+                  <o>http://purl.org/dc/terms/RightsStatement</o>
+               </triple>
+               <triple>
+                  <p xml:lang="en">skos:prefLabel</p>
+                  <o>value-of</o>
+               </triple>
+            </node>
+         </dpla>
+      </cdmRdf>
    </rdf><history>
       <dateCreated>
          <range>

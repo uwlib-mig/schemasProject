@@ -48,7 +48,13 @@
          <typeAttribute>xs:string</typeAttribute>
       </typeInfo>
    </xsd><rdf>
-      <sameAs/>
+      <cdmRdf>
+         <dpla>
+            <map>dct:description</map>
+            <object xml:lang="en">literal</object>
+            <class>WebResource</class>
+         </dpla>
+      </cdmRdf>
    </rdf><history>
       <dateCreated>
          <range>

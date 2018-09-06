@@ -90,7 +90,39 @@
          <typeAttribute>xs:string</typeAttribute>
       </customTypeInfo>
    </xsd><rdf>
-      <sameAs/>
+      <cdmRdf>
+         <dpla>
+            <map>dc:type</map>
+            <object>literal</object>
+            <class>SourceResource</class>
+            <process>conditions</process>
+            <condition>
+               <test>. = 'image'</test>
+               <p>dct:type</p>
+               <o>http://vocab.getty.edu/aat/300264387</o>
+            </condition>
+            <condition>
+               <test>. = 'photograph' or . = 'Photograph'</test>
+               <p>dct:type</p>
+               <o>http://vocab.getty.edu/aat/300046300</o>
+            </condition>
+            <condition>
+               <test>. = 'Postcard'</test>
+               <p>dct:type</p>
+               <o>http://vocab.getty.edu/aat/300026816</o>
+            </condition>
+            <condition>
+               <test>. = 'Map'</test>
+               <p>dct:type</p>
+               <o>http://vocab.getty.edu/aat/300028094</o>
+            </condition>
+            <condition>
+               <test>. = 'Negative'</test>
+               <p>dct:type</p>
+               <o>http://vocab.getty.edu/aat/300127173</o>
+            </condition>
+         </dpla>
+      </cdmRdf>
    </rdf><history>
       <dateCreated>
          <range>

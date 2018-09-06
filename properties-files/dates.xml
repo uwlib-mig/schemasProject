@@ -75,7 +75,13 @@
          <empty/>
       </typeInfo>
    </xsd><rdf>
-      <sameAs/>
+      <cdmRdf>
+      <dpla>
+      <map>none</map>
+      <object>none</object>
+      <class>none</class>
+      </dpla>
+      </cdmRdf>
    </rdf><history>
       <dateCreated>
          <range>

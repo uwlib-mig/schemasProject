@@ -17,7 +17,7 @@
       <dspaceProperty/>
    </dspace><descriptions>
       <definition>
-         <para>The Negative number refers to the reproduction number assigned to the image for purposes of duplication. It is the unique number by which Special Collections identifies the image. It may be identical to another number in the record.</para>
+         <para>Reproduction number assigned to an image for purposes of duplication. It is a unique number in University of Washington Libraries Special Collections.</para>
       </definition>
       <instructions co="no">
          <para>Enter the negative number. If two negatives numbers are associated with an image, these are to be separated by a semicolon.</para>
@@ -42,7 +42,23 @@
          <empty/>
       </typeInfo>
    </xsd><rdf>
-      <sameAs/>
+      <cdmRdf>
+         <dpla>
+            <map>bf:identifiedBy</map>
+            <object>bnode</object>
+            <class>SourceResource</class>
+            <node>
+               <triple>
+                  <p>rdf:type</p>
+                  <o>http://id.loc.gov/ontologies/bibframe/Identifier</o>
+               </triple>
+               <triple>
+                  <p>skos:prefLabel</p>
+                  <o>value-of</o>
+               </triple>
+            </node>
+         </dpla>
+      </cdmRdf>
    </rdf><history>
       <dateCreated>
          <range>

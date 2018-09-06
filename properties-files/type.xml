@@ -93,7 +93,24 @@
          </simpleType>
       </customTypeInfo>
    </xsd><rdf>
-      <sameAs/>
+      <cdmRdf>
+         <dpla>
+            <map>dc:type</map>
+            <object>literal</object>
+            <class>SourceResource</class>
+            <process>conditions</process>
+            <condition>
+               <test>. = 'StillImage' or . = 'Stillimage' or . = 'stillimage' or . = 'still image' or . = 'Still Image'</test>
+               <p>dct:type</p>
+               <o>http://purl.org/dc/dcmitype/StillImage</o>
+            </condition>
+            <condition>
+               <test>. = 'Text' or . = 'text'</test>
+               <p>dct:type</p>
+               <o>http://purl.org/dc/dcmitype/Text</o>
+            </condition>
+         </dpla>
+      </cdmRdf>
    </rdf><history>
       <dateCreated>
          <range>

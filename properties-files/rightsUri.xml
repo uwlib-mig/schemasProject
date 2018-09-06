@@ -60,7 +60,14 @@
          <empty/>
       </typeInfo>
    </xsd><rdf>
-      <sameAs/>
+      <cdmRdf>
+         <dpla>
+            <map>edm:rights</map>
+            <object>uri</object>
+            <class>Rights</class>
+            <class>WebResource</class>
+         </dpla>
+      </cdmRdf>
    </rdf><history>
       <dateCreated>
          <single>2017-03-30</single>

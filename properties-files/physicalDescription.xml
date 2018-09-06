@@ -103,7 +103,13 @@
          <empty/>
       </typeInfo>
    </xsd><rdf>
-      <sameAs/>
+      <cdmRdf>
+         <dpla>
+            <map>dct:extent</map>
+            <object xml:lang="en">literal</object>
+            <class>SourceResource</class>
+         </dpla>
+      </cdmRdf>
    </rdf><history>
       <dateCreated>
          <range>

@@ -17,7 +17,7 @@
       <dspaceProperty/>
    </dspace><descriptions>
       <definition>
-         <para>Number that users can reference to order a copy of the digital image.</para>
+         <para>Number used to order a copy of a digital resource from the University of Washington Libraries.</para>
       </definition>
       <instructions co="no">
          <para>Enter the order number.</para>
@@ -52,7 +52,23 @@
          <empty/>
       </typeInfo>
    </xsd><rdf>
-      <sameAs/>
+      <cdmRdf>
+         <dpla>
+            <map>bf:identifiedBy</map>
+            <object>bnode</object>
+            <class>WebResource</class>
+            <node>
+               <triple>
+                  <p>rdf:type</p>
+                  <o>http://BIBFRAMEIDENTIFIER.FETCH</o>
+               </triple>
+               <triple>
+                  <p>skos:prefLabel</p>
+                  <o>value-of</o>
+               </triple>
+            </node>
+         </dpla>
+      </cdmRdf>
    </rdf><history>
       <dateCreated>
          <range>

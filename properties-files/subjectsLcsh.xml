@@ -60,7 +60,28 @@
          <empty/>
       </typeInfo>
    </xsd><rdf>
-      <sameAs/>
+      <cdmRdf>
+         <dpla>
+            <map>dct:subject</map>
+            <object>bnode</object>
+            <class>SourceResource</class>
+            <process>cleanSubjects</process>
+            <node>
+               <triple>
+                  <p>rdf:type</p>
+                  <o>http://www.w3.org/2004/02/skos/core#Concept</o>
+               </triple>
+               <triple>
+                  <p>skos:inScheme</p>
+                  <o>http://id.loc.gov/authorities/subjects</o>
+               </triple>
+               <triple>
+                  <p xml:lang="en">dpla:providedLabel</p>
+                  <o>value-of</o>
+               </triple>
+            </node>
+         </dpla>
+      </cdmRdf>
    </rdf><history>
       <dateCreated>
          <range>

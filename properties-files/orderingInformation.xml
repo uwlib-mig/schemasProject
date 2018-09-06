@@ -64,8 +64,27 @@
       <typeInfo level="item">
          <empty/>
       </typeInfo>
-   </xsd><rdf>
-      <sameAs/>
+   </xsd>
+   <rdf>
+      <cdmRdf>
+         <dpla>
+            <map>edm:rights</map>
+            <object>uri</object>
+            <class>Rights</class>
+            <class>Aggregation</class>
+            <class>WebResource</class>
+            <node>
+               <triple>
+                  <p>rdf:type</p>
+                  <o>http://purl.org/dc/terms/RightsStatement</o>
+               </triple>
+               <triple>
+                  <p xml:lang="en">skos:note</p>
+                  <o>value-of</o>
+               </triple>
+            </node>
+         </dpla>
+      </cdmRdf>
    </rdf><history>
       <dateCreated>
          <range>

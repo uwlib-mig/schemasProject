@@ -52,19 +52,22 @@
    <rdf>
       <cdmRdf>
          <dpla>
+            <map>rel:pht</map>
             <object>uri</object>
+            <class>Agent</class>
+            <class>SourceResource</class>
             <node>
                <triple>
                   <p>rdf:type</p>
                   <o>http://www.europeana.eu/schemas/edm/Agent</o>
                </triple>
                <triple>
-                  <p>dpla:providedLabel</p>
+                  <p xml:lang="en">dpla:providedLabel</p>
                   <o>value-of</o>
                </triple>
             </node>
          </dpla>
-      </cdmRdf>
+      </cdmRdf> 
    </rdf>
    <history>
       <dateCreated>

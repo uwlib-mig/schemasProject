@@ -59,7 +59,11 @@
       </typeInfo>
    </xsd>
    <rdf>
-      <sameAs/>
+      <cdmRdf>
+         <!-- Not output to dpla metadata;
+              administrative metadata with no meaning in the dataset context.     
+         -->
+      </cdmRdf>
    </rdf>
    <history>
       <dateCreated>

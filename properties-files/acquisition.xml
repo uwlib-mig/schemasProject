@@ -51,7 +51,13 @@
          <empty/>
       </typeInfo>
    </xsd><rdf>
-      <sameAs/>
+      <cdmRdf>
+        <!-- not output to DPLA metadata; 
+           at present only ayp collection has values for Acquisition;
+           all values were administrative and largely incomprehensible;
+           for example "KK"
+        -->
+      </cdmRdf>
    </rdf><history>
       <dateCreated>
          <range>

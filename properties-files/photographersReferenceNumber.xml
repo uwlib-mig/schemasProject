@@ -17,7 +17,7 @@
       <dspaceProperty/>
    </dspace><descriptions>
       <definition>
-         <para>UW Library's reference number for the photographer.</para>
+         <para>University of Washington Libraries' reference number for a photographer.</para>
       </definition>
       <instructions co="no">
          <para>Input along with photographer's name; usually linked with the entry in the Photographer field.</para>
@@ -44,7 +44,23 @@
          <empty/>
       </typeInfo>
    </xsd><rdf>
-      <sameAs/>
+      <cdmRdf>
+         <dpla>
+            <map>bf:identifiedBy</map>
+            <object>bnode</object>
+            <class>SourceResource</class>
+            <node>
+               <triple>
+                  <p>rdf:type</p>
+                  <o>http://id.loc.gov/ontologies/bibframe/Identifier</o>
+               </triple>
+               <triple>
+                  <p>skos:prefLabel</p>
+                  <o>value-of</o>
+               </triple>
+            </node>
+         </dpla>
+      </cdmRdf>
    </rdf><history>
       <dateCreated>
          <range>

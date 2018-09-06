@@ -73,7 +73,23 @@
          <empty/>
       </typeInfo>
    </xsd><rdf>
-      <sameAs/>
+      <cdmRdf>
+         <dpla>
+            <map>dct:spatial</map>
+            <object>bnode</object>
+            <class>SourceResource</class>
+            <node>
+               <triple>
+                  <p>rdf:type</p>
+                  <o>http://www.europeana.eu/schemas/edm/Place</o>
+               </triple>
+               <triple>
+                  <p xml:lang="en">dpla:providedLabel</p>
+                  <o>value-of</o>
+               </triple>
+            </node>
+         </dpla>
+      </cdmRdf>
    </rdf><history>
       <dateCreated>
          <range>

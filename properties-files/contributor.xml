@@ -49,7 +49,9 @@
          <empty/>
       </typeInfo>
    </xsd><rdf>
-      <sameAs/>
+      <cdmRdf>
+         <!-- Not output to dpla metadata; value for "repository" property is adequate -->
+      </cdmRdf>
    </rdf><history>
       <dateCreated>
          <range>

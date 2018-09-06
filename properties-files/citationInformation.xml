@@ -62,7 +62,9 @@
          <empty/>
       </typeInfo>
    </xsd><rdf>
-      <sameAs/>
+      <cdmRdf>
+         <!-- not outputting to dpla metadata -->
+      </cdmRdf>
    </rdf><history>
       <dateCreated>
          <single>2017-06-21</single>

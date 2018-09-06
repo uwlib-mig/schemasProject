@@ -96,7 +96,27 @@
          <empty/>
       </typeInfo>
    </xsd><rdf>
-      <sameAs/>
+      <cdmRdf>
+         <dpla>
+            <map>dct:date</map>
+            <object>bnode</object>
+            <class>SourceResource</class>
+            <node>
+               <triple>
+                  <p>rdf:type</p>
+                  <o>http://www.europeana.eu/schemas/edm/TimeSpan</o>
+               </triple>
+               <triple>
+                  <p>skos:prefLabel</p>
+                  <o>value-of</o>
+               </triple>
+               <triple>
+                  <p>skos:providedLabel</p>
+                  <o>following-sibling::date</o>
+               </triple>
+            </node>
+         </dpla>
+      </cdmRdf>
    </rdf><history>
       <dateCreated>
          <single>2017-06-21</single>

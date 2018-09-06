@@ -247,16 +247,68 @@
     
     <xs:complexType name="dplaType">
         <xs:sequence>
-            <xs:element name="object" type="xs:anyURI"/><!-- uri/bnode/literal -->
-            <xs:element name="class" type="xs:string"/><!-- could enumerate dpla classes -->
+            <xs:element name="map" minOccurs="1" maxOccurs="unbounded"><!-- property in dpla map to which cdm property is mapped; multiple OK; if more than 1, additional must have @class -->
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute name="class" type="dplaClassType"/>
+                            <xs:attribute ref="xml:lang"></xs:attribute>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="object">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="rdfObjectType">
+                            <xs:attribute ref="xml:lang"/>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="class" type="dplaClassType" maxOccurs="unbounded"/>
+            <xs:element name="process" type="xs:string" minOccurs="0"/>
+            <xs:element name="condition" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="test" type="xs:string"/>
+                        <xs:element name="p" type="xs:string"/>
+                        <xs:element name="o" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
             <xs:element name="node" minOccurs="0">
                 <xs:complexType>
                     <xs:sequence>
-                        <xs:element name="triple" maxOccurs="unbounded">
+                        <xs:element name="triple" minOccurs="0" maxOccurs="unbounded">
                             <xs:complexType>
                                 <xs:sequence>
-                                    <xs:element name="p" type="xs:string"/>
-                                    <xs:element name="o" type="xs:string"/>
+                                    <xs:element name="p">
+                                        <xs:complexType>
+                                            <xs:simpleContent>
+                                                <xs:extension base="xs:string">
+                                                    <xs:attribute ref="xml:lang"/>
+                                                </xs:extension>
+                                            </xs:simpleContent>
+                                        </xs:complexType>
+                                    </xs:element>
+                                    <xs:element name="o">
+                                        <xs:complexType>
+                                            <xs:simpleContent>
+                                                <xs:extension base="xs:string">
+                                                    <xs:attribute name="lit" type="yesNo"/>
+                                                    <xs:attribute name="node">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:enumeration value="xml"/>
+                                                                <xs:enumeration value="rdf"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:attribute>
+                                                </xs:extension>
+                                            </xs:simpleContent>
+                                        </xs:complexType>
+                                    </xs:element>
                                 </xs:sequence>
                             </xs:complexType>
                         </xs:element>
@@ -265,6 +317,29 @@
             </xs:element>
         </xs:sequence>
     </xs:complexType>
+    
+    <xs:simpleType name="dplaClassType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="SourceResource"/>
+            <xs:enumeration value="WebResource"/>
+            <xs:enumeration value="Aggregation"/>
+            <xs:enumeration value="Collection"/>
+            <xs:enumeration value="Rights"/>
+            <xs:enumeration value="Agent"/>
+            <xs:enumeration value="uri"/>
+            <xs:enumeration value="Literal"/><!-- Is this class needed? -->
+            <xs:enumeration value="none"/>
+            </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="rdfObjectType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="uri"/>
+            <xs:enumeration value="bnode"/>
+            <xs:enumeration value="literal"/>
+            <xs:enumeration value="none"/>
+        </xs:restriction>
+    </xs:simpleType>
 
 <xs:complexType name="bibframeType"></xs:complexType>
 
