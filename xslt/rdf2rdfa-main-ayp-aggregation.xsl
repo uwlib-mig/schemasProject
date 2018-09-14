@@ -68,27 +68,27 @@
     <!-- Source resource -->
     <xsl:variable name="srDoi">https://doi.org/10.6069/uwlib.55.A.3.1</xsl:variable>
     <xsl:variable name="srPartName">Part I: Source Resource Class</xsl:variable>
-    <xsl:variable name="srFile">ayp-sourceResource-1-1-0</xsl:variable>
+    <xsl:variable name="srFile">ayp-sourceResource-1-1-3</xsl:variable>
     <!-- Aggregation -->
     <xsl:variable name="aggrDoi">https://doi.org/10.6069/uwlib.55.A.3.2</xsl:variable>
     <xsl:variable name="aggrPartName">Part II: Aggregation Class</xsl:variable>
-    <xsl:variable name="aggrFile">ayp-aggregation-1-2-0</xsl:variable>
+    <xsl:variable name="aggrFile">ayp-aggregation-1-2-2</xsl:variable>
     <!-- Web resource -->
     <xsl:variable name="wrDoi">https://doi.org/10.6069/uwlib.55.A.3.3</xsl:variable>
     <xsl:variable name="wrPartName">Part III: Web Resource Class</xsl:variable>
-    <xsl:variable name="wrFile">ayp-webResource-1-0-1</xsl:variable>
+    <xsl:variable name="wrFile">ayp-webResource-1-0-2</xsl:variable>
     <!-- Collection -->
     <xsl:variable name="collDoi">https://doi.org/10.6069/uwlib.55.A.3.4</xsl:variable>
     <xsl:variable name="collPartName">Part IV: Collection Class</xsl:variable>
-    <xsl:variable name="collFile">ayp-collections-1-1-1</xsl:variable>
+    <xsl:variable name="collFile">ayp-collections-1-1-2</xsl:variable>
     <!-- Rights statement -->
     <xsl:variable name="rightsDoi">https://doi.org/10.6069/uwlib.55.A.3.5</xsl:variable>
     <xsl:variable name="rightsPartName">Part V: Rights Statement Class</xsl:variable>
-    <xsl:variable name="rightsFile">ayp-rights-1-0-1</xsl:variable>
+    <xsl:variable name="rightsFile">ayp-rights-1-0-2</xsl:variable>
     <!-- Agent -->
     <xsl:variable name="agentDoi">https://doi.org/10.6069/uwlib.55.A.3.6</xsl:variable>
     <xsl:variable name="agentPartName">Part VI: Agents Class</xsl:variable>
-    <xsl:variable name="agentFile">ayp-agents-1-1-1</xsl:variable>
+    <xsl:variable name="agentFile">ayp-agents-1-1-3</xsl:variable>
 
     <!-- Dataset serializations: Tree, serialization names -->
     <xsl:variable name="sers">
@@ -111,7 +111,6 @@
     <!-- END VARIABLES -->
 
     <xsl:template match="/">
-        <!-- Latest collection-specific including xsl. 2018-08-08 -->
         <!-- HTML declaration -->
         <html xmlns="http://www.w3.org/1999/xhtml" version="XHTML+RDFa 1.1"
             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -125,6 +124,33 @@
                 <title>
                     <xsl:value-of select="concat($datasetName, ', ', $currentPartName)"/>
                 </title>
+                <script type="application/ld+json">
+                    {
+                    "@context" : "http://schema.org" ,
+                    "@type" : "Dataset" ,
+                    "@id" : "https://doi.org/10.6069/uwlib.55.A.3.2" ,
+                    "creator" : {
+                    "@type" : "Organization" ,
+                    "name" : "University of Washington Libraries" ,
+                    "url" : "http://www.lib.washington.edu/" ,
+                    "sameAs" : "http://viaf.org/viaf/139541794"
+                    } ,
+                    "name" : "RDF Dataset for the Alaska-Yukon-Pacific Exposition Collection, Part II: Aggregation Class " ,
+                    "alternateName" : "Alaska-Yukon-Pacific Exposition Collection Descriptions, Part II: Aggregation Class " ,
+                    "description" : "Description of resources that are instances of ore:Aggregation in the University of Washington Libraries' Alaska-Yukon-Pacific Exposition Collection." ,
+                    "publisher" : {
+                    "@type" : "Organization" ,
+                    "name" : "University of Washington Libraries" ,
+                    "url" : "http://www.lib.washington.edu/" ,
+                    "sameAs" : "http://viaf.org/viaf/139541794"
+                    },
+                    "datePublished" : "2018" ,
+                    "inLanguage" : "English" ,
+                    "encodingFormat" : "application/xhtml+xml" ,
+                    "version" : "1-2-2" ,
+                    "license" : "http://creativecommons.org/publicdomain/zero/1.0/"
+                    }
+                </script>
                 <link rel="alternate" type="application/n-triples"
                     href="{concat($path,$currentPartFile,'.nt')}"/>
                 <link rel="alternate" type="application/rdf+xml"
@@ -283,6 +309,6 @@
     </xsl:template>
 
     <!-- Be sure to include the actual RDFa transform! -->
-    <xsl:include href="rdf2rdfa-v0-2-truncated.xsl"/>
+    <xsl:include href="rdf2rdfa-table.xsl"/>
 
 </xsl:stylesheet>

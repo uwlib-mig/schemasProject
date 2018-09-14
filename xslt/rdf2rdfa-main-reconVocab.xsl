@@ -12,10 +12,10 @@
     
     <xsl:variable name="datasetName">RDF Vocabulary for Linked Data Processes</xsl:variable><!-- Title of dataset -->
     <xsl:variable name="path">https://www.lib.washington.edu/static/public/cams/data/vocabularies/</xsl:variable> <!-- path to dataset, up to file name -->
-    <xsl:variable name="filename">reconciliationVocab</xsl:variable><!-- filename of dataset without file extension -->
+    <xsl:variable name="filename">reconVocab-1-1-0</xsl:variable><!-- filename of dataset without file extension -->
     
     <xsl:template match="/">
-        <!-- latest collection-specific including xsl. 2018-08-08 -->
+        <!-- 2018-09-13 -->
         <!-- html declaration -->
         <html xmlns="http://www.w3.org/1999/xhtml" version="XHTML+RDFa 1.1"
             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -27,6 +27,33 @@
                  links to alternative serializations using <LINK> -->
             <head>
                 <title><xsl:value-of select="$datasetName"/></title>
+                <script type="application/ld+json">
+                    {
+                    "@context" : "http://schema.org" ,
+                    "@type" : "Dataset" ,
+                    "@id" : "https://doi.org/10.6069/uwlib.55.b.2" ,
+                    "creator" : {
+                    "@type" : "Organization" ,
+                    "name" : "University of Washington Libraries" ,
+                    "url" : "http://www.lib.washington.edu/" ,
+                    "sameAs" : "http://viaf.org/viaf/139541794"
+                    } ,
+                    "name" : "RDF Vocabulary for Linked Data Processes" ,
+                    "alternateName" : "Reconciliation Vocabulary" ,
+                    "description" : "Vocabulary for describing processes run on linked data datasets." ,
+                    "publisher" : {
+                    "@type" : "Organization" ,
+                    "name" : "University of Washington Libraries" ,
+                    "url" : "http://www.lib.washington.edu/" ,
+                    "sameAs" : "http://viaf.org/viaf/139541794"
+                    },
+                    "datePublished" : "2018" ,
+                    "inLanguage" : "English" ,
+                    "encodingFormat" : "application/xhtml+xml" ,
+                    "version" : "1-1-0" ,
+                    "license" : "http://creativecommons.org/publicdomain/zero/1.0/"
+                    }
+                </script>
                 <link rel="alternate" type="application/n-triples"
                     href="{concat($path,$filename,'.nt')}"/>
                 <link rel="alternate" type="application/rdf+xml"
@@ -92,6 +119,6 @@
     </xsl:template>
     
     <!-- Be sure to include the actual RDFa transform! -->
-    <xsl:include href="rdf2rdfa-v0-2-truncated.xsl"/>
+    <xsl:include href="rdf2rdfa-table.xsl"/>
     
 </xsl:stylesheet>

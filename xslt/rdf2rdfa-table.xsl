@@ -117,12 +117,14 @@
                     </xsl:if>
                     <xsl:choose>
                         <xsl:when test="*/@rdf:resource">
+                            <!-- editing this condition-->
+                            
                             <xsl:attribute name="resource">
-                                <a href="{*/@rdf:resource}">
-                                    <xsl:value-of select="*/@rdf:resource"/>
-                                </a>
+                                <xsl:value-of select="*/@rdf:resource"/>
                             </xsl:attribute>
-                            <xsl:value-of select="*/@rdf:resource"/>
+                            <a href="{*/@rdf:resource}">
+                                <xsl:value-of select="*/@rdf:resource"/>
+                            </a>
                         </xsl:when>
                         <xsl:when test="*/text()">
                             <xsl:value-of select="*"/>
