@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:hclsr="https://doi.org/10.70027/uwlib.55.A.2.1#" xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:dct="http://purl.org/dc/terms/"
     xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:edm="http://www.europeana.eu/schemas/edm/"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/"
     xmlns:dpla="http://dp.la/about/map/" xmlns:skos="http://www.w3.org/2004/02/skos/core#"
@@ -21,14 +21,14 @@
                         <xsl:value-of select="@rdf:about"/>
                     </xsl:attribute>
                     <xsl:choose>
-                        <xsl:when test="position() = 1">
+                        <xsl:when test="position() = 1 and substring-after(current-grouping-key(),'#')">
                             <td id="{substring-after(current-grouping-key(),'#')}">
                                 <a href="{current-grouping-key()}">
                                     <xsl:value-of select="current-grouping-key()"/>
                                 </a>
                             </td>
                         </xsl:when>
-                        <xsl:when test="position() > 1">
+                        <xsl:when test="position() > 1 or not(substring-after(current-grouping-key(),'#'))">
                             <td>
                                 <a href="{current-grouping-key()}">
                                     <xsl:value-of select="current-grouping-key()"/>
@@ -144,5 +144,4 @@
             </tr>
         </xsl:for-each>
     </xsl:template>
-
 </xsl:stylesheet>

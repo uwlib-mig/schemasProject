@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dct="http://purl.org/dc/terms"
+         xmlns:dpla="http://dp.la/about/map/"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:rel="http://id.loc.gov/vocabulary/relators/"
+         xmlns:edm="http://www.europeana.eu/schemas/edm/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:foaf="xmlns:foaf=http://xmlns.com/foaf/0.1/"
+         xmlns:bf="http://id.loc.gov/ontologies/bibframe/">
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#HupyArt">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#HupyArt">
+      <dpla:providedLabel xml:lang="en">Hupy, Art</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#KunishigeFrankA">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#KunishigeFrankA">
+      <dpla:providedLabel xml:lang="en">Kunishige, Frank A.</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#KunishigeFrank">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#KunishigeFrank">
+      <dpla:providedLabel xml:lang="en">Kunishige, Frank</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#RandlettMary1924">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#RandlettMary1924">
+      <dpla:providedLabel xml:lang="en">Randlett, Mary, 1924-</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#KoikeKyo">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#KoikeKyo">
+      <dpla:providedLabel xml:lang="en">Koike, Kyo</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#KassowitzErnst">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#KassowitzErnst">
+      <dpla:providedLabel xml:lang="en">Kassowitz, Ernst</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#PearsonCharlesR">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#PearsonCharlesR">
+      <dpla:providedLabel xml:lang="en">Pearson, Charles R.</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#WallenDon">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#WallenDon">
+      <dpla:providedLabel xml:lang="en">Wallen, Don</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#MatsushitaIwao">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#MatsushitaIwao">
+      <dpla:providedLabel xml:lang="en">Matsushita, Iwao</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#OgasawaraFredYutaka">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#OgasawaraFredYutaka">
+      <dpla:providedLabel xml:lang="en">Ogasawara, Fred Yutaka</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#KiraHiromu">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#KiraHiromu">
+      <dpla:providedLabel xml:lang="en">Kira, Hiromu</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#MatsukiKusutora">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#MatsukiKusutora">
+      <dpla:providedLabel xml:lang="en">Matsuki, Kusutora</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#MorinagaYukio">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#MorinagaYukio">
+      <dpla:providedLabel xml:lang="en">Morinaga, Yukio</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#AraiClarence">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#AraiClarence">
+      <dpla:providedLabel xml:lang="en">Arai, Clarence</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#KotzebueLeon">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#KotzebueLeon">
+      <dpla:providedLabel xml:lang="en">Kotzebue, Leon</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#TakayoshiHenrySukezo">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#TakayoshiHenrySukezo">
+      <dpla:providedLabel xml:lang="en">Takayoshi, Henry Sukezo</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#MartinIraW">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#MartinIraW">
+      <dpla:providedLabel xml:lang="en">Martin, Ira W.</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#PearsonCharles">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#PearsonCharles">
+      <dpla:providedLabel xml:lang="en">Pearson, Charles</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#RandlettMary">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#RandlettMary">
+      <dpla:providedLabel xml:lang="en">Randlett, Mary</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#&#x9;RandlettMary">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#&#x9;RandlettMary">
+      <dpla:providedLabel xml:lang="en">	Randlett, Mary</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#OgasawaraFred">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#OgasawaraFred">
+      <dpla:providedLabel xml:lang="en">Ogasawara, Fred</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#MatsukiKusatora">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#MatsukiKusatora">
+      <dpla:providedLabel xml:lang="en">Matsuki, Kusatora</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#EatonJohnBertram">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#EatonJohnBertram">
+      <dpla:providedLabel xml:lang="en">Eaton, John Bertram</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#PondelicekJamesWallace">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#PondelicekJamesWallace">
+      <dpla:providedLabel xml:lang="en">Pondelicek, James Wallace</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#ScottRovere">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#ScottRovere">
+      <dpla:providedLabel xml:lang="en">Scott, Rovere</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#HafferVirna">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#HafferVirna">
+      <dpla:providedLabel xml:lang="en">Haffer, Virna</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#Benson&amp;Beatty">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#Benson&amp;Beatty">
+      <dpla:providedLabel xml:lang="en">Benson &amp; Beatty</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#MoriartyRobertE">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#MoriartyRobertE">
+      <dpla:providedLabel xml:lang="en">Moriarty, Robert E.</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#ParkerStudios">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#ParkerStudios">
+      <dpla:providedLabel xml:lang="en">Parker Studios</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#FordPhotographers">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#FordPhotographers">
+      <dpla:providedLabel xml:lang="en">Ford Photographers</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#GreenVern">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#GreenVern">
+      <dpla:providedLabel xml:lang="en">Green, Vern</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#HatchWilard">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#HatchWilard">
+      <dpla:providedLabel xml:lang="en">Hatch, Wilard</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#JacobsFrank">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#JacobsFrank">
+      <dpla:providedLabel xml:lang="en">Jacobs, Frank</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#GreenElizabeth">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#GreenElizabeth">
+      <dpla:providedLabel xml:lang="en">Green, Elizabeth</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#MilkieFred">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#MilkieFred">
+      <dpla:providedLabel xml:lang="en">Milkie, Fred</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#BrantPhotographers">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#BrantPhotographers">
+      <dpla:providedLabel xml:lang="en">Brant Photographers</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#DudleyRoger">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#DudleyRoger">
+      <dpla:providedLabel xml:lang="en">Dudley, Roger</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#EngBetty">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#EngBetty">
+      <dpla:providedLabel xml:lang="en">Eng, Betty</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#FardellJan">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#FardellJan">
+      <dpla:providedLabel xml:lang="en">Fardell, Jan</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#MerrillLee">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#MerrillLee">
+      <dpla:providedLabel xml:lang="en">Merrill, Lee</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#PomeroyFrank">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#PomeroyFrank">
+      <dpla:providedLabel xml:lang="en">Pomeroy, Frank</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#StratfordHugh">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#StratfordHugh">
+      <dpla:providedLabel xml:lang="en">Stratford, Hugh</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#RossBowman">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#RossBowman">
+      <dpla:providedLabel xml:lang="en">Ross, Bowman</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#WenkamR">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#WenkamR">
+      <dpla:providedLabel xml:lang="en">Wenkam, R.</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#SimpkinsJames">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#SimpkinsJames">
+      <dpla:providedLabel xml:lang="en">Simpkins, James</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#NormarkDon">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#NormarkDon">
+      <dpla:providedLabel xml:lang="en">Normark, Don</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#PorterHal">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#PorterHal">
+      <dpla:providedLabel xml:lang="en">Porter, Hal</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#NixonRobert">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#NixonRobert">
+      <dpla:providedLabel xml:lang="en">Nixon, Robert</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#AttberyBarton">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#AttberyBarton">
+      <dpla:providedLabel xml:lang="en">Attbery, Barton</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#CrooksRoyal">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#CrooksRoyal">
+      <dpla:providedLabel xml:lang="en">Crooks, Royal</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#MyersOlin">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#MyersOlin">
+      <dpla:providedLabel xml:lang="en">Myers, Olin</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#DudleyHardinandYang">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#DudleyHardinandYang">
+      <dpla:providedLabel xml:lang="en">Dudley, Hardin, and Yang</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#NormackDon">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#NormackDon">
+      <dpla:providedLabel xml:lang="en">Normack, Don</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#BaerMorley">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#BaerMorley">
+      <dpla:providedLabel xml:lang="en">Baer, Morley</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#Monroe&amp;Akins">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#Monroe&amp;Akins">
+      <dpla:providedLabel xml:lang="en">Monroe &amp; Akins</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#WelchRay">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#WelchRay">
+      <dpla:providedLabel xml:lang="en">Welch, Ray</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#StaubChristian">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#StaubChristian">
+      <dpla:providedLabel xml:lang="en">Staub, Christian</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#DudleyHarding&amp;Yang">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#DudleyHarding&amp;Yang">
+      <dpla:providedLabel xml:lang="en">Dudley, Harding, &amp; Yang</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#MorseJohn">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#MorseJohn">
+      <dpla:providedLabel xml:lang="en">Morse, John</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#Monroe&amp;Akins">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#Monroe&amp;Akins">
+      <dpla:providedLabel xml:lang="en">Monroe &amp;Akins</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#DenningJohn">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#DenningJohn">
+      <dpla:providedLabel xml:lang="en">Denning, John</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#ChengJames">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#ChengJames">
+      <dpla:providedLabel xml:lang="en">Cheng, James</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#BattelleNorthwestPhotographyCenter">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#BattelleNorthwestPhotographyCenter">
+      <dpla:providedLabel xml:lang="en">Battelle- Northwest Photography Center</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#RobergeStudio">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#RobergeStudio">
+      <dpla:providedLabel xml:lang="en">Roberge Studio</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#MeyersOlin">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#MeyersOlin">
+      <dpla:providedLabel xml:lang="en">Meyers, Olin</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#SepulvedaAlex">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#SepulvedaAlex">
+      <dpla:providedLabel xml:lang="en">Sepulveda, Alex</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#HoltArt">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#HoltArt">
+      <dpla:providedLabel xml:lang="en">Holt, Art</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#ChengJamesKM">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#ChengJamesKM">
+      <dpla:providedLabel xml:lang="en">Cheng, James K.M.</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#StametsJohn">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#StametsJohn">
+      <dpla:providedLabel xml:lang="en">Stamets, John</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#DellaccioJini">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#DellaccioJini">
+      <dpla:providedLabel xml:lang="en">Dellaccio, Jini</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#UniversityofWashingtonLibrariesSpecialCollections">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#UniversityofWashingtonLibrariesSpecialCollections">
+      <dpla:providedLabel xml:lang="en">University of Washington Libraries, Special Collections</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#UniversityofWashingtonSpecialCollections">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#UniversityofWashingtonSpecialCollections">
+      <dpla:providedLabel xml:lang="en">University of Washington. Special Collections</dpla:providedLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#UniversityofWashingtonLibrariesSpecialCollections">
+      <rdf:type rdf:resource="http://www.europeana.eu/schemas/edm/Agent"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://doi.org/10.6069/uwlib.55.A.3.6#UniversityofWashingtonLibrariesSpecialCollections">
+      <dpla:providedLabel xml:lang="en">University of Washington Libraries. Special Collections</dpla:providedLabel>
+   </rdf:Description>
+</rdf:RDF>
