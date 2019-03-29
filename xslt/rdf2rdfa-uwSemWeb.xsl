@@ -86,7 +86,7 @@
                 <ul>
                     <xsl:for-each select="rdf:RDF/rdf:Description[ends-with(@rdf:about, '#uwSemWeb')]/ldproc:dataHarvestSource">
                         <li>
-                            <a href="{@rdf:resourceresouce}">
+                            <a href="{@rdf:resource}">
                             <xsl:value-of select="@rdf:resource"/>
                             </a>
                         </li>
