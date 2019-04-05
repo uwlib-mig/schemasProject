@@ -15,7 +15,7 @@
 
     <xsl:template match="/">
         <xsl:variable name="doi">https://doi.org/10.6069/uwlib.55.a.3.1</xsl:variable>
-        <xsl:variable name="usw" select="document('file:////Users/theodore/Desktop/ldStage/datasets/uwSemWeb.rdf')"/>
+        <xsl:variable name="usw" select="document('file:../../uwlswdToPublish/uwSemWeb.rdf')"/>
         <xsl:variable name="dataDesc">https://doi.org/10.6069/uwlib.55.a#uwSemWeb</xsl:variable>
         <xsl:variable name="name" select="$usw/rdf:RDF/rdf:Description[@rdf:about = $doi]/dct:title"/>
         <html xmlns="http://www.w3.org/1999/xhtml" version="XHTML+RDFa 1.1"
