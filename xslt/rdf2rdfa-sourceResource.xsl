@@ -9,82 +9,95 @@
     xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:dcmitype="http://purl.org/dc/dcmitype/"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xml="http://www.w3.org/XML/1998/namespace"
     xmlns:void="http://rdfs.org/ns/void#" xmlns:owl="http://www.w3.org/2002/07/owl#"
-    version="2.0">
-    
+    xmlns:xhtml="http://www.w3.org/1999/xhtml" version="2.0">
+
     <xsl:strip-space elements="*"/>
 
     <xsl:template match="/">
-        <xsl:variable name="doi">https://doi.org/10.6069/uwlib.55.a.3.1</xsl:variable>
-        <xsl:variable name="usw" select="document('file:../../uwlswdToPublish/uwSemWeb.rdf')"/>
-        <xsl:variable name="dataDesc">https://doi.org/10.6069/uwlib.55.a#uwSemWeb</xsl:variable>
-        <xsl:variable name="name" select="$usw/rdf:RDF/rdf:Description[@rdf:about = $doi]/dct:title"/>
+
+        <!-- VARIABLES -->
+        <xsl:variable name="thisDoi">https://doi.org/10.6069/uwlib.55.a.3.1</xsl:variable>
+        
+        <xsl:variable name="uwSemWebData" select="document('https://doi.org/10.6069/uwlib.55.a')"/>
+        <xsl:variable name="uwSemWebResource">https://doi.org/10.6069/uwlib.55.a#uwSemWeb</xsl:variable>
+        <xsl:variable name="srPart" select="document('https://doi.org/10.6069/uwlib.55.A.3.1')"/>
+        <xsl:variable name="aggPart" select="document('https://doi.org/10.6069/uwlib.55.A.3.2')"/>
+        <xsl:variable name="wrPart" select="document('https://doi.org/10.6069/uwlib.55.A.3.3')"/>
+        <xsl:variable name="collPart" select="document('https://doi.org/10.6069/uwlib.55.A.3.4')"/>
+        <xsl:variable name="rsPart" select="document('https://doi.org/10.6069/uwlib.55.A.3.5')"/>
+        <xsl:variable name="agentPart" select="document('https://doi.org/10.6069/uwlib.55.a.3.6')"/>
+        <xsl:variable name="uwlUri"
+            >https://doi.org/10.6069/uwlib.55.A.3.6#UniversityofWashingtonLibraries</xsl:variable>
+
+        <!-- XHTML+RDFa OUTPUT -->
         <html xmlns="http://www.w3.org/1999/xhtml" version="XHTML+RDFa 1.1"
             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
             xsi:schemaLocation="http://www.w3.org/1999/xhtml http://www.w3.org/MarkUp/SCHEMA/xhtml-rdfa-2.xsd"
             lang="en" xml:lang="en">
             <head>
                 <title>
-                    <xsl:value-of select="$name"/>
+                    <xsl:value-of
+                        select="$uwSemWebData/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about=$uwSemWebResource]/xhtml:td[@property='dct:title']"
+                    />
                 </title>
-                <script type="application/ld+json">
-                    {
-                    "@context" : "http://schema.org" ,
-                    "@type" : "Dataset" ,
-                    "@id" : "<xsl:value-of select="$usw/$doi"/>" ,
-                    "creator" : {
-                    "@type" : "Organization" ,
-                    "url" : "<xsl:value-of select="$usw/rdf:RDF/rdf:Description[@rdf:about=$dataDesc]/dct:creator/@rdf:resource"/>"
-                    } ,
-                    "name" : "<xsl:value-of select="$name"/>" ,
-                    "description" : "<xsl:value-of select="$usw/rdf:RDF/rdf:Description[@rdf:about=$doi]/dct:description"/>" ,
-                    "publisher" : {
-                    "@type" : "Organization" ,
-                    "url" : "<xsl:value-of select="$usw/rdf:RDF/rdf:Description[@rdf:about=$dataDesc]/dct:publisher/@rdf:resource"/>"
-                    },
-                    "datePublished" : "<xsl:value-of select="$usw/rdf:RDF/rdf:Description[@rdf:about=$doi]/dct:issued"/>" ,
-                    "inLanguage" : "English" ,
-                    "encodingFormat" : "application/xhtml+xml" ,
-                    "license" : "http://creativecommons.org/publicdomain/zero/1.0/"
-                    }
+                
+                <script type="application/ld+json"> <!-- To-do: Markup values that differ for each partition still need to move into schemaOrgMarkup.xsl if possible -->
+                  <xsl:call-template name="jsonMarkup1"/>
+    "@id" : "<xsl:value-of select="$thisDoi"/>" ,
+    "name" : "<xsl:value-of select="$uwSemWebData/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about = $thisDoi]/xhtml:td[@property = 'dct:title']"/>" ,
+    "description" : "<xsl:value-of select="$uwSemWebData/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about = $thisDoi]/xhtml:td[@property = 'dct:description']"/>" ,
+    "datePublished" : "<xsl:value-of select="$uwSemWebData/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about=$thisDoi]/xhtml:td[@property = 'dct:issued']"/>" ,
+                  <xsl:call-template name="jsonMarkup2"/>
                 </script>
-                <xsl:for-each select="$usw/rdf:RDF/rdf:Description[@rdf:about=$doi]/dct:hasFormat">
+                
+                <xsl:for-each
+                    select="$uwSemWebData/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about=$thisDoi]/xhtml:td[@property='dct:hasFormat']">
                     <xsl:choose>
-                        <xsl:when test="ends-with(@rdf:resource,'.nt')">
-                            <link rel="alternate" type="application/n-triples" href="{@rdf:resource}"/>
+                        <xsl:when test="ends-with(., '.nt')">
+                            <link rel="alternate" type="application/n-triples"
+                                href="{.}"/>
                         </xsl:when>
-                        <xsl:when test="ends-with(@rdf:resource,'.rdf')">
-                            <link rel="alternate" type="application/rdf+xml" href="{@rdf:resource}"/>
+                        <xsl:when test="ends-with(., '.rdf')">
+                            <link rel="alternate" type="application/rdf+xml" href="{.}"
+                            />
                         </xsl:when>
-                        <xsl:when test="ends-with(@rdf:resource,'.ttl')">
-                            <link rel="alternate" type="text/turtle" href="{@rdf:resource}"/>
+                        <xsl:when test="ends-with(., '.ttl')">
+                            <link rel="alternate" type="text/turtle" href="{.}"/>
                         </xsl:when>
                     </xsl:choose>
                 </xsl:for-each>
+                
             </head>
 
             <body>
                 <!-- dataset title -->
                 <h1>
-                    <xsl:value-of select="$usw/rdf:RDF/rdf:Description[@rdf:about = $doi]/dct:title"/>
+                    <xsl:value-of
+                        select="$uwSemWebData/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about=$thisDoi]/xhtml:td[@property='dct:title']"
+                    />
                 </h1>
                 <!-- dataset description -->
                 <p>
                     <xsl:value-of
-                        select="$usw/rdf:RDF/rdf:Description[@rdf:about = $doi]/dct:description"/>
+                        select="$uwSemWebData/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about=$thisDoi]/xhtml:td[@property='dct:description']"
+                    />
                 </p>
                 <!-- backlink -->
                 <h2>Backlink</h2>
                 <p>This dataset is part of the dataset <a
-                        href="{$usw/rdf:RDF/rdf:Description[void:classPartition/@rdf:resource=$doi]/@rdf:about}">
+                        href="{$uwSemWebData/rdf:RDF/rdf:Description[void:classPartition/@rdf:resource=$thisDoi]/@rdf:about}">
                         <xsl:value-of
-                            select="$usw/rdf:RDF/rdf:Description[ends-with(@rdf:about, '#uwSemWeb')]/dct:title"
+                            select="$uwSemWebData/rdf:RDF/rdf:Description[ends-with(@rdf:about, '#uwSemWeb')]/dct:title"
                         />
                     </a>
                 </p>
                 <!-- alternate serializations -->
-                <h2>Links to Alternate Serializations for <xsl:value-of select="$usw/rdf:RDF/rdf:Description[@rdf:about = $doi]/dct:title"/></h2>
+                <h2>Links to Alternate Serializations for <xsl:value-of
+                        select="$uwSemWebData/rdf:RDF/rdf:Description[@rdf:about = $thisDoi]/dct:title"
+                    /></h2>
                 <ul>
-                    <xsl:for-each select="$usw/rdf:RDF/rdf:Description[@rdf:about = $doi]/dct:hasFormat">
+                    <xsl:for-each
+                        select="$uwSemWebData/rdf:RDF/rdf:Description[@rdf:about = $thisDoi]/dct:hasFormat">
                         <xsl:choose>
                             <xsl:when test="ends-with(@rdf:resource, '.nt')">
                                 <li>
@@ -107,11 +120,14 @@
                 <!-- versioning -->
                 <h2>Version information</h2>
                 <p>Version <xsl:value-of
-                        select="$usw/rdf:RDF/rdf:Description[@rdf:about = $doi]/owl:version"/> issued
-                        <xsl:value-of select="$usw/rdf:RDF/rdf:Description[@rdf:about = $doi]/dct:issued"
+                        select="$uwSemWebData/rdf:RDF/rdf:Description[@rdf:about = $thisDoi]/owl:version"
+                    /> issued <xsl:value-of
+                        select="$uwSemWebData/rdf:RDF/rdf:Description[@rdf:about = $thisDoi]/dct:issued"
                     /></p>
                 <!-- Table headline -->
-                <h2>RDF Triples for <xsl:value-of select="$usw/rdf:RDF/rdf:Description[@rdf:about = $doi]/dct:title"/></h2>
+                <h2>RDF Triples for <xsl:value-of
+                        select="$uwSemWebData/rdf:RDF/rdf:Description[@rdf:about = $thisDoi]/dct:title"
+                    /></h2>
                 <!-- Table setup below always stays the same -->
                 <table border="1" cellpadding="6">
                     <tr>
@@ -141,15 +157,19 @@
                         <img src="http://i.creativecommons.org/p/zero/1.0/88x31.png"
                             style="border-style: none;" alt="CC0"/>
                     </a>
-                    <br/><br/> To the extent possible under law, the University of Washington
-                    Libraries has waived all copyright and related or neighboring rights to the
-                        <xsl:value-of select="$name"/>. This work was published in the United
-                    States. </p>
+                    <br/>
+                    <br/>
+                    <xsl:text>To the extent possible under law, the University of Washington Libraries has waived all copyright and related or neighboring rights to the </xsl:text>
+                    <xsl:value-of
+                        select="$uwSemWebData/rdf:RDF/rdf:Description[@rdf:about = $thisDoi]/dct:title"/>
+                    <xsl:text>. This work was published in the United States.</xsl:text>
+                </p>
             </body>
         </html>
     </xsl:template>
 
     <!-- Be sure to include the actual RDFa transform! -->
     <xsl:include href="rdf2rdfa-table.xsl"/>
+    <xsl:include href="schemaOrgMarkup.xsl"/>
 
 </xsl:stylesheet>
