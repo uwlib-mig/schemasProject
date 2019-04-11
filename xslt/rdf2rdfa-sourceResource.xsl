@@ -15,21 +15,30 @@
 
     <xsl:template match="/">
 
-        <!-- VARIABLES -->
-        <xsl:variable name="thisDoi">https://doi.org/10.6069/uwlib.55.a.3.1</xsl:variable>
-        
-        <xsl:variable name="uwSemWebData" select="document('https://doi.org/10.6069/uwlib.55.a')"/>
-        <xsl:variable name="uwSemWebResource">https://doi.org/10.6069/uwlib.55.a#uwSemWeb</xsl:variable>
-        <xsl:variable name="srPart" select="document('https://doi.org/10.6069/uwlib.55.A.3.1')"/>
-        <xsl:variable name="aggPart" select="document('https://doi.org/10.6069/uwlib.55.A.3.2')"/>
-        <xsl:variable name="wrPart" select="document('https://doi.org/10.6069/uwlib.55.A.3.3')"/>
-        <xsl:variable name="collPart" select="document('https://doi.org/10.6069/uwlib.55.A.3.4')"/>
-        <xsl:variable name="rsPart" select="document('https://doi.org/10.6069/uwlib.55.A.3.5')"/>
-        <xsl:variable name="agentPart" select="document('https://doi.org/10.6069/uwlib.55.a.3.6')"/>
-        <xsl:variable name="uwlUri"
+        <!-- Variables -->
+        <xsl:variable name="currBaseIri">https://doi.org/10.6069/uwlib.55.a.3.1</xsl:variable>
+
+        <xsl:variable name="uwlswdBaseIri" select="document('https://doi.org/10.6069/uwlib.55.a')"/>
+        <xsl:variable name="uwlswdResource"
+            >https://doi.org/10.6069/uwlib.55.a#uwSemWeb</xsl:variable>
+
+        <xsl:variable name="srPartBaseIri"
+            select="document('https://doi.org/10.6069/uwlib.55.A.3.1')"/>
+        <xsl:variable name="aggPartBaseIri"
+            select="document('https://doi.org/10.6069/uwlib.55.A.3.2')"/>
+        <xsl:variable name="wrPartBaseIri"
+            select="document('https://doi.org/10.6069/uwlib.55.A.3.3')"/>
+        <xsl:variable name="collPartBaseIri"
+            select="document('https://doi.org/10.6069/uwlib.55.A.3.4')"/>
+        <xsl:variable name="rsPartBaseIri"
+            select="document('https://doi.org/10.6069/uwlib.55.A.3.5')"/>
+        <xsl:variable name="agentPartBaseIri"
+            select="document('https://doi.org/10.6069/uwlib.55.a.3.6')"/>
+
+        <xsl:variable name="uwlIri"
             >https://doi.org/10.6069/uwlib.55.A.3.6#UniversityofWashingtonLibraries</xsl:variable>
 
-        <!-- XHTML+RDFa OUTPUT -->
+        <!-- XHTML+RDFa output -->
         <html xmlns="http://www.w3.org/1999/xhtml" version="XHTML+RDFa 1.1"
             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
             xsi:schemaLocation="http://www.w3.org/1999/xhtml http://www.w3.org/MarkUp/SCHEMA/xhtml-rdfa-2.xsd"
@@ -37,96 +46,97 @@
             <head>
                 <title>
                     <xsl:value-of
-                        select="$uwSemWebData/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about=$uwSemWebResource]/xhtml:td[@property='dct:title']"
+                        select="$uwlswdBaseIri/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about = $uwlswdResource]/xhtml:td[@property = 'dct:title']"
                     />
                 </title>
-                
+
                 <script type="application/ld+json"> <!-- To-do: Markup values that differ for each partition still need to move into schemaOrgMarkup.xsl if possible -->
                   <xsl:call-template name="jsonMarkup1"/>
-    "@id" : "<xsl:value-of select="$thisDoi"/>" ,
-    "name" : "<xsl:value-of select="$uwSemWebData/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about = $thisDoi]/xhtml:td[@property = 'dct:title']"/>" ,
-    "description" : "<xsl:value-of select="$uwSemWebData/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about = $thisDoi]/xhtml:td[@property = 'dct:description']"/>" ,
-    "datePublished" : "<xsl:value-of select="$uwSemWebData/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about=$thisDoi]/xhtml:td[@property = 'dct:issued']"/>" ,
+    "@id" : "<xsl:value-of select="$currBaseIri"/>" ,
+    "name" : "<xsl:value-of select="$uwlswdBaseIri/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about = $currBaseIri]/xhtml:td[@property = 'dct:title']"/>" ,
+    "description" : "<xsl:value-of select="$uwlswdBaseIri/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about = $currBaseIri]/xhtml:td[@property = 'dct:description']"/>" ,
+    "datePublished" : "<xsl:value-of select="$uwlswdBaseIri/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about = $currBaseIri]/xhtml:td[@property = 'dct:issued']"/>" ,
                   <xsl:call-template name="jsonMarkup2"/>
                 </script>
-                
+
                 <xsl:for-each
-                    select="$uwSemWebData/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about=$thisDoi]/xhtml:td[@property='dct:hasFormat']">
+                    select="$uwlswdBaseIri/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about = $currBaseIri]/xhtml:td[@property = 'dct:hasFormat']">
                     <xsl:choose>
                         <xsl:when test="ends-with(., '.nt')">
-                            <link rel="alternate" type="application/n-triples"
-                                href="{.}"/>
+                            <link rel="alternate" type="application/n-triples" href="{.}"/>
                         </xsl:when>
                         <xsl:when test="ends-with(., '.rdf')">
-                            <link rel="alternate" type="application/rdf+xml" href="{.}"
-                            />
+                            <link rel="alternate" type="application/rdf+xml" href="{.}"/>
                         </xsl:when>
                         <xsl:when test="ends-with(., '.ttl')">
                             <link rel="alternate" type="text/turtle" href="{.}"/>
                         </xsl:when>
                     </xsl:choose>
                 </xsl:for-each>
-                
+
             </head>
 
             <body>
-                <!-- dataset title -->
+                <!-- Dataset title -->
                 <h1>
                     <xsl:value-of
-                        select="$uwSemWebData/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about=$thisDoi]/xhtml:td[@property='dct:title']"
+                        select="$uwlswdBaseIri/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about = $currBaseIri]/xhtml:td[@property = 'dct:title']"
                     />
                 </h1>
-                <!-- dataset description -->
+                <!-- Dataset description -->
                 <p>
                     <xsl:value-of
-                        select="$uwSemWebData/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about=$thisDoi]/xhtml:td[@property='dct:description']"
+                        select="$uwlswdBaseIri/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about = $currBaseIri]/xhtml:td[@property = 'dct:description']"
                     />
                 </p>
-                <!-- backlink -->
+                <!-- Backlink -->
                 <h2>Backlink</h2>
-                <p>This dataset is part of the dataset <a
-                        href="{$uwSemWebData/rdf:RDF/rdf:Description[void:classPartition/@rdf:resource=$thisDoi]/@rdf:about}">
+                <!-- Q: Took a shortcut to populate href. Could this cause problems later? -->
+                <p>This dataset is part of the dataset <a href="{$uwlswdResource}">
                         <xsl:value-of
-                            select="$uwSemWebData/rdf:RDF/rdf:Description[ends-with(@rdf:about, '#uwSemWeb')]/dct:title"
+                            select="$uwlswdBaseIri/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about = $uwlswdResource]/xhtml:td[@property = 'dct:title']"
                         />
                     </a>
                 </p>
-                <!-- alternate serializations -->
+                <!-- Alternate serializations -->
                 <h2>Links to Alternate Serializations for <xsl:value-of
-                        select="$uwSemWebData/rdf:RDF/rdf:Description[@rdf:about = $thisDoi]/dct:title"
+                        select="$uwlswdBaseIri/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about = $currBaseIri]/xhtml:td[@property = 'dct:title']"
                     /></h2>
                 <ul>
                     <xsl:for-each
-                        select="$uwSemWebData/rdf:RDF/rdf:Description[@rdf:about = $thisDoi]/dct:hasFormat">
+                        select="$uwlswdBaseIri/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about = $currBaseIri]/xhtml:td[@property = 'dct:hasFormat']">
                         <xsl:choose>
-                            <xsl:when test="ends-with(@rdf:resource, '.nt')">
+                            <xsl:when test="ends-with(@resource, '.nt')">
                                 <li>
-                                    <a href="{@rdf:resource}">N-Triples</a>
+                                    <a href="{@resource}">N-Triples</a>
                                 </li>
                             </xsl:when>
-                            <xsl:when test="ends-with(@rdf:resource, '.rdf')">
+                            <xsl:when test="ends-with(@resource, '.rdf')">
                                 <li>
-                                    <a href="{@rdf:resource}">RDF/XML</a>
+                                    <a href="{@resource}">RDF/XML</a>
                                 </li>
                             </xsl:when>
-                            <xsl:when test="ends-with(@rdf:resource, '.ttl')">
+                            <xsl:when test="ends-with(@resource, '.ttl')">
                                 <li>
-                                    <a href="{@rdf:resource}">Turtle</a>
+                                    <a href="{@resource}">Turtle</a>
                                 </li>
                             </xsl:when>
                         </xsl:choose>
                     </xsl:for-each>
                 </ul>
-                <!-- versioning -->
-                <h2>Version information</h2>
+                <!-- Versioning -->
+                <h2>Version Information</h2>
                 <p>Version <xsl:value-of
-                        select="$uwSemWebData/rdf:RDF/rdf:Description[@rdf:about = $thisDoi]/owl:version"
-                    /> issued <xsl:value-of
-                        select="$uwSemWebData/rdf:RDF/rdf:Description[@rdf:about = $thisDoi]/dct:issued"
-                    /></p>
+                        select="$uwlswdBaseIri/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about = $currBaseIri]/xhtml:td[@property = 'owl:version']"
+                    />
+                </p>
+                <p>Issued <xsl:value-of
+                        select="$uwlswdBaseIri/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about = $currBaseIri]/xhtml:td[@property = 'dct:issued']"
+                    />
+                </p>
                 <!-- Table headline -->
                 <h2>RDF Triples for <xsl:value-of
-                        select="$uwSemWebData/rdf:RDF/rdf:Description[@rdf:about = $thisDoi]/dct:title"
+                    select="$uwlswdBaseIri/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about = $currBaseIri]/xhtml:td[@property = 'dct:title']"
                     /></h2>
                 <!-- Table setup below always stays the same -->
                 <table border="1" cellpadding="6">
@@ -161,7 +171,7 @@
                     <br/>
                     <xsl:text>To the extent possible under law, the University of Washington Libraries has waived all copyright and related or neighboring rights to the </xsl:text>
                     <xsl:value-of
-                        select="$uwSemWebData/rdf:RDF/rdf:Description[@rdf:about = $thisDoi]/dct:title"/>
+                        select="$uwlswdBaseIri/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about = $currBaseIri]/xhtml:td[@property = 'dct:title']"/>
                     <xsl:text>. This work was published in the United States.</xsl:text>
                 </p>
             </body>
