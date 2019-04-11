@@ -178,7 +178,7 @@
         </html>
     </xsl:template>
 
-    <!-- Be sure to include the actual RDFa transform! -->
+    <!-- Be sure to include the actual RDFa transform, schema.org markup transform! -->
     <xsl:include href="rdf2rdfa-table.xsl"/>
     <xsl:include href="schemaOrgMarkup.xsl"/>
 
