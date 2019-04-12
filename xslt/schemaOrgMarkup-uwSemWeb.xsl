@@ -34,14 +34,16 @@
             "creator" : {<!-- Will pulling from published agent RDFa here and for publisher below cause problems? Will we be forced to pull from local file instead? -->
                 "@type" : "Organization" ,
                 "name" : "<xsl:value-of select="$agentPartBaseIri/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about=$uwlIri]/xhtml:td[@property='dpla:providedLabel']"/>"
-                <!-- Same problem here as in other schema markup template; can't generate "url" : "" until it is in our agents file. -->
+                "sameAs" : "<xsl:value-of select="$uwlIri"/>"
+                <!-- Same problem here as in other schema markup template; can't generate "url" : "" until it is in our agents file. Also add sameAs VIAF? -->
                 } ,
             "name" : "<xsl:value-of select="$uwlswdRdfxml/rdf:RDF/rdf:Description[@rdf:about=$uwlswdBaseIri]/dct:title"/>" ,
             "description" : "<xsl:value-of select="$uwlswdRdfxml/rdf:RDF/rdf:Description[ends-with(@rdf:about, '#uwSemWeb')]/dct:title"/>" ,
             "publisher" : {
                 "@type" : "Organization" ,
                 "name" : "<xsl:value-of select="$agentPartBaseIri/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about=$uwlIri]/xhtml:td[@property='dpla:providedLabel']"/>"
-                <!-- Same problem here as in other schema markup template; can't generate "url" : "" until it is in our agents file. -->
+                "sameAs" : "<xsl:value-of select="$uwlIri"/>"
+        <!-- Same problem here as in other schema markup template; can't generate "url" : "" until it is in our agents file. Also add sameAs VIAF? -->
                 } ,
             "datePublished" : "<xsl:value-of select="$uwlswdRdfxml/rdf:RDF/rdf:Description[ends-with(@rdf:about, '#uwSemWeb')]/dct:issued"/>" ,
             "inLanguage" : "<xsl:value-of select="substring-after($uwlswdRdfxml/rdf:RDF/rdf:Description[@rdf:about=$uwlswdBaseIri]/dct:language/@rdf:resource, 'languages/')"/>" ,

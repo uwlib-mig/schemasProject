@@ -1,23 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" version="2.0"
-    xmlns:dct="http://purl.org/dc/terms/" xmlns:void="http://rdfs.org/ns/void#"
-    xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:edm="http://www.europeana.eu/schemas/edm/"
-    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/"
-    xmlns:dpla="http://dp.la/about/map/" xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+<xsl:stylesheet 
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
-    xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:dcmitype="http://purl.org/dc/dcmitype/"
-    xmlns:ldproc="https://doi.org/10.6069/uwlib.55.b.2#">
-
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:dcmitype="http://purl.org/dc/dcmitype/"
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:dpla="http://dp.la/about/map/"
+    xmlns:edm="http://www.europeana.eu/schemas/edm/"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:ldproc="https://doi.org/10.6069/uwlib.55.b.2#"
+    xmlns:ore="http://www.openarchives.org/ore/terms/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:void="http://rdfs.org/ns/void#"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    version="2.0">
     <xsl:key name="resources" match="rdf:Description" use="@rdf:about"/>
     <xsl:strip-space elements="*"/>
     <xsl:template match="/">
-
         <!-- Variables -->
         <xsl:variable name="currBaseIri">https://doi.org/10.6069/uwlib.55.a</xsl:variable>
         <xsl:variable name="uwlswdResource"
             >https://doi.org/10.6069/uwlib.55.a#uwSemWeb</xsl:variable>
-
         <!-- XHTML+RDFa output -->
         <html xmlns="http://www.w3.org/1999/xhtml" version="XHTML+RDFa 1.1"
             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -26,14 +31,17 @@
             <head>
                 <title>
                     <xsl:value-of
-                        select="rdf:RDF/rdf:Description[ends-with(@rdf:about, '#uwSemWeb')]/dct:title"
-                    />
+                        select="rdf:RDF/rdf:Description[@rdf:about = $uwlswdResource]/dct:title"/>
                 </title>
+                <xsl:text>
+                </xsl:text>
                 <script type="application/ld+json">
                     <xsl:call-template name="jsonMarkup"/>
                 </script>
+                <xsl:text>
+                </xsl:text>
                 <xsl:for-each
-                    select="rdf:RDF/rdf:Description[ends-with(@rdf:about, '#uwSemWeb')]/dct:hasFormat">
+                    select="rdf:RDF/rdf:Description[@rdf:about = $uwlswdResource]/dct:hasFormat">
                     <xsl:choose>
                         <xsl:when test="ends-with(@rdf:resource, '.nt')">
                             <link rel="alternate" type="application/n-triples"
@@ -53,22 +61,21 @@
                 <!-- Dataset title -->
                 <h1>
                     <xsl:value-of
-                        select="rdf:RDF/rdf:Description[ends-with(@rdf:about, '#uwSemWeb')]/dct:title"
-                    />
+                        select="rdf:RDF/rdf:Description[@rdf:about = $uwlswdResource]/dct:title"/>
                 </h1>
                 <!-- Dataset description -->
                 <p>
                     <xsl:value-of
-                        select="rdf:RDF/rdf:Description[ends-with(@rdf:about, '#uwSemWeb')]/dct:description"
+                        select="rdf:RDF/rdf:Description[@rdf:about = $uwlswdResource]/dct:description"
                     />
                 </p>
                 <!-- Dataset partitions -->
                 <h2>This dataset consists of <xsl:value-of
-                        select="count(rdf:RDF/rdf:Description[ends-with(@rdf:about, '#uwSemWeb')]/void:classPartition)"
-                    /> partitions:</h2>
+                        select="count(rdf:RDF/rdf:Description[@rdf:about = $uwlswdResource]/void:classPartition)"
+                    /> partitions</h2>
                 <ul>
                     <xsl:for-each
-                        select="rdf:RDF/rdf:Description[ends-with(@rdf:about, '#uwSemWeb')]/void:classPartition">
+                        select="rdf:RDF/rdf:Description[@rdf:about = $uwlswdResource]/void:classPartition">
                         <li>
                             <a
                                 href="{distinct-values(key('resources', @rdf:resource)/@rdf:about[1])}">
@@ -78,10 +85,10 @@
                     </xsl:for-each>
                 </ul>
                 <!-- Digital collections -->
-                <h2>Digital collections from which the dataset's resources were harvested:</h2>
+                <h2>Digital collections from which the dataset's resources were harvested</h2>
                 <ul>
                     <xsl:for-each
-                        select="rdf:RDF/rdf:Description[ends-with(@rdf:about, '#uwSemWeb')]/ldproc:dataHarvestSource">
+                        select="rdf:RDF/rdf:Description[@rdf:about = $uwlswdResource]/ldproc:dataHarvestSource">
                         <li>
                             <a href="{@rdf:resource}">
                                 <xsl:value-of select="@rdf:resource"/>
@@ -91,11 +98,11 @@
                 </ul>
                 <!-- Alternate serializations -->
                 <h2>Links to Alternate Serializations for <xsl:value-of
-                        select="rdf:RDF/rdf:Description[ends-with(@rdf:about, '#uwSemWeb')]/dct:title"
+                        select="rdf:RDF/rdf:Description[@rdf:about = $uwlswdResource]/dct:title"
                     /></h2>
                 <ul>
                     <xsl:for-each
-                        select="rdf:RDF/rdf:Description[ends-with(@rdf:about, '#uwSemWeb')]/dct:hasFormat">
+                        select="rdf:RDF/rdf:Description[@rdf:about = $uwlswdResource]/dct:hasFormat">
                         <xsl:choose>
                             <xsl:when test="ends-with(@rdf:resource, '.nt')">
                                 <li>
@@ -116,14 +123,14 @@
                     </xsl:for-each>
                 </ul>
                 <!-- Versioning -->
-                <h2>Version information</h2>
+                <h2>Version Information</h2>
                 <p><xsl:value-of
-                        select="rdf:RDF/rdf:Description[ends-with(@rdf:about, '#uwSemWeb')]/dct:title"
-                    /> is not versioned as a whole; the partitions only are versioned. See the data
+                        select="rdf:RDF/rdf:Description[@rdf:about = $uwlswdResource]/dct:title"/>
+                    is not versioned as a whole; the partitions only are versioned. See the data
                     below to determine the current version of each partition.</p>
                 <!-- Table headline -->
                 <h2>RDF Triples for <xsl:value-of
-                        select="rdf:RDF/rdf:Description[ends-with(@rdf:about, '#uwSemWeb')]/dct:title"
+                        select="rdf:RDF/rdf:Description[@rdf:about = $uwlswdResource]/dct:title"
                     /></h2>
                 <!-- Table setup below always stays the same -->
                 <table border="1" cellpadding="6">
@@ -156,8 +163,8 @@
                     <br/><br/> To the extent possible under law, the University of Washington
                     Libraries has waived all copyright and related or neighboring rights to the
                         <xsl:value-of
-                        select="rdf:RDF/rdf:Description[ends-with(@rdf:about, '#uwSemWeb')]/dct:title"
-                    />. This work was published in the United States. </p>
+                        select="rdf:RDF/rdf:Description[@rdf:about = $uwlswdResource]/dct:title"/>.
+                    This work was published in the United States. </p>
             </body>
         </html>
     </xsl:template>

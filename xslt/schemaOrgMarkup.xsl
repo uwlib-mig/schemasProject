@@ -16,26 +16,10 @@
     <!-- Do I need:
     <xsl:strip-space elements="*"> ? -->
     
-    <!-- Variables -->
+    <!-- Variables -->   
     <xsl:variable name="uwlswdBaseIri" select="document('https://doi.org/10.6069/uwlib.55.a')"/>
-    
-    <!-- Only agent base IRI needed for schema.org markup generation?
-    <xsl:variable name="srPartBaseIri"
-        select="document('https://doi.org/10.6069/uwlib.55.A.3.1')"/>
-    <xsl:variable name="aggPartBaseIri"
-        select="document('https://doi.org/10.6069/uwlib.55.A.3.2')"/>
-    <xsl:variable name="wrPartBaseIri"
-        select="document('https://doi.org/10.6069/uwlib.55.A.3.3')"/>
-    <xsl:variable name="collPartBaseIri"
-        select="document('https://doi.org/10.6069/uwlib.55.A.3.4')"/>
-    <xsl:variable name="rsPartBaseIri"
-        select="document('https://doi.org/10.6069/uwlib.55.A.3.5')"/>
-        -->
-    <xsl:variable name="agentPartBaseIri"
-        select="document('https://doi.org/10.6069/uwlib.55.a.3.6')"/>
-    
-    <xsl:variable name="uwlIri"
-        >https://doi.org/10.6069/uwlib.55.A.3.6#UniversityofWashingtonLibraries</xsl:variable>
+    <xsl:variable name="agentPartBaseIri" select="document('https://doi.org/10.6069/uwlib.55.a.3.6')"/>
+    <xsl:variable name="uwlIri">https://doi.org/10.6069/uwlib.55.A.3.6#UniversityofWashingtonLibraries</xsl:variable>
     
     <!-- Values pulling from uwSemWeb that are different for each partition still need to come into these templates. 
     Can we pull the IRI for the partition being transformed from source RDF/XML? But it isn't source XML for this template, it is source XML for the template calling this template... -->
@@ -46,12 +30,13 @@
     </xsl:template>
     <xsl:template name="jsonMarkup2"><!-- need more key/value pairs here -->
     "creator" : {<!-- Add more key/value pairs for creator? -->
-    "@type" : "Organization" ,
+        "@type" : "Organization" ,<!-- The following will not work until a schema:url value is in our agent file for UWL: "url" : "<xsl:value-of select="$agent/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[...]"/>"  Also add sameAs VIAF? -->
     "sameAs" : "<xsl:value-of select="$uwlIri"/>"
     "name" : "<xsl:value-of select="$agentPartBaseIri/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about=$uwlIri]/xhtml:td[@property='dpla:providedLabel']"/>"
         } ,
     "publisher" : {<!-- Add more key/value pairs for publisher? -->
-    "@type" : "Organization" ,<!-- The following will not work until a schema:url value is in our agent file for UWL: "url" : "<xsl:value-of select="$agent/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[...]"/>" -->
+        "@type" : "Organization" ,<!-- The following will not work until a schema:url value is in our agent file for UWL: "url" : "<xsl:value-of select="$agent/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[...]"/>"  Also add sameAs VIAF? -->
+    "sameAs" : "<xsl:value-of select="$uwlIri"/>"
     "name" : "<xsl:value-of select="$agentPartBaseIri/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about=$uwlIri]/xhtml:td[@property='dpla:providedLabel']"/>" ,
         },
     "inLanguage" : "<xsl:value-of select="substring-after($uwlswdBaseIri/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about=$uwlswdBaseIri]/xhtml:td[@property='dct:language'], 'languages/')"/>" ,
