@@ -12,26 +12,22 @@
     xmlns:foaf="http://xmlns.com/foaf/0.1/"
     xmlns:ldproc="https://doi.org/10.6069/uwlib.55.b.2#"
     xmlns:ore="http://www.openarchives.org/ore/terms/"
+    xmlns:schema="http://schema.org/"
     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
     xmlns:void="http://rdfs.org/ns/void#"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     version="2.0">
     <xsl:strip-space elements="*"/>
     <xsl:template match="/">
+        
         <!-- Variables -->
         <xsl:variable name="currBaseIri">https://doi.org/10.6069/uwlib.55.a.3.1</xsl:variable>
         <xsl:variable name="uwlswdBaseIri" select="document('https://doi.org/10.6069/uwlib.55.a')"/>
-        <!-- Is this variable necessary? Would it be better to just use ends-with(), etc. to specify when we are looking for the uwSemWeb resource IRI? -->
         <xsl:variable name="uwlswdResource"
             >https://doi.org/10.6069/uwlib.55.a#uwSemWeb</xsl:variable>
-        <!-- Any other way to get this (minimize variables?)? Not an issue to use as variable? -->
         <xsl:variable name="uwlIri"
             >https://doi.org/10.6069/uwlib.55.A.3.6#UniversityofWashingtonLibraries</xsl:variable>
-        <!-- Vars from previous version:
-        <xsl:variable name="doi">https://doi.org/10.6069/uwlib.55.a.3.4</xsl:variable>
-        <xsl:variable name="usw" select="document('file:////Users/theodore/Desktop/ldStage/datasets/uwSemWeb.rdf')"/>
-        <xsl:variable name="dataDesc">https://doi.org/10.6069/uwlib.55.a#uwSemWeb</xsl:variable>
-        <xsl:variable name="name" select="$usw/rdf:RDF/rdf:Description[@rdf:about = $doi]/dct:title"/> -->
+
         <!-- XHTML+RDFa output -->
         <html xmlns="http://www.w3.org/1999/xhtml" version="XHTML+RDFa 1.1"
             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -43,16 +39,15 @@
                         select="$uwlswdBaseIri/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about = $currBaseIri]/xhtml:td[@property = 'dct:title']"
                     />
                 </title>
-                <!-- Ensuring line break between page components in various places for readability of output HTML+RDFa. -->
                 <xsl:text>
                 </xsl:text>
-                <script type="application/ld+json"> <!-- To-do: Markup values that differ for each partition still need to move into the single schemaOrgMarkup transform if possible -->
-                  <xsl:call-template name="jsonMarkup1"/>
-    "@id" : "<xsl:value-of select="$currBaseIri"/>" ,
-    "name" : "<xsl:value-of select="$uwlswdBaseIri/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about = $currBaseIri]/xhtml:td[@property = 'dct:title']"/>" ,
-    "description" : "<xsl:value-of select="$uwlswdBaseIri/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about = $currBaseIri]/xhtml:td[@property = 'dct:description']"/>" ,
-    "datePublished" : "<xsl:value-of select="$uwlswdBaseIri/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about = $currBaseIri]/xhtml:td[@property = 'dct:issued']"/>" ,
-                  <xsl:call-template name="jsonMarkup2"/>
+                <script type="application/ld+json"> 
+                    <xsl:call-template name="jsonMarkup1"/>
+                    "@id" : "<xsl:value-of select="$currBaseIri"/>" ,
+                    "name" : "<xsl:value-of select="$uwlswdBaseIri/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about = $currBaseIri]/xhtml:td[@property = 'dct:title']"/>" ,
+                    "description" : "<xsl:value-of select="$uwlswdBaseIri/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about = $currBaseIri]/xhtml:td[@property = 'dct:description']"/>" ,
+                    "datePublished" : "<xsl:value-of select="$uwlswdBaseIri/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about = $currBaseIri]/xhtml:td[@property = 'dct:issued']"/>" , 
+                    <xsl:call-template name="jsonMarkup2"/>
                 </script>
                 <xsl:text>
                 </xsl:text>
@@ -82,15 +77,15 @@
                 <p>
                     <xsl:value-of
                         select="$uwlswdBaseIri/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about = $currBaseIri]/xhtml:td[@property = 'dct:description']"
-                    />
+                    />.
                 </p>
                 <!-- Backlink -->
-                <h2>Backlink</h2>
-                <p>This dataset is part of the dataset <a href="{$uwlswdResource}">
+                <h2>Backlink:</h2>
+                <p>This dataset is part of the dataset <a href="https://doi.org/10.6069/uwlib.55.a">
                         <xsl:value-of
                             select="$uwlswdBaseIri/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about = $uwlswdResource]/xhtml:td[@property = 'dct:title']"
                         />
-                    </a>
+                    </a>.
                 </p>
                 <!-- Alternate serializations -->
                 <h2>Links to Alternate Serializations for <xsl:value-of

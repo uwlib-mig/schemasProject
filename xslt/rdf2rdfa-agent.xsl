@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+<xsl:stylesheet 
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-    xmlns:bf="http://id.loc.gov/ontologies/bibframe/" xmlns:dc="http://purl.org/dc/elements/1.1/"
-    xmlns:dcmitype="http://purl.org/dc/dcmitype/" xmlns:dct="http://purl.org/dc/terms/"
-    xmlns:dpla="http://dp.la/about/map/" xmlns:edm="http://www.europeana.eu/schemas/edm/"
-    xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:ldproc="https://doi.org/10.6069/uwlib.55.b.2#"
-    xmlns:ore="http://www.openarchives.org/ore/terms/" xmlns:schema="http://schema.org/"
-    xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:void="http://rdfs.org/ns/void#"
-    xmlns:xhtml="http://www.w3.org/1999/xhtml" version="2.0">
+    xmlns:bf="http://id.loc.gov/ontologies/bibframe/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:dcmitype="http://purl.org/dc/dcmitype/"
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:dpla="http://dp.la/about/map/"
+    xmlns:edm="http://www.europeana.eu/schemas/edm/"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:ldproc="https://doi.org/10.6069/uwlib.55.b.2#"
+    xmlns:ore="http://www.openarchives.org/ore/terms/"
+    xmlns:schema="http://schema.org/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:void="http://rdfs.org/ns/void#"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    version="2.0">
     <xsl:strip-space elements="*"/>
     <xsl:template match="/">
+        
         <!-- Variables -->
         <xsl:variable name="currBaseIri">https://doi.org/10.6069/uwlib.55.a.3.6</xsl:variable>
         <xsl:variable name="uwlswdBaseIri" select="document('https://doi.org/10.6069/uwlib.55.a')"/>
@@ -18,6 +27,7 @@
             >https://doi.org/10.6069/uwlib.55.a#uwSemWeb</xsl:variable>
         <xsl:variable name="uwlIri"
             >https://doi.org/10.6069/uwlib.55.A.3.6#UniversityofWashingtonLibraries</xsl:variable>
+        
         <!-- XHTML+RDFa output -->
         <html xmlns="http://www.w3.org/1999/xhtml" version="XHTML+RDFa 1.1"
             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -33,11 +43,10 @@
                 </xsl:text>
                 <script type="application/ld+json">
                     <xsl:call-template name="jsonMarkup1"/>
-                    <!-- Should this be base IRI or uwSemWeb resource IRI?? -->
-                        "@id" : "<xsl:value-of select="$currBaseIri"/>" ,
-                        "name" : "<xsl:value-of select="$uwlswdBaseIri/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about = $currBaseIri]/xhtml:td[@property = 'dct:title']"/>" ,
-                        "description" : "<xsl:value-of select="$uwlswdBaseIri/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about = $currBaseIri]/xhtml:td[@property = 'dct:description']"/>" ,
-                        "datePublished" : "<xsl:value-of select="$uwlswdBaseIri/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about = $currBaseIri]/xhtml:td[@property = 'dct:issued']"/>" , 
+                    "@id" : "<xsl:value-of select="$currBaseIri"/>" ,
+                    "name" : "<xsl:value-of select="$uwlswdBaseIri/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about = $currBaseIri]/xhtml:td[@property = 'dct:title']"/>" ,
+                    "description" : "<xsl:value-of select="$uwlswdBaseIri/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about = $currBaseIri]/xhtml:td[@property = 'dct:description']"/>" ,
+                    "datePublished" : "<xsl:value-of select="$uwlswdBaseIri/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about = $currBaseIri]/xhtml:td[@property = 'dct:issued']"/>" , 
                     <xsl:call-template name="jsonMarkup2"/>
                 </script>
                 <xsl:text>
@@ -68,20 +77,20 @@
                 <p>
                     <xsl:value-of
                         select="$uwlswdBaseIri/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about = $currBaseIri]/xhtml:td[@property = 'dct:description']"
-                    />
+                    />.
                 </p>
                 <!-- Backlink -->
-                <h2>Backlink</h2>
-                <p>This dataset is part of the dataset <a href="{$uwlswdResource}">
+                <h2>Backlink:</h2>
+                <p>This dataset is part of the dataset <a href="https://doi.org/10.6069/uwlib.55.a">
                         <xsl:value-of
                             select="$uwlswdBaseIri/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about = $uwlswdResource]/xhtml:td[@property = 'dct:title']"
                         />
-                    </a>
+                    </a>.
                 </p>
                 <!-- Alternate serializations -->
                 <h2>Links to Alternate Serializations for <xsl:value-of
                         select="$uwlswdBaseIri/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about = $currBaseIri]/xhtml:td[@property = 'dct:title']"
-                    /></h2>
+                    />:</h2>
                 <ul>
                     <xsl:for-each
                         select="$uwlswdBaseIri/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about = $currBaseIri]/xhtml:td[@property = 'dct:hasFormat']">
@@ -105,7 +114,7 @@
                     </xsl:for-each>
                 </ul>
                 <!-- Versioning -->
-                <h2>Version Information</h2>
+                <h2>Version Information:</h2>
                 <ul>
                     <li>Version <xsl:value-of
                             select="$uwlswdBaseIri/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about = $currBaseIri]/xhtml:td[@property = 'owl:version']"

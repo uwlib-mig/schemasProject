@@ -12,12 +12,14 @@
     xmlns:foaf="http://xmlns.com/foaf/0.1/"
     xmlns:ldproc="https://doi.org/10.6069/uwlib.55.b.2#"
     xmlns:ore="http://www.openarchives.org/ore/terms/"
+    xmlns:schema="http://schema.org/"
     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
     xmlns:void="http://rdfs.org/ns/void#"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     version="2.0">
     <xsl:strip-space elements="*"/>
     <xsl:template match="/">
+        
         <!-- Variables -->
         <xsl:variable name="currBaseIri">https://doi.org/10.6069/uwlib.55.a.3.3</xsl:variable>
         <xsl:variable name="uwlswdBaseIri" select="document('https://doi.org/10.6069/uwlib.55.a')"/>
@@ -25,6 +27,7 @@
             >https://doi.org/10.6069/uwlib.55.a#uwSemWeb</xsl:variable>
         <xsl:variable name="uwlIri"
             >https://doi.org/10.6069/uwlib.55.A.3.6#UniversityofWashingtonLibraries</xsl:variable>
+        
         <!-- XHTML+RDFa output -->
         <html xmlns="http://www.w3.org/1999/xhtml" version="XHTML+RDFa 1.1"
             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -40,10 +43,10 @@
                 </xsl:text>
                 <script type="application/ld+json">
                     <xsl:call-template name="jsonMarkup1"/>
-        "@id" : "<xsl:value-of select="$currBaseIri"/>" ,
-        "name" : "<xsl:value-of select="$uwlswdBaseIri/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about = $currBaseIri]/xhtml:td[@property = 'dct:title']"/>" ,
-        "description" : "<xsl:value-of select="$uwlswdBaseIri/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about = $currBaseIri]/xhtml:td[@property = 'dct:description']"/>" ,
-        "datePublished" : "<xsl:value-of select="$uwlswdBaseIri/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about = $currBaseIri]/xhtml:td[@property = 'dct:issued']"/>" ,
+                    "@id" : "<xsl:value-of select="$currBaseIri"/>" ,
+                    "name" : "<xsl:value-of select="$uwlswdBaseIri/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about = $currBaseIri]/xhtml:td[@property = 'dct:title']"/>" ,
+                    "description" : "<xsl:value-of select="$uwlswdBaseIri/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about = $currBaseIri]/xhtml:td[@property = 'dct:description']"/>" ,
+                    "datePublished" : "<xsl:value-of select="$uwlswdBaseIri/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about = $currBaseIri]/xhtml:td[@property = 'dct:issued']"/>" , 
                     <xsl:call-template name="jsonMarkup2"/>
                 </script>
                 <xsl:text>
@@ -74,15 +77,15 @@
                 <p>
                     <xsl:value-of
                         select="$uwlswdBaseIri/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about = $currBaseIri]/xhtml:td[@property = 'dct:description']"
-                    />
+                    />.
                 </p>
                 <!-- Backlink -->
                 <h2>Backlink</h2>
-                <p>This dataset is part of the dataset <a href="{$uwlswdResource}">
+                <p>This dataset is part of the dataset <a href="https://doi.org/10.6069/uwlib.55.a">
                         <xsl:value-of
                             select="$uwlswdBaseIri/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about = $uwlswdResource]/xhtml:td[@property = 'dct:title']"
                         />
-                    </a>
+                    </a>.
                 </p>
                 <!-- Alternate serializations -->
                 <h2>Links to Alternate Serializations for <xsl:value-of

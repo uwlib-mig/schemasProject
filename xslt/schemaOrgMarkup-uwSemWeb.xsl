@@ -19,7 +19,7 @@
     <xsl:variable name="uwlIri">https://doi.org/10.6069/uwlib.55.A.3.6#UniversityofWashingtonLibraries</xsl:variable>
     <!-- VARIABLES BELOW PULL DATA FROM FILES IN LOCAL WORKSPACE / CONFIRM PRIOR TO TRANSFORMATION -->
     <xsl:variable name="uwlswdRdfxml" select="document('../../contentdmToRdfXml/uwlswdWorkspace/uwSemWeb.rdf')"/>
-    <xsl:variable name="agentRdfXml" select="document('../../contentdmToRdfXml/uwlswdWorkspace/agent-1-X-X.rdf')"/>
+    <xsl:variable name="agentRdfXml" select="document('../../contentdmToRdfXml/uwlswdWorkspace/agent-1-0-2.rdf')"/>
     
     <xsl:template name="jsonMarkup">
     {

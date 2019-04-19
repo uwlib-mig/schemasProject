@@ -17,7 +17,7 @@
     <xsl:variable name="uwlIri"
         >https://doi.org/10.6069/uwlib.55.A.3.6#UniversityofWashingtonLibraries</xsl:variable>
     <!-- VARIABLE BELOW PULLS DATA FROM FILES IN LOCAL WORKSPACE / CONFIRM PRIOR TO TRANSFORMATION -->
-    <xsl:variable name="agentRdfXml" select="document('../../contentdmToRdfXml/uwlswdWorkspace/agent-1-X-X.rdf')"/>
+    <xsl:variable name="agentRdfXml" select="document('../../contentdmToRdfXml/uwlswdWorkspace/agent-1-0-2.rdf')"/>
 
     <!-- Values pulling from uwSemWeb that are different for each partition still need to come into these templates. 
     Can we pull the IRI for the partition being transformed from source RDF/XML? But it isn't source XML for this template, it is source XML for the template calling this template... -->

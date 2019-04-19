@@ -70,9 +70,9 @@
                     />
                 </p>
                 <!-- Dataset partitions -->
-                <h2>This dataset consists of <xsl:value-of
+                <h3>This dataset consists of <xsl:value-of
                         select="count(rdf:RDF/rdf:Description[@rdf:about = $uwlswdResource]/void:classPartition)"
-                    /> partitions</h2>
+                    /> partitions:</h3>
                 <ul>
                     <xsl:for-each
                         select="rdf:RDF/rdf:Description[@rdf:about = $uwlswdResource]/void:classPartition">
@@ -85,7 +85,7 @@
                     </xsl:for-each>
                 </ul>
                 <!-- Digital collections -->
-                <h2>Digital collections from which the dataset's resources were harvested</h2>
+                <h3>Digital collections from which the dataset's resources were harvested:</h3>
                 <ul>
                     <xsl:for-each
                         select="rdf:RDF/rdf:Description[@rdf:about = $uwlswdResource]/ldproc:dataHarvestSource">
@@ -99,7 +99,7 @@
                 <!-- Alternate serializations -->
                 <h2>Links to Alternate Serializations for <xsl:value-of
                         select="rdf:RDF/rdf:Description[@rdf:about = $uwlswdResource]/dct:title"
-                    /></h2>
+                    />:</h2>
                 <ul>
                     <xsl:for-each
                         select="rdf:RDF/rdf:Description[@rdf:about = $uwlswdResource]/dct:hasFormat">
@@ -123,7 +123,7 @@
                     </xsl:for-each>
                 </ul>
                 <!-- Versioning -->
-                <h2>Version Information</h2>
+                <h2>Version Information:</h2>
                 <p><xsl:value-of
                         select="rdf:RDF/rdf:Description[@rdf:about = $uwlswdResource]/dct:title"/>
                     is not versioned as a whole; the partitions only are versioned. See the data
