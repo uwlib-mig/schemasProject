@@ -12,6 +12,7 @@
     xmlns:foaf="http://xmlns.com/foaf/0.1/"
     xmlns:ldproc="https://doi.org/10.6069/uwlib.55.b.2#"
     xmlns:ore="http://www.openarchives.org/ore/terms/"
+    xmlns:schema="http://schema.org/"
     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
     xmlns:void="http://rdfs.org/ns/void#"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
