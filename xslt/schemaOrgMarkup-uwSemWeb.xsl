@@ -14,8 +14,8 @@
     version="2.0">
     <xsl:strip-space elements="*"/>
     
-    <!-- Variables -->
-    <xsl:variable name="uwlswdBaseIri">https://doi.org/10.6069/uwlib.55.a</xsl:variable>
+    <!-- Variables --> 
+    <xsl:variable name="uwlswdBaseIriString">https://doi.org/10.6069/uwlib.55.a</xsl:variable>
     <xsl:variable name="uwlIri">https://doi.org/10.6069/uwlib.55.A.3.6#UniversityofWashingtonLibraries</xsl:variable>
     <!-- VARIABLES BELOW PULL DATA FROM FILES IN LOCAL WORKSPACE / CONFIRM PRIOR TO TRANSFORMATION -->
     <xsl:variable name="uwlswdRdfxml" select="document('../../contentdmToRdfXml/uwlswdWorkspace/uwSemWeb.rdf')"/>
@@ -25,25 +25,43 @@
     {
     "@context" : "http://schema.org" ,
     "@type" : "Dataset" ,
-    <!-- Should this be base IRI or uwSemWeb resource IRI?? -->
-    "@id" : "<xsl:value-of select="$uwlswdBaseIri"/>" ,
-    "name" : "<xsl:value-of select="$uwlswdRdfxml/rdf:RDF/rdf:Description[@rdf:about=$uwlswdBaseIri]/dct:title"/>" ,
-    "description" : "<xsl:value-of select="$uwlswdRdfxml/rdf:RDF/rdf:Description[ends-with(@rdf:about, '#uwSemWeb')]/dct:title"/>" ,
+    "@id" : "<xsl:value-of select="$uwlswdBaseIriString"/>" ,
+    "name" : "<xsl:value-of select="normalize-space($uwlswdRdfxml/rdf:RDF/rdf:Description[@rdf:about=$uwlswdBaseIriString]/dct:title)"/>" ,
+    "description" : "<xsl:value-of select="normalize-space($uwlswdRdfxml/rdf:RDF/rdf:Description[ends-with(@rdf:about, '#uwSemWeb')]/dct:title)"/>" ,
     "creator" : { 
         "@type" : "Organization" , 
+        "@id" : "<xsl:value-of select="$uwlIri"/>" ,
         "name" : "<xsl:value-of select="$agentRdfXml/rdf:RDF/rdf:Description[@rdf:about = $uwlIri]/dpla:providedLabel"/>" , 
         "url" : "<xsl:value-of select="$agentRdfXml/rdf:RDF/rdf:Description[@rdf:about = $uwlIri]/schema:url/@rdf:resource"/>" , 
-        "sameAs" : [ <xsl:for-each select="$agentRdfXml/rdf:RDF/rdf:Description[@rdf:about = $uwlIri]/owl:sameAs">"<xsl:value-of select="@rdf:resource"/>" , </xsl:for-each>"<xsl:value-of select="$uwlIri"/>" ] 
+        "sameAs" : [ <xsl:for-each select="$agentRdfXml/rdf:RDF/rdf:Description[@rdf:about = $uwlIri]/owl:sameAs">
+            <xsl:choose>
+                <xsl:when test="position() != last()">
+                    <xsl:text>"</xsl:text><xsl:value-of select="@rdf:resource"/><xsl:text>" , </xsl:text>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:text>"</xsl:text><xsl:value-of select="@rdf:resource"/><xsl:text>"</xsl:text>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:for-each> ] 
         } , 
     "publisher" : {
         "@type" : "Organization" , 
+        "@id" : "<xsl:value-of select="$uwlIri"/>" ,
         "name" : "<xsl:value-of select="$agentRdfXml/rdf:RDF/rdf:Description[@rdf:about = $uwlIri]/dpla:providedLabel"/>" , 
         "url" : "<xsl:value-of select="$agentRdfXml/rdf:RDF/rdf:Description[@rdf:about = $uwlIri]/schema:url/@rdf:resource"/>" , 
-        "sameAs" : [ <xsl:for-each select="$agentRdfXml/rdf:RDF/rdf:Description[@rdf:about = $uwlIri]/owl:sameAs">"<xsl:value-of select="@rdf:resource"/>" , </xsl:for-each>"<xsl:value-of select="$uwlIri"/>" ]
-        <!-- "sameAs" : "<xsl:for-each select="$agentRdfXml/rdf:RDF/rdf:Description[@rdf:about = $uwlIri]/owl:sameAs"><xsl:value-of select="@rdf:resource"/>, </xsl:for-each><xsl:value-of select="$uwlIri"/>" -->
+        "sameAs" : [ <xsl:for-each select="$agentRdfXml/rdf:RDF/rdf:Description[@rdf:about = $uwlIri]/owl:sameAs">
+            <xsl:choose>
+                <xsl:when test="position() != last()">
+                    <xsl:text>"</xsl:text><xsl:value-of select="@rdf:resource"/><xsl:text>" , </xsl:text>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:text>"</xsl:text><xsl:value-of select="@rdf:resource"/><xsl:text>"</xsl:text>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:for-each> ] 
         } , 
     "datePublished" : "<xsl:value-of select="$uwlswdRdfxml/rdf:RDF/rdf:Description[ends-with(@rdf:about, '#uwSemWeb')]/dct:issued"/>" ,
-    "inLanguage" : "<xsl:value-of select="substring-after($uwlswdRdfxml/rdf:RDF/rdf:Description[@rdf:about=$uwlswdBaseIri]/dct:language/@rdf:resource, 'languages/')"/>" ,
+    "inLanguage" : "<xsl:value-of select="substring-after($uwlswdRdfxml/rdf:RDF/rdf:Description[@rdf:about=$uwlswdBaseIriString]/dct:language/@rdf:resource, 'languages/')"/>" ,
     "encodingFormat" : "application/xhtml+xml" ,
     "license" : "http://creativecommons.org/publicdomain/zero/1.0/"
     }

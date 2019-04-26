@@ -13,34 +13,53 @@
     <xsl:strip-space elements="*"/>
 
     <!-- Variables -->
+    <!-- Tried to leave below var. only in calling template but could not transform -->
     <xsl:variable name="uwlswdBaseIri" select="document('https://doi.org/10.6069/uwlib.55.a')"/>
     <xsl:variable name="uwlIri"
         >https://doi.org/10.6069/uwlib.55.A.3.6#UniversityofWashingtonLibraries</xsl:variable>
     <!-- VARIABLE BELOW PULLS DATA FROM FILES IN LOCAL WORKSPACE / CONFIRM PRIOR TO TRANSFORMATION -->
     <xsl:variable name="agentRdfXml" select="document('../../contentdmToRdfXml/uwlswdWorkspace/agent-1-0-2.rdf')"/>
 
-    <!-- Values pulling from uwSemWeb that are different for each partition still need to come into these templates. 
-    Can we pull the IRI for the partition being transformed from source RDF/XML? But it isn't source XML for this template, it is source XML for the template calling this template... -->
-
     <xsl:template name="jsonMarkup1"> 
         { 
         "@context" : "http://schema.org" , 
         "@type" : "Dataset" , 
     </xsl:template>
+    <!-- SOME KEY/VALUE PAIRS STILL IN PARTITION TRANSFORMS -->
     <xsl:template name="jsonMarkup2"> 
         "creator" : { 
-        "@type" : "Organization" , 
-        "name" : "<xsl:value-of select="$agentRdfXml/rdf:RDF/rdf:Description[@rdf:about = $uwlIri]/dpla:providedLabel"/>" , 
-        "url" : "<xsl:value-of select="$agentRdfXml/rdf:RDF/rdf:Description[@rdf:about = $uwlIri]/schema:url/@rdf:resource"/>" , 
-        "sameAs" : [ <xsl:for-each select="$agentRdfXml/rdf:RDF/rdf:Description[@rdf:about = $uwlIri]/owl:sameAs">"<xsl:value-of select="@rdf:resource"/>" , </xsl:for-each>"<xsl:value-of select="$uwlIri"/>" ] 
-        } , 
+            "@type" : "Organization" ,
+            "@id" : "<xsl:value-of select="$uwlIri"/>" ,
+            "name" : "<xsl:value-of select="$agentRdfXml/rdf:RDF/rdf:Description[@rdf:about = $uwlIri]/dpla:providedLabel"/>" , 
+            "url" : "<xsl:value-of select="$agentRdfXml/rdf:RDF/rdf:Description[@rdf:about = $uwlIri]/schema:url/@rdf:resource"/>" , 
+            "sameAs" : [ <xsl:for-each select="$agentRdfXml/rdf:RDF/rdf:Description[@rdf:about = $uwlIri]/owl:sameAs">
+                <xsl:choose>
+                    <xsl:when test="position() != last()">
+                        <xsl:text>"</xsl:text><xsl:value-of select="@rdf:resource"/><xsl:text>" , </xsl:text>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:text>"</xsl:text><xsl:value-of select="@rdf:resource"/><xsl:text>"</xsl:text>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:for-each> ] 
+            } , 
         "publisher" : { 
-        "@type" : "Organization" , 
-        "name" : "<xsl:value-of select="$agentRdfXml/rdf:RDF/rdf:Description[@rdf:about = $uwlIri]/dpla:providedLabel"/>" , 
-        "url" : "<xsl:value-of select="$agentRdfXml/rdf:RDF/rdf:Description[@rdf:about = $uwlIri]/schema:url/@rdf:resource"/>" , 
-        "sameAs" : [ <xsl:for-each select="$agentRdfXml/rdf:RDF/rdf:Description[@rdf:about = $uwlIri]/owl:sameAs">"<xsl:value-of select="@rdf:resource"/>" , </xsl:for-each>"<xsl:value-of select="$uwlIri"/>" ]  
-        } , 
-        "inLanguage" : "<xsl:value-of select="substring-after($uwlswdBaseIri/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about = $uwlswdBaseIri]/xhtml:td[@property = 'dct:language'], 'languages/')"/>" , 
+            "@type" : "Organization" ,
+            "@id" : "<xsl:value-of select="$uwlIri"/>" ,
+            "name" : "<xsl:value-of select="$agentRdfXml/rdf:RDF/rdf:Description[@rdf:about = $uwlIri]/dpla:providedLabel"/>" , 
+            "url" : "<xsl:value-of select="$agentRdfXml/rdf:RDF/rdf:Description[@rdf:about = $uwlIri]/schema:url/@rdf:resource"/>" , 
+            "sameAs" : [ <xsl:for-each select="$agentRdfXml/rdf:RDF/rdf:Description[@rdf:about = $uwlIri]/owl:sameAs">
+                <xsl:choose>
+                    <xsl:when test="position() != last()">
+                        <xsl:text>"</xsl:text><xsl:value-of select="@rdf:resource"/><xsl:text>" , </xsl:text>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:text>"</xsl:text><xsl:value-of select="@rdf:resource"/><xsl:text>"</xsl:text>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:for-each> ] 
+                } , 
+        "inLanguage" : "<xsl:value-of select="substring-after($uwlswdBaseIri/xhtml:html/xhtml:body/xhtml:table/xhtml:tr[@about = 'https://doi.org/10.6069/uwlib.55.a']/xhtml:td[@property = 'dct:language'], 'languages/')"/>" , 
         "encodingFormat" : "application/xhtml+xml" , 
         "license" : "http://creativecommons.org/publicdomain/zero/1.0/" 
         } 
