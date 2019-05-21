@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+    <uid>p98</uid>
+    <labels>
+        <platformIndependent>timePeriodDiscussed</platformIndependent>
+        <dc>temporal</dc>
+    </labels>
+    <uwRequired>
+        <uwStandalone>no</uwStandalone>
+        <uwObject>no</uwObject>
+        <uwItem>no</uwItem>
+    </uwRequired>
+    <cdm>
+        <label>Time Period Discussed</label>
+        <cdmDatatype>text</cdmDatatype>
+        <cdmLarge>no</cdmLarge>
+        <searchable>yes</searchable>
+        <hidden>no</hidden>
+        <cdmRequired>no</cdmRequired>
+        <cdmControlledVocab>no</cdmControlledVocab>
+    </cdm>
+    <dspace>
+        <dspaceProperty></dspaceProperty>
+    </dspace>
+    <descriptions>
+        <definition>
+            <para>Representation of time periods given significant attention in the resource.</para>
+        </definition>
+        <instructions co="no">
+            <para>Enter a period in time as needed.</para>
+            <para>If practical, enter the date using one of the following formats:</para>
+            <para>YYYY</para>
+            <para>YYYY?</para>
+            <para>[month spelled out] [day], YYYY</para>
+            <para>[month spelled out], YYYY</para>
+            <para>between YYYY and YYYY</para>
+            <para>between YYYY and YYYY?</para>
+            <para>When a date or date range is not practical, prefer an LCSH heading reprenting the time period.</para>
+            <para>When none of the options above are practical, enter the most practical representation of the time period.</para>
+        </instructions>
+        <instructions co="object">
+            <para>Enter a period in time as needed.</para>
+            <para>If practical, enter the date using one of the following formats:</para>
+            <para>YYYY</para>
+            <para>YYYY?</para>
+            <para>[month spelled out] [day], YYYY</para>
+            <para>[month spelled out], YYYY</para>
+            <para>between YYYY and YYYY</para>
+            <para>between YYYY and YYYY?</para>
+            <para>When a date or date range is not practical, prefer an LCSH heading reprenting the time period.</para>
+            <para>When none of the options above are practical, enter the most practical representation of the time period.</para>
+        </instructions>
+        <instructions co="item">
+            <para>Enter a period in time as needed.</para>
+            <para>If practical, enter the date using one of the following formats:</para>
+            <para>YYYY</para>
+            <para>YYYY?</para>
+            <para>[month spelled out] [day], YYYY</para>
+            <para>[month spelled out], YYYY</para>
+            <para>between YYYY and YYYY</para>
+            <para>between YYYY and YYYY?</para>
+            <para>When a date or date range is not practical, prefer an LCSH heading reprenting the time period.</para>
+            <para>When none of the options above are practical, enter the most practical representation of the time period.</para>
+        </instructions>
+    </descriptions>
+    <examples>
+        <example co="no">
+            <para>1964</para>
+            <para>between 1986 and 1990</para>
+            <para>Twentieth century</para>
+            <para>Nineteen forties</para>
+        </example>
+        <example co="object">
+            <para>1964</para>
+            <para>between 1986 and 1990</para>
+            <para>Twentieth century</para>
+            <para>Nineteen forties</para>
+        </example>
+        <example co="item">
+            <para>1964</para>
+            <para>between 1986 and 1990</para>
+            <para>Twentieth century</para>
+            <para>Nineteen forties</para>
+        </example>
+    </examples>
+    <additionalInfo/>
+    <marc>
+        <dcgMarcMapping></dcgMarcMapping>
+    </marc>
+    <xsd>
+        <typeInfo level="standalone object">
+            <typeAttribute>xs:string</typeAttribute>
+        </typeInfo>
+        <typeInfo level="item">
+            <empty/>
+        </typeInfo>
+    </xsd>
+    <rdf>
+    </rdf>
+    <history>
+        <dateCreated><single>2019-04-21</single></dateCreated>
+        <created4Coll>rp</created4Coll>
+        <justification>MIG thought Special Collections radio programs collection might like to represent time periods discussed in radio programs. Use in that collection was preceded by the use of "Time Period Discussed" in the Special Collections Oral Histories Data Dictionary before that data dictionary was represented as an application profile in the UW Libraries registry.</justification>
+        <changeLog>
+            <change></change>
+        </changeLog>
+    </history>
+</property>

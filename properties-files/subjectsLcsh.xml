@@ -29,6 +29,11 @@
          <para>For images, use LCSH only when TGM has no appropriate term to describe the resource.</para>
          <para>Separate multiple headings with a semi-colon.</para>
       </instructions>
+      <instructions co="item">
+         <para>Values in this property are taken from the LC Subject Headings list (LCSH) at http://authorities.loc.gov or http://id.loc.gov.</para>
+         <para>For images, use LCSH only when TGM has no appropriate term to describe the resource.</para>
+         <para>Separate multiple headings with a semi-colon.</para>
+      </instructions>
       <customization co="object" dd="uwtoh">
          <para>Leave empty; UW Libraries catalogers will provide LSCH subjects.</para>
          <para>Be sure to enter the value "xyz" in the "Cataloging" field to alert catalogers that these items need subject headings.</para>
@@ -36,16 +41,36 @@
          <para>Multiple headings will be separated with a semi-colon.</para>
          <para>topical headings and headings for places with proper names which are not entered in the Geographic Coverage field below (this includes neighborhoods) will be entered here..</para>
       </customization>
+      <customization co="no" dd="krab">
+         <para>Leave empty; UW Libraries catalogers will provide LSCH subjects.</para>
+         <para>Be sure to enter the value "xyz" in the "Cataloging" field to alert catalogers that these items need subject headings.</para>
+         <para>Values for this property are taken from the LC Subject Headings list (LCSH) at http://authorities.loc.gov or http://id.loc.gov.</para>
+         <para>Separate multiple headings with a semi-colon.</para>
+      </customization>
+      <customization co="object" dd="krab">
+         <para>Leave empty; UW Libraries catalogers will provide LSCH subjects.</para>
+         <para>Be sure to enter the value "xyz" in the "Cataloging" field to alert catalogers that these items need subject headings.</para>
+         <para>Values for this property are taken from the LC Subject Headings list (LCSH) at http://authorities.loc.gov or http://id.loc.gov.</para>
+         <para>Separate multiple headings with a semi-colon.</para>
+      </customization>
+      <customization co="item" dd="krab">
+         <para>Leave empty; UW Libraries catalogers will provide LSCH subjects.</para>
+         <para>Be sure to enter the value "xyz" in the "Cataloging" field to alert catalogers that these items need subject headings.</para>
+         <para>Values for this property are taken from the LC Subject Headings list (LCSH) at http://authorities.loc.gov or http://id.loc.gov.</para>
+         <para>Separate multiple headings with a semi-colon.</para>
+      </customization>
    </descriptions><examples>
       <example co="no">
          <para>Markets—Washington (State)—Seattle</para>
-         <para>McGraw, John Harte, 1911- —Statues—Washington (State)—Seattle</para>
-         <para>Log buildings—Alaska—Fort Yukon</para>
+         <para>McGraw, John Harte, 1911—Statues—Washington (State)—Seattle; Log buildings—Alaska—Fort Yukon</para>
       </example>
       <example co="object">
          <para>Markets—Washington (State)—Seattle</para>
-         <para>McGraw, John Harte, 1911- —Statues—Washington (State)—Seattle</para>
-         <para>Log buildings—Alaska—Fort Yukon</para>
+         <para>McGraw, John Harte, 1911—Statues—Washington (State)—Seattle; Log buildings—Alaska—Fort Yukon</para>
+      </example>
+      <example co="item">
+         <para>Markets—Washington (State)—Seattle</para>
+         <para>McGraw, John Harte, 1911—Statues—Washington (State)—Seattle; Log buildings—Alaska—Fort Yukon</para>
       </example>
    </examples><additionalInfo/><marc>
       <dcgMarcMapping/>
@@ -82,6 +107,7 @@
             </node>
          </dpla>
       </cdmRdf>
+      <owlDatatypeProperty>yes</owlDatatypeProperty>
    </rdf><history>
       <dateCreated>
          <range>
@@ -92,7 +118,7 @@
       <created4Coll>Special Collections Photograph Collections</created4Coll>
       <justification>We wanted a subject field that distinguishes LCSH headings from other subject headings, to get the full benefits of using a controlled vocabulary.</justification>
       <changeLog>
-         <change/>
          <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
+         <change date="2019-05-19">Added info for krab; added info for cdm compound objects</change>
       </changeLog>
    </history></property>

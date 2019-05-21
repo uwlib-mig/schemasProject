@@ -206,6 +206,7 @@
         <xs:sequence minOccurs="0">
             <xs:element name="schemaInfo" type="schemaInfoType" minOccurs="0"/>
             <xs:element name="cdmRdf" type="cdmRdfType" minOccurs="0"/>
+            <xs:element name="owlDatatypeProperty" type="yesNo" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
 
@@ -597,6 +598,8 @@
     <xs:element name="customization" type="custParaType"/>
 
     <xs:complexType name="custParaType">
+        <xs:annotation>
+            <xs:appinfo>The customization element uses 2 attributes, @co and @dd. The latter requires that the @dd code is known at the time the application profile is written. Sometimes that code is not known, resulting in use of a temp code; when the actual code is revealed, it must be entered in multiple locations to replace the temp code, thereby minimizing orthogonality of the system. This should be repaired</xs:appinfo></xs:annotation>
         <xs:complexContent>
             <xs:extension base="paraType4co">
                 <xs:attribute name="dd" type="xs:string"/>

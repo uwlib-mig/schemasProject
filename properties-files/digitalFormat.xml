@@ -24,8 +24,19 @@
          <para>Use media types listed at http://www.iana.org/assignments/media-types/index.html</para>
          <para>For audio WAVE files, enter audio/wav.</para>
       </instructions>
+      <instructions co="no">
+         <para>Enter the file format of the access item.</para>
+         <para>Use media types listed at http://www.iana.org/assignments/media-types/index.html</para>
+         <para>For audio WAVE files, enter audio/wav.</para>
+      </instructions>
    </descriptions><examples>
       <example co="item">
+         <para>audio/mpeg</para>
+         <para>image/jpeg</para>
+         <para>application/pdf</para>
+         <para>text/plain</para>
+      </example>
+      <example co="no">
          <para>audio/mpeg</para>
          <para>image/jpeg</para>
          <para>application/pdf</para>
@@ -40,16 +51,19 @@
       <typeInfo level="item">
          <typeAttribute>xs:string</typeAttribute>
       </typeInfo>
-   </xsd><rdf>
-      <sameAs/>
-   </rdf><history>
+   </xsd>
+   <rdf>
+   <owlDatatypeProperty>yes</owlDatatypeProperty>
+   </rdf>
+   <history>
       <dateCreated>
          <single>2012-01-01</single>
       </dateCreated>
       <created4Coll>Special Collections Oral Histories Collections</created4Coll>
       <justification>Special Collections wanted a place to describe the file format of the service copy of the resource..</justification>
       <changeLog>
-         <change/>
+         <change date="2019-04-22">Added instructions and example for @co="no"</change>
+         <change date="2019-05-20">//rdf/owlDatatypeProperty='yes' to push into DCMI 1.1 namespace.</change>
       </changeLog>
       
    </history></property>

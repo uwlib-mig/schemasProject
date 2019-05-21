@@ -17,7 +17,7 @@
       <dspaceProperty/>
    </dspace><descriptions>
       <definition>
-         <para>Date of creation of the original resource.</para>
+         <para>Prominent years for the resource, such as the date(s) of creation of the original resource; the expected value is a list of each and every pertinent year.</para>
       </definition>
       <instructions co="no">
          <para>Reflects the date in the "Date" field.</para>
@@ -32,7 +32,19 @@
          <para>The Dates value should agree with date values entered in Date-Edtf and Date fields.</para>
       </instructions>
       <instructions co="object">
-         <para>Reflects the date in the "Date" field.</para>
+         <para>Reflects the date in the "Date" field pertinent to the overall object.</para>
+         <para>Enter the year or years only.</para>
+         <para>When the value of Date is YYYY, enter YYYY.</para>
+         <para>When the value of Date is YYYY?, enter an eleven year date range, five years on either side of the uncertain date.</para>
+         <para>When the value of Date is [month] DD, YYYY, enter the year only in the following format: YYYY.</para>
+         <para>When the value of Date is [month], YYYY, enter the year only in the following format: YYYY.</para>
+         <para>When the value of Date is between YYYY and YYYY, enter all years in the date range in the following format: YYYY YYYY YYYY etc.</para>
+         <para>When the value of Date is between YYYY and YYYY?, enter all years in the date range plus five years before the earliest date and five years after the latest date, in the following format: YYYY YYYY YYYY etc.</para>
+         <para>This field is indexed and enables date searching in CONTENTdm.</para>
+         <para>The Dates value should agree with date values entered in Date-Edtf and Date fields.</para>
+      </instructions>
+      <instructions co="item">
+         <para>Reflects the date in the "Date" field pertinent to the item.</para>
          <para>Enter the year or years only.</para>
          <para>When the value of Date is YYYY, enter YYYY.</para>
          <para>When the value of Date is YYYY?, enter an eleven year date range, five years on either side of the uncertain date.</para>
@@ -47,6 +59,42 @@
          <para>Enter the date of the execution of the drawing.</para>
          <para>Enter the year or years only.</para>
       </customization>
+      <customization co="no" dd="krab">
+         <para>Reflects the date in the "Date of Broadcast" field.</para>
+         <para>Enter the year or years only.</para>
+         <para>When the value of Date of Broadcast is YYYY, enter YYYY.</para>
+         <para>When the value of Date of Broadcast is YYYY?, enter an eleven year date range, five years on either side of the uncertain date.</para>
+         <para>When the value of Date of Broadcast is [month] DD, YYYY, enter the year only in the following format: YYYY.</para>
+         <para>When the value of Date of Broadcast is [month], YYYY, enter the year only in the following format: YYYY.</para>
+         <para>When the value of Date of Broadcast is between YYYY and YYYY, enter all years in the date range in the following format: YYYY YYYY YYYY etc.</para>
+         <para>When the value of Date of Broadcast is between YYYY and YYYY?, enter all years in the date range plus five years before the earliest date and five years after the latest date, in the following format: YYYY YYYY YYYY etc.</para>
+         <para>This field is indexed and enables date searching in CONTENTdm.</para>
+         <para>The Dates value should agree with date values entered in Date-Edtf and Date of Broadcast fields.</para>
+      </customization>
+      <customization co="object" dd="krab">
+         <para>Reflects the date in the "Date of Broadcast" field pertinent to the overall object.</para>
+         <para>Enter the year or years only.</para>
+         <para>When the value of Date of Broadcast is YYYY, enter YYYY.</para>
+         <para>When the value of Date of Broadcast is YYYY?, enter an eleven year date range, five years on either side of the uncertain date.</para>
+         <para>When the value of Date of Broadcast is [month] DD, YYYY, enter the year only in the following format: YYYY.</para>
+         <para>When the value of Date of Broadcast is [month], YYYY, enter the year only in the following format: YYYY.</para>
+         <para>When the value of Date of Broadcast is between YYYY and YYYY, enter all years in the date range in the following format: YYYY YYYY YYYY etc.</para>
+         <para>When the value of Date of Broadcast is between YYYY and YYYY?, enter all years in the date range plus five years before the earliest date and five years after the latest date, in the following format: YYYY YYYY YYYY etc.</para>
+         <para>This field is indexed and enables date searching in CONTENTdm.</para>
+         <para>The Dates value should agree with date values entered in Date-Edtf and Date of Broadcast fields.</para>
+      </customization>
+      <customization co="item" dd="krab">
+         <para>Reflects the date in the "Date of Broadcast" field pertinent to the specific item.</para>
+         <para>Enter the year or years only if an item date is desired.</para>
+         <para>When the value of Date of Broadcast is YYYY, enter YYYY.</para>
+         <para>When the value of Date of Broadcast is YYYY?, enter an eleven year date range, five years on either side of the uncertain date.</para>
+         <para>When the value of Date of Broadcast is [month] DD, YYYY, enter the year only in the following format: YYYY.</para>
+         <para>When the value of Date of Broadcast is [month], YYYY, enter the year only in the following format: YYYY.</para>
+         <para>When the value of Date of Broadcast is between YYYY and YYYY, enter all years in the date range in the following format: YYYY YYYY YYYY etc.</para>
+         <para>When the value of Date of Broadcast is between YYYY and YYYY?, enter all years in the date range plus five years before the earliest date and five years after the latest date, in the following format: YYYY YYYY YYYY etc.</para>
+         <para>This field is indexed and enables date searching in CONTENTdm.</para>
+         <para>The Dates value should agree with date values entered in Date-Edtf and Date of Broadcast fields.</para>
+      </customization>
    </descriptions><examples>
       <example co="no">
          <para>1939</para>
@@ -55,6 +103,12 @@
          <para>1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950</para>
       </example>
       <example co="object">
+         <para>1939</para>
+         <para>1939?</para>
+         <para>1939 1940 1941 1942 1943 1944 1945</para>
+         <para>1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950</para>
+      </example>
+      <example co="item">
          <para>1939</para>
          <para>1939?</para>
          <para>1939 1940 1941 1942 1943 1944 1945</para>
@@ -94,5 +148,6 @@
       <changeLog>
          <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation. Added an instruction.</change>
          <change date="2018-03-26">Changed instructions to state that this field should merely reflect the "Date" field.</change>
+         <change date="2019-05-19">Added info for krab; aded info to support cdm compound objects.</change>
       </changeLog>
    </history></property>

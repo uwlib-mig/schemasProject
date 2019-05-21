@@ -17,15 +17,36 @@
       <dspaceProperty/>
    </dspace><descriptions>
       <definition>
-         <para>This field contains the URI to the EAD finding aid.</para>
+         <para>URI to an EAD finding aid.</para>
       </definition>
       <instructions co="no">
          <para>Enter only the URI to the EAD finding aid.</para>
       </instructions>
+      <instructions co="object">
+         <para>Enter only the URI to the EAD finding aid.</para>
+      </instructions>
+      <instructions co="item">
+         <para>Enter only the URI to the EAD finding aid.</para>
+      </instructions>
+      <customization co="no" dd="krab">
+         <para>Enter only the URI to the EAD finding aid: "http://archiveswest.orbiscascade.org/ark:/80444/xv69396."</para>
+      </customization>
+      <customization co="object" dd="krab">
+         <para>Enter only the URI to the EAD finding aid: "http://archiveswest.orbiscascade.org/ark:/80444/xv69396."</para>
+      </customization>
+      <customization co="item" dd="krab">
+         <para>Enter only the URI to the EAD finding aid: "http://archiveswest.orbiscascade.org/ark:/80444/xv69396."</para>
+      </customization>
    </descriptions><examples>
       <example co="no">
          <para>[none]</para>
       </example>
+      <customization co="no" dd="krab">
+         <para>http://archiveswest.orbiscascade.org/ark:/80444/xv69396</para></customization>
+      <customization co="object" dd="krab">
+         <para>http://archiveswest.orbiscascade.org/ark:/80444/xv69396</para></customization>
+      <customization co="item" dd="krab">
+         <para>http://archiveswest.orbiscascade.org/ark:/80444/xv69396</para></customization>
    </examples><additionalInfo>
       <admin co="no">
          <para/>
@@ -46,7 +67,6 @@
          <empty/>
       </typeInfo>
    </xsd><rdf>
-      <sameAs/>
    </rdf><history>
       <dateCreated>
          <range>
@@ -59,5 +79,6 @@
       <changeLog>
          <change/>
          <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
+         <change date="2019-04-21">Added a customization for rp standalone instructions.</change>
       </changeLog>
    </history></property>

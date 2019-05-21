@@ -19,12 +19,32 @@
       <definition>
          <para>A language of the resource expressed as a code.</para>
       </definition>
-      <instructions co="object">
-         <para>Enter the name of the language(s) used in the interview using a code from ISO 639-3.</para>
+      <instructions co="no">
+         <para>Enter a code for a language used in the resource.</para>
+         <para>Enter a code from ISO 639-3.</para>
       </instructions>
+      <instructions co="object">
+         <para>Enter a code for a language used in the resource.</para>
+         <para>Enter a code from ISO 639-3.</para>
+      </instructions>
+      <instructions co="item">
+         <para>Enter a code for a language used in the resource.</para>
+         <para>Enter a code from ISO 639-3.</para>
+      </instructions>
+      <customization co="object" dd="uwtoh">
+         <para>Enter a code for a language(s) used in the interview using a code from ISO 639-3.</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="object">
+         <para>eng</para>
+         <para>spa</para>
+      </example>
+      <example co="item">
+         <para>eng</para>
+         <para>spa</para>
+      </example>
+      <example co="no">
          <para>eng</para>
          <para>spa</para>
       </example>
@@ -40,15 +60,17 @@
       <typeInfo level="object">
          <typeAttribute>xs:string</typeAttribute>
       </typeInfo>
-   </xsd><rdf>
-      <sameAs/>
-   </rdf><history>
+   </xsd>
+   <rdf>
+      <owlDatatypeProperty>yes</owlDatatypeProperty>
+   </rdf>
+   <history>
       <dateCreated>
          <single>2018-03-26</single>
       </dateCreated>
       <created4Coll>University of Washington Tacoma Oral Histories</created4Coll>
       <justification>MIG requested this field for UWT Oral Histories, allowing language code to be indexed, as we do with other oral histories.</justification>
       <changeLog>
-         <change/>
+         <change date="2019-04-21">Moved uwtoh instructions to a customization; created instruction for @co="all" to accommodate use of property with rp.</change>
       </changeLog>
    </history></property>
