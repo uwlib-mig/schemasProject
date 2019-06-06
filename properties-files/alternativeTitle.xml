@@ -23,12 +23,28 @@
          <para>Enter an alternative title; may or may not follow instructions for entering titles.</para>
          <para>When applicable, add a note in the Notes field describing the source of the alternative title.</para>
       </instructions>
+      <instructions co="object">
+         <para>Enter an alternative title; may or may not follow instructions for entering titles.</para>
+         <para>When applicable, add a note in the Notes field describing the source of the alternative title.</para>
+      </instructions>
+      <instructions co="item">
+         <para>Enter an alternative title; may or may not follow instructions for entering titles.</para>
+         <para>When applicable, add a note in the Notes field describing the source of the alternative title.</para>
+      </instructions>
    </descriptions><examples>
       <example co="no">
          <para>Century 21 Restaurant and Observation Tower</para>
          <para>Wu Building</para>
       </example>
-      <customization co="no"/>
+      <customization co="no" dd="krab">
+         <para>Something About the Women : the Andrea Dworkin Interview</para>
+      </customization>
+      <customization co="object" dd="krab">
+         <para>Something About the Women : the Andrea Dworkin Interview</para>
+      </customization>
+      <customization co="item" dd="krab">
+         <para>Something About the Women 42 : the Andrea Dworkin Interview</para>
+      </customization>
    </examples><additionalInfo/><marc>
       <dcgMarcMapping>
          
@@ -42,7 +58,7 @@
          <typeAttribute>xs:string</typeAttribute>
       </typeInfo>
    </xsd><rdf>
-      <sameAs/>
+      <owlDatatypeProperty>no</owlDatatypeProperty>
    </rdf><history>
       <dateCreated>
          <range>
@@ -53,7 +69,11 @@
       <created4Coll>Architecture of the Pacific Northwest</created4Coll>
       <justification>Alternative titles are often needed on the digital collections.</justification>
       <changeLog>
-         <change/>
-         
+         <change date="2019-04-25">
+            Added customization for cdm collection krap 
+         </change>
+         <change date="2019-05-19">
+            added cdm compound object info
+         </change>
       </changeLog>
    </history></property>

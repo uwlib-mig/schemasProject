@@ -42,6 +42,13 @@
          <para>For neighborhoods or other types of locales below the city level, enter an LCSH heading in the Subjects (LCSH) field above.</para>
          <para>Separate multiple entries with a semicolon .</para>
       </instructions>
+      <instructions co="item">
+         <para>Enter broad and local geographic locations given significant attention in the resource.</para>
+         <para>Forms of the names should be derived from the LC Authority File.</para>
+         <para>Enter Country--State or Province--City.</para>
+         <para>For neighborhoods or other types of locales below the city level, enter an LCSH heading in the Subjects (LCSH) field above.</para>
+         <para>Separate multiple entries with a semicolon .</para>
+      </instructions>
    </descriptions>
    <examples>
       <example co="no">
@@ -52,6 +59,13 @@
          <para>Russia (Federation)--Leningradskaia oblast--Saint Petersburg [use current form, even though it was called Leningrad in Soviet Union, when photo was taken]</para>
       </example>
       <example co="object">
+         <para>United States--Washington (State)—Seattle</para>
+         <para>United States--Alaska—Fort Yukon</para>
+         <para>Canada—Yukon—Dawson </para>
+         <para>Croatia--Zagreb [use current form, even though Yugoslavia was the name when the photo was taken]</para>
+         <para>Russia (Federation)--Leningradskaia oblast--Saint Petersburg [use current form, even though it was called Leningrad in Soviet Union, when photo was taken]</para>
+      </example>
+      <example co="item">
          <para>United States--Washington (State)—Seattle</para>
          <para>United States--Alaska—Fort Yukon</para>
          <para>Canada—Yukon—Dawson </para>
@@ -84,7 +98,6 @@
       </typeInfo>
    </xsd>
    <rdf>
-      <sameAs/>
    </rdf>
    <history>
       <dateCreated>

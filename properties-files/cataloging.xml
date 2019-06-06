@@ -34,6 +34,9 @@
       <instructions co="object">
          <para>Enter "xyz" to denote that the item requires subject headings from local catalogers.</para>
       </instructions>
+      <instructions co="item">
+         <para>Enter "xyz" to denote that the item requires subject headings from local catalogers.</para>
+      </instructions>
    </descriptions>
    <examples>
       <example co="no">

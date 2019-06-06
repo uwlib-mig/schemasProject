@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd"><uid>p62</uid><labels>
       <platformIndependent>originalFormat</platformIndependent>
-      <dc>isFormatOf</dc>
+      <dc>none</dc>
    </labels><uwRequired>
       <uwStandalone>no</uwStandalone>
       <uwObject>no</uwObject>
@@ -17,7 +17,7 @@
       <dspaceProperty/>
    </dspace><descriptions>
       <definition>
-         <para>File format, physical medium, or dimensions of the original resource.</para>
+         <para>File format, physical medium, and/or dimensions of the original resource.</para>
       </definition>
       <instructions co="item">
          <para>Enter the original format.</para>
@@ -26,8 +26,22 @@
          <para>For audio WAVE files, enter audio/wav.</para>
          <para>When 'Original Format' is the same as the 'Digital Format,' enter the mime type in both fields.</para>
       </instructions>
+      <instructions co="no">
+         <para>Enter the original format.</para>
+         <para>When the original is non-digital, use a label from one of the entries of the RDA Registry's RDA Carrier Type Vocabulary currently available at https://www.rdaregistry.info/termList/RDACarrierType/</para>
+         <para>When the original is digital, use media types listed at http://www.iana.org/assignments/media-types/index.html</para>
+         <para>For audio WAVE files, enter audio/wav.</para>
+      </instructions>
    </descriptions><examples>
       <example co="item">
+         <para>image/tiff</para>
+         <para>audio/wav</para>
+         <para>audiotape reel</para>
+         <para>online resource</para>
+         <para>computer disc</para>
+         <para>videocassette</para>
+      </example>
+      <example co="no">
          <para>image/tiff</para>
          <para>audio/wav</para>
          <para>audiotape reel</para>
@@ -45,7 +59,6 @@
          <typeAttribute>xs:string</typeAttribute>
       </typeInfo>
    </xsd><rdf>
-      <sameAs/>
    </rdf><history>
       <dateCreated>
          <single>2012-01-01</single>
@@ -53,6 +66,6 @@
       <created4Coll>Special Collections Oral Histories Collections</created4Coll>
       <justification>Special Collections wanted a place to describe the format of the original resource. </justification>
       <changeLog>
-         <change/>
+         <change date="2019-04-22">Changed dc mappring from "isFormatOf" (which is incorrect, that would bring the resource being described into relation with another resource essentially the same but in another format) to none, as there is no appropriate dc mapping. Also added instructions and examples for @co="all"</change>
       </changeLog>
    </history></property>

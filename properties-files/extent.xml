@@ -1,11 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?><property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd"><uid>p37</uid><labels>
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+   xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+   <uid>p37</uid>
+   <labels>
       <platformIndependent>extent</platformIndependent>
       <dc>extent</dc>
-   </labels><uwRequired>
+   </labels>
+   <uwRequired>
       <uwStandalone>no</uwStandalone>
       <uwObject>no</uwObject>
       <uwItem>no</uwItem>
-   </uwRequired><cdm>
+   </uwRequired>
+   <cdm>
       <label>Extent</label>
       <cdmDatatype>text</cdmDatatype>
       <cdmLarge>no</cdmLarge>
@@ -13,9 +20,11 @@
       <hidden>no</hidden>
       <cdmRequired>no</cdmRequired>
       <cdmControlledVocab>no</cdmControlledVocab>
-   </cdm><dspace>
+   </cdm>
+   <dspace>
       <dspaceProperty/>
-   </dspace><descriptions>
+   </dspace>
+   <descriptions>
       <definition>
          <para>Size or duration of the resource.</para>
       </definition>
@@ -26,21 +35,71 @@
          <para>Extent of text will use a numeral and the word "pages" as follows: "128 pages."</para>
          <para>All other extent statements can be entered either through consultation with the Metadata Implementation Group, or by referencing RDA 3.4 (access RDA using the RDA Toolkit).</para>
       </instructions>
+      <instructions co="no">
+         <para>Enter the extent of digital access file.</para>
+         <para>Enter duration of the access audio or video file and/or the length of a text-based file.</para>
+         <para>Duration should be entered hh:mm:ss.</para>
+         <para>Extent of text will use a numeral and the word "pages" as follows: "128 pages."</para>
+      </instructions>
+      <instructions co="object">
+         <para>Enter the extent of digital access files.</para>
+         <para>Enter duration of the access audio or video file and/or the length of a text-based file.</para>
+         <para>Duration should be entered hh:mm:ss.</para>
+         <para>Extent of text will use a numeral and the word "pages" as follows: "128 pages."</para>
+      </instructions>
       <customization dd="civilwar" co="item">
          <para>Enter the text as it appears in the resource.</para>
       </customization>
-   </descriptions><examples>
+      <customization co="no" dd="krab">
+         <para>Enter the duration of the resource.</para>
+         <para>Duration should be entered hh:mm:ss. </para>
+      </customization>
+      <customization co="object" dd="krab">
+         <para>Enter the duration of the resource.</para>
+         <para>Duration should be entered hh:mm:ss. </para>
+      </customization>
+      <customization co="item" dd="krab">
+         <para>Enter the duration of the resource.</para>
+         <para>Duration should be entered hh:mm:ss. </para>
+      </customization>
+   </descriptions>
+   <examples>
       <example co="item">
          <para>00:12:58</para>
-         <para>01:28:14</para> 
+         <para>01:28:14</para>
          <para>6 pages</para>
       </example>
-   </examples><additionalInfo/><marc>
+      <example co="no">
+         <para>00:12:58</para>
+         <para>01:28:14</para>
+         <para>6 pages</para>
+      </example>
+      <customization co="no" dd="krab">
+         <para>00:12:58</para>
+         <para>01:28:14</para>
+      </customization>
+      <customization co="object" dd="krab">
+         <para>00:12:58</para>
+         <para>01:28:14</para>
+      </customization>
+      <customization co="item" dd="krab">
+         <para>00:12:58</para>
+         <para>01:28:14</para>
+      </customization>
+   </examples>
+   <additionalInfo>
+      <admin co="no">
+         <para>More complex duration than hh:mm:ss can be described using RDA 7.22 or the ISO 8601 format P[n]Y[n]M[n]DT[n]H[n]M[n]S.</para>
+         <para>All other extent statements can be entered either through consultation with the Metadata Implementation Group, or by referencing RDA 3.4 (access RDA using the RDA Toolkit).</para>
+      </admin>
+   </additionalInfo>
+   <marc>
       <dcgMarcMapping/>
       <marcNotes>
          <para/>
       </marcNotes>
-   </marc><xsd>
+   </marc>
+   <xsd>
       <typeInfo level="standalone object">
          <typeAttribute>xs:string</typeAttribute>
       </typeInfo>
@@ -50,9 +109,9 @@
       <customTypeInfo level="item" dd="civilwar">
          <typeAttribute>xs:string</typeAttribute>
       </customTypeInfo>
-   </xsd><rdf>
-      <sameAs/>
-   </rdf><history>
+   </xsd>
+   <rdf> </rdf>
+   <history>
       <dateCreated>
          <range>
             <start>2000-01-01</start>
@@ -64,5 +123,8 @@
       <changeLog>
          <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
          <change date="2018-03-26">Added additional info for cdm compound object items.</change>
+         <change date="2019-04-21">Added a customization for rp as standalone.</change>
+         <change date="2019-05-20">Added cdm compound object info for krab.</change>
       </changeLog>
-   </history></property>
+   </history>
+</property>

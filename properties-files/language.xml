@@ -19,11 +19,28 @@
       <definition>
          <para>A language of the resource.</para>
       </definition>
-      <instructions co="object">
-         <para>Name of language(s) used in the interview fully spelled out.</para>
+      <instructions co="no">
+         <para>Enter the name of the language of the resource fully spelled out.</para>
       </instructions>
+      <instructions co="object">
+         <para>Enter the name of the language of the resource fully spelled out.</para>
+      </instructions>
+      <instructions co="item">
+         <para>Enter the name of the language of the resource fully spelled out.</para>
+      </instructions>
+      <customization co="object" dd="uwtoh">
+         <para>Name of language(s) used in the interview fully spelled out.</para>
+      </customization>
    </descriptions><examples>
+      <example co="no">
+         <para>English</para>
+         <para>Spanish</para>
+      </example>
       <example co="object">
+         <para>English</para>
+         <para>Spanish</para>
+      </example>
+      <example co="item">
          <para>English</para>
          <para>Spanish</para>
       </example>
@@ -36,15 +53,17 @@
       <typeInfo level="object">
          <typeAttribute>xs:string</typeAttribute>
       </typeInfo>
-   </xsd><rdf>
-      <sameAs/>
-   </rdf><history>
+   </xsd>
+   <rdf>
+      <owlDatatypeProperty>yes</owlDatatypeProperty>
+   </rdf>
+   <history>
       <dateCreated>
          <single>2018-03-26</single>
       </dateCreated>
       <created4Coll>University of Washington Tacoma Oral Histories</created4Coll>
       <justification>MIG requested this field for UWT Oral Histories, allowing language to be indexed, as we do with other oral histories.</justification>
       <changeLog>
-         <change/>
+         <change date="2019-04-21">Moved uwtoh instructions to a customization; created instruction for @co="all" to accommodate use of property with rp.</change>
       </changeLog>
    </history></property>

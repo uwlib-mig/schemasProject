@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+    <uid>p95</uid>
+    <labels>
+        <platformIndependent>featuredContributor</platformIndependent>
+        <dc>contributor</dc>
+    </labels>
+    <uwRequired>
+        <uwStandalone>no</uwStandalone>
+        <uwObject>no</uwObject>
+        <uwItem>no</uwItem>
+    </uwRequired>
+    <cdm>
+        <label>Featured Contributor</label>
+        <cdmDatatype>text</cdmDatatype>
+        <cdmLarge>no</cdmLarge>
+        <searchable>yes</searchable>
+        <hidden>no</hidden>
+        <cdmRequired>no</cdmRequired>
+        <cdmControlledVocab>no</cdmControlledVocab>
+    </cdm>
+    <dspace>
+        <dspaceProperty></dspaceProperty>
+    </dspace>
+    <descriptions>
+        <definition>
+            <para>Person or organization that made an especially significant contribution to the resource.</para>
+        </definition>
+        <instructions co="no">
+            <para>Input name of the contributor.</para>
+            <para>Use LC Authority File for form of name, if available.</para>
+            <para>Input Lastname, Firstname for all personal names.</para>
+        </instructions>
+        <instructions co="object">
+            <para>Input name of the contributor.</para>
+            <para>Use LC Authority File for form of name, if available.</para>
+            <para>Input Lastname, Firstname for all personal names.</para>
+        </instructions>
+        <instructions co="item">
+            <para>Input name of the contributor if that contributor should be indexed at the item level.</para>
+            <para>Use LC Authority File for form of name, if available.</para>
+            <para>Input Lastname, Firstname for all personal names.</para>
+        </instructions>
+        <customization co="no" dd="krab">
+            <para>Input name of the contributor.</para>
+            <para>Use LC Authority File for form of name, if available.</para>
+            <para>Input Lastname, Firstname for all personal names.</para>
+            <para>Featured contributors include: host, guest, interviewer, interviewee, panelist, etc.</para>
+        </customization>
+        <customization co="object" dd="krab">
+            <para>Input name of the contributor.</para>
+            <para>Use LC Authority File for form of name, if available.</para>
+            <para>Input Lastname, Firstname for all personal names.</para>
+            <para>Featured contributors include: host, guest, interviewer, interviewee, panelist, etc.</para>
+        </customization>
+       <!-- <customization co="item" dd="krab">
+            <para>Input name of the contributor if that contributor should be indexed at the item level.</para>
+            <para>Use LC Authority File for form of name, if available.</para>
+            <para>Input Lastname, Firstname for all personal names.</para>
+            <para>Featured contributors include: host, guest, interviewer, interviewee, panelist, etc.</para>
+        </customization> -->
+    </descriptions>
+    <examples>
+        <example co="no"><para>Steinem, Gloria</para></example>
+        <example co="no"><para>Davis, Angela Y. (Angela Yvonne), 1944-</para></example>
+        <example co="object"><para>Steinem, Gloria</para></example>
+        <example co="object"><para>Davis, Angela Y. (Angela Yvonne), 1944-</para></example>
+        <example co="item"><para>Steinem, Gloria</para></example>
+        <example co="item"><para>Davis, Angela Y. (Angela Yvonne), 1944-</para></example>
+    </examples>
+    <additionalInfo/>
+    <marc>
+        <dcgMarcMapping></dcgMarcMapping>
+    </marc>
+    <xsd>
+        <typeInfo level="standalone">
+            <typeAttribute>xs:string</typeAttribute>
+        </typeInfo>
+    </xsd>
+    <rdf>
+        <owlDatatypeProperty>yes</owlDatatypeProperty>
+    </rdf>
+    <history>
+        <dateCreated>
+            <single>2019-04-20</single>
+        </dateCreated>
+        <created4Coll>krab</created4Coll>
+        <justification>Special Collections wanted to describe the most prominent contributors in a separate fields. The field would be intended to help end users find the people in radio programs that speak the most sought-after content, but the field can be used for any prominent contributor.</justification>
+        <changeLog>
+            <change date="2019-05-19">Added cdm comound object info</change>
+        </changeLog>
+    </history>
+</property>

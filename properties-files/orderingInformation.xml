@@ -3,8 +3,8 @@
       <dc>description</dc>
    </labels><uwRequired>
       <uwStandalone>yes</uwStandalone>
-      <uwObject>no</uwObject>
-      <uwItem>no</uwItem>
+      <uwObject>yes</uwObject>
+      <uwItem>yes</uwItem>
    </uwRequired><cdm>
       <label>Ordering Information</label>
       <cdmDatatype>text</cdmDatatype>
@@ -25,9 +25,24 @@
       <instructions co="object">
       <para>Enter the instructions for ordering. If the item cannot be ordered, state that it cannot be ordered.</para>
       </instructions>
+      <instructions co="item">
+         <para>Enter the instructions for ordering. If the item cannot be ordered, state that it cannot be ordered.</para>
+      </instructions>
       <customization co="object" dd="uwtoh">
          <para>Enter the instructions for ordering.</para>
          <para>Enter: "To request a high resolution or uncompressed reproduction, or to obtain permission to use any portion of this item, contact University of Washington Tacoma Library. Email: taclibdc@uw.edu. Please reference the Digital ID Number."</para>
+      </customization>
+      <customization co="object" dd="krab">
+         <para>Enter the instructions for ordering.</para>
+         <para>Enter: "To order a reproduction, inquire about permissions, or for information about prices see:  http://www.lib.washington.edu/specialcollections/services/reproduction/reproduction."</para>
+      </customization>
+      <customization co="item" dd="krab">
+         <para>Enter the instructions for ordering.</para>
+         <para>Enter: "To order a reproduction, inquire about permissions, or for information about prices see:  http://www.lib.washington.edu/specialcollections/services/reproduction/reproduction."</para>
+      </customization>
+      <customization co="no" dd="krab">
+         <para>Enter the instructions for ordering.</para>
+         <para>Enter: "To order a reproduction, inquire about permissions, or for information about prices see:  http://www.lib.washington.edu/specialcollections/services/reproduction/reproduction."</para>
       </customization>
    </descriptions><examples>
       <example co="no">
@@ -38,8 +53,24 @@
       <para>To order a reproduction, inquire about permissions, or for information about prices see:  http://www.lib.washington.edu/specialcollections/services/reproduction/reproduction.</para>
       <para>Please cite the Order Number.</para>
       </example>
+      <example co="item">
+         <para>To order a reproduction, inquire about permissions, or for information about prices see:  http://www.lib.washington.edu/specialcollections/services/reproduction/reproduction.</para>
+         <para>Please cite the Order Number.</para>
+      </example>
       <customization co="object" dd="uwtoh">
          <para>To request a high resolution or uncompressed reproduction, or to obtain permission to use any portion of this item, contact University of Washington Tacoma Library. Email: taclibdc@uw.edu. Please reference the Digital ID Number. </para>
+      </customization>
+      <customization co="object" dd="krab">
+         <para>To order a reproduction, inquire about permissions, or for information about prices see:  http://www.lib.washington.edu/specialcollections/services/reproduction/reproduction.</para>
+         <para>Please cite the Digital ID Number.</para>
+      </customization>
+      <customization co="no" dd="krab">
+         <para>To order a reproduction, inquire about permissions, or for information about prices see:  http://www.lib.washington.edu/specialcollections/services/reproduction/reproduction.</para>
+         <para>Please cite the Digital ID Number.</para>
+      </customization>
+      <customization co="item" dd="krab">
+         <para>To order a reproduction, inquire about permissions, or for information about prices see:  http://www.lib.washington.edu/specialcollections/services/reproduction/reproduction.</para>
+         <para>Please cite the Digital ID Number.</para>
       </customization>
    </examples><additionalInfo>
       <admin co="no">

@@ -114,6 +114,9 @@
                             <xsl:when test="mig2:labels/mig2:platformIndependent='restrictions'">
                                 <xsl:text>http://purl.org/dc/elements/1.1/rights</xsl:text>
                             </xsl:when>
+                            <xsl:when test="../mig2:property/mig2:rdf/mig2:owlDatatypeProperty='yes'">
+                                <xsl:value-of select="concat('http://purl.org/dc/elements/1.1/',mig2:labels/mig2:dc)"/>
+                            </xsl:when>
                             <xsl:otherwise>
                                 <xsl:text>http://purl.org/dc/terms/</xsl:text><xsl:value-of select="mig2:labels/mig2:dc"/>
                             </xsl:otherwise>
@@ -169,7 +172,7 @@
                             <xsl:when
                                 test="../../mig:cdmCode = mig2:descriptions/mig2:customization/@dd">
                                 <xsl:for-each
-                                    select="mig2:descriptions/mig2:customization[@co = 'no']/mig2:para">
+                                    select="mig2:descriptions/mig2:customization[@co = 'no'][@dd=../../../../mig:cdmCode]/mig2:para">
                                     <p>
                                         <xsl:value-of select="."/>
                                     </p>
@@ -194,7 +197,7 @@
                                 test="../../mig:cdmCode = mig2:examples/mig2:customization/@dd">
                                 
                                 <xsl:for-each
-                                    select="mig2:examples/mig2:customization[@co = 'no']/mig2:para">
+                                    select="mig2:examples/mig2:customization[@co = 'no'][@dd=../../../../mig:cdmCode]/mig2:para">
                                     <p>
                                         <xsl:value-of select="."/>
                                     </p>
@@ -265,6 +268,9 @@
                             <xsl:when test="mig2:labels/mig2:platformIndependent='restrictions'">
                                 <xsl:text>http://purl.org/dc/elements/1.1/rights</xsl:text>
                             </xsl:when>
+                            <xsl:when test="../mig2:property/mig2:rdf/mig2:owlDatatypeProperty='yes'">
+                                <xsl:value-of select="concat('http://purl.org/dc/elements/1.1/',mig2:labels/mig2:dc)"/>
+                            </xsl:when>
                             <xsl:otherwise>
                                 <xsl:text>http://purl.org/dc/terms/</xsl:text><xsl:value-of select="mig2:labels/mig2:dc"/>
                             </xsl:otherwise>
@@ -320,7 +326,8 @@
                             <xsl:when
                                 test="../../mig:cdmCode = mig2:descriptions/mig2:customization/@dd">
                                 <xsl:for-each
-                                    select="mig2:descriptions/mig2:customization[@co = 'object']/mig2:para">
+                                    select="mig2:descriptions/mig2:customization[@co = 'object'][@dd=../../../../mig:cdmCode]/mig2:para">
+                                    <!-- addition above of [@dd=../../../../mig:cdmCode] may break the process; fyi; added 2019-05-18 -->
                                     <p>
                                         <xsl:value-of select="."/>
                                     </p>
@@ -412,6 +419,9 @@
                             <xsl:when test="mig2:labels/mig2:platformIndependent='restrictions'">
                                 <xsl:text>http://purl.org/dc/elements/1.1/rights</xsl:text>
                             </xsl:when>
+                            <xsl:when test="../mig2:property/mig2:rdf/mig2:owlDatatypeProperty='yes'">
+                                <xsl:value-of select="concat('http://purl.org/dc/elements/1.1/',mig2:labels/mig2:dc)"/>
+                            </xsl:when>
                             <xsl:otherwise>
                                 <xsl:text>http://purl.org/dc/terms/</xsl:text><xsl:value-of select="mig2:labels/mig2:dc"/>
                             </xsl:otherwise>
@@ -468,7 +478,7 @@
                             <xsl:when
                                 test="../../mig:cdmCode = mig2:descriptions/mig2:customization/@dd">
                                 <xsl:for-each
-                                    select="mig2:descriptions/mig2:customization[@co = 'item'][@dd=../../../../mig:cdmCode]/mig2:para">
+                                    select="mig2:descriptions/mig2:customization[@co = 'item']/mig2:para">
                                     <p>
                                         <xsl:value-of select="."/>
                                     </p>
@@ -493,7 +503,7 @@
                                 test="../../mig:cdmCode = mig2:examples/mig2:customization/@dd">
                                 
                                 <xsl:for-each
-                                    select="mig2:examples/mig2:customization[@co = 'item']/mig2:para">
+                                    select="mig2:examples/mig2:customization[@co = 'item'][@dd=../../../../mig:cdmCode]/mig2:para">
                                     <p>
                                         <xsl:value-of select="."/>
                                     </p>
@@ -533,9 +543,16 @@
             </table>
         </xsl:for-each>
     </xsl:template>
-    
+   
+   <!-- All compound objects have a problem:
+        If we enter object + item for any single dd, we do so for all.
+        We need a device to customize use of input/output.
+        Any of the following would work:
+            * a suppress attribute for a particular dd (not preferred)
+            * allow combinations in @co; will probably have to ba customization; will have to state here in xslt that is customization @co='o-i' it is object not item and overrides the o/i combo in the //instructions; similarly @co='o+i' means for both obj and item. The last possibility would be i-o. Were we to add standalone: @co=+o+i+s @dd='', +o+i-s, +o-i-s, +o-i+s, etc.
+   -->
     <xsl:template match="mig:properties" mode="combined">
-        <h2 style="text-align:center">OBJECT DESCRIPTION</h2>
+        <h2 style="text-align:center; color:red;">OBJECT DESCRIPTION</h2>
         <xsl:for-each
             select="mig2:property[not(mig2:cdm/mig2:cdmDatatype = 'cdmAdministrative')][not(mig2:cdm/mig2:cdmDatatype = 'uwAdministrative')][mig2:descriptions//mig2:instructions/@co = 'object'][not(mig2:labels/mig2:platformIndependent = //mig:suppressObjectProp)]">
             <h3 style="text-align:center">
@@ -564,6 +581,17 @@
                             <xsl:when test="mig2:labels/mig2:platformIndependent='restrictions'">
                                 <xsl:text>http://purl.org/dc/elements/1.1/rights</xsl:text>
                             </xsl:when>
+                            <!-- above seems like a very pooor condition and should be repaired; below is a device that cn stand in as a solution -->
+                            <!-- note on the below solution: not all datatype p[roperties are in the dc 1.1 namespace; not all object properties are in the dc terms namespace. It is a false solution. -->
+                           <xsl:when test="mig2:rdf/mig2:owlDatatypeProperty='yes'">
+                                <xsl:value-of select="concat('http://purl.org/dc/elements/1.1/',mig2:labels/mig2:dc)"/>
+                            </xsl:when> 
+                            <xsl:when test="mig2:rdf/mig2:owlDatatypeProperty='no'">
+                                <xsl:value-of select="concat('http://purl.org/dc/terms/',mig2:labels/mig2:dc)"/>
+                            </xsl:when>
+                           <!-- <xsl:when test="not(mig2:rdf/mig2:owlDatatypeProperty)">
+                                <xsl:value-of select="concat('http://purl.org/dc/terms/',mig2:labels/mig2:dc)"/>
+                            </xsl:when>-->
                             <xsl:otherwise>
                                 <xsl:text>http://purl.org/dc/terms/</xsl:text><xsl:value-of select="mig2:labels/mig2:dc"/>
                             </xsl:otherwise>
@@ -619,7 +647,7 @@
                             <xsl:when
                                 test="../../mig:cdmCode = mig2:descriptions/mig2:customization/@dd">
                                 <xsl:for-each
-                                    select="mig2:descriptions/mig2:customization[@co = 'object']/mig2:para">
+                                    select="mig2:descriptions/mig2:customization[@co = 'object'][@dd=../../../../mig:cdmCode]/mig2:para">
                                     <p>
                                         <xsl:value-of select="."/>
                                     </p>
@@ -644,7 +672,7 @@
                                 test="../../mig:cdmCode = mig2:examples/mig2:customization/@dd">
                                 
                                 <xsl:for-each
-                                    select="mig2:examples/mig2:customization[@co = 'object']/mig2:para">
+                                    select="mig2:examples/mig2:customization[@co = 'object'][@dd=../../../../mig:cdmCode]/mig2:para">
                                     <p>
                                         <xsl:value-of select="."/>
                                     </p>
@@ -681,7 +709,7 @@
                 </xsl:if>
             </table>
         </xsl:for-each>
-        <h2 style="text-align:center">ITEM DESCRIPTION</h2>
+        <h2 style="text-align:center; color:red;">ITEM DESCRIPTION</h2>
         <xsl:for-each
             select="mig2:property[not(mig2:cdm/mig2:cdmDatatype = 'cdmAdministrative')][not(mig2:cdm/mig2:cdmDatatype = 'uwAdministrative')][mig2:descriptions//mig2:instructions/@co = 'item']">
             <!-- [not(mig2:labels/mig2:platformIndependent = ] -->
@@ -710,6 +738,12 @@
                             </xsl:when>
                             <xsl:when test="mig2:labels/mig2:platformIndependent='restrictions'">
                                 <xsl:text>http://purl.org/dc/elements/1.1/rights</xsl:text>
+                            </xsl:when>
+                            <xsl:when test="mig2:rdf/mig2:owlDatatypeProperty='yes'">
+                                <xsl:value-of select="concat('http://purl.org/dc/elements/1.1/',mig2:labels/mig2:dc)"/>
+                            </xsl:when> 
+                            <xsl:when test="mig2:rdf/mig2:owlDatatypeProperty='no'">
+                                <xsl:value-of select="concat('http://purl.org/dc/terms/',mig2:labels/mig2:dc)"/>
                             </xsl:when>
                             <xsl:otherwise>
                                 <xsl:text>http://purl.org/dc/terms/</xsl:text><xsl:value-of select="mig2:labels/mig2:dc"/>
@@ -765,7 +799,7 @@
                         <xsl:choose>
                             <!-- Note the awkward repair in the when statement below; fix it! -->
                             <xsl:when
-                                test="../../mig:cdmCode = mig2:descriptions/mig2:customization/@dd">
+                                test="../../mig:cdmCode = mig2:descriptions/mig2:customization[@co='item']/@dd">
                                 <xsl:for-each
                                     select="mig2:descriptions/mig2:customization[@co = 'item'][@dd=../../../../mig:cdmCode]/mig2:para">
                                     <p>
@@ -792,7 +826,7 @@
                                 test="../../mig:cdmCode = mig2:examples/mig2:customization/@dd">
                                 
                                 <xsl:for-each
-                                    select="mig2:examples/mig2:customization[@co = 'item']/mig2:para">
+                                    select="mig2:examples/mig2:customization[@co = 'item'][@dd=../../../../mig:cdmCode]/mig2:para">
                                     <p>
                                         <xsl:value-of select="."/>
                                     </p>
@@ -831,7 +865,7 @@
                 </xsl:if>
             </table>
         </xsl:for-each>
-        <h2 style="text-align:center">STANDALONE DESCRIPTION</h2>
+        <h2 style="text-align:center; color:red;">STANDALONE DESCRIPTION</h2>
         <xsl:for-each
             select="mig2:property[not(mig2:cdm/mig2:cdmDatatype = 'cdmAdministrative')][not(mig2:cdm/mig2:cdmDatatype = 'uwAdministrative')][mig2:descriptions//mig2:instructions/@co = 'no']">
             <h3 style="text-align:center">
@@ -859,6 +893,12 @@
                             </xsl:when>
                             <xsl:when test="mig2:labels/mig2:platformIndependent='restrictions'">
                                 <xsl:text>http://purl.org/dc/elements/1.1/rights</xsl:text>
+                            </xsl:when>
+                            <xsl:when test="mig2:rdf/mig2:owlDatatypeProperty='yes'">
+                                <xsl:value-of select="concat('http://purl.org/dc/elements/1.1/',mig2:labels/mig2:dc)"/>
+                            </xsl:when> 
+                            <xsl:when test="mig2:rdf/mig2:owlDatatypeProperty='no'">
+                                <xsl:value-of select="concat('http://purl.org/dc/terms/',mig2:labels/mig2:dc)"/>
                             </xsl:when>
                             <xsl:otherwise>
                                 <xsl:text>http://purl.org/dc/terms/</xsl:text><xsl:value-of select="mig2:labels/mig2:dc"/>
@@ -915,7 +955,7 @@
                             <xsl:when
                                 test="../../mig:cdmCode = mig2:descriptions/mig2:customization/@dd">
                                 <xsl:for-each
-                                    select="mig2:descriptions/mig2:customization[@co = 'no']/mig2:para">
+                                    select="mig2:descriptions/mig2:customization[@co = 'no'][@dd=../../../../mig:cdmCode]/mig2:para">
                                     <p>
                                         <xsl:value-of select="."/>
                                     </p>
@@ -940,7 +980,7 @@
                                 test="../../mig:cdmCode = mig2:examples/mig2:customization/@dd">
                                 
                                 <xsl:for-each
-                                    select="mig2:examples/mig2:customization[@co = 'no']/mig2:para">
+                                    select="mig2:examples/mig2:customization[@co = 'no'][@dd=../../../../mig:cdmCode]/mig2:para">
                                     <p>
                                         <xsl:value-of select="."/>
                                     </p>

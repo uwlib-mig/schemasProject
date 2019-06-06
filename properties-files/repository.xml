@@ -25,8 +25,20 @@
       <instructions co="object">
          <para>Enter the name of the institution in which the original item is held.</para>
       </instructions>
+      <instructions co="item">
+         <para>Enter the name of the institution in which the original item is held.</para>
+      </instructions>
       <customization co="object" dd="uwtoh">
          <para>Enter the name of the institution in which the original item is held: "University of Washington Tacoma Library."</para>
+      </customization>
+      <customization co="no" dd="krab">
+         <para>Enter the name of the institution in which the original item is held: "University of Washington Libraries, Special Collections."</para>
+      </customization>
+      <customization co="object" dd="krab">
+         <para>Enter the name of the institution in which the original item is held: "University of Washington Libraries, Special Collections."</para>
+      </customization>
+      <customization co="item" dd="krab">
+         <para>Enter the name of the institution in which the original item is held: "University of Washington Libraries, Special Collections."</para>
       </customization>
       <!-- removed item instructions -->
    </descriptions><examples>
@@ -42,6 +54,15 @@
       </example>
       <customization co="object" dd="uwtoh">
          <para>University of Washington Tacoma Library</para>
+      </customization>
+      <customization co="no" dd="krab">
+         <para>University of Washington Libraries, Special Collections</para>
+      </customization>
+      <customization co="object" dd="krab">
+         <para>University of Washington Libraries, Special Collections</para>
+      </customization>
+      <customization co="item" dd="krab">
+         <para>University of Washington Libraries, Special Collections</para>
       </customization>
       <!-- removed item examples -->
    </examples><additionalInfo/><marc>
@@ -95,5 +116,7 @@
          <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation. Also made //uwRequired="yes".</change>
          <change date="2018-03-26">Added uwtoh info</change>
          <change date="2018-05-09">Removed instructions for items as well as examples, added for uwtoh; a compundObject should not need to repeat repository info at the item level. If it's needed later we'll add it.</change>
+         <change date="2019-04-21">Added a customization for rp standalone instructions.</change>
+         <change date="2019-05-20">Added cdm compound object info for krab.</change>
       </changeLog>
    </history></property>

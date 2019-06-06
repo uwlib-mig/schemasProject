@@ -1,11 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?><property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd"><uid>p35</uid><labels>
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+   xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+   <uid>p35</uid>
+   <labels>
       <platformIndependent>engineer</platformIndependent>
-      <dc>creator</dc>
-   </labels><uwRequired>
+      <dc>contributor</dc>
+   </labels>
+   <uwRequired>
       <uwStandalone>no</uwStandalone>
       <uwObject>no</uwObject>
       <uwItem>no</uwItem>
-   </uwRequired><cdm>
+   </uwRequired>
+   <cdm>
       <label>Engineer</label>
       <cdmDatatype>text</cdmDatatype>
       <cdmLarge>no</cdmLarge>
@@ -13,32 +20,58 @@
       <hidden>no</hidden>
       <cdmRequired>no</cdmRequired>
       <cdmControlledVocab>no</cdmControlledVocab>
-   </cdm><dspace>
+   </cdm>
+   <dspace>
       <dspaceProperty/>
-   </dspace><descriptions>
+   </dspace>
+   <descriptions>
       <definition>
-         <para>The name of the engineer or firm who helped create the architectural work depicted in the image. It should represent as closely as possible the engineer’s name or the company’s name at the time of the creation of the image. Includes both personal and corporate names.
+         <para>The name of the engineer(s) who helped create the resource.
         </para>
       </definition>
       <instructions co="no">
          <para>Input Lastname, Firstname for all personal names. Use LC Authority File for form of name, if available.</para>
       </instructions>
-   </descriptions><examples>
+      <instructions co="object">
+         <para>Input Lastname, Firstname for all personal names. Use LC Authority File for form of name, if available.</para>
+      </instructions>
+      <instructions co="item">
+         <para>Input Lastname, Firstname for all personal names that should be indexed at the item level. Use LC Authority File for form of name, if available.</para>
+      </instructions>
+      <customization co="no" dd="ac">
+         <para>Enter the name of the engineer or engineer firm who helped create the architectural work depicted in the image. The name should represent as closely as possible the engineer’s name or the company’s name at the time of the creation of the image. Includes both personal and corporate names.</para>
+      </customization>
+   </descriptions>
+   <examples>
       <example co="no">
          <para>Bittman, Henry W., 1882-1953</para>
          <para>Hall, John, L.</para>
       </example>
-   </examples><additionalInfo/><marc>
+      <customization co="no" dd="krab">
+         <para>Ottey, Shan</para>
+      </customization>
+      <customization co="object" dd="krab">
+         <para>Ottey, Shan</para>
+      </customization>
+      <customization co="item" dd="krab">
+         <para>Ottey, Shan</para>
+      </customization>
+   </examples>
+   <additionalInfo/>
+   <marc>
       <dcgMarcMapping/>
       <marcNotes/>
-   </marc><xsd>
+   </marc>
+   <xsd>
       <typeInfo level="standalone">
          <typeAttribute>xs:string</typeAttribute>
       </typeInfo>
-      
-   </xsd><rdf>
-      <sameAs/>
-   </rdf><history>
+
+   </xsd>
+   <rdf>
+      <owlDatatypeProperty>yes</owlDatatypeProperty>
+   </rdf>
+   <history>
       <dateCreated>
          <range>
             <start>2006-01-01</start>
@@ -48,7 +81,8 @@
       <created4Coll>Architecture of the Pacific Northwest</created4Coll>
       <justification>Engineer was known frequently enough in Architecture of the Pacific Northwest to warrant the use of this field.</justification>
       <changeLog>
-         <change/>
-         
+         <change date="2019-04-20">Changed original property designed for use with ac to accommodate other collection; for example made the definition applicable to all resources and moved ac-specific property description to a customization. Added an example customization for krab.</change>
+         <change date="2019-05-19">Added cdm compound object info for krab</change>
       </changeLog>
-   </history></property>
+   </history>
+</property>

@@ -25,11 +25,23 @@
       <instructions co="object">
          <para>Input the following text: "For information on permissions for use and reproductions please visit UW Libraries Special Collections "Reproductions: Order Photographs &amp; Scans" page: http://www.lib.washington.edu/specialcoll/service/reproduction.html."</para>
       </instructions>
+      <instructions co="item">
+         <para>Input the following text: "For information on permissions for use and reproductions please visit UW Libraries Special Collections "Reproductions: Order Photographs &amp; Scans" page: http://www.lib.washington.edu/specialcoll/service/reproduction.html."</para>
+      </instructions>
       <customization co="item" dd="civilwar">
          <para>Enter "For information on permissions for use and reproductions please visit UW Libraries Special Collections Use Permissions page:  http://www.lib.washington.edu/specialcollections/services/permission-for-use"</para>
       </customization>
       <customization co="object" dd="uwtoh">
          <para>Input the following text: "Individuals may use project materials for scholarly or research purposes, according to the provisions of fair use, but reproducing, publishing, or broadcasting any oral history project materials requires permission. For more information, see: http://content.lib.washington.edu/tacomacommweb/using-projects.html"</para>
+      </customization>
+      <customization co="object" dd="krab">
+         <para>Input the following text: "To order a reproduction, inquire about permissions, or for information about prices see:  http://www.lib.washington.edu/specialcollections/services/reproduction/reproduction."</para>
+      </customization>
+      <customization co="item" dd="krab">
+         <para>Input the following text: "To order a reproduction, inquire about permissions, or for information about prices see:  http://www.lib.washington.edu/specialcollections/services/reproduction/reproduction."</para>
+      </customization>
+      <customization co="no" dd="krab">
+         <para>Input the following text: "To order a reproduction, inquire about permissions, or for information about prices see:  http://www.lib.washington.edu/specialcollections/services/reproduction/reproduction."</para>
       </customization>
    </descriptions>
    <examples>
@@ -45,6 +57,15 @@
       <customization co="object" dd="uwtoh">
          <para>Individuals may use project materials for scholarly or research purposes, according to the provisions of fair use, but reproducing, publishing, or broadcasting any oral history project materials requires permission. For more information, see: http://content.lib.washington.edu/tacomacommweb/using-projects.html
          </para>
+      </customization>
+      <customization co="object" dd="krab">
+         <para>To order a reproduction, inquire about permissions, or for information about prices see:  http://www.lib.washington.edu/specialcollections/services/reproduction/reproduction.</para>
+      </customization>
+      <customization co="item" dd="krab">
+         <para>To order a reproduction, inquire about permissions, or for information about prices see:  http://www.lib.washington.edu/specialcollections/services/reproduction/reproduction.</para>
+      </customization>
+      <customization co="no" dd="krab">
+         <para>To order a reproduction, inquire about permissions, or for information about prices see:  http://www.lib.washington.edu/specialcollections/services/reproduction/reproduction.</para>
       </customization>
    </examples>
    <additionalInfo/><marc>

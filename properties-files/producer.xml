@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <uid>p96</uid>
+    <labels>
+        <platformIndependent>Producer</platformIndependent>
+        <dc>contributor</dc>
+    </labels>
+    <uwRequired>
+        <uwStandalone>no</uwStandalone>
+        <uwObject>no</uwObject>
+        <uwItem>no</uwItem>
+    </uwRequired>
+    <cdm>
+        <label>Producer</label>
+        <cdmDatatype>text</cdmDatatype>
+        <cdmLarge>no</cdmLarge>
+        <searchable>yes</searchable>
+        <hidden>no</hidden>
+        <cdmRequired>no</cdmRequired>
+        <cdmControlledVocab>no</cdmControlledVocab>
+    </cdm>
+    <dspace>
+        <dspaceProperty></dspaceProperty>
+    </dspace>
+    <descriptions>
+        <definition><para>A person, family, or organization responsible for most of the business aspects of a production.</para></definition>
+        <instructions co="no">
+            <para>Input name of the producer.</para>
+            <para>Use LC Authority File for form of name, if available.</para>
+            <para>Input Lastname, Firstname for all personal names.</para>
+        </instructions>
+        <instructions co="object">
+            <para>Input name of the producer.</para>
+            <para>Use LC Authority File for form of name, if available.</para>
+            <para>Input Lastname, Firstname for all personal names.</para>
+        </instructions>
+        <instructions co="item">
+            <para>Input name of the producer if that producer that should be indexed at the item level.</para>
+            <para>Use LC Authority File for form of name, if available.</para>
+            <para>Input Lastname, Firstname for all personal names.</para>
+        </instructions>
+    </descriptions>
+    <examples>
+        <example co="no">
+            <para>Lesbian Feminist Radio Collective</para>
+        </example>
+        <example co="object">
+            <para>Lesbian Feminist Radio Collective</para>
+        </example>
+        <example co="item">
+            <para>Lesbian Feminist Radio Collective</para>
+        </example>
+    </examples>
+    <additionalInfo/>
+    <marc>
+        <dcgMarcMapping></dcgMarcMapping>
+    </marc>
+    <xsd>
+        <typeInfo level="standalone object">
+            <typeAttribute>xs:string</typeAttribute>
+        </typeInfo>
+        <typeInfo level="item">
+            <empty/>
+        </typeInfo>
+    </xsd>
+    <rdf>
+        <schemaInfo>
+            <type>http://www.w3.org/2002/07/owl#DatatypeProperty</type>
+            <externalProperty>
+                <uri>http://id.loc.gov/vocabulary/relators/pro</uri>
+                <relation>https://www.w3.org/2000/01/rdf-schema#subPropertyOf</relation>
+                <domain>undefined</domain>
+                <range>http://www.w3.org/2000/01/rdfschema#Literal</range>
+            </externalProperty>
+        </schemaInfo>
+        <owlDatatypeProperty>yes</owlDatatypeProperty>
+    </rdf>
+    <history>
+        <dateCreated><single>2019-04-21</single></dateCreated>
+        <created4Coll>krab</created4Coll>
+        <justification>Special Collections wanted a property to describe producers of radio programs</justification>
+        <changeLog>
+            <change date="2019-05-19">Entered info for cdm compound objects</change>
+        </changeLog>
+    </history>
+</property>

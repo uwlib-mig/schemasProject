@@ -26,7 +26,7 @@
    </dspace>
    <descriptions>
       <definition>
-         <para>A name given to the resource.</para>
+         <para>A name for the resource.</para>
       </definition>
       <instructions co="no">
          <para>A brief descriptive phrase that includes these elements, generally in this order:
@@ -90,6 +90,21 @@
          <para>Enter a brief descriptive phrase. Do not use initial articles, if possible.</para>
          <para>Construct as follows: [Name of interviewee] interview, [item format]</para>
       </customization>
+      <customization co="no" dd="krab">
+         <para>All items must have a title.</para>
+         <para>Enter the title of the show.</para>
+         <para>Titles that are part of a sequence of shows should be appended with 01, 02, 03, etc.</para>
+         <para>Construct as follows: [Name of show] 11</para>
+      </customization>
+      <customization co="object" dd="krab">
+         <para>All items must have a title.</para>
+         <para>Enter the title of the show.</para>
+      </customization>
+      <customization co="item" dd="krab">
+         <para>All items must have a title.</para>
+         <para>Enter the title of the episode or part.</para>
+         <para>Construct as follows: [Name of show] [##]</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="no">
@@ -117,6 +132,15 @@
          <para>Michael Sullivan interview, audio</para>
          <para>Michael Sullivan interview, transcript</para>
          <para>Michael Sullivan interview, photograph</para>
+      </customization>
+      <customization co="no" dd="krab">
+         <para>Women Everywhere 01</para>
+      </customization>
+      <customization co="object" dd="krab">
+         <para>Women Protest</para>
+      </customization>
+      <customization co="item" dd="krab">
+         <para>Women Protest 04</para>
       </customization>
    </examples>
    <additionalInfo/>
@@ -176,6 +200,7 @@
             <node/>
          </dpla>
       </cdmRdf>
+      <owlDatatypeProperty>no</owlDatatypeProperty>
    </rdf>
    <history>
       <dateCreated>
@@ -194,6 +219,7 @@
             indicating that UW-cdm collections must use, or not use, a given property; also changed
             @xsi:schemaLocation.</change>
          <change date="2018-03-26">added info for uwtoh</change>
+         <change date="2018-05-17">added info for krab; added cdm compound object</change>
       </changeLog>
    </history>
 </property>

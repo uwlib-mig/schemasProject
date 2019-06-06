@@ -34,6 +34,9 @@
       <instructions co="object">
          <para>[Uncertain]</para>
       </instructions>
+      <instructions co="item">
+         <para>[Uncertain]</para>
+      </instructions>
       <customization co="item" dd="civilwar">
          <para>Enter "Special Collections"</para>
       </customization>
@@ -42,16 +45,17 @@
       <example co="no">
          <para>[none]</para>
       </example>
+      <example co="item">
+         <para>[none]</para>
+      </example>
+      <example co="object">
+         <para>[none]</para>
+      </example>
       <customization co="item" dd="civilwar">
          <para>Special Collections</para>
       </customization>
    </examples>
    <additionalInfo>
-      <admin co="no">
-         <para>Seems to be a DI/ITS admin field.</para>
-         <para>For use with CONTENTdm "facets?"</para>
-         <para>This is a misuse of the dc:provenance property; we should repair this property?</para>
-      </admin>
       <admin co="object">
          <para>Seems to be a DI/ITS admin field.</para>
          <para>For use with CONTENTdm "facets?"</para>

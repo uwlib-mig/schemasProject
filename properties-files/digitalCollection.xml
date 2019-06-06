@@ -41,6 +41,18 @@
          <para>Enter the name given to the digital collection.</para>
          <para>Enter "University of Washington Tacoma Oral History: Founding Stories"</para>
       </customization>
+      <customization co="object" dd="krab">
+         <para>Enter the name given to the digital collection.</para>
+         <para>Enter "KRAB FM Lesbian-Feminist Radio Program Recordings"</para>
+      </customization>
+      <customization co="item" dd="krab">
+         <para>Enter the name given to the digital collection.</para>
+         <para>Enter "KRAB FM Lesbian-Feminist Radio Program Recordings"</para>
+      </customization>
+      <customization co="no" dd="krab">
+         <para>Enter the name given to the digital collection.</para>
+         <para>Enter "KRAB FM Lesbian-Feminist Radio Program Recordings"</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="no">
@@ -57,6 +69,15 @@
       </example>
       <customization co="object" dd="uwtoh">
          <para>University of Washington Tacoma Oral History: Founding Stories</para>
+      </customization>
+      <customization co="object" dd="krab">
+         <para>KRAB FM Lesbian-Feminist Radio Program Recordings</para>
+      </customization>
+      <customization co="item" dd="krab">
+         <para>KRAB FM Lesbian-Feminist Radio Program Recordings</para>
+      </customization>
+      <customization co="no" dd="krab">
+         <para>KRAB FM Lesbian-Feminist Radio Program Recordings</para>
       </customization>
    </examples>
    <additionalInfo/>

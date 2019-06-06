@@ -27,17 +27,42 @@
          <para>Terms in this field are taken from the LC Thesaurus for Graphic Materials.</para>
          <para>Separate multiple headings with a semi-colon.</para>
       </instructions>
+      <instructions co="item">
+         <para>Terms in this field are taken from the LC Thesaurus for Graphic Materials.</para>
+         <para>Separate multiple headings with a semi-colon.</para>
+      </instructions>
       <customization co="object" dd="uwtoh">
-         <para>Leave empty; UW Libraries catalogers will provide LSCH subjects.</para>
+         <para>Leave empty; UW Libraries catalogers will provide LCTGM subjects.</para>
          <para>Terms in this field will be taken from the LC Thesaurus for Graphic Materials.</para>
          <para>Multiple headings will be separated with a semi-colon.</para>
       </customization>
+      <customization co="no" dd="krab">
+         <para>Leave empty; UW Libraries catalogers will provide LCTGM subjects.</para>
+         <para>Be sure to enter the value "xyz" in the "Cataloging" field to alert catalogers that these items need subject headings.</para>
+         <para>Terms in this field are taken from the LC Thesaurus for Graphic Materials.</para>
+         <para>Separate multiple headings with a semi-colon.</para>
+      </customization>
+      <customization co="object" dd="krab">
+         <para>Leave empty; UW Libraries catalogers will provide LCTGM subjects.</para>
+         <para>Be sure to enter the value "xyz" in the "Cataloging" field to alert catalogers that these items need subject headings.</para>
+         <para>Terms in this field are taken from the LC Thesaurus for Graphic Materials.</para>
+         <para>Separate multiple headings with a semi-colon.</para>
+      </customization>
+      <customization co="item" dd="krab">
+         <para>Leave empty; UW Libraries catalogers will provide LCTGM subjects.</para>
+         <para>Be sure to enter the value "xyz" in the "Cataloging" field to alert catalogers that these items need subject headings.</para>
+         <para>Terms in this field are taken from the LC Thesaurus for Graphic Materials.</para>
+         <para>Separate multiple headings with a semi-colon.</para>
+      </customization>
    </descriptions><examples>
       <example co="no">
-         <para>Cities &amp; towns--Alaska</para>
+         <para>Runners (Sports)--Washington (State); Running races--Washington (State)</para>
       </example>
       <example co="object">
-         <para>Cities &amp; towns--Alaska</para>
+         <para>Runners (Sports)--Washington (State); Running races--Washington (State)</para>
+      </example>
+      <example co="item">
+         <para>Runners (Sports)--Washington (State); Running races--Washington (State)</para>
       </example>
    </examples><additionalInfo/><marc>
       <dcgMarcMapping/>
@@ -74,6 +99,7 @@
             </node>
          </dpla>
       </cdmRdf>
+      <owlDatatypeProperty>yes</owlDatatypeProperty>
    </rdf><history>
       <dateCreated>
          <range>
@@ -86,5 +112,6 @@
       <changeLog>
          <change/>
          <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
+         <change date="2019-05-20">added krab and cdm compound object info</change>
       </changeLog>
    </history></property>

@@ -27,6 +27,10 @@
          <para>Enter a rights statement from rightsstatements.org that pertains to the entire object.</para>
          <para>UW Libraries Special Collections policy: for items with a date later than 1922, enter http://rightsstatements.org/vocab/InC/1.0/ ("In Copyright"); for all else enter http://rightsstatements.org/vocab/CNE/1.0/ ("Copyright Not Evaluated.")</para>
       </instructions>
+      <instructions co="item">
+         <para>Enter a rights statement from rightsstatements.org that pertains to the entire object.</para>
+         <para>UW Libraries Special Collections policy: for items with a date later than 1922, enter http://rightsstatements.org/vocab/InC/1.0/ ("In Copyright"); for all else enter http://rightsstatements.org/vocab/CNE/1.0/ ("Copyright Not Evaluated.")</para>
+      </instructions>
       <customization co="object" dd="uwtoh">
          <para>Enter the following URI from rightsstatements.org: http://rightsstatements.org/vocab/InC-EDU/1.0/ .</para>
       </customization>
@@ -36,6 +40,10 @@
          <para>http://rightsstatements.org/vocab/InC/1.0/</para>
       </example>
       <example co="object">
+         <para>http://rightsstatements.org/vocab/CNE/1.0/</para>
+         <para>http://rightsstatements.org/vocab/InC/1.0/</para>
+      </example>
+      <example co="item">
          <para>http://rightsstatements.org/vocab/CNE/1.0/</para>
          <para>http://rightsstatements.org/vocab/InC/1.0/</para>
       </example>
@@ -68,6 +76,7 @@
             <class>WebResource</class>
          </dpla>
       </cdmRdf>
+      <owlDatatypeProperty>no</owlDatatypeProperty>
    </rdf><history>
       <dateCreated>
          <single>2017-03-30</single>
