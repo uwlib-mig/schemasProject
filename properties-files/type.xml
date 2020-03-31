@@ -50,6 +50,9 @@
       <customization co="no" dd="rp">
          <para>Sound</para>
       </customization>
+      <customization co="no" dd="krab">
+         <para>Sound</para>
+      </customization>
    </examples><additionalInfo/><marc>
       <dcgMarcMapping/>
       <marcNotes>

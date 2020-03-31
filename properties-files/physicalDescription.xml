@@ -51,6 +51,10 @@
          <para>When the original format is one digital file, enter "1 online resource" or just "online resource."</para>
       </instructions>
       <customization co="item" dd="civilwar"/>
+      <customization co="no" dd="krab">
+         <para>Input a term or terms describing the format of the original resource in which data, sound, images, etc., are stored.</para>
+         <para>Enter the phrase describing the original resource provided by the digitization agency.</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="no">
@@ -110,6 +114,9 @@
          <para>7 audiocassettes</para>
          <para>92 audiotape reels</para>
          <para>1 sound-track reel</para>
+      </customization>
+      <customization co="no" dd="krab">
+         <para>1/4" Open Reel Tape: 1.5mil Polyester Brand Unknown; Stereo</para>
       </customization>
    </examples>
    <additionalInfo/>

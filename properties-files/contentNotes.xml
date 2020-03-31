@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+    <uid>p99</uid>
+    <labels>
+        <platformIndependent>contentNotes</platformIndependent>
+        <dc>description</dc>
+    </labels>
+    <uwRequired>
+        <uwStandalone>no</uwStandalone>
+        <uwObject>no</uwObject>
+        <uwItem>no</uwItem>
+    </uwRequired>
+    <cdm>
+        <label>Content Notes</label>
+        <cdmDatatype>text</cdmDatatype>
+        <cdmLarge>yes</cdmLarge>
+        <searchable>yes</searchable>
+        <hidden>no</hidden>
+        <cdmRequired>no</cdmRequired>
+        <cdmControlledVocab>no</cdmControlledVocab>
+    </cdm>
+    <dspace>
+        <dspaceProperty></dspaceProperty>
+    </dspace>
+    <descriptions>
+        <definition><para>A list of the resource's contents.</para></definition>
+        <instructions co="no">
+            <para>List the contents of the resource.</para>
+        </instructions>
+        <customization co="no" dd="krab">
+            <para>List the contents of the resource.</para>
+            <para>Enter each discreet section in a new line.</para>
+            <para>When possible, begin the line with temporal starting position of the section.</para>
+        </customization>
+    </descriptions>
+    <examples>
+        <example co="no">
+            <para>example 1:</para>
+            <para>00:00:01 Opening music: Alix Dobkin, "Every Woman Can Be a Lesbian" </para>
+                <para>00:03:36 Speaker 1: Introduction to the show. First show in this time slot, featuring local lesbian news. Shows will be first Sunday in May. Also Thurs shows at 12-1pm.</para>
+                <para>00:04:21  Speaker 2: "Last Sunday you heard the announcement about the split in the radio collective." Lesbian Feminist Radio Collective. Split came about conflicts about content. </para>
+            <para>example 2:</para>
+            <para>Speaker: Critiques first issue of Dyke Magazine. The Well Dressed Dyke. Article on the Clit Papers (Collective Lesbian International Terrorists). Dykes Behind Bars.  "We at Amazon Media share the costs of purchasing the magazine." Continues to critique second edition. Names various musicians, review of Olivia Records. Mentions Linda Shear, article that she wrote on women’s music. Lesbian Connection magazine. Asked not to air Shear’s new tape or Living with Lesbians. Critiques Out and About newsletter published in Seattle.</para>
+        </example>
+    </examples>
+    <additionalInfo></additionalInfo>
+    <marc>
+        <dcgMarcMapping></dcgMarcMapping>
+    </marc>
+    <xsd>
+        <typeInfo level="standalone object">
+            <typeAttribute>xs:string</typeAttribute>
+        </typeInfo>
+        <typeInfo level="item">
+            <empty/>
+        </typeInfo>
+    </xsd>
+    <rdf></rdf>
+    <history>
+        <dateCreated>
+            <single>2019-08-08</single>
+        </dateCreated>
+        <created4Coll>KRAB FM Lesbian-Feminist Radio Program Recordings</created4Coll>
+        <justification>Special collections wanted a field to insert a list of contents on a soubnd recording of radio broadcasts.</justification>
+        <changeLog>
+            <change></change>
+        </changeLog>
+    </history>
+</property>

@@ -27,7 +27,7 @@
     </dspace>
     <descriptions>
         <definition>
-            <para>Person or organization that made an especially significant contribution to the resource.</para>
+            <para>Person or organization that made an especially significant contribution to the content of the resource, such as hosts, DJs or studio guests.</para>
         </definition>
         <instructions co="no">
             <para>Input name of the contributor.</para>
@@ -49,6 +49,8 @@
             <para>Use LC Authority File for form of name, if available.</para>
             <para>Input Lastname, Firstname for all personal names.</para>
             <para>Featured contributors include: host, guest, interviewer, interviewee, panelist, etc.</para>
+            <para>A person featured in the show by playing a recording of their work -- for example, if a recording of Carol King studio recordings are on the resource -- that person should be considered the subject of the resource, not a contributor to the content.</para>
+            <para>If only the first name of a contributor is known, enter that name. (Hopefully the full name will be discovered in time.)</para>
         </customization>
         <customization co="object" dd="krab">
             <para>Input name of the contributor.</para>
@@ -66,6 +68,7 @@
     <examples>
         <example co="no"><para>Steinem, Gloria</para></example>
         <example co="no"><para>Davis, Angela Y. (Angela Yvonne), 1944-</para></example>
+        <example co="no">Liz</example>
         <example co="object"><para>Steinem, Gloria</para></example>
         <example co="object"><para>Davis, Angela Y. (Angela Yvonne), 1944-</para></example>
         <example co="item"><para>Steinem, Gloria</para></example>

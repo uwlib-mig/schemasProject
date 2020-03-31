@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<migDataDictionary xmlns="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries"
+    xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    id="0001"
+    xsi:schemaLocation="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-dds.xsd">
+    <ddName>Greek Dances Videos</ddName>
+    <ddPartOfProject/>
+    <originalCreationDate>2020-03-24</originalCreationDate>
+    <latestUpdate>2020-03-24</latestUpdate>
+    <metadataLiaisons>
+        <metadataLiaison>TBD</metadataLiaison>
+    </metadataLiaisons>
+    <cdmCo>yes</cdmCo>
+    <standalone>no</standalone>
+    <cdmCode>dances</cdmCode>
+    <properties>
+        <xi:include href="../../properties-files/title.xml"/>
+    </properties>
+</migDataDictionary>

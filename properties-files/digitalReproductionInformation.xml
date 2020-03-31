@@ -38,6 +38,9 @@
       <example co="item">
          <para>Scanned from original text or image at 400 dpi saved in TIFF format, resized and enhanced using Adobe Photoshop, and imported as JPEG2000 using Contentdm software's JPEG2000 Extension. 2006.</para>
       </example>
+      <customization co="no" dd="krab">
+         <para>Sample rate: 96KHz. Bit depth: 24. Issues encountered: Repaired several faulty splices. Date of transfer: 2019-01-04. Applicable conservation treatments: Baked and repaired several splices. De-noise and de-hum (iZotrope RX5).</para>
+      </customization>
    </examples><additionalInfo/><marc>
       <dcgMarcMapping/>
       <marcNotes>

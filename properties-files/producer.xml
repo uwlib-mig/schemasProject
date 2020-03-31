@@ -25,9 +25,10 @@
     <descriptions>
         <definition><para>A person, family, or organization responsible for most of the business aspects of a production.</para></definition>
         <instructions co="no">
-            <para>Input name of the producer.</para>
+            <para>Input name of the producer if known.</para>
             <para>Use LC Authority File for form of name, if available.</para>
             <para>Input Lastname, Firstname for all personal names.</para>
+            <para>If producer name is not certain but can be either guessed or narrowed to two or three posibilities, create a note in the Notes field.</para>
         </instructions>
         <instructions co="object">
             <para>Input name of the producer.</para>

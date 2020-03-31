@@ -19,13 +19,22 @@
         <definition>
             <para>Full text contained in the resource.</para>
         </definition>
+        <instructions co="no">
+            <para>Enter the text as it appears in the resource.</para>
+        </instructions>
         <customization dd="civilwar" co="item">
             <para>Enter the text as it appears in the resource.</para>
+        </customization>
+        <customization co="no" dd="krab">
+            <para>Enter a textual transcription of all or some of the contents in the resource.</para>
         </customization>
     </descriptions><examples>
         <example co="item">
             <para>At a meeting of the officers and employes [sic] of the Coast Survey Office, held on the 12st inst, to give expression to their sense of the loss sustained by the death of Brig. Gen. I.I. Stevens, U.S. Volunteers, who had long filled an important position in the work, the following address prepared by Prof. Bache, who is absent from the City, was read, and the subjoined resolution passed.</para>
         </example>
+        <customization co="no" dd="krab">
+            <para>Speaker 1: Hello everybody and welcome to another episode of Leftist Lezzies. Speaker2 : No, we have to stop the recording. Speaker 1: What now? We just started. Speaker 3: Yes yes turn it off. Speaker 1: OK OK, we'll return. We'll be back. </para>
+        </customization>
     </examples><additionalInfo/><marc>
         <dcgMarcMapping/>
         <marcNotes>
@@ -40,7 +49,6 @@
             <typeAttribute>xs:string</typeAttribute>
         </customTypeInfo>
     </xsd><rdf>
-        <sameAs/>
     </rdf><history>
         <dateCreated>
             <range>
