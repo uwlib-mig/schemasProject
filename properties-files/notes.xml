@@ -48,6 +48,17 @@
          <para>Enter any descriptive narrative information of importance about the project and its subjects that is not recorded elsewhere.</para>
          <para>Each separate "note" should be a paragraph. Additional notes can be added, separated from the previous note using a blank line.</para>
       </customization>
+      <customization co="item" dd="gd">
+         <para>Notes should not be needed to describe the items but may be used if appropriate.</para>
+      </customization>
+      <customization co="no" dd="gd">
+         <para>Enter any information of importance that is not represented elsewhere.</para>
+         <para>Each separate "note" should be a paragraph. Additional notes can be added, separated from the previous note using a blank line.</para>
+      </customization>
+      <customization co="object" dd="gd">
+         <para>Enter any information of importance that is not represented elsewhere.</para>
+         <para>Each separate "note" should be a paragraph. Additional notes can be added, separated from the previous note using a blank line.</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="no">
@@ -61,6 +72,10 @@
          <para>Caption on image: Curtis 319.</para>
          <para>Handwritten on verso: Mrs. McLain with dog team.</para>
          <para>PH Coll 519.319</para>
+      </example>
+      <example co="item">
+         <para>Caption on image: Curtis 319.</para>
+         <para>Handwritten on verso: Mrs. McLain with dog team.</para>
       </example>
       <customization co="no" dd="ac">
          <para>Handwritten in title block: Apartment house. Osborn, Architect. 325 Leary Bldg., Seattle, Wash. E.C.R. [drawn by?]</para>
@@ -91,8 +106,22 @@
          <para>Episode was never broadcast; date of episode noted on container: October 7, 1984.</para>
          <para>Interview was conducted during the occupation of the Sun newspaper offices in Leeds by the the Women Against Violence Against Women organization.</para>
       </customization>
+      <customization co="object" dd="gd">
+         <para>Filmed on Cheese Sunday and Clean Monday during Apokreas, 1992.</para>
+         <para>“Dracula” appears and entertains the crowd.</para>
+      </customization>
+      <customization co="no" dd="gd">
+         <para>Filmed on Cheese Sunday and Clean Monday during Apokreas, 1992.</para>
+         <para>“Dracula” appears and entertains the crowd.</para>
+      </customization>
+      <customization co="item" dd="gd">
+         <para>Digitization process caused the corruption the starts at 7:02 and ends at 7:13.</para>
+      </customization>
    </examples>
    <additionalInfo>
+      <admin co="all">
+         <para>Is it true, as asserted by the input instructions, that "Additional notes can be added, separated from the previous note using a blank line."</para>
+      </admin>
       <generalNotes co="all">
          <para>"Notes" is distingushed from "Historical Notes" mainly because it descibes the image/resource only. Values in this field also may be considered more "indexable" insofar as they precisely descibe the image/resource. "HistoricalNotes" are more like "writing" and create a broad historical context.</para>
       </generalNotes>
@@ -138,6 +167,7 @@
          <change date="2018-02-27">Added customization for Architecture of the Pacific Northwest.</change>
          <change date="2019-04-21">Added examples for krab.</change>
          <change date="2019-05-19">Added cdm compound object info for krab</change>
+         <change date="2020-05-19">Added customizations for Greek Dances. This should have been unecessary for co=object and co=no, but the fallback to those instructions when a customization was not present failed because of the presence of a customization for co-item. Code commented for repair.</change>
       </changeLog>
    </history>
 </property>

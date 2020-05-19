@@ -1,0 +1,73 @@
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+    <uid>p100</uid>
+    <labels>
+        <platformIndependent>segments</platformIndependent>
+        <dc>description</dc>
+    </labels>
+    <uwRequired>
+        <uwStandalone>no</uwStandalone>
+        <uwObject>no</uwObject>
+        <uwItem>no</uwItem>
+    </uwRequired>
+    <cdm>
+        <label>Segments</label>
+        <cdmDatatype>text</cdmDatatype>
+        <cdmLarge>yes</cdmLarge>
+        <searchable>yes</searchable>
+        <hidden>no</hidden>
+        <cdmRequired>no</cdmRequired>
+        <cdmControlledVocab>no</cdmControlledVocab>
+    </cdm>
+    <dspace>
+        <dspaceProperty/>
+    </dspace>
+    <descriptions>
+        <definition>
+            <para>Video segments in the resource.</para>
+        </definition>
+        <instructions co="no">
+            <para>Use syntax encoding scheme for describing video segments.</para>
+            <para>Syntax encoding scheme: segment number. Time-based information. Description. Related resource. </para>
+        </instructions>
+        <instructions co="object">
+            <para>Use syntax encoding scheme for describing video segments.</para>
+            <para>Syntax encoding scheme: segment number. Time-based information. Description. Related resource. [Separate multiple segments with double-dash.] </para>
+        </instructions>
+    </descriptions>
+    <examples>
+        <example co="no">
+            <para>Segment 1: 0:00:01-0:02:14. Celebrants dance Tsifteteli with musicians from Flambouro and Anthi:  Yiannis Barbas, Christos Meros, Christos Karakostas, zournas, and Yiorgos Yioryiou and Dionysis Fotiou on daouli; Yiannis Metos is not seen but is also playing. See Yvonne Hunt's book A Nest of Gold, 412-413. --Segment 2: 0:02:15.-0:03:06. The music changes to 7/8 rhythm; Karakostas plays while workers dance inside the taverna.</para>
+        </example>
+        <example co="object">
+            <para>Segment 1: 0:00:01-0:02:14. Celebrants dance Tsifteteli with musicians from Flambouro and Anthi:  Yiannis Barbas, Christos Meros, Christos Karakostas, zournas, and Yiorgos Yioryiou and Dionysis Fotiou on daouli; Yiannis Metos is not seen but is also playing. See See Yvonne Hunt's book A Nest of Gold, 412-413. --Segment 2: 0:02:15.-0:03:06. The music changes to 7/8 rhythm; Karakostas plays while workers dance inside the taverna.</para>
+        </example>
+    </examples>
+    <additionalInfo></additionalInfo>
+    <marc>
+        <dcgMarcMapping></dcgMarcMapping>
+    </marc>
+    <xsd>
+        <typeInfo level="standalone object">
+            <typeAttribute>xs:string</typeAttribute>
+        </typeInfo>
+    </xsd>
+    <rdf/>
+    <history>
+        <dateCreated>
+            <single>2020-05-18</single>
+        </dateCreated>
+        <created4Coll>Greek Dances</created4Coll>
+        <justification>Needed to describe video segments using descriptions provided by Yvonne Hunt.</justification>
+        <changeLog>
+            <change></change>
+        </changeLog>
+    </history>
+</property>
+
+
+
+
+

@@ -47,15 +47,15 @@
    </descriptions><examples>
       <example co="no">
          <para>To order a reproduction, inquire about permissions, or for information about prices see:  http://www.lib.washington.edu/specialcollections/services/reproduction/reproduction.</para>
-         <para>Please cite the Order Number.</para>
+         <para>Please cite the Order Number or the Digital ID Number.</para>
       </example>
       <example co="object">
       <para>To order a reproduction, inquire about permissions, or for information about prices see:  http://www.lib.washington.edu/specialcollections/services/reproduction/reproduction.</para>
-      <para>Please cite the Order Number.</para>
+         <para>Please cite the Order Number or the Digital ID Number.</para>
       </example>
       <example co="item">
          <para>To order a reproduction, inquire about permissions, or for information about prices see:  http://www.lib.washington.edu/specialcollections/services/reproduction/reproduction.</para>
-         <para>Please cite the Order Number.</para>
+         <para>Please cite the Order Number or the Digital ID Number.</para>
       </example>
       <customization co="object" dd="uwtoh">
          <para>To request a high resolution or uncompressed reproduction, or to obtain permission to use any portion of this item, contact University of Washington Tacoma Library. Email: taclibdc@uw.edu. Please reference the Digital ID Number. </para>

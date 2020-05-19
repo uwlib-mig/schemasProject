@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+    <uid>p107</uid>
+    <labels>
+        <platformIndependent>regionalAffiliations</platformIndependent>
+        <dc>coverage</dc>
+    </labels>
+    <uwRequired>
+        <uwStandalone>no</uwStandalone>
+        <uwObject>no</uwObject>
+        <uwItem>no</uwItem>
+    </uwRequired>
+    <cdm>
+        <label>Regional Affiliations</label>
+        <cdmDatatype>text</cdmDatatype>
+        <cdmLarge>no</cdmLarge>
+        <searchable>yes</searchable>
+        <hidden>no</hidden>
+        <cdmRequired>no</cdmRequired>
+        <cdmControlledVocab>no</cdmControlledVocab>
+    </cdm>
+    <dspace>
+        <dspaceProperty></dspaceProperty>
+    </dspace>
+    <descriptions>
+        <definition>
+            <para>Location from where cultural practices represented in the resource derive.</para>
+        </definition>
+        <instructions co="no">
+            <para>Enter the name of the place the group or dance is from.</para>
+            <para>Separate multiple entried using a semi-colon.</para>
+            <para>Use the Library of Congress Authority File form of the name, if available. If not, use the most common form/spelling.</para>
+        </instructions>
+        <instructions co="object">
+            <para>Enter the name of the place the group or dance is from.</para>
+            <para>Separate multiple entried using a semi-colon.</para>
+            <para>Use the Library of Congress Authority File form of the name, if available. If not, use the most common form/spelling.</para>
+        </instructions>
+    </descriptions>
+    <examples>
+        <example co="no">
+            <para>Skotoussa (Kentriki Makedonia, Greece)</para>
+            <para>Irakleia (Kentriki Makedonia, Greece)</para>
+        </example>
+        <example co="object">
+            <para>Skotoussa (Kentriki Makedonia, Greece)</para>
+            <para>Irakleia (Kentriki Makedonia, Greece)</para>
+        </example>
+    </examples>
+    <additionalInfo>
+        <admin co="all">
+            <para>In CONTENTdm, map to DC map = Coverage-Spatial.</para>
+        </admin>
+    </additionalInfo>
+    <marc>
+        <dcgMarcMapping></dcgMarcMapping>
+    </marc>
+    <xsd>
+        <typeInfo level="standalone object">
+            <typeAttribute>xs:string</typeAttribute>
+        </typeInfo>
+    </xsd>
+    <rdf>
+        <owlDatatypeProperty>yes</owlDatatypeProperty>
+    </rdf>
+    <history>
+        <dateCreated><single>2020-05-20</single></dateCreated>
+        <created4Coll>Greek Dances</created4Coll>
+        <justification>Needed a field to describe th eplace associated with a dance or group of performers depicted.</justification>
+        <changeLog>
+            <change></change>
+        </changeLog>
+    </history>
+</property>
+
+
+
+
+
+
+
+
+
+
+
+
+

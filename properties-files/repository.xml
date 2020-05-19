@@ -25,9 +25,11 @@
       <instructions co="object">
          <para>Enter the name of the institution in which the original item is held.</para>
       </instructions>
+      <!--
       <instructions co="item">
          <para>Enter the name of the institution in which the original item is held.</para>
       </instructions>
+      -->
       <customization co="object" dd="uwtoh">
          <para>Enter the name of the institution in which the original item is held: "University of Washington Tacoma Library."</para>
       </customization>
@@ -118,5 +120,6 @@
          <change date="2018-05-09">Removed instructions for items as well as examples, added for uwtoh; a compundObject should not need to repeat repository info at the item level. If it's needed later we'll add it.</change>
          <change date="2019-04-21">Added a customization for rp standalone instructions.</change>
          <change date="2019-05-20">Added cdm compound object info for krab.</change>
+         <change date="2020-05-19">Commented-out instructions/@co=item to supress from Greek Dances.</change>
       </changeLog>
    </history></property>

@@ -5,7 +5,7 @@
    <uid>p37</uid>
    <labels>
       <platformIndependent>extent</platformIndependent>
-      <dc>extent</dc>
+      <dc>format</dc>
    </labels>
    <uwRequired>
       <uwStandalone>no</uwStandalone>
@@ -62,6 +62,22 @@
          <para>Enter the duration of the resource.</para>
          <para>Duration should be entered hh:mm:ss. </para>
       </customization>
+      <customization co="object" dd="gd">
+         <para>Enter the extent of digital access file.</para>
+         <para>Enter duration of the video file.</para>
+         <para>Duration should be entered hh:mm:ss.</para>
+         <para>Do not enter a value for the extent of the pdf file.</para>
+      </customization>
+      <customization co="item" dd="gd">
+         <para>Do not use for items in compound objects.</para>
+         <para>Enter extent of video file in the object description.</para>
+      </customization>
+      <customization co="no" dd="gd">
+         <para>Enter the extent of digital access file.</para>
+         <para>Enter duration of the video file.</para>
+         <para>Duration should be entered hh:mm:ss.</para>
+         <para>Do not enter a value for the extent of the pdf file.</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="item">
@@ -86,9 +102,20 @@
          <para>00:12:58</para>
          <para>01:28:14</para>
       </customization>
+      <customization co="item" dd="gd">
+      </customization>
+      <customization co="no" dd="gd">
+         <para>00:12:58</para>
+         <para>01:28:14</para>
+      </customization>
+      <customization co="object" dd="gd">
+         <para>00:12:58</para>
+         <para>01:28:14</para>
+      </customization>
    </examples>
    <additionalInfo>
       <admin co="no">
+         <para>In CONTENTdm, map to DC Map = Format-Extent</para>
          <para>More complex duration than hh:mm:ss can be described using RDA 7.22 or the ISO 8601 format P[n]Y[n]M[n]DT[n]H[n]M[n]S.</para>
          <para>All other extent statements can be entered either through consultation with the Metadata Implementation Group, or by referencing RDA 3.4 (access RDA using the RDA Toolkit).</para>
       </admin>
@@ -110,7 +137,7 @@
          <typeAttribute>xs:string</typeAttribute>
       </customTypeInfo>
    </xsd>
-   <rdf> </rdf>
+   <rdf><owlDatatypeProperty>yes</owlDatatypeProperty></rdf>
    <history>
       <dateCreated>
          <range>
@@ -125,6 +152,7 @@
          <change date="2018-03-26">Added additional info for cdm compound object items.</change>
          <change date="2019-04-21">Added a customization for rp as standalone.</change>
          <change date="2019-05-20">Added cdm compound object info for krab.</change>
+         <change date="2020-05-19">Entered customizations for Greek Dances.</change>
       </changeLog>
    </history>
 </property>

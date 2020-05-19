@@ -47,7 +47,8 @@
          <para>If the value of Date is not any of the above, consult the EDTF spedification to determine the appropriate notation.</para>
          <para>Date-Edtf value should agree with dates values entered in Date and Dates fields.</para>
       </instructions>
-      <instructions co="item">
+     <!-- Don't need date for items??
+        <instructions co="item">
          <para>Reflects the date in the "Date" field.</para>
          <para>Express all dates, including date ranges, using Library of Congress' Extended Date Time Format.</para>
          <para>Most recent version of EDTF available at https://www.loc.gov/standards/datetime/.</para>
@@ -60,7 +61,7 @@
          <para>If the value of Date is between YYYY and YYYY, enter YYYY?/YYYY?</para>
          <para>If the value of Date is not any of the above, consult the EDTF spedification to determine the appropriate notation.</para>
          <para>Date-Edtf value should agree with dates values entered in Date and Dates fields.</para>
-      </instructions>
+      </instructions> -->
       <customization co="no" dd="ac">
          <para>Enter the date of the execution of the drawing.</para>
          <para>Reflects the date in the "Date" field.</para>
@@ -210,5 +211,6 @@
          <change/>
          <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation. Also updated link to EDTF and added some instructions.</change>
          <change date="2019-05-19">Add krab customizations and any attendant info to support cdm compound objects for that collection.</change>
+         <change date="2020-05-19">Commented-out instructions for co items.</change>
       </changeLog>
    </history></property>

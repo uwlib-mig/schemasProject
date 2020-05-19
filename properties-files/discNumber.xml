@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+    <uid>p109</uid>
+    <labels>
+        <platformIndependent>discNumber</platformIndependent>
+        <dc>identifier</dc>
+    </labels>
+    <uwRequired>
+        <uwStandalone>no</uwStandalone>
+        <uwObject>no</uwObject>
+        <uwItem>no</uwItem>
+    </uwRequired>
+    <cdm>
+        <label>Disc Number</label>
+        <cdmDatatype>text</cdmDatatype>
+        <cdmLarge>no</cdmLarge>
+        <searchable>yes</searchable>
+        <hidden>yes</hidden>
+        <cdmRequired>no</cdmRequired>
+        <cdmControlledVocab>no</cdmControlledVocab>
+    </cdm>
+    <dspace>
+        <dspaceProperty></dspaceProperty>
+    </dspace>
+    <descriptions>
+        <definition><para>Number of optical disc on which resource is store.</para></definition>
+        <instructions co="no"><para>Enter the number of the disc in the Hunt collection.</para></instructions>
+        <instructions co="object"><para>Enter the number of the disc in the Hunt collection.</para></instructions>
+    </descriptions>
+    <examples>
+        <example co="no">
+            <para>CD 62</para>
+        </example>
+        <example co="object">
+            <para>CD 62</para>
+        </example>
+    </examples>
+    <additionalInfo></additionalInfo>
+    <marc>
+        <dcgMarcMapping></dcgMarcMapping>
+    </marc>
+    <xsd>
+        <typeInfo dd="gd">
+            <typeAttribute>xs:string</typeAttribute>
+        </typeInfo>
+    </xsd>
+    <rdf></rdf>
+    <history>
+        <dateCreated><single>2020-05-18</single></dateCreated>
+        <created4Coll>Greek Dances</created4Coll>
+        <justification>Needed to record the disc number on which the full video is stored. Admin field.</justification>
+        <changeLog>
+            <change></change>
+        </changeLog>
+    </history>
+</property>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

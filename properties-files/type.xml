@@ -53,6 +53,17 @@
       <customization co="no" dd="krab">
          <para>Sound</para>
       </customization>
+      <customization co="object" dd="gd">
+         <para>MovingImage</para>
+         <para>Text</para>
+      </customization>
+      <customization co="item" dd="gd">
+         <para>MovingImage</para>
+         <para>Text</para>
+      </customization>
+      <customization co="no" dd="gd">
+         <para>MovingImage</para>
+      </customization>
    </examples><additionalInfo/><marc>
       <dcgMarcMapping/>
       <marcNotes>

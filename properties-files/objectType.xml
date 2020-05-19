@@ -30,12 +30,14 @@
          <para>Enter the heading exactly as it appears in the controlled source.</para>
          <para>Separate multiple values with a semi-colon and space.</para>
       </instructions>
+      <!--
       <instructions co="item">
          <para>Optional: input a term taken from a controlled source. Recommended: LC Thesaurus for Graphic Materials (still images), Library of Congress Subject Headings (oral histories).</para>
          <para>Not required for all compound object items. Use as needed. Recommended: enter type values when the collection resources are mixed media.</para>
          <para>Enter the heading exactly as it appears in the controlled source.</para>
          <para>Separate multiple values with a semi-colon and space.</para>
       </instructions>
+      -->
       <customization co="item" dd="civilwar">
          <para>Input a term taken from the Art and Architecture Thesaurus at http://www.getty.edu/research/tools/vocabularies/aat/.</para>
          <para>Recommended but not required for all compound object items.</para>
@@ -48,6 +50,12 @@
       </customization>
       <customization co="item" dd="uwtoh">
          <para>Enter "Oral histories"</para>
+      </customization>
+      <customization co="no" dd="gd">
+         <para>Enter "Dance films" (a term from the Library of Congress Genre/Forms Terms).</para>
+      </customization>
+      <customization co="object" dd="gd">
+         <para>Enter "Dance films" (a term from the Library of Congress Genre/Forms Terms).</para>
       </customization>
    </descriptions><examples>
       <example co="no">
@@ -72,6 +80,12 @@
       <customization co="item" dd="uwtoh">
          <para>Oral histories</para>
       </customization>
+      <customization co="no" dd="gd">
+         <para>Dance films</para>
+      </customization>
+      <customization co="object" dd="gd">
+         <para>Dance films</para>
+      </customization>
    </examples><additionalInfo>
       <admin co="object">
          <para>There's a difference between SC DDs for photograph collections and oral history collections; the former uses "Object Type," the latter uses "Genre." Proposal: "Object Type" applies to all resources more than "Genre." Let's use "Object Type" in all cases, as here.</para>
@@ -90,6 +104,7 @@
          <typeAttribute>xs:string</typeAttribute>
       </customTypeInfo>
    </xsd><rdf>
+      <owlDatatypeProperty>yes</owlDatatypeProperty>
       <cdmRdf>
          <dpla>
             <map>dc:type</map>
@@ -137,5 +152,8 @@
          <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
          <change date="2018-03-23">Saw a difference between SC DDs for photograph collections and oral history collections; the former uses "Object Type," the latter uses "Genre." Merged the two and tried to make the property properties apply more generally. </change>
          <change date="2018-03-26">Added info for uwtoh.</change>
+         <change date="2020-05-18">Added customizations for Greek Dances.</change>
+         <change date="2020-05-18">Changed label from Object Type to Genre.</change>
+         <change date="2020-05-19">Commented-out instructions/@co=item to duppress in Greek Dances. Also changes label from Genre to Object Type.</change>
       </changeLog>
    </history></property>

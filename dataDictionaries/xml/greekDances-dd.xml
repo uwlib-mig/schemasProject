@@ -3,17 +3,50 @@
     xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     id="0001"
     xsi:schemaLocation="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-dds.xsd">
-    <ddName>Greek Dances Videos</ddName>
+    <!-- Note the @id in the above element; it's not being used, I believe in any DDs -->
+    <ddName>Yvonne Hunt Greek Folk Dance Collection</ddName>
     <ddPartOfProject/>
-    <originalCreationDate>2020-03-24</originalCreationDate>
-    <latestUpdate>2020-03-24</latestUpdate>
+    <originalCreationDate>2020-05-11</originalCreationDate>
+    <latestUpdate>2020-05-18</latestUpdate>
     <metadataLiaisons>
-        <metadataLiaison>TBD</metadataLiaison>
+        <metadataLiaison>Mary St. Germaine</metadataLiaison>
+        <metadataLiaison>Theo Gerontakos</metadataLiaison>
     </metadataLiaisons>
     <cdmCo>yes</cdmCo>
-    <standalone>no</standalone>
-    <cdmCode>dances</cdmCode>
+    <standalone>yes</standalone>
+    <cdmCode>gd</cdmCode>
+    <!-- Get code above from AG -->
     <properties>
         <xi:include href="../../properties-files/title.xml"/>
+        <xi:include href="../../properties-files/segments.xml"/>
+        <xi:include href="../../properties-files/source.xml"/>
+        <xi:include href="../../properties-files/filmmaker.xml"/>
+        <xi:include href="../../properties-files/participants.xml"/>
+        <xi:include href="../../properties-files/date.xml"/>
+        <xi:include href="../../properties-files/dateEdtf.xml"/>
+        <xi:include href="../../properties-files/dates.xml"/>
+        <xi:include href="../../properties-files/dancesDepicted.xml"/>
+        <xi:include href="../../properties-files/instrumentsDepicted.xml"/>
+        <xi:include href="../../properties-files/eventsDepicted.xml"/>
+        <xi:include href="../../properties-files/notes.xml"/> 
+        <xi:include href="../../properties-files/regionalAffiliations.xml"/>
+        <xi:include href="../../properties-files/videoLocations.xml"/>
+        <xi:include href="../../properties-files/objectType.xml"/><!-- Genre -->
+        <xi:include href="../../properties-files/digitalCollection.xml"/>
+        <xi:include href="../../properties-files/digitalIdNumber.xml"/><!-- is this what we use? Formerly Order Number? -->
+        <xi:include href="../../properties-files/orderingInformation.xml"/>
+        <xi:include href="../../properties-files/rightsUri.xml"/>
+        <xi:include href="../../properties-files/restrictions.xml"/>
+        <xi:include href="../../properties-files/repository.xml"/><!-- do we want repo info? repo coll? repo coll gd? -->
+        <xi:include href="../../properties-files/type.xml"/><!--dcmi type  --> 
+        <xi:include href="../../properties-files/extent.xml"/><!-- duration of segment -->
+        <xi:include href="../../properties-files/digitalFormat.xml"/><!-- mime type -->
+        <xi:include href="../../properties-files/originalFormat.xml"/><!-- original carrier, RDA or mime type -->
+
+        <xi:include href="../../properties-files/digitalReproductionInformation.xml"/>
+        <xi:include href="../../properties-files/staffNotes.xml"/><!-- add just because -->
+        <xi:include href="../../properties-files/institution.xml"/><!-- admin field -->
+        <xi:include href="../../properties-files/cataloging.xml"/><!-- admin field -->
+        <xi:include href="../../properties-files/discNumber.xml"/><!-- CD Number, hidden; admin field -->
     </properties>
 </migDataDictionary>

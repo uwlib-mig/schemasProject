@@ -51,7 +51,12 @@
          <para>http://rightsstatements.org/vocab/InC-EDU/1.0/</para>
       </customization>
    </examples>
-   <additionalInfo/><marc>
+   <additionalInfo>
+      <admin co="all">
+         <para>In CONTENTdm, map to DC Map = Rights</para>
+      </admin>
+   </additionalInfo>
+   <marc>
       <dcgMarcMapping/>
       <marcNotes>
          <para/>

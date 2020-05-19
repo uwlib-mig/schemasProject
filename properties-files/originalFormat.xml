@@ -32,14 +32,25 @@
          <para>When the original is digital, use media types listed at http://www.iana.org/assignments/media-types/index.html</para>
          <para>For audio WAVE files, enter audio/wav.</para>
       </instructions>
+      <instructions co="object">
+         <para>Enter the original formats.</para>
+         <para>When the original is non-digital, use a label from one of the entries of the RDA Registry's RDA Carrier Type Vocabulary currently available at https://www.rdaregistry.info/termList/RDACarrierType/</para>
+         <para>When the original is digital, use media types listed at http://www.iana.org/assignments/media-types/index.html</para>
+         <para>For audio WAVE files, enter audio/wav.</para>
+         <para>Separate multiple formats with a semi-colon.</para>
+      </instructions>
    </descriptions><examples>
       <example co="item">
-         <para>image/tiff</para>
+         <para>image/tiff; video/mp4; online resource</para>
          <para>audio/wav</para>
          <para>audiotape reel</para>
-         <para>online resource</para>
+         <para></para>
          <para>computer disc</para>
          <para>videocassette</para>
+         <para>video/mp4</para>
+      </example>
+      <example co="object">
+         <para>image/tiff; video/mp4; online resource</para>
       </example>
       <example co="no">
          <para>image/tiff</para>
@@ -48,6 +59,7 @@
          <para>online resource</para>
          <para>computer disc</para>
          <para>videocassette</para>
+         <para>video/mp4</para>
       </example>
    </examples><additionalInfo/><marc>
       <dcgMarcMapping/>

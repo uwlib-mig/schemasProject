@@ -578,6 +578,7 @@
                             <xsl:when test="mig2:labels/mig2:dc='none'">
                                 <xsl:text>[no Dublin Core equivalent]</xsl:text>
                             </xsl:when>
+                            
                             <xsl:when test="mig2:labels/mig2:platformIndependent='restrictions'">
                                 <xsl:text>http://purl.org/dc/elements/1.1/rights</xsl:text>
                             </xsl:when>
@@ -644,6 +645,9 @@
                     <td>Input instructions</td>
                     <td>
                         <xsl:choose>
+                            <!-- Problem in this choose:
+                            The code should fall back on @co=object in the absence of (@co=object and @dd=dd) when there is a customization for either co=item or co=no. It fails; a customization has to be entered because the first condition is met, the @dd is present, but there is no custom entry for co=object. A property file that needs this feature: notes.xml.
+                            -->
                             <xsl:when
                                 test="../../mig:cdmCode = mig2:descriptions/mig2:customization/@dd">
                                 <xsl:for-each

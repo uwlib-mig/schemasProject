@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+    <uid>p105</uid>
+    <labels>
+        <platformIndependent>instrumentsDepicted</platformIndependent>
+        <dc>subject</dc>
+    </labels>
+    <uwRequired>
+        <uwStandalone>no</uwStandalone>
+        <uwObject>no</uwObject>
+        <uwItem>no</uwItem>
+    </uwRequired>
+    <cdm>
+        <label>Instruments Depicted</label>
+        <cdmDatatype>text</cdmDatatype>
+        <cdmLarge>no</cdmLarge>
+        <searchable>yes</searchable>
+        <hidden>no</hidden>
+        <cdmRequired>no</cdmRequired>
+        <cdmControlledVocab>no</cdmControlledVocab>
+    </cdm>
+    <dspace>
+        <dspaceProperty></dspaceProperty>
+    </dspace>
+    <descriptions>
+        <definition>
+            <para>Musical instruments depicted in the resource</para>
+        </definition>
+        <instructions co="no">
+            <para>Enter names of the musical instruments seen in the video segments.</para>
+            <para>Use the form of the name provided by Yvonne Hunt.</para>
+        </instructions>
+        <instructions co="object">
+            <para>Enter names of the musical instruments seen in the video segments.</para>
+            <para>Separate multiple instruments using a semi-colon.</para>
+            <para>Use the form of the name provided by Yvonne Hunt.</para>
+        </instructions>
+    </descriptions>
+    <examples>
+        <example co="no">
+            <para>zournas; daouli</para>
+            <para>Lira (Short-necked fiddle</para>
+        </example>
+        <example co="object">
+            <para>zournas; daouli</para>
+            <para>Lira (Short-necked fiddle</para>
+        </example>
+    </examples>
+    <additionalInfo></additionalInfo>
+    <marc>
+        <dcgMarcMapping></dcgMarcMapping>
+    </marc>
+    <xsd>
+        <typeInfo level="standalone object">
+            <typeAttribute>xs:string</typeAttribute>
+        </typeInfo>
+    </xsd>
+    <rdf>
+        <owlDatatypeProperty>yes</owlDatatypeProperty>
+    </rdf>
+    <history>
+        <dateCreated><single>2020-05-18</single></dateCreated>
+        <created4Coll>Greek Dances</created4Coll>
+        <justification>Needed a field to represent all the musical instruments seen.</justification>
+        <changeLog>
+            <change></change>
+        </changeLog>
+    </history>
+</property>
+
+
+
+
+
+
+
+
+
+
+
+

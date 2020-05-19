@@ -57,8 +57,6 @@
    </examples><additionalInfo>
       <admin co="no">
          <para>Photograph collections also have this property but it is labeled "Order Number."</para>
-         <para>For SC Oral History collections, format of numbers for stand-alone items: OHCxxx.</para>
-         <para>For SC Oral History collections, format of numbers for compound objects: document description (top level) = OHCxxx, then each page description as follows; OHCxxx-Trascript, etc.</para>
       </admin>
    </additionalInfo><marc>
       <dcgMarcMapping/>

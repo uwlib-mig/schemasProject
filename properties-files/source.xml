@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+    <uid>p101</uid>
+    <labels>
+        <platformIndependent>source</platformIndependent>
+        <dc>source</dc>
+    </labels>
+    <uwRequired>
+        <uwStandalone>no</uwStandalone>
+        <uwObject>no</uwObject>
+        <uwItem>no</uwItem>
+    </uwRequired>
+    <cdm>
+        <label>Source</label>
+        <cdmDatatype>text</cdmDatatype>
+        <cdmLarge>no</cdmLarge>
+        <searchable>no</searchable>
+        <hidden>no</hidden>
+        <cdmRequired>no</cdmRequired>
+        <cdmControlledVocab>no</cdmControlledVocab>
+    </cdm>
+    <dspace>
+        <dspaceProperty></dspaceProperty>
+    </dspace>
+    <descriptions>
+        <definition>
+            <para>A related resource from which the described resource is derived.</para>
+        </definition>
+        <instructions co="no">
+            <para>Enter a citation to the source resource.</para>
+        </instructions>
+        <instructions co="object">
+            <para>Enter a citation to the source resource.</para>
+        </instructions>
+    </descriptions>
+    <examples>
+        <example co="no">
+            <para>Hunt, Yvonne M. Celebration of St. Marina in the Pyrgos section of the village of Mavrothalassa in the Serres region, July 17, 19??. Hunt tape 62.</para>
+        </example>
+        <example co="object">
+            <para>Hunt, Yvonne M. Celebration of St. Marina in the Pyrgos section of the village of Mavrothalassa in the Serres region, July 17, 19??. Hunt tape 62.</para>
+        </example>
+    </examples>
+    <additionalInfo>
+        <admin co="object">
+            <para>The citation in the example does not accord with any good practice. We might favor something more like this (an example citation from https://owl.purdue.edu/owl/research_and_citation/conducting_research/archival_research/citing_archival_resources.html): Summers, Clara. Letter to Steven Summers. 29 June 1942. Box 1, Folder 1. MSP 94 Steven and Clara Summers papers. Virginia Kelly Karnes Archives and Special Collections Research Center, Purdue University Libraries, West Lafayette, IN. 20 May 2013.</para>
+        </admin>
+    </additionalInfo>
+    <marc>
+        <dcgMarcMapping></dcgMarcMapping>
+    </marc>
+    <xsd>
+        <typeInfo level="standalone object">
+            <typeAttribute>xs:string</typeAttribute>
+        </typeInfo>
+    </xsd>
+    <rdf>
+        <owlDatatypeProperty>yes</owlDatatypeProperty>
+    </rdf>
+    <history>
+        <dateCreated>
+            <single>2020-05-18</single>
+        </dateCreated>
+        <created4Coll>Greek Dances</created4Coll>
+        <justification>Needed to cite the source video for the video segments loaded into Cdm.</justification>
+        <changeLog>
+            <change></change>
+        </changeLog>
+    </history>
+</property>
+
+
+
+
+

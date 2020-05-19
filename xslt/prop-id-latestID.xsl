@@ -6,7 +6,7 @@
     
     <xsl:template match="/">
         <root>
-        <xsl:for-each select="collection('/Users/theodore/sch/properties-files?select=*.xml')">
+            <xsl:for-each select="collection('file:///C:/Users/geron/OneDrive/gitRepos/registry/schemasProject/properties-files?select=*.xml')">
             <xsl:sort select="./prop:property/prop:uid"></xsl:sort>
             <id><xsl:value-of select="./prop:property/prop:uid"/></id>
         </xsl:for-each>

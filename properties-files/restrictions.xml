@@ -51,6 +51,9 @@
       <example co="object">
          <para>For information on permissions for use and reproductions please visit UW Libraries Special Collections "Reproductions: Order Photographs &amp; Scans" page: http://www.lib.washington.edu/specialcoll/service/reproduction.html.</para>
       </example>
+      <example co="item">
+         <para>For information on permissions for use and reproductions please visit UW Libraries Special Collections "Reproductions: Order Photographs &amp; Scans" page: http://www.lib.washington.edu/specialcoll/service/reproduction.html.</para>
+      </example>
       <customization co="item" dd="civilwar">
          <para>For information on permissions for use and reproductions please visit UW Libraries Special Collections Use Permissions page:  http://www.lib.washington.edu/specialcollections/services/permission-for-use</para>
       </customization>
@@ -68,7 +71,12 @@
          <para>To order a reproduction, inquire about permissions, or for information about prices see:  http://www.lib.washington.edu/specialcollections/services/reproduction/reproduction.</para>
       </customization>
    </examples>
-   <additionalInfo/><marc>
+   <additionalInfo>
+      <admin co="all">
+         <para>In CONTENTdm, map to DC Map = Rights</para>
+      </admin>
+   </additionalInfo>
+   <marc>
       <dcgMarcMapping/>
       <marcNotes>
          <para/>
