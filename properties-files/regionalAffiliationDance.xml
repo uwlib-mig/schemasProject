@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
-    <uid>p108</uid>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+    <uid>p110</uid>
     <labels>
-        <platformIndependent>videoLocations</platformIndependent>
+        <platformIndependent>regionalAffiliationDance</platformIndependent>
         <dc>coverage</dc>
     </labels>
     <uwRequired>
@@ -11,7 +14,7 @@
         <uwItem>no</uwItem>
     </uwRequired>
     <cdm>
-        <label>Video Locations</label>
+        <label>Regional Affiliation (Dance)</label>
         <cdmDatatype>text</cdmDatatype>
         <cdmLarge>no</cdmLarge>
         <searchable>yes</searchable>
@@ -23,24 +26,28 @@
         <dspaceProperty></dspaceProperty>
     </dspace>
     <descriptions>
-        <definition><para>Location in which the moving images were recorded.</para></definition>
+        <definition>
+            <para>Location from where the dance(s) represented in the resource derives.</para>
+        </definition>
         <instructions co="no">
-            <para>Enter the name of the places in which the video segments were recorded.</para>
-            <para>Separate multiple places using a semi-colon.</para>
+            <para>Enter the name of the place the dance is from.</para>
+            <para>Separate multiple entries using a semi-colon.</para>
             <para>Use GeoNet (https://community.esri.com/) form of the name, if available. If not, use the most common form/spelling.</para>
         </instructions>
         <instructions co="object">
-            <para>Enter the name of the places in which the video segments were recorded.</para>
-            <para>Separate multiple places using a semi-colon.</para>
+            <para>Enter the name of the place the dance is from.</para>
+            <para>Separate multiple entries using a semi-colon.</para>
             <para>Use GeoNet (https://community.esri.com/) form of the name, if available. If not, use the most common form/spelling.</para>
         </instructions>
     </descriptions>
     <examples>
         <example co="no">
-            <para>Skotoussa (Kentriki Makedonia, Greece); Irakleia (Kentriki Makedonia, Greece)</para>
+            <para>Skotoussa (Kentriki Makedonia, Greece)</para>
+            <para>Irakleia (Kentriki Makedonia, Greece)</para>
         </example>
         <example co="object">
-            <para>Skotoussa (Kentriki Makedonia, Greece); Irakleia (Kentriki Makedonia, Greece)</para>
+            <para>Skotoussa (Kentriki Makedonia, Greece)</para>
+            <para>Irakleia (Kentriki Makedonia, Greece)</para>
         </example>
     </examples>
     <additionalInfo>
@@ -56,16 +63,27 @@
             <typeAttribute>xs:string</typeAttribute>
         </typeInfo>
     </xsd>
-    <rdf><owlDatatypeProperty>yes</owlDatatypeProperty></rdf>
+    <rdf>
+        <owlDatatypeProperty>yes</owlDatatypeProperty>
+    </rdf>
     <history>
-        <dateCreated><single>2020-05-18</single></dateCreated>
+        <dateCreated><single>2020-06-03</single></dateCreated>
         <created4Coll>Greek Dances</created4Coll>
-        <justification>Needed a field to enter the place where the dances were video recorded.</justification>
+        <justification>Needed a field to describe the place associated with a dance depicted.</justification>
         <changeLog>
             <change></change>
         </changeLog>
     </history>
 </property>
+
+
+
+
+
+
+
+
+
 
 
 

@@ -13,24 +13,26 @@
         <metadataLiaison>Theo Gerontakos</metadataLiaison>
     </metadataLiaisons>
     <cdmCo>yes</cdmCo>
-    <standalone>yes</standalone>
+    <standalone>no</standalone>
     <cdmCode>gd</cdmCode>
     <!-- Get code above from AG -->
     <properties>
         <xi:include href="../../properties-files/title.xml"/>
-        <xi:include href="../../properties-files/segments.xml"/>
         <xi:include href="../../properties-files/source.xml"/>
         <xi:include href="../../properties-files/filmmaker.xml"/>
         <xi:include href="../../properties-files/participants.xml"/>
-        <xi:include href="../../properties-files/date.xml"/>
         <xi:include href="../../properties-files/dateEdtf.xml"/>
+        <xi:include href="../../properties-files/date.xml"/>
         <xi:include href="../../properties-files/dates.xml"/>
         <xi:include href="../../properties-files/dancesDepicted.xml"/>
         <xi:include href="../../properties-files/instrumentsDepicted.xml"/>
         <xi:include href="../../properties-files/eventsDepicted.xml"/>
         <xi:include href="../../properties-files/notes.xml"/> 
-        <xi:include href="../../properties-files/regionalAffiliations.xml"/>
+        <xi:include href="../../properties-files/regionalAffiliationDance.xml"/>
+        <xi:include href="../../properties-files/regionalAffiliationGroup.xml"/>
         <xi:include href="../../properties-files/videoLocations.xml"/>
+        <xi:include href="../../properties-files/latitude.xml"/>
+        <xi:include href="../../properties-files/longitude.xml"/>
         <xi:include href="../../properties-files/objectType.xml"/><!-- Genre -->
         <xi:include href="../../properties-files/digitalCollection.xml"/>
         <xi:include href="../../properties-files/digitalIdNumber.xml"/><!-- is this what we use? Formerly Order Number? -->

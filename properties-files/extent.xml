@@ -41,12 +41,13 @@
          <para>Duration should be entered hh:mm:ss.</para>
          <para>Extent of text will use a numeral and the word "pages" as follows: "128 pages."</para>
       </instructions>
+      <!-- MIG decision 2020-05: do not include this property in the object description
       <instructions co="object">
          <para>Enter the extent of digital access files.</para>
          <para>Enter duration of the access audio or video file and/or the length of a text-based file.</para>
          <para>Duration should be entered hh:mm:ss.</para>
          <para>Extent of text will use a numeral and the word "pages" as follows: "128 pages."</para>
-      </instructions>
+      </instructions>-->
       <customization dd="civilwar" co="item">
          <para>Enter the text as it appears in the resource.</para>
       </customization>
@@ -62,12 +63,7 @@
          <para>Enter the duration of the resource.</para>
          <para>Duration should be entered hh:mm:ss. </para>
       </customization>
-      <customization co="object" dd="gd">
-         <para>Enter the extent of digital access file.</para>
-         <para>Enter duration of the video file.</para>
-         <para>Duration should be entered hh:mm:ss.</para>
-         <para>Do not enter a value for the extent of the pdf file.</para>
-      </customization>
+     
       <customization co="item" dd="gd">
          <para>Do not use for items in compound objects.</para>
          <para>Enter extent of video file in the object description.</para>
@@ -105,10 +101,6 @@
       <customization co="item" dd="gd">
       </customization>
       <customization co="no" dd="gd">
-         <para>00:12:58</para>
-         <para>01:28:14</para>
-      </customization>
-      <customization co="object" dd="gd">
          <para>00:12:58</para>
          <para>01:28:14</para>
       </customization>
@@ -153,6 +145,7 @@
          <change date="2019-04-21">Added a customization for rp as standalone.</change>
          <change date="2019-05-20">Added cdm compound object info for krab.</change>
          <change date="2020-05-19">Entered customizations for Greek Dances.</change>
+         <change date="2020-06-03">removed object description in accordance with MIG decision.</change>
       </changeLog>
    </history>
 </property>

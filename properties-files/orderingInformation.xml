@@ -4,7 +4,7 @@
    </labels><uwRequired>
       <uwStandalone>yes</uwStandalone>
       <uwObject>yes</uwObject>
-      <uwItem>yes</uwItem>
+      <uwItem>no</uwItem>
    </uwRequired><cdm>
       <label>Ordering Information</label>
       <cdmDatatype>text</cdmDatatype>
@@ -25,9 +25,10 @@
       <instructions co="object">
       <para>Enter the instructions for ordering. If the item cannot be ordered, state that it cannot be ordered.</para>
       </instructions>
+      <!-- MIG decision 2020-05: NO ORDERING INFORMATION FOR ITEMS IN CDM COMPOUND OBJECTS
       <instructions co="item">
          <para>Enter the instructions for ordering. If the item cannot be ordered, state that it cannot be ordered.</para>
-      </instructions>
+      </instructions> -->
       <customization co="object" dd="uwtoh">
          <para>Enter the instructions for ordering.</para>
          <para>Enter: "To request a high resolution or uncompressed reproduction, or to obtain permission to use any portion of this item, contact University of Washington Tacoma Library. Email: taclibdc@uw.edu. Please reference the Digital ID Number."</para>
@@ -44,6 +45,10 @@
          <para>Enter the instructions for ordering.</para>
          <para>Enter: "To order a reproduction, inquire about permissions, or for information about prices see:  http://www.lib.washington.edu/specialcollections/services/reproduction/reproduction."</para>
       </customization>
+      <customization co="object" dd="gd">
+         <para>Items in the Hunt (Yvonne) Greek Folk Dance Collection cannot be ordered at this time.</para>
+         <para>Enter "Items cannot be ordered."</para>
+      </customization>
    </descriptions><examples>
       <example co="no">
          <para>To order a reproduction, inquire about permissions, or for information about prices see:  http://www.lib.washington.edu/specialcollections/services/reproduction/reproduction.</para>
@@ -53,10 +58,11 @@
       <para>To order a reproduction, inquire about permissions, or for information about prices see:  http://www.lib.washington.edu/specialcollections/services/reproduction/reproduction.</para>
          <para>Please cite the Order Number or the Digital ID Number.</para>
       </example>
+      <!--
       <example co="item">
          <para>To order a reproduction, inquire about permissions, or for information about prices see:  http://www.lib.washington.edu/specialcollections/services/reproduction/reproduction.</para>
          <para>Please cite the Order Number or the Digital ID Number.</para>
-      </example>
+      </example>-->
       <customization co="object" dd="uwtoh">
          <para>To request a high resolution or uncompressed reproduction, or to obtain permission to use any portion of this item, contact University of Washington Tacoma Library. Email: taclibdc@uw.edu. Please reference the Digital ID Number. </para>
       </customization>
@@ -72,9 +78,13 @@
          <para>To order a reproduction, inquire about permissions, or for information about prices see:  http://www.lib.washington.edu/specialcollections/services/reproduction/reproduction.</para>
          <para>Please cite the Digital ID Number.</para>
       </customization>
+      <customization co="object" dd="gd">
+         <para>Items cannot be ordered.</para>
+      </customization>
    </examples><additionalInfo>
       <admin co="no">
          <para>The text for this field will be unique to each project, and should be created by the project manager for any given project.</para>
+         <para>Ordering may be possible in the future; if that happens, the information in the "Ordering Information" field should change appropriately.</para>
       </admin>
       <generalNotes co="no">
          <para/>
@@ -128,5 +138,6 @@
       <changeLog>
          <change/>
          <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
+         <change date="2020-06-03">removed cdm compound object ITEM descriptions after MIG decided they're not wanted</change>
       </changeLog>
    </history></property>

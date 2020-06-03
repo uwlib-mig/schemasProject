@@ -4,8 +4,7 @@
     xmlns:mig="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries"
     xmlns:mig2="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
     exclude-result-prefixes="xs" version="2.0">
-    <!-- version 0.2 2017-07-26 -->
-    <!-- version not updated; see some updates entered into dds-to-html-horizontal-table-minimal.xsl -->
+    <!-- version 0.1 2020-06-03 -->
     <xsl:output method="html" indent="yes" use-character-maps="angleBrackets"/>
 
     <xsl:character-map name="angleBrackets">
@@ -91,16 +90,9 @@
             <tr>
                 <th>#</th>
                 <th>CONTENTdm Collection Property</th>
-                <th>DC Equivalent</th>
-                <th>Searchable</th>
-                <th>Hidden</th>
-                <th>Required, CONTENTdm</th>
-                <th>Cdm Controlled Vocabulary</th>
-                <th>Required for all UW collections</th>
                 <th>Definition</th>
                 <th>Input Instructions</th>
                 <th>Examples</th>
-                <th>Additional notes on this property</th>
             </tr>
             <xsl:for-each
                 select="mig2:property[not(mig2:cdm/mig2:cdmDatatype = 'cdmAdministrative')][not(mig2:cdm/mig2:cdmDatatype = 'uwAdministrative')][mig2:descriptions/mig2:instructions/@co = 'no']">
@@ -110,24 +102,12 @@
                     </td>
                     <td>
                         <xsl:value-of select="mig2:cdm/mig2:label"/>
-                    </td>
-                    <td>
-                        <xsl:value-of select="mig2:labels/mig2:dc"/>
-                    </td>
-                    <td>
-                        <xsl:value-of select="mig2:cdm/mig2:searchable"/>
-                    </td>
-                    <td>
-                        <xsl:value-of select="mig2:cdm/mig2:hidden"/>
-                    </td>
-                    <td>
-                        <xsl:value-of select="mig2:cdm/mig2:cdmRequired"/>
-                    </td>
-                    <td>
-                        <xsl:value-of select="mig2:cdm/mig2:cdmControlledVocab"/>
-                    </td>
-                    <td>
-                        <xsl:value-of select="mig2:uwRequired/mig2:uwStandalone"/>
+                       <xsl:if test="mig2:uwRequired/mig2:uwStandalone='yes'">
+                           <br><br><i>Required field</i></br></br>
+                       </xsl:if>
+                        <xsl:if test="mig2:cdm/mig2:cdmControlledVocab='yes'">
+                            <br><br><i>CONTENTdm controlled vocabulary</i></br></br>
+                        </xsl:if>
                     </td>
                     <td>
                         <xsl:for-each select="mig2:descriptions/mig2:definition/mig2:para">
@@ -179,23 +159,6 @@
                             </xsl:otherwise>
                         </xsl:choose>
                      </td>
-                    <td>
-                        <!-- make sure all CO status include both note types ~and~ co=all below. -->
-                        <xsl:if test="mig2:additionalInfo/mig2:admin/mig2:para/text()">
-                        <xsl:for-each select="mig2:additionalInfo/mig2:admin/mig2:para">
-                            <p>
-                                <xsl:value-of select="."/>
-                            </p>
-                        </xsl:for-each>
-                        </xsl:if>
-                        <xsl:if test="mig2:additionalInfo/mig2:generalNotes/mig2:para/text()">                        
-                        <xsl:for-each select="mig2:additionalInfo/mig2:generalNotes/mig2:para">
-                            <p>
-                                <xsl:value-of select="."/>
-                            </p>
-                        </xsl:for-each>
-                        </xsl:if>
-                    </td>
                 </tr>
             </xsl:for-each>
         </table>
@@ -208,16 +171,9 @@
             <tr>
                 <th>#</th>
                 <th>CONTENTdm Collection Property</th>
-                <th>DC Equivalent</th>
-                <th>Searchable</th>
-                <th>Hidden</th>
-                <th>Required, CONTENTdm</th>
-                <th>Cdm Controlled Vocabulary</th>
-                <th>Required for all UW collections</th>
                 <th>Definition</th>
                 <th>Input Instructions</th>
                 <th>Examples</th>
-                <th>Additional notes on this property</th>
             </tr>
             <xsl:for-each
                 select="mig2:property[not(mig2:cdm/mig2:cdmDatatype = 'cdmAdministrative')][not(mig2:cdm/mig2:cdmDatatype = 'uwAdministrative')][mig2:descriptions//mig2:instructions/@co='object'][not(mig2:labels/mig2:platformIndependent = //mig:suppressObjectProp)]">
@@ -231,25 +187,14 @@
                     </td>-->
                     <td>
                         <xsl:value-of select="mig2:cdm/mig2:label"/>
+                        <xsl:if test="mig2:uwRequired/mig2:uwObject='yes'">
+                            <br><br><i>Required field</i></br></br>
+                        </xsl:if>
+                        <xsl:if test="mig2:cdm/mig2:cdmControlledVocab='yes'">
+                            <br><br><i>CONTENTdm controlled vocabulary</i></br></br>
+                        </xsl:if>
                     </td>
-                    <td>
-                        <xsl:value-of select="mig2:labels/mig2:dc"/>
-                    </td>
-                    <td>
-                        <xsl:value-of select="mig2:cdm/mig2:searchable"/>
-                    </td>
-                    <td>
-                        <xsl:value-of select="mig2:cdm/mig2:hidden"/>
-                    </td>
-                    <td>
-                        <xsl:value-of select="mig2:cdm/mig2:cdmRequired"/>
-                    </td>
-                    <td>
-                        <xsl:value-of select="mig2:cdm/mig2:cdmControlledVocab"/>
-                    </td>
-                    <td>
-                        <xsl:value-of select="mig2:uwRequired/mig2:uwObject"/>
-                    </td>
+                 
                     <td>
                         <xsl:for-each select="mig2:descriptions/mig2:definition/mig2:para">
                             <p>
@@ -262,7 +207,7 @@
                             <xsl:when
                                 test="../../mig:cdmCode = mig2:descriptions/mig2:customization/@dd">
                                 <xsl:for-each
-                                    select="mig2:descriptions/mig2:customization[@co = 'object']/mig2:para">
+                                    select="mig2:descriptions/mig2:customization[@co = 'object'][@dd=../../../../mig:cdmCode]/mig2:para">
                                     <p>
                                         <xsl:value-of select="."/>
                                     </p>
@@ -284,7 +229,7 @@
                                 test="../../mig:cdmCode = mig2:examples/mig2:customization/@dd">
                                 
                                 <xsl:for-each
-                                    select="mig2:examples/mig2:customization[@co = 'object']/mig2:para">
+                                    select="mig2:examples/mig2:customization[@co = 'object'][@dd=../../../../mig:cdmCode]/mig2:para">
                                     <p>
                                         <xsl:value-of select="."/>
                                     </p>
@@ -300,19 +245,6 @@
                             </xsl:otherwise>
                         </xsl:choose>
                     </td>
-                    <td>
-                        <!-- make sure all CO status include both note types ~and~ co=all below. -->
-                        <xsl:for-each select="mig2:additionalInfo/mig2:admin/mig2:para">
-                            <p>
-                                <xsl:value-of select="."/>
-                            </p>
-                        </xsl:for-each>
-                        <xsl:for-each select="mig2:additionalInfo/mig2:generalNotes/mig2:para">
-                            <p>
-                                <xsl:value-of select="."/>
-                            </p>
-                        </xsl:for-each>
-                    </td>
                 </tr>
             </xsl:for-each>
         </table>
@@ -320,17 +252,10 @@
         <table border="1">
             <tr>
                 <th>#</th>
-                <!--<th width="7%" align="left">Property</th>-->
                 <th>CONTENTdm Collection Property</th>
-                <th>DC Equivalent</th>
-                <th>Searchable</th>
-                <th>Hidden</th>
-                <th>Required, CONTENTdm</th>
-                <th>Cdm Controlled Vocabulary</th>
-                <th>Required for all UW collections</th>
-                <th>Description</th>
+                <th>Definition</th>
+                <th>Input Instructions</th>
                 <th>Examples</th>
-                <th>Notes on this property</th>
             </tr>
             <xsl:for-each
                 select="mig2:property[not(mig2:cdm/mig2:cdmDatatype = 'cdmAdministrative')][not(mig2:cdm/mig2:cdmDatatype = 'uwAdministrative')][mig2:descriptions//mig2:instructions/@co='item']">
@@ -344,24 +269,12 @@
                     </td>-->
                     <td>
                         <xsl:value-of select="mig2:cdm/mig2:label"/>
-                    </td>
-                    <td>
-                        <xsl:value-of select="mig2:labels/mig2:dc"/>
-                    </td>
-                    <td>
-                        <xsl:value-of select="mig2:cdm/mig2:searchable"/>
-                    </td>
-                    <td>
-                        <xsl:value-of select="mig2:cdm/mig2:hidden"/>
-                    </td>
-                    <td>
-                        <xsl:value-of select="mig2:cdm/mig2:cdmRequired"/>
-                    </td>
-                    <td>
-                        <xsl:value-of select="mig2:cdm/mig2:cdmControlledVocab"/>
-                    </td>
-                    <td>
-                        <xsl:value-of select="mig2:uwRequired/mig2:uwObject"/>
+                        <xsl:if test="mig2:uwRequired/mig2:uwItem='yes'">
+                            <br><br><i>Required field</i></br></br>
+                        </xsl:if>
+                        <xsl:if test="mig2:cdm/mig2:cdmControlledVocab='yes'">
+                            <br><br><i>CONTENTdm controlled vocabulary</i></br></br>
+                        </xsl:if>
                     </td>
                     <td>
                         <xsl:for-each select="mig2:descriptions/mig2:definition/mig2:para">
@@ -375,7 +288,7 @@
                             <xsl:when
                                 test="../../mig:cdmCode = mig2:descriptions/mig2:customization/@dd">
                                 <xsl:for-each
-                                    select="mig2:descriptions/mig2:customization[@co = 'item']/mig2:para">
+                                    select="mig2:descriptions/mig2:customization[@co = 'item'][@dd=../../../../mig:cdmCode]/mig2:para">
                                     <p>
                                         <xsl:value-of select="."/>
                                     </p>
@@ -397,7 +310,7 @@
                                 test="../../mig:cdmCode = mig2:examples/mig2:customization/@dd">
                                 
                                 <xsl:for-each
-                                    select="mig2:examples/mig2:customization[@co = 'item']/mig2:para">
+                                    select="mig2:examples/mig2:customization[@co = 'item'][@dd=../../../../mig:cdmCode]/mig2:para">
                                     <p>
                                         <xsl:value-of select="."/>
                                     </p>
@@ -413,19 +326,6 @@
                             </xsl:otherwise>
                         </xsl:choose>
                     </td>
-                    <td>
-                        <!-- make sure all CO status include both note types ~and~ co=all below. -->
-                        <xsl:for-each select="mig2:additionalInfo/mig2:admin/mig2:para">
-                            <p>
-                                <xsl:value-of select="."/>
-                            </p>
-                        </xsl:for-each>
-                        <xsl:for-each select="mig2:additionalInfo/mig2:generalNotes/mig2:para">
-                            <p>
-                                <xsl:value-of select="."/>
-                            </p>
-                        </xsl:for-each>
-                    </td>
                 </tr>
             </xsl:for-each>
         </table>
@@ -437,18 +337,9 @@
             <tr>
                 <th>#</th>
                 <th>CONTENTdm Collection Property</th>
-                <th>DC Equivalent</th>
-                <th>Cdm Data Type</th>
-                <th>Cdm Large</th>
-                <th>Searchable</th>
-                <th>Hidden</th>
-                <th>Required, CONTENTdm</th>
-                <th>Cdm Controlled Vocabulary</th>
-                <th>Required for all UW collections</th>
                 <th>Definition</th>
                 <th>Input Instructions</th>
                 <th>Examples</th>
-                <th>Additional notes on this property</th>
             </tr>
             <xsl:for-each
                 select="mig2:property[not(mig2:cdm/mig2:cdmDatatype = 'cdmAdministrative')][not(mig2:cdm/mig2:cdmDatatype = 'uwAdministrative')][mig2:descriptions/mig2:instructions/@co = 'object' or mig2:descriptions/mig2:customization/@co = 'object']">
@@ -458,30 +349,12 @@
                     </td>
                     <td>
                         <xsl:value-of select="mig2:cdm/mig2:label"/>
-                    </td>
-                    <td>
-                        <xsl:value-of select="mig2:labels/mig2:dc"/>
-                    </td>
-                    <td>
-                        <xsl:value-of select="mig2:cdm/mig2:cdmDatatype"/>
-                    </td>
-                    <td>
-                        <xsl:value-of select="mig2:cdm/mig2:cdmLarge"/>
-                    </td>
-                    <td>
-                        <xsl:value-of select="mig2:cdm/mig2:searchable"/>
-                    </td>
-                    <td>
-                        <xsl:value-of select="mig2:cdm/mig2:hidden"/>
-                    </td>
-                    <td>
-                        <xsl:value-of select="mig2:cdm/mig2:cdmRequired"/>
-                    </td>
-                    <td>
-                        <xsl:value-of select="mig2:cdm/mig2:cdmControlledVocab"/>
-                    </td>
-                    <td>
-                        <xsl:value-of select="mig2:uwRequired/mig2:uwObject"/>
+                        <xsl:if test="mig2:uwRequired/mig2:uwObject='yes'">
+                            <br><br><i>Required field</i></br></br>
+                        </xsl:if>
+                        <xsl:if test="mig2:cdm/mig2:cdmControlledVocab='yes'">
+                            <br><br><i>CONTENTdm controlled vocabulary</i></br></br>
+                        </xsl:if>
                     </td>
                     <td>
                         <xsl:for-each select="mig2:descriptions/mig2:definition/mig2:para">
@@ -506,18 +379,6 @@
                             </p>
                         </xsl:for-each>
                     </td>
-                    <td>
-                        <xsl:for-each select="mig2:additionalInfo/mig2:admin/mig2:para">
-                            <p>
-                                <xsl:value-of select="."/>
-                            </p>
-                        </xsl:for-each>
-                        <xsl:for-each select="mig2:additionalInfo/mig2:generalNotes/mig2:para">
-                            <p>
-                                <xsl:value-of select="."/>
-                            </p>
-                        </xsl:for-each>
-                    </td>
                 </tr>
             </xsl:for-each>
         </table>
@@ -527,18 +388,9 @@
             <tr>
                 <th>#</th>
                 <th>CONTENTdm Collection Property</th>
-                <th>DC Equivalent</th>
-                <th>Cdm Data Type</th>
-                <th>Cdm Large</th>
-                <th>Searchable</th>
-                <th>Hidden</th>
-                <th>Required, CONTENTdm</th>
-                <th>Cdm Controlled Vocabulary</th>
-                <th>Required for all UW collections</th>
                 <th>Definition</th>
                 <th>Input Instructions</th>
                 <th>Examples</th>
-                <th>Additional notes on this property</th>
             </tr>
             <xsl:for-each
                 select="mig2:property[not(mig2:cdm/mig2:cdmDatatype = 'cdmAdministrative')][not(mig2:cdm/mig2:cdmDatatype = 'uwAdministrative')][mig2:descriptions/mig2:instructions/@co = 'item' or mig2:descriptions/mig2:customization/@co = 'item'][not(mig2:labels/mig2:platformIndependent = //mig:suppressItemProp)]">
@@ -548,34 +400,12 @@
                     </td>
                     <td>
                         <xsl:value-of select="mig2:cdm/mig2:label"/>
-                    </td>
-                    <td>
-                        <xsl:value-of select="mig2:labels/mig2:dc"/>
-                    </td>
-                    <td>
-                        <xsl:value-of select="mig2:cdm/mig2:cdmDatatype"/>
-                    </td>
-                    <td>
-                        <xsl:value-of select="mig2:cdm/mig2:cdmLarge"/>
-                    </td>
-                    <td>
-                        <xsl:value-of select="mig2:cdm/mig2:searchable"/>
-                    </td>
-                    <td>
-                        <xsl:value-of select="mig2:cdm/mig2:hidden"/>
-                    </td>
-                    <td>
-                        <xsl:value-of select="mig2:cdm/mig2:cdmRequired"/>
-                    </td>
-                    <td>
-                        <xsl:value-of select="mig2:cdm/mig2:cdmControlledVocab"/>
-                    </td>
-                    <td>
-                        <xsl:choose>
-                            <xsl:when test="mig2:cdm/mig2:label = 'Title'"> yes </xsl:when>
-                            <xsl:when test="mig2:cdm/mig2:label != 'Title'"> no </xsl:when>
-                            <xsl:otherwise>***ERROR***</xsl:otherwise>
-                        </xsl:choose>
+                        <xsl:if test="mig2:uwRequired/mig2:uwItem='yes'">
+                            <br><br><i>Required field</i></br></br>
+                        </xsl:if>
+                        <xsl:if test="mig2:cdm/mig2:cdmControlledVocab='yes'">
+                            <br><br><i>CONTENTdm controlled vocabulary</i></br></br>
+                        </xsl:if>
                     </td>
                     <td>
                         <xsl:for-each select="mig2:descriptions/mig2:definition/mig2:para">
@@ -629,18 +459,6 @@
                             </xsl:otherwise>
                         </xsl:choose>
                     </td>
-                    <td>
-                        <xsl:for-each select="mig2:additionalInfo/mig2:admin/mig2:para">
-                            <p>
-                                <xsl:value-of select="."/>
-                            </p>
-                        </xsl:for-each>
-                        <xsl:for-each select="mig2:additionalInfo/mig2:generalNotes/mig2:para">
-                            <p>
-                                <xsl:value-of select="."/>
-                            </p>
-                        </xsl:for-each>
-                    </td>
                 </tr>
             </xsl:for-each>
         </table>
@@ -650,20 +468,10 @@
         <table border="1">
             <tr>
                 <th>#</th>
-                <!--<th width="7%" align="left">Property</th>-->
                 <th>CONTENTdm Collection Property</th>
-                <th>DC Equivalent</th>
-                <th>Cdm Data Type</th>
-                <th>Cdm Large</th>
-                <th>Searchable</th>
-                <th>Hidden</th>
-                <th>Required, CONTENTdm</th>
-                <th>Cdm Controlled Vocabulary</th>
-                <th>Required for all UW collections</th>
                 <th>Definition</th>
                 <th>Input Instructions</th>
                 <th>Examples</th>
-                <th>Additional notes on this property</th>
             </tr>
             <xsl:for-each
                 select="mig2:property[not(mig2:cdm/mig2:cdmDatatype = 'cdmAdministrative')][not(mig2:cdm/mig2:cdmDatatype = 'uwAdministrative')][mig2:descriptions/mig2:instructions/@co = 'no' or mig2:descriptions/mig2:customization/@co = 'no']">
@@ -673,30 +481,12 @@
                     </td>
                     <td>
                         <xsl:value-of select="mig2:cdm/mig2:label"/>
-                    </td>
-                    <td>
-                        <xsl:value-of select="mig2:labels/mig2:dc"/>
-                    </td>
-                    <td>
-                        <xsl:value-of select="mig2:cdm/mig2:cdmDatatype"/>
-                    </td>
-                    <td>
-                        <xsl:value-of select="mig2:cdm/mig2:cdmLarge"/>
-                    </td>
-                    <td>
-                        <xsl:value-of select="mig2:cdm/mig2:searchable"/>
-                    </td>
-                    <td>
-                        <xsl:value-of select="mig2:cdm/mig2:hidden"/>
-                    </td>
-                    <td>
-                        <xsl:value-of select="mig2:cdm/mig2:cdmRequired"/>
-                    </td>
-                    <td>
-                        <xsl:value-of select="mig2:cdm/mig2:cdmControlledVocab"/>
-                    </td>
-                    <td>
-                        <xsl:value-of select="mig2:uwRequired/mig2:uwStandalone"/>
+                        <xsl:if test="mig2:uwRequired/mig2:uwStandalone='yes'">
+                            <br><br><i>Required field</i></br></br>
+                        </xsl:if>
+                        <xsl:if test="mig2:cdm/mig2:cdmControlledVocab='yes'">
+                            <br><br><i>CONTENTdm controlled vocabulary</i></br></br>
+                        </xsl:if>
                     </td>
                     <td>
                         <xsl:for-each select="mig2:descriptions/mig2:definition/mig2:para">
@@ -716,18 +506,6 @@
                     <td>
                         <xsl:for-each
                             select="mig2:examples/mig2:example[@co = 'no' or @co = 'all']/mig2:para">
-                            <p>
-                                <xsl:value-of select="."/>
-                            </p>
-                        </xsl:for-each>
-                    </td>
-                    <td>
-                        <xsl:for-each select="mig2:additionalInfo/mig2:admin/mig2:para">
-                            <p>
-                                <xsl:value-of select="."/>
-                            </p>
-                        </xsl:for-each>
-                        <xsl:for-each select="mig2:additionalInfo/mig2:generalNotes/mig2:para">
                             <p>
                                 <xsl:value-of select="."/>
                             </p>

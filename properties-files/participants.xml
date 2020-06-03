@@ -26,16 +26,18 @@
         <dspaceProperty></dspaceProperty>
     </dspace>
     <descriptions>
-        <definition><para>An entity responsible for making participating or performing in the resource.</para></definition>
+        <definition><para>An entity responsible for making, participating or performing in the resource.</para></definition>
         <instructions co="no">
             <para>Enter the names of the participants and performers seen in the resource.</para>
             <para>Enter the names in inverted form.</para>
             <para>Separate multiple names with a semi-colon.</para>
+            <para>Use the form of the name in the LC Name Authoruity File when possible.</para>
         </instructions>
         <instructions co="object">
             <para>Enter the names of the participants and performers seen in the resource.</para>
             <para>Enter the names in inverted form.</para>
             <para>Separate multiple names with a semi-colon.</para>
+            <para>Use the form of the name in the LC Name Authoruity File when possible.</para>
         </instructions>
     </descriptions>
     <examples>

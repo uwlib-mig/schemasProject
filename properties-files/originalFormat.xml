@@ -32,13 +32,14 @@
          <para>When the original is digital, use media types listed at http://www.iana.org/assignments/media-types/index.html</para>
          <para>For audio WAVE files, enter audio/wav.</para>
       </instructions>
-      <instructions co="object">
+      <!-- MIG decision 2020-05: do not include this property in the object description
+         <instructions co="object">
          <para>Enter the original formats.</para>
          <para>When the original is non-digital, use a label from one of the entries of the RDA Registry's RDA Carrier Type Vocabulary currently available at https://www.rdaregistry.info/termList/RDACarrierType/</para>
          <para>When the original is digital, use media types listed at http://www.iana.org/assignments/media-types/index.html</para>
          <para>For audio WAVE files, enter audio/wav.</para>
          <para>Separate multiple formats with a semi-colon.</para>
-      </instructions>
+      </instructions> -->
    </descriptions><examples>
       <example co="item">
          <para>image/tiff; video/mp4; online resource</para>
@@ -49,9 +50,10 @@
          <para>videocassette</para>
          <para>video/mp4</para>
       </example>
-      <example co="object">
+      <!-- MIG decision 2020-05: do not include this property in the object description
+         <example co="object">
          <para>image/tiff; video/mp4; online resource</para>
-      </example>
+      </example>-->
       <example co="no">
          <para>image/tiff</para>
          <para>audio/wav</para>
@@ -79,5 +81,6 @@
       <justification>Special Collections wanted a place to describe the format of the original resource. </justification>
       <changeLog>
          <change date="2019-04-22">Changed dc mappring from "isFormatOf" (which is incorrect, that would bring the resource being described into relation with another resource essentially the same but in another format) to none, as there is no appropriate dc mapping. Also added instructions and examples for @co="all"</change>
+         <change date="2020-06-03">removed object description in accordance with MIG decision.</change>
       </changeLog>
    </history></property>

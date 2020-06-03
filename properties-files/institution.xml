@@ -34,9 +34,10 @@
       <instructions co="object">
          <para>[Uncertain]</para>
       </instructions>
+      <!-- DO NOT USE FOR ITEMS, MIG decision 2020-06
       <instructions co="item">
          <para>[Uncertain]</para>
-      </instructions>
+      </instructions> -->
       <customization co="item" dd="civilwar">
          <para>Enter "Special Collections"</para>
       </customization>
@@ -45,9 +46,10 @@
       <example co="no">
          <para>[none]</para>
       </example>
+      <!--
       <example co="item">
          <para>[none]</para>
-      </example>
+      </example> -->
       <example co="object">
          <para>[none]</para>
       </example>
@@ -100,6 +102,7 @@
       <changeLog>
          <change/>
          <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
+         <change date="2020-06-20">Removed ITEM from output per MIG decision</change>
       </changeLog>
    </history>
 </property>

@@ -22,7 +22,7 @@
       <instructions co="no">
          <para>Reflects the date in the "Date" field.</para>
          <para>Express all dates, including date ranges, using Library of Congress' Extended Date Time Format.</para>
-         <para>Most recent version of EDTF available at https://www.loc.gov/standards/datetime/.</para>
+         <para>The most recent version of the Library of Congress' summary of EDTF is available at https://www.loc.gov/standards/datetime/.</para>
          <para>Six formats are recommended for values in Date, each corresponding to a specific EDTF format:</para>
          <para>If the value of Date is YYYY, enter YYYY.</para>
          <para>If the value of Date is YYYY?, enter YYYY?</para>
@@ -30,20 +30,20 @@
          <para>If the value of Date is [month], YYYY, enter YYYY-MM.</para>
          <para>If the value of Date is between YYYY and YYYY, enter YYYY/YYYY</para>
          <para>If the value of Date is between YYYY and YYYY?, enter YYYY?/YYYY?</para>
-         <para>If the value of Date is not any of the above, consult the EDTF spedification to determine the appropriate notation.</para>
+         <para>If the value of Date is not any of the above, consult the EDTF specification to determine the appropriate notation.</para>
          <para>Date-Edtf value should agree with dates values entered in Date and Dates fields.</para>
       </instructions>
       <instructions co="object">
          <para>Reflects the date in the "Date" field.</para>
          <para>Express all dates, including date ranges, using Library of Congress' Extended Date Time Format.</para>
-         <para>Most recent version of EDTF available at https://www.loc.gov/standards/datetime/.</para>
+         <para>The most recent version of the Library of Congress' summary of EDTF is available at https://www.loc.gov/standards/datetime/.</para>
          <para>Six formats are recommended for values in Date, each corresponding to a specific EDTF format:</para>
          <para>If the value of Date is YYYY, enter YYYY.</para>
-         <para>If the value of Date is YYYY, enter YYYY?</para>
+         <para>If the value of Date is YYYY?, enter YYYY?</para>
          <para>If the value of Date is [month] DD, YYYY, enter YYYY-MM-DD.</para>
-         <para>If the value of Date is [month], YYYY, ebter YYYY-MM.</para>
+         <para>If the value of Date is [month], YYYY, enter YYYY-MM.</para>
          <para>If the value of Date is between YYYY and YYYY, enter YYYY/YYYY</para>
-         <para>If the value of Date is between YYYY and YYYY, enter YYYY?/YYYY?</para>
+         <para>If the value of Date is between YYYY and YYYY?, enter YYYY?/YYYY?</para>
          <para>If the value of Date is not any of the above, consult the EDTF spedification to determine the appropriate notation.</para>
          <para>Date-Edtf value should agree with dates values entered in Date and Dates fields.</para>
       </instructions>
@@ -72,7 +72,7 @@
       <customization co="no" dd="krab">
          <para>Reflects the date in the "Date of Broadcast" field.</para>
          <para>Express all dates, including date ranges, using Library of Congress' Extended Date Time Format.</para>
-         <para>Most recent version of EDTF available at https://www.loc.gov/standards/datetime/.</para>
+         <para>The most recent version of the Library of Congress' summary of EDTF is available at https://www.loc.gov/standards/datetime/.</para>
          <para>Six formats are recommended for values in Date of Broadcast, each corresponding to a specific EDTF format:</para>
          <para>If the value of Date of Broadcast is YYYY, enter YYYY.</para>
          <para>If the value of Date of Broadcast is YYYY?, enter YYYY?</para>
@@ -87,7 +87,7 @@
          <para>Enter the date that applies to the overall object. This date will likely represent the years the program was broadcast.</para>
          <para>Reflects the date in the "Date of Broadcast" field.</para>
          <para>Express all dates, including date ranges, using Library of Congress' Extended Date Time Format.</para>
-         <para>Most recent version of EDTF available at https://www.loc.gov/standards/datetime/.</para>
+         <para>The most recent version of the Library of Congress' summary of EDTF is available at https://www.loc.gov/standards/datetime/.</para>
          <para>Six formats are recommended for values in Date of Broadcast, each corresponding to a specific EDTF format:</para>
          <para>If the value of Date of Broadcast is YYYY, enter YYYY.</para>
          <para>If the value of Date of Broadcast is YYYY?, enter YYYY?</para>
@@ -102,7 +102,7 @@
          <para>Enter the date that applies to the item.</para>
          <para>Reflects the date in the "Date of Broadcast" field.</para>
          <para>Express all dates, including date ranges, using Library of Congress' Extended Date Time Format.</para>
-         <para>Most recent version of EDTF available at https://www.loc.gov/standards/datetime/.</para>
+         <para>The most recent version of the Library of Congress' summary of EDTF is available at https://www.loc.gov/standards/datetime/.</para>
          <para>Six formats are recommended for values in Date of Broadcast, each corresponding to a specific EDTF format:</para>
          <para>If the value of Date of Broadcast is YYYY, enter YYYY.</para>
          <para>If the value of Date of Broadcast is YYYY?, enter YYYY?</para>

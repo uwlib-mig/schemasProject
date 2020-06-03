@@ -327,7 +327,6 @@
                                 test="../../mig:cdmCode = mig2:descriptions/mig2:customization/@dd">
                                 <xsl:for-each
                                     select="mig2:descriptions/mig2:customization[@co = 'object'][@dd=../../../../mig:cdmCode]/mig2:para">
-                                    <!-- addition above of [@dd=../../../../mig:cdmCode] may break the process; fyi; added 2019-05-18 -->
                                     <p>
                                         <xsl:value-of select="."/>
                                     </p>
@@ -352,7 +351,7 @@
                                 test="../../mig:cdmCode = mig2:examples/mig2:customization/@dd">
 
                                 <xsl:for-each
-                                    select="mig2:examples/mig2:customization[@co = 'object']/mig2:para">
+                                    select="mig2:examples/mig2:customization[@co = 'object'][@dd=../../../../mig:cdmCode]/mig2:para">
                                     <p>
                                         <xsl:value-of select="."/>
                                     </p>

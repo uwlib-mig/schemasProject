@@ -24,11 +24,12 @@
          <para>Use media types listed at http://www.iana.org/assignments/media-types/index.html</para>
          <para>For audio WAVE files, enter audio/wav.</para>
       </instructions>
-      <instructions co="object">
+      <!-- MIG decision 2020-05: do not include this property in the object description
+         <instructions co="object">
          <para>Enter the file formats of the access items.</para>
          <para>Use media types listed at http://www.iana.org/assignments/media-types/index.html</para>
          <para>For audio WAVE files, enter audio/wav.</para>
-      </instructions>
+      </instructions>-->
       <instructions co="no">
          <para>Enter the file format of the access item.</para>
          <para>Use media types listed at http://www.iana.org/assignments/media-types/index.html</para>
@@ -49,9 +50,10 @@
          <para>text/plain</para>
          <para>video/mp4</para>
       </example>
+      <!-- MIG decision 2020-05: do not include this property in the object description
       <example co="object">
          <para>video/mp4; application/pdf</para>
-      </example>
+      </example>-->
    </examples><additionalInfo/><marc>
       <dcgMarcMapping/>
       <marcNotes>
@@ -74,6 +76,7 @@
       <changeLog>
          <change date="2019-04-22">Added instructions and example for @co="no"</change>
          <change date="2019-05-20">//rdf/owlDatatypeProperty='yes' to push into DCMI 1.1 namespace.</change>
+         <change date="2020-06-03">removed object description in accordance with MIG decision.</change>
       </changeLog>
       
    </history></property>
