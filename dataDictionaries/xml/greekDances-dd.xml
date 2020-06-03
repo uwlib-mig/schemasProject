@@ -4,10 +4,10 @@
     id="0001"
     xsi:schemaLocation="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-dds.xsd">
     <!-- Note the @id in the above element; it's not being used, I believe in any DDs -->
-    <ddName>Yvonne Hunt Greek Folk Dance Collection</ddName>
+    <ddName>Hunt (Yvonne) Greek Folk Dance Collection</ddName>
     <ddPartOfProject/>
     <originalCreationDate>2020-05-11</originalCreationDate>
-    <latestUpdate>2020-05-18</latestUpdate>
+    <latestUpdate>2020-06-03</latestUpdate>
     <metadataLiaisons>
         <metadataLiaison>Mary St. Germaine</metadataLiaison>
         <metadataLiaison>Theo Gerontakos</metadataLiaison>
@@ -33,22 +33,20 @@
         <xi:include href="../../properties-files/videoLocations.xml"/>
         <xi:include href="../../properties-files/latitude.xml"/>
         <xi:include href="../../properties-files/longitude.xml"/>
-        <xi:include href="../../properties-files/objectType.xml"/><!-- Genre -->
+        <xi:include href="../../properties-files/objectType.xml"/>
         <xi:include href="../../properties-files/digitalCollection.xml"/>
-        <xi:include href="../../properties-files/digitalIdNumber.xml"/><!-- is this what we use? Formerly Order Number? -->
+        <xi:include href="../../properties-files/digitalIdNumber.xml"/>
         <xi:include href="../../properties-files/orderingInformation.xml"/>
         <xi:include href="../../properties-files/rightsUri.xml"/>
         <xi:include href="../../properties-files/restrictions.xml"/>
-        <xi:include href="../../properties-files/repository.xml"/><!-- do we want repo info? repo coll? repo coll gd? -->
-        <xi:include href="../../properties-files/type.xml"/><!--dcmi type  --> 
-        <xi:include href="../../properties-files/extent.xml"/><!-- duration of segment -->
-        <xi:include href="../../properties-files/digitalFormat.xml"/><!-- mime type -->
-        <xi:include href="../../properties-files/originalFormat.xml"/><!-- original carrier, RDA or mime type -->
-
+        <xi:include href="../../properties-files/repository.xml"/>
+        <xi:include href="../../properties-files/type.xml"/>
+        <xi:include href="../../properties-files/extent.xml"/>
+        <xi:include href="../../properties-files/digitalFormat.xml"/>
+        <xi:include href="../../properties-files/originalFormat.xml"/>
         <xi:include href="../../properties-files/digitalReproductionInformation.xml"/>
-        <xi:include href="../../properties-files/staffNotes.xml"/><!-- add just because -->
-        <xi:include href="../../properties-files/institution.xml"/><!-- admin field -->
-        <xi:include href="../../properties-files/cataloging.xml"/><!-- admin field -->
-        <xi:include href="../../properties-files/discNumber.xml"/><!-- CD Number, hidden; admin field -->
+        <xi:include href="../../properties-files/staffNotes.xml"/>
+        <xi:include href="../../properties-files/institution.xml"/>
+        <xi:include href="../../properties-files/discNumber.xml"/>
     </properties>
 </migDataDictionary>
