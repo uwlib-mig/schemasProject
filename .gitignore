@@ -1,5 +1,8 @@
 ignore/
+.tmp.drivedownload
 .DS_Store
 DS_Store
 ./.DS_Store
 XslOutput/
+source
+output
