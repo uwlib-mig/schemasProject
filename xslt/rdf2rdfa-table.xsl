@@ -55,7 +55,7 @@
                         <xsl:if test="*/@xml:lang">
                             <xsl:attribute name="lang"
                                 namespace="http://www.w3.org/XML/1998/namespace">
-                                <xsl:value-of select="*/xml:lang"/>
+                                <xsl:value-of select="*/@xml:lang"/>
                             </xsl:attribute>
                         </xsl:if>
                         <xsl:choose>
