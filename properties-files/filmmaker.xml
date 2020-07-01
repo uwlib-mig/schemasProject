@@ -36,7 +36,7 @@
         <instructions co="object">
             <para>Enter name of person who shot the video.</para>
             <para>Enter the name in inverted form.</para>
-            <para>Use the form of the name in the LC Name Authoruity File when possible.</para>
+            <para>Use the form of the name in the LC Name Authority File when possible.</para>
         </instructions>
     </descriptions>
     <examples>
