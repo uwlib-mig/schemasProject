@@ -22,6 +22,7 @@
       </definition>
       <instructions co="no">
          <para>If the resource is a still image or moving images, the date the image(s) was captured.</para>
+         <!-- BMR note: I don't understand the instruction below. Is it the date of the photo or the thing that is photographed? -->
          <para>In cases where a painting, engraving, or architectural drawing was photographed, the date the artwork was created.</para>
          <para>Enter the date using one of the following formats:</para>
          <para>YYYY</para>
