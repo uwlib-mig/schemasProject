@@ -22,7 +22,7 @@
       <instructions co="item">
          <para>Enter the file format of the access item.</para>
          <para>Use media types listed at http://www.iana.org/assignments/media-types/index.html</para>
-         <para>For audio WAVE files, enter audio/wav.</para>
+         <para>For audio WAVE files, enter "audio/wav".</para>
       </instructions>
       <!-- MIG decision 2020-05: do not include this property in the object description
          <instructions co="object">
@@ -33,7 +33,7 @@
       <instructions co="no">
          <para>Enter the file format of the access item.</para>
          <para>Use media types listed at http://www.iana.org/assignments/media-types/index.html</para>
-         <para>For audio WAVE files, enter audio/wav.</para>
+         <para>For audio WAVE files, enter "audio/wav".</para>
       </instructions>
    </descriptions><examples>
       <example co="item">

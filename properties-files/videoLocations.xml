@@ -27,12 +27,12 @@
         <instructions co="no">
             <para>Enter the name of the places in which the video segments were recorded.</para>
             <para>Separate multiple places using a semi-colon.</para>
-            <para>Use GeoNet (https://community.esri.com/) form of the name, if available. If not, use the most common form/spelling.</para>
+            <para>Use the GeoNet (https://community.esri.com/) form of the name, if available. If not, use the most common form/spelling.</para>
         </instructions>
         <instructions co="object">
             <para>Enter the name of the places in which the video segments were recorded.</para>
             <para>Separate multiple places using a semi-colon.</para>
-            <para>Use GeoNet (https://community.esri.com/) form of the name, if available. If not, use the most common form/spelling.</para>
+            <para>Use the GeoNet (https://community.esri.com/) form of the name, if available. If not, use the most common form/spelling.</para>
         </instructions>
     </descriptions>
     <examples>

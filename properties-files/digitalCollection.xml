@@ -2,6 +2,8 @@
 <property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema"
    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+   <!-- BMR note: I'm getting a validation error for this file: 
+      "Invalid content was found starting with element 'cdmRdf'. No child element is expected at this point. -->
    <uid>p28</uid>
    <labels>
       <platformIndependent>digitalCollection</platformIndependent>

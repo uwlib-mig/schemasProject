@@ -23,14 +23,14 @@
          <para>Enter the original format.</para>
          <para>When the original is non-digital, use a label from one of the entries of the RDA Registry's RDA Carrier Type Vocabulary currently available at https://www.rdaregistry.info/termList/RDACarrierType/</para>
          <para>When the original is digital, use media types listed at http://www.iana.org/assignments/media-types/index.html</para>
-         <para>For audio WAVE files, enter audio/wav.</para>
+         <para>For audio WAVE files, enter "audio/wav".</para>
          <para>When 'Original Format' is the same as the 'Digital Format,' enter the mime type in both fields.</para>
       </instructions>
       <instructions co="no">
          <para>Enter the original format.</para>
          <para>When the original is non-digital, use a label from one of the entries of the RDA Registry's RDA Carrier Type Vocabulary currently available at https://www.rdaregistry.info/termList/RDACarrierType/</para>
          <para>When the original is digital, use media types listed at http://www.iana.org/assignments/media-types/index.html</para>
-         <para>For audio WAVE files, enter audio/wav.</para>
+         <para>For audio WAVE files, enter "audio/wav".</para>
       </instructions>
       <!-- MIG decision 2020-05: do not include this property in the object description
          <instructions co="object">

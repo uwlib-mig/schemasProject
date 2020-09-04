@@ -23,7 +23,7 @@
         <dspaceProperty></dspaceProperty>
     </dspace>
     <descriptions>
-        <definition><para>Number of optical disc on which resource is store.</para></definition>
+        <definition><para>Number of the optical disc on which the resource is stored.</para></definition>
         <instructions co="no"><para>Enter the number of the disc in the Hunt collection.</para></instructions>
         <instructions co="object"><para>Enter the number of the disc in the Hunt collection.</para></instructions>
     </descriptions>
