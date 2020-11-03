@@ -6,9 +6,8 @@
     <xsl:template match="/">
         <root>
             <xsl:apply-templates
-                select="collection('file:///Users/theodore/Documents/uwl/schemasProject/dataDictionaries/xml?select=*.xml;recurse=no')/dd:migDataDictionary"
-            >
-                <xsl:sort order="descending" select="@id"></xsl:sort>
+                select="collection('../?select=*.xml;recurse=no')/dd:migDataDictionary">
+                <xsl:sort order="descending" select="@id"/>
             </xsl:apply-templates>
         </root>
     </xsl:template>
@@ -17,9 +16,11 @@
         <_id>
             <xsl:value-of select="./@id"/>
         </_id>
+        <_ddName>
+            <xsl:value-of select="dd:ddName"/>
+        </_ddName>
     </xsl:template>
 
     <xsl:template match="dd:properties"/>
-
 
 </xsl:stylesheet>
