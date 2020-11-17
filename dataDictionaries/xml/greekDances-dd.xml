@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <migDataDictionary xmlns="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries"
     xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    id="0001"
+    id="0012"
     xsi:schemaLocation="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-dds.xsd">
     <!-- Note the @id in the above element; it's not being used, I believe in any DDs -->
     <ddName>Hunt (Yvonne) Greek Folk Dance Collection</ddName>

@@ -13,12 +13,11 @@
     </xsl:template>
 
     <xsl:template match="dd:migDataDictionary">
-        <_id>
+        <id_ddName>
             <xsl:value-of select="./@id"/>
-        </_id>
-        <_ddName>
+            <xsl:text> | </xsl:text>
             <xsl:value-of select="dd:ddName"/>
-        </_ddName>
+        </id_ddName>
     </xsl:template>
 
     <xsl:template match="dd:properties"/>

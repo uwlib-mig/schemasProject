@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <migDataDictionary xmlns="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries"
     xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    id="0001"
+    id="0010"
     xsi:schemaLocation="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-dds.xsd">
     <ddName>Architecture of the Pacific Northwest</ddName>
     <ddPartOfProject/>
