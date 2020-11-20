@@ -28,7 +28,8 @@
                 <xs:annotation>
                     <xs:documentation>Property ID number</xs:documentation>
                     <xs:documentation>Must be unique within properties-files</xs:documentation>
-                    <xs:documentation>Use a query to fetch existing property ID numbers before assigning</xs:documentation>
+                    <xs:documentation>Use a query to fetch existing property ID numbers before
+                        assigning</xs:documentation>
                 </xs:annotation>
                 <xs:simpleType>
                     <xs:restriction base="xs:ID">
@@ -243,22 +244,23 @@
             <xs:element name="localNote" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
         </xs:sequence>
     </xs:complexType>
-    
+
     <xs:complexType name="cdmRdfType">
         <xs:sequence>
             <xs:element name="dpla" type="dplaType" minOccurs="0"/>
             <xs:element name="bibframe" type="bibframeType" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-    
+
     <xs:complexType name="dplaType">
         <xs:sequence>
-            <xs:element name="map" minOccurs="1" maxOccurs="unbounded"><!-- property in dpla map to which cdm property is mapped; multiple OK; if more than 1, additional must have @class -->
+            <xs:element name="map" minOccurs="1" maxOccurs="unbounded">
+                <!-- property in dpla map to which cdm property is mapped; multiple OK; if more than 1, additional must have @class -->
                 <xs:complexType>
                     <xs:simpleContent>
                         <xs:extension base="xs:string">
                             <xs:attribute name="class" type="dplaClassType"/>
-                            <xs:attribute ref="xml:lang"></xs:attribute>
+                            <xs:attribute ref="xml:lang"/>
                         </xs:extension>
                     </xs:simpleContent>
                 </xs:complexType>
@@ -293,7 +295,7 @@
                                         <xs:complexType>
                                             <xs:simpleContent>
                                                 <xs:extension base="xs:string">
-                                                    <xs:attribute ref="xml:lang"/>
+                                                  <xs:attribute ref="xml:lang"/>
                                                 </xs:extension>
                                             </xs:simpleContent>
                                         </xs:complexType>
@@ -302,15 +304,15 @@
                                         <xs:complexType>
                                             <xs:simpleContent>
                                                 <xs:extension base="xs:string">
-                                                    <xs:attribute name="lit" type="yesNo"/>
-                                                    <xs:attribute name="node">
-                                                        <xs:simpleType>
-                                                            <xs:restriction base="xs:string">
-                                                                <xs:enumeration value="xml"/>
-                                                                <xs:enumeration value="rdf"/>
-                                                            </xs:restriction>
-                                                        </xs:simpleType>
-                                                    </xs:attribute>
+                                                  <xs:attribute name="lit" type="yesNo"/>
+                                                  <xs:attribute name="node">
+                                                  <xs:simpleType>
+                                                  <xs:restriction base="xs:string">
+                                                  <xs:enumeration value="xml"/>
+                                                  <xs:enumeration value="rdf"/>
+                                                  </xs:restriction>
+                                                  </xs:simpleType>
+                                                  </xs:attribute>
                                                 </xs:extension>
                                             </xs:simpleContent>
                                         </xs:complexType>
@@ -323,7 +325,7 @@
             </xs:element>
         </xs:sequence>
     </xs:complexType>
-    
+
     <xs:simpleType name="dplaClassType">
         <xs:restriction base="xs:string">
             <xs:enumeration value="SourceResource"/>
@@ -333,11 +335,12 @@
             <xs:enumeration value="Rights"/>
             <xs:enumeration value="Agent"/>
             <xs:enumeration value="uri"/>
-            <xs:enumeration value="Literal"/><!-- Is this class needed? -->
+            <xs:enumeration value="Literal"/>
+            <!-- Is this class needed? -->
             <xs:enumeration value="none"/>
-            </xs:restriction>
+        </xs:restriction>
     </xs:simpleType>
-    
+
     <xs:simpleType name="rdfObjectType">
         <xs:restriction base="xs:string">
             <xs:enumeration value="uri"/>
@@ -347,7 +350,7 @@
         </xs:restriction>
     </xs:simpleType>
 
-<xs:complexType name="bibframeType"></xs:complexType>
+    <xs:complexType name="bibframeType"/>
 
     <xs:complexType name="externalPropertyType">
         <xs:sequence>
@@ -604,7 +607,12 @@
 
     <xs:complexType name="custParaType">
         <xs:annotation>
-            <xs:appinfo>The customization element uses 2 attributes, @co and @dd. The latter requires that the @dd code is known at the time the application profile is written. Sometimes that code is not known, resulting in use of a temp code; when the actual code is revealed, it must be entered in multiple locations to replace the temp code, thereby minimizing orthogonality of the system. This should be repaired</xs:appinfo></xs:annotation>
+            <xs:appinfo>The customization element uses 2 attributes, @co and @dd. The latter
+                requires that the @dd code is known at the time the application profile is written.
+                Sometimes that code is not known, resulting in use of a temp code; when the actual
+                code is revealed, it must be entered in multiple locations to replace the temp code,
+                thereby minimizing orthogonality of the system. This should be repaired</xs:appinfo>
+        </xs:annotation>
         <xs:complexContent>
             <xs:extension base="paraType4co">
                 <xs:attribute name="dd" type="xs:string"/>
