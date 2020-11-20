@@ -22,4 +22,16 @@
         <cdmRequired>no</cdmRequired>
         <cdmControlledVocab>no</cdmControlledVocab>
     </cdm>
+    <dspace>
+        <dspaceProperty/>
+    </dspace>
+    <descriptions>
+        <definition>
+            <para>A person responsible for editing the textual or other content of the resource.</para>
+        </definition>
+        <instructions co="object">
+            <para></para>
+        </instructions>
+    </descriptions>
+    
 </property>
