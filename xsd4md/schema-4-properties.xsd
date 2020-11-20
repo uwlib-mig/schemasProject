@@ -25,6 +25,11 @@
     <xs:complexType name="propertyType">
         <xs:sequence>
             <xs:element name="uid">
+                <xs:annotation>
+                    <xs:documentation>Property ID number</xs:documentation>
+                    <xs:documentation>Must be unique within properties-files</xs:documentation>
+                    <xs:documentation>Use a query to fetch existing property ID numbers before assigning</xs:documentation>
+                </xs:annotation>
                 <xs:simpleType>
                     <xs:restriction base="xs:ID">
                         <xs:pattern value="p[0-9]+"/>
