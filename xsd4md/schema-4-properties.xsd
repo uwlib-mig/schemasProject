@@ -26,7 +26,7 @@
         <xs:sequence>
             <xs:element name="uid">
                 <xs:annotation>
-                    <xs:documentation>Property ID number; mmust be unique within properties-files; use a query to fetch existing property ID numbers before assigning</xs:documentation>
+                    <xs:documentation>Property ID number; must be unique within properties-files; use a query to fetch existing property ID numbers before assigning</xs:documentation>
                 </xs:annotation>
                 <xs:simpleType>
                     <xs:restriction base="xs:ID">
@@ -600,16 +600,18 @@
     </xs:attribute>
     -->
 
-    <xs:element name="customization" type="custParaType"/>
-
-    <xs:complexType name="custParaType">
+    <xs:element name="customization" type="custParaType">
         <xs:annotation>
-            <xs:appinfo>The customization element uses 2 attributes, @co and @dd. The latter
+            <xs:documentation>The customization element uses 2 attributes, @co and @dd. The latter
                 requires that the @dd code is known at the time the application profile is written.
                 Sometimes that code is not known, resulting in use of a temp code; when the actual
                 code is revealed, it must be entered in multiple locations to replace the temp code,
-                thereby minimizing orthogonality of the system. This should be repaired</xs:appinfo>
+                thereby minimizing orthogonality of the system. This should be repaired</xs:documentation>
         </xs:annotation>
+    </xs:element>
+
+    <xs:complexType name="custParaType">
+        
         <xs:complexContent>
             <xs:extension base="paraType4co">
                 <xs:attribute name="dd" type="xs:string"/>
