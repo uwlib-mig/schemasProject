@@ -4,12 +4,6 @@
     targetNamespace="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
     xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md">
 
-    <!-- vesion 0.2 2017-11-06 
-         1 added new element uwRequired with subelements
-         2 removed /cdm/uwRequired
-         3 added attribute to /property/xsd: @level
-         -->
-
     <xs:import namespace="http://www.w3.org/XML/1998/namespace"
         schemaLocation="http://www.w3.org/2001/03/xml.xsd"/>
 
@@ -17,16 +11,20 @@
         schemaLocation="https://www.w3.org/2001/XMLSchema.xsd"/>
 
     <xs:annotation>
-        <xs:documentation>Schema to validate properties used by UW Libraries.</xs:documentation>
+        <xs:documentation>Schema to validate properties used by UW Libraries</xs:documentation>
     </xs:annotation>
 
-    <xs:element name="property" type="propertyType"> </xs:element>
+    <xs:element name="property" type="propertyType">
+        <xs:annotation>
+            <xs:documentation>Root element of the property file; no character data at this level, only child elements</xs:documentation>
+        </xs:annotation>
+    </xs:element>
 
     <xs:complexType name="propertyType">
         <xs:sequence>
             <xs:element name="uid">
                 <xs:annotation>
-                    <xs:documentation>Property ID number; must be unique within properties-files; use a query to fetch existing property ID numbers before assigning</xs:documentation>
+                    <xs:documentation>Property ID number; must be unique within property files; use query to fetch existing property ID numbers before assigning</xs:documentation>
                 </xs:annotation>
                 <xs:simpleType>
                     <xs:restriction base="xs:ID">
@@ -51,9 +49,20 @@
 
     <xs:complexType name="labelType">
         <xs:sequence>
-            <xs:element name="platformIndependent" type="xs:string"/>
-            <xs:element name="dc" type="dcterms"/>
+            <xs:element name="platformIndependent" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>A label for the local property, as defined in the property file within which this element occurs</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="dc" type="dcterms">
+                <xs:annotation>
+                    <xs:documentation>[NEEDS REVIEW: BMR and TG discussed how local props are mapped to either a DC element **or a DC term, presented as a qualified element in the admin interface (?)**] A label used to indicate the local property's mapping to either a Dublin Core element or term</xs:documentation>
+                </xs:annotation>
+            </xs:element>
             <xs:element name="dcNotEng" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>[NEEDS DOCUMENTATION]</xs:documentation>
+                </xs:annotation>
                 <xs:complexType>
                     <xs:simpleContent>
                         <xs:extension base="xs:string">
@@ -67,10 +76,26 @@
 
     <xs:complexType name="uwRequiredType">
         <xs:sequence>
-            <xs:element name="uwStandalone" type="yesNo"/>
-            <xs:element name="uwObject" type="yesNo"/>
-            <xs:element name="uwItem" type="yesNo"/>
-            <xs:element name="uwCustom" type="uwCustomRequiredType" minOccurs="0"/>
+            <xs:element name="uwStandalone" type="yesNo">
+                <xs:annotation>
+                    <xs:documentation>Enter 'yes' to require a value for this property for standalone items in collections modeled using a data dictionary including this property; enter 'no' to make value(s) optional in such collections</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="uwObject" type="yesNo">
+                <xs:annotation>
+                    <xs:documentation>Enter 'yes' to require a value for this property for compound objects--at the object-level--in collections modeled using a data dictionary including this property; enter 'no' to make value(s) optional in such collections</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="uwItem" type="yesNo">
+                <xs:annotation>
+                    <xs:documentation>Enter 'yes' to require a value for this property for compound objects--at the item-level--in collections modeled using a data dictionary including this property; enter 'no' to make value(s) optional in such collections</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="uwCustom" type="uwCustomRequiredType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>[NEEDS DOCUMENTATION]</xs:documentation>
+                </xs:annotation>
+            </xs:element>
         </xs:sequence>
     </xs:complexType>
 
@@ -93,9 +118,21 @@
 
     <xs:complexType name="cdmType">
         <xs:sequence>
-            <xs:element name="label" type="xs:string"/>
-            <xs:element name="exportLabel" minOccurs="0" type="xs:string"/>
-            <xs:element name="cdmDatatype" type="cdmDatatypeType"/>
+            <xs:element name="label" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>Property label as it should appear in the CONTENTdm user interface; use title-case capitalization for property labels here</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="exportLabel" minOccurs="0" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>[NEEDS DOCUMENTATION]</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="cdmDatatype" type="cdmDatatypeType">
+                <xs:annotation>
+                    <xs:documentation>[NEEDS REVIEW]Enter the type (or category) of string value which values for this property must adhere to: 'text': textual values which are not dates, 'date': textual values which are dates, 'fullText': [?], 'cdmAdministrative': [?], or 'uwAdministrative': [?]</xs:documentation>
+                </xs:annotation>
+            </xs:element>
             <xs:element name="cdmLarge" type="yesNo"/>
             <xs:element name="searchable" type="yesNo"/>
             <xs:element name="hidden" type="yesNo"/>
