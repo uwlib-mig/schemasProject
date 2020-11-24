@@ -133,18 +133,42 @@
                     <xs:documentation>[NEEDS REVIEW]Enter the type (or category) of string value which values for this property must adhere to: 'text': textual values which are not dates, 'date': textual values which are dates, 'fullText': [?], 'cdmAdministrative': [?], or 'uwAdministrative': [?]</xs:documentation>
                 </xs:annotation>
             </xs:element>
-            <xs:element name="cdmLarge" type="yesNo"/>
-            <xs:element name="searchable" type="yesNo"/>
-            <xs:element name="hidden" type="yesNo"/>
-            <xs:element name="cdmRequired" type="yesNo"/>
-            <xs:element name="cdmControlledVocab" type="yesNo"/>
+            <xs:element name="cdmLarge" type="yesNo">
+                <xs:annotation>
+                    <xs:documentation>[NEEDS DOCUMENTATION--makes this property and its value(s) appear larger in the Cdm UI?]</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="searchable" type="yesNo">
+                <xs:annotation>
+                    <xs:documentation>[NEEDS REVIEW]Enter 'yes' if values given for this property should be indexed and searchable, 'no' if not</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="hidden" type="yesNo">
+                <xs:annotation>
+                    <xs:documentation>[NEEDS REVIEW]Enter 'yes' if this property and its value(s) should not be shown in the CONTENTdm user interface (they will be accessible only in the administrative interface)</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="cdmRequired" type="yesNo">
+                <xs:annotation>
+                    <xs:documentation>[NEEDS DOCUMENTATION--this indicates properties required across collections? Or required by the CONTENTdm platform?]</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="cdmControlledVocab" type="yesNo">
+                <xs:annotation>
+                    <xs:documentation>[NEEDS REVIEW]Enter 'yes' if values for this field must come from a controlled vocabulary managed within the CONTENTdm platform</xs:documentation>
+                </xs:annotation>
+            </xs:element>
         </xs:sequence>
     </xs:complexType>
 
     <!-- We'll want an enumeration of DSpace properties for use with the dspaceProperty element -->
     <xs:complexType name="dspaceType">
         <xs:sequence>
-            <xs:element name="dspaceProperty" type="xs:string"/>
+            <xs:element name="dspaceProperty" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>[NEEDS DOCUMENTATION]</xs:documentation>
+                </xs:annotation>
+            </xs:element>
         </xs:sequence>
     </xs:complexType>
 
