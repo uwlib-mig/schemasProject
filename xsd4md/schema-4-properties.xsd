@@ -120,7 +120,7 @@
         <xs:sequence>
             <xs:element name="label" type="xs:string">
                 <xs:annotation>
-                    <xs:documentation>Property label as it should appear in the CONTENTdm user interface; use title-case capitalization for property labels here</xs:documentation>
+                    <xs:documentation>Property label as it will appear in the CONTENTdm user interface; use title-case capitalization for property labels here</xs:documentation>
                 </xs:annotation>
             </xs:element>
             <xs:element name="exportLabel" minOccurs="0" type="xs:string">
@@ -130,12 +130,12 @@
             </xs:element>
             <xs:element name="cdmDatatype" type="cdmDatatypeType">
                 <xs:annotation>
-                    <xs:documentation>[NEEDS REVIEW]Enter the type (or category) of string value which values for this property must adhere to: 'text': textual values which are not dates, 'date': textual values which are dates, 'fullText': [?], 'cdmAdministrative': [?], or 'uwAdministrative': [?]</xs:documentation>
+                    <xs:documentation>[NEEDS REVIEW--wording; is 'category' the right way to say this?]Enter a category which values for this property must adhere to: 'text': textual or numeric values which are not dates, 'date': textual or numeric values which are dates, 'fullText': [?], 'cdmAdministrative': [?], or 'uwAdministrative': [?]</xs:documentation>
                 </xs:annotation>
             </xs:element>
             <xs:element name="cdmLarge" type="yesNo">
                 <xs:annotation>
-                    <xs:documentation>[NEEDS DOCUMENTATION--makes this property and its value(s) appear larger in the Cdm UI?]</xs:documentation>
+                    <xs:documentation>[NEEDS DOCUMENTATION--I imagine this makes this property/value(s) appear larger in the Cdm UI?]</xs:documentation>
                 </xs:annotation>
             </xs:element>
             <xs:element name="searchable" type="yesNo">
