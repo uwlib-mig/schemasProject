@@ -145,7 +145,7 @@
             </xs:element>
             <xs:element name="hidden" type="yesNo">
                 <xs:annotation>
-                    <xs:documentation>[NEEDS REVIEW]Enter 'yes' if this property and its value(s) should not be shown in the CONTENTdm user interface (they will be accessible only in the administrative interface)</xs:documentation>
+                    <xs:documentation>[NEEDS REVIEW--I'm assuming that if they are hidden in the user interface, they'll show in the admin one]Enter 'yes' if this property and its value(s) should not be shown in the CONTENTdm user interface (they will be visible only in the administrative interface)</xs:documentation>
                 </xs:annotation>
             </xs:element>
             <xs:element name="cdmRequired" type="yesNo">
@@ -174,7 +174,11 @@
 
     <xs:complexType name="descriptionsType">
         <xs:sequence>
-            <xs:element name="definition" type="paraType" maxOccurs="unbounded"/>
+            <xs:element name="definition" type="paraType" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Enter a definition for the property here; this definition should apply regardless of which cdata dictionary or collection the property is used in; definition information may be subdivided using multiple &lt;para&gt; elements</xs:documentation>
+                </xs:annotation>
+            </xs:element>
             <xs:element name="instructions" type="paraType4co" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="customization" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
