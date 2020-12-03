@@ -131,6 +131,9 @@
          <para>Roshe tevot (abbreviations) are considered part of the title and should also be recorded.</para>
          <para>Use a colon to indicate the break between title and subtitle, even if no colon appears on title page.</para>
       </customization>
+      <customization co="item" dd="ssdc">
+         <para><!-- (BMR) Need instructions for item level here, like, "Use the page number as the title" --></para>
+      </customization>
    </descriptions>
    <examples>
       <example co="no">
