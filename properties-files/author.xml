@@ -47,6 +47,11 @@
       <example co="all">
          <para>Strong, Lyman W.</para>
       </example>
+      <customization co="object" dd="ssdc">
+         <!-- (BMR) Why isn't this showing up in HTML?
+            Need author example specific to Sephardic Studies collection -->
+         <para>Author, Test ToBeChanged</para>
+      </customization>
    </examples>
    <additionalInfo/>
    <marc>
