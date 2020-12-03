@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<migDataDictionary xmlns="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries"
+    xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:props="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+    id="0013">
+    <ddName>Sephardic Studies Digital Collection</ddName>
+    <ddPartOfProject/>
+    <originalCreationDate>2020-12-02</originalCreationDate>
+    <latestUpdate>2020-12-02</latestUpdate>
+    <metadataLiaisons>
+        <metadataLiaison>Benjamin Riesenberg</metadataLiaison>
+    </metadataLiaisons>
+    <cdmCo>yes</cdmCo>
+    <standalone>yes</standalone>
+    <cdmCode>ssdc</cdmCode> 
+    <properties>
+        <xi:include href="../../properties-files/title.xml"/>
+        <xi:include href="../../properties-files/author.xml"/>
+        <xi:include href="../../properties-files/editor.xml"/>
+        <xi:include href="../../properties-files/translator.xml"/>
+    </properties>
+</migDataDictionary>
