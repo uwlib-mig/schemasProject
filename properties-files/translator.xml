@@ -22,4 +22,23 @@
         <cdmRequired>no</cdmRequired>
         <cdmControlledVocab>no</cdmControlledVocab>
     </cdm>
+    <dspace>
+        <dspaceProperty/>
+    </dspace>
+    <descriptions>
+        <definition>
+            <para>A person or corporate body responsible for translating the textual content of the resource from one language into another.</para>
+        </definition>
+        <customization co="all" dd="ssdc">
+            <para>Search for translator name in Library of Congress Name Authority File; if record exists, transcribe name as it appears in the name authority file, including dates.</para>
+            <para>If no record exists, transliterate translator name on title page using LOC rules.</para>
+            <para>Author names usually appear on title page after the following designations: adaptado; aranzhado; imitado; rezumido; reskrito; trezlador; trezladado; tradusio.</para>
+        </customization>
+    </descriptions>
+    <examples>
+        <example co="object"/>
+        <customization dd="ssdc" co="all">
+            <para>Guiat, Alexander Ben, 1869-1924</para>
+        </customization>
+    </examples>
 </property>
