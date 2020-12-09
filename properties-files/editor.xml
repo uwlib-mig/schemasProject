@@ -29,12 +29,38 @@
         <definition>
             <para>A person or corporate body responsible for editing the textual or other content of the resource.</para>
         </definition>
-        <instructions co="object">
-            <para></para>
-        </instructions>
+        <customization co="object" dd="ssdc">
+            <para>Search for editor name in Library of Congress Name Authority File; if record exists, transcribe name as it appears in the name authority file, including dates.</para>
+            <para>If no record exists, transliterate editor name from title page using LOC rules.</para>
+            <para>Author names usually appear on title page after the following designations: editor.</para>
+        </customization>
     </descriptions>
     <examples>
-        <example co=""></example>
+        <example co="object"/>
+        <customization co="object" dd="ssdc">
+            <para>Habib, Moiz</para>
+        </customization>
     </examples>
-    
+    <additionalInfo/>
+    <marc>
+        <!-- BMR to-do: MARC mapping -->
+        <dcgMarcMapping/>
+        <dcgNotes/>
+    </marc>
+    <xsd>
+        <!-- TG/BMR to do -->
+    </xsd>
+    <rdf>
+        <!-- TG/BMR to do -->
+    </rdf>
+    <history>
+        <dateCreated>
+            <single>2020-12-08</single>
+        </dateCreated>
+        <created4Coll>Sephardic Studies Digital Collection</created4Coll>
+        <justification>Distinct property for editor was desired for SSDC.</justification>
+        <changeLog>
+            <change/>
+        </changeLog>
+    </history>
 </property>
