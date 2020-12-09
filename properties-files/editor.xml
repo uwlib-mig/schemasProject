@@ -3,6 +3,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+    <!-- Why isn't this property output to HTML (0/4 transforms output this to HTML) -->
     <uid>p114</uid>
     <labels>
         <platformIndependent>editor</platformIndependent>
@@ -36,6 +37,7 @@
         </customization>
     </descriptions>
     <examples>
+        <!-- BMR: Adding an empty example element below to avoid validation error. -->
         <example co="object"/>
         <customization co="object" dd="ssdc">
             <para>Habib, Moiz</para>
