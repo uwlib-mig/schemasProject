@@ -42,15 +42,18 @@
          <para>If the Creator is determined from a resource other than the item, create a Note.</para>
          <para>If there is no author, leave the field blank.</para>
       </instructions>
+      <customization co="object" dd="ssdc">
+         <para>Search for author name in Library of Congress Name Authority File; if record exists, transcribe name as it appears in the name authority file, including dates.</para>
+         <para>If no record exists, transliterate author name on title page using LOC rules.</para>
+         <para>Author names usually appear on title page after the following designations: el autor; kompuesto; por.</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="all">
          <para>Strong, Lyman W.</para>
       </example>
       <customization co="object" dd="ssdc">
-         <!-- (BMR) Why isn't this showing up in HTML?
-            Need author example specific to Sephardic Studies collection -->
-         <para>Author, Test ToBeChanged</para>
+         <para>Saint-Pierre, Bernardin de, 1737-1814.</para>
       </customization>
    </examples>
    <additionalInfo/>
@@ -67,7 +70,7 @@
       </typeInfo>
    </xsd>
    <rdf>
-      <sameAs/>
+      <!-- no RDF info yet for author -->
    </rdf>
    <history>
       <dateCreated>
