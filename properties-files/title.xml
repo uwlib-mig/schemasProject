@@ -129,10 +129,13 @@
          <para>Roshe tevot (abbreviations) are considered part of the title and should also be recorded.</para>
          <para>Use a colon to indicate the break between title and subtitle, even if no colon appears on title page.</para>
       </customization>
-      <customization co="item" dd="ssdc">
-         <para><!-- BMR to do --></para>
+      <!-- BMR need item instructions -->
+      <customization co="no" dd="ssdc">
+         <para>Enter the Ladino title in Hebrew script as it appears on the title page.</para>
+         <para>Record title exactly as found, even with printer errors.</para>
+         <para>Roshe tevot (abbreviations) are considered part of the title and should also be recorded.</para>
+         <para>Use a colon to indicate the break between title and subtitle, even if no colon appears on title page.</para>
       </customization>
-      <!-- BMR: Need standalone instructions as well? -->
    </descriptions>
    <examples>
       <example co="no">
@@ -184,7 +187,10 @@
       <customization co="object" dd="ssdc">
          <para>פאב׳לו אי ב׳ירז׳יניאה: רומאנסו</para>
       </customization>
-      <!-- BMR: Need item, standalone examples -->
+      <!-- BMR: Need item example -->
+      <customization co="no" dd="ssdc">
+         <para>פאב׳לו אי ב׳ירז׳יניאה: רומאנסו</para>
+      </customization>
    </examples>
    <additionalInfo/>
    <marc>
