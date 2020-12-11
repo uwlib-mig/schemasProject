@@ -186,8 +186,16 @@
 
     <xs:complexType name="examplesType">
         <xs:sequence>
-            <xs:element name="example" type="paraType4co" maxOccurs="unbounded"/>
-            <xs:element ref="customization" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="example" type="paraType4co" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>[NEEDS CONFIRMATION]When creating a new property; examples at object, item, and/or standalone level must be entered using the example element in order to be output to derivative HTML DDs</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element ref="customization" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>[NEEDS CONFIRMATION]The customization element may be used as a child of descriptions in lieu of instructions to provide unique instructions for a given DD at the object, item, or standalone level; it should not be used when no values have yet been given for an instructions element at the required level, in these cases it may not be output properly to derivative HTML DDs</xs:documentation>
+                </xs:annotation>
+            </xs:element>
         </xs:sequence>
     </xs:complexType>
 
