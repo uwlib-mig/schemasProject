@@ -12,11 +12,12 @@
     </metadataLiaisons>
     <cdmCo>yes</cdmCo>
     <standalone>yes</standalone>
-    <cdmCode>ssdc</cdmCode> 
+    <cdmCode>ssdc</cdmCode>
     <properties>
         <xi:include href="../../properties-files/title.xml"/>
         <xi:include href="../../properties-files/author.xml"/>
         <xi:include href="../../properties-files/editor.xml"/>
         <xi:include href="../../properties-files/translator.xml"/>
+        <xi:include href="../../properties-files/type.xml"/>
     </properties>
 </migDataDictionary>
