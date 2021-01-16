@@ -3,7 +3,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
-    <!-- Why isn't this property output to HTML (0/4 transforms output this to HTML) -->
+    <!-- BMR: Why isn't this property output to HTML (0/4 transforms output this to HTML) -->
     <uid>p115</uid>
     <labels>
         <platformIndependent>translator</platformIndependent>
@@ -30,11 +30,10 @@
         <definition>
             <para>A person or corporate body responsible for translating the textual content of the resource from one language into another.</para>
         </definition>
-        <customization co="all" dd="ssdc">
-            <para>Search for translator name in Library of Congress Name Authority File; if record exists, transcribe name as it appears in the name authority file, including dates.</para>
-            <para>If no record exists, transliterate translator name on title page using LOC rules.</para>
-            <para>Author names usually appear on title page after the following designations: adaptado; aranzhado; imitado; rezumido; reskrito; trezlador; trezladado; tradusio.</para>
-        </customization>
+        <instructions co="object">
+            <!-- BMR: Remove test and insert instructions from spreadsheet -->
+            <para>Test link output &lt;a href="https://id.loc.gov/authorities/names.html"&gt;Library of Congress Name Authority File&lt;/a&gt;.</para>
+        </instructions>
     </descriptions>
     <examples>
         <example co="object"/>

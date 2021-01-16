@@ -43,10 +43,12 @@
       <customization co="no" dd="ssdc">
          <para>Input a value from the &lt;a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7"&gt;DCMI Type Vocabulary&gt;.</para>
          <!-- BMR: Add language re: entering multiple values -->
+         <!-- BMR: Add instruction re: using IRI stub, not label -->
       </customization>
       <customization co="item" dd="ssdc">
          <para>Input a value from the &lt;a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7"&gt;DCMI Type Vocabulary&gt;.</para>
          <!-- BMR: Add language re: entering multiple values -->
+         <!-- BMR: Add instruction re: using IRI stub, not label -->
       </customization>
    </descriptions>
    <examples>
