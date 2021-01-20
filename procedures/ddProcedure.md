@@ -13,7 +13,7 @@
 ### 4. SAVE AS and enter the filename for the new MAP.
 ### 5. Edit values for the XML elements:
 - edit `/migDataDictionary/@id`
-    - find last `@id` by running [$sch/dataDictionaries/xml/queries/listIDs.xsl]() (if an xml source file is needed, use a dummy.xml such as $sch/xslt/dummy.xml)
+    - find last `@id` by running [`$sch/dataDictionaries/xml/queries/listIDs.xsl`]() (if an xml source file is needed, use a dummy.xml such as $sch/xslt/dummy.xml)
 - Check all attributes in the root element /migDataDictionary; they're mostly namespaces and are probably correct, but correctness should be verified.
 - Edit the child XML elements as appropriate:
     - `//ddname` use name of collection on digital collection front page
@@ -22,9 +22,9 @@
     - `//latestUpdate` enter "today's date" in EDTF format
     - `//metadataLiaisons` enter appropriate names using child element `//metadataLiaison`
     - `//cdmCo` enter "yes" if the collection is a CONTENTdm collection that includes compound objects; otherwise enter "no."
-        - CONTENTdm compound object processing for MAPs is discussed in detail at [//procedures/cdmCompoundObjects.html]().
+        - CONTENTdm compound object processing for MAPs is discussed in detail at [`//procedures/cdmCompoundObjects.html`]().
     - `//standalone` enter "yes" if the collection is a CONTENTdm collection that includes individual items not contained in a compound object.
-        - CONTENTdm compound object processing for MAPs is discussed in detail at [//procedures/cdmCompoundObjects.html]().
+        - CONTENTdm compound object processing for MAPs is discussed in detail at [`//procedures/cdmCompoundObjects.html`]().
     - `//cdmCode` enter the cdm databse code for the collection, if applicable.
 
 ### 6. List the properties used to describe the collection:
