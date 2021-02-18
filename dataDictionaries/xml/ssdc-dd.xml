@@ -16,17 +16,30 @@
     <cdmCode>ssdc</cdmCode>
     <properties>
         <xi:include href="../../properties-files/title.xml"/>
-        <!-- NEW: titleAy -->
-        <!-- NEW: titleLoc -->
+        <!-- NEW: titleAY -->
+        <!-- NEW: titleALALC -->
         <xi:include href="../../properties-files/language.xml"/>
         <xi:include href="../../properties-files/date.xml"/>
         <xi:include href="../../properties-files/author.xml"/>
         <xi:include href="../../properties-files/editor.xml"/>
         <!-- NEW: publisher -->
-        <!-- NEW: publisherLocation**tentative -->
+        <!-- NEW: publisherLocation -->
         <!-- NEW: printer -->
-        <!-- NEW: printerLocation**tentative -->
-        <!-- NEW: translator -->
+        <!-- NEW: printerLocation -->
         <xi:include href="../../properties-files/translator.xml"/>
+        <!-- TBD: prop for Sephardic Studies accession # -->
+        <xi:include href="../../properties-files/subjectsLcsh.xml"/>
+        <!-- NEW: donor -->
+        <!-- NEW: lender -->
+        <!-- NEW: formerOwner -->
+        <xi:include href="../../properties-files/restrictions.xml"/>
+        <xi:include href="../../properties-files/cataloging.xml"/>
+        <xi:include href="../../properties-files/standaloneDeclaration.xml"/>
+        <xi:include href="../../properties-files/cdmFilename.xml"/>
+        <xi:include href="../../properties-files/cdmFilePath.xml"/>
+        <xi:include href="../../properties-files/cdmNumber.xml"/>
+        <xi:include href="../../properties-files/dateCreated.xml"/>
+        <xi:include href="../../properties-files/dateModified.xml"/>
+        <xi:include href="../../properties-files/itemUrl.xml"/>
     </properties>
 </migDataDictionary>
