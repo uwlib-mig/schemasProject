@@ -7,7 +7,7 @@
         <get_info>
             <xsl:apply-templates
                 select="collection('../?select=*.xml')/pf:property">
-                <!-- Need to remove 'p's to sort numerically -->
+                <!-- remove p's; sort numerically -->
                 <xsl:sort order="ascending" select="translate(pf:uid, 'p', '')" data-type="number"/>
             </xsl:apply-templates>
         </get_info>
