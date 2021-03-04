@@ -21,13 +21,15 @@
         <!-- NEW: titleHarvard -->
         <xi:include href="../../properties-files/language.xml"/>
         <xi:include href="../../properties-files/date.xml"/>
+        <xi:include href="../../properties-files/dateEdtf.xml"/>
+        <xi:include href="../../properties-files/dates.xml"/>
         <xi:include href="../../properties-files/author.xml"/>
-        <xi:include href="../../properties-files/editor.xml"/> <!-- NEW -->
+        <xi:include href="../../properties-files/editor.xml"/> <!-- NEW: editor -->
         <!-- NEW: publisher -->
         <!-- NEW: publisherLocation -->
         <!-- NEW: printer -->
         <!-- NEW: printerLocation -->
-        <xi:include href="../../properties-files/translator.xml"/> <!-- NEW -->
+        <xi:include href="../../properties-files/translator.xml"/> <!-- NEW: translator -->
         <!-- NEW: ssac -->
         <xi:include href="../../properties-files/subjectsLcsh.xml"/>
         <!-- NEW: donor -->
