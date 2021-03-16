@@ -13,7 +13,7 @@
     </metadataLiaisons>
     <cdmCo>yes</cdmCo>
     <standalone>yes</standalone>
-    <cdmCode>ssdc</cdmCode>
+    <cdmCode>p16786coll3</cdmCode>
     <properties>
         <xi:include href="../../properties-files/title.xml"/>
         <!-- NEW: titleAY -->
@@ -32,13 +32,20 @@
         <xi:include href="../../properties-files/translator.xml"/> <!-- NEW: translator -->
         <!-- NEW: ssac -->
         <xi:include href="../../properties-files/subjectsLcsh.xml"/>
+        <!-- NEW relatedOclcNo -->
         <!-- NEW: donor -->
         <!-- NEW: lender -->
         <!-- NEW: formerOwner -->
-        <xi:include href="../../properties-files/restrictions.xml"/>
-        <xi:include href="../../properties-files/cataloging.xml"/>
-        <xi:include href="../../properties-files/standaloneDeclaration.xml"/>
         <xi:include href="../../properties-files/digitalCollection.xml"/>
+        <xi:include href="../../properties-files/restrictions.xml"/>
+        <!-- [?] rightsUri -->
+        <xi:include href="../../properties-files/cataloging.xml"/>
+        <xi:include href="../../properties-files/description.xml"/>
+        <xi:include href="../../properties-files/coitems.xml"/>
+        <xi:include href="../../properties-files/partOfCo.xml"/>
+        <xi:include href="../../properties-files/standaloneDeclaration.xml"/>
+        <xi:include href="../../properties-files/type.xml"/>
+        <xi:include href="../../properties-files/oclcNumber.xml"/>
         <xi:include href="../../properties-files/cdmFilename.xml"/>
         <xi:include href="../../properties-files/cdmFilePath.xml"/>
         <xi:include href="../../properties-files/cdmNumber.xml"/>
