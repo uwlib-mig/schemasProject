@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md 
+    http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+    <uid>p116</uid>
+    <labels>
+        <platformIndependent>titleAYR</platformIndependent>
+        <dc>title</dc>
+    </labels>
+    <uwRequired>
+        <uwStandalone>no</uwStandalone>
+        <uwObject>no</uwObject>
+        <uwItem>no</uwItem>
+    </uwRequired>
+    <cdm>
+        <label>Title (Aki Yerushalayim Romanization)</label>
+        <cdmDatatype>text</cdmDatatype>
+        <cdmLarge>no</cdmLarge>
+        <searchable>yes</searchable>
+        <hidden>no</hidden>
+        <cdmRequired>no</cdmRequired>
+        <cdmControlledVocab>no</cdmControlledVocab>
+    </cdm>
+    <!-- Omit dspace -->
+    <descriptions>
+        <definition>
+            <para>A Ladino title in Hebrew script Romanized according to the Aki Yerushalayim standard.</para>
+        </definition>
+        <customization co="object" dd="p16786coll3">
+            <para>Find Unicode Title in Sephardic Studies Collection Master Catalog and revise according to &lt;a href="https://drive.google.com/file/d/1LAvczCjqQc4tZFEa1xTxiEEYfiPUfq3t/view"&gt;Aki Yerushalayim&lt;/a&gt; if needed.</para>
+            <para>Use a colon and space (": ") to indicate the break between title and subtitle, even if no colon appears on title page.</para>
+            <para>Only Romanize the portion of the title that will be included in the Title field.</para>
+            <para>Required for all compound objects.</para>
+        </customization>
+        <!-- Draft instructions for SSDC (dd="p16786coll3") standalones; no standalones expected in coll at this time -->
+        <customization co="no" dd="p16786coll3">
+            <para>Romanize title according to &lt;a href="https://drive.google.com/file/d/1LAvczCjqQc4tZFEa1xTxiEEYfiPUfq3t/view"&gt;Aki Yerushalayim&lt;/a&gt; if needed.</para>
+            <para>Use a colon and space (": ") to indicate the break between title and subtitle, even if no colon appears on title page.</para>
+            <para>Only Romanize the portion of the title that will be included in the Title field.</para>
+            <para>Required for all compound-object items.</para>
+        </customization>
+    </descriptions>
+    <examples>
+        <example co="object">
+            <para>Pavlo i Virjinia: Romanso</para>
+        </example>
+        <example co="no">
+            <para>Pavlo i Virjinia: Romanso</para>
+        </example>
+    </examples>
+    <!-- Omit:
+        additionalInfo
+        marc -->
+    <!-- BMR TO DO - XSD -->
+    <!-- Omit:
+        rdf
+        cdmRdf -->
+    <history>
+        <dateCreated>
+            <single>2021-03-19</single>
+        </dateCreated>
+        <created4Coll>Sephardic Studies Digital Collection (p16786coll3)</created4Coll>
+        <justification>SSDC will use title.xml for non-Latin titles; collection requires Romanized title values.</justification>
+    </history>
+</property>
