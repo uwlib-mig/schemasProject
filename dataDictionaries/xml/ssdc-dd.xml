@@ -3,11 +3,11 @@
     xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:props="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
     id="0013">
-    <!-- BMR: To-do "expand" this DD -->
+    <!-- BMR TO-DO EXPAND DD -->
     <ddName>Sephardic Studies Digital Collection</ddName>
     <ddPartOfProject/>
     <originalCreationDate>2020-12-02</originalCreationDate>
-    <latestUpdate>2020-12-02</latestUpdate>
+    <latestUpdate>2021-03-25</latestUpdate>
     <metadataLiaisons>
         <metadataLiaison>Benjamin Riesenberg</metadataLiaison>
     </metadataLiaisons>
@@ -16,9 +16,9 @@
     <cdmCode>p16786coll3</cdmCode>
     <properties>
         <xi:include href="../../properties-files/title.xml"/>
-        <!-- NEW: titleAY -->
-        <!-- NEW: titleALALC -->
-        <!-- NEW: titleHarvard -->
+        <xi:include href="../../properties-files/titleALALCR.xml"/><!-- NEW: titleALALCR -->
+        <xi:include href="../../properties-files/titleAYR.xml"/> <!-- NEW: titleAYR -->
+        <xi:include href="../../properties-files/titleHarvard.xml"/><!-- NEW: titleHarvard -->
         <xi:include href="../../properties-files/language.xml"/>
         <xi:include href="../../properties-files/date.xml"/>
         <xi:include href="../../properties-files/dateEdtf.xml"/>
@@ -38,7 +38,7 @@
         <!-- NEW: formerOwner -->
         <xi:include href="../../properties-files/digitalCollection.xml"/>
         <xi:include href="../../properties-files/restrictions.xml"/>
-        <!-- [?] rightsUri -->
+        <xi:include href="../../properties-files/rightsUri.xml"/>
         <xi:include href="../../properties-files/cataloging.xml"/>
         <xi:include href="../../properties-files/description.xml"/>
         <xi:include href="../../properties-files/coitems.xml"/>
