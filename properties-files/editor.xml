@@ -3,7 +3,6 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
-    <!-- Why isn't this property output to HTML (0/4 transforms output this to HTML) -->
     <uid>p114</uid>
     <labels>
         <platformIndependent>editor</platformIndependent>
@@ -21,7 +20,7 @@
         <searchable>yes</searchable>
         <hidden>no</hidden>
         <cdmRequired>no</cdmRequired>
-        <cdmControlledVocab>no</cdmControlledVocab>
+        <cdmControlledVocab>yes</cdmControlledVocab>
     </cdm>
     <dspace>
         <dspaceProperty/>
@@ -30,16 +29,26 @@
         <definition>
             <para>A person or corporate body responsible for editing the textual or other content of the resource.</para>
         </definition>
-        <instructions co="object">
-            <para>Search for editor name in Library of Congress Name Authority File; if record exists, transcribe name as it appears in the name authority file, including dates.</para>
-            <para>If no record exists, transliterate editor name from title page using LOC rules.</para>
-            <para>Author names usually appear on title page after the following designations: editor.</para>
-        </instructions>
-        <instructions co="no">
-            <para>Search for editor name in Library of Congress Name Authority File; if record exists, transcribe name as it appears in the name authority file, including dates.</para>
-            <para>If no record exists, transliterate editor name from title page using LOC rules.</para>
-            <para>Author names usually appear on title page after the following designations: editor.</para>
-        </instructions>
+        <customization co="object" dd="p16786coll3">
+            <para>Search the &lt;a href="https://id.loc.gov/authorities/names.html"&gt;Library of Congress Name Authority File&lt;/a&gt; via id.loc.gov for the editor name (usually an individual).</para>
+            <para>If a potential match is found, confirm that it is the person associated with the resource: it may be helpful to review information included in the web display such as source(s) of information and occupation (for persons), and/or to follow the links provided for exact and/or closely matching concepts from other schemes.</para>
+            <para>Copy the name string for use just as it appears at the top of the page, above the URI(s), including dates.</para>
+            <para>If no record exists, Romanize the editor name as it appears on the title page (or elsewhere if not on the title page) according to the ALA-LC &lt;a href="https://www.loc.gov/catdir/cpso/romanization/ladino.pdf"&gt;Ladino romanization table&lt;/a&gt;.</para>
+            <para>Record personal names as "Lastname, Firstname".</para>
+            <para>For a personal name like Alexander Ben Guiat, "Ben" is considered part of the first name and is transcribed as: "Guiat, Alexander Ben".</para>
+            <para>Editor names usually appear on title page after the following designations: editor.</para>
+            <para>If entering multiple values for this property, separate each using a semicolon and space (“; “). Order of values does not matter.</para>
+        </customization>
+        <customization co="no" dd="p16786coll3">
+            <para>Search the &lt;a href="https://id.loc.gov/authorities/names.html"&gt;Library of Congress Name Authority File&lt;/a&gt; via id.loc.gov for the editor name (usually an individual).</para>
+            <para>If a potential match is found, confirm that it is the person associated with the resource: it may be helpful to review information included in the web display such as source(s) of information and occupation (for persons), and/or to follow the links provided for exact and/or closely matching concepts from other schemes.</para>
+            <para>Copy the name string for use just as it appears at the top of the page, above the URI(s), including dates.</para>
+            <para>If no record exists, Romanize the editor name as it appears on the title page (or elsewhere if not on the title page) according to the ALA-LC &lt;a href="https://www.loc.gov/catdir/cpso/romanization/ladino.pdf"&gt;Ladino romanization table&lt;/a&gt;.</para>
+            <para>Record personal names as "Lastname, Firstname".</para>
+            <para>For a personal name like Alexander Ben Guiat, "Ben" is considered part of the first name and is transcribed as: "Guiat, Alexander Ben".</para>
+            <para>Editor names usually appear on title page after the following designations: editor.</para>
+            <para>If entering multiple values for this property, separate each using a semicolon and space (“; “). Order of values does not matter.</para>
+        </customization>
     </descriptions>
     <examples>
         <example co="object">
@@ -51,16 +60,17 @@
     </examples>
     <additionalInfo/>
     <marc>
-        <!-- TG/BMR to-do -->
         <dcgMarcMapping/>
-        <dcgNotes/>
     </marc>
-    <xsd>
-        <!-- TG/BMR to do -->
-    </xsd>
-    <rdf>
-        <!-- TG/BMR to do -->
-    </rdf>
+    <xsd/>
+    <rdf/>
+    <!-- Omit:
+        additionalInfo
+        marc -->
+    <!-- BMR TO DO - XSD -->
+    <!-- Omit:
+        rdf
+        cdmRdf -->
     <history>
         <dateCreated>
             <single>2020-12-08</single>
