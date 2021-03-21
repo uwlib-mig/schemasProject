@@ -31,7 +31,7 @@
       <instructions co="no">
          <para>Reflects the date in the "Date" field.</para>
          <para>Express all dates, including date ranges, using Library of Congress' Extended Date Time Format.</para>
-         <para>The most recent version of the Library of Congress' summary of EDTF is available at https://www.loc.gov/standards/datetime/.</para>
+         <para>The most recent version of the Library of Congress' summary of EDTF is available at &lt;a href="https://www.loc.gov/standards/datetime/"&gt;https://www.loc.gov/standards/datetime/&lt;/a&gt;.</para>
          <para>Six formats are recommended for values in Date, each corresponding to a specific EDTF format:</para>
          <para>If the value of Date is YYYY, enter YYYY.</para>
          <para>If the value of Date is YYYY?, enter YYYY?</para>
@@ -45,7 +45,7 @@
       <instructions co="object">
          <para>Reflects the date in the "Date" field.</para>
          <para>Express all dates, including date ranges, using Library of Congress' Extended Date Time Format.</para>
-         <para>The most recent version of the Library of Congress' summary of EDTF is available at https://www.loc.gov/standards/datetime/.</para>
+         <para>The most recent version of the Library of Congress' summary of EDTF is available at &lt;a href="https://www.loc.gov/standards/datetime/"&gt;https://www.loc.gov/standards/datetime/&lt;/a&gt;.</para>
          <para>Six formats are recommended for values in Date, each corresponding to a specific EDTF format:</para>
          <para>If the value of Date is YYYY, enter YYYY.</para>
          <para>If the value of Date is YYYY?, enter YYYY?</para>
@@ -224,6 +224,7 @@
          <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation. Also updated link to EDTF and added some instructions.</change>
          <change date="2019-05-19">Add krab customizations and any attendant info to support cdm compound objects for that collection.</change>
          <change date="2020-05-19">Commented-out instructions for co items.</change>
+         <change date="2021-03-20">Encode EDTF reference URL to output live links to HTML DDs.</change>
       </changeLog>
    </history>
 </property>
