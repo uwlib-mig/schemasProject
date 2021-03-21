@@ -40,6 +40,18 @@
       <customization co="object" dd="uwtoh">
          <para>Name of language(s) used in the interview fully spelled out.</para>
       </customization>
+      <customization co="object" dd="p16786coll3">
+         <para>Enter language names, fully spelled out, as they appear in the &lt;a href="https://iso639-3.sil.org/code_tables/639/data"&gt;ISO 639 Code Tables&lt;/a&gt; ("Language Name(s)" column). Note that Ladino is listed as such, and not as Judeo-Spanish or Judezmo.</para>
+         <para>Do not enter languages that only appear on the title page or final pages (i.e. in advertisements).</para>
+         <para>If entering multiple values for this property, separate each using a semicolon and space (“; “). Order of values does not matter.</para>
+         <para>Required for all compound objects.</para>
+      </customization>
+      <customization co="no" dd="p16786coll3">
+         <para>Enter language names, fully spelled out, as they appear in the &lt;a href="https://iso639-3.sil.org/code_tables/639/data"&gt;ISO 639 Code Tables&lt;/a&gt; ("Language Name(s)" column). Note that Ladino is listed as such, and not as Judeo-Spanish or Judezmo.</para>
+         <para>Do not enter languages that only appear on the title page or final pages (i.e. in advertisements).</para>
+         <para>If entering multiple values for this property, separate each using a semicolon and space (“; “). Order of values does not matter.</para>
+         <para>Required for all compound-object items.</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="no">
@@ -54,9 +66,17 @@
          <para>English</para>
          <para>Spanish</para>
       </example>
+      <customization co="object">
+         <para>Ladino; Hebrew</para>
+      </customization>
+      <customization co="no">
+         <para>Ladino; Hebrew</para>
+      </customization>
    </examples>
    <additionalInfo>
-      <admin co="object"/>
+      <admin co="agnostic">
+         <para>Sephardic Studies Digital Collection [p16786coll3]: Request controlled-vocabulary ON for this property.</para>
+      </admin>
    </additionalInfo>
    <marc>
       <dcgMarcMapping/>
@@ -78,6 +98,7 @@
       <justification>MIG requested this field for UWT Oral Histories, allowing language to be indexed, as we do with other oral histories.</justification>
       <changeLog>
          <change date="2019-04-21">Moved uwtoh instructions to a customization; created instruction for @co="all" to accommodate use of property with rp.</change>
+         <change date="2021-03-20">Add custom CO and standalone instructions and examples, and admin note, for Sephardic Studies Digital Collection (p16786coll3).</change>
       </changeLog>
    </history>
 </property>
