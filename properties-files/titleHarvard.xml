@@ -24,12 +24,15 @@
         <cdmControlledVocab>no</cdmControlledVocab>
     </cdm>
     <!-- omit dspace -->
+    <dspace>
+        <dspaceProperty/>
+    </dspace>
     <descriptions>
         <definition>
             <para>A Ladino title in Hebrew script Romanized according to the Harvard Library standard.</para>
         </definition>
         <customization co="object" dd="p16786coll3">
-            <para>Search for the title in the Harvard Library &lt;a href="https://library.harvard.edu/&gt;HOLLIS online catalog&lt;/a&gt;.</para>
+            <para>Search for the title in the Harvard Library &lt;a href="https://library.harvard.edu"&gt;HOLLIS online catalog&lt;/a&gt;.</para>
             <para>When searching it helps to filter results by language and approximate year.</para>
             <para>If a potentical match is found, copy the title just as it appears in the title field on HOLLIS.</para>
             <para>If no record exists, do not create a Romanized title for this field.</para>
@@ -37,11 +40,11 @@
         </customization>
         <!-- Draft instructions for SSDC (dd="p16786coll3") standalones; no standalones expected in coll at this time -->
         <customization co="no" dd="p16786coll3">
-            <para>Search for the title in the Harvard Library &lt;a href="https://library.harvard.edu/&gt;HOLLIS online catalog&lt;/a&gt;.</para>
+            <para>Search for the title in the Harvard Library &lt;a href="https://library.harvard.edu"&gt;HOLLIS online catalog&lt;/a&gt;.</para>
             <para>When searching it helps to filter results by language and approximate year.</para>
             <para>If a potentical match is found, copy the title just as it appears in the title field on HOLLIS.</para>
             <para>If no record exists, do not create a Romanized title for this field.</para>
-            <para>Required for all compound-object items.</para>
+            <para>Required for all standalone objects.</para>
         </customization>
     </descriptions>
     <examples>
@@ -52,6 +55,12 @@
             <para>Sefer &#7717;ovat ha-levavot shaʻar ha-bi&#7789;a&#7717;on en ladino</para>
         </example>
     </examples>
+    <additionalInfo/>
+    <marc>
+        <dcgMarcMapping/>
+    </marc>
+    <xsd/>
+    <rdf/>
     <!-- Omit:
         additionalInfo
         marc -->
@@ -65,5 +74,8 @@
         </dateCreated>
         <created4Coll>Sephardic Studies Digital Collection (p16786coll3)</created4Coll>
         <justification>SSDC will use title.xml for non-Latin titles; collection requires Romanized title values.</justification>
+        <changeLog>
+            <change/>
+        </changeLog>
     </history>
 </property>
