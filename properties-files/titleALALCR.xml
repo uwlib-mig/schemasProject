@@ -24,6 +24,9 @@
         <cdmControlledVocab>no</cdmControlledVocab>
     </cdm>
     <!-- omit dspace -->
+    <dspace>
+        <dspaceProperty/>
+    </dspace>
     <descriptions>
         <definition>
             <para>A title in non-Latin script Romanized according to the ALA-LC Romanization Tables.</para>
@@ -41,7 +44,7 @@
             <!-- Draft instructions for SSDC (dd="p16786coll3") standalones; no standalones expected in coll at this time -->
             <para>Romanize title according to the ALA-LC &lt;a href="https://www.loc.gov/catdir/cpso/romanization/ladino.pdf"&gt;Ladino romanization table.&lt;/a&gt;</para>
             <para>When Romanizing a title, only include the portion transcribed in the Title field.</para>
-            <para>Required for all compound-object items.</para>
+            <para>Required for all standalone objects.</para>
         </customization>
     </descriptions>
     <examples>
@@ -59,11 +62,20 @@
     <!-- Omit:
         rdf
         cdmRdf -->
+    <additionalInfo/>
+    <marc>
+        <dcgMarcMapping/>
+    </marc>
+    <xsd/>
+    <rdf/>
     <history>
         <dateCreated>
             <single>2021-03-19</single>
         </dateCreated>
         <created4Coll>Sephardic Studies Digital Collection (p16786coll3)</created4Coll>
         <justification>SSDC will use title.xml for non-Latin titles; collection requires Romanized title values.</justification>
+        <changeLog>
+            <change/>
+        </changeLog>
     </history>
 </property>
