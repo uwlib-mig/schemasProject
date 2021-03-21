@@ -50,7 +50,7 @@
          <para>Enter language names, fully spelled out, as they appear in the &lt;a href="https://iso639-3.sil.org/code_tables/639/data"&gt;ISO 639 Code Tables&lt;/a&gt; ("Language Name(s)" column). Note that Ladino is listed as such, and not as Judeo-Spanish or Judezmo.</para>
          <para>Do not enter languages that only appear on the title page or final pages (i.e. in advertisements).</para>
          <para>If entering multiple values for this property, separate each using a semicolon and space (“; “). Order of values does not matter.</para>
-         <para>Required for all compound-object items.</para>
+         <para>Required for all standalone objects.</para>
       </customization>
    </descriptions>
    <examples>
