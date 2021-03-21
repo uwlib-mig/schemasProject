@@ -9,7 +9,7 @@
     <originalCreationDate>2020-12-02</originalCreationDate>
     <latestUpdate>2021-03-25</latestUpdate>
     <metadataLiaisons>
-        <metadataLiaison>Benjamin Riesenberg</metadataLiaison>
+        <metadataLiaison>Benjamin Riesenberg - &lt;a href="mailto:ries07@uw.edu"&gt;ries07@uw.edu&lt;/a&gt;</metadataLiaison>
     </metadataLiaisons>
     <cdmCo>yes</cdmCo>
     <standalone>yes</standalone>
@@ -17,18 +17,18 @@
     <properties>
         <xi:include href="../../properties-files/title.xml"/>
         <xi:include href="../../properties-files/titleALALCR.xml"/><!-- NEW: titleALALCR -->
-        <xi:include href="../../properties-files/titleAYR.xml"/> <!-- NEW: titleAYR -->
+        <xi:include href="../../properties-files/titleAYR.xml"/><!-- NEW: titleAYR -->
         <xi:include href="../../properties-files/titleHarvard.xml"/><!-- NEW: titleHarvard -->
         <xi:include href="../../properties-files/language.xml"/>
         <xi:include href="../../properties-files/date.xml"/>
         <xi:include href="../../properties-files/dateEdtf.xml"/>
         <xi:include href="../../properties-files/dates.xml"/>
         <xi:include href="../../properties-files/author.xml"/>
-        <xi:include href="../../properties-files/editor.xml"/> <!-- NEW: editor -->
-        <!-- NEW: publisher -->
-        <!-- NEW: publisherLocation -->
-        <!-- NEW: printer -->
-        <!-- NEW: printerLocation -->
+        <xi:include href="../../properties-files/editor.xml"/><!-- NEW: editor -->
+        <xi:include href="../../properties-files/publisher.xml"/><!-- NEW: publisher -->
+        <xi:include href="../../properties-files/publisherLocation.xml"/><!-- NEW: publisherLocation -->
+        <xi:include href="../../properties-files/printer.xml"/><!-- NEW: printer -->
+        <xi:include href="../../properties-files/printerLocation.xml"/><!-- NEW: printerLocation -->
         <xi:include href="../../properties-files/translator.xml"/> <!-- NEW: translator -->
         <!-- NEW: ssac -->
         <xi:include href="../../properties-files/subjectsLcsh.xml"/>
