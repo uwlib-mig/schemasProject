@@ -24,6 +24,9 @@
         <cdmControlledVocab>no</cdmControlledVocab>
     </cdm>
     <!-- Omit dspace -->
+    <dspace>
+        <dspaceProperty/>
+    </dspace>
     <descriptions>
         <definition>
             <para>A Ladino title in Hebrew script Romanized according to the Aki Yerushalayim standard.</para>
@@ -39,7 +42,7 @@
             <para>Romanize title according to &lt;a href="https://drive.google.com/file/d/1LAvczCjqQc4tZFEa1xTxiEEYfiPUfq3t/view"&gt;Aki Yerushalayim&lt;/a&gt; if needed.</para>
             <para>Use a colon and space (": ") to indicate the break between title and subtitle, even if no colon appears on title page.</para>
             <para>Only Romanize the portion of the title that will be included in the Title field.</para>
-            <para>Required for all compound-object items.</para>
+            <para>Required for all standalone objects.</para>
         </customization>
     </descriptions>
     <examples>
@@ -50,6 +53,12 @@
             <para>Pavlo i Virjinia: Romanso</para>
         </example>
     </examples>
+    <additionalInfo/>
+    <marc>
+        <dcgMarcMapping/>
+    </marc>
+    <xsd/>
+    <rdf/>
     <!-- Omit:
         additionalInfo
         marc -->
@@ -63,5 +72,8 @@
         </dateCreated>
         <created4Coll>Sephardic Studies Digital Collection (p16786coll3)</created4Coll>
         <justification>SSDC will use title.xml for non-Latin titles; collection requires Romanized title values.</justification>
+        <changeLog>
+            <change/>
+        </changeLog>
     </history>
 </property>
