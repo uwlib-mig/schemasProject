@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md 
+    http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+    <uid>p122</uid>
+    <labels>
+        <platformIndependent>printerLocation</platformIndependent>
+        <dc>none</dc>
+    </labels>
+    <uwRequired>
+        <uwStandalone>no</uwStandalone>
+        <uwObject>no</uwObject>
+        <uwItem>no</uwItem>
+    </uwRequired>
+    <cdm>
+        <label>Printer Location</label>
+        <cdmDatatype>text</cdmDatatype>
+        <cdmLarge>no</cdmLarge>
+        <searchable>yes</searchable>
+        <hidden>no</hidden>
+        <cdmRequired>no</cdmRequired>
+        <cdmControlledVocab>yes</cdmControlledVocab>
+    </cdm>
+    <dspace>
+        <dspaceProperty/>
+    </dspace>
+    <!-- omit dspace -->
+    <descriptions>
+        <definition>
+            <para>A location, usually a city, associated with the printer of the resource.</para>
+        </definition>
+        <customization co="object" dd="p16786coll3">
+            <para>Search for the printer's geographic location in the &lt;a href="https://id.loc.gov/authorities/names.html"&gt;Library of Congress Name Authority File&lt;/a&gt; via id.loc.gov.</para>
+            <para>If a match is found, copy the name string for use just as it appears at the top of the page, above the URI(s). Include any parenthesis following the location name.</para>
+            <para>If no record exists, use the most universal spelling of location.</para>
+            <para>If entering multiple values for this property, separate each using a semicolon and space (“; “). Order of values does not matter.</para>
+            <para>If multiple printers are associated with a resource, include the Printer value to which the location applies in square brackets ("[" and "]") following this value.</para>
+        </customization>
+        <customization co="no" dd="p16786coll3">
+            <para>Search for the printer's geographic location in the &lt;a href="https://id.loc.gov/authorities/names.html"&gt;Library of Congress Name Authority File&lt;/a&gt; via id.loc.gov.</para>
+            <para>If a match is found, copy the name string for use just as it appears at the top of the page, above the URI(s). Include any parenthesis following the location name.</para>
+            <para>If no record exists, use the most universal spelling of location.</para>
+            <para>If entering multiple values for this property, separate each using a semicolon and space (“; “). Order of values does not matter.</para>
+            <para>If multiple printers are associated with a resource, include the Printer value to which the location applies in square brackets ("[" and "]") following this value.</para>
+        </customization>
+    </descriptions>
+    <examples>
+        <example co="object">
+            <para>İzmir (Turkey)</para>
+            <para>Jerusalem [Cherezli, Salomon Israel]; Istanbul (Turkey) [Joseph, Benjamin Ben]</para>
+        </example>
+    </examples>
+    <!-- Omit:
+        additionalInfo
+        marc -->
+    <additionalInfo/>
+    <marc>
+        <dcgMarcMapping/>
+    </marc>
+    <!-- BMR TO DO: XSD -->
+    <xsd/>
+    <!-- Omit:
+        rdf
+        cdmRdf -->
+    <rdf/>
+    <history>
+        <dateCreated>
+            <single>2021-03-20</single>
+        </dateCreated>
+        <created4Coll>Sephardic Studies Digital Collection (p16786coll3)</created4Coll>
+        <justification>SSDC requires a property to provide printer-location values.</justification>
+        <changeLog>
+            <change/>
+        </changeLog>
+    </history>
+</property>
