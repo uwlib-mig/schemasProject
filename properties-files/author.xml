@@ -42,21 +42,45 @@
          <para>If the Creator is determined from a resource other than the item, create a Note.</para>
          <para>If there is no author, leave the field blank.</para>
       </instructions>
-      <customization co="object" dd="ssdc">
-         <para>Search for author name in Library of Congress Name Authority File; if record exists, transcribe name as it appears in the name authority file, including dates.</para>
-         <para>If no record exists, transliterate author name on title page using LOC rules.</para>
+      <customization co="object" dd="p16786coll3">
+         <para>Search the &lt;a href="https://id.loc.gov/authorities/names.html"&gt;Library of Congress Name Authority File&lt;/a&gt; via id.loc.gov for the author name (usually an individual).</para>
+         <para>If a potential match is found, confirm that it is the person associated with the resource: it may be helpful to review information included in the web display such as source(s) of information and occupation (for persons), and/or to follow the links provided for exact and/or closely matching concepts from other schemes.</para>
+         <para>Copy the name string for use just as it appears at the top of the page, above the URI(s), including dates.</para>
+         <para>If no record exists, Romanize the author name as it appears on the title page (or elsewhere if not on the title page) according to the ALA-LC &lt;a href="https://www.loc.gov/catdir/cpso/romanization/ladino.pdf"&gt;Ladino romanization table&lt;/a&gt;.</para>
+         <para>Record personal names as "Lastname, Firstname".</para>
+         <para>For a personal name like Alexander Ben Guiat, "Ben" is considered part of the first name and is transcribed as: "Guiat, Alexander Ben".</para>
          <para>Author names usually appear on title page after the following designations: el autor; kompuesto; por.</para>
+         <para>If entering multiple values for this property, separate each using a semicolon and space (“; “). Order of values does not matter.</para>
+         <para>Required for all compound objects.</para>
+      </customization>
+      <customization co="no" dd="p16786coll3">
+         <para>Search the &lt;a href="https://id.loc.gov/authorities/names.html"&gt;Library of Congress Name Authority File&lt;/a&gt; via id.loc.gov for the author name (usually an individual).</para>
+         <para>If a potential match is found, confirm that it is the person associated with the resource: it may be helpful to review information included in the web display such as source(s) of information and occupation (for persons), and/or to follow the links provided for exact and/or closely matching concepts from other schemes.</para>
+         <para>Copy the name string for use just as it appears at the top of the page, above the URI(s), including dates.</para>
+         <para>If no record exists, Romanize the author name as it appears on the title page (or elsewhere if not on the title page) according to the ALA-LC &lt;a href="https://www.loc.gov/catdir/cpso/romanization/ladino.pdf"&gt;Ladino romanization table&lt;/a&gt;.</para>
+         <para>Record personal names as "Lastname, Firstname".</para>
+         <para>For a personal name like Alexander Ben Guiat, "Ben" is considered part of the first name and is transcribed as: "Guiat, Alexander Ben".</para>
+         <para>Author names usually appear on title page after the following designations: el autor; kompuesto; por.</para>
+         <para>If entering multiple values for this property, separate each using a semicolon and space (“; “). Order of values does not matter.</para>
+         <para>Required for all standalone objects.</para>
       </customization>
    </descriptions>
    <examples>
       <example co="all">
          <para>Strong, Lyman W.</para>
       </example>
-      <customization co="object" dd="ssdc">
+      <customization co="object" dd="p16786coll3">
+         <para>Saint-Pierre, Bernardin de, 1737-1814.</para>
+      </customization>
+      <customization co="no" dd="p16786coll3">
          <para>Saint-Pierre, Bernardin de, 1737-1814.</para>
       </customization>
    </examples>
-   <additionalInfo/>
+   <additionalInfo>
+      <admin co="agnostic">
+         <para>Sephardic Studies Digital Collection [p16786coll3]: Request controlled-vocabulary ON for this property.</para>
+      </admin>
+   </additionalInfo>
    <marc>
       <dcgMarcMapping/>
       <marcNotes/>
@@ -84,6 +108,7 @@
       <changeLog>
          <change/>
          <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
+         <change date="2021-03-20">Add custom instructions and examples for SSDC (p16786coll3).</change>
       </changeLog>
    </history>
 </property>
