@@ -68,8 +68,13 @@
          <para>Values for this property are taken from the LC Subject Headings list (LCSH) at http://authorities.loc.gov or http://id.loc.gov.</para>
          <para>Separate multiple headings with a semi-colon.</para>
       </customization>
-      <customization co="object" dd="ssdc">
-         <!-- BMR: Enter instructions based on proper formatting for multiple values in spreadsheet -->
+      <customization co="object" dd="p16786coll3">
+         <para>Leave empty during initial metadata creation; UW Libraries catalogers will provide LSCH subjects.</para>
+         <para>Be sure to enter the value "xyz" in the "Cataloging" field to alert catalogers that this item needs subject headings.</para>
+      </customization>
+      <customization co="no" dd="p16786coll3">
+         <para>Leave empty during initial metadata creation; UW Libraries catalogers will provide LSCH subjects.</para>
+         <para>Be sure to enter the value "xyz" in the "Cataloging" field to alert catalogers that this item needs subject headings.</para>
       </customization>
    </descriptions>
    <examples>
@@ -78,7 +83,6 @@
          <para>McGraw, John Harte, 1911—Statues—Washington (State)—Seattle; Log buildings—Alaska—Fort Yukon</para>
       </example>
       <example co="object">
-         <!-- BMR: May need new examples depending on metadata-spreadsheet formatting requirements -->
          <para>Markets—Washington (State)—Seattle</para>
          <para>McGraw, John Harte, 1911—Statues—Washington (State)—Seattle; Log buildings—Alaska—Fort Yukon</para>
       </example>
@@ -86,6 +90,12 @@
          <para>Markets—Washington (State)—Seattle</para>
          <para>McGraw, John Harte, 1911—Statues—Washington (State)—Seattle; Log buildings—Alaska—Fort Yukon</para>
       </example>
+      <customization co="object" dd="p16786coll3">
+         <para>[Leave empty during initial metadata creation; cataloging staff will provide values.]</para>
+      </customization>
+      <customization co="no" dd="p16786coll3">
+         <para>[Leave empty during initial metadata creation; cataloging staff will provide values.]</para>
+      </customization>
    </examples>
    <additionalInfo/>
    <marc>
@@ -139,6 +149,7 @@
       <changeLog>
          <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
          <change date="2019-05-19">Added info for krab; added info for cdm compound objects</change>
+         <change date="2021-03-21">Added custom instructions and examples for SSDC.</change>
       </changeLog>
    </history>
 </property>
