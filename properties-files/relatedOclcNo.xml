@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md 
+    http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+    <uid>p124</uid>
+    <labels>
+        <platformIndependent>relatedOclcNo</platformIndependent>
+        <!-- BMR TO DO: Reconsider mapping options (related? probably not though) -->
+        <dc>none</dc>
+    </labels>
+    <uwRequired>
+        <uwStandalone>no</uwStandalone>
+        <uwObject>no</uwObject>
+        <uwItem>no</uwItem>
+    </uwRequired>
+    <cdm>
+        <label>Related OCLC Record</label>
+        <cdmDatatype>text</cdmDatatype>
+        <cdmLarge>no</cdmLarge>
+        <searchable>yes</searchable>
+        <hidden>no</hidden>
+        <cdmRequired>no</cdmRequired>
+        <cdmControlledVocab>no</cdmControlledVocab>
+    </cdm>
+    <!-- omit dspace -->
+    <dspace>
+        <dspaceProperty/>
+    </dspace>
+    <descriptions>
+        <definition>
+            <para>Number for an OCLC record related to the digital resource, for example, a record for a physical item from which the digital surrogate was created.</para>
+        </definition>
+        <customization co="object" dd="p16786coll3">
+            <para>Leave empty during initial metadata creation; UW Libraries catalogers will provide an OCLC number or numbers if a record exists.</para>
+            <para>Be sure to enter the value "xyz" in the "Cataloging" field to alert catalogers that this item needs an OCLC number if applicable.</para>
+        </customization>
+        <customization co="no" dd="p16786coll3">
+            <para>Leave empty during initial metadata creation; UW Libraries catalogers will provide an OCLC number or numbers if a record exists.</para>
+            <para>Be sure to enter the value "xyz" in the "Cataloging" field to alert catalogers that this item needs an OCLC number if applicable.</para>
+        </customization>
+    </descriptions>
+    <examples>
+        <example co="object">
+            <para>[Leave empty during initial metadata creation; cataloging staff will provide values.]</para>
+        </example>
+        <example co="no">
+            <para>[Leave empty during initial metadata creation; cataloging staff will provide values.]</para>
+        </example>
+    </examples>
+    <!-- Omit:
+        additionalInfo
+        marc -->
+    <additionalInfo/>
+    <marc>
+        <dcgMarcMapping/>
+    </marc>
+    <!-- BMR TO DO: XSD -->
+    <xsd/>
+    <!-- Omit:
+        rdf
+        cdmRdf -->
+    <rdf/>
+    <history>
+        <dateCreated>
+            <single>2021-03-21</single>
+        </dateCreated>
+        <created4Coll>Sephardic Studies Digital Collection (p16786coll3)</created4Coll>
+        <justification>SSDC requires a property to provide related OCLC records to support scholarship.</justification>
+        <changeLog>
+            <change/>
+        </changeLog>
+    </history>
+</property>
