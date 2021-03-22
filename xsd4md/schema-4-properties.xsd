@@ -4,6 +4,12 @@
     targetNamespace="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
     xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md">
 
+    <!-- vesion 0.2 2017-11-06 
+         1 added new element uwRequired with subelements
+         2 removed /cdm/uwRequired
+         3 added attribute to /property/xsd: @level
+         -->
+
     <xs:import namespace="http://www.w3.org/XML/1998/namespace"
         schemaLocation="http://www.w3.org/2001/03/xml.xsd"/>
 
@@ -11,21 +17,14 @@
         schemaLocation="https://www.w3.org/2001/XMLSchema.xsd"/>
 
     <xs:annotation>
-        <xs:documentation>Schema to validate properties used by UW Libraries</xs:documentation>
+        <xs:documentation>Schema to validate properties used by UW Libraries.</xs:documentation>
     </xs:annotation>
 
-    <xs:element name="property" type="propertyType">
-        <xs:annotation>
-            <xs:documentation>Root element of the property file; no character data at this level, only child elements</xs:documentation>
-        </xs:annotation>
-    </xs:element>
+    <xs:element name="property" type="propertyType"> </xs:element>
 
     <xs:complexType name="propertyType">
         <xs:sequence>
             <xs:element name="uid">
-                <xs:annotation>
-                    <xs:documentation>Property ID number; must be unique within property files; use query to fetch existing property ID numbers before assigning</xs:documentation>
-                </xs:annotation>
                 <xs:simpleType>
                     <xs:restriction base="xs:ID">
                         <xs:pattern value="p[0-9]+"/>
@@ -49,20 +48,9 @@
 
     <xs:complexType name="labelType">
         <xs:sequence>
-            <xs:element name="platformIndependent" type="xs:string">
-                <xs:annotation>
-                    <xs:documentation>A label for the local property, as defined in the property file within which this element occurs</xs:documentation>
-                </xs:annotation>
-            </xs:element>
-            <xs:element name="dc" type="dcterms">
-                <xs:annotation>
-                    <xs:documentation>[NEEDS REVIEW: BMR and TG discussed how local props are mapped to either a DC element **or a DC term, presented as a qualified element in the admin interface (?)**] A label used to indicate the local property's mapping to either a Dublin Core element or term</xs:documentation>
-                </xs:annotation>
-            </xs:element>
+            <xs:element name="platformIndependent" type="xs:string"/>
+            <xs:element name="dc" type="dcterms"/>
             <xs:element name="dcNotEng" minOccurs="0" maxOccurs="unbounded">
-                <xs:annotation>
-                    <xs:documentation>[NEEDS DOCUMENTATION]</xs:documentation>
-                </xs:annotation>
                 <xs:complexType>
                     <xs:simpleContent>
                         <xs:extension base="xs:string">
@@ -76,26 +64,10 @@
 
     <xs:complexType name="uwRequiredType">
         <xs:sequence>
-            <xs:element name="uwStandalone" type="yesNo">
-                <xs:annotation>
-                    <xs:documentation>Enter 'yes' to require a value for this property for standalone items in collections modeled using a data dictionary including this property; enter 'no' to make value(s) optional in such collections</xs:documentation>
-                </xs:annotation>
-            </xs:element>
-            <xs:element name="uwObject" type="yesNo">
-                <xs:annotation>
-                    <xs:documentation>Enter 'yes' to require a value for this property for compound objects--at the object-level--in collections modeled using a data dictionary including this property; enter 'no' to make value(s) optional in such collections</xs:documentation>
-                </xs:annotation>
-            </xs:element>
-            <xs:element name="uwItem" type="yesNo">
-                <xs:annotation>
-                    <xs:documentation>Enter 'yes' to require a value for this property for compound objects--at the item-level--in collections modeled using a data dictionary including this property; enter 'no' to make value(s) optional in such collections</xs:documentation>
-                </xs:annotation>
-            </xs:element>
-            <xs:element name="uwCustom" type="uwCustomRequiredType" minOccurs="0">
-                <xs:annotation>
-                    <xs:documentation>[NEEDS DOCUMENTATION]</xs:documentation>
-                </xs:annotation>
-            </xs:element>
+            <xs:element name="uwStandalone" type="yesNo"/>
+            <xs:element name="uwObject" type="yesNo"/>
+            <xs:element name="uwItem" type="yesNo"/>
+            <xs:element name="uwCustom" type="uwCustomRequiredType" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
 
@@ -118,67 +90,27 @@
 
     <xs:complexType name="cdmType">
         <xs:sequence>
-            <xs:element name="label" type="xs:string">
-                <xs:annotation>
-                    <xs:documentation>Property label as it will appear in the CONTENTdm user interface; use title-case capitalization for property labels here</xs:documentation>
-                </xs:annotation>
-            </xs:element>
-            <xs:element name="exportLabel" minOccurs="0" type="xs:string">
-                <xs:annotation>
-                    <xs:documentation>[NEEDS DOCUMENTATION]</xs:documentation>
-                </xs:annotation>
-            </xs:element>
-            <xs:element name="cdmDatatype" type="cdmDatatypeType">
-                <xs:annotation>
-                    <xs:documentation>[NEEDS REVIEW--wording; is 'category' the right way to say this?]Enter a category which values for this property must adhere to: 'text': textual or numeric values which are not dates, 'date': textual or numeric values which are dates, 'fullText': [?], 'cdmAdministrative': [?], or 'uwAdministrative': [?]</xs:documentation>
-                </xs:annotation>
-            </xs:element>
-            <xs:element name="cdmLarge" type="yesNo">
-                <xs:annotation>
-                    <xs:documentation>[NEEDS DOCUMENTATION--I imagine this makes this property/value(s) appear larger in the Cdm UI?]</xs:documentation>
-                </xs:annotation>
-            </xs:element>
-            <xs:element name="searchable" type="yesNo">
-                <xs:annotation>
-                    <xs:documentation>[NEEDS REVIEW]Enter 'yes' if values given for this property should be indexed and searchable, 'no' if not</xs:documentation>
-                </xs:annotation>
-            </xs:element>
-            <xs:element name="hidden" type="yesNo">
-                <xs:annotation>
-                    <xs:documentation>[NEEDS REVIEW--I'm assuming that if they are hidden in the user interface, they'll show in the admin one]Enter 'yes' if this property and its value(s) should not be shown in the CONTENTdm user interface (they will be visible only in the administrative interface)</xs:documentation>
-                </xs:annotation>
-            </xs:element>
-            <xs:element name="cdmRequired" type="yesNo">
-                <xs:annotation>
-                    <xs:documentation>[NEEDS DOCUMENTATION--this indicates properties required across collections? Or required by the CONTENTdm platform?]</xs:documentation>
-                </xs:annotation>
-            </xs:element>
-            <xs:element name="cdmControlledVocab" type="yesNo">
-                <xs:annotation>
-                    <xs:documentation>[NEEDS REVIEW]Enter 'yes' if values for this field must come from a controlled vocabulary managed within the CONTENTdm platform</xs:documentation>
-                </xs:annotation>
-            </xs:element>
+            <xs:element name="label" type="xs:string"/>
+            <xs:element name="exportLabel" minOccurs="0" type="xs:string"/>
+            <xs:element name="cdmDatatype" type="cdmDatatypeType"/>
+            <xs:element name="cdmLarge" type="yesNo"/>
+            <xs:element name="searchable" type="yesNo"/>
+            <xs:element name="hidden" type="yesNo"/>
+            <xs:element name="cdmRequired" type="yesNo"/>
+            <xs:element name="cdmControlledVocab" type="yesNo"/>
         </xs:sequence>
     </xs:complexType>
 
     <!-- We'll want an enumeration of DSpace properties for use with the dspaceProperty element -->
     <xs:complexType name="dspaceType">
         <xs:sequence>
-            <xs:element name="dspaceProperty" type="xs:string">
-                <xs:annotation>
-                    <xs:documentation>[NEEDS DOCUMENTATION]</xs:documentation>
-                </xs:annotation>
-            </xs:element>
+            <xs:element name="dspaceProperty" type="xs:string"/>
         </xs:sequence>
     </xs:complexType>
 
     <xs:complexType name="descriptionsType">
         <xs:sequence>
-            <xs:element name="definition" type="paraType" maxOccurs="unbounded">
-                <xs:annotation>
-                    <xs:documentation>Enter a definition for the property here; this definition should apply regardless of which cdata dictionary or collection the property is used in; definition information may be subdivided using multiple &lt;para&gt; elements</xs:documentation>
-                </xs:annotation>
-            </xs:element>
+            <xs:element name="definition" type="paraType" maxOccurs="unbounded"/>
             <xs:element name="instructions" type="paraType4co" maxOccurs="unbounded" minOccurs="0"/>
             <xs:element ref="customization" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
@@ -186,16 +118,8 @@
 
     <xs:complexType name="examplesType">
         <xs:sequence>
-            <xs:element name="example" type="paraType4co" maxOccurs="unbounded">
-                <xs:annotation>
-                    <xs:documentation>[NEEDS CONFIRMATION]When creating a new property; examples at object, item, and/or standalone level must be entered using the example element in order to be output to derivative HTML DDs</xs:documentation>
-                </xs:annotation>
-            </xs:element>
-            <xs:element ref="customization" minOccurs="0" maxOccurs="unbounded">
-                <xs:annotation>
-                    <xs:documentation>[NEEDS CONFIRMATION]The customization element may be used as a child of descriptions in lieu of instructions to provide unique instructions for a given DD at the object, item, or standalone level; it should not be used when no values have yet been given for an instructions element at the required level, in these cases it may not be output properly to derivative HTML DDs</xs:documentation>
-                </xs:annotation>
-            </xs:element>
+            <xs:element name="example" type="paraType4co" maxOccurs="unbounded"/>
+            <xs:element ref="customization" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
 
@@ -314,23 +238,22 @@
             <xs:element name="localNote" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
         </xs:sequence>
     </xs:complexType>
-
+    
     <xs:complexType name="cdmRdfType">
         <xs:sequence>
             <xs:element name="dpla" type="dplaType" minOccurs="0"/>
             <xs:element name="bibframe" type="bibframeType" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-
+    
     <xs:complexType name="dplaType">
         <xs:sequence>
-            <xs:element name="map" minOccurs="1" maxOccurs="unbounded">
-                <!-- property in dpla map to which cdm property is mapped; multiple OK; if more than 1, additional must have @class -->
+            <xs:element name="map" minOccurs="1" maxOccurs="unbounded"><!-- property in dpla map to which cdm property is mapped; multiple OK; if more than 1, additional must have @class -->
                 <xs:complexType>
                     <xs:simpleContent>
                         <xs:extension base="xs:string">
                             <xs:attribute name="class" type="dplaClassType"/>
-                            <xs:attribute ref="xml:lang"/>
+                            <xs:attribute ref="xml:lang"></xs:attribute>
                         </xs:extension>
                     </xs:simpleContent>
                 </xs:complexType>
@@ -365,7 +288,7 @@
                                         <xs:complexType>
                                             <xs:simpleContent>
                                                 <xs:extension base="xs:string">
-                                                  <xs:attribute ref="xml:lang"/>
+                                                    <xs:attribute ref="xml:lang"/>
                                                 </xs:extension>
                                             </xs:simpleContent>
                                         </xs:complexType>
@@ -374,15 +297,15 @@
                                         <xs:complexType>
                                             <xs:simpleContent>
                                                 <xs:extension base="xs:string">
-                                                  <xs:attribute name="lit" type="yesNo"/>
-                                                  <xs:attribute name="node">
-                                                  <xs:simpleType>
-                                                  <xs:restriction base="xs:string">
-                                                  <xs:enumeration value="xml"/>
-                                                  <xs:enumeration value="rdf"/>
-                                                  </xs:restriction>
-                                                  </xs:simpleType>
-                                                  </xs:attribute>
+                                                    <xs:attribute name="lit" type="yesNo"/>
+                                                    <xs:attribute name="node">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:enumeration value="xml"/>
+                                                                <xs:enumeration value="rdf"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:attribute>
                                                 </xs:extension>
                                             </xs:simpleContent>
                                         </xs:complexType>
@@ -395,7 +318,7 @@
             </xs:element>
         </xs:sequence>
     </xs:complexType>
-
+    
     <xs:simpleType name="dplaClassType">
         <xs:restriction base="xs:string">
             <xs:enumeration value="SourceResource"/>
@@ -405,12 +328,11 @@
             <xs:enumeration value="Rights"/>
             <xs:enumeration value="Agent"/>
             <xs:enumeration value="uri"/>
-            <xs:enumeration value="Literal"/>
-            <!-- Is this class needed? -->
+            <xs:enumeration value="Literal"/><!-- Is this class needed? -->
             <xs:enumeration value="none"/>
-        </xs:restriction>
+            </xs:restriction>
     </xs:simpleType>
-
+    
     <xs:simpleType name="rdfObjectType">
         <xs:restriction base="xs:string">
             <xs:enumeration value="uri"/>
@@ -420,7 +342,7 @@
         </xs:restriction>
     </xs:simpleType>
 
-    <xs:complexType name="bibframeType"/>
+<xs:complexType name="bibframeType"></xs:complexType>
 
     <xs:complexType name="externalPropertyType">
         <xs:sequence>
@@ -673,18 +595,11 @@
     </xs:attribute>
     -->
 
-    <xs:element name="customization" type="custParaType">
-        <xs:annotation>
-            <xs:documentation>The customization element uses 2 attributes, @co and @dd. The latter
-                requires that the @dd code is known at the time the application profile is written.
-                Sometimes that code is not known, resulting in use of a temp code; when the actual
-                code is revealed, it must be entered in multiple locations to replace the temp code,
-                thereby minimizing orthogonality of the system. This should be repaired</xs:documentation>
-        </xs:annotation>
-    </xs:element>
+    <xs:element name="customization" type="custParaType"/>
 
     <xs:complexType name="custParaType">
-        
+        <xs:annotation>
+            <xs:appinfo>The customization element uses 2 attributes, @co and @dd. The latter requires that the @dd code is known at the time the application profile is written. Sometimes that code is not known, resulting in use of a temp code; when the actual code is revealed, it must be entered in multiple locations to replace the temp code, thereby minimizing orthogonality of the system. This should be repaired</xs:appinfo></xs:annotation>
         <xs:complexContent>
             <xs:extension base="paraType4co">
                 <xs:attribute name="dd" type="xs:string"/>
