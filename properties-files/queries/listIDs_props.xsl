@@ -11,6 +11,7 @@
                 <xsl:sort order="ascending" select="translate(pf:uid, 'p', '')" data-type="number"/>
             </xsl:apply-templates>
         </get_info>
+        <!-- BMR: Would be good to add a *test for duplicate* property uids -->
     </xsl:template>
 
     <xsl:template match="pf:property">
