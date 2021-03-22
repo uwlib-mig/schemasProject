@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md 
+    http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+    <uid>p125</uid>
+    <labels>
+        <platformIndependent>donor</platformIndependent>
+        <dc>none</dc>
+    </labels>
+    <uwRequired>
+        <uwStandalone>no</uwStandalone>
+        <uwObject>no</uwObject>
+        <uwItem>no</uwItem>
+    </uwRequired>
+    <cdm>
+        <label>Donor</label>
+        <cdmDatatype>text</cdmDatatype>
+        <cdmLarge>no</cdmLarge>
+        <searchable>yes</searchable>
+        <hidden>no</hidden>
+        <cdmRequired>no</cdmRequired>
+        <cdmControlledVocab>yes</cdmControlledVocab>
+    </cdm>
+    <!-- omit dspace -->
+    <dspace>
+        <dspaceProperty/>
+    </dspace>
+    <descriptions>
+        <definition>
+            <para>A person or corporate body who donated the physical item to the University of Washington Libraries or an affiliated academic unit.</para>
+        </definition>
+        <customization co="object" dd="p16786coll3">
+            <para>Find donor name in Sephardic Studies Collection Master Catalog.</para>
+            <para>Contributor is considered a donor if the catalog notes that the item is property of Sephardic Studies.</para>
+            <para>When appropriate, search the &lt;a href="https://id.loc.gov/authorities/names.html"&gt;Library of Congress Name Authority File&lt;/a&gt; via id.loc.gov for the donor name.</para>
+            <para>If a potential match is found, confirm that it is the person associated with the resource: it may be helpful to review information included in the web display such as source(s) of information and occupation (for persons), and/or to follow the links provided for exact and/or closely matching concepts from other schemes.</para>
+            <para>Copy the name string for use just as it appears at the top of the page, above the URI(s), including dates.</para>
+            <para>If no record exists, record personal names as "Lastname, Firstname".</para>
+            <para>For a personal name like Alexander Ben Guiat, "Ben" is considered part of the first name and is transcribed as: "Guiat, Alexander Ben".</para>
+            <para>If entering multiple values for this property, separate each using a semicolon and space (“; “). Order of values does not matter.</para>
+            <para>For every item, either a donor or lender must be credited.</para>
+        </customization>
+        <customization co="no" dd="p16786coll3">
+            <para>Find donor name in Sephardic Studies Collection Master Catalog.</para>
+            <para>Contributor is considered a donor if the catalog notes that the item is property of Sephardic Studies.</para>
+            <para>When appropriate, search the &lt;a href="https://id.loc.gov/authorities/names.html"&gt;Library of Congress Name Authority File&lt;/a&gt; via id.loc.gov for the donor name.</para>
+            <para>If a potential match is found, confirm that it is the person associated with the resource: it may be helpful to review information included in the web display such as source(s) of information and occupation (for persons), and/or to follow the links provided for exact and/or closely matching concepts from other schemes.</para>
+            <para>Copy the name string for use just as it appears at the top of the page, above the URI(s), including dates.</para>
+            <para>If no record exists, record personal names as "Lastname, Firstname".</para>
+            <para>For a personal name like Alexander Ben Guiat, "Ben" is considered part of the first name and is transcribed as: "Guiat, Alexander Ben".</para>
+            <para>If entering multiple values for this property, separate each using a semicolon and space (“; “). Order of values does not matter.</para>
+            <para>For every item, either a donor or lender must be credited.</para>
+        </customization>
+    </descriptions>
+    <examples>
+        <example co="object">
+            <para>Azose, Isaac</para>
+        </example>
+        <example co="no">
+            <para>Azose, Isaac</para>
+        </example>
+    </examples>
+    <!-- Omit:
+        additionalInfo
+        marc -->
+    <additionalInfo/>
+    <marc>
+        <dcgMarcMapping/>
+    </marc>
+    <!-- BMR TO DO: XSD -->
+    <xsd/>
+    <!-- Omit:
+        rdf
+        cdmRdf -->
+    <rdf/>
+    <history>
+        <dateCreated>
+            <single>2021-03-21</single>
+        </dateCreated>
+        <created4Coll>Sephardic Studies Digital Collection (p16786coll3)</created4Coll>
+        <justification>SSDC requires a property to provide donor name values.</justification>
+        <changeLog>
+            <change/>
+        </changeLog>
+    </history>
+</property>
