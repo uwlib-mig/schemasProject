@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema"
-   xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+   xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md 
+   http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
    <uid>p90</uid>
    <labels>
       <platformIndependent>type</platformIndependent>
@@ -31,24 +32,24 @@
       <instructions co="no">
          <para>Input a value from the Dublin Core Type Vocabulary at http://dublincore.org/documents/dcmi-terms/.</para>
       </instructions>
+      <instructions co="item">
+         <para>Optional: input a value from the Dublin Core Type Vocabulary at http://dublincore.org/documents/dcmi-terms/.</para>
+         <para>Not required for all compound object items. Use as needed. Recommended: enter type values when the collection resources are mixed media.</para>
+      </instructions>
+      <!-- NOTE
+         This property has uwRequired > object = 'yes' 
+         Yet as noted here MIG decided that it should *not* be included in the object description -->
       <!-- MIG decision 2020-05: do not include this property in the object description
          <instructions co="object">
          <para>Input a value from the Dublin Core Type Vocabulary at http://dublincore.org/documents/dcmi-terms/.</para>
          <para>Separate multiple values with a semi-colon.</para>
       </instructions>-->
-      <instructions co="item">
-         <para>Optional: input a value from the Dublin Core Type Vocabulary at http://dublincore.org/documents/dcmi-terms/.</para>
-         <para>Not required for all compound object items. Use as needed. Recommended: enter type values when the collection resources are mixed media.</para>
-      </instructions>
-      <customization co="no" dd="ssdc">
-         <para>Input a value from the &lt;a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7"&gt;DCMI Type Vocabulary&gt;.</para>
-         <!-- BMR: Add language re: entering multiple values -->
-         <!-- BMR: Add instruction re: using IRI stub, not label -->
+      <customization co="item" dd="p16786coll3">
+         <para>Optional: input a value from the &lt;a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7"&gt;DCMI Type Vocabulary&lt;/a&gt;.</para>
+         <para>Not required for all compound object items. Use as needed. General recommendation is to enter type values when the collection resources are mixed media.</para>
       </customization>
-      <customization co="item" dd="ssdc">
-         <para>Input a value from the &lt;a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7"&gt;DCMI Type Vocabulary&gt;.</para>
-         <!-- BMR: Add language re: entering multiple values -->
-         <!-- BMR: Add instruction re: using IRI stub, not label -->
+      <customization co="no" dd="p16786coll3">
+         <para>Optional: input a value from the &lt;a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7"&gt;DCMI Type Vocabulary&lt;/a&gt;.</para>
       </customization>
    </descriptions>
    <examples>
@@ -86,7 +87,6 @@
       <customization co="no" dd="gd">
          <para>MovingImage</para>
       </customization>
-      <!-- BMR: Add customization for SSDC, for both item and standalone, showing multiple values -->
    </examples>
    <additionalInfo/>
    <marc>
@@ -171,6 +171,7 @@
          <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
          <change>Added a customized example for rp as standalone.</change>
          <change date="2020-06-03">Removed the input instructions and exampes for object</change>
+         <change date="2021-03-21">Added custom instructions for SSDC.</change>
       </changeLog>
    </history>
 </property>
