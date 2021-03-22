@@ -34,16 +34,40 @@
          <para>Note any key events, organizations, perspectives, and significant names that may have come up in the interview.</para>
          <para>When appropriate, note interviewees contributions to encouraging a diverse and inclusive campus.</para>
       </customization>
+      <customization co="object" dd="p16786coll3">
+         <para>Briefly summarize the content of the work to aid other catalogers.</para>
+         <para>Define the book's genre, subject, and intended use.</para>
+         <para>Descriptions of novels should briefly summarize the arc of the story.</para>
+         <para>Religious texts, such as prayer books and bibles, should note for which Jewish holiday and/or ritual they are used.</para>
+         <para>Note if the work is a translation, and the author and language of the original text.</para>
+         <para>Required for all book compound objects which require subject analysis from cataloging staff.</para>
+      </customization>
+      <customization co="no" dd="p16786coll3">
+         <para>Briefly summarize the content of the work to aid other catalogers.</para>
+         <para>Define the book's genre, subject, and intended use.</para>
+         <para>Descriptions of novels should briefly summarize the arc of the story.</para>
+         <para>Religious texts, such as prayer books and bibles, should note for which Jewish holiday and/or ritual they are used.</para>
+         <para>Note if the work is a translation, and the author and language of the original text.</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="object"/>
-
+      <example co="no"/>
       <customization co="object" dd="uwtoh">
          <para>Joao Fonseca discusses his years in the UWT Liberal Studies / Interdisciplinary Arts and Sciences from 1990 to present. Fonseca addresses the development of the department from its founding to its establishment as a school in 2014. Describes the many contributions of Wiliam Richardson and Michael Allen. Includes a description of the acquisition and display of Buster Simpson's "Parapet Relay" iron and bronze sidewalk plaques, referencing the role of the Washington State Art Commission.</para>
       </customization>
+      <customization co="object" dd="p16786coll3">
+         <para>A Ladino translation of the French novel "Paul et Virginie" by Bernardin de Saint-Pierre (1737-1814). This short love story, set in the 18th century on a French island, tells of a man a woman separated by distance and circumstance, never to be united before their untimely deaths.</para>
+         <para>This is a parallel Hebrew-Ladino translation of the Book of Ruth with corresponding commentary in Ladino. The Book of Ruth is part of the Old Testament found in the section known as Ketuvim (Writings). It is traditionally read on the Jewish holiday of Shavuot (Feast of Weeks).</para>
+      </customization>
+      <customization co="no" dd="p16786coll3">
+         <para>Rosh ha-Shanah postcard featuring a pink plush heart with the words “טובה לשנה” “La-Shanah Tovah” [A Happy New Year] embroidered in the center with gold glitter. Postcard features a glitter design of a Star of David below two doves. In the center of the star is the image of a woman’s hand shaking a man’s hand. Printed in English, “With My Good Wishes And Hearty Greetings, A Happy New Year” and “Le-Shanah Tova Tikhtevu” [May you be inscribed for a Happy New Year] printed in Hebrew characters.</para>
+      </customization>
    </examples>
    <additionalInfo>
-      <admin co="object"/>
+      <admin co="agnostic">
+         <para>Sephardic Studies Digital Collection [p16786coll3]: Request hidden ON for this property.</para>
+      </admin>
    </additionalInfo>
    <marc>
       <dcgMarcMapping/>
@@ -64,7 +88,7 @@
       <created4Coll>University of Washington Tacoma Oral Histories</created4Coll>
       <justification>The UWT Oral Histories project wanted to use a single field to index things like organizations and individuals discussed, interview abstract, ideas/concepts, place, time, etc.</justification>
       <changeLog>
-         <change/>
+         <change date="2021-03-21">Add custom instructions and examples, and additional info, for SSDC.</change>
       </changeLog>
    </history>
 </property>
