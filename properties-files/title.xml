@@ -140,6 +140,7 @@
          <para>Do not spell out page numbers, use numerals.</para>
          <para>Required for all compound-object items.</para>
       </customization>
+      <!-- Draft instructions for SSDC (dd="p16786coll3") standalones; no standalones expected in coll at this time -->
       <customization co="no" dd="p16786coll3">
          <para>Enter the Ladino title of the resource in Hebrew script as it appears on the title page or other source of information.</para>
          <para>Record title exactly as found, even with printer errors.</para>

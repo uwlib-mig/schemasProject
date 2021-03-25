@@ -68,17 +68,14 @@
          <para>Enter "Hunt (Yvonne) Greek Folk Dance Collection"</para>
       </customization>
       <customization co="object" dd="p16786coll3">
-         <para>Enter the name given to the digital Collection.</para>
          <para>Enter "Sephardic Studies Digital Collection at the University of Washington".</para>
          <para>Required for all compound objects.</para>
       </customization>
       <customization co="item" dd="p16786coll3">
-         <para>Enter the name given to the digital Collection.</para>
          <para>Enter "Sephardic Studies Digital Collection at the University of Washington".</para>
          <para>Required for all compound-object items.</para>
       </customization>
       <customization co="no" dd="p16786coll3">
-         <para>Enter the name given to the digital Collection.</para>
          <para>Enter "Sephardic Studies Digital Collection at the University of Washington".</para>
          <para>Required for all standalone objects.</para>
       </customization>

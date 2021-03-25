@@ -32,7 +32,7 @@
             <para>A person or corporate body responsible for translating the textual content of the resource from one language into another.</para>
         </definition>
         <customization co="object" dd="p16786coll3">
-            <para>Search the &lt;a href="https://id.loc.gov/authorities/names.html&gt;Library of Congress Name Authority File&lt;/a&gt; via id.loc.gov for the translator name.</para>
+            <para>Search the &lt;a href="https://id.loc.gov/authorities/names.html"&gt;Library of Congress Name Authority File&lt;/a&gt; via id.loc.gov for the translator name.</para>
             <para>If a potential match is found, confirm that it is the person associated with the resource: it may be helpful to review information included in the web display such as source(s) of information and occupation (for persons), and/or to follow the links provided for exact and/or closely matching concepts from other schemes.</para>
             <para>Copy the name string for use just as it appears at the top of the page, above the URI(s), including dates.</para>
             <para>If no record exists, Romanize the translator name as it appears on the title page (or elsewhere if not on the title page) according to the ALA-LC &lt;a href="https://www.loc.gov/catdir/cpso/romanization/ladino.pdf"&gt;Ladino romanization table&lt;/a&gt;.</para>
@@ -42,7 +42,7 @@
             <para>If entering multiple values for this property, separate each using a semicolon and space ("; "). Order of values does not matter.</para>
         </customization>
         <customization co="no" dd="p16786coll3">
-            <para>Search the &lt;a href="https://id.loc.gov/authorities/names.html&gt;Library of Congress Name Authority File&lt;/a&gt; via id.loc.gov for the translator name.</para>
+            <para>Search the &lt;a href="https://id.loc.gov/authorities/names.html"&gt;Library of Congress Name Authority File&lt;/a&gt; via id.loc.gov for the translator name.</para>
             <para>If a potential match is found, confirm that it is the person associated with the resource: it may be helpful to review information included in the web display such as source(s) of information and occupation (for persons), and/or to follow the links provided for exact and/or closely matching concepts from other schemes.</para>
             <para>Copy the name string for use just as it appears at the top of the page, above the URI(s), including dates.</para>
             <para>If no record exists, Romanize the translator name as it appears on the title page (or elsewhere if not on the title page) according to the ALA-LC &lt;a href="https://www.loc.gov/catdir/cpso/romanization/ladino.pdf"&gt;Ladino romanization table&lt;/a&gt;.</para>

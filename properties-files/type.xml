@@ -45,11 +45,11 @@
          <para>Separate multiple values with a semi-colon.</para>
       </instructions>-->
       <customization co="item" dd="p16786coll3">
-         <para>Optional: input a value from the &lt;a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7"&gt;DCMI Type Vocabulary&lt;/a&gt;.</para>
+         <para>Optional: Input a value from the &lt;a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7"&gt;DCMI Type Vocabulary&lt;/a&gt;.</para>
          <para>Not required for all compound object items. Use as needed. General recommendation is to enter type values when the collection resources are mixed media.</para>
       </customization>
       <customization co="no" dd="p16786coll3">
-         <para>Optional: input a value from the &lt;a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7"&gt;DCMI Type Vocabulary&lt;/a&gt;.</para>
+         <para>Input a value from the &lt;a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7"&gt;DCMI Type Vocabulary&lt;/a&gt;.</para>
       </customization>
    </descriptions>
    <examples>
@@ -63,7 +63,7 @@
          <para>Sound; Text; StillImage</para>
       </example>-->
       <example co="item">
-         <para>SillImage</para>
+         <para>StillImage</para>
       </example>
       <customization co="item" dd="uwtoh">
          <para>Sound</para>

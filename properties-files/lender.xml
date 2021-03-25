@@ -32,9 +32,9 @@
             <para>A person or corporate body who lent the physical item to the University of Washington Libraries or an affiliated academic unit for creation of the digital surrogate.</para>
         </definition>
         <customization co="object" dd="p16786coll3">
-            <para>"Find lender name in Sephardic Studies Collection Master Catalog.</para>
+            <para>Find lender name in Sephardic Studies Collection Master Catalog.</para>
             <para>Contributor is considered a lender if the catalog notes that item is still property of that individual.</para>
-            <para>When appropriate, search the &lt;a href="https://id.loc.gov/authorities/names.html&gt;Library of Congress Name Authority File&lt;/a&gt; via id.loc.gov for the lender name.</para>
+            <para>When appropriate, search the &lt;a href="https://id.loc.gov/authorities/names.html"&gt;Library of Congress Name Authority File&lt;/a&gt; via id.loc.gov for the lender name.</para>
             <para>If a potential match is found, confirm that it is the person associated with the resource: it may be helpful to review information included in the web display such as source(s) of information and occupation (for persons), and/or to follow the links provided for exact and/or closely matching concepts from other schemes.</para>
             <para>Copy the name string for use just as it appears at the top of the page, above the URI(s), including dates.</para>
             <para>If no record exists, record personal names as "Lastname, Firstname".</para>
@@ -43,9 +43,9 @@
             <para>For every item, either a donor or lender must be credited.</para>
         </customization>
         <customization co="no" dd="p16786coll3">
-            <para>"Find lender name in Sephardic Studies Collection Master Catalog.</para>
+            <para>Find lender name in Sephardic Studies Collection Master Catalog.</para>
             <para>Contributor is considered a lender if the catalog notes that item is still property of that individual.</para>
-            <para>When appropriate, search the &lt;a href="https://id.loc.gov/authorities/names.html&gt;Library of Congress Name Authority File&lt;/a&gt; via id.loc.gov for the lender name.</para>
+            <para>When appropriate, search the &lt;a href="https://id.loc.gov/authorities/names.html"&gt;Library of Congress Name Authority File&lt;/a&gt; via id.loc.gov for the lender name.</para>
             <para>If a potential match is found, confirm that it is the person associated with the resource: it may be helpful to review information included in the web display such as source(s) of information and occupation (for persons), and/or to follow the links provided for exact and/or closely matching concepts from other schemes.</para>
             <para>Copy the name string for use just as it appears at the top of the page, above the URI(s), including dates.</para>
             <para>If no record exists, record personal names as "Lastname, Firstname".</para>

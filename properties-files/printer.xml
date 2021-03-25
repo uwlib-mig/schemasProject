@@ -41,7 +41,7 @@
             <para>Printer names usually appear on title page after the following designations: bi-defus; estamparia el; estampada; estampado en la estamparia; estampa; estamparor; emprimeria (also abbreviated to emp.); nidpas.</para>
             <para>If entering multiple values for this property, separate each using a semicolon and space ("; "). Order of values does not matter.</para>
         </customization>
-        <customization co="object" dd="p16786coll3">
+        <customization co="no" dd="p16786coll3">
             <para>Search the &lt;a href="https://id.loc.gov/authorities/names.html"&gt;Library of Congress Name Authority File&lt;/a&gt; via id.loc.gov for the printer name (could be an individual or a corporate body).</para>
             <para>If a potential match is found, confirm that it is the person or corporate body associated with the resource: it may be helpful to review information included in the web display such as source(s) of information and occupation (for persons), and/or to follow the links provided for exact and/or closely matching concepts from other schemes.</para>
             <para>Copy the name string for use just as it appears at the top of the page, above the URI(s), including dates.</para>

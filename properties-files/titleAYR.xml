@@ -39,7 +39,7 @@
         </customization>
         <!-- Draft instructions for SSDC (dd="p16786coll3") standalones; no standalones expected in coll at this time -->
         <customization co="no" dd="p16786coll3">
-            <para>Romanize title according to &lt;a href="https://drive.google.com/file/d/1LAvczCjqQc4tZFEa1xTxiEEYfiPUfq3t/view"&gt;Aki Yerushalayim&lt;/a&gt; if needed.</para>
+            <para>Romanize title according to &lt;a href="https://drive.google.com/file/d/1LAvczCjqQc4tZFEa1xTxiEEYfiPUfq3t/view"&gt;Aki Yerushalayim&lt;/a&gt;.</para>
             <para>Use a colon and space (": ") to indicate the break between title and subtitle, even if no colon appears on title page.</para>
             <para>Only Romanize the portion of the title that will be included in the Title field.</para>
             <para>Required for all standalone objects.</para>

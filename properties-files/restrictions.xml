@@ -95,6 +95,9 @@
       <customization co="object" dd="p16786coll3">
          <para>To inquire about permissions, contact sephstud@uw.edu. Please cite the Sephardic Studies Accession Nnumber.</para>
       </customization>
+      <customization co="no" dd="p16786coll3">
+         <para>To inquire about permissions, contact sephstud@uw.edu. Please cite the Sephardic Studies Accession Nnumber.</para>
+      </customization>
    </examples>
    <additionalInfo>
       <admin co="all">
