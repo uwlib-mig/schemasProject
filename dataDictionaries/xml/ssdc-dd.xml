@@ -30,7 +30,7 @@
         <xi:include href="../../properties-files/printer.xml"/><!-- NEW: printer -->
         <xi:include href="../../properties-files/printerLocation.xml"/><!-- NEW: printerLocation -->
         <xi:include href="../../properties-files/translator.xml"/><!-- NEW: translator -->
-        <xi:include href="../../properties-files/ssan.xml"/><!-- NEW: ssac -->
+        <xi:include href="../../properties-files/ssan.xml"/><!-- NEW: ssan -->
         <xi:include href="../../properties-files/subjectsLcsh.xml"/>
         <xi:include href="../../properties-files/relatedOclcNo.xml"/><!-- NEW relatedOclcNo -->
         <xi:include href="../../properties-files/donor.xml"/><!-- NEW: donor -->
