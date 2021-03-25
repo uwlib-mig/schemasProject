@@ -140,8 +140,16 @@
          <para>Do not spell out page numbers, use numerals.</para>
          <para>Required for all compound-object items.</para>
       </customization>
-      <!-- 2021-03: SSDC (dd="p16786coll3") using default standalone instructions at this time; 
-            no standalones expected in collection at this time -->
+      <customization co="no" dd="p16786coll3">
+         <para>Enter the Ladino title of the resource in Hebrew script as it appears on the title page or other source of information.</para>
+         <para>Record title exactly as found, even with printer errors.</para>
+         <para>Roshe tevot (abbreviations) are considered part of the title and should be recorded.</para>
+         <para>Use a colon and space (": ") to indicate the break between title and subtitle, even if no colon appears on title page.</para>
+         <para>Following the title and colon, record a minimum of five words of the subtitle, followed by an ellipsis (“…”) if not recording the complete subtitle.</para>
+         <para>Optional: Record the subtitle as it appears in a matching MARC record verified by cataloging staff; record from the 245 subfield b.</para>
+         <para>Note: subtitles in 245 subfield b will be preceded by a colon (":"); parallel titles will be preceded by an equals sign (“=“) and should not be recorded.</para>
+         <para>Required for all compound objects.</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="no">
