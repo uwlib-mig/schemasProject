@@ -66,18 +66,14 @@
          <para>English</para>
          <para>Spanish</para>
       </example>
-      <customization co="object">
+      <customization dd="p16786coll3" co="object">
          <para>Ladino; Hebrew</para>
       </customization>
-      <customization co="no">
+      <customization dd="p16786coll3" co="no">
          <para>Ladino; Hebrew</para>
       </customization>
    </examples>
-   <additionalInfo>
-      <admin co="agnostic">
-         <para>Sephardic Studies Digital Collection [p16786coll3]: Request controlled-vocabulary ON for this property.</para>
-      </admin>
-   </additionalInfo>
+   <additionalInfo/>
    <marc>
       <dcgMarcMapping/>
       <marcNotes/>
