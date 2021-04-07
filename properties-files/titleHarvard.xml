@@ -36,7 +36,7 @@
             <para>When searching it helps to filter results by language and approximate year.</para>
             <para>If a potentical match is found, copy the title just as it appears in the title field on HOLLIS.</para>
             <para>If no record exists, do not create a Romanized title for this field.</para>
-            <para>Required for all compound objects.</para>
+            <para>Required for all compound objects if available.</para>
         </customization>
         <!-- Draft instructions for SSDC (dd="p16786coll3") standalones; no standalones expected in coll at this time -->
         <customization co="no" dd="p16786coll3">
@@ -44,7 +44,7 @@
             <para>When searching it helps to filter results by language and approximate year.</para>
             <para>If a potentical match is found, copy the title just as it appears in the title field on HOLLIS.</para>
             <para>If no record exists, do not create a Romanized title for this field.</para>
-            <para>Required for all standalone objects.</para>
+            <para>Required for all standalone objects if available.</para>
         </customization>
     </descriptions>
     <examples>
