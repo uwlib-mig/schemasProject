@@ -5,7 +5,7 @@
    <uid>p23</uid>
    <labels>
       <platformIndependent>dateEdtf</platformIndependent>
-      <dc>created</dc>
+      <dc>date</dc>
    </labels>
    <uwRequired>
       <uwStandalone>yes</uwStandalone>
