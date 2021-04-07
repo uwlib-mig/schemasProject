@@ -16,7 +16,7 @@
       <label>Date Edtf</label>
       <cdmDatatype>text</cdmDatatype>
       <cdmLarge>no</cdmLarge>
-      <searchable>no</searchable>
+      <searchable>yes</searchable>
       <hidden>yes</hidden>
       <cdmRequired>no</cdmRequired>
       <cdmControlledVocab>no</cdmControlledVocab>
