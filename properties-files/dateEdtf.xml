@@ -225,6 +225,7 @@
          <change date="2019-05-19">Add krab customizations and any attendant info to support cdm compound objects for that collection.</change>
          <change date="2020-05-19">Commented-out instructions for co items.</change>
          <change date="2021-03-20">Encode EDTF reference URL to output live links to HTML DDs.</change>
+         <change date="2021-04-07">Per MIG feedback on 2021-03-25: 1) make dateEdtf searchable = yes 2) map dateEdtf to "date" (was "created")</change>
       </changeLog>
    </history>
 </property>
