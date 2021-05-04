@@ -7,7 +7,7 @@
     <uid>p117</uid>
     <labels>
         <platformIndependent>titleALALCR</platformIndependent>
-        <dc>title</dc>
+        <dc>alternative</dc>
     </labels>
     <uwRequired>
         <uwStandalone>no</uwStandalone>
