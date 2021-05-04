@@ -16,8 +16,7 @@
     <cdmCode>p16786coll3</cdmCode>
     <properties>
         <xi:include href="../../properties-files/title.xml"/>
-        <xi:include href="../../properties-files/titleALALCR.xml"/><!-- NEW: titleALALCR -->
-        <xi:include href="../../properties-files/titleAYR.xml"/><!-- NEW: titleAYR -->
+        <xi:include href="../../properties-files/titleNonLatin.xml"/><!-- NEW: titleNonLatin -->
         <xi:include href="../../properties-files/titleHarvard.xml"/><!-- NEW: titleHarvard -->
         <xi:include href="../../properties-files/language.xml"/>
         <xi:include href="../../properties-files/dateEdtf.xml"/>
