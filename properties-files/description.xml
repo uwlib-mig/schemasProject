@@ -35,19 +35,18 @@
          <para>When appropriate, note interviewees contributions to encouraging a diverse and inclusive campus.</para>
       </customization>
       <customization co="object" dd="p16786coll3">
-         <para>Briefly summarize the content of the work to aid other catalogers.</para>
+         <para>Briefly summarize the content of the work to aid catalogers who will assign subject headings.</para>
          <para>Define the book's genre, subject, and intended use.</para>
          <para>Descriptions of novels should briefly summarize the arc of the story.</para>
          <para>Religious texts, such as prayer books and bibles, should note for which Jewish holiday and/or ritual they are used.</para>
          <para>Note if the work is a translation, and the author and language of the original text.</para>
          <para>Required for all book compound objects which require subject analysis from cataloging staff.</para>
       </customization>
+      <!-- Draft instructions for SSDC (dd="p16786coll3") standalones; no standalones expected in coll at this time -->
       <customization co="no" dd="p16786coll3">
-         <para>Briefly summarize the content of the work to aid other catalogers.</para>
-         <para>Define the book's genre, subject, and intended use.</para>
-         <para>Descriptions of novels should briefly summarize the arc of the story.</para>
-         <para>Religious texts, such as prayer books and bibles, should note for which Jewish holiday and/or ritual they are used.</para>
-         <para>Note if the work is a translation, and the author and language of the original text.</para>
+         <para>Briefly summarize the content of the resource to aid catalogers who will assign subject headings.</para>
+         <para>Define the genre, subject, and intended use.</para>
+         <para>For resources playing a role in religious activities, note for which Jewish holiday and/or ritual they are used.</para>
       </customization>
    </descriptions>
    <examples>
