@@ -69,11 +69,11 @@
          <para>Separate multiple headings with a semi-colon.</para>
       </customization>
       <customization co="object" dd="p16786coll3">
-         <para>Leave empty during initial metadata creation; UW Libraries catalogers will provide LSCH subjects.</para>
+         <para>Leave empty during initial metadata creation; UW Libraries catalogers will provide LSCH values.</para>
          <para>Be sure to enter the value "xyz" in the "Cataloging" field to alert catalogers that this item needs subject headings.</para>
       </customization>
       <customization co="no" dd="p16786coll3">
-         <para>Leave empty during initial metadata creation; UW Libraries catalogers will provide LSCH subjects.</para>
+         <para>Leave empty during initial metadata creation; UW Libraries catalogers will provide LSCH values.</para>
          <para>Be sure to enter the value "xyz" in the "Cataloging" field to alert catalogers that this item needs subject headings.</para>
       </customization>
    </descriptions>
