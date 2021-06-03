@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<migDataDictionary xmlns="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries"
+    xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:props="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+    id="0013">
+    <ddName>Sephardic Studies Digital Collection</ddName>
+    <!-- COMBINED PROPERTY LIST
+    ALL PROPS FOR TEXTS, BALLADS, AND ORAL HISTORIES
+    USE THIS LIST TO GENERATE:
+    1) PROPERTY DETAILS FOR USE WITH STANDALONE OBJECTS
+    2) CONTENTDM FIELD-PROPERTY DETAILS FOR COLLECTION SETUP-->
+    <ddPartOfProject/>
+    <originalCreationDate>2020-12-02</originalCreationDate>
+    <latestUpdate>2021-04-15</latestUpdate>
+    <metadataLiaisons>
+        <metadataLiaison>Benjamin Riesenberg - &lt;a href="mailto:ries07@uw.edu"&gt;ries07@uw.edu&lt;/a&gt;</metadataLiaison>
+    </metadataLiaisons>
+    <cdmCo>yes</cdmCo>
+    <standalone>yes</standalone>
+    <cdmCode>p16786coll3</cdmCode>
+    <properties>
+        <!-- DESCRIPTIVE PROPS -->
+        <xi:include href="../../properties-files/title.xml"/>
+        <xi:include href="../../properties-files/titleALALCR.xml"/><!-- NEW: titleALALCR -->
+        <xi:include href="../../properties-files/titleNonLatin.xml"/><!-- NEW: titleNonLatin -->
+        <xi:include href="../../properties-files/titleHarvard.xml"/><!-- NEW: titleHarvard -->
+        <xi:include href="../../properties-files/language.xml"/>
+        <xi:include href="../../properties-files/dateEdtf.xml"/>
+        <xi:include href="../../properties-files/date.xml"/>
+        <xi:include href="../../properties-files/dates.xml"/>
+        <xi:include href="../../properties-files/author.xml"/>
+        <xi:include href="../../properties-files/editor.xml"/><!-- NEW: editor -->
+        <xi:include href="../../properties-files/publisher.xml"/><!-- NEW: publisher -->
+        <xi:include href="../../properties-files/publisherLocation.xml"/><!-- NEW: publisherLocation -->
+        <xi:include href="../../properties-files/printer.xml"/><!-- NEW: printer -->
+        <xi:include href="../../properties-files/printerLocation.xml"/><!-- NEW: printerLocation -->
+        <xi:include href="../../properties-files/translator.xml"/><!-- NEW: translator -->
+        <xi:include href="../../properties-files/ssan.xml"/><!-- NEW: ssan -->
+        <xi:include href="../../properties-files/subjectsLcsh.xml"/>
+        <xi:include href="../../properties-files/relatedOclcNo.xml"/><!-- NEW relatedOclcNo -->
+        <xi:include href="../../properties-files/donor.xml"/><!-- NEW: donor -->
+        <xi:include href="../../properties-files/lender.xml"/><!-- NEW: lender -->
+        <xi:include href="../../properties-files/formerOwner.xml"/><!-- NEW: formerOwner -->
+        <xi:include href="../../properties-files/digitalCollection.xml"/>
+        <xi:include href="../../properties-files/restrictions.xml"/>
+        <xi:include href="../../properties-files/rightsUri.xml"/>
+        <xi:include href="../../properties-files/cataloging.xml"/>
+        <xi:include href="../../properties-files/description.xml"/>
+        <!-- ADMIN / CONTENTDM PROPS -->
+        <xi:include href="../../properties-files/coitems.xml"/>
+        <xi:include href="../../properties-files/partOfCo.xml"/>
+        <xi:include href="../../properties-files/standaloneDeclaration.xml"/>
+        <xi:include href="../../properties-files/type.xml"/>
+        <xi:include href="../../properties-files/oclcNumber.xml"/>
+        <xi:include href="../../properties-files/cdmFilename.xml"/>
+        <xi:include href="../../properties-files/cdmFilePath.xml"/>
+        <xi:include href="../../properties-files/cdmNumber.xml"/>
+        <xi:include href="../../properties-files/dateCreated.xml"/>
+        <xi:include href="../../properties-files/dateModified.xml"/>
+        <xi:include href="../../properties-files/itemUrl.xml"/>
+    </properties>
+</migDataDictionary>
