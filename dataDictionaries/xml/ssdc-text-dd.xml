@@ -3,8 +3,8 @@
     xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:props="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
     id="0013">
-    <!-- BMR TO-DO EXPAND DD -->
     <ddName>Sephardic Studies Digital Collection</ddName>
+    <!-- TEXTUAL RESOURCES PROPERTY LIST -->
     <ddPartOfProject/>
     <originalCreationDate>2020-12-02</originalCreationDate>
     <latestUpdate>2021-04-15</latestUpdate>
@@ -15,6 +15,7 @@
     <standalone>yes</standalone>
     <cdmCode>p16786coll3</cdmCode>
     <properties>
+        <!-- DESCRIPTIVE PROPS -->
         <xi:include href="../../properties-files/title.xml"/>
         <xi:include href="../../properties-files/titleALALCR.xml"/><!-- NEW: titleALALCR -->
         <xi:include href="../../properties-files/titleNonLatin.xml"/><!-- NEW: titleNonLatin -->
@@ -41,6 +42,7 @@
         <xi:include href="../../properties-files/rightsUri.xml"/>
         <xi:include href="../../properties-files/cataloging.xml"/>
         <xi:include href="../../properties-files/description.xml"/>
+        <!-- ADMIN / CONTENTDM PROPS -->
         <xi:include href="../../properties-files/coitems.xml"/>
         <xi:include href="../../properties-files/partOfCo.xml"/>
         <xi:include href="../../properties-files/standaloneDeclaration.xml"/>
