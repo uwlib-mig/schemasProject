@@ -41,7 +41,7 @@
         <xi:include href="../../properties-files/restrictions.xml"/>
         <xi:include href="../../properties-files/rightsUri.xml"/>
         <xi:include href="../../properties-files/cataloging.xml"/>
-        <xi:include href="../../properties-files/description.xml"/>
+        <xi:include href="../../properties-files/staffNotes.xml"/><!-- Need to transfer info from description -->
         <!-- ADMIN / CONTENTDM PROPS -->
         <xi:include href="../../properties-files/coitems.xml"/>
         <xi:include href="../../properties-files/partOfCo.xml"/>
