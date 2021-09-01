@@ -19,15 +19,18 @@
     <standalone>yes</standalone>
     <cdmCode>p16786coll3</cdmCode>
     <properties>
-        <!-- DESCRIPTIVE PROPS -->
         <xi:include href="../../properties-files/title.xml"/>
-        <xi:include href="../../properties-files/titleALALCR.xml"/><!-- NEW: titleALALCR -->
+        <!-- NEW: (translated title property) -->
         <xi:include href="../../properties-files/titleNonLatin.xml"/><!-- NEW: titleNonLatin -->
+        <xi:include href="../../properties-files/titleALALCR.xml"/><!-- NEW: titleALALCR -->
         <xi:include href="../../properties-files/titleHarvard.xml"/><!-- NEW: titleHarvard -->
-        <xi:include href="../../properties-files/language.xml"/>
-        <xi:include href="../../properties-files/dateEdtf.xml"/>
-        <xi:include href="../../properties-files/date.xml"/>
-        <xi:include href="../../properties-files/dates.xml"/>
+        <xi:include href="../../properties-files/interviewee.xml"/>
+        <!-- NEW interviewee birthplace property -->
+        <!-- NEW primary performer property -->
+        <!-- NEW performer property -->
+        <!-- NEW performer birthplace property -->
+        <xi:include href="../../properties-files/interviewer.xml"/>
+        <!-- NEW videographer property -->
         <xi:include href="../../properties-files/author.xml"/>
         <xi:include href="../../properties-files/editor.xml"/><!-- NEW: editor -->
         <xi:include href="../../properties-files/publisher.xml"/><!-- NEW: publisher -->
@@ -35,28 +38,50 @@
         <xi:include href="../../properties-files/printer.xml"/><!-- NEW: printer -->
         <xi:include href="../../properties-files/printerLocation.xml"/><!-- NEW: printerLocation -->
         <xi:include href="../../properties-files/translator.xml"/><!-- NEW: translator -->
-        <xi:include href="../../properties-files/ssan.xml"/><!-- NEW: ssan -->
-        <xi:include href="../../properties-files/subjectsLcsh.xml"/>
-        <xi:include href="../../properties-files/relatedOclcNo.xml"/><!-- NEW relatedOclcNo -->
         <xi:include href="../../properties-files/donor.xml"/><!-- NEW: donor -->
         <xi:include href="../../properties-files/lender.xml"/><!-- NEW: lender -->
         <xi:include href="../../properties-files/formerOwner.xml"/><!-- NEW: formerOwner -->
+        <xi:include href="../../properties-files/dateEdtf.xml"/>
+        <xi:include href="../../properties-files/date.xml"/>
+        <xi:include href="../../properties-files/dates.xml"/>
+        <!-- NEW interviewee biography property <xi:include href="../../properties-files/"/> -->
+        <xi:include href="../../properties-files/notes.xml"/>
+        <xi:include href="../../properties-files/subjectsLcsh.xml"/>
+        <!-- NEW LC genre/form terms property -->
+        <xi:include href="../../properties-files/relatedOclcNo.xml"/><!-- NEW relatedOclcNo -->
+        <!-- ? Object Type here ? -->
+        <!-- NEW romancero theme of song property here -->
+        <!-- NEW cross references property here -->
+        <!-- NEW individuals discussed property -->
+        <!-- NEW organizations discussed property -->
+        <xi:include href="../../properties-files/geographicCoverage.xml"/>
+        <xi:include href="../../properties-files/timePeriodDiscussed.xml"/>
+        <!-- ? Use transcript/index? Use new or existing summary-type property ?? -->
+        <!-- NEW recording location -->
+        <xi:include href="../../properties-files/language.xml"/>
         <xi:include href="../../properties-files/digitalCollection.xml"/>
+        <xi:include href="../../properties-files/ssan.xml"/><!-- NEW: ssan -->
         <xi:include href="../../properties-files/restrictions.xml"/>
         <xi:include href="../../properties-files/rightsUri.xml"/>
-        <xi:include href="../../properties-files/cataloging.xml"/>
-        <xi:include href="../../properties-files/description.xml"/>
-        <!-- ADMIN / CONTENTDM PROPS -->
-        <xi:include href="../../properties-files/coitems.xml"/>
-        <xi:include href="../../properties-files/partOfCo.xml"/>
-        <xi:include href="../../properties-files/standaloneDeclaration.xml"/>
+        <!-- ? Ordering Information ? -->
         <xi:include href="../../properties-files/type.xml"/>
-        <xi:include href="../../properties-files/oclcNumber.xml"/>
+        <xi:include href="../../properties-files/extent.xml"/>
+        <xi:include href="../../properties-files/digitalFormat.xml"/>
+        <!-- NEW timecode start property -->
+        <!-- NEW digital file name property -->
+        <xi:include href="../../properties-files/digitalReproductionInformation.xml"/>
+        <!-- ADMIN / CONTENTDM PROPS -->
+        <xi:include href="../../properties-files/cataloging.xml"/>
+        <xi:include href="../../properties-files/staffNotes.xml"/>
         <xi:include href="../../properties-files/cdmFilename.xml"/>
         <xi:include href="../../properties-files/cdmFilePath.xml"/>
         <xi:include href="../../properties-files/cdmNumber.xml"/>
         <xi:include href="../../properties-files/dateCreated.xml"/>
         <xi:include href="../../properties-files/dateModified.xml"/>
-        <xi:include href="../../properties-files/itemUrl.xml"/>
+        <xi:include href="../../properties-files/itemUrl.xml"/>        
+        <xi:include href="../../properties-files/coitems.xml"/>
+        <xi:include href="../../properties-files/partOfCo.xml"/>
+        <xi:include href="../../properties-files/oclcNumber.xml"/>
+        <xi:include href="../../properties-files/standaloneDeclaration.xml"/>  
     </properties>
 </migDataDictionary>
