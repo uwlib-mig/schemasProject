@@ -3,6 +3,7 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:pf="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
     exclude-result-prefixes="xs" version="3.0">
+    <xsl:output method="xml" indent="yes"/>
     <xsl:template match="/">
         <get_info>
             <xsl:apply-templates
