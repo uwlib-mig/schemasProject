@@ -70,7 +70,7 @@
         <xi:include href="../../properties-files/originalFormat.xml"/>
         <xi:include href="../../properties-files/physicalDescription.xml"/>
         <!-- NEW timecode start property -->
-        <!-- NEW digital file name property -->
+        <xi:include href="../../properties-files/digitalFileName.xml"/>
         <xi:include href="../../properties-files/digitalReproductionInformation.xml"/>
         <!-- ADMIN / CONTENTDM PROPS -->
         <xi:include href="../../properties-files/cataloging.xml"/>
