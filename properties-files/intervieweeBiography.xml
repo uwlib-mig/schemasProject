@@ -13,7 +13,7 @@
       <uwItem>no</uwItem>
    </uwRequired>
    <cdm>
-      <label>Biography</label>
+      <label>Interviewee Biography</label>
       <cdmDatatype>text</cdmDatatype>
       <cdmLarge>no</cdmLarge>
       <searchable>no</searchable>
@@ -65,7 +65,7 @@
       <created4Coll>University of Washington Tacoma Oral Histories</created4Coll>
       <justification>The UWT Oral Histories wanted to display biographical information about interviewees.</justification>
       <changeLog>
-         <change/>
+         <change date="2021-09-23">Change label for display in CONTENTdm UI to "Interviewee Biography" (from simply "Biography") in the interest of 1) aligning more closely with property definition 2) normalizing prooperty labels. See intervieweeBirthplace.xml, performerBirthplace.xml.</change>
       </changeLog>
    </history>
 </property>
