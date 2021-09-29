@@ -63,7 +63,6 @@
          <para>Enter the duration of the resource.</para>
          <para>Duration should be entered hh:mm:ss. </para>
       </customization>
-      <!-- BMR note: I don't understand why this property is output as an item property in the greekDances DD? -->
       <customization co="item" dd="gd">
          <para>Do not use for items in compound objects.</para>
          <para>Enter extent of video file in the object description.</para>
