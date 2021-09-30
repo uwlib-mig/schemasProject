@@ -20,13 +20,13 @@
     <cdmCode>p16786coll3</cdmCode>
     <properties>
         <xi:include href="../../properties-files/title.xml"/>
-        <!-- NEW: (translated title property) -->
+        <xi:include href="../../properties-files/titleTranslated.xml"/><!-- NEW: titleTranslated -->
         <xi:include href="../../properties-files/titleNonLatin.xml"/><!-- NEW: titleNonLatin -->
         <xi:include href="../../properties-files/titleALALCR.xml"/><!-- NEW: titleALALCR -->
         <xi:include href="../../properties-files/titleHarvard.xml"/><!-- NEW: titleHarvard -->
         <xi:include href="../../properties-files/interviewee.xml"/>
-        <!-- NEW interviewee birthplace property -->
-        <!-- NEW primary performer property -->
+        <xi:include href="../../properties-files/intervieweeBirthplace.xml"/><!-- NEW intervieweeBirthplace -->
+        <xi:include href="../../properties-files/primaryPerformer.xml"/><!-- NEW primaryPerformer -->
         <!-- NEW performer property -->
         <!-- NEW performer birthplace property -->
         <xi:include href="../../properties-files/interviewer.xml"/>
@@ -44,7 +44,7 @@
         <xi:include href="../../properties-files/dateEdtf.xml"/>
         <xi:include href="../../properties-files/date.xml"/>
         <xi:include href="../../properties-files/dates.xml"/>
-        <!-- NEW interviewee biography property <xi:include href="../../properties-files/"/> -->
+        <xi:include href="../../properties-files/intervieweeBiography.xml"/>
         <xi:include href="../../properties-files/notes.xml"/>
         <xi:include href="../../properties-files/subjectsLcsh.xml"/>
         <xi:include href="../../properties-files/genreFormLcgft.xml"/><!-- NEW genreFormLcgft -->
