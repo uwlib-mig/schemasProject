@@ -6,13 +6,16 @@
     <xsl:output method="xml" indent="yes"/>
     <xsl:template match="/">
         <get_info>
+            <!-- BMR: TO DO, add any needed tests
+                for duplicate uids
+                for missing uids: grab the filename
+                etc. -->
             <xsl:apply-templates
                 select="collection('../?select=*.xml')/pf:property">
                 <!-- remove p's; sort numerically -->
-                <xsl:sort order="ascending" select="translate(pf:uid, 'p', '')" data-type="number"/>
+                <xsl:sort order="descending" select="translate(pf:uid, 'p', '')" data-type="number"/>
             </xsl:apply-templates>
         </get_info>
-        <!-- BMR: Would be good to add a *test for duplicate* property uids -->
     </xsl:template>
 
     <xsl:template match="pf:property">
