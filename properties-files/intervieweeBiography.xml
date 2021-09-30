@@ -4,7 +4,7 @@
    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
    <uid>p46</uid>
    <labels>
-      <platformIndependent>biography</platformIndependent>
+      <platformIndependent>intervieweeBiography</platformIndependent>
       <dc>description</dc>
    </labels>
    <uwRequired>
@@ -65,7 +65,7 @@
       <created4Coll>University of Washington Tacoma Oral Histories</created4Coll>
       <justification>The UWT Oral Histories wanted to display biographical information about interviewees.</justification>
       <changeLog>
-         <change date="2021-09-23">Change label for display in CONTENTdm UI to "Interviewee Biography" (from simply "Biography") in the interest of 1) aligning more closely with property definition 2) normalizing prooperty labels. See intervieweeBirthplace.xml, performerBirthplace.xml.</change>
+         <change date="2021-09-23">Change label for display in CONTENTdm UI to "Interviewee Biography" (from simply "Biography") in the interest of 1) aligning more closely with property definition 2) reducing confusion, given the existence of biography.xml with UI label "Biography", 3) normalizing prooperty labels overall. See also biography.xml, intervieweeBirthplace.xml, performerBirthplace.xml.</change>
       </changeLog>
    </history>
 </property>
