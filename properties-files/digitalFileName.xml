@@ -2,23 +2,58 @@
 <property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
-    <uid>p129</uid>
+    <uid>p134</uid>
     <labels>
         <platformIndependent>digitalFileName</platformIndependent>
         <dc>none</dc>
     </labels>
     <uwRequired>
-        <uwStandalone>yes</uwStandalone>
+        <uwStandalone>no</uwStandalone>
         <uwObject>no</uwObject>
-        <uwItem>yes</uwItem>
+        <uwItem>no</uwItem>
     </uwRequired>
     <cdm>
-        <label>Digital File Name</label>
+        <label>n/a</label>
         <cdmDatatype>uwAdministrative</cdmDatatype>
         <cdmLarge>no</cdmLarge>
         <searchable>no</searchable>
-        <hidden>yes</hidden>
+        <hidden>no</hidden>
         <cdmRequired>no</cdmRequired>
         <cdmControlledVocab>no</cdmControlledVocab>
     </cdm>
+    <dspace>
+        <dspaceProperty></dspaceProperty>
+    </dspace>
+    <descriptions>
+        <definition>
+            <para></para>
+        </definition>
+        <instructions co="object"></instructions>
+        <instructions co="item"></instructions>
+        <instructions co="no"></instructions>
+    </descriptions>
+    <examples>
+        <example co="object"></example>
+        <example co="item"></example>
+        <example co="no"></example>
+    </examples>
+    <additionalInfo></additionalInfo>
+    <marc>
+        <dcgMarcMapping></dcgMarcMapping>
+    </marc>
+    <xsd></xsd>
+    <rdf></rdf>
+    <history>
+        <dateCreated>
+            <range>
+                <start>2021-10-01</start>
+                <end></end>
+            </range>
+        </dateCreated>
+        <created4Coll>Sephardic Studies Digital Collection - p16786coll3</created4Coll>
+        <justification>Property exists in &lt;a href="https://www.lib.washington.edu/cams/mig/datadicts/special-collections-oral-histories-data-dictionary"&gt;Special Collections Oral Histories Data Dictionary&lt;/a&gt;, defining for continued use and output to HTML MAPs.</justification>
+        <changeLog>
+            <change></change>
+        </changeLog>
+    </history>
 </property>
