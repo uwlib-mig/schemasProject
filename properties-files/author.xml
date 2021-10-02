@@ -78,7 +78,7 @@
    </examples>
    <additionalInfo>
       <admin co="agnostic">
-         <para>Sephardic Studies Digital Collection [p16786coll3]: Request controlled-vocabulary ON for this property.</para>
+         <para>Sephardic Studies Digital Collection - p16786coll3: Turn controlled-vocabulary feature ON for this property (default is OFF)</para>
       </admin>
    </additionalInfo>
    <marc>
