@@ -38,10 +38,28 @@
          <para>Enter "xyz" to denote that the item requires subject headings from local catalogers.</para>
       </instructions>
       <customization co="object" dd="p16786coll3">
-         <para>Enter "xyz" to denote that the item requires subject headings and related OCLC records, to be input by cataloging staff.</para>
+         <para>Enter "xyz" to request the creation and/or review of values for the following fields by UWL cataloging staff:</para>
+         <para>Subjects (LCSH)</para>
+         <para>Genre/Form (LCGFT)</para>
+         <para>Related OCLC Record</para>
+         <para>Geographic Coverage</para>
+         <para>Interviewee Birthplace</para>
+         <para>Performer Birthplace</para>
+         <para>Recording Location</para>
+         <para>Printer Location</para>
+         <para>Publisher Location</para>
       </customization>
       <customization co="no" dd="p16786coll3">
-         <para>Enter "xyz" to denote that the item requires subject headings and related OCLC records, to be input by cataloging staff.</para>
+         <para>Enter "xyz" to request the creation and/or review of values for the following fields by UWL cataloging staff:</para>
+         <para>Subjects (LCSH)</para>
+         <para>Genre/Form (LCGFT)</para>
+         <para>Related OCLC Record</para>
+         <para>Geographic Coverage</para>
+         <para>Interviewee Birthplace</para>
+         <para>Performer Birthplace</para>
+         <para>Recording Location</para>
+         <para>Printer Location</para>
+         <para>Publisher Location</para>
       </customization>
    </descriptions>
    <examples>
@@ -87,7 +105,7 @@
          <change/>
          <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
          <change date="2018-05-09">Defined this property as a place for messages to local catalogers; added input instructions for "xyz."</change>
-         <change date="2021-03-21">Added custom instructions for SSDC.</change>
+         <change date="2021-03-21">Added custom instructions for Sephardic Studies Digital Collection - p16786coll3</change>
       </changeLog>
    </history>
 </property>
