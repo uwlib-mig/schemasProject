@@ -56,11 +56,11 @@
         <!-- NEW organizations discussed property -->
         <xi:include href="../../properties-files/geographicCoverage.xml"/>
         <xi:include href="../../properties-files/timePeriodDiscussed.xml"/>
-        <!-- New index property -->
+        <xi:include href="../../properties-files/index.xml"/><!-- New index -->
         <!-- NEW recording location -->
         <xi:include href="../../properties-files/language.xml"/>
         <xi:include href="../../properties-files/digitalCollection.xml"/>
-        <xi:include href="../../properties-files/ssan.xml"/><!-- NEW: ssan -->
+        <xi:include href="../../properties-files/ssan.xml"/><!-- NEW ssan -->
         <xi:include href="../../properties-files/restrictions.xml"/>
         <xi:include href="../../properties-files/rightsUri.xml"/>
         <xi:include href="../../properties-files/orderingInformation.xml"/>
@@ -75,6 +75,7 @@
         <!-- ADMIN / CONTENTDM PROPS -->
         <xi:include href="../../properties-files/cataloging.xml"/>
         <xi:include href="../../properties-files/staffNotes.xml"/>
+        <xi:include href="../../properties-files/digitalFileName.xml"/><!-- NEW digitalFileName -->
         <xi:include href="../../properties-files/cdmFilename.xml"/>
         <xi:include href="../../properties-files/cdmFilePath.xml"/>
         <xi:include href="../../properties-files/cdmNumber.xml"/>
