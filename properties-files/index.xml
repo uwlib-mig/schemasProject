@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md 
+    http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+    <uid>p135</uid>
+    <labels>
+        <platformIndependent>index</platformIndependent>
+        <dc>description</dc>
+    </labels>
+    <uwRequired>
+        <uwStandalone>no</uwStandalone>
+        <uwObject>no</uwObject>
+        <uwItem>no</uwItem>
+    </uwRequired>
+    <cdm>
+        <label>Index</label>
+        <cdmDatatype>text</cdmDatatype>
+        <cdmLarge>yes</cdmLarge>
+        <searchable>yes</searchable>
+        <hidden>no</hidden>
+        <cdmRequired>no</cdmRequired>
+        <cdmControlledVocab>no</cdmControlledVocab>
+    </cdm>
+    <dspace>
+        <dspaceProperty></dspaceProperty>
+    </dspace>
+    <descriptions>
+        <definition></definition>
+        <instructions co="object"></instructions>
+        <instructions co="no"></instructions>
+        <customization co="object" dd="p16786coll3"></customization>
+        <customization co="no" dd="p16786coll3"></customization>
+    </descriptions>
+    <examples>
+        <example co="object"></example>
+        <example co="no"></example>
+        <customization co="object" dd="p16786coll3"></customization>
+        <customization co="no" dd="p16786coll3"></customization>
+    </examples>
+    <additionalInfo></additionalInfo>
+    <marc>
+        <dcgMarcMapping></dcgMarcMapping>
+    </marc>
+    <xsd></xsd>
+    <rdf></rdf>
+    <history>
+        <dateCreated>
+            <range>
+                <start>2021-10-01</start>
+                <end></end>
+            </range>
+        </dateCreated>
+        <created4Coll>Sephardic Studies Digital Collection - p16786coll3</created4Coll>
+        <justification>Collection owner would like to provide index values for oral histories. No index property has been defined to date, although &lt;a href="https://www.lib.washington.edu/cams/mig/datadicts/special-collections-oral-histories-data-dictionary"&gt;Special Collections Oral Histories Data Dictionary&lt;/a&gt; includes property "Transcript/Index"</justification>
+        <changeLog>
+            <change></change>
+        </changeLog>
+    </history>
+</property>
