@@ -25,7 +25,9 @@
         <dspaceProperty></dspaceProperty>
     </dspace>
     <descriptions>
-        <definition></definition>
+        <definition>
+            <para></para>
+        </definition>
         <instructions co="object"></instructions>
         <instructions co="no"></instructions>
         <customization co="object" dd="p16786coll3"></customization>
@@ -51,7 +53,7 @@
             </range>
         </dateCreated>
         <created4Coll>Sephardic Studies Digital Collection - p16786coll3</created4Coll>
-        <justification>"Genre"Property exists in &lt;a href="https://www.lib.washington.edu/cams/mig/datadicts/special-collections-oral-histories-data-dictionary"&gt;Special Collections Oral Histories Data Dictionary&lt;/a&gt;, defining (with some changes and added specificity) for continued use and output to HTML MAPs.</justification>
+        <justification>"Genre" property exists in &lt;a href="https://www.lib.washington.edu/cams/mig/datadicts/special-collections-oral-histories-data-dictionary"&gt;Special Collections Oral Histories Data Dictionary&lt;/a&gt;, defining (with some changes and added specificity) for continued use and output to HTML MAPs.</justification>
         <changeLog>
             <change></change>
         </changeLog>
