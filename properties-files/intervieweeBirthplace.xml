@@ -53,7 +53,7 @@
             </range>
         </dateCreated>
         <created4Coll>Sephardic Studies Digital Collection - p1678coll3</created4Coll>
-        <justification>Collection owner desires to provide information about the birthplace of oral history interviewees. Provided metadata for oral histories to be added to the collection includes interviewee birthplace information.</justification>
+        <justification>"Interviewee Birthplace" property exists in &lt;a href="https://www.lib.washington.edu/cams/mig/datadicts/special-collections-oral-histories-data-dictionary"&gt;Special Collections Oral Histories Data Dictionary&lt;/a&gt;, defining (with some changes and added specificity) for continued use and output to HTML MAPs. Collection owner desires to provide information about the birthplace of oral history interviewees. Provided metadata for oral histories to be added to the collection includes interviewee birthplace information.</justification>
         <changeLog>
             <change></change>
         </changeLog>
