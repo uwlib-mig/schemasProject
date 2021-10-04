@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md 
+    http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+    <uid>p138</uid>
+    <labels>
+        <platformIndependent>performer</platformIndependent>
+        <dc>contributor</dc>
+    </labels>
+    <uwRequired>
+        <uwStandalone>no</uwStandalone>
+        <uwObject>no</uwObject>
+        <uwItem>no</uwItem>
+    </uwRequired>
+    <cdm>
+        <label>Performer</label>
+        <cdmDatatype>text</cdmDatatype>
+        <cdmLarge>no</cdmLarge>
+        <searchable>no</searchable>
+        <hidden>no</hidden>
+        <cdmRequired>no</cdmRequired>
+        <cdmControlledVocab>yes</cdmControlledVocab>
+    </cdm>
+    <dspace>
+        <dspaceProperty></dspaceProperty>
+    </dspace>
+    <descriptions>
+        <definition>
+            <para>A performer who is seen, heard, or otherwise featured in the resource.</para>
+        </definition>
+        <instructions co="object"></instructions>
+        <instructions co="no"></instructions>
+        <customization co="object" dd="p1678coll3"></customization>
+        <customization co="no" dd="p1678coll3"></customization>
+    </descriptions>
+    <examples>
+        <example co="object"></example>
+        <example co="no"></example>
+        <customization co="object" dd="p1678coll3"></customization>
+        <customization co="no" dd="p1678coll3"></customization>
+    </examples>
+    <additionalInfo></additionalInfo>
+    <marc>
+        <dcgMarcMapping></dcgMarcMapping>
+    </marc>
+    <xsd></xsd>
+    <rdf></rdf>
+    <history>
+        <dateCreated>
+            <range>
+                <start>2021-10-03</start>
+                <end></end>
+            </range>
+        </dateCreated>
+        <created4Coll>Sephardic Studies Digital Collection - p16786coll3</created4Coll>
+        <justification>Collection owner desired to provide values for performers who were recorded singing traditional ballads, desired to differentiate between primary performers and other performers.</justification>
+        <changeLog>
+            <change></change>
+        </changeLog>
+    </history>
+</property>
