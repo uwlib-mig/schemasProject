@@ -6,9 +6,9 @@
     <ddName>Sephardic Studies Digital Collection</ddName>
     <!-- COMBINED PROPERTY LIST
     ALL PROPS FOR TEXTS, BALLADS, AND ORAL HISTORIES
-    USE THIS LIST TO GENERATE:
-    1) PROPERTY DETAILS FOR USE WITH STANDALONE OBJECTS
-    2) CONTENTDM FIELD-PROPERTY DETAILS FOR COLLECTION SETUP-->
+        USE THIS LIST TO GENERATE:
+            1) PROPERTY DETAILS FOR USE WITH STANDALONE OBJECTS
+            2) CONTENTDM FIELD-PROPERTY DETAILS FOR COLLECTION SETUP -->
     <ddPartOfProject/>
     <originalCreationDate>2020-12-02</originalCreationDate>
     <latestUpdate>2021-04-15</latestUpdate>
@@ -19,11 +19,12 @@
     <standalone>yes</standalone>
     <cdmCode>p16786coll3</cdmCode>
     <properties>
+        <!-- DESCRIPTIVE PROPERTIES -->
         <xi:include href="../../properties-files/title.xml"/>
-        <xi:include href="../../properties-files/titleTranslated.xml"/><!-- NEW: titleTranslated -->
-        <xi:include href="../../properties-files/titleNonLatin.xml"/><!-- NEW: titleNonLatin -->
-        <xi:include href="../../properties-files/titleALALCR.xml"/><!-- NEW: titleALALCR -->
-        <xi:include href="../../properties-files/titleHarvard.xml"/><!-- NEW: titleHarvard -->
+        <xi:include href="../../properties-files/titleTranslated.xml"/><!-- NEW titleTranslated -->
+        <xi:include href="../../properties-files/titleNonLatin.xml"/><!-- NEW titleNonLatin -->
+        <xi:include href="../../properties-files/titleALALCR.xml"/><!-- NEW titleALALCR -->
+        <xi:include href="../../properties-files/titleHarvard.xml"/><!-- NEW titleHarvard -->
         <xi:include href="../../properties-files/interviewee.xml"/>
         <xi:include href="../../properties-files/intervieweeBirthplace.xml"/><!-- NEW intervieweeBirthplace -->
         <xi:include href="../../properties-files/primaryPerformer.xml"/><!-- NEW primaryPerformer -->
@@ -31,17 +32,17 @@
         <xi:include href="../../properties-files/participants.xml"/>
         <xi:include href="../../properties-files/performerBirthplace.xml"/><!-- NEW performerBirthplace -->
         <xi:include href="../../properties-files/interviewer.xml"/>
-        <!-- NEW videographer property -->
+        <xi:include href="../../properties-files/videographer.xml"/><!-- NEW videographer -->
         <xi:include href="../../properties-files/author.xml"/>
-        <xi:include href="../../properties-files/editor.xml"/><!-- NEW: editor -->
-        <xi:include href="../../properties-files/publisher.xml"/><!-- NEW: publisher -->
-        <xi:include href="../../properties-files/publisherLocation.xml"/><!-- NEW: publisherLocation -->
-        <xi:include href="../../properties-files/printer.xml"/><!-- NEW: printer -->
-        <xi:include href="../../properties-files/printerLocation.xml"/><!-- NEW: printerLocation -->
-        <xi:include href="../../properties-files/translator.xml"/><!-- NEW: translator -->
-        <xi:include href="../../properties-files/donor.xml"/><!-- NEW: donor -->
-        <xi:include href="../../properties-files/lender.xml"/><!-- NEW: lender -->
-        <xi:include href="../../properties-files/formerOwner.xml"/><!-- NEW: formerOwner -->
+        <xi:include href="../../properties-files/editor.xml"/><!-- NEW editor -->
+        <xi:include href="../../properties-files/publisher.xml"/><!-- NEW publisher -->
+        <xi:include href="../../properties-files/publisherLocation.xml"/><!-- NEW publisherLocation -->
+        <xi:include href="../../properties-files/printer.xml"/><!-- NEW printer -->
+        <xi:include href="../../properties-files/printerLocation.xml"/><!-- NEW printerLocation -->
+        <xi:include href="../../properties-files/translator.xml"/><!-- NEW translator -->
+        <xi:include href="../../properties-files/donor.xml"/><!-- NEW donor -->
+        <xi:include href="../../properties-files/lender.xml"/><!-- NEW lender -->
+        <xi:include href="../../properties-files/formerOwner.xml"/><!-- NEW formerOwner -->
         <xi:include href="../../properties-files/dateEdtf.xml"/>
         <xi:include href="../../properties-files/date.xml"/>
         <xi:include href="../../properties-files/dates.xml"/>
@@ -51,14 +52,14 @@
         <xi:include href="../../properties-files/genreFormLcgft.xml"/><!-- NEW genreFormLcgft -->
         <xi:include href="../../properties-files/relatedOclcNo.xml"/><!-- NEW relatedOclcNo -->
         <xi:include href="../../properties-files/objectType.xml"/>
-        <!-- NEW romancero theme of song property here -->
-        <xi:include href="../../properties-files/crossReference.xml"/><!-- NEW crossFeference -->
+        <xi:include href="../../properties-files/romancero.xml"/><!-- NEW romancero -->
+        <xi:include href="../../properties-files/crossReference.xml"/><!-- NEW crossReference -->
         <xi:include href="../../properties-files/individualsDiscussed.xml"/><!-- NEW individualsDiscussed -->
         <xi:include href="../../properties-files/organizationsDiscussed.xml"/><!-- NEW organizationsDiscussed -->
         <xi:include href="../../properties-files/geographicCoverage.xml"/>
         <xi:include href="../../properties-files/timePeriodDiscussed.xml"/>
         <xi:include href="../../properties-files/index.xml"/><!-- NEW index -->
-        <!-- NEW recording location -->
+        <xi:include href="../../properties-files/recordingLocation.xml"/><!-- NEW recordingLocation -->
         <xi:include href="../../properties-files/language.xml"/>
         <xi:include href="../../properties-files/digitalCollection.xml"/>
         <xi:include href="../../properties-files/ssan.xml"/><!-- NEW ssan -->
@@ -70,7 +71,7 @@
         <xi:include href="../../properties-files/digitalFormat.xml"/>
         <xi:include href="../../properties-files/originalFormat.xml"/>
         <xi:include href="../../properties-files/physicalDescription.xml"/>
-        <!-- NEW timecode start property -->
+        <xi:include href="../../properties-files/timecodeStart.xml"/><!-- NEW timecodeStart -->
         <xi:include href="../../properties-files/digitalFileName.xml"/>
         <xi:include href="../../properties-files/digitalReproductionInformation.xml"/>
         <!-- ADMIN / CONTENTDM PROPS -->
