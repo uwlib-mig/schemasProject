@@ -1,11 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?><property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd"><uid>p79</uid><labels>
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+   xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+   <uid>p79</uid>
+   <labels>
       <platformIndependent>staffNotes</platformIndependent>
       <dc>none</dc>
-   </labels><uwRequired>
+   </labels>
+   <uwRequired>
       <uwStandalone>no</uwStandalone>
       <uwObject>no</uwObject>
       <uwItem>no</uwItem>
-   </uwRequired><cdm>
+   </uwRequired>
+   <cdm>
       <label>Staff Notes</label>
       <cdmDatatype>text</cdmDatatype>
       <cdmLarge>no</cdmLarge>
@@ -13,9 +20,11 @@
       <hidden>yes</hidden>
       <cdmRequired>no</cdmRequired>
       <cdmControlledVocab>no</cdmControlledVocab>
-   </cdm><dspace>
+   </cdm>
+   <dspace>
       <dspaceProperty/>
-   </dspace><descriptions>
+   </dspace>
+   <descriptions>
       <definition>
          <para>Notes for staff only, notes of an administrative nature.</para>
       </definition>
@@ -28,7 +37,22 @@
       <instructions co="item">
          <para>Input your staff notes however you wish.</para>
       </instructions>
-   </descriptions><examples>
+      <customization co="object" dd="p16786coll3">
+         <para>Briefly summarize the content of the work to aid catalogers who will assign subject headings.</para>
+         <para>Define the book's genre, subject, and intended use.</para>
+         <para>Descriptions of novels should briefly summarize the arc of the story.</para>
+         <para>Religious texts, such as prayer books and bibles, should note for which Jewish holiday and/or ritual they are used.</para>
+         <para>Note if the work is a translation, and the author and language of the original text.</para>
+         <para>Required for all book compound objects which require subject analysis from cataloging staff.</para>
+      </customization>
+      <!-- Draft instructions for SSDC (dd="p16786coll3") standalones; no standalones expected in coll at this time -->
+      <customization co="no" dd="p16786coll3">
+         <para>Briefly summarize the content of the resource to aid catalogers who will assign subject headings.</para>
+         <para>Define the genre, subject, and intended use.</para>
+         <para>For resources playing a role in religious activities, note for which Jewish holiday and/or ritual they are used.</para>
+      </customization>
+   </descriptions>
+   <examples>
       <example co="no">
          <para>Al, could you look at this one?</para>
          <para>Still need to research the difference between the saws pictured.</para>
@@ -41,21 +65,32 @@
          <para>Al, could you look at this one?</para>
          <para>Still need to research the difference between the saws pictured.</para>
       </example>
-   </examples><additionalInfo>
+      <customization co="object" dd="p16786coll3">
+         <para>A Ladino translation of the French novel "Paul et Virginie" by Bernardin de Saint-Pierre (1737-1814). This short love story, set in the 18th century on a French island, tells of a man a woman separated by distance and circumstance, never to be united before their untimely deaths.</para>
+         <para>This is a parallel Hebrew-Ladino translation of the Book of Ruth with corresponding commentary in Ladino. The Book of Ruth is part of the Old Testament found in the section known as Ketuvim (Writings). It is traditionally read on the Jewish holiday of Shavuot (Feast of Weeks).</para>
+      </customization>
+      <customization co="no" dd="p16786coll3">
+         <para>Rosh ha-Shanah postcard featuring a pink plush heart with the words “טובה לשנה” “La-Shanah Tovah” [A Happy New Year] embroidered in the center with gold glitter. Postcard features a glitter design of a Star of David below two doves. In the center of the star is the image of a woman’s hand shaking a man’s hand. Printed in English, “With My Good Wishes And Hearty Greetings, A Happy New Year” and “Le-Shanah Tova Tikhtevu” [May you be inscribed for a Happy New Year] printed in Hebrew characters.</para>
+      </customization>
+   </examples>
+   <additionalInfo>
       <admin co="all">
          <para>Customarily this field is searchable in CONTENTdm while the collection is being developed; when the collection is done, the field should not be searchable.</para>
       </admin>
-   </additionalInfo><marc>
+   </additionalInfo>
+   <marc>
       <dcgMarcMapping/>
       <marcNotes>
          <para/>
       </marcNotes>
-   </marc><xsd>
+   </marc>
+   <xsd>
       <typeInfo level="standalone object item">
          <typeAttribute>xs:string</typeAttribute>
       </typeInfo>
-   </xsd><rdf>
-   </rdf><history>
+   </xsd>
+   <rdf> </rdf>
+   <history>
       <dateCreated>
          <range>
             <start>2000-01-01</start>
@@ -69,4 +104,5 @@
          <change date="2018-03-23">Added some cdm compound object information</change>
          <change date="2018-03-27">Added item info</change>
       </changeLog>
-   </history></property>
+   </history>
+</property>
