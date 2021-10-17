@@ -16,41 +16,39 @@
     <cdmCode>p16786coll3</cdmCode>
     <properties>
         <xi:include href="../../properties-files/title.xml"/>
-        <xi:include href="../../properties-files/titleALALCR.xml"/>
-        <xi:include href="../../properties-files/titleNonLatin.xml"/>
-        <xi:include href="../../properties-files/titleHarvard.xml"/>
-        <xi:include href="../../properties-files/language.xml"/>
+        <xi:include href="../../properties-files/titleNonLatin.xml"/><!-- NEW titleNonLatin -->
+        <xi:include href="../../properties-files/titleALALCR.xml"/><!-- NEW titleALALCR -->
+        <xi:include href="../../properties-files/titleHarvard.xml"/><!-- NEW titleHarvard -->
+        <xi:include href="../../properties-files/author.xml"/>
+        <xi:include href="../../properties-files/editor.xml"/><!-- NEW editor -->
+        <xi:include href="../../properties-files/publisher.xml"/><!-- NEW publisher -->
+        <xi:include href="../../properties-files/publisherLocation.xml"/><!-- NEW publisherLocation -->
+        <xi:include href="../../properties-files/printer.xml"/><!-- NEW printer -->
+        <xi:include href="../../properties-files/printerLocation.xml"/><!-- NEW printerLocation -->
+        <xi:include href="../../properties-files/translator.xml"/><!-- NEW translator -->
+        <xi:include href="../../properties-files/donor.xml"/><!-- NEW donor -->
+        <xi:include href="../../properties-files/lender.xml"/><!-- NEW lender -->
+        <xi:include href="../../properties-files/formerOwner.xml"/><!-- NEW formerOwner -->
         <xi:include href="../../properties-files/dateEdtf.xml"/>
         <xi:include href="../../properties-files/date.xml"/>
         <xi:include href="../../properties-files/dates.xml"/>
-        <xi:include href="../../properties-files/author.xml"/>
-        <xi:include href="../../properties-files/editor.xml"/>
-        <xi:include href="../../properties-files/publisher.xml"/>
-        <xi:include href="../../properties-files/publisherLocation.xml"/>
-        <xi:include href="../../properties-files/printer.xml"/>
-        <xi:include href="../../properties-files/printerLocation.xml"/>
-        <xi:include href="../../properties-files/translator.xml"/>
-        <xi:include href="../../properties-files/ssan.xml"/>
         <xi:include href="../../properties-files/subjectsLcsh.xml"/>
-        <xi:include href="../../properties-files/relatedOclcNo.xml"/>
-        <xi:include href="../../properties-files/donor.xml"/>
-        <xi:include href="../../properties-files/lender.xml"/>
-        <xi:include href="../../properties-files/formerOwner.xml"/>
+        <xi:include href="../../properties-files/genreFormLcgft.xml"/><!-- NEW genreFormLcgft -->
+        <xi:include href="../../properties-files/relatedOclcNo.xml"/><!-- NEW relatedOclcNo -->
+        <xi:include href="../../properties-files/objectType.xml"/>
+        <xi:include href="../../properties-files/language.xml"/>
         <xi:include href="../../properties-files/digitalCollection.xml"/>
+        <xi:include href="../../properties-files/ssan.xml"/><!-- NEW ssan -->
         <xi:include href="../../properties-files/restrictions.xml"/>
         <xi:include href="../../properties-files/rightsUri.xml"/>
+        <xi:include href="../../properties-files/orderingInformation.xml"/>
+        <xi:include href="../../properties-files/type.xml"/>
+        <xi:include href="../../properties-files/extent.xml"/>
+        <xi:include href="../../properties-files/digitalFormat.xml"/>
+        <!-- omitting all admin properties except cataloging, staffNotes and digitalFileName; 
+            find in ssdc-combined-map.xml -->
         <xi:include href="../../properties-files/cataloging.xml"/>
         <xi:include href="../../properties-files/staffNotes.xml"/>
-        <xi:include href="../../properties-files/coitems.xml"/>
-        <xi:include href="../../properties-files/partOfCo.xml"/>
-        <xi:include href="../../properties-files/standaloneDeclaration.xml"/>
-        <xi:include href="../../properties-files/type.xml"/>
-        <xi:include href="../../properties-files/oclcNumber.xml"/>
-        <xi:include href="../../properties-files/cdmFilename.xml"/>
-        <xi:include href="../../properties-files/cdmFilePath.xml"/>
-        <xi:include href="../../properties-files/cdmNumber.xml"/>
-        <xi:include href="../../properties-files/dateCreated.xml"/>
-        <xi:include href="../../properties-files/dateModified.xml"/>
-        <xi:include href="../../properties-files/itemUrl.xml"/>
+        <xi:include href="../../properties-files/digitalFileName.xml"/><!-- NEW digitalFileName -->
     </properties>
 </migDataDictionary>

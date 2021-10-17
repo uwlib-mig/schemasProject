@@ -16,19 +16,31 @@
     <cdmCode>p16786coll3</cdmCode>
     <properties>
         <xi:include href="../../properties-files/title.xml"/>
+        <xi:include href="../../properties-files/titleTranslated.xml"/><!-- NEW titleTranslated -->
+        <xi:include href="../../properties-files/primaryPerformer.xml"/><!-- NEW primaryPerformer -->
+        <xi:include href="../../properties-files/performer.xml"/><!-- NEW performer -->
+        <xi:include href="../../properties-files/participants.xml"/>
+        <xi:include href="../../properties-files/performerBirthplace.xml"/><!-- NEW performerBirthplace -->
         <xi:include href="../../properties-files/dateEdtf.xml"/>
         <xi:include href="../../properties-files/date.xml"/>
         <xi:include href="../../properties-files/dates.xml"/>
-        <xi:include href="../../properties-files/coitems.xml"/>
-        <xi:include href="../../properties-files/partOfCo.xml"/>
-        <xi:include href="../../properties-files/standaloneDeclaration.xml"/>
+        <xi:include href="../../properties-files/notes.xml"/>
+        <xi:include href="../../properties-files/objectType.xml"/>
+        <xi:include href="../../properties-files/romancero.xml"/><!-- NEW romancero -->
+        <xi:include href="../../properties-files/crossReference.xml"/><!-- NEW crossReference -->
+        <xi:include href="../../properties-files/recordingLocation.xml"/><!-- NEW recordingLocation -->
+        <xi:include href="../../properties-files/language.xml"/>
+        <xi:include href="../../properties-files/digitalCollection.xml"/>
+        <xi:include href="../../properties-files/ssan.xml"/><!-- NEW ssan -->
+        <xi:include href="../../properties-files/restrictions.xml"/>
+        <xi:include href="../../properties-files/rightsUri.xml"/>
+        <xi:include href="../../properties-files/orderingInformation.xml"/>
         <xi:include href="../../properties-files/type.xml"/>
-        <xi:include href="../../properties-files/oclcNumber.xml"/>
-        <xi:include href="../../properties-files/cdmFilename.xml"/>
-        <xi:include href="../../properties-files/cdmFilePath.xml"/>
-        <xi:include href="../../properties-files/cdmNumber.xml"/>
-        <xi:include href="../../properties-files/dateCreated.xml"/>
-        <xi:include href="../../properties-files/dateModified.xml"/>
-        <xi:include href="../../properties-files/itemUrl.xml"/>
+        <xi:include href="../../properties-files/extent.xml"/>
+        <xi:include href="../../properties-files/digitalFormat.xml"/>
+        <xi:include href="../../properties-files/timecodeStart.xml"/><!-- NEW timecodeStart -->
+        <!-- omitting all admin properties except staffNotes and digitalFileName; find in ssdc-combined-map.xml -->
+        <xi:include href="../../properties-files/staffNotes.xml"/>
+        <xi:include href="../../properties-files/digitalFileName.xml"/><!-- NEW digitalFileName -->
     </properties>
 </migDataDictionary>
