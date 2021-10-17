@@ -124,30 +124,31 @@
          <para>Enter a brief title that identifies the item.</para>
       </customization>
       <!-- BMR: Finalize SSDC instructions; these are DRAFT -->
-      <customization co="object" dd="p16786coll3">
-         <para>TEXTUAL RESOURCES</para>
+      <customization co="object" dd="p16786coll3" resourceType="text">
          <para>Find Unicode Title in Sephardic Studies Collection Master Catalog and revise according to the &lt;a href="https://drive.google.com/file/d/1LAvczCjqQc4tZFEa1xTxiEEYfiPUfq3t/view"&gt;Aki Yerushalayim standard&lt;/a&gt; if needed. (Reference available &lt;a href="https://drive.google.com/file/d/1LAvczCjqQc4tZFEa1xTxiEEYfiPUfq3t/view"&gt;here&lt;/a&gt;.)</para>
          <para>Use a colon and space (": ") to indicate the break between title and subtitle, even if no colon appears on title page.</para>
          <para>Only Romanize the portion of the title that will be included in the Title field.</para>
          <para>Required for all compound objects.</para>
-         <para>AUDIO RESOURCES - SONGS</para>
+      </customization>
+      <customization co="object" dd="p16786coll3" resourceType="song">
          <para>Construct as follows:</para>
          <para>Audio: [song title]</para>
          <para>Enter the song title romanized according to the &lt;a href="https://drive.google.com/file/d/1LAvczCjqQc4tZFEa1xTxiEEYfiPUfq3t/view"&gt;Aki Yerushalayim standard&lt;/a&gt;.</para>
          <para>All compound objects must have a title.</para>
-         <para>AUDIO RESOURCES - ORAL HISTORIES</para>
+      </customization>
+      <customization co="object" dd="p16786coll3" resourceType="oh">
          <para>Construct as follows:</para>
          <para>[interviewee name] interview</para>
          <para>All compound objects must have a title.</para>
       </customization>
-      <customization co="item" dd="p16786coll3">
-         <para>TEXTUAL RESOURCES</para>
+      <customization co="item" dd="p16786coll3" resourceType="text">
          <para>Every page must have a title.</para>
          <para>Use the page number or description as the item title.</para>
          <para>Use sentence-case capitalization.</para>
          <para>Do not spell out page numbers, use numerals.</para>
          <para>Required for all compound-object items.</para>
-         <para>AUDIO RESOURCES - SONGS</para>
+      </customization>
+      <customization co="item" dd="p16786coll3" resourceType="song">
          <para>Construct as follows for .mp3 items:</para>
          <para>[song title] - audio</para>
          <para>Enter the song title romanized according to Aki Yerushalayim.</para>
@@ -156,7 +157,8 @@
          <para>Construct as follows for .pdf items which are images of sheet music:</para>
          <para>Musical Transcription: [song title]</para>
          <para>All compound-object items must have a title.</para>
-         <para>AUDIO RESOURCES - ORAL HISTORIES</para>
+      </customization>
+      <customization co="item" dd="p16786coll3" resourceType="oh">
          <para>Construct as follows:</para>
          <para>[interviewee name] interview, [item format]</para>
          <para>All compound-object items must have a title.</para>
@@ -217,23 +219,25 @@
          <para>Cheese Sunday and Clean Monday during Apokears, 1992 in Flamboro, Sohos, and Pondismeno (table of contents).</para>
       </customization>
       <!-- BMR: Finalize SSDC examples -->
-      <customization co="object" dd="p16786coll3">
-         <para>TEXTUAL RESOURCES</para>
+      <customization co="object" dd="p16786coll3" resourceType="text">
          <para>Pavlo i Virjinia: Romanso</para>
-         <para>AUDIO RESOURCES - SONGS</para>
-         <para>Alavar kero al Dyo</para>
-         <para>AUDIO RESOURCES - ORAL HISTORIES</para>
+      </customization>
+      <customization co="object" dd="p16786coll3" resourceType="song">
+         <para>Audio: Alavar kero al Dyo</para>
+      </customization>
+      <customization co="object" dd="p16786coll3" resourceType="oh">
          <para>Solomon Maimon interview</para>
       </customization>
-      <customization co="item" dd="p16786coll3">
-         <para>TEXTUAL RESOURCES</para>
+      <customization co="item" dd="p16786coll3" resourceType="text">
          <para>Title page</para>
          <para>Page 1</para>
-         <para>AUDIO RESOURCES - SONGS</para>
+      </customization>
+      <customization co="item" dd="p16786coll3" resourceType="song">
          <para>La Muerte del Duque de Gandía (í-a) - audio</para>
          <para>Image of Bohora Cornell (Coronel), singer</para>
          <para>Musical Transcription: La Muerte del Duque de Gandí</para>
-         <para>AUDIO RESOURCES - ORAL HISTORIES</para>
+      </customization>
+      <customization co="item" dd="p16786coll3" resourceType="oh">
          <para>Solomon Maimon interview, audio</para>
       </customization>
       <customization co="no" dd="p16786coll3">
