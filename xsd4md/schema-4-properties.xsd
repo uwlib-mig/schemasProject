@@ -6,7 +6,7 @@
 
     <!-- version 0.2.1 2021-10-16
         1 add new simpleType/attribute resourceType_attr_type -->
-    
+
     <!-- vesion 0.2 2017-11-06 
          1 added new element uwRequired with subelements
          2 removed /cdm/uwRequired
@@ -604,8 +604,16 @@
 
     <xs:complexType name="custParaType">
         <xs:annotation>
-            <xs:documentation>The customization element uses 2 attributes, @co and @dd. The latter requires that the @dd code is known at the time the application profile is written. Sometimes that code is not known, resulting in use of a temp code; when the actual code is revealed, it must be entered in multiple locations to replace the temp code, thereby minimizing orthogonality of the system. This should be repaired</xs:documentation>
-            <xs:documentation>Adding a third attribute for use with custParaType to indicate (in addition to which MAP/DD, and which object type ('co', 'item', or 'no') which resource type an instruction or example is for. For example, instructions for compound objects in X collection *which are textual resources*.</xs:documentation>
+            <xs:documentation>The customization element uses 2 attributes, @co and @dd. The latter
+                requires that the @dd code is known at the time the application profile is written.
+                Sometimes that code is not known, resulting in use of a temp code; when the actual
+                code is revealed, it must be entered in multiple locations to replace the temp code,
+                thereby minimizing orthogonality of the system. This should be
+                repaired</xs:documentation>
+            <xs:documentation>Adding a third attribute for use with custParaType to indicate (in
+                addition to which MAP/DD, and which object type ('co', 'item', or 'no') which
+                resource type an instruction or example is for. For example, instructions for
+                compound objects in X collection *which are textual resources*.</xs:documentation>
         </xs:annotation>
         <xs:complexContent>
             <xs:extension base="paraType4co">
@@ -614,30 +622,39 @@
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
-    
+
     <!-- resourceType_attr_type added 2021-10 -->
     <xs:simpleType name="resourceType_attr_type">
-        <xs:restriction base="xs:string">
-            <xs:enumeration value="text">
-                <xs:annotation>
-                    <xs:documentation>Created for Sephardic Studies Digital Collection - p16786coll3; coll. includes textual resources</xs:documentation>
-                </xs:annotation>
-            </xs:enumeration>
-            <xs:enumeration value="song">
-                <xs:annotation>
-                    <xs:documentation>Created for Sephardic Studies Digital Collection - p16786coll3; coll includes audio recordings of song performances</xs:documentation>
-                </xs:annotation>
-            </xs:enumeration>
-            <xs:enumeration value="oh">
-                <xs:annotation>
-                    <xs:documentation>Created for Sephardic Studies Digital Collection - p16786coll3; coll includes oral histories</xs:documentation>
-                </xs:annotation>
-            </xs:enumeration>
-            <xs:enumeration value="all">
-                <xs:annotation>
-                    <xs:documentation>Created for Sephardic Studies Digital Collection - p16786coll3; need to allow use of one customization/para set for all resourceTypes</xs:documentation>
-                </xs:annotation>
-            </xs:enumeration>
+        <xs:restriction>
+            <xs:simpleType>
+                <xs:list>
+                    <xs:simpleType>
+                        <xs:restriction base="xs:token">
+                            <xs:enumeration value="text">
+                                <xs:annotation>
+                                    <xs:documentation>Created for Sephardic Studies Digital
+                                        Collection - p16786coll3; coll. includes textual
+                                        resources</xs:documentation>
+                                </xs:annotation>
+                            </xs:enumeration>
+                            <xs:enumeration value="song">
+                                <xs:annotation>
+                                    <xs:documentation>Created for Sephardic Studies Digital
+                                        Collection - p16786coll3; coll includes audio recordings of
+                                        song performances</xs:documentation>
+                                </xs:annotation>
+                            </xs:enumeration>
+                            <xs:enumeration value="oh">
+                                <xs:annotation>
+                                    <xs:documentation>Created for Sephardic Studies Digital
+                                        Collection - p16786coll3; coll includes oral
+                                        histories</xs:documentation>
+                                </xs:annotation>
+                            </xs:enumeration>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:list>
+            </xs:simpleType>
         </xs:restriction>
     </xs:simpleType>
 
