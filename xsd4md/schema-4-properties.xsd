@@ -615,6 +615,7 @@
         </xs:complexContent>
     </xs:complexType>
     
+    <!-- resourceType_attr_type added 2021-10 -->
     <xs:simpleType name="resourceType_attr_type">
         <xs:restriction base="xs:string">
             <xs:enumeration value="text">
@@ -630,6 +631,11 @@
             <xs:enumeration value="oh">
                 <xs:annotation>
                     <xs:documentation>Created for Sephardic Studies Digital Collection - p16786coll3; coll includes oral histories</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="all">
+                <xs:annotation>
+                    <xs:documentation>Created for Sephardic Studies Digital Collection - p16786coll3; need to allow use of one customization/para set for all resourceTypes</xs:documentation>
                 </xs:annotation>
             </xs:enumeration>
         </xs:restriction>
