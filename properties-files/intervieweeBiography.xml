@@ -29,17 +29,31 @@
          <para>Biographical information about a person interviewed.</para>
       </definition>
       <instructions co="object">
+         <!-- these don't seem like default instructions, they seem like project-specific instructions; ah, I see admin note below -->
          <para>Enter a brief biography of the interviewee that notes their scholarly or professional background and significant contributions to UW Tacoma.</para>
          <para>Highlight self-identified characteristics mentioned during the interview that contributed to interviewee’s perspective.</para>
       </instructions>
+      <customization co="object" dd="p16786coll3" resourceType="oh">
+         <para>Enter brief biographical information about the interviewee.</para>
+         <para>Provide primarily biographical information as mentioned in the interview and/or related to topics discussed in the interview.</para>
+      </customization>
+      <customization co="no" dd="p16786coll3">
+         <para>Enter brief biographical information about the interviewee.</para>
+         <para>Provide primarily biographical information as mentioned in the interview and/or related to topics discussed in the interview.</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="object">
          <para>Michael Honey was born in 1947 in Lansing, Michigan. He grew up in Williamston, Pontiac, and Grand Rapids in Michigan, and Toledo, Ohio. His father was a World War II veteran and urban planner–turned professor who was born into an English farming family in Michigan. His mother came from a French-Canadian working-class family in Detroit. This background had a profound influence on Dr. Honey’s views, his affinity for union workers, and his later academic interests. Honey attended Oakland University, then an experimental, humanities-centered college in southeast Michigan, from 1965 to 1969. Amid the escalation of the Vietnam War, he received approval for his conscientious objector status when he graduated.</para>
          <para>After college, he went to Kentucky and subsequently spent six years in Memphis to serve as the Southern Director of the National Committee Against Repressive Legislation. He completed his graduate degrees at Howard University in Washington, D.C., and at Northern Illinois University, where he focused his research on labor history and developed his first book, Southern Labor and Black Civil Rights. He has since authored several other books, including Going Down Jericho Road: The Memphis Strike, Martin Luther King's Last Campaign.</para>
-         <para>He came to University of Washington Tacoma in 1990 as a founding faculty member. Currently holding the Fred and Dorothy Haley endowed professorship of Humanities, he teaches African-American and labor history. During his time at UW Tacoma, he has also served as the Harry Bridges Endowed Chair of Labor Studies. 
-         </para>
+         <para>He came to University of Washington Tacoma in 1990 as a founding faculty member. Currently holding the Fred and Dorothy Haley endowed professorship of Humanities, he teaches African-American and labor history. During his time at UW Tacoma, he has also served as the Harry Bridges Endowed Chair of Labor Studies.</para>
       </example>
+      <customization co="object" dd="p16786coll3" resourceType="oh">
+         <para>Lela Abravanel was born in Salonica [Thessaloniki] Greece. She discusses her childhood in Las Kampanyas, a suburb of Salonica, and how she spoke French with her parents.</para>
+      </customization>
+      <customization co="no" dd="p16786coll3">
+         <para>Lela Abravanel was born in Salonica [Thessaloniki] Greece. She discusses her childhood in Las Kampanyas, a suburb of Salonica, and how she spoke French with her parents.</para>
+      </customization>
    </examples>
    <additionalInfo>
       <admin co="object">
@@ -55,9 +69,7 @@
          <typeAttribute>xs:string</typeAttribute>
       </typeInfo>
    </xsd>
-   <rdf>
-      <sameAs/>
-   </rdf>
+   <rdf/>
    <history>
       <dateCreated>
          <single>2018-03-23</single>
