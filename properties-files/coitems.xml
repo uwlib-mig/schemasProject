@@ -51,9 +51,7 @@
          </complexType>
       </typeInfo>
    </xsd>
-   <rdf>
-      <sameAs/>
-   </rdf>
+   <rdf/>
    <history>
       <dateCreated>
          <single>2017-11-26</single>
