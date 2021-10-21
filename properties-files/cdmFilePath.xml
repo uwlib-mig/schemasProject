@@ -8,6 +8,8 @@
       <dc>none</dc>
    </labels>
    <uwRequired>
+      <!-- Why do we say this property is UW required if we do not create these values? 
+         Shouldn't this be cdmRequired = yes? (see comment below) -->
       <uwStandalone>yes</uwStandalone>
       <uwObject>yes</uwObject>
       <uwItem>no</uwItem>
@@ -18,9 +20,12 @@
       <cdmLarge>no</cdmLarge>
       <searchable>no</searchable>
       <hidden>yes</hidden>
+      <!-- Shouldn't this be cdmRequired = yes? -->
       <cdmRequired>no</cdmRequired>
       <cdmControlledVocab>no</cdmControlledVocab>
    </cdm>
+   <!-- broader question: how to model properties populated by CONTENTdm in our registry? 
+         Do we need to model them? -->
    <dspace>
       <dspaceProperty/>
    </dspace>
@@ -66,9 +71,7 @@
          <typeAttribute>xs:string</typeAttribute>
       </typeInfo>
    </xsd>
-   <rdf>
-      <sameAs/>
-   </rdf>
+   <rdf/>
    <history>
       <dateCreated>
          <single>1999-01-01</single>
