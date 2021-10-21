@@ -42,15 +42,16 @@
          <para>If the Creator is determined from a resource other than the item, create a Note.</para>
          <para>If there is no author, leave the field blank.</para>
       </instructions>
-      <customization co="object" dd="p16786coll3">
+      <customization co="object" dd="p16786coll3" resourceType="text">
          <para>Search the &lt;a href="https://id.loc.gov/authorities/names.html"&gt;Library of Congress Name Authority File&lt;/a&gt; via id.loc.gov for the author name (usually an individual).</para>
          <para>If a potential match is found, confirm that it is the person associated with the resource: it may be helpful to review information included in the web display such as source(s) of information and occupation (for persons), and/or to follow the links provided for exact and/or closely matching concepts from other schemes.</para>
          <para>Copy the name string for use just as it appears at the top of the page, above the URI(s), including dates.</para>
          <para>If no record exists, Romanize the author name as it appears on the title page (or elsewhere if not on the title page) according to the ALA-LC &lt;a href="https://www.loc.gov/catdir/cpso/romanization/ladino.pdf"&gt;Ladino romanization table&lt;/a&gt;.</para>
-         <para>Record personal names as "Lastname, Firstname".</para>
+         <para>When recording names without a match in the NAF, reuse the recorded form consistently when the same person or organization appears in the metadata for a different resource.</para>
          <para>For a personal name like Alexander Ben Guiat, "Ben" is considered part of the first name and is transcribed as: "Guiat, Alexander Ben".</para>
-         <para>Author names usually appear on title page after the following designations: el autor; kompuesto; por.</para>
-         <para>If entering multiple values for this property, separate each using a semicolon and space (“; “). Order of values does not matter.</para>
+         <para>Separate multiple entries with a semicolon and space (“; “).</para>
+         <para>Order of values does not matter.</para>
+         <para>Author names usually appear on the title page after the following designations: el autor; kompuesto; por.</para>
          <para>Required for all compound objects.</para>
       </customization>
       <customization co="no" dd="p16786coll3">
@@ -58,18 +59,18 @@
          <para>If a potential match is found, confirm that it is the person associated with the resource: it may be helpful to review information included in the web display such as source(s) of information and occupation (for persons), and/or to follow the links provided for exact and/or closely matching concepts from other schemes.</para>
          <para>Copy the name string for use just as it appears at the top of the page, above the URI(s), including dates.</para>
          <para>If no record exists, Romanize the author name as it appears on the title page (or elsewhere if not on the title page) according to the ALA-LC &lt;a href="https://www.loc.gov/catdir/cpso/romanization/ladino.pdf"&gt;Ladino romanization table&lt;/a&gt;.</para>
-         <para>Record personal names as "Lastname, Firstname".</para>
+         <para>When recording names without a match in the NAF, reuse the recorded form consistently when the same person or organization appears in the metadata for a different resource.</para>
          <para>For a personal name like Alexander Ben Guiat, "Ben" is considered part of the first name and is transcribed as: "Guiat, Alexander Ben".</para>
-         <para>Author names usually appear on title page after the following designations: el autor; kompuesto; por.</para>
-         <para>If entering multiple values for this property, separate each using a semicolon and space (“; “). Order of values does not matter.</para>
-         <para>Required for all standalone objects.</para>
+         <para>Separate multiple entries with a semicolon and space (“; “).</para>
+         <para>Order of values does not matter.</para>
+         <para>Author names usually appear on the title page after the following designations: el autor; kompuesto; por.</para>
       </customization>
    </descriptions>
    <examples>
       <example co="all">
          <para>Strong, Lyman W.</para>
       </example>
-      <customization co="object" dd="p16786coll3">
+      <customization co="object" dd="p16786coll3" resourceType="text">
          <para>Saint-Pierre, Bernardin de, 1737-1814.</para>
       </customization>
       <customization co="no" dd="p16786coll3">
