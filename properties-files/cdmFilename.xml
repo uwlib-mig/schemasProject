@@ -8,7 +8,7 @@
       <dc>none</dc>
    </labels>
    <uwRequired>
-      <!-- As with cdmFilePath, Why do we say this property is UW required if we do not create these values? -->
+      <!-- As with cdmFilePath, cdmNumber, Why do we say this property is UW required if we do not create these values? -->
       <uwStandalone>yes</uwStandalone>
       <uwObject>yes</uwObject>
       <uwItem>no</uwItem>
