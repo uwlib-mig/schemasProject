@@ -20,7 +20,8 @@
       <cdmLarge>no</cdmLarge>
       <searchable>no</searchable>
       <hidden>yes</hidden>
-      <!-- Shouldn't this be cdmRequired = yes? -->
+      <!-- Shouldn't this be cdmRequired = yes? 
+         See cdmFilename.xml -->
       <cdmRequired>no</cdmRequired>
       <cdmControlledVocab>no</cdmControlledVocab>
    </cdm>
