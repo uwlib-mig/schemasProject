@@ -37,29 +37,19 @@
       <instructions co="item">
          <para>Enter "xyz" to denote that the item requires subject headings from local catalogers.</para>
       </instructions>
-      <customization co="object" dd="p16786coll3">
-         <para>Enter "xyz" to request the creation and/or review of values for the following fields by UWL cataloging staff:</para>
+      <customization co="object" dd="p16786coll3" resourceType="oh song text">
+         <para>Enter "xyz" to request the creation and/or review of values for one or more of the following fields by UWL cataloging staff:</para>
          <para>Subjects (LCSH)</para>
          <para>Genre/Form (LCGFT)</para>
          <para>Related OCLC Record</para>
-         <para>Geographic Coverage</para>
-         <para>Interviewee Birthplace</para>
-         <para>Performer Birthplace</para>
-         <para>Recording Location</para>
-         <para>Printer Location</para>
-         <para>Publisher Location</para>
+         <para>Geographic fields: Geographic Coverage, Interviewee Birthplace, Performer Birthplace, Recording Location, Printer Location, Publisher Location</para>
       </customization>
-      <customization co="no" dd="p16786coll3">
-         <para>Enter "xyz" to request the creation and/or review of values for the following fields by UWL cataloging staff:</para>
+      <customization co="no" dd="p16786coll3" resourceType="oh song text">
+         <para>Enter "xyz" to request the creation and/or review of values for one or more of the following fields by UWL cataloging staff:</para>
          <para>Subjects (LCSH)</para>
          <para>Genre/Form (LCGFT)</para>
          <para>Related OCLC Record</para>
-         <para>Geographic Coverage</para>
-         <para>Interviewee Birthplace</para>
-         <para>Performer Birthplace</para>
-         <para>Recording Location</para>
-         <para>Printer Location</para>
-         <para>Publisher Location</para>
+         <para>Geographic fields: Geographic Coverage, Interviewee Birthplace, Performer Birthplace, Recording Location, Printer Location, Publisher Location</para>
       </customization>
    </descriptions>
    <examples>
