@@ -109,7 +109,7 @@
       <changeLog>
          <change/>
          <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
-         <change date="2021-03-20">Add custom instructions and examples for SSDC (p16786coll3).</change>
+         <change date="2021-03-20">Add custom instructions and examples for Sephardic Studies Digital Collection - p16786coll3</change>
       </changeLog>
    </history>
 </property>
