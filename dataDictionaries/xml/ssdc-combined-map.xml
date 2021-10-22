@@ -72,12 +72,13 @@
         <xi:include href="../../properties-files/originalFormat.xml"/>
         <xi:include href="../../properties-files/physicalDescription.xml"/>
         <xi:include href="../../properties-files/timecodeStart.xml"/><!-- NEW timecodeStart -->
-        <xi:include href="../../properties-files/digitalFileName.xml"/>
         <xi:include href="../../properties-files/digitalReproductionInformation.xml"/>
         <!-- ADMIN / CONTENTDM PROPS -->
         <xi:include href="../../properties-files/cataloging.xml"/>
         <xi:include href="../../properties-files/staffNotes.xml"/>
         <xi:include href="../../properties-files/digitalFileName.xml"/><!-- NEW digitalFileName -->
+        <xi:include href="../../properties-files/standaloneDeclaration.xml"/>
+        <!--
         <xi:include href="../../properties-files/cdmFilename.xml"/>
         <xi:include href="../../properties-files/cdmFilePath.xml"/>
         <xi:include href="../../properties-files/cdmNumber.xml"/>
@@ -87,6 +88,6 @@
         <xi:include href="../../properties-files/coitems.xml"/>
         <xi:include href="../../properties-files/partOfCo.xml"/>
         <xi:include href="../../properties-files/oclcNumber.xml"/>
-        <xi:include href="../../properties-files/standaloneDeclaration.xml"/>  
+        -->
     </properties>
 </migDataDictionary>

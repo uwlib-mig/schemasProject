@@ -45,8 +45,10 @@
         <xi:include href="../../properties-files/type.xml"/>
         <xi:include href="../../properties-files/extent.xml"/>
         <xi:include href="../../properties-files/digitalFormat.xml"/>
-        <!-- omitting all admin properties except cataloging, staffNotes and digitalFileName; 
-            find in ssdc-combined-map.xml -->
+        <xi:include href="../../properties-files/originalFormat.xml"/>
+        <xi:include href="../../properties-files/physicalDescription.xml"/>
+        <xi:include href="../../properties-files/digitalReproductionInformation.xml"/>
+        <!-- omitting all admin properties except cataloging, staffNotes and digitalFileName -->
         <xi:include href="../../properties-files/cataloging.xml"/>
         <xi:include href="../../properties-files/staffNotes.xml"/>
         <xi:include href="../../properties-files/digitalFileName.xml"/><!-- NEW digitalFileName -->

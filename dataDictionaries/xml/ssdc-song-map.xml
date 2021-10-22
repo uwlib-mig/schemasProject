@@ -38,6 +38,9 @@
         <xi:include href="../../properties-files/type.xml"/>
         <xi:include href="../../properties-files/extent.xml"/>
         <xi:include href="../../properties-files/digitalFormat.xml"/>
+        <xi:include href="../../properties-files/originalFormat.xml"/>
+        <xi:include href="../../properties-files/physicalDescription.xml"/>
+        <xi:include href="../../properties-files/digitalReproductionInformation.xml"/>
         <xi:include href="../../properties-files/timecodeStart.xml"/><!-- NEW timecodeStart -->
         <!-- omitting all admin properties except staffNotes and digitalFileName; find in ssdc-combined-map.xml -->
         <xi:include href="../../properties-files/staffNotes.xml"/>
