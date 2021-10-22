@@ -4,9 +4,11 @@
    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
    <uid>p21</uid>
    <labels>
-      <platformIndependent>dateCreated</platformIndependent>
+      <platformIndependent>date</platformIndependent>
       <dc>created</dc>
-      <!-- I don't think we need schemaLabel; schemas are to be produced for validating cdm exports; look at thos exports and see how the property labels export; the cdmLabel might be adequate for producing the schema -->
+      <!-- I don't think we need schemaLabel; schemas are to be produced for validating cdm exports; 
+         look at those exports and see how the property labels export; 
+         the cdmLabel might be adequate for producing the schema -->
    </labels>
    <uwRequired>
       <uwStandalone>yes</uwStandalone>
@@ -91,7 +93,7 @@
          <para>If the date is unknown, enter an approximate date using one of the two above formats that express uncertainty, namely YYYY? or between YYYY and YYYY?.</para>
          <para>If none of the date formats above are adequate, use a custom date format.</para>
       </customization>
-      <customization co="object" dd="p16786coll3">
+      <customization co="object" dd="p16786coll3" resourceType="text">
          <para>Enter the date (generally a year only) as reflected on the title page.</para>
          <para>If only the lunar or Gregorian year is recorded, only enter that year. Do not convert between calendar systems.</para>
          <para>If both Gregorian and lunar years are recorded, only enter the Gregorian year.</para>
@@ -99,6 +101,17 @@
          <para>If no date present on item, generate an estimate based on similar items in other collections: &lt;a href="http://catdir.loc.gov/catdir/toc/becites/ladino/63062107a.html"&gt;LOC Ladino catalog&lt;/a&gt;, &lt;a href="https://hollis.harvard.edu/primo-explore/search?vid=HVD2&amp;sortby=rank&amp;lang=en_US"&gt;Harvard University Library&lt;/a&gt;, and the &lt;a href="https://web.nli.org.il/sites/nli/English/library/Pages/default.aspx"&gt;National Library of Israel&lt;/a&gt; are viable options.</para>
          <para>Required for all compound objects.</para>
       </customization>
+      <customization co="object" dd="p16786coll3" resourceType="song">
+         <para>Enter the date on which the recording was made.</para>
+         <para>Use a YYYY-MM-DD format if month and day information is available.</para>
+         <para>Use a YYYY-MM or YYYY format if month and/or day information is not available.</para>
+      </customization>
+      <customization co="object" dd="p16786coll3" resourceType="oh">
+         <para>Enter the date on which the interview was recorded.</para>
+         <para>Use a YYYY-MM-DD format if month and day information is available.</para>
+         <para>Use a YYYY-MM or YYYY format if month and/or day information is not available.</para>
+      </customization>
+      <!-- SSDC standalone instructions most likely need broadening for use with other than texts -->
       <customization co="no" dd="p16786coll3">
          <para>Enter the date (generally a year only) as reflected on the title page.</para>
          <para>If only the lunar or Gregorian year is recorded, only enter that year. Do not convert between calendar systems.</para>
@@ -125,13 +138,19 @@
          <para>between 1946 and 1952</para>
          <para>between 1901 and 1960?</para>
       </example>
-      <customization co="object" dd="p16786coll3">
+      <customization co="object" dd="p16786coll3" resourceType="text">
          <para>5651 [example of lunar year]</para>
          <para>1923 [example of Gregorian year]</para>
          <para>ca. 1900</para>
          <para>not before 1900</para>
          <para>after 1900 [example of estimate]</para>
       </customization>
+      <customization co="object" dd="p16786coll3" resourceType="song oh">
+         <para>2020-03-15</para>
+         <para>2019-04</para>
+         <para>2018</para>
+      </customization>
+      <!-- SSDC standalone examples most likely need broadening for use with other than texts -->
       <customization co="no" dd="p16786coll3">
          <para>5651 [example of lunar year]</para>
          <para>1923 [example of Gregorian year]</para>
@@ -178,9 +197,10 @@
       <changeLog>
          <change/>
          <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation. Also added instruction.</change>
-         <change date="2018-02-27">Added customix=zations for Architecture of the Pacific Northwest collection.</change>
+         <change date="2018-02-27">Added customizations for Architecture of the Pacific Northwest collection.</change>
          <change date="2020-05-19">Changed instructions to accommodate video (moving images).</change>
-         <change date="2021-03-20">Add custom instructions, examples for SSDC (p16786coll3).</change>
+         <change date="2021-10-21">Add custom instructions, examples for Sephardic Studies Digital Collection - p16786coll3.</change>
+         <change date="2021-10-21">Change platform-independent label to disambiguate from dateCreated.xml (a CONTENTdm admin property) and align with filename.</change>
       </changeLog>
    </history>
 </property>
