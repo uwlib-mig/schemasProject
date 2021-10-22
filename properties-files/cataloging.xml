@@ -44,7 +44,7 @@
          <para>Related OCLC Record</para>
          <para>Geographic fields: Geographic Coverage, Interviewee Birthplace, Performer Birthplace, Recording Location, Printer Location, Publisher Location</para>
       </customization>
-      <customization co="no" dd="p16786coll3" resourceType="oh song text">
+      <customization co="no" dd="p16786coll3">
          <para>Enter "xyz" to request the creation and/or review of values for one or more of the following fields by UWL cataloging staff:</para>
          <para>Subjects (LCSH)</para>
          <para>Genre/Form (LCGFT)</para>
