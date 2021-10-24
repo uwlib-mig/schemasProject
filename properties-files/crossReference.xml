@@ -26,18 +26,39 @@
     </dspace>
     <descriptions>
         <definition>
-            <para></para>
+            <para>Information about other sources in which a description of or information about the resource may be found.</para>
         </definition>
-        <instructions co="object"></instructions>
-        <instructions co="no"></instructions>
-        <customization co="object" dd="p1678coll3"></customization>
-        <customization co="no" dd="p1678coll3"></customization>
+        <!-- DRAFT default instructions -->
+        <instructions co="object">
+            <para>Provide information about one or more sources which provide additional information about the resource.</para>
+        </instructions>
+        <instructions co="no">
+            <para>Provide information about one or more sources which provide additional information about the resource.</para>
+        </instructions>
+        <customization co="object" dd="p16786coll3" resourceType="song">
+            <para>Provide any references to other Sephardic ballad collections given for this ballad as it is described in &lt;a href="https://alliance-primo.hosted.exlibrisgroup.com/permalink/f/kjtuig/CP71363340660001451"&gt;"Romances judeo-españoles de Oriente : nueva recolección"&lt;/a&gt;.</para>
+            <para>Locate the song in "Romances judeo-españoles de Oriente: nueva recolección" by Rina Benmayor and Judith H. Mauleón.</para>
+            <para>Copy the list of cross references, including the abbreviation and numeric page number, which appears after the word "bibliographia."</para>
+            <para>Separate multiple values with a semicolon and space ("; ").</para>
+            <para>Legend: MP = Menendez Pidal; CAT-IND = Armistead and Silverman; RJEO = Romances judeo-españoles de Oriente.</para>
+        </customization>
+        <customization co="object" dd="p16786coll3" resourceType="text">
+            <para>Optional: Provide information about one or more sources which provide additional information about the resource.</para>
+        </customization>
     </descriptions>
     <examples>
-        <example co="object"></example>
-        <example co="no"></example>
-        <customization co="object" dd="p1678coll3"></customization>
-        <customization co="no" dd="p1678coll3"></customization>
+        <!-- DRAFT default examples -->
+        <example co="object">
+            <para>See the Wikipedia entry "Application profile" at the following URL for more information about this resource:</para>
+            <para>https://en.wikipedia.org/wiki/Application_profile</para>
+        </example>
+        <example co="no">
+            <para>See the Wikipedia entry "Application profile" at the following URL for more information about this resource:</para>
+            <para>https://en.wikipedia.org/wiki/Application_profile</para>
+        </example>
+        <customization co="object" dd="p16786coll3" resourceType="song">
+            <para>RJEO 25b; AMP F5; MP 43</para>
+        </customization>
     </examples>
     <additionalInfo></additionalInfo>
     <marc>
@@ -49,7 +70,7 @@
         <dateCreated>
             <range>
                 <start>2021-10-01</start>
-                <end></end>
+                <end>2021-10-21</end>
             </range>
         </dateCreated>
         <created4Coll>Sephardic Studies Digital Collection - p16786coll3</created4Coll>
