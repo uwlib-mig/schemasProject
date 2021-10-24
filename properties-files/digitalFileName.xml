@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
     <uid>p134</uid>
     <labels>
@@ -22,7 +23,7 @@
         <cdmControlledVocab>notApplicable</cdmControlledVocab>
     </cdm>
     <dspace>
-        <dspaceProperty></dspaceProperty>
+        <dspaceProperty/>
     </dspace>
     <descriptions>
         <definition>
@@ -75,6 +76,14 @@
             <para>20211023_postcard.jpg</para>
             <para>20211023_photo.jpg</para>
         </example>
+        <customization co="item" dd="p16786coll3" resourceType="text">
+            <para>ST-001.jpg</para>
+        </customization>
+        <customization co="item" dd="p16786coll3" resourceType="song">
+            <para>86_El_Robo_de_Elena.mp3</para>
+            <para>Estrea_Chiprut.jpg</para>
+            <para>La_Muerte_del_Duque_de_Gandía.pdf</para>
+        </customization>
     </examples>
     <additionalInfo>
         <admin co="all">
@@ -83,10 +92,10 @@
         </admin>
     </additionalInfo>
     <marc>
-        <dcgMarcMapping></dcgMarcMapping>
+        <dcgMarcMapping/>
     </marc>
-    <xsd></xsd>
-    <rdf></rdf>
+    <xsd/>
+    <rdf/>
     <history>
         <dateCreated>
             <range>
@@ -97,7 +106,7 @@
         <created4Coll>Sephardic Studies Digital Collection - p16786coll3</created4Coll>
         <justification>Property exists in &lt;a href="https://www.lib.washington.edu/cams/mig/datadicts/special-collections-oral-histories-data-dictionary"&gt;Special Collections Oral Histories Data Dictionary&lt;/a&gt;, defining for continued use and output to HTML MAPs.</justification>
         <changeLog>
-            <change></change>
+            <change/>
         </changeLog>
     </history>
 </property>
