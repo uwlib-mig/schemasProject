@@ -13,7 +13,7 @@
         <uwItem>no</uwItem>
     </uwRequired>
     <cdm>
-        <label>n/a</label>
+        <label/>
         <cdmDatatype>uwAdministrative</cdmDatatype>
         <cdmLarge>no</cdmLarge>
         <searchable>no</searchable>
@@ -26,18 +26,61 @@
     </dspace>
     <descriptions>
         <definition>
-            <para></para>
+            <para>The complete name including file extension of a digital file representing a resource to be described by one or more property/value pairs in CONTENTdm.</para>
         </definition>
-        <instructions co="object"></instructions>
-        <instructions co="item"></instructions>
-        <instructions co="no"></instructions>
+        <instructions co="object">
+            <para>Enter the name of the digital file representing the compound object.</para>
+        </instructions>
+        <instructions co="item">
+            <para>Enter the name of the digital file representing the compound-object item.</para>
+        </instructions>
+        <instructions co="no">
+            <para>Enter the name of the digital file representing the standalone object.</para>
+        </instructions>
+        <customization co="object" dd="p16786coll3" resourceType="oh song text">
+            <para>When entering values in a metadata spreadsheet, each row will include values describing a resource--either a compound object, compound-object item, or standalone object.</para>
+            <para>Each row must include the filename for the resource described, provided as a value for this property.</para>
+            <para>Enter the filename of a file which will represent the compound object.</para>
+            <para>For textual resources, this is customarily the book cover image.</para>
+            <para>For ballads, this is customarily an image file (photograph) depicting the singer.</para>
+            <para>For oral histories, this is customarily an image file (photograph) depicting the interviewee.</para>
+        </customization>
+        <customization co="item" dd="p16786coll3" resourceType="text">
+            <para>When entering values in a metadata spreadsheet, each row will include values describing a resource--either a compound object, compound-object item, or standalone object.</para>
+            <para>Each row must include the filename for the resource described, provided as a value for this property.</para>
+            <para>Enter the filename of the image file for the page described in the spreadsheet row.</para>
+        </customization>
+        <customization co="item" dd="p16786coll3" resourceType="song oh">
+            <para>When entering values in a metadata spreadsheet, each row will include values describing a resource--either a compound object, compound-object item, or standalone object.</para>
+            <para>Each row must include the filename for the resource described, provided as a value for this property.</para>
+            <para>For ballads, compound-object items will either be audio files, image files (photographs) of a singer, or musical transcriptions (image or PDF files).</para>
+            <para>For oral histories, compound-object items will either be audio files, image files (photographs) of an interviewee, or transcripts (PDF files).</para>
+        </customization>
     </descriptions>
     <examples>
-        <example co="object"></example>
-        <example co="item"></example>
-        <example co="no"></example>
+        <example co="object">
+            <para>cover.jpg</para>
+            <para>ballad_singer_photo_001.jpg</para>
+            <para>interviewee_002_photo.jpg</para>
+        </example>
+        <example co="item">
+            <para>p123.jpg</para>
+            <para>20211023_singer_photo.jpg</para>
+            <para>20211023_interview.wav</para>
+            <para>20211023_interview_transcript.pdf</para>
+            <para>sheet_music_003.pdf</para>
+        </example>
+        <example co="no">
+            <para>ephemera_pamphlet_001.jpg</para>
+            <para>20211023_postcard.jpg</para>
+            <para>20211023_photo.jpg</para>
+        </example>
     </examples>
-    <additionalInfo></additionalInfo>
+    <additionalInfo>
+        <admin co="all">
+            <para>Property conceived of as useful for metadata spreadsheets, in which a filename must be provided for each set of property/value pairs in a given row.</para>
+        </admin>
+    </additionalInfo>
     <marc>
         <dcgMarcMapping></dcgMarcMapping>
     </marc>
@@ -47,7 +90,7 @@
         <dateCreated>
             <range>
                 <start>2021-10-01</start>
-                <end></end>
+                <end>2021-10-23</end>
             </range>
         </dateCreated>
         <created4Coll>Sephardic Studies Digital Collection - p16786coll3</created4Coll>
