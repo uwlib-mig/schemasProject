@@ -56,6 +56,22 @@
          <para>If the value of Date is not any of the above, consult the EDTF spedification to determine the appropriate notation.</para>
          <para>Date-Edtf value should agree with dates values entered in Date and Dates fields.</para>
       </instructions>
+      <customization co="object" dd="p16786coll3" resourceType="oh text song">
+         <!-- use default co instructions with added note about conversion from lunar -->
+         <para>Reflects the date in the "Date" field.</para>
+         <para>Express all dates, including date ranges, using Library of Congress' Extended Date Time Format.</para>
+         <para>Creating well-formed values for resources in the Sephardic Studies Digital Collection may require first converting date values from lunar to Gregorian calendar systems.</para>
+         <para>The most recent version of the Library of Congress' summary of EDTF is available at &lt;a href="https://www.loc.gov/standards/datetime/"&gt;https://www.loc.gov/standards/datetime/&lt;/a&gt;.</para>
+         <para>Six formats are recommended for values in Date, each corresponding to a specific EDTF format:</para>
+         <para>If the value of Date is YYYY, enter YYYY.</para>
+         <para>If the value of Date is YYYY?, enter YYYY?</para>
+         <para>If the value of Date is [month] DD, YYYY, enter YYYY-MM-DD.</para>
+         <para>If the value of Date is [month], YYYY, enter YYYY-MM.</para>
+         <para>If the value of Date is between YYYY and YYYY, enter YYYY/YYYY.</para>
+         <para>If the value of Date is between YYYY and YYYY?, enter YYYY?/YYYY?</para>
+         <para>If the value of Date is not any of the above, consult the EDTF spedification to determine the appropriate notation.</para>
+         <para>Date-Edtf value should agree with dates values entered in Date and Dates fields.</para>
+      </customization>
       <!-- Don't need date for items??
         <instructions co="item">
          <para>Reflects the date in the "Date" field.</para>
@@ -169,7 +185,7 @@
       <admin co="all">
          <para>For the xsd, datatype is xs:string; the datatype is more accurately http://id.loc.gov/datatypes/edtf, which is not a valid QName and is inavlid according to schema-4-properties, but this does not seem to be machine-actionable; more exploration needed.</para>
       </admin>
-      <generalNotes co="all"> </generalNotes>
+      <generalNotes co="all"/>
    </additionalInfo>
    <marc>
       <dcgMarcMapping/>
@@ -226,6 +242,7 @@
          <change date="2020-05-19">Commented-out instructions for co items.</change>
          <change date="2021-03-20">Encode EDTF reference URL to output live links to HTML DDs.</change>
          <change date="2021-04-07">Per MIG feedback on 2021-03-25: 1) make dateEdtf searchable = yes 2) map dateEdtf to "date" (was "created"). BMR</change>
+         <change date="2021-10-23">Add custom instructions for Sephardic Studies Digital Collection - p16786coll3.</change>
       </changeLog>
    </history>
 </property>
