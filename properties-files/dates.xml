@@ -106,6 +106,20 @@
          <para>This field is indexed and enables date searching in CONTENTdm.</para>
          <para>The Dates value should agree with date values entered in Date-Edtf and Date of Broadcast fields.</para>
       </customization>
+      <customization co="object" dd="p16786coll3" resourceType="oh song text">
+         <!-- use default co instructions with added note about conversion from lunar -->
+         <para>Reflects the date in the "Date" field pertinent to the overall object.</para>
+         <para>Creating well-formed values for resources in the Sephardic Studies Digital Collection may require first converting date values from lunar to Gregorian calendar systems.</para>
+         <para>Enter the year or years only.</para>
+         <para>When the value of Date is YYYY, enter YYYY.</para>
+         <para>When the value of Date is YYYY?, enter an eleven year date range, five years on either side of the uncertain date.</para>
+         <para>When the value of Date is [month] DD, YYYY, enter the year only in the following format: YYYY.</para>
+         <para>When the value of Date is [month], YYYY, enter the year only in the following format: YYYY.</para>
+         <para>When the value of Date is between YYYY and YYYY, enter all years in the date range in the following format: YYYY YYYY YYYY etc.</para>
+         <para>When the value of Date is between YYYY and YYYY?, enter all years in the date range plus five years before the earliest date and five years after the latest date, in the following format: YYYY YYYY YYYY etc.</para>
+         <para>This field is indexed and enables date searching in CONTENTdm.</para>
+         <para>The Dates value should agree with date values entered in Date-Edtf and Date fields.</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="no">
