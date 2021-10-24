@@ -15,11 +15,11 @@
     <cdm>
         <label/>
         <cdmDatatype>uwAdministrative</cdmDatatype>
-        <cdmLarge>no</cdmLarge>
-        <searchable>no</searchable>
-        <hidden>no</hidden>
+        <cdmLarge>notApplicable</cdmLarge>
+        <searchable>notApplicable</searchable>
+        <hidden>notApplicable</hidden>
         <cdmRequired>no</cdmRequired>
-        <cdmControlledVocab>no</cdmControlledVocab>
+        <cdmControlledVocab>notApplicable</cdmControlledVocab>
     </cdm>
     <dspace>
         <dspaceProperty></dspaceProperty>
@@ -78,7 +78,8 @@
     </examples>
     <additionalInfo>
         <admin co="all">
-            <para>Property conceived of as useful for metadata spreadsheets, in which a filename must be provided for each set of property/value pairs in a given row.</para>
+            <para>digitalFileName is conceived of as useful for metadata spreadsheets, in which a filename must be provided for each set of property/value pairs in a given row.</para>
+            <para>digitalFileName is not conceived of as a property which will display in the public CONTENTdm UI--indeed, it may only appear in metadata spreadsheets for upload.</para>
         </admin>
     </additionalInfo>
     <marc>
