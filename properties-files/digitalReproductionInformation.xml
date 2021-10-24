@@ -38,18 +38,30 @@
       <instructions co="item">
          <para>Input a paragraph with pertinent information on the digital conversion process of the compound object item.</para>
       </instructions>
+      <customization co="item" dd="p16786coll3" resourceType="text">
+         <para>If available, provide any details not included elsewhere regarding the digitization of the text.</para>
+         <para>Note that this property is implemented at the compound-object item level, which necessitates the repetition of values.</para>
+      </customization>
+      <customization co="item" dd="p16786coll3" resourceType="song">
+         <para>Provide any details not included elsewhere regarding the digitization of the audio recording.</para>
+         <para>Note that this property is implemented at the compound-object item level, which necessitates the repetition of values.</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="no">
          <para>Scanned from a photographic print using a Microtek Scanmaker 9600XL at 72 dpi in JPEG format at compression rate 3.      10/1998.</para>
       </example>
-      <example co="object">
+      <!-- <example co="object">
          <para>Scanned from original text or image at 400 dpi, saved in TIFF format, resized and enhanced using Adobe Photoshop, and imported as JPEG2000 using Contentdm software's JPEG2000 Extension. 2006.</para>
-      </example>
+      </example> -->
       <example co="item">
          <para>Scanned from original text or image at 400 dpi, saved in TIFF format, resized and enhanced using Adobe Photoshop, and imported as JPEG2000 using Contentdm software's JPEG2000 Extension. 2006.</para>
       </example>
       <customization co="no" dd="krab">
+         <para>Sample rate: 96KHz. Bit depth: 24. Issues encountered: Repaired several faulty splices. Date of transfer: 2019-01-04. Applicable conservation treatments: Baked and repaired several splices. De-noise and de-hum (iZotrope RX5).</para>
+      </customization>
+      <customization co="item" dd="p16786coll3" resourceType="song">
+         <!-- using the krab example to give an indication for SSDC values -->
          <para>Sample rate: 96KHz. Bit depth: 24. Issues encountered: Repaired several faulty splices. Date of transfer: 2019-01-04. Applicable conservation treatments: Baked and repaired several splices. De-noise and de-hum (iZotrope RX5).</para>
       </customization>
    </examples>
@@ -88,6 +100,8 @@
          <change date="2018-03-27">Added item info.</change>
          <change date="2020-05-19">Commented-out instructions/item to suppress from Greek Dances.</change>
          <change date="2020-06-03">Commented out object description acc to MIG decision and re-instated the item!</change>
+         <change date="2021-10-23">Comment out object example (in addition to instructions) per MIG decision referenced in 2020-06-03 change note.</change>
+         <change date="2021-10-23">Add custom instructions for Sephardic Studies Digital Collection - p16786coll3; add the krab example to help provide an indication for use with SSDC song recording values.</change>
       </changeLog>
    </history>
 </property>
