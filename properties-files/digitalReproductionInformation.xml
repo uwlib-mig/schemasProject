@@ -60,9 +60,10 @@
       <customization co="no" dd="krab">
          <para>Sample rate: 96KHz. Bit depth: 24. Issues encountered: Repaired several faulty splices. Date of transfer: 2019-01-04. Applicable conservation treatments: Baked and repaired several splices. De-noise and de-hum (iZotrope RX5).</para>
       </customization>
-      <customization co="item" dd="p16786coll3" resourceType="song">
-         <!-- using the krab example to give an indication for SSDC values -->
+      <customization co="item" dd="p16786coll3" resourceType="song oh">
+         <!-- using the krab example and an example from SCOHDD to give an indication for SSDC values -->
          <para>Sample rate: 96KHz. Bit depth: 24. Issues encountered: Repaired several faulty splices. Date of transfer: 2019-01-04. Applicable conservation treatments: Baked and repaired several splices. De-noise and de-hum (iZotrope RX5).</para>
+         <para>Digital, stereo. Copied from analog recording to compact disc. Converted to 24 bit/48kHz Broadcast WAV format files by University of Washington Libraries in 2010.</para>
       </customization>
    </examples>
    <additionalInfo/>
