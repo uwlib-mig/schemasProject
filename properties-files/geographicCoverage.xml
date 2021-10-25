@@ -49,6 +49,34 @@
          <para>For neighborhoods or other types of locales below the city level, enter an LCSH heading in the Subjects (LCSH) field above.</para>
          <para>Separate multiple entries with a semicolon.</para>
       </instructions>
+      <customization co="object" dd="p16786coll3" resourceType="oh">
+         <para>For metadata creation taking place outside the UWL Cataloging and Metadata Services unit:</para>
+         <para>Enter broad and local geographic locations given significant attention in the resource in natural language, providing sufficient information to disambiguate place names as needed.</para>
+         <para>As a rule, include more information rather than less.</para>
+         <para>For example, when providing the name of a city, also provide the state, region, and/or country name(s) as available.</para>
+         <para>Cataloging staff will use this information to create a structured value.</para>
+         <para>Separate multiple entries with a semicolon and space (“; “).</para>
+         <para>For UWL cataloging staff creating structured values:</para>
+         <para>Forms of the names should be derived from the Library of Congress Authority File.</para>
+         <para>Enter as follows:</para>
+         <para>Country--State or Province--City</para>
+         <para>For neighborhoods or other types of locales below the city level, enter an LCSH heading in the Subjects (LCSH) field.</para>
+         <para>Separate multiple entries with a semicolon and space (“; “).</para>
+      </customization>
+      <customization co="no" dd="p16786coll3">
+         <para>For metadata creation taking place outside the UWL Cataloging and Metadata Services unit:</para>
+         <para>Enter broad and local geographic locations given significant attention in the resource in natural language, providing sufficient information to disambiguate place names as needed.</para>
+         <para>As a rule, include more information rather than less.</para>
+         <para>For example, when providing the name of a city, also provide the state, region, and/or country name(s) as available.</para>
+         <para>Cataloging staff will use this information to create a structured value.</para>
+         <para>Separate multiple entries with a semicolon and space (“; “).</para>
+         <para>For UWL cataloging staff creating structured values:</para>
+         <para>Forms of the names should be derived from the Library of Congress Authority File.</para>
+         <para>Enter as follows:</para>
+         <para>Country--State or Province--City</para>
+         <para>For neighborhoods or other types of locales below the city level, enter an LCSH heading in the Subjects (LCSH) field.</para>
+         <para>Separate multiple entries with a semicolon and space (“; “).</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="no">
@@ -73,6 +101,26 @@
          <para>Russia (Federation)--Leningradskaia oblast--Saint Petersburg [use current form, even though it was called Leningrad in Soviet Union, when photo was taken]</para>
       </example>
       <customization co="object" dd="uwtoh">
+         <para>United States—Washington (State)—Tacoma</para>
+         <para>Pakistan—Lahore</para>
+         <para>United States—Washington (State)—Bellingham</para>
+      </customization>
+      <customization co="object" dd="p16786coll3" resourceType="oh">
+         <para>[Natural-language values for review by cataloging staff:]</para>
+         <para>Tacoma, Washington, USA</para>
+         <para>Lahore, Pakistan</para>
+         <para>Bellingham, WA, USA</para>
+         <para>[Structured values provided by cataloging staff:]</para>
+         <para>United States—Washington (State)—Tacoma</para>
+         <para>Pakistan—Lahore</para>
+         <para>United States—Washington (State)—Bellingham</para>
+      </customization>
+      <customization co="no" dd="p16786coll3">
+         <para>[Natural-language values for review by cataloging staff:]</para>
+         <para>Tacoma, Washington, USA</para>
+         <para>Lahore, Pakistan</para>
+         <para>Bellingham, WA, USA</para>
+         <para>[Structured values provided by cataloging staff:]</para>
          <para>United States—Washington (State)—Tacoma</para>
          <para>Pakistan—Lahore</para>
          <para>United States—Washington (State)—Bellingham</para>
