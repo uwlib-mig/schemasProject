@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md 
     http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
     <uid>p135</uid>
@@ -23,38 +24,74 @@
         <cdmControlledVocab>no</cdmControlledVocab>
     </cdm>
     <dspace>
-        <dspaceProperty></dspaceProperty>
+        <dspaceProperty/>
     </dspace>
     <descriptions>
-        <definition></definition>
-        <instructions co="object"></instructions>
-        <instructions co="no"></instructions>
-        <customization co="object" dd="p16786coll3"></customization>
-        <customization co="no" dd="p16786coll3"></customization>
+        <definition>
+            <para>An abridged transcript, or list of contents, for the resource.</para>
+        </definition>
+        <!-- DRAFT default instructions, extremely minimal -->
+        <instructions co="all">
+            <para>Enter an abridged transcript, or list of contents, for the resource.</para>
+        </instructions>
+        <customization co="object" dd="p16786coll3" resourceType="oh">
+            <para>Enter an abridged transcript or a list of contents.</para>
+            <para>Start each sentence on a new line with a small dash.</para>
+            <para>Non-English interviews do not need an index.</para>
+        </customization>
+        <customization co="no" dd="p16786coll3">
+            <para>Enter an abridged transcript or a list of contents.</para>
+            <para>Start each sentence on a new line with a small dash.</para>
+            <para>Non-English interviews do not need an index.</para>
+        </customization>
     </descriptions>
     <examples>
-        <example co="object"></example>
-        <example co="no"></example>
-        <customization co="object" dd="p16786coll3"></customization>
-        <customization co="no" dd="p16786coll3"></customization>
+        <example co="object"/>
+        <example co="no"/>
+        <customization co="object" dd="p16786coll3" resourceType="oh">
+            <para>Topics presented in order of discussion on recording:</para>
+            <para>- More on civil rights and local activism.</para>
+            <para>- Phone rings in the background</para>
+            <para>- Made presentation to Jim Ellis.</para>
+            <para>- Federal case involving racism and employment opportunities.</para>
+            <para>- Nixon Administration.</para>
+            <para>- 1989 Supreme Court case about employment and racism.</para>
+            <para>- Had a series of mini strokes that forced me to retire.</para>
+            <para>- Narrator's comments about people he has talked to.  Lists names.  I'm not a journalist. This is an oral history. Intention is to create oral history of the whole city.</para>
+            <para>- Intention to publish. - Discusses the scope of the publication.</para>
+            <para>- Events in the 1960s precede the scope. - Discuss other potential subjects for the project.</para>
+        </customization>
+        <customization co="no" dd="p16786coll3">
+            <para>Topics presented in order of discussion on recording:</para>
+            <para>- More on civil rights and local activism.</para>
+            <para>- Phone rings in the background</para>
+            <para>- Made presentation to Jim Ellis.</para>
+            <para>- Federal case involving racism and employment opportunities.</para>
+            <para>- Nixon Administration.</para>
+            <para>- 1989 Supreme Court case about employment and racism.</para>
+            <para>- Had a series of mini strokes that forced me to retire.</para>
+            <para>- Narrator's comments about people he has talked to.  Lists names.  I'm not a journalist. This is an oral history. Intention is to create oral history of the whole city.</para>
+            <para>- Intention to publish. - Discusses the scope of the publication.</para>
+            <para>- Events in the 1960s precede the scope. - Discuss other potential subjects for the project.</para>
+        </customization>
     </examples>
-    <additionalInfo></additionalInfo>
+    <additionalInfo/>
     <marc>
-        <dcgMarcMapping></dcgMarcMapping>
+        <dcgMarcMapping/>
     </marc>
-    <xsd></xsd>
-    <rdf></rdf>
+    <xsd/>
+    <rdf/>
     <history>
         <dateCreated>
             <range>
                 <start>2021-10-01</start>
-                <end></end>
+                <end>2021-10-25</end>
             </range>
         </dateCreated>
         <created4Coll>Sephardic Studies Digital Collection - p16786coll3</created4Coll>
         <justification>Collection owner would like to provide index values for oral histories. No index property has been defined to date, although &lt;a href="https://www.lib.washington.edu/cams/mig/datadicts/special-collections-oral-histories-data-dictionary"&gt;Special Collections Oral Histories Data Dictionary&lt;/a&gt; includes property "Transcript/Index"</justification>
         <changeLog>
-            <change></change>
+            <change/>
         </changeLog>
     </history>
 </property>
