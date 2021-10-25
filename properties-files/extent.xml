@@ -73,6 +73,15 @@
          <para>Duration should be entered hh:mm:ss.</para>
          <para>Do not enter a value for the extent of the pdf file.</para>
       </customization>
+      <customization co="item" dd="p16786coll3" resourceType="oh text song">
+         <para>Enter the extent of digital access file.</para>
+         <para>For digital audio, provide both the runtime and the file size.</para>
+         <para>Separate runtime and file size with a semicolon and space ("; ").</para>
+         <para>Format runtime as HH:MM:SS.</para>
+         <para>Format file size using decimals to the tenths place, as in '1.5'.</para>
+         <para>Include one space between the number and the file size unit, as in '1.5 MB'.</para>
+         <para>Capitalize file size units and do not include punctuation, as in 'MB'.</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="item">
@@ -102,6 +111,10 @@
       <customization co="no" dd="gd">
          <para>00:12:58</para>
          <para>01:28:14</para>
+      </customization>
+      <customization co="item" dd="p16786coll3" resourceType="oh text song">
+         <para>00:12:58; 3.2 MB</para>
+         <para>1.5 MB</para>
       </customization>
    </examples>
    <additionalInfo>
@@ -145,6 +158,7 @@
          <change date="2019-05-20">Added cdm compound object info for krab.</change>
          <change date="2020-05-19">Entered customizations for Greek Dances.</change>
          <change date="2020-06-03">removed object description in accordance with MIG decision.</change>
+         <change date="2021-10-25">Add custom description and examples for Sephardic Studies Digital Collection - p16786coll3.</change>
       </changeLog>
    </history>
 </property>
