@@ -36,12 +36,14 @@
         </instructions>
         <customization co="object" dd="p16786coll3" resourceType="oh">
             <para>Enter an abridged transcript or a list of contents.</para>
-            <para>Start each sentence on a new line with a small dash.</para>
+            <para>Start each list entry on a new line preceded by a hyphen.</para>
+            <para>When entering index values in a spreadsheet, note that depending on the spreadsheet-editing application, CTRL + ENTER, ALT + ENTER, or another key combination can be used to enter a new line within a cell.</para>
             <para>Non-English interviews do not need an index.</para>
         </customization>
         <customization co="no" dd="p16786coll3">
             <para>Enter an abridged transcript or a list of contents.</para>
-            <para>Start each sentence on a new line with a small dash.</para>
+            <para>Start each list entry on a new line preceded by a hyphen.</para>
+            <para>When entering index values in a spreadsheet, note that depending on the spreadsheet-editing application, CTRL + ENTER, ALT + ENTER, or another key combination can be used to enter a new line within a cell.</para>
             <para>Non-English interviews do not need an index.</para>
         </customization>
     </descriptions>
