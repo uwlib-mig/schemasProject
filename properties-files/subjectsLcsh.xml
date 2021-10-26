@@ -71,16 +71,18 @@
       <!-- confirm which resource types (aside from text) that LCGFT will be provided for -->
       <customization co="object" dd="p16786coll3" resourceType="oh song text">
          <para>University of Washington Libraries (UWL) cataloging staff will provide a value or values for this property.</para>
-         <para>For metadata creation taking place outside the UWL Cataloging and Metadata Services unit, do not provide a value for this property.</para>
-         <para>For metadata creation taking place outside the UWL Cataloging and Metadata Services unit, be sure to provide the value 'xyz' for the Cataloging property to indicate to cataloging staff that a value is needed.</para>
-         <para>For metadata creation taking place outside the UWL Cataloging and Metadata Services unit, when the resource does not use English, be sure to use the Staff Notes property to provide an informal description which will provide cataloging staff with the information needed to provide subject headings.</para>
+         <para>For metadata creation taking place outside the UWL Cataloging and Metadata Services unit:</para>
+         <para>Do not provide a value for this property.</para>
+         <para>Be sure to provide the value 'xyz' for the Cataloging property to indicate to cataloging staff that a value is needed.</para>
+         <para>When the resource does not use English, be sure to use the Staff Notes property to provide an informal description which will provide cataloging staff with the information needed to provide subject headings.</para>
          <para>For details about the information needed by cataloging staff, contact the collection manager(s) or metadata liaison(s).</para>
       </customization>
       <customization co="no" dd="p16786coll3">
          <para>University of Washington Libraries (UWL) cataloging staff will provide a value or values for this property.</para>
-         <para>For metadata creation taking place outside the UWL Cataloging and Metadata Services unit, do not provide a value for this property.</para>
-         <para>For metadata creation taking place outside the UWL Cataloging and Metadata Services unit, be sure to provide the value 'xyz' for the Cataloging property to indicate to cataloging staff that a value is needed.</para>
-         <para>For metadata creation taking place outside the UWL Cataloging and Metadata Services unit, when the resource does not use English, be sure to use the Staff Notes property to provide an informal description which will provide cataloging staff with the information needed to provide subject headings.</para>
+         <para>For metadata creation taking place outside the UWL Cataloging and Metadata Services unit:</para>
+         <para>Do not provide a value for this property.</para>
+         <para>Be sure to provide the value 'xyz' for the Cataloging property to indicate to cataloging staff that a value is needed.</para>
+         <para>When the resource does not use English, be sure to use the Staff Notes property to provide an informal description which will provide cataloging staff with the information needed to provide subject headings.</para>
          <para>For details about the information needed by cataloging staff, contact the collection manager(s) or metadata liaison(s).</para>
       </customization>
    </descriptions>
@@ -99,10 +101,10 @@
       </example>
       <!-- request example values from Laura Lins -->
       <customization co="object" dd="p16786coll3">
-         <para></para>
+         <para/>
       </customization>
       <customization co="no" dd="p16786coll3">
-         <para></para>
+         <para/>
       </customization>
    </examples>
    <additionalInfo/>
