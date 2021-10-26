@@ -44,6 +44,10 @@
          <para>Input a value from the Dublin Core Type Vocabulary at http://dublincore.org/documents/dcmi-terms/.</para>
          <para>Separate multiple values with a semi-colon.</para>
       </instructions>-->
+      <customization co="object" dd="p16786coll3">
+         <!-- BMR TO-DO ADD INSTRUCTIONS FOR USE AT CO-LEVEL -->
+         <para>TEST TEST TEST</para>
+      </customization>
       <customization co="item" dd="p16786coll3">
          <para>Optional: Input a value from the &lt;a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7"&gt;DCMI Type Vocabulary&lt;/a&gt;.</para>
          <para>Not required for all compound object items. Use as needed. General recommendation is to enter type values when the collection resources are mixed media.</para>
