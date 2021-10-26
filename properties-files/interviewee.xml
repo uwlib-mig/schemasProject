@@ -75,7 +75,7 @@
       </customization>
    </examples>
    <additionalInfo>
-      <admin co="object">
+      <admin co="all" dd4para="p16786coll3">
          <para>Default is controlled-vocabulary feature OFF, Sephardic Studies Digital Collection - p16786coll3 requesting ON.</para>
       </admin>
    </additionalInfo>
