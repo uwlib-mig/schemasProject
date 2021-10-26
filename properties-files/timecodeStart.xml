@@ -4,5 +4,8 @@
     xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md 
     http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
     <uid>p143</uid>
-    
+    <labels>
+        <platformIndependent>timecodeStart</platformIndependent>
+        <dc></dc>
+    </labels>
 </property>
