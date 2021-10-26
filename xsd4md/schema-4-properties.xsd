@@ -583,6 +583,10 @@
                 </xs:restriction>
             </xs:simpleType>
         </xs:attribute>
+        <!-- dd4para attribute is hastily and probably poorly implemented to 
+            allow output of additionalInfo > admin [@dd4para] information to a specific MAP (dd) -->
+        <xs:attribute name="dd4para" type="xs:string" use="optional">
+        </xs:attribute>
     </xs:complexType>
 
     <!-- below global attribute does not seem necessary
