@@ -66,6 +66,21 @@
       <customization co="object" dd="gd">
          <para>Enter "Dance films" (a term from the Library of Congress Genre/Forms Terms).</para>
       </customization>
+      <customization co="object" dd="p16786coll3" resourceType="text">
+         <para>Enter the following value:</para>
+         <para>book</para>
+      </customization>
+      <customization co="object" dd="p16786coll3" resourceType="song">
+         <!-- need novel object type value for ballad recordings -->
+         <para>🚧</para>
+      </customization>
+      <customization co="object" dd="p16786coll3" resourceType="oh">
+         <para>Enter the following value:</para>
+         <para>oral histories</para>
+      </customization>
+      <customization co="no" dd="p16786coll3">
+         <para>Contact the collection manager(s) or metadata liaison(s) regarding appropriate Object Type values for standalone objects in the collection.</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="no">
@@ -95,6 +110,16 @@
       </customization>
       <customization co="object" dd="gd">
          <para>Dance films</para>
+      </customization>
+      <customization co="object" dd="p16786coll3" resourceType="text">
+         <para>book</para>
+      </customization>
+      <customization co="object" dd="p16786coll3" resourceType="song">
+         <!-- need novel object type value for ballad recordings -->
+         <para>🚧</para>
+      </customization>
+      <customization co="object" dd="p16786coll3" resourceType="oh">
+         <para>oral histories</para>
       </customization>
    </examples>
    <additionalInfo>
@@ -172,6 +197,7 @@
          <change date="2020-05-18">Added customizations for Greek Dances.</change>
          <change date="2020-05-18">Changed label from Object Type to Genre.</change>
          <change date="2020-05-19">Commented-out instructions/@co=item to duppress in Greek Dances. Also changes label from Genre to Object Type.</change>
+         <change date="2021-10-26">Add custom instructions and examples for Sephardic Studies Digital Collection - p16786coll3.</change>
       </changeLog>
    </history>
 </property>
