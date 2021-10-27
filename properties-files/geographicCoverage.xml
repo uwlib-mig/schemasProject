@@ -74,7 +74,7 @@
          <para>Forms of the names should be derived from the Library of Congress Authority File.</para>
          <para>Enter as follows:</para>
          <para>Country--State or Province--City</para>
-         <para>For neighborhoods or other types of locales below the city level, enter an LCSH heading in the Subjects (LCSH) field.</para>
+         <para>For neighborhoods or other types of locales below the city level, enter an LCSH heading in the Subjects (LCSH) field above.</para>
          <para>Separate multiple entries with a semicolon and space (“; “).</para>
       </customization>
    </descriptions>
@@ -110,7 +110,7 @@
          <para>Tacoma, Washington, USA</para>
          <para>Lahore, Pakistan</para>
          <para>Bellingham, WA, USA</para>
-         <para>[Structured values provided by cataloging staff:]</para>
+         <para>&lt;br/&gt;[Structured values provided by cataloging staff:]</para>
          <para>United States—Washington (State)—Tacoma</para>
          <para>Pakistan—Lahore</para>
          <para>United States—Washington (State)—Bellingham</para>
@@ -120,7 +120,7 @@
          <para>Tacoma, Washington, USA</para>
          <para>Lahore, Pakistan</para>
          <para>Bellingham, WA, USA</para>
-         <para>[Structured values provided by cataloging staff:]</para>
+         <para>&lt;br/&gt;[Structured values provided by cataloging staff:]</para>
          <para>United States—Washington (State)—Tacoma</para>
          <para>Pakistan—Lahore</para>
          <para>United States—Washington (State)—Bellingham</para>
