@@ -31,7 +31,7 @@
         <definition>
             <para>A person or corporate body responsible for printing the resource.</para>
         </definition>
-        <customization co="object" dd="p16786coll3">
+        <customization co="object" dd="p16786coll3" resourceType="text">
             <para>Search the &lt;a href="https://id.loc.gov/authorities/names.html"&gt;Library of Congress Name Authority File&lt;/a&gt; via id.loc.gov for the printer name (could be an individual or a corporate body).</para>
             <para>If a potential match is found, confirm that it is the person or corporate body associated with the resource: it may be helpful to review information included in the web display such as source(s) of information and occupation (for persons), and/or to follow the links provided for exact and/or closely matching concepts from other schemes.</para>
             <para>Copy the name string for use just as it appears at the top of the page, above the URI(s), including dates.</para>
@@ -53,12 +53,12 @@
         </customization>
     </descriptions>
     <examples>
-        <example co="object">
+        <example co="all">
             <para>Emprimeria Arditi</para>
         </example>
-        <example co="no">
+        <customization co="object" dd="p16786coll3" resourceType="text">
             <para>Emprimeria Arditi</para>
-        </example>
+        </customization>
     </examples>
     <!-- Omit:
         additionalInfo
@@ -75,9 +75,12 @@
     <rdf/>
     <history>
         <dateCreated>
-            <single>2021-03-20</single>
+            <range>
+                <start>2021-03-20</start>
+                <end>2021-10-26</end>
+            </range>
         </dateCreated>
-        <created4Coll>Sephardic Studies Digital Collection (p16786coll3)</created4Coll>
+        <created4Coll>Sephardic Studies Digital Collection - p16786coll3</created4Coll>
         <justification>SSDC requires a property to provide printer name values.</justification>
         <changeLog>
             <change/>
