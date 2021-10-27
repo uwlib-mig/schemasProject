@@ -58,6 +58,14 @@
          <para>Items in the Hunt (Yvonne) Greek Folk Dance Collection cannot be ordered at this time.</para>
          <para>Enter "Items cannot be ordered."</para>
       </customization>
+      <customization co="object" dd="p16786coll3" resourceType="text song oh">
+         <para>Enter the following value:</para>
+         <para>Reproductions are not available for order.</para>
+      </customization>
+      <customization co="no" dd="p16786coll3">
+         <para>Enter the following value:</para>
+         <para>Reproductions are not available for order.</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="no">
@@ -90,6 +98,12 @@
       </customization>
       <customization co="object" dd="gd">
          <para>Items cannot be ordered.</para>
+      </customization>
+      <customization co="object" dd="p16786coll3" resourceType="text song oh">
+         <para>Reproductions are not available for order.</para>
+      </customization>
+      <customization co="no" dd="p16786coll3">
+         <para>Reproductions are not available for order.</para>
       </customization>
    </examples>
    <additionalInfo>
@@ -153,6 +167,7 @@
          <change/>
          <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
          <change date="2020-06-03">removed cdm compound object ITEM descriptions after MIG decided they're not wanted</change>
+         <change date="2021-10-26">Add custom instructions and examples for Sephardic Studies Digital Collection - p16786coll3.</change>
       </changeLog>
    </history>
 </property>
