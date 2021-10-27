@@ -55,6 +55,31 @@
          <para>Input a term or terms describing the format of the original resource in which data, sound, images, etc., are stored.</para>
          <para>Enter the phrase describing the original resource provided by the digitization agency.</para>
       </customization>
+      <customization co="object" dd="p16786coll3" resourceType="text">
+         <!-- record at co or coitem? See :
+            ssdc_map_meetings_MIG > For review prior to 2021-11-02 MIG meeting >
+            Proposal for Physical Description -->
+         <para>For textual resources, Physical Description is recorded at the compound-object level.</para>
+         <para>If information is available, provide a description of the physical resource from which the digital surrogate (compound object) was created.</para>
+         <para>If information is available, include both the number of pages and a measurement for the volume.</para>
+         <para>[🚧 Need guidance for recording number of pages]</para>
+         <para>[🚧 Need guidance for recording a measurement]</para>
+      </customization>
+      <customization co="item" dd="p16786coll3" resourceType="song">
+         <para>For ballad recordings, Physical Description is recorded at the compound-object-item level.</para>
+         <para>If information is available, provide a description of the physical resource from which the digital surrogate (compound-object item) was created.</para>
+         <para>For audio-file items (song recordings), if information is available, provide a runtime for the analog media from which the audio file was created.</para>
+         <para>Format runtime as HH:MM:SS.</para>
+         <para>For image-file items (photographs of performers, digitized sheet music), if information is available, provide a measurement or measurements of the physical media from which image files were created.</para>
+         <para>[🚧 Need guidance for recording measurement(s)]</para>
+      </customization>
+      <customization co="item" dd="p16786coll3" resourceType="oh">
+         <para>For oral histories, Physical Description is recorded at the compound-object-item level.</para>
+         <para>For SSDC oral history audio files which are born-digital, do not record a Physical Description value.</para>
+         <para>For image-file items (photographs of interviewees), if information is available, provide a measurement or measurements of the physical media from which image files were created.</para>
+         <para>[🚧 Need guidance for recording measurement(s)]</para>
+      </customization>
+      <customization co="item" dd="p16786coll3" resourceType="oh"></customization>
    </descriptions>
    <examples>
       <example co="no">
@@ -117,6 +142,17 @@
       </customization>
       <customization co="no" dd="krab">
          <para>1/4" Open Reel Tape: 1.5mil Polyester Brand Unknown; Stereo</para>
+      </customization>
+      <customization co="object" dd="p16786coll3" resourceType="text">
+         <para>xxi, 232 pages, 15 cm</para>
+      </customization>
+      <customization co="item" dd="p16786coll3" resourceType="song">
+         <para>0:32:23</para>
+         <para>10 cm</para>
+         <para>25 cm</para>
+      </customization>
+      <customization co="item" dd="p16786coll3" resourceType="oh">
+         <para>10 cm</para>
       </customization>
    </examples>
    <additionalInfo/>
