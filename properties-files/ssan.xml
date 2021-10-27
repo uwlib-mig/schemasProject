@@ -16,7 +16,7 @@
         <uwItem>no</uwItem>
     </uwRequired>
     <cdm>
-        <label>Sephardic Studies Accession Number</label>
+        <label>Sephardic Studies Accession Number (SSAN)</label>
         <cdmDatatype>text</cdmDatatype>
         <cdmLarge>no</cdmLarge>
         <searchable>yes</searchable>
@@ -30,10 +30,15 @@
     </dspace>
     <descriptions>
         <definition>
-            <para>The unique number assigned to each digital object in the Sephardic Studies Digital Collection Master Catalog for identification purposes.</para>
+            <para>[🚧 A number assigned to each resource in the Sephardic Studies Digital Collection Master Catalog; each resource's number is unique in the Catalog.]</para>
         </definition>
-        <customization co="object" dd="p16786coll3">
+        <customization co="object" dd="p16786coll3" resourceType="text">
             <para>Find the item in Sephardic Studies Collection Master Catalog in column AX (File Name) and enter its corresponding number here.</para>
+            <para>Required for all compound objects.</para>
+        </customization>
+        <customization co="object" dd="p16786coll3" resourceType="song oh">
+            <para>Find the item in Sephardic Studies Collection Master Catalog in column AX (File Name) and enter its corresponding number here.</para>
+            <para>If a match is not found, search the Sephardic Studies Collection Master Catalog's Ladino Audio Archive tab in column P (Digitized File Name) and enter its corresponding number here.</para>
             <para>Required for all compound objects.</para>
         </customization>
         <customization co="no" dd="p16786coll3">
@@ -42,17 +47,23 @@
         </customization>
     </descriptions>
     <examples>
-        <example co="object">
+        <example co="all">
             <para>ST00495</para>
         </example>
-        <example co="no">
+        <customization co="object" dd="p16786coll3" resourceType="text">
             <para>ST00495</para>
-        </example>
+        </customization>
+        <customization co="object" dd="p16786coll3" resourceType="song oh">
+            <para>LAA0003</para>
+        </customization>
     </examples>
     <!-- Omit:
-        additionalInfo
         marc -->
-    <additionalInfo/>
+    <additionalInfo>
+        <admin co="all" dd4para="p16786coll3">
+            <para>For the Sephardic Studies Digital Collection - p16786coll3 - SSAN values take the place of Digital ID Number values as resource identifiers for each compound or standalone object which are unique within the CONTENTdm collection.</para>
+        </admin>
+    </additionalInfo>
     <marc>
         <dcgMarcMapping/>
     </marc>
@@ -66,7 +77,7 @@
         <dateCreated>
             <single>2021-03-21</single>
         </dateCreated>
-        <created4Coll>Sephardic Studies Digital Collection (p16786coll3)</created4Coll>
+        <created4Coll>Sephardic Studies Digital Collection - p16786coll3</created4Coll>
         <justification>SSDC requires a property to provide Sephardic Studies accession numbers.</justification>
         <changeLog>
             <change/>
