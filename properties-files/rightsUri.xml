@@ -44,7 +44,7 @@
       <customization co="object" dd="uwtoh">
          <para>Enter the following URI from rightsstatements.org: http://rightsstatements.org/vocab/InC-EDU/1.0/ .</para>
       </customization>
-      <customization co="object" dd="p16786coll3">
+      <customization co="object" dd="p16786coll3" resourceType="text song oh">
          <para>Unless otherwise instructed, enter the following URI: &lt;a href="http://rightsstatements.org/vocab/CNE/1.0/"&gt;http://rightsstatements.org/vocab/CNE/1.0/&lt;/a&gt;.</para>
          <para>Required for all compound objects.</para>
       </customization>
@@ -69,7 +69,7 @@
       <customization co="object" dd="uwtoh">
          <para>http://rightsstatements.org/vocab/InC-EDU/1.0/</para>
       </customization>
-      <customization co="object" dd="p16786coll3">
+      <customization co="object" dd="p16786coll3" resourceType="text song oh">
          <para>http://rightsstatements.org/vocab/CNE/1.0/</para>
       </customization>
       <customization co="no" dd="p16786coll3">
@@ -120,7 +120,7 @@
          <change/>
          <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
          <change date="2020-06-03">removed cdm compound object ITEM descriptions after MIG decided they're not wanted</change>
-         <change date="2021-03-21">Add customizations for SSDC.</change>
+         <change date="2021-10-26">Add customizations for Sephardic Studies Digital Collection - p16786coll3.</change>
       </changeLog>
    </history>
 </property>
