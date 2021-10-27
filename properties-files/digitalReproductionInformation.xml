@@ -43,7 +43,7 @@
          <para>Note that this property is implemented at the compound-object item level, which necessitates the repetition of values.</para>
       </customization>
       <customization co="item" dd="p16786coll3" resourceType="song">
-         <para>Provide any details not included elsewhere regarding the digitization of the audio recording.</para>
+         <para>If available, provide any details not included elsewhere regarding the digitization of the audio recording.</para>
          <para>Note that this property is implemented at the compound-object item level, which necessitates the repetition of values.</para>
       </customization>
    </descriptions>
