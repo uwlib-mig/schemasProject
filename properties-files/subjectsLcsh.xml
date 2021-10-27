@@ -74,15 +74,7 @@
          <para>For metadata creation taking place outside the UWL Cataloging and Metadata Services unit:</para>
          <para>Do not provide a value for this property.</para>
          <para>Be sure to provide the value 'xyz' for the Cataloging property to indicate to cataloging staff that a value is needed.</para>
-         <para>When the resource does not use English, be sure to use the Staff Notes property to provide an informal description which will provide cataloging staff with the information needed to provide subject headings.</para>
-         <para>For details about the information needed by cataloging staff, contact the collection manager(s) or metadata liaison(s).</para>
-      </customization>
-      <customization co="no" dd="p16786coll3">
-         <para>University of Washington Libraries (UWL) cataloging staff will provide a value or values for this property.</para>
-         <para>For metadata creation taking place outside the UWL Cataloging and Metadata Services unit:</para>
-         <para>Do not provide a value for this property.</para>
-         <para>Be sure to provide the value 'xyz' for the Cataloging property to indicate to cataloging staff that a value is needed.</para>
-         <para>When the resource does not use English, be sure to use the Staff Notes property to provide an informal description which will provide cataloging staff with the information needed to provide subject headings.</para>
+         <para>Be sure to record a Staff Notes value which provides the needed information for UWL cataloging staff to perform subject analysis.</para>
          <para>For details about the information needed by cataloging staff, contact the collection manager(s) or metadata liaison(s).</para>
       </customization>
    </descriptions>
@@ -99,12 +91,11 @@
          <para>Markets—Washington (State)—Seattle</para>
          <para>McGraw, John Harte, 1911—Statues—Washington (State)—Seattle; Log buildings—Alaska—Fort Yukon</para>
       </example>
-      <!-- request example values from Laura Lins -->
-      <customization co="object" dd="p16786coll3">
-         <para/>
-      </customization>
-      <customization co="no" dd="p16786coll3">
-         <para/>
+      <!-- request example values from Laura Lins;
+         may need separate examples for text / song / oh -->
+      <customization co="object" dd="p16786coll3" resourceType="text song oh">
+         <para>[Values provided by cataloging staff:]</para>
+         <para>🚧</para>
       </customization>
    </examples>
    <additionalInfo/>
