@@ -37,19 +37,18 @@
       <instructions co="item">
          <para>Input your staff notes however you wish.</para>
       </instructions>
-      <customization co="object" dd="p16786coll3">
-         <para>Briefly summarize the content of the work to aid catalogers who will assign subject headings.</para>
-         <para>Define the book's genre, subject, and intended use.</para>
+      <customization co="object" dd="p16786coll3" resourceType="text">
+         <para>Values in this field will be used by University of Washington Libraries (UWL) cataloging staff to assign controlled values such as Library of Congress Subject Headings to the resource.</para>
+         <para>For textual resources:</para>
+         <para>Briefly summarize the book's genre, subject, and intended use.</para>
          <para>Descriptions of novels should briefly summarize the arc of the story.</para>
          <para>Religious texts, such as prayer books and bibles, should note for which Jewish holiday and/or ritual they are used.</para>
          <para>Note if the work is a translation, and the author and language of the original text.</para>
-         <para>Required for all book compound objects which require subject analysis from cataloging staff.</para>
+         <para>Required for all textual-resource compound objects which will require subject or genre/form analysis from UWL cataloging staff.</para>
       </customization>
-      <!-- Draft instructions for SSDC (dd="p16786coll3") standalones; no standalones expected in coll at this time -->
-      <customization co="no" dd="p16786coll3">
-         <para>Briefly summarize the content of the resource to aid catalogers who will assign subject headings.</para>
-         <para>Define the genre, subject, and intended use.</para>
-         <para>For resources playing a role in religious activities, note for which Jewish holiday and/or ritual they are used.</para>
+      <customization co="object" dd="p16786coll3" resourceType="song oh">
+         <para>For ballad recordings and oral histories:</para>
+         <para>[🚧 2021-10-27: Prop values for ballads and oral histories which will be assigned/revised by UWL catalogers are being determined.]</para>
       </customization>
    </descriptions>
    <examples>
@@ -65,9 +64,12 @@
          <para>Al, could you look at this one?</para>
          <para>Still need to research the difference between the saws pictured.</para>
       </example>
-      <customization co="object" dd="p16786coll3">
+      <customization co="object" dd="p16786coll3" resourceType="text">
          <para>A Ladino translation of the French novel "Paul et Virginie" by Bernardin de Saint-Pierre (1737-1814). This short love story, set in the 18th century on a French island, tells of a man a woman separated by distance and circumstance, never to be united before their untimely deaths.</para>
          <para>This is a parallel Hebrew-Ladino translation of the Book of Ruth with corresponding commentary in Ladino. The Book of Ruth is part of the Old Testament found in the section known as Ketuvim (Writings). It is traditionally read on the Jewish holiday of Shavuot (Feast of Weeks).</para>
+      </customization>
+      <customization co="object" dd="p16786coll3" resourceType="song oh">
+         <para>[🚧 2021-10-27: Prop values for ballads and oral histories which will be assigned/revised by UWL catalogers are being determined, will determine nature of Staff Notes values required.]</para>
       </customization>
       <customization co="no" dd="p16786coll3">
          <para>Rosh ha-Shanah postcard featuring a pink plush heart with the words “טובה לשנה” “La-Shanah Tovah” [A Happy New Year] embroidered in the center with gold glitter. Postcard features a glitter design of a Star of David below two doves. In the center of the star is the image of a woman’s hand shaking a man’s hand. Printed in English, “With My Good Wishes And Hearty Greetings, A Happy New Year” and “Le-Shanah Tova Tikhtevu” [May you be inscribed for a Happy New Year] printed in Hebrew characters.</para>
@@ -103,6 +105,7 @@
          <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
          <change date="2018-03-23">Added some cdm compound object information</change>
          <change date="2018-03-27">Added item info</change>
+         <change date="2021-10-27">Add custom instructions and examples for SSDC; still in progress</change>
       </changeLog>
    </history>
 </property>
