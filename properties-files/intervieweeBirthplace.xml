@@ -52,7 +52,6 @@
             <para>Forms of the names should be derived from the Library of Congress Authority File.</para>
             <para>Enter as follows:</para>
             <para>Country--State or Province--City</para>
-            <para>For neighborhoods or other types of locales below the city level, enter an LCSH heading in the Subjects (LCSH) field.</para>
             <para>Separate multiple entries with a semicolon and space (“; “).</para>
             <para>Order of values does not matter.</para>
             <para>If multiple interviewees are associated with a resource, include the Interviewee value to which the birthplace corresponds in square brackets following.</para>
@@ -70,7 +69,7 @@
             <para>Seattle, Washington, United States</para>
             <para>Thessaloniki, Greece [Naar, Albert]; Istanbul, Turkey [Saltiel, Jack]</para>
             <!-- ask Laura Lins for structured values here corresponding to unstructured above -->
-            <para>[Structured values provided by cataloging staff:]</para>
+            <para>&lt;br/&gt;[Structured values provided by cataloging staff:]</para>
             <para>🚧</para>
         </customization>
         <customization co="no" dd="p16786coll3">

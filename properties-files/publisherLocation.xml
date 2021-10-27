@@ -50,7 +50,6 @@
             <para>Forms of the names should be derived from the Library of Congress Authority File.</para>
             <para>Enter as follows:</para>
             <para>Country--State or Province--City</para>
-            <para>For neighborhoods or other types of locales below the city level, enter an LCSH heading in the Subjects (LCSH) field.</para>
             <para>Separate multiple entries with a semicolon and space (“; “).</para>
             <para>Order of values does not matter.</para>
             <para>If multiple publishers are associated with a resource, include the Publisher value to which the location corresponds in square brackets following.</para>
