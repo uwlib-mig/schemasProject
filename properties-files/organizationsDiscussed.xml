@@ -27,18 +27,55 @@
     </dspace>
     <descriptions>
         <definition>
-            <para></para>
+            <para>Organizations given significant attention in the resource.</para>
         </definition>
-        <instructions co="object"></instructions>
-        <instructions co="no"></instructions>
-        <customization co="object" dd="p16786coll3"></customization>
-        <customization co="no" dd="p16786coll3"></customization>
+        <!-- DRAFT, extremely brief default instructions -->
+        <instructions co="object">
+            <para>Provide the name or names of an organization or organizations given significant attention in the resource.</para>
+            <para>If possible, use a controlled form for each organization's name.</para>
+        </instructions>
+        <instructions co="no">
+            <para>Provide the name or names of an organization or organizations given significant attention in the resource.</para>
+            <para>If possible, use a controlled form for each organization's name.</para>
+        </instructions>
+        <customization co="object" dd="p16786coll3" resourceType="oh">
+            <para>Provide the name or names of an organization or organizations given significant attention in the interview.</para>
+            <para>When appropriate, search the &lt;a href="https://id.loc.gov/authorities/names.html"&gt;Library of Congress Name Authority File&lt;/a&gt; via id.loc.gov for the names of organizations discussed in the oral history.</para>
+            <para>If a potential match is found, confirm that it is the organization associated with the resource: it may be helpful to review information included in the web display such as source(s) of information, and/or to follow the links provided for exact and/or closely matching concepts from other schemes.</para>
+            <para>Copy the name string for use just as it appears at the top of the page, above the URI(s), including dates.</para>
+            <para>If no match is found, record an organization name.</para>
+            <para>When recording names without a match in the NAF, reuse the recorded form consistently when the same person appears in the metadata for a different resource.</para>
+            <para>Separate multiple entries with a semicolon and space (“; “).</para>
+            <para>Order of values does not matter.</para>
+        </customization>
+        <customization co="no" dd="p16786coll3">
+            <para>Provide the name or names of an organization or organizations given significant attention in the interview.</para>
+            <para>When appropriate, search the &lt;a href="https://id.loc.gov/authorities/names.html"&gt;Library of Congress Name Authority File&lt;/a&gt; via id.loc.gov for the names of organizations discussed in the oral history.</para>
+            <para>If a potential match is found, confirm that it is the organization associated with the resource: it may be helpful to review information included in the web display such as source(s) of information, and/or to follow the links provided for exact and/or closely matching concepts from other schemes.</para>
+            <para>Copy the name string for use just as it appears at the top of the page, above the URI(s), including dates.</para>
+            <para>If no match is found, record an organization name.</para>
+            <para>When recording names without a match in the NAF, reuse the recorded form consistently when the same person appears in the metadata for a different resource.</para>
+            <para>Separate multiple entries with a semicolon and space (“; “).</para>
+            <para>Order of values does not matter.</para>
+        </customization>
     </descriptions>
     <examples>
-        <example co="object"></example>
-        <example co="no"></example>
-        <customization co="object" dd="p16786coll3"></customization>
-        <customization co="no" dd="p16786coll3"></customization>
+        <!-- DRAFT defaults for object, standalone -->
+        <example co="object">
+            <para>Schipperke Club of America</para>
+            <para>International Longshoremen's Association. Local 38-97 (Tacoma, Wash.)</para>
+            <para>United States. Central Intelligence Agency. Conflict Issues Division</para>
+        </example>
+        <!-- should really be using co="all" but my styesheet doesn't account for "all" or "agnostic" -->
+        <example co="no">
+            <para>Schipperke Club of America</para>
+            <para>International Longshoremen's Association. Local 38-97 (Tacoma, Wash.)</para>
+            <para>United States. Central Intelligence Agency. Conflict Issues Division</para>
+        </example>
+        <customization co="object" dd="p16786coll3" resourceType="oh">
+            <para>Congregation Ezra Bessaroth</para>
+            <para>Congregation Ezra Bessaroth; Longacres Race Track</para>
+        </customization>
     </examples>
     <additionalInfo></additionalInfo>
     <marc>
@@ -50,7 +87,7 @@
         <dateCreated>
             <range>
                 <start>2021-10-03</start>
-                <end></end>
+                <end>2021-10-26</end>
             </range>
         </dateCreated>
         <created4Coll>Sephardic Studies Digital Collection - p16786coll3</created4Coll>
