@@ -41,6 +41,18 @@
             <para>Separate multiple names with a semi-colon.</para>
             <para>Use the form of the name in the LC Name Authoruity File when possible.</para>
         </instructions>
+        <customization co="object" dd="p16786coll3" resourceType="song">
+            <para>If applicable, provide the names of people who may be heard in the song recording who are not performers.</para>
+            <para>This can include the voice of the person who made the recording.</para>
+            <para>When appropriate, search the &lt;a href="https://id.loc.gov/authorities/names.html"&gt;Library of Congress Name Authority File&lt;/a&gt; via id.loc.gov for the name of a person who may be heard in the song recording.</para>
+            <para>If a potential match is found, confirm that it is the person associated with the resource. It may be helpful to review information included in the web display such as source(s) of information and occupation (for persons), and/or to follow the links provided for exact and/or closely matching concepts from other schemes.</para>
+            <para>Copy the name string for use just as it appears at the top of the page, above the URI(s), including dates.</para>
+            <para>If no record exists in the NAF, record personal names as "Lastname, Firstname".</para>
+            <para>When recording names without a match in the NAF, reuse the recorded form consistently when the same person or organization appears in the metadata for a different resource.</para>
+            <para>For a personal name like Alexander Ben Guiat, "Ben" is considered part of the first name and is transcribed as: "Guiat, Alexander Ben".</para>
+            <para>Separate multiple entries with a semicolon and space (“; “).</para>
+            <para>Order of values does not matter.</para>
+        </customization>
     </descriptions>
     <examples>
         <example co="no">
@@ -53,6 +65,9 @@
             <para>Barbas, Yiannis; Meros, Christos; Karakostas, Christos</para>
             <para>Sinopoulos, Sokrates, 1974-</para>
         </example>
+        <customization co="object" dd="p16786coll3" resourceType="song">
+            <para>🚧</para>
+        </customization>
     </examples>
     <additionalInfo/>
     <marc>
@@ -74,6 +89,7 @@
         <justification>Needed property for naming the participants seen in the videos.</justification>
         <changeLog>
             <change date="2021-10-03">Change labels to singular to match other UWCdm prop labels in use (see artist, author, client, engineer, etc.)</change>
+            <change date="2021-10-26">Add custom instructions and placeholder for an example for the Sephardic Studies Digital Collection - p16786coll3.</change>
         </changeLog>
     </history>
 </property>
