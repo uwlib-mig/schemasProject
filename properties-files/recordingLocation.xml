@@ -6,6 +6,67 @@
     <uid>p142</uid>
     <labels>
         <platformIndependent>recordingLocation</platformIndependent>
-        <dc></dc>
+        <dc>none</dc>
     </labels>
+    <uwRequired>
+        <uwStandalone>no</uwStandalone>
+        <uwObject>no</uwObject>
+        <uwItem>no</uwItem>
+    </uwRequired>
+    <cdm>
+        <label>Recording Location</label>
+        <cdmDatatype>text</cdmDatatype>
+        <cdmLarge>no</cdmLarge>
+        <searchable>no</searchable>
+        <hidden>no</hidden>
+        <cdmRequired>no</cdmRequired>
+        <cdmControlledVocab>yes</cdmControlledVocab>
+    </cdm>
+    <!-- omit dspace -->
+    <dspace>
+        <dspaceProperty/>
+    </dspace>
+    <descriptions>
+        <definition>
+            <para>A location, usually a city, where a resource was recorded.</para>
+        </definition>
+        <instructions co="all">
+            <!-- DRAFT, extremely brief, default instructions -->
+            <para>Provide a location, usually a city, where the resource was recorded.</para>
+            <para>If possible, use a controlled form of the place name.</para>
+        </instructions>
+        <customization co="object" dd="p16786coll3" resourceType="oh song">
+            <para>For metadata creation taking place outside the University of Washington Libraries (UWL) Cataloging and Metadata Services unit:</para>
+            <para>Enter a recording location in natural language, providing sufficient information to disambiguate place names as needed.</para>
+            <para>As a rule, include more information rather than less.</para>
+            <para>For example, when providing the name of a city, also provide the state, region, and/or country name(s) as available.</para>
+            <para>UWL Cataloging staff will use this information to create a structured value.</para>
+            <para>Be sure to provide the value 'xyz' for the Cataloging property to indicate to cataloging staff that revision of the unstructured value is needed.</para>
+            <para>Separate multiple entries with a semicolon and space (“; “).</para>
+            <para>Order of values does not matter.</para>
+            <para>When adapting existing metadata for upload, include only the place name in the value for Recording Location.</para>
+            <para>Add any other relevant information as a value for the Notes property.</para>
+            <para>For example, adapt existing value “Seattle, in her home” as:</para>
+            <para>Recording Location: Seattle, Washington, USA</para>
+            <para>Notes: Recorded in the home of [name].</para>
+            <para>&lt;br/&gt;For UWL cataloging staff creating structured values:</para>
+            <para>Forms of the names should be derived from the Library of Congress Authority File.</para>
+            <para>Enter as follows:</para>
+            <para>Country--State or Province--City</para>
+            <para>Separate multiple entries with a semicolon and space (“; “).</para>
+            <para>Order of values does not matter.</para>
+        </customization>
+    </descriptions>
+    <examples>
+        <example co="all">
+            <!-- adopting examples from studioLocation for the time being -->
+            <para>United States—Washington (State)—Seattle</para>
+        </example>
+        <customization co="object" dd="p16786coll3" resourceType="song oh">
+            <para>[Natural-language values for review by cataloging staff:]</para>
+            <para>Seattle, WA, USA</para>
+            <para>&lt;br/&gt;[Structured values provided by cataloging staff:]</para>
+            <para>United States—Washington (State)—Seattle</para>
+        </customization>
+    </examples>
 </property>
