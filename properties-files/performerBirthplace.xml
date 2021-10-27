@@ -40,7 +40,7 @@
             <para>Separate multiple entries with a semicolon and space (“; “).</para>
             <para>Order of values does not matter.</para>
             <para>If multiple performers are associated with a resource, include the Performer or Primary Performer value to which the birthplace corresponds in square brackets following.</para>
-            <para>For UWL cataloging staff creating structured values:</para>
+            <para>&lt;br/&gt;For UWL cataloging staff creating structured values:</para>
             <para>Forms of the names should be derived from the Library of Congress Authority File.</para>
             <para>Enter as follows:</para>
             <para>Country--State or Province--City</para>
@@ -59,7 +59,7 @@
             <para>Separate multiple entries with a semicolon and space (“; “).</para>
             <para>Order of values does not matter.</para>
             <para>If multiple performers are associated with a resource, include the Performer or Primary Performer value to which the birthplace corresponds in square brackets following.</para>
-            <para>For UWL cataloging staff creating structured values:</para>
+            <para>&lt;br/&gt;For UWL cataloging staff creating structured values:</para>
             <para>Forms of the names should be derived from the Library of Congress Authority File.</para>
             <para>Enter as follows:</para>
             <para>Country--State or Province--City</para>

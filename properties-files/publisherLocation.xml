@@ -31,30 +31,45 @@
         <definition>
             <para>A location, usually a city, associated with the publisher of the resource.</para>
         </definition>
-        <customization co="object" dd="p16786coll3">
-            <para>Search for the publisher's geographic location in the &lt;a href="https://id.loc.gov/authorities/names.html"&gt;Library of Congress Name Authority File&lt;/a&gt; via id.loc.gov.</para>
-            <para>If a match is found, copy the name string for use just as it appears at the top of the page, above the URI(s). Include any parenthesis following the location name.</para>
-            <para>If no record exists, use the most universal spelling of the location.</para>
-            <para>If multiple publishers are associated with a resource, include the Publisher value to which the location applies in square brackets ("[" and "]") following this value.</para>
-            <para>If entering multiple values for this property, separate each using a semicolon and space (“; “). Order of values does not matter.</para>
-        </customization>
-        <customization co="no" dd="p16786coll3">
-            <para>Search for the publisher's geographic location in the &lt;a href="https://id.loc.gov/authorities/names.html"&gt;Library of Congress Name Authority File&lt;/a&gt; via id.loc.gov.</para>
-            <para>If a match is found, copy the name string for use just as it appears at the top of the page, above the URI(s). Include any parenthesis following the location name.</para>
-            <para>If no record exists, use the most universal spelling of the location.</para>
-            <para>If multiple publishers are associated with a resource, include the Publisher value to which the location applies in square brackets ("[" and "]") following this value.</para>
-            <para>If entering multiple values for this property, separate each using a semicolon and space (“; “). Order of values does not matter.</para>
+        <instructions co="all">
+            <!-- DRAFT, extremely brief, default instructions -->
+            <para>Provide a location, usually a city, associated with the publisher of a resource.</para>
+            <para>If possible, use a controlled form of the place name.</para>
+        </instructions>
+        <customization co="object" dd="p16786coll3" resourceType="text">
+            <para>For metadata creation taking place outside the University of Washington Libraries (UWL) Cataloging and Metadata Services unit:</para>
+            <para>Enter a location associated with the publisher in natural language, providing sufficient information to disambiguate place names as needed.</para>
+            <para>As a rule, include more information rather than less.</para>
+            <para>For example, when providing the name of a city, also provide the state, region, and/or country name(s) as available.</para>
+            <para>If multiple publishers are associated with a resource, include the Publisher value to which the location corresponds in square brackets following.</para>
+            <para>UWL Cataloging staff will use this information to create a structured value.</para>
+            <para>Be sure to provide the value 'xyz' for the Cataloging property to indicate to cataloging staff that revision of the unstructured value is needed.</para>
+            <para>Separate multiple entries with a semicolon and space (“; “).</para>
+            <para>Order of values does not matter.</para>
+            <para>&lt;br/&gt;For UWL cataloging staff creating structured values:</para>
+            <para>Forms of the names should be derived from the Library of Congress Authority File.</para>
+            <para>Enter as follows:</para>
+            <para>Country--State or Province--City</para>
+            <para>For neighborhoods or other types of locales below the city level, enter an LCSH heading in the Subjects (LCSH) field.</para>
+            <para>Separate multiple entries with a semicolon and space (“; “).</para>
+            <para>Order of values does not matter.</para>
+            <para>If multiple publishers are associated with a resource, include the Publisher value to which the location corresponds in square brackets following.</para>
         </customization>
     </descriptions>
     <examples>
-        <example co="object">
+        <example co="all">
+            <!-- adopting examples from studioLocation for the time being -->
+            <para>United States—Washington (State)—Seattle</para>
+            <para>Canada—Yukon Territory—Dawson</para>
+        </example>
+        <customization co="object" dd="p16786coll3" resourceType="text">
+            <para>[Natural-language values for review by cataloging staff:]</para>
             <para>İzmir (Turkey)</para>
             <para>Jerusalem [Cherezli, Salomon Israel]; Istanbul (Turkey) [Joseph, Benjamin Ben]</para>
-        </example>
-        <example co="no">
-            <para>İzmir (Turkey)</para>
-            <para>Jerusalem [Cherezli, Salomon Israel]; Istanbul (Turkey) [Joseph, Benjamin Ben]</para>
-        </example>
+            <para>&lt;br/&gt;[Structured values provided by cataloging staff:]</para>
+            <!-- Request structured-value examples from Laura Lins -->
+            <para>🚧</para>
+        </customization>
     </examples>
     <additionalInfo/>
     <marc>
@@ -71,9 +86,12 @@
         cdmRdf -->
     <history>
         <dateCreated>
-            <single>2021-03-20</single>
+            <range>
+                <start>2021-03-20</start>
+                <end>2021-10-27</end>
+            </range>
         </dateCreated>
-        <created4Coll>Sephardic Studies Digital Collection (p16786coll3)</created4Coll>
+        <created4Coll>Sephardic Studies Digital Collection - p16786coll3</created4Coll>
         <justification>SSDC requires a property to provide publisher-location values.</justification>
         <changeLog>
             <change/>

@@ -48,7 +48,7 @@
             <para>Order of values does not matter.</para>
             <para>If multiple interviewees are associated with a resource, include the Interviewee value to which the birthplace corresponds in square brackets following.</para>
             <para>Be sure to provide the value 'xyz' for the Cataloging property to indicate to cataloging staff that revision of the unstructured value is needed.</para>
-            <para>For UWL cataloging staff creating structured values:</para>
+            <para>&lt;br/&gt;For UWL cataloging staff creating structured values:</para>
             <para>Forms of the names should be derived from the Library of Congress Authority File.</para>
             <para>Enter as follows:</para>
             <para>Country--State or Province--City</para>
