@@ -69,10 +69,11 @@
             <para>[Natural-language values for review by cataloging staff:]</para>
             <para>Seattle, Washington, United States</para>
             <para>Thessaloniki, Greece [Naar, Albert]; Istanbul, Turkey [Saltiel, Jack]</para>
-            <!-- <para>[Structured values provided by cataloging staff:]</para>
-            ask Laura Lins for structured values here corresponding to unstructured above -->
+            <!-- ask Laura Lins for structured values here corresponding to unstructured above -->
+            <para>[Structured values provided by cataloging staff:]</para>
+            <para>🚧</para>
         </customization>
-        <customization co="no" dd="p1678coll3">
+        <customization co="no" dd="p16786coll3">
             <!-- reproduce ssdc-oh-co examples from above here -->
         </customization>
     </examples>
