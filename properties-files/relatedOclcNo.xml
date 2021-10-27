@@ -7,7 +7,6 @@
     <uid>p124</uid>
     <labels>
         <platformIndependent>relatedOclcNo</platformIndependent>
-        <!-- BMR TO DO: Reconsider mapping options (related? probably not though) -->
         <dc>none</dc>
     </labels>
     <uwRequired>
@@ -32,36 +31,31 @@
         <definition>
             <para>Number for an OCLC record related to the digital resource, for example, a record for a physical item from which the digital surrogate was created.</para>
         </definition>
-        <!-- DRAFT default instructions, extremely brief and probably wholly insufficient -->
+        <!-- DRAFT default instructions, extremely brief -->
         <instructions co="all">
             <para>Provide a number for an OCLC record related to the digital resource, for example, a record for a physical item from which the digital surrogate was created.</para>
         </instructions>
-        <customization co="object" dd="p16786coll3" resourceType="oh song text">
-            <para>University of Washington Libraries (UWL) cataloging staff will provide a value or values for this property.</para>
-            <para>For metadata creation taking place outside the UWL Cataloging and Metadata Services unit:</para>
+        <customization co="object" dd="p16786coll3" resourceType="text">
+            <para>University of Washington Libraries (UWL) cataloging staff will provide a value or values for this property if applicable.</para>
+            <para>For metadata creation taking place outside the University of Washington Libraries (UWL) Cataloging and Metadata Services unit:</para>
             <para>Do not provide a value for this property.</para>
-            <para>Be sure to provide the value 'xyz' for the Cataloging property to indicate to cataloging staff that a value is needed.</para>
+            <para>Be sure to provide the value 'xyz' for the Cataloging property to indicate to cataloging staff that a value is needed if applicable.</para>
             <para>When the resource does not use English, be sure to use the Staff Notes property to provide information which will allow cataloging staff to identify any related records.</para>
             <para>For details about the information needed by cataloging staff, contact the collection manager(s) or metadata liaison(s).</para>
-        </customization>
-        <customization co="no" dd="p16786coll3">
-            <para>University of Washington Libraries (UWL) cataloging staff will provide a value or values for this property.</para>
-            <para>For metadata creation taking place outside the UWL Cataloging and Metadata Services unit:</para>
-            <para>Do not provide a value for this property.</para>
-            <para>Be sure to provide the value 'xyz' for the Cataloging property to indicate to cataloging staff that a value is needed.</para>
-            <para>When the resource does not use English, be sure to use the Staff Notes property to provide information which will allow cataloging staff to identify any related records.</para>
-            <para>For details about the information needed by cataloging staff, contact the collection manager(s) or metadata liaison(s).</para>
+            <para>&lt;br/&gt;For UWL cataloging staff recording values:</para>
+            <para>[🚧 Do we need to provide information about what we are asking cataloging staff to search for?]</para>
         </customization>
     </descriptions>
     <examples>
-        <example co="object">
+        <example co="all">
             <para>37917418</para>
             <para>27382728</para>
         </example>
-        <example co="no">
+        <customization co="object" dd="p16786coll3" resourceType="text">
+            <para>[Values provided by cataloging staff:]</para>
             <para>37917418</para>
             <para>27382728</para>
-        </example>
+        </customization>
     </examples>
     <!-- Omit:
         additionalInfo
@@ -78,7 +72,10 @@
     <rdf/>
     <history>
         <dateCreated>
-            <single>2021-03-21</single>
+            <range>
+                <start>2021-03-21</start>
+                <end>2021-10-27</end>
+            </range>
         </dateCreated>
         <created4Coll>Sephardic Studies Digital Collection - p16786coll3</created4Coll>
         <justification>SSDC requires a property to provide related OCLC records to support scholarship.</justification>
