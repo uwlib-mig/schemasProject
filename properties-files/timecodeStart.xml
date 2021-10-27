@@ -6,6 +6,63 @@
     <uid>p143</uid>
     <labels>
         <platformIndependent>timecodeStart</platformIndependent>
-        <dc></dc>
+        <dc>none</dc>
     </labels>
+    <uwRequired>
+        <uwStandalone>no</uwStandalone>
+        <uwObject>no</uwObject>
+        <uwItem>no</uwItem>
+    </uwRequired>
+    <cdm>
+        <label>Timecode Start</label>
+        <cdmDatatype>text</cdmDatatype>
+        <cdmLarge>no</cdmLarge>
+        <searchable>no</searchable>
+        <hidden>no</hidden>
+        <cdmRequired>no</cdmRequired>
+        <cdmControlledVocab>no</cdmControlledVocab>
+    </cdm>
+    <dspace>
+        <dspaceProperty/>
+    </dspace>
+    <descriptions>
+        <definition>
+            <para>When an audio file has been created from a portion of a longer original recording, the time at which the audio file's content begins in the original recording.</para>
+        </definition>
+        <instructions co="all">
+            <!-- DRAFT default instructions -->
+            <para>Provide the timecode at which the clip included in the audio file begins.</para>
+            <para>Only needed when the audio clip is only a section of the recording on a side of the original audio.</para>
+            <para>Record using the format HH:MM:SS.</para>
+        </instructions>
+        <customization co="item" dd="p16786coll3" resourceType="song oh">
+            <para>If information is available, provide the timecode at which the clip included in the audio file begins.</para>
+            <para>Only applicable for compound-object audio files, when an audio file has been created from a portion of a longer original recording.</para>
+            <para>Record using the format HH:MM:SS.</para>
+        </customization>
+    </descriptions>
+    <examples>
+        <example co="all">
+            <para>00:34:32</para>
+        </example>
+        <customization co="item" dd="p16786coll3" resourceType="song oh">
+            <para>00:34:32</para>
+        </customization>
+    </examples>
+    <additionalInfo></additionalInfo>
+    <marc>
+        <dcgMarcMapping></dcgMarcMapping>
+    </marc>
+    <xsd></xsd>
+    <rdf></rdf>
+    <history>
+        <dateCreated>
+            <single>2021-10-27</single>
+        </dateCreated>
+        <created4Coll>Sephardic Studies Digital Collection - p16786coll3</created4Coll>
+        <justification>Using a recommended property from existing Special Collections Oral Histories Data Dictionary - "Timecode Start". No XML definition had been created for the property.</justification>
+        <changeLog>
+            <change></change>
+        </changeLog>
+    </history>
 </property>
