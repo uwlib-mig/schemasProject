@@ -6,6 +6,68 @@
     <uid>p140</uid>
     <labels>
         <platformIndependent>videographer</platformIndependent>
-        <dc></dc>
+        <dc>contributor</dc>
     </labels>
+    <uwRequired>
+        <uwStandalone>no</uwStandalone>
+        <uwObject>no</uwObject>
+        <uwItem>no</uwItem>
+    </uwRequired>
+    <cdm>
+        <label>Videographer</label>
+        <cdmDatatype>text</cdmDatatype>
+        <cdmLarge>no</cdmLarge>
+        <searchable>yes</searchable>
+        <hidden>no</hidden>
+        <cdmRequired>no</cdmRequired>
+        <cdmControlledVocab>no</cdmControlledVocab>
+    </cdm>
+    <dspace>
+        <dspaceProperty/>
+    </dspace>
+    <descriptions>
+        <definition>
+            <para>A person who created the video recording.</para>
+        </definition>
+        <instructions co="all">
+            <!-- DRAFT, extremely brief default -->
+            <para>Provide the name of a person who created a resource which is a video recording.</para>
+            <para>If possible, use a controlled form of name.</para>
+        </instructions>
+        <customization co="object" dd="p16786coll3" resourceType="oh">
+            <para>Provide the name of the videographer--the person who created the video recording.</para>
+            <para>When appropriate, search the &lt;a href="https://id.loc.gov/authorities/names.html"&gt;Library of Congress Name Authority File&lt;/a&gt; via id.loc.gov for the videographer name.</para>
+            <para>If a potential match is found, confirm that it is the person associated with the resource. It may be helpful to review information included in the web display such as source(s) of information and occupation (for persons), and/or to follow the links provided for exact and/or closely matching concepts from other schemes.</para>
+            <para>Copy the name string for use just as it appears at the top of the page, above the URI(s), including dates.</para>
+            <para>If no record exists, Record personal names as "Lastname, Firstname".</para>
+            <para>For a personal name like Alexander Ben Guiat, "Ben" is considered part of the first name and is transcribed as: "Guiat, Alexander Ben".</para>
+            <para>When recording names without a match in the NAF, reuse the recorded form consistently when the same person or organization appears in the metadata for a different resource.</para>
+            <para>Separate multiple entries with a semicolon and space (“; “).</para>
+            <para>Order of values does not matter.</para>
+        </customization>
+    </descriptions>
+    <examples>
+        <example co="all">
+            <para>Meyers, Richard D.</para>
+        </example>
+        <customization co="object" dd="p16786coll3" resourceType="oh">
+            <para>Meyers, Richard D.</para>
+        </customization>
+    </examples>
+    <additionalInfo></additionalInfo>
+    <marc>
+        <dcgMarcMapping></dcgMarcMapping>
+    </marc>
+    <xsd></xsd>
+    <rdf></rdf>
+    <history>
+        <dateCreated>
+            <single>2021-10-27</single>
+        </dateCreated>
+        <created4Coll>Sephardic Studies Digital Collection - p16786coll3</created4Coll>
+        <justification>Videographer property existed in Special Collections Oral Histories Data Dictionary but had not been defined in a property file. SSDC was adopting properties from the SCOHDD so defined the property.</justification>
+        <changeLog>
+            <change></change>
+        </changeLog>
+    </history>
 </property>
