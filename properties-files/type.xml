@@ -44,16 +44,34 @@
          <para>Input a value from the Dublin Core Type Vocabulary at http://dublincore.org/documents/dcmi-terms/.</para>
          <para>Separate multiple values with a semi-colon.</para>
       </instructions>-->
-      <customization co="object" dd="p16786coll3">
-         <!-- BMR TO-DO ADD INSTRUCTIONS FOR USE AT CO-LEVEL -->
-         <para>TEST TEST TEST</para>
+      <customization co="object" dd="p16786coll3" resourceType="text song oh">
+         <para>Values for this property must come from the &lt;a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7"&gt;DCMI Type Vocabulary&lt;/a&gt;.</para>
+         <para>For textual-resource, ballad, and oral history compound objects, provide the following value:</para>
+         <para>Collection</para>
       </customization>
-      <customization co="item" dd="p16786coll3">
-         <para>Optional: Input a value from the &lt;a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7"&gt;DCMI Type Vocabulary&lt;/a&gt;.</para>
-         <para>Not required for all compound object items. Use as needed. General recommendation is to enter type values when the collection resources are mixed media.</para>
+      <customization co="item" dd="p16786coll3" resourceType="text">
+         <para>Values for this property must come from the &lt;a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7"&gt;DCMI Type Vocabulary&lt;/a&gt;.</para>
+         <para>For image-file compound-object items (digitized pages), provide one or both of the following values depending on content:</para>
+         <para>Text</para>
+         <para>StillImage</para>
+         <para>&lt;br/&gt;Separate multiple entries with a semicolon and space (“; “).</para>
+         <para>Order of values does not matter.</para>
       </customization>
-      <customization co="no" dd="p16786coll3">
-         <para>Input a value from the &lt;a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7"&gt;DCMI Type Vocabulary&lt;/a&gt;.</para>
+      <customization co="item" dd="p16786coll3" resourceType="song">
+         <para>For audio-file compound-object items (ballad recordings), provide the following value:</para>
+         <para>Sound</para>
+         <para>For image-file compound-object items which are performer photographs, provide the following value:</para>
+         <para>StillImage</para>
+         <para>For image-file compound-object items which are digitized sheet music, provide the following value:</para>
+         <para>Image</para>
+      </customization>
+      <customization co="item" dd="p16786coll3" resourceType="oh">
+         <para>For audio-file compound-object items (interview recordings), provide the following value:</para>
+         <para>Sound</para>
+         <para>For image-file compound-object items which are interviewee photographs, provide the following value:</para>
+         <para>StillImage</para>
+         <para>For image-file compound-object items which are interview transcripts, provide the following value:</para>
+         <para>Text</para>
       </customization>
    </descriptions>
    <examples>
@@ -90,6 +108,23 @@
       </customization>
       <customization co="no" dd="gd">
          <para>MovingImage</para>
+      </customization>
+      <customization co="object" dd="p16786coll3" resourceType="text song oh">
+         <para>Collection</para>
+      </customization>
+      <customization co="item" dd="p16786coll3" resourceType="text">
+         <para>Text</para>
+         <para>StillImage; Text</para>
+      </customization>
+      <customization co="item" dd="p16786coll3" resourceType="song">
+         <para>Sound</para>
+         <para>StillImage</para>
+         <para>Image</para>
+      </customization>
+      <customization co="item" dd="p16786coll3" resourceType="oh">
+         <para>Sound</para>
+         <para>StillImage</para>
+         <para>Text</para>
       </customization>
    </examples>
    <additionalInfo/>
@@ -175,7 +210,8 @@
          <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
          <change>Added a customized example for rp as standalone.</change>
          <change date="2020-06-03">Removed the input instructions and exampes for object</change>
-         <change date="2021-03-21">Added custom instructions for SSDC.</change>
+         <change date="2021-10-27">Added custom instructions and examples for Sephardic Studies Digital Collection - p16786coll3
+            .</change>
       </changeLog>
    </history>
 </property>
