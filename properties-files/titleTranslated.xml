@@ -26,15 +26,25 @@
         <dspaceProperty></dspaceProperty>
     </dspace>
     <descriptions>
-        <definition></definition>
-        <instructions co="object"></instructions>
-        <instructions co="no"></instructions>
-        <customization co="object" dd="p16786coll3"></customization>
+        <definition>
+            <para>A name for the resource created by translating an existing title.</para>
+        </definition>
+        <instructions co="all">
+            <para>Provide a name for the resource by translating an existing title.</para>
+        </instructions>
+        <customization co="object" dd="p16786coll3" resourceType="song">
+            <para>Translate the song title.</para>
+            <para>Use title-case capitalization.</para>
+            <para>Do not use a period at the end of the translated title.</para>
+        </customization>
     </descriptions>
     <examples>
-        <example co="object"></example>
-        <example co="no"></example>
-        <customization co="object" dd="p16786coll3"></customization>
+        <example co="all">
+            <para>The Abduction of Helen of Troy</para>
+        </example>
+        <customization co="object" dd="p16786coll3" resourceType="song">
+            <para>The Abduction of Helen of Troy</para>
+        </customization>
     </examples>
     <additionalInfo></additionalInfo>
     <marc>
@@ -46,11 +56,11 @@
         <dateCreated>
             <range>
                 <start>2021-09-29</start>
-                <end></end>
+                <end>2021-10-27</end>
             </range>
         </dateCreated>
         <created4Coll>Sephardic Studies Digital Collection - p16786coll3</created4Coll>
-        <justification>Recorded ballads metadata includes titles translated from Ladino to English.</justification>
+        <justification>Existing ballads metadata - which will be adapted for use in the collection - includes titles translated from Ladino to English.</justification>
         <changeLog>
             <change></change>
         </changeLog>
