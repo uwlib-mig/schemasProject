@@ -30,13 +30,16 @@
         <definition>
             <para>A name for the resource in non-Latin script.</para>
         </definition>
-        <!-- BMR TO-DO: Draft default instructions for object, standalone -->
-        <customization co="object" dd="p16786coll3">
+        <instructions co="all">
+            <para>Provide a name for the resource in non-Latin script.</para>
+        </instructions>
+        <customization co="object" dd="p16786coll3" resourceType="text">
             <para>Enter the Ladino title in Hebrew script as it appears on the title page.</para>
             <para>Record title exactly as found, even with printer errors.</para>
             <para>Roshe tevot (abbreviations) are considered part of the title and should be recorded.</para>
-            <para>Use a colon and space (": ") to indicate the break between title and subtitle, even if no colon appears on title page.</para>
+            <para>Use a space, colon, space (" : ") to indicate the break between title and subtitle, even if no colon appears on title page.</para>
             <para>Following the title and colon, record a minimum of five words of the subtitle, followed by an ellipsis (“…”) if not recording the complete subtitle.</para>
+            <para>In cases where resources are printed in Romanized Ladino, do not provide a value.</para>
             <para>Optional: Record the subtitle as it appears in a matching MARC record verified by cataloging staff; record from the 245 subfield b.</para>
             <para>Note: subtitles in 245 subfield b will be preceded by a colon (":"); parallel titles will be preceded by an equals sign (“=“) and should not be recorded.</para>
             <para>Required for all compound objects.</para>
@@ -55,10 +58,11 @@
     </descriptions>
     <examples>
         <!-- BMR TO-DO: Draft default examples for object, standalone -->
-        <customization co="object" dd="p16786coll3">
+        <example co="all">
             <para>פאב׳לו אי ב׳ירז׳יניאה: רומאנסו</para>
-        </customization>
-        <customization co="no" dd="p16786coll3">
+            <para>白鯨</para>
+        </example>
+        <customization co="object" dd="p16786coll3" resourceType="text">
             <para>פאב׳לו אי ב׳ירז׳יניאה: רומאנסו</para>
         </customization>
     </examples>
@@ -79,7 +83,7 @@
         <dateCreated>
             <single>2021-03-19</single>
         </dateCreated>
-        <created4Coll>Sephardic Studies Digital Collection (p16786coll3)</created4Coll>
+        <created4Coll>Sephardic Studies Digital Collection - p16786coll3</created4Coll>
         <justification>SSDC requires a field for non-Latin titles.</justification>
         <changeLog>
             <change></change>
