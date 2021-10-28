@@ -38,7 +38,7 @@
             <para>When appropriate, search the &lt;a href="https://id.loc.gov/authorities/names.html"&gt;Library of Congress Name Authority File&lt;/a&gt; via id.loc.gov for the names of individuals discussed in the oral history.</para>
             <para>If a potential match is found, confirm that it is the person associated with the resource. It may be helpful to review information included in the web display such as source(s) of information and occupation (for persons), and/or to follow the links provided for exact and/or closely matching concepts from other schemes.</para>
             <para>Copy the name string for use just as it appears at the top of the page, above the URI(s), including dates.</para>
-            <para>If no match is found, record personal names as "Lastname, Firstname".</para>
+            <para>If no record exists, record personal names as "Lastname, Firstname".</para>
             <para>When recording names without a match in the NAF, reuse the recorded form consistently when the same person appears in the metadata for a different resource.</para>
             <para>For a personal name like Alexander Ben Guiat, "Ben" is considered part of the first name and is transcribed as: "Guiat, Alexander Ben".</para>
             <para>Separate multiple entries with a semicolon and space (“; “).</para>
@@ -49,7 +49,7 @@
             <para>When appropriate, search the &lt;a href="https://id.loc.gov/authorities/names.html"&gt;Library of Congress Name Authority File&lt;/a&gt; via id.loc.gov for the names of individuals discussed in the oral history.</para>
             <para>If a potential match is found, confirm that it is the person associated with the resource. It may be helpful to review information included in the web display such as source(s) of information and occupation (for persons), and/or to follow the links provided for exact and/or closely matching concepts from other schemes.</para>
             <para>Copy the name string for use just as it appears at the top of the page, above the URI(s), including dates.</para>
-            <para>If no match is found, record personal names as "Lastname, Firstname".</para>
+            <para>If no record exists, record personal names as "Lastname, Firstname".</para>
             <para>When recording names without a match in the NAF, reuse the recorded form consistently when the same person appears in the metadata for a different resource.</para>
             <para>For a personal name like Alexander Ben Guiat, "Ben" is considered part of the first name and is transcribed as: "Guiat, Alexander Ben".</para>
             <para>Separate multiple entries with a semicolon and space (“; “).</para>
