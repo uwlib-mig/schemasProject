@@ -77,7 +77,7 @@
             <single>2021-03-19</single>
         </dateCreated>
         <created4Coll>Sephardic Studies Digital Collection - p16786coll3</created4Coll>
-        <justification>SSDC will use title.xml for non-Latin titles; collection requires Romanized title values in multiple flavors including ALA-LC.</justification>
+        <justification>SSDC requires Romanized title values in multiple flavors including ALA-LC.</justification>
         <changeLog>
             <change/>
         </changeLog>
