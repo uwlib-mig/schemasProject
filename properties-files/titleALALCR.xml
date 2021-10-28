@@ -29,22 +29,26 @@
     </dspace>
     <descriptions>
         <definition>
-            <para>A title in non-Latin script Romanized according to the ALA-LC Romanization Tables.</para>
+            <para>A non-Latin script title which has been Romanized according to the ALA-LC Romanization Tables.</para>
         </definition>
-        <customization co="object" dd="p16786coll3">
+        <instructions co="all">
+            <para>Provide a non-Latin script title which has been Romanized according to the ALA-LC Romanization Tables.</para>
+        </instructions>
+        <customization co="object" dd="p16786coll3" resourceType="text">
             <para>Search for Romanized title in &lt;a href="http://catdir.loc.gov/catdir/toc/becites/ladino/63062107a.html"&gt;LOC Ladino catalog.&lt;/a&gt;</para>
-            <para>If a potential match is found, confirm that it is the correct title: it may be helpful to review information included in the web display such as the publisher, printer, and publisher/printer locations.</para>
+            <para>If a potential match is found, confirm that it is the correct title. It may be helpful to review information included in the web display such as the publisher, printer, and publisher/printer locations.</para>
             <para>Copy the Romanized title just as it appears in the LOC record, usually following the period after the author name.</para>
-            <para>When copying from LOC, retain this version: do not edit to match the Title-field value.</para>
+            <para>When copying from LOC, retain this version: do not edit to match the Title value for the resource.</para>
             <para>If no record exists, Romanize according to the ALA-LC &lt;a href="https://www.loc.gov/catdir/cpso/romanization/ladino.pdf"&gt;Ladino romanization table.&lt;/a&gt;</para>
             <para>When Romanizing a title, only include the portion transcribed in the Title field.</para>
+            <para>Note: Titles in the Library of Congress’ online Ladino catalog do not always conform to current ALA-LC romanization standards. Copy catalog those entries as-is into this field. If the title does not exist in the online catalog, romanize according to the ALA-LC standard.</para>
+            <para>Use space, colon, space (" : ") to indicate a break between title and subtitle, even if no colon appears on the title page.</para>
+            <para>Subtitles should be lowercase, including the first word, except for proper nouns.</para>
+            <para>Following the title and colon, record a minimum of five words of the subtitle, followed by an ellipsis (“…”) if not recording the complete subtitle.</para>
+            <para>Consult &lt;a href="https://www.loc.gov/cds/desktop/documents/Hebraica_cataloging.pdf"&gt;Hebraica Cataloging&lt;/a&gt; (pgs. 20-23) for instructions related to rashe tevot (Hebrew abbreviations).</para>
+            <para>Words of Hebrew-Aramaic origin should be romanized according to the &lt;a href="https://www.loc.gov/catdir/cpso/romanization/hebrew.pdf"&gt;ALA-LC Hebrew and Yiddish Romanization Table&lt;/a&gt;.</para>
+            <para>In cases where resources are printed in romanized Ladino, leave this field blank.</para>
             <para>Required for all compound objects.</para>
-        </customization>
-        <customization co="no" dd="p16786coll3">
-            <!-- Draft instructions for SSDC (dd="p16786coll3") standalones; no standalones expected in coll at this time -->
-            <para>Romanize title according to the ALA-LC &lt;a href="https://www.loc.gov/catdir/cpso/romanization/ladino.pdf"&gt;Ladino romanization table.&lt;/a&gt;</para>
-            <para>When Romanizing a title, only include the portion transcribed in the Title field.</para>
-            <para>Required for all standalone objects.</para>
         </customization>
     </descriptions>
     <examples>
@@ -72,8 +76,8 @@
         <dateCreated>
             <single>2021-03-19</single>
         </dateCreated>
-        <created4Coll>Sephardic Studies Digital Collection (p16786coll3)</created4Coll>
-        <justification>SSDC will use title.xml for non-Latin titles; collection requires Romanized title values.</justification>
+        <created4Coll>Sephardic Studies Digital Collection - p16786coll3</created4Coll>
+        <justification>SSDC will use title.xml for non-Latin titles; collection requires Romanized title values in multiple flavors including ALA-LC.</justification>
         <changeLog>
             <change/>
         </changeLog>
