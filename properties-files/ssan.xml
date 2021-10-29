@@ -30,7 +30,7 @@
     </dspace>
     <descriptions>
         <definition>
-            <para>[🚧 A number assigned to each resource in the Sephardic Studies Digital Collection Master Catalog; each resource's number is unique in the Catalog.]</para>
+            <para>A number assigned to each resource in the Sephardic Studies Digital Collection Master Catalog; each resource's number is unique in the Catalog.</para>
         </definition>
         <customization co="object" dd="p16786coll3" resourceType="text">
             <para>Find the item in Sephardic Studies Collection Master Catalog in column AX (File Name) and enter its corresponding number here.</para>
