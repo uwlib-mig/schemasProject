@@ -29,7 +29,6 @@
         <xi:include href="../../properties-files/intervieweeBirthplace.xml"/><!-- NEW intervieweeBirthplace -->
         <xi:include href="../../properties-files/primaryPerformer.xml"/><!-- NEW primaryPerformer -->
         <xi:include href="../../properties-files/performer.xml"/><!-- NEW performer -->
-        <xi:include href="../../properties-files/participants.xml"/>
         <xi:include href="../../properties-files/performerBirthplace.xml"/><!-- NEW performerBirthplace -->
         <xi:include href="../../properties-files/interviewer.xml"/>
         <xi:include href="../../properties-files/videographer.xml"/><!-- NEW videographer -->
