@@ -66,7 +66,12 @@
          <para>Digital, stereo. Copied from analog recording to compact disc. Converted to 24 bit/48kHz Broadcast WAV format files by University of Washington Libraries in 2010.</para>
       </customization>
    </examples>
-   <additionalInfo/>
+   <additionalInfo>
+      <admin co="all" dd4para="p16786coll3">
+         <para>As of 2021-11-01, no digital reproduction information is available for incoming additions to the SSDC - p16786coll3; so, the property is not being implemented for textual resources, ballads, or OHs at this time.</para>
+         <para>As of 2021-11-01, retaining the property in ssdc-combined-map.xml for potential 1) use with standalone objects and/or 2) implementation in future.</para>
+      </admin>
+   </additionalInfo>
    <marc>
       <dcgMarcMapping/>
       <marcNotes>
