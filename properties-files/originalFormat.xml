@@ -49,11 +49,6 @@
          <para>For audio WAVE files, enter audio/wav.</para>
          <para>Separate multiple formats with a semi-colon.</para>
       </instructions> -->
-      <customization co="item" dd="p16786coll3" resourceType="text">
-         <para>Values for Original Format must be taken from the &lt;a href="http://www.rdaregistry.info/termList/RDACarrierType/"&gt;RDA Carrier Type&lt;/a&gt; vocabulary.</para>
-         <para>For textual-resource compound-object items, enter the following value:</para>
-         <para>volume</para>
-      </customization>
       <customization co="item" dd="p16786coll3" resourceType="song">
          <para>Values for Original Format must be taken from the &lt;a href="http://www.rdaregistry.info/termList/RDACarrierType/"&gt;RDA Carrier Type&lt;/a&gt; vocabulary.</para>
          <para>For ballad recordings, enter one of the following values depending on which compound-object item you are describing.</para>
@@ -66,8 +61,7 @@
          <para>Values for Original Format must be taken from the &lt;a href="http://www.rdaregistry.info/termList/RDACarrierType/"&gt;RDA Carrier Type&lt;/a&gt; vocabulary.</para>
          <para>For oral histories, enter one of the following values depending on which compound-object item you are describing.</para>
          <para>For audio file items and for transcripts (.pdf or other document file formats):</para>
-         <!-- received some MIG feedback on 'computer disk', TBD -->
-         <para>computer disc</para>
+         <para>online resource</para>
          <para>For image files (interviewee photos):</para>
          <para>sheet</para>
       </customization>
@@ -96,15 +90,12 @@
          <para>videocassette</para>
          <para>video/mp4</para>
       </example>
-      <customization co="item" dd="p16786coll3" resourceType="text">
-         <para>volume</para>
-      </customization>
       <customization co="item" dd="p16786coll3" resourceType="song">
          <para>audiocassette</para>
          <para>sheet</para>
       </customization>
       <customization co="item" dd="p16786coll3" resourceType="oh">
-         <para>computer disc</para>
+         <para>online resource</para>
          <para>sheet</para>
       </customization>
    </examples>
