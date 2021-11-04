@@ -73,14 +73,9 @@
          <para>Duration should be entered hh:mm:ss.</para>
          <para>Do not enter a value for the extent of the pdf file.</para>
       </customization>
-      <customization co="item" dd="p16786coll3" resourceType="oh text song">
-         <para>Enter the extent of digital access file.</para>
-         <para>For digital audio, provide both the runtime and the file size.</para>
-         <para>Separate runtime and file size with a comma and space (", ").</para>
+      <customization co="item" dd="p16786coll3" resourceType="oh song">
+         <para>For audio files, enter the runtime of the digital access file.</para>
          <para>Format runtime as HH:MM:SS.</para>
-         <para>Format file size using decimals to the tenths place, as in '1.5'.</para>
-         <para>Include one space between the number and the file size unit, as in '1.5 MB'.</para>
-         <para>Capitalize file size units and do not include punctuation, as in 'MB'.</para>
       </customization>
    </descriptions>
    <examples>
@@ -112,9 +107,8 @@
          <para>00:12:58</para>
          <para>01:28:14</para>
       </customization>
-      <customization co="item" dd="p16786coll3" resourceType="oh text song">
-         <para>00:12:58, 3.2 MB</para>
-         <para>1.5 MB</para>
+      <customization co="item" dd="p16786coll3" resourceType="oh song">
+         <para>00:12:58</para>
       </customization>
    </examples>
    <additionalInfo>
