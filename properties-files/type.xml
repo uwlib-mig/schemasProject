@@ -44,10 +44,16 @@
          <para>Input a value from the Dublin Core Type Vocabulary at http://dublincore.org/documents/dcmi-terms/.</para>
          <para>Separate multiple values with a semi-colon.</para>
       </instructions>-->
-      <customization co="object" dd="p16786coll3" resourceType="text song oh">
+      <!-- See MIG 2021-11-02 notes for SSDC - p16786coll3 - implementation -->
+      <customization co="object" dd="p16786coll3" resourceType="song oh">
          <para>Values for this property must come from the &lt;a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7"&gt;DCMI Type Vocabulary&lt;/a&gt;.</para>
-         <para>For textual-resource, ballad, and oral history compound objects, provide the following value:</para>
-         <para>Collection</para>
+         <para>For ballad, and oral history compound objects, provide the following value:</para>
+         <para>Sound</para>
+      </customization>
+      <customization co="object" dd="p16786coll3" resourceType="text">
+         <para>Values for this property must come from the &lt;a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7"&gt;DCMI Type Vocabulary&lt;/a&gt;.</para>
+         <para>For textual-resource compound objects, provide the following value:</para>
+         <para>Text</para>
       </customization>
       <customization co="item" dd="p16786coll3" resourceType="text">
          <para>Values for this property must come from the &lt;a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7"&gt;DCMI Type Vocabulary&lt;/a&gt;.</para>
@@ -76,7 +82,7 @@
    </descriptions>
    <examples>
       <example co="no">
-         <para>SillImage</para>
+         <para>StillImage</para>
       </example>
       <!--MIG decision 2020-05: do not include this property in the object description
          <example co="object">
@@ -109,8 +115,12 @@
       <customization co="no" dd="gd">
          <para>MovingImage</para>
       </customization>
-      <customization co="object" dd="p16786coll3" resourceType="text song oh">
-         <para>Collection</para>
+      <!-- See MIG 2021-11-02 notes for SSDC - p16786coll3 - implementation -->
+      <customization co="object" dd="p16786coll3" resourceType="song oh">
+         <para>Sound</para>
+      </customization>
+      <customization co="object" dd="p16786coll3" resourceType="text">
+         <para>Text</para>
       </customization>
       <customization co="item" dd="p16786coll3" resourceType="text">
          <para>Text</para>
