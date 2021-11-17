@@ -39,9 +39,19 @@
             <para>Provide a controlled form of the place name if possible.</para>
         </instructions>
         <customization co="object" dd="p16786coll3" resourceType="oh">
+            <para>For metadata creation taking place outside the University of Washington Libraries (UWL) Cataloging and Metadata Services unit:</para>
             <para>Enter the place of birth of the interviewee in natural language, providing sufficient information to disambiguate place names as needed.</para>
             <para>As a rule, include more information rather than less.</para>
             <para>For example, when providing the name of a city, also provide the state, region, and/or country name(s) as available.</para>
+            <para>UWL Cataloging staff will use this information to create a structured value.</para>
+            <para>Separate multiple entries with a semicolon and space (“; “).</para>
+            <para>Order of values does not matter.</para>
+            <para>If multiple interviewees are associated with a resource, include the Interviewee value to which the birthplace corresponds in square brackets following.</para>
+            <para>Be sure to provide the value 'xyz' for the Cataloging property to indicate to cataloging staff that revision of the unstructured value is needed.</para>
+            <para>&lt;br/&gt;For UWL cataloging staff creating structured values:</para>
+            <para>Forms of the names should be derived from the Library of Congress Authority File.</para>
+            <para>Enter as follows:</para>
+            <para>Country--State or Province--City</para>
             <para>Separate multiple entries with a semicolon and space (“; “).</para>
             <para>Order of values does not matter.</para>
             <para>If multiple interviewees are associated with a resource, include the Interviewee value to which the birthplace corresponds in square brackets following.</para>
@@ -55,12 +65,15 @@
             <para>United States—Washington (State)—Bellingham</para>
         </example>
         <customization co="object" dd="p16786coll3" resourceType="oh">
+            <para>[Natural-language values for review by cataloging staff:]</para>
             <para>Seattle, Washington, United States</para>
             <para>Thessaloniki, Greece [Naar, Albert]; Istanbul, Turkey [Saltiel, Jack]</para>
+            <!-- ask Laura Lins for structured values here corresponding to unstructured above -->
+            <para>&lt;br/&gt;[Structured values provided by cataloging staff:]</para>
+            <para>🚧</para>
         </customization>
         <customization co="no" dd="p16786coll3">
-            <para>Seattle, Washington, United States</para>
-            <para>Thessaloniki, Greece [Naar, Albert]; Istanbul, Turkey [Saltiel, Jack]</para>
+            <!-- reproduce ssdc-oh-co examples from above here -->
         </customization>
     </examples>
     <additionalInfo/>
