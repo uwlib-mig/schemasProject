@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs" version="2.0">
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    exclude-result-prefixes="xs" 
+    version="2.0">
+    
+    <xsl:output method="xml" indent="yes"/>
 
-    <xsl:variable name="base">https://server16786.contentdm.oclc.org/cgi-bin/showfile.exe?CISOROOT=/civilwar&amp;CISOPTR=</xsl:variable>
+    <!-- to do: need full list of collection IDs  -->
+    <xsl:variable name="collectionId">p16786coll3</xsl:variable>
+    <xsl:variable name="base"
+        select="concat('https://server16786.contentdm.oclc.org/cgi-bin/showfile.exe?CISOROOT=/', $collectionId, '&amp;CISOPTR=')"/>
     
     <xsl:template match="@* | node()">
         <xsl:copy>
