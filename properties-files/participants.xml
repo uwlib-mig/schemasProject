@@ -5,7 +5,7 @@
     xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
     <uid>p103</uid>
     <labels>
-        <platformIndependent>participants</platformIndependent>
+        <platformIndependent>participant</platformIndependent>
         <dc>contributor</dc>
     </labels>
     <uwRequired>
@@ -14,7 +14,7 @@
         <uwItem>no</uwItem>
     </uwRequired>
     <cdm>
-        <label>Participants</label>
+        <label>Participant</label>
         <cdmDatatype>text</cdmDatatype>
         <cdmLarge>no</cdmLarge>
         <searchable>yes</searchable>
@@ -23,10 +23,12 @@
         <cdmControlledVocab>no</cdmControlledVocab>
     </cdm>
     <dspace>
-        <dspaceProperty></dspaceProperty>
+        <dspaceProperty/>
     </dspace>
     <descriptions>
-        <definition><para>An entity responsible for making, participating, or performing in the resource.</para></definition>
+        <definition>
+            <para>An entity responsible for making, participating, or performing in the resource.</para>
+        </definition>
         <instructions co="no">
             <para>Enter the names of the participants and performers seen in the resource.</para>
             <para>Enter the names in inverted form.</para>
@@ -51,10 +53,13 @@
             <para>Barbas, Yiannis; Meros, Christos; Karakostas, Christos</para>
             <para>Sinopoulos, Sokrates, 1974-</para>
         </example>
+        <customization co="object" dd="p16786coll3" resourceType="song">
+            <para>🚧</para>
+        </customization>
     </examples>
-    <additionalInfo></additionalInfo>
+    <additionalInfo/>
     <marc>
-        <dcgMarcMapping></dcgMarcMapping>
+        <dcgMarcMapping/>
     </marc>
     <xsd>
         <typeInfo level="standalone object">
@@ -71,15 +76,7 @@
         <created4Coll>Greek Dances</created4Coll>
         <justification>Needed property for naming the participants seen in the videos.</justification>
         <changeLog>
-            <change></change>
+            <change date="2021-10-03">Change labels to singular to match other UWCdm prop labels in use (see artist, author, client, engineer, etc.)</change>
         </changeLog>
     </history>
 </property>
-
-
-
-
-
-
-
-

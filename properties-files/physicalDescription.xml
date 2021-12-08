@@ -55,6 +55,43 @@
          <para>Input a term or terms describing the format of the original resource in which data, sound, images, etc., are stored.</para>
          <para>Enter the phrase describing the original resource provided by the digitization agency.</para>
       </customization>
+      <customization co="object" dd="p16786coll3" resourceType="text">
+         <para>For textual resources, Physical Description is recorded at the compound-object level.</para>
+         <para>If information is available, provide a description of the physical resource from which the digital surrogate (compound object) was created.</para>
+         <para>If information is available, include both the number of pages and a measurement for the volume.</para>
+         <para>&lt;br/&gt;Recording number of pages:</para>
+         <para>For pages numbered with Roman or Arabic numerals, record the number of the final page in either Roman or Arabic numerals followed by “pages”.</para>
+         <para>When a volume includes both Roman- and Arabic-numbered pages, provide the roman numeral followed by a comma and space (“, “), the Arabic numeral followed by a space, and “pages”.</para>
+         <para>If pages are not numbered, record a number of pages in Arabic numerals followed by a space (“ “) and “pages”.</para>
+         <para>Optionally, record an unnumbered page count before or after an Arabic- and/or Roman-numbered page count, separating with a comma and space (“, “).</para>
+         <para>&lt;br/&gt;Recording physical dimensions:</para>
+         <para>Record the height of the volume in centimeters.</para>
+         <para>Record the height using Arabic numerals.</para>
+         <para>Use a space and “cm” (no following punctuation) after the numeral(s) (“ cm”).</para>
+      </customization>
+      <customization co="item" dd="p16786coll3" resourceType="song">
+         <para>For ballad recordings, Physical Description is recorded at the compound-object-item level.</para>
+         <para>If information is available, provide a description of the physical resource from which the digital surrogate (compound-object item) was created.</para>
+         <para>&lt;br/&gt;For audio-file items (song recordings), if information is available, provide a runtime for the analog media from which the audio file was created.</para>
+         <para>Format runtime as HH:MM:SS.</para>
+         <para>&lt;br/&gt;For image-file items (photographs of performers, digitized sheet music), if information is available, provide a measurement or measurements of the physical media from which image files were created.</para>
+         <para>&lt;br/&gt;For photographs of performers, if information is available, record the height and width of the photo in centimeters, excluding any frame or mount, using Arabic numerals.</para>
+         <para>Use a space and “cm” (no following punctuation) after the measurements (“ cm”), to record as:</para>
+         <para>[height] x [width] cm</para>
+         <para>&lt;br/&gt;For sheet music, if information is available, record the height of the sheet or volume in centimeters.</para>
+         <para>Record the height using Arabic numerals.</para>
+         <para>Use a space and “cm” (no following punctuation) after the numeral(s) (“ cm”), to record as:</para>
+         <para>[height] cm</para>
+      </customization>
+      <customization co="item" dd="p16786coll3" resourceType="oh">
+         <para>For oral histories, Physical Description is recorded at the compound-object-item level.</para>
+         <para>For SSDC oral history audio files and transcript files which are born-digital, do not record a Physical Description value.</para>
+         <para>&lt;br/&gt;For image-file items (photographs of interviewees), if information is available, provide a measurement or measurements of the physical media from which image files were created.</para>
+         <para>For photographs of interviewees, if information is available, record the height and width of the photo in centimeters, excluding any frame or mount, using Arabic numerals.</para>
+         <para>Use a space and “cm” (no following punctuation) after the measurements (“ cm”), to record as:</para>
+         <para>[height] x [width] cm</para>
+      </customization>
+      <customization co="item" dd="p16786coll3" resourceType="oh"></customization>
    </descriptions>
    <examples>
       <example co="no">
@@ -117,6 +154,23 @@
       </customization>
       <customization co="no" dd="krab">
          <para>1/4" Open Reel Tape: 1.5mil Polyester Brand Unknown; Stereo</para>
+      </customization>
+      <customization co="object" dd="p16786coll3" resourceType="text">
+         <para>xi pages</para>
+         <para>25 pages</para>
+         <para>xi, 25 pages</para>
+         <para>15 unnumbered pages</para>
+         <para>xi, 25 pages, 15 unnumbered pages</para>
+         <para>2 unnumbered pages, 300 pages</para>
+         <para>&lt;br/&gt;21 cm</para>
+      </customization>
+      <customization co="item" dd="p16786coll3" resourceType="song">
+         <para>00:32:23</para>
+         <para>10 x 15 cm</para>
+         <para>28 cm</para>
+      </customization>
+      <customization co="item" dd="p16786coll3" resourceType="oh">
+         <para>10 x 15 cm</para>
       </customization>
    </examples>
    <additionalInfo/>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md 
+    http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+    <uid>p141</uid>
+    <labels>
+        <platformIndependent>romancero</platformIndependent>
+        <dc>none</dc>
+    </labels>
+    <uwRequired>
+        <uwStandalone>no</uwStandalone>
+        <uwObject>no</uwObject>
+        <uwItem>no</uwItem>
+    </uwRequired>
+    <cdm>
+        <label>Romancero Theme</label>
+        <cdmDatatype>text</cdmDatatype>
+        <cdmLarge>no</cdmLarge>
+        <searchable>yes</searchable>
+        <hidden>no</hidden>
+        <cdmRequired>no</cdmRequired>
+        <cdmControlledVocab>yes</cdmControlledVocab>
+    </cdm>
+    <!-- omit DSpace -->
+    <dspace>
+        <dspaceProperty></dspaceProperty>
+    </dspace>
+    <descriptions>
+        <definition>
+            <para>A translation of the song's thematic classification, printed in Spanish on pages 219-221 of "Romances judeo-españoles de Oriente: nueva recolección."</para>
+        </definition>
+        <instructions co="all">
+            <para>Search for the song title on pages 219-221 of "&lt;a href="https://alliance-primo.hosted.exlibrisgroup.com/permalink/f/kjtuig/CP71363340660001451"&gt;"Romances judeo-españoles de Oriente : nueva recolección"&lt;/a&gt;."
+            </para>
+            <para>Separate multiple thematic elements with a semicolon and space ("; ").</para>
+            <para>Begin each new thematic element with a capital letter.</para>
+            <para>If no match is found, do not provide a value.</para>
+        </instructions>
+        <customization co="object" dd="p16786coll3" resourceType="song">
+            <!-- redundant; see schemasProject issue #25 -->
+            <para>Search for the song title on pages 219-221 of "&lt;a href="https://alliance-primo.hosted.exlibrisgroup.com/permalink/f/kjtuig/CP71363340660001451"&gt;"Romances judeo-españoles de Oriente : nueva recolección"&lt;/a&gt;."
+            </para>
+            <para>Separate multiple thematic elements with a semicolon and space ("; ").</para>
+            <para>Begin each new thematic element with a capital letter.</para>
+            <para>If no match is found, do not provide a value.</para>
+        </customization>
+    </descriptions>
+    <examples>
+        <example co="all">
+            <para>Capture and seduction by taking aboard ship</para>
+            <para>Girl enticed into boat and abducted; Capture by luring; Capture and seduction by taking aboard ship; Apple tree as symbol of seduction</para>
+        </example>
+        <customization co="object" dd="p16786coll3" resourceType="song">
+            <para>Capture and seduction by taking aboard ship</para>
+            <para>Girl enticed into boat and abducted; Capture by luring; Capture and seduction by taking aboard ship; Apple tree as symbol of seduction</para>
+        </customization>
+    </examples>
+    <additionalInfo/>
+    <marc>
+        <dcgMarcMapping/>
+    </marc>
+    <xsd/>
+    <rdf/>
+    <history>
+        <dateCreated>
+            <single>2021-10-27</single>
+        </dateCreated>
+        <created4Coll>Sephardic Studies Digital Collection - p16786coll3</created4Coll>
+        <justification>SSDC will make use of existing metadata for recordings of ballad performances; existing metadata includes information about Romancero themes for each song</justification>
+        <changeLog>
+            <change/>
+        </changeLog>
+    </history>
+</property>

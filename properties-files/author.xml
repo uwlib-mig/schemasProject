@@ -1,11 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?><property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd"><uid>p6</uid><labels>
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+   xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+   <uid>p6</uid>
+   <labels>
       <platformIndependent>author</platformIndependent>
       <dc>creator</dc>
-   </labels><uwRequired>
+   </labels>
+   <uwRequired>
       <uwStandalone>no</uwStandalone>
       <uwObject>no</uwObject>
       <uwItem>no</uwItem>
-   </uwRequired><cdm>
+   </uwRequired>
+   <cdm>
       <label>Author</label>
       <cdmDatatype>text</cdmDatatype>
       <cdmLarge>no</cdmLarge>
@@ -13,9 +20,11 @@
       <hidden>no</hidden>
       <cdmRequired>no</cdmRequired>
       <cdmControlledVocab>no</cdmControlledVocab>
-   </cdm><dspace>
+   </cdm>
+   <dspace>
       <dspaceProperty/>
-   </dspace><descriptions>
+   </dspace>
+   <descriptions>
       <definition>
          <para>The person or the corporate body responsible for the textual content.</para>
       </definition>
@@ -33,23 +42,62 @@
          <para>If the Creator is determined from a resource other than the item, create a Note.</para>
          <para>If there is no author, leave the field blank.</para>
       </instructions>
-   </descriptions><examples>
+      <customization co="object" dd="p16786coll3" resourceType="text">
+         <para>Search the &lt;a href="https://id.loc.gov/authorities/names.html"&gt;Library of Congress Name Authority File&lt;/a&gt; via id.loc.gov for the author name (usually an individual).</para>
+         <para>If a potential match is found, confirm that it is the person associated with the resource: it may be helpful to review information included in the web display such as source(s) of information and occupation (for persons), and/or to follow the links provided for exact and/or closely matching concepts from other schemes.</para>
+         <para>Copy the name string for use just as it appears at the top of the page, above the URI(s), including dates.</para>
+         <para>If no record exists, Romanize the author name as it appears on the title page (or elsewhere if not on the title page) according to the ALA-LC &lt;a href="https://www.loc.gov/catdir/cpso/romanization/ladino.pdf"&gt;Ladino romanization table&lt;/a&gt;.</para>
+         <para>When recording names without a match in the NAF, reuse the recorded form consistently when the same person or organization appears in the metadata for a different resource.</para>
+         <para>For a personal name like Alexander Ben Guiat, "Ben" is considered part of the first name and is transcribed as: "Guiat, Alexander Ben".</para>
+         <para>Separate multiple entries with a semicolon and space (“; “).</para>
+         <para>Order of values does not matter.</para>
+         <para>Author names usually appear on the title page after the following designations: el autor; kompuesto; por.</para>
+         <para>Required for all compound objects.</para>
+      </customization>
+      <customization co="no" dd="p16786coll3">
+         <para>Search the &lt;a href="https://id.loc.gov/authorities/names.html"&gt;Library of Congress Name Authority File&lt;/a&gt; via id.loc.gov for the author name (usually an individual).</para>
+         <para>If a potential match is found, confirm that it is the person associated with the resource: it may be helpful to review information included in the web display such as source(s) of information and occupation (for persons), and/or to follow the links provided for exact and/or closely matching concepts from other schemes.</para>
+         <para>Copy the name string for use just as it appears at the top of the page, above the URI(s), including dates.</para>
+         <para>If no record exists, Romanize the author name as it appears on the title page (or elsewhere if not on the title page) according to the ALA-LC &lt;a href="https://www.loc.gov/catdir/cpso/romanization/ladino.pdf"&gt;Ladino romanization table&lt;/a&gt;.</para>
+         <para>When recording names without a match in the NAF, reuse the recorded form consistently when the same person or organization appears in the metadata for a different resource.</para>
+         <para>For a personal name like Alexander Ben Guiat, "Ben" is considered part of the first name and is transcribed as: "Guiat, Alexander Ben".</para>
+         <para>Separate multiple entries with a semicolon and space (“; “).</para>
+         <para>Order of values does not matter.</para>
+         <para>Author names usually appear on the title page after the following designations: el autor; kompuesto; por.</para>
+      </customization>
+   </descriptions>
+   <examples>
       <example co="all">
          <para>Strong, Lyman W.</para>
       </example>
-   </examples><additionalInfo/><marc>
+      <customization co="object" dd="p16786coll3" resourceType="text">
+         <para>Saint-Pierre, Bernardin de, 1737-1814.</para>
+      </customization>
+      <customization co="no" dd="p16786coll3">
+         <para>Saint-Pierre, Bernardin de, 1737-1814.</para>
+      </customization>
+   </examples>
+   <additionalInfo>
+      <admin co="all" dd4para="p16786coll3">
+         <para>Default is controlled-vocabulary feature OFF - Sephardic Studies Digital Collection - p16786coll3 requesting ON for this property</para>
+      </admin>
+   </additionalInfo>
+   <marc>
       <dcgMarcMapping/>
       <marcNotes/>
-   </marc><xsd>
+   </marc>
+   <xsd>
       <typeInfo level="standalone object">
          <typeAttribute>xs:string</typeAttribute>
       </typeInfo>
       <typeInfo level="item">
          <empty/>
       </typeInfo>
-   </xsd><rdf>
-      <sameAs/>
-   </rdf><history>
+   </xsd>
+   <rdf>
+      <!-- no RDF info yet for author -->
+   </rdf>
+   <history>
       <dateCreated>
          <range>
             <start>2000-01-01</start>
@@ -61,5 +109,7 @@
       <changeLog>
          <change/>
          <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
+         <change date="2021-03-20">Add custom instructions and examples for Sephardic Studies Digital Collection - p16786coll3</change>
       </changeLog>
-   </history></property>
+   </history>
+</property>

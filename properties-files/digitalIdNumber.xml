@@ -1,11 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?><property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd"><uid>p30</uid><labels>
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+   xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+   <uid>p30</uid>
+   <labels>
       <platformIndependent>digitalIdNumber</platformIndependent>
       <dc>identifier</dc>
-   </labels><uwRequired>
+   </labels>
+   <uwRequired>
       <uwStandalone>yes</uwStandalone>
       <uwObject>yes</uwObject>
       <uwItem>no</uwItem>
-   </uwRequired><cdm>
+   </uwRequired>
+   <cdm>
       <label>Digital ID Number</label>
       <cdmDatatype>text</cdmDatatype>
       <cdmLarge>no</cdmLarge>
@@ -13,9 +20,11 @@
       <hidden>no</hidden>
       <cdmRequired>no</cdmRequired>
       <cdmControlledVocab>no</cdmControlledVocab>
-   </cdm><dspace>
+   </cdm>
+   <dspace>
       <dspaceProperty/>
-   </dspace><descriptions>
+   </dspace>
+   <descriptions>
       <definition>
          <para>Unique number assigned to each digital object in CONTENTdm for identification purposes.</para>
       </definition>
@@ -31,7 +40,8 @@
          <para>Enter the order number.</para>
          <para>Order number sequence must be obtained from appropriate staff.</para>
       </instructions>
-   </descriptions><examples>
+   </descriptions>
+   <examples>
       <example co="no">
          <para>CVW051</para>
          <para>COS321</para>
@@ -54,16 +64,19 @@
          <para>UWTOH201802-Image</para>
          <para>UWTOH201802-Transcript</para>
       </customization>
-   </examples><additionalInfo>
+   </examples>
+   <additionalInfo>
       <admin co="no">
          <para>Photograph collections also have this property but it is labeled "Order Number."</para>
       </admin>
-   </additionalInfo><marc>
+   </additionalInfo>
+   <marc>
       <dcgMarcMapping/>
       <marcNotes>
          <para/>
       </marcNotes>
-   </marc><xsd>
+   </marc>
+   <xsd>
       <typeInfo level="standalone object">
          <simpleType>
             <xs:restriction base="xs:string">
@@ -74,9 +87,9 @@
       <typeInfo level="item">
          <typeAttribute>xs:string</typeAttribute>
       </typeInfo>
-   </xsd><rdf>
-      
-   </rdf><history>
+   </xsd>
+   <rdf> </rdf>
+   <history>
       <dateCreated>
          <range>
             <start>2012-01-01</start>
@@ -88,4 +101,5 @@
       <changeLog>
          <change/>
       </changeLog>
-   </history></property>
+   </history>
+</property>
