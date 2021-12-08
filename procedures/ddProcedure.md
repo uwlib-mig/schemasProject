@@ -14,6 +14,7 @@
 ### 5. Edit values for the XML elements:
 - edit `/migDataDictionary/@id`
     - find last `@id` by running [$sch/dataDictionaries/xml/queries/listIDs.xsl]() (if an xml source file is needed, use a dummy.xml such as $sch/xslt/dummy.xml)
+
 - Check all attributes in the root element /migDataDictionary; they're mostly namespaces and are probably correct, but correctness should be verified.
 - Edit the child XML elements as appropriate:
     - `//ddname` use name of collection on digital collection front page
@@ -25,6 +26,7 @@
         - CONTENTdm compound object processing for MAPs is discussed in detail at [//procedures/cdmCompoundObjects.html]().
     - `//standalone` enter "yes" if the collection is a CONTENTdm collection that includes individual items not contained in a compound object.
         - CONTENTdm compound object processing for MAPs is discussed in detail at [//procedures/cdmCompoundObjects.html]().
+
     - `//cdmCode` enter the cdm databse code for the collection, if applicable.
 
 ### 6. List the properties used to describe the collection:
