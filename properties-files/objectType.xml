@@ -71,8 +71,8 @@
          <para>book</para>
       </customization>
       <customization co="object" dd="p16786coll3" resourceType="song">
-         <!-- need novel object type value for ballad recordings -->
-         <para>🚧</para>
+         <para>Enter the following value:</para>
+         <para>ballads</para>
       </customization>
       <customization co="object" dd="p16786coll3" resourceType="oh">
          <para>Enter the following value:</para>
@@ -115,8 +115,7 @@
          <para>book</para>
       </customization>
       <customization co="object" dd="p16786coll3" resourceType="song">
-         <!-- need novel object type value for ballad recordings -->
-         <para>🚧</para>
+         <para>ballads</para>
       </customization>
       <customization co="object" dd="p16786coll3" resourceType="oh">
          <para>oral histories</para>
