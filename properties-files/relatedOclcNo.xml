@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md 
+    http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+    <uid>p124</uid>
+    <labels>
+        <platformIndependent>relatedOclcNo</platformIndependent>
+        <dc>none</dc>
+    </labels>
+    <uwRequired>
+        <uwStandalone>no</uwStandalone>
+        <uwObject>no</uwObject>
+        <uwItem>no</uwItem>
+    </uwRequired>
+    <cdm>
+        <label>Related OCLC Record</label>
+        <cdmDatatype>text</cdmDatatype>
+        <cdmLarge>no</cdmLarge>
+        <searchable>yes</searchable>
+        <hidden>no</hidden>
+        <cdmRequired>no</cdmRequired>
+        <cdmControlledVocab>no</cdmControlledVocab>
+    </cdm>
+    <!-- omit dspace -->
+    <dspace>
+        <dspaceProperty/>
+    </dspace>
+    <descriptions>
+        <definition>
+            <para>Number for an OCLC record related to the digital resource, for example, a record for a physical item from which the digital surrogate was created.</para>
+        </definition>
+        <!-- DRAFT default instructions, extremely brief -->
+        <instructions co="all">
+            <para>Provide a number for an OCLC record related to the digital resource, for example, a record for a physical item from which the digital surrogate was created.</para>
+        </instructions>
+        <customization co="object" dd="p16786coll3" resourceType="text">
+            <para>University of Washington Libraries (UWL) cataloging staff will provide a value or values for this property if applicable.</para>
+            <para>For metadata creation taking place outside the University of Washington Libraries (UWL) Cataloging and Metadata Services unit:</para>
+            <para>Do not provide a value for this property.</para>
+            <para>Be sure to provide the value 'xyz' for the Cataloging property to indicate to cataloging staff that a value is needed if applicable.</para>
+            <para>When the resource does not use English, be sure to use the Staff Notes property to provide information which will allow cataloging staff to identify any related records.</para>
+            <para>For details about the information needed by cataloging staff, contact the collection manager(s) or metadata liaison(s).</para>
+            <para>&lt;br/&gt;For UWL cataloging staff recording values:</para>
+            <para>[🚧 Do we need to provide information about what we are asking cataloging staff to search for?]</para>
+        </customization>
+    </descriptions>
+    <examples>
+        <example co="all">
+            <para>37917418</para>
+            <para>27382728</para>
+        </example>
+        <customization co="object" dd="p16786coll3" resourceType="text">
+            <para>[Values provided by cataloging staff:]</para>
+            <para>37917418</para>
+            <para>27382728</para>
+        </customization>
+    </examples>
+    <!-- Omit:
+        additionalInfo
+        marc -->
+    <additionalInfo/>
+    <marc>
+        <dcgMarcMapping/>
+    </marc>
+    <!-- BMR TO DO: XSD -->
+    <xsd/>
+    <!-- Omit:
+        rdf
+        cdmRdf -->
+    <rdf/>
+    <history>
+        <dateCreated>
+            <range>
+                <start>2021-03-21</start>
+                <end>2021-10-27</end>
+            </range>
+        </dateCreated>
+        <created4Coll>Sephardic Studies Digital Collection - p16786coll3</created4Coll>
+        <justification>SSDC requires a property to provide related OCLC records to support scholarship.</justification>
+        <changeLog>
+            <change/>
+        </changeLog>
+    </history>
+</property>

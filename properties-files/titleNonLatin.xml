@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+    <uid>p116</uid>
+    <labels>
+        <platformIndependent>titleNonLatin</platformIndependent>
+        <dc>alternative</dc>
+    </labels>
+    <uwRequired>
+        <uwStandalone>no</uwStandalone>
+        <uwObject>no</uwObject>
+        <uwItem>no</uwItem>
+    </uwRequired>
+    <cdm>
+        <label>Title (Non-Latin Script)</label>
+        <cdmDatatype>text</cdmDatatype>
+        <cdmLarge>no</cdmLarge>
+        <searchable>yes</searchable>
+        <hidden>no</hidden>
+        <cdmRequired>no</cdmRequired>
+        <cdmControlledVocab>no</cdmControlledVocab>
+    </cdm>
+    <!-- omit dspace -->
+    <dspace>
+        <dspaceProperty/>
+    </dspace>
+    <descriptions>
+        <definition>
+            <para>A name for the resource in non-Latin script.</para>
+        </definition>
+        <instructions co="all">
+            <para>Provide a name for the resource in non-Latin script.</para>
+        </instructions>
+        <customization co="object" dd="p16786coll3" resourceType="text">
+            <para>Enter the Ladino title in Hebrew script as it appears on the title page.</para>
+            <para>Record title exactly as found, even with printer errors.</para>
+            <para>Roshe tevot (abbreviations) are considered part of the title and should be recorded.</para>
+            <para>Use a space, colon, space (" : ") to indicate the break between title and subtitle, even if no colon appears on title page.</para>
+            <para>Following the title and colon, record a minimum of five words of the subtitle, followed by an ellipsis (“…”) if not recording the complete subtitle.</para>
+            <para>In cases where resources are printed in Romanized Ladino, do not provide a value.</para>
+            <para>Optional: Record the subtitle as it appears in a matching MARC record verified by cataloging staff; record from the 245 subfield b.</para>
+            <para>Note: subtitles in 245 subfield b will be preceded by a colon (":"); parallel titles will be preceded by an equals sign (“=“) and should not be recorded.</para>
+            <para>Required for all compound objects.</para>
+        </customization>
+        <!-- Draft instructions for SSDC (dd="p16786coll3") standalones; no standalones expected in coll at this time -->
+        <customization co="no" dd="p16786coll3">
+            <para>Enter the Ladino title of the resource in Hebrew script as it appears on the title page or other source of information.</para>
+            <para>Record title exactly as found, even with printer errors.</para>
+            <para>Roshe tevot (abbreviations) are considered part of the title and should be recorded.</para>
+            <para>Use a colon and space (": ") to indicate the break between title and subtitle, even if no colon appears on title page.</para>
+            <para>Following the title and colon, record a minimum of five words of the subtitle, followed by an ellipsis (“…”) if not recording the complete subtitle.</para>
+            <para>Optional: Record the subtitle as it appears in a matching MARC record verified by cataloging staff; record from the 245 subfield b.</para>
+            <para>Note: subtitles in 245 subfield b will be preceded by a colon (":"); parallel titles will be preceded by an equals sign (“=“) and should not be recorded.</para>
+            <para>Required for all compound objects.</para>
+        </customization>
+    </descriptions>
+    <examples>
+        <!-- BMR TO-DO: Draft default examples for object, standalone -->
+        <example co="all">
+            <para>פאב׳לו אי ב׳ירז׳יניאה: רומאנסו</para>
+            <para>白鯨</para>
+        </example>
+        <customization co="object" dd="p16786coll3" resourceType="text">
+            <para>פאב׳לו אי ב׳ירז׳יניאה: רומאנסו</para>
+        </customization>
+    </examples>
+    <!-- Omit:
+        additionalInfo
+        marc -->
+    <!-- BMR TO DO - XSD -->
+    <!-- Omit:
+        rdf
+        cdmRdf -->
+    <additionalInfo/>
+    <marc>
+        <dcgMarcMapping></dcgMarcMapping>
+    </marc>
+    <xsd></xsd>
+    <rdf></rdf>
+    <history>
+        <dateCreated>
+            <single>2021-03-19</single>
+        </dateCreated>
+        <created4Coll>Sephardic Studies Digital Collection - p16786coll3</created4Coll>
+        <justification>SSDC requires a field for non-Latin titles.</justification>
+        <changeLog>
+            <change></change>
+        </changeLog>
+    </history>
+</property>

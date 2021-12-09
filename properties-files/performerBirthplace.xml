@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+    <uid>p139</uid>
+    <labels>
+        <platformIndependent>performerBirthplace</platformIndependent>
+        <dc>none</dc>
+    </labels>
+    <uwRequired>
+        <uwStandalone>no</uwStandalone>
+        <uwObject>no</uwObject>
+        <uwItem>no</uwItem>
+    </uwRequired>
+    <cdm>
+        <label>Performer Birthplace</label>
+        <cdmDatatype>text</cdmDatatype>
+        <cdmLarge>no</cdmLarge>
+        <searchable>yes</searchable>
+        <hidden>no</hidden>
+        <cdmRequired>no</cdmRequired>
+        <cdmControlledVocab>yes</cdmControlledVocab>
+    </cdm>
+    <dspace>
+        <dspaceProperty/>
+    </dspace>
+    <descriptions>
+        <definition>
+            <para>The place of birth of a primary performer featured in a resource.</para>
+        </definition>
+        <!-- need default instructions -->
+        <instructions co="all"/>
+        <customization co="object" dd="p16786coll3" resourceType="song">
+            <para>For metadata creation taking place outside the University of Washington Libraries (UWL) Cataloging and Metadata Services unit:</para>
+            <para>Enter a performer birthplace in natural language, providing sufficient information to disambiguate place names as needed.</para>
+            <para>As a rule, include more information rather than less.</para>
+            <para>For example, when providing the name of a city, also provide the state, region, and/or country name(s) as available.</para>
+            <para>UWL Cataloging staff will use this information to create a structured value.</para>
+            <para>Be sure to provide the value 'xyz' for the Cataloging property to indicate to cataloging staff that revision of the unstructured value is needed.</para>
+            <para>Separate multiple entries with a semicolon and space (“; “).</para>
+            <para>Order of values does not matter.</para>
+            <para>If multiple performers are associated with a resource, include the Performer or Primary Performer value to which the birthplace corresponds in square brackets following.</para>
+            <para>&lt;br/&gt;For UWL cataloging staff creating structured values:</para>
+            <para>Forms of the names should be derived from the Library of Congress Authority File.</para>
+            <para>Enter as follows:</para>
+            <para>Country--State or Province--City</para>
+            <para>Separate multiple entries with a semicolon and space (“; “).</para>
+            <para>Order of values does not matter.</para>
+            <para>If multiple performers are associated with a resource, include the Performer or Primary Performer value to which the birthplace corresponds in square brackets following.</para>
+        </customization>
+    </descriptions>
+    <examples>
+        <example co="all"/>
+        <customization co="object" dd="p16786coll3" resourceType="song">
+            <para>[Natural-language values for review by cataloging staff:]</para>
+            <para>Ortaköy (Istanbul, Turkey)</para>
+            <para>&lt;br/&gt;[Structured values provided by cataloging staff:]</para>
+            <para>Turkey--Istanbul</para>
+        </customization>
+    </examples>
+    <additionalInfo/>
+    <marc>
+        <dcgMarcMapping/>
+    </marc>
+    <xsd/>
+    <rdf/>
+    <history>
+        <dateCreated>
+            <range>
+                <start>2021-10-03</start>
+                <end>2021-10-26</end>
+            </range>
+        </dateCreated>
+        <created4Coll>Sephardic Studies Digital Collection - p1678coll3</created4Coll>
+        <justification>Collection owner desires to provide information about the birthplace of song performers. Provided metadata for song performances to be added to the collection includes singer birthplace information. See similar property "Interviewee Birthplace" in &lt;a href="https://www.lib.washington.edu/cams/mig/datadicts/special-collections-oral-histories-data-dictionary"&gt;Special Collections Oral Histories Data Dictionary&lt;/a&gt;.</justification>
+        <changeLog>
+            <change/>
+        </changeLog>
+    </history>
+</property>

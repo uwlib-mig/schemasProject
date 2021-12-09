@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md 
+    http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+    <uid>p118</uid>
+    <labels>
+        <platformIndependent>titleHarvard</platformIndependent>
+        <dc>alternative</dc>
+    </labels>
+    <uwRequired>
+        <uwStandalone>no</uwStandalone>
+        <uwObject>no</uwObject>
+        <uwItem>no</uwItem>
+    </uwRequired>
+    <cdm>
+        <label>Title (Harvard Romanization)</label>
+        <cdmDatatype>text</cdmDatatype>
+        <cdmLarge>no</cdmLarge>
+        <searchable>yes</searchable>
+        <hidden>no</hidden>
+        <cdmRequired>no</cdmRequired>
+        <cdmControlledVocab>no</cdmControlledVocab>
+    </cdm>
+    <!-- omit dspace -->
+    <dspace>
+        <dspaceProperty/>
+    </dspace>
+    <descriptions>
+        <definition>
+            <para>A Ladino title in Hebrew script Romanized according to the Harvard Library standard.</para>
+        </definition>
+        <instructions co="all">
+            <para>Provide a Ladino title in Hebrew script Romanized according to the Harvard Library standard.</para>
+        </instructions>
+        <customization co="object" dd="p16786coll3" resourceType="text">
+            <para>Search for the title in the Harvard Library &lt;a href="https://library.harvard.edu"&gt;HOLLIS online catalog&lt;/a&gt;.</para>
+            <para>When searching it helps to filter results by language and approximate year.</para>
+            <para>If a potentical match is found, copy the title just as it appears in the title field on HOLLIS.</para>
+            <para>If no record can be found, do not provide a value.</para>
+            <para>In cases where resources are printed in Romanized Ladino, do not provide a value.</para>
+            <para>Required for all compound objects if available.</para>
+        </customization>
+        <!-- Draft instructions for SSDC (dd="p16786coll3") standalones; no standalones expected in coll at this time -->
+        <customization co="no" dd="p16786coll3">
+            <para>Search for the title in the Harvard Library &lt;a href="https://library.harvard.edu"&gt;HOLLIS online catalog&lt;/a&gt;.</para>
+            <para>When searching it helps to filter results by language and approximate year.</para>
+            <para>If a potentical match is found, copy the title just as it appears in the title field on HOLLIS.</para>
+            <para>If no record exists, do not create a Romanized title for this field.</para>
+            <para>Required for all standalone objects if available.</para>
+        </customization>
+    </descriptions>
+    <examples>
+        <example co="all">
+            <para>Sefer &#7717;ovat ha-levavot shaʻar ha-bi&#7789;a&#7717;on en ladino</para>
+        </example>
+        <customization co="object" dd="p16786coll3" resourceType="text">
+            <para>Sefer &#7717;ovat ha-levavot shaʻar ha-bi&#7789;a&#7717;on en ladino</para>
+        </customization>
+    </examples>
+    <additionalInfo/>
+    <marc>
+        <dcgMarcMapping/>
+    </marc>
+    <xsd/>
+    <rdf/>
+    <!-- Omit:
+        additionalInfo
+        marc -->
+    <!-- BMR TO DO - XSD -->
+    <!-- Omit:
+        rdf
+        cdmRdf -->
+    <history>
+        <dateCreated>
+            <single>2021-03-19</single>
+        </dateCreated>
+        <created4Coll>Sephardic Studies Digital Collection - p16786coll3</created4Coll>
+        <justification>SSDC requires Romanized title values in multiple flavors including Harvard Romanization.</justification>
+        <changeLog>
+            <change/>
+        </changeLog>
+    </history>
+</property>

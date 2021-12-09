@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md 
+    http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+    <uid>p120</uid>
+    <labels>
+        <platformIndependent>publisherLocation</platformIndependent>
+        <dc>none</dc>
+    </labels>
+    <uwRequired>
+        <uwStandalone>no</uwStandalone>
+        <uwObject>no</uwObject>
+        <uwItem>no</uwItem>
+    </uwRequired>
+    <cdm>
+        <label>Publisher Location</label>
+        <cdmDatatype>text</cdmDatatype>
+        <cdmLarge>no</cdmLarge>
+        <searchable>yes</searchable>
+        <hidden>no</hidden>
+        <cdmRequired>no</cdmRequired>
+        <cdmControlledVocab>yes</cdmControlledVocab>
+    </cdm>
+    <!-- omit dspace -->
+    <dspace>
+        <dspaceProperty/>
+    </dspace>
+    <descriptions>
+        <definition>
+            <para>A location, usually a city, associated with the publisher of the resource.</para>
+        </definition>
+        <instructions co="all">
+            <!-- DRAFT, extremely brief, default instructions -->
+            <para>Provide a location, usually a city, associated with the publisher of a resource.</para>
+            <para>If possible, use a controlled form of the place name.</para>
+        </instructions>
+        <customization co="object" dd="p16786coll3" resourceType="text">
+            <para>For metadata creation taking place outside the University of Washington Libraries (UWL) Cataloging and Metadata Services unit:</para>
+            <para>Enter a location associated with the publisher in natural language, providing sufficient information to disambiguate place names as needed.</para>
+            <para>As a rule, include more information rather than less.</para>
+            <para>For example, when providing the name of a city, also provide the state, region, and/or country name(s) as available.</para>
+            <para>If multiple publishers are associated with a resource, include the Publisher value to which the location corresponds in square brackets following.</para>
+            <para>UWL Cataloging staff will use this information to create a structured value.</para>
+            <para>Be sure to provide the value 'xyz' for the Cataloging property to indicate to cataloging staff that revision of the unstructured value is needed.</para>
+            <para>Separate multiple entries with a semicolon and space (“; “).</para>
+            <para>Order of values does not matter.</para>
+            <para>&lt;br/&gt;For UWL cataloging staff creating structured values:</para>
+            <para>Forms of the names should be derived from the Library of Congress Authority File.</para>
+            <para>Enter as follows:</para>
+            <para>Country--State or Province--City</para>
+            <para>Separate multiple entries with a semicolon and space (“; “).</para>
+            <para>Order of values does not matter.</para>
+            <para>If multiple publishers are associated with a resource, include the Publisher value to which the location corresponds in square brackets following.</para>
+        </customization>
+    </descriptions>
+    <examples>
+        <example co="all">
+            <!-- adopting examples from studioLocation for the time being -->
+            <para>United States—Washington (State)—Seattle</para>
+            <para>Canada—Yukon Territory—Dawson</para>
+        </example>
+        <customization co="object" dd="p16786coll3" resourceType="text">
+            <para>[Natural-language values for review by cataloging staff:]</para>
+            <para>İzmir (Turkey)</para>
+            <para>Jerusalem, Israel [Cherezli, Salomon Israel]; Istanbul, Turkey [Joseph, Benjamin Ben]</para>
+            <para>&lt;br/&gt;[Structured values provided by cataloging staff:]</para>
+            <para>Turkey--Izmir</para>
+            <para>Jerusalem [Cherezli, Salomon Israel]; Turkey--Istanbul [Joseph, Benjamin Ben]</para>
+        </customization>
+    </examples>
+    <additionalInfo/>
+    <marc>
+        <dcgMarcMapping/>
+    </marc>
+    <xsd/>
+    <rdf/>
+    <!-- Omit:
+        additionalInfo
+        marc -->
+    <!-- BMR TO DO - XSD -->
+    <!-- Omit:
+        rdf
+        cdmRdf -->
+    <history>
+        <dateCreated>
+            <range>
+                <start>2021-03-20</start>
+                <end>2021-10-27</end>
+            </range>
+        </dateCreated>
+        <created4Coll>Sephardic Studies Digital Collection - p16786coll3</created4Coll>
+        <justification>SSDC requires a property to provide publisher-location values.</justification>
+        <changeLog>
+            <change/>
+        </changeLog>
+    </history>
+</property>

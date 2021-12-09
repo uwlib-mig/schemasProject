@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md 
+    http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+    <uid>p127</uid>
+    <labels>
+        <platformIndependent>formerOwner</platformIndependent>
+        <dc>none</dc>
+    </labels>
+    <uwRequired>
+        <uwStandalone>no</uwStandalone>
+        <uwObject>no</uwObject>
+        <uwItem>no</uwItem>
+    </uwRequired>
+    <cdm>
+        <label>Former Owner</label>
+        <cdmDatatype>text</cdmDatatype>
+        <cdmLarge>no</cdmLarge>
+        <searchable>yes</searchable>
+        <hidden>no</hidden>
+        <cdmRequired>no</cdmRequired>
+        <cdmControlledVocab>yes</cdmControlledVocab>
+    </cdm>
+    <!-- omit dspace -->
+    <dspace>
+        <dspaceProperty/>
+    </dspace>
+    <descriptions>
+        <definition>
+            <para>A person or corporate body who previously owned a physical or digital resource.</para>
+        </definition>
+        <!-- DRAFT default instructions, extremely minimal -->
+        <instructions co="object">
+            <para>Provide the name of a person or corporate body who previously owned a physical or digital resource.</para>
+        </instructions>
+        <instructions co="item">
+            <para>Provide the name of a person or corporate body who previously owned a physical or digital resource.</para>
+        </instructions>
+        <instructions co="no">
+            <para>Provide the name of a person or corporate body who previously owned a physical or digital resource.</para>
+        </instructions>
+        <instructions co="all">
+            <para>Provide the name of a person or corporate body who previously owned a physical or digital resource.</para>
+        </instructions>
+        <customization co="object" dd="p16786coll3" resourceType="text song oh">
+            <para>When searching for donor or lender in Sephardic Studies Collection Master Catalog, some contributions will be recorded as "Person A via Person B," or as "Person A / Person B."</para>
+            <para>In such a case, Person A is the former owner, and their name belongs in this field.</para>
+            <para>When appropriate, search the &lt;a href="https://id.loc.gov/authorities/names.html"&gt;Library of Congress Name Authority File&lt;/a&gt; via id.loc.gov for the lender name.</para>
+            <para>If a potential match is found, confirm that it is the person associated with the resource. It may be helpful to review information included in the web display such as source(s) of information and occupation (for persons), and/or to follow the links provided for exact and/or closely matching concepts from other schemes.</para>
+            <para>Copy the name string for use just as it appears at the top of the page, above the URI(s), including dates.</para>
+            <para>If no record exists, record personal names as "Lastname, Firstname".</para>
+            <para>When recording names without a match in the NAF, reuse the recorded form consistently when the same person or organization appears in the metadata for a different resource.</para>
+            <para>For a personal name like Alexander Ben Guiat, "Ben" is considered part of the first name and is transcribed as: "Guiat, Alexander Ben".</para>
+            <para>Separate multiple entries with a semicolon and space (“; “).</para>
+            <para>Order of values does not matter.</para>
+        </customization>
+        <customization co="no" dd="p16786coll3">
+            <para>When searching for donor or lender in Sephardic Studies Collection Master Catalog, some contributions will be recorded as "Person A via Person B." In that case, Person A is the former owner, and their name belongs in this field.</para>
+            <para>When appropriate, search the &lt;a href="https://id.loc.gov/authorities/names.html"&gt;Library of Congress Name Authority File&lt;/a&gt; via id.loc.gov for the lender name.</para>
+            <para>If a potential match is found, confirm that it is the person associated with the resource: it may be helpful to review information included in the web display such as source(s) of information and occupation (for persons), and/or to follow the links provided for exact and/or closely matching concepts from other schemes.</para>
+            <para>Copy the name string for use just as it appears at the top of the page, above the URI(s), including dates.</para>
+            <para>If no record exists, record personal names as "Lastname, Firstname".</para>
+            <para>For a personal name like Alexander Ben Guiat, "Ben" is considered part of the first name and is transcribed as: "Guiat, Alexander Ben".</para>
+            <para>Separate multiple entries with a semicolon and space (“; “).</para>
+            <para>Order of values does not matter.</para>
+        </customization>
+    </descriptions>
+    <examples>
+        <example co="object">
+            <para>Benezra, Henry</para>
+        </example>
+        <example co="no">
+            <para>Benezra, Henry</para>
+        </example>
+    </examples>
+    <!-- Omit:
+        additionalInfo
+        marc -->
+    <additionalInfo/>
+    <marc>
+        <dcgMarcMapping/>
+    </marc>
+    <!-- BMR TO DO: XSD -->
+    <xsd/>
+    <!-- Omit:
+        rdf
+        cdmRdf -->
+    <rdf/>
+    <history>
+        <dateCreated>
+            <range>
+                <start>2021-03-21</start>
+                <end>2021-10-25</end>
+            </range>
+        </dateCreated>
+        <created4Coll>Sephardic Studies Digital Collection - p16786coll3</created4Coll>
+        <justification>SSDC requires a property to provide former owner name values.</justification>
+        <changeLog>
+            <change/>
+        </changeLog>
+    </history>
+</property>

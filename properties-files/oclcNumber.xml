@@ -1,11 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?><property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd"><uid>p58</uid><labels>
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+   xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+   <uid>p58</uid>
+   <labels>
       <platformIndependent>oclcNumber</platformIndependent>
       <dc>none</dc>
-   </labels><uwRequired>
+   </labels>
+   <uwRequired>
       <uwStandalone>no</uwStandalone>
       <uwObject>no</uwObject>
       <uwItem>no</uwItem>
-   </uwRequired><cdm>
+   </uwRequired>
+   <cdm>
       <label>oclc Number</label>
       <cdmDatatype>cdmAdministrative</cdmDatatype>
       <cdmLarge>no</cdmLarge>
@@ -13,9 +20,11 @@
       <hidden>yes</hidden>
       <cdmRequired>no</cdmRequired>
       <cdmControlledVocab>no</cdmControlledVocab>
-   </cdm><dspace>
+   </cdm>
+   <dspace>
       <dspaceProperty/>
-   </dspace><descriptions>
+   </dspace>
+   <descriptions>
       <definition>
          <para>Unique identifier for the item in OCLC WorldCat. Assigned by OCLC.</para>
       </definition>
@@ -28,7 +37,8 @@
       <instructions co="item">
          <para>Do not input. Automatically created by CONTENTdm.</para>
       </instructions>
-   </descriptions><examples>
+   </descriptions>
+   <examples>
       <example co="no">
          <para>18994654</para>
       </example>
@@ -38,17 +48,20 @@
       <example co="item">
          <para>18994654</para>
       </example>
-   </examples><additionalInfo>
+   </examples>
+   <additionalInfo>
       <generalNotes co="all">
          <para>CONTENTdm administrative field.</para>
          <para>Does NOT output in OAI-PMH.</para>
       </generalNotes>
-   </additionalInfo><marc>
+   </additionalInfo>
+   <marc>
       <dcgMarcMapping/>
       <marcNotes>
          <para/>
       </marcNotes>
-   </marc><xsd>
+   </marc>
+   <xsd>
       <typeInfo level="standalone object item">
          <simpleType>
             <xs:union>
@@ -63,9 +76,11 @@
             </xs:union>
          </simpleType>
       </typeInfo>
-   </xsd><rdf>
+   </xsd>
+   <rdf>
       <sameAs/>
-   </rdf><history>
+   </rdf>
+   <history>
       <dateCreated>
          <single>2006-01-01</single>
       </dateCreated>
@@ -75,4 +90,5 @@
          <change/>
          <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
       </changeLog>
-   </history></property>
+   </history>
+</property>

@@ -1,11 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?><property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd"><uid>p57</uid><labels>
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+   xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+   <uid>p57</uid>
+   <labels>
       <platformIndependent>objectType</platformIndependent>
       <dc>type</dc>
-   </labels><uwRequired>
+   </labels>
+   <uwRequired>
       <uwStandalone>no</uwStandalone>
       <uwObject>no</uwObject>
       <uwItem>no</uwItem>
-   </uwRequired><cdm>
+   </uwRequired>
+   <cdm>
       <label>Object Type</label>
       <cdmDatatype>text</cdmDatatype>
       <cdmLarge>no</cdmLarge>
@@ -13,9 +20,11 @@
       <hidden>no</hidden>
       <cdmRequired>no</cdmRequired>
       <cdmControlledVocab>yes</cdmControlledVocab>
-   </cdm><dspace>
+   </cdm>
+   <dspace>
       <dspaceProperty/>
-   </dspace><descriptions>
+   </dspace>
+   <descriptions>
       <definition>
          <para>The nature or genre of the resource.</para>
       </definition>
@@ -57,7 +66,23 @@
       <customization co="object" dd="gd">
          <para>Enter "Dance films" (a term from the Library of Congress Genre/Forms Terms).</para>
       </customization>
-   </descriptions><examples>
+      <customization co="object" dd="p16786coll3" resourceType="text">
+         <para>Enter the following value:</para>
+         <para>book</para>
+      </customization>
+      <customization co="object" dd="p16786coll3" resourceType="song">
+         <!-- need novel object type value for ballad recordings -->
+         <para>🚧</para>
+      </customization>
+      <customization co="object" dd="p16786coll3" resourceType="oh">
+         <para>Enter the following value:</para>
+         <para>oral histories</para>
+      </customization>
+      <customization co="no" dd="p16786coll3">
+         <para>Contact the collection manager(s) or metadata liaison(s) regarding appropriate Object Type values for standalone objects in the collection.</para>
+      </customization>
+   </descriptions>
+   <examples>
       <example co="no">
          <para>Photograph</para>
          <para>Lithograph</para>
@@ -86,24 +111,40 @@
       <customization co="object" dd="gd">
          <para>Dance films</para>
       </customization>
-   </examples><additionalInfo>
+      <customization co="object" dd="p16786coll3" resourceType="text">
+         <para>book</para>
+      </customization>
+      <customization co="object" dd="p16786coll3" resourceType="song">
+         <!-- need novel object type value for ballad recordings -->
+         <para>🚧</para>
+      </customization>
+      <customization co="object" dd="p16786coll3" resourceType="oh">
+         <para>oral histories</para>
+      </customization>
+   </examples>
+   <additionalInfo>
       <admin co="object">
          <para>There's a difference between SC DDs for photograph collections and oral history collections; the former uses "Object Type," the latter uses "Genre." Proposal: "Object Type" applies to all resources more than "Genre." Let's use "Object Type" in all cases, as here.</para>
       </admin>
-   </additionalInfo><marc>
+   </additionalInfo>
+   <marc>
       <dcgMarcMapping/>
       <marcNotes>
          <para/>
       </marcNotes>
-   </marc><xsd>
+   </marc>
+   <xsd>
       <typeInfo level="standalone object">
          <typeAttribute>xs:string</typeAttribute>
       </typeInfo>
-      <typeInfo level="item"><empty/></typeInfo>
+      <typeInfo level="item">
+         <empty/>
+      </typeInfo>
       <customTypeInfo level="item" dd="civilwar">
          <typeAttribute>xs:string</typeAttribute>
       </customTypeInfo>
-   </xsd><rdf>
+   </xsd>
+   <rdf>
       <owlDatatypeProperty>yes</owlDatatypeProperty>
       <cdmRdf>
          <dpla>
@@ -138,7 +179,8 @@
             </condition>
          </dpla>
       </cdmRdf>
-   </rdf><history>
+   </rdf>
+   <history>
       <dateCreated>
          <range>
             <start>2000-01-01</start>
@@ -155,5 +197,7 @@
          <change date="2020-05-18">Added customizations for Greek Dances.</change>
          <change date="2020-05-18">Changed label from Object Type to Genre.</change>
          <change date="2020-05-19">Commented-out instructions/@co=item to duppress in Greek Dances. Also changes label from Genre to Object Type.</change>
+         <change date="2021-10-26">Add custom instructions and examples for Sephardic Studies Digital Collection - p16786coll3.</change>
       </changeLog>
-   </history></property>
+   </history>
+</property>

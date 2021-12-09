@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema"
    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
    <uid>p88</uid>
@@ -123,6 +123,61 @@
          <para>All items must have a title.</para>
          <para>Enter a brief title that identifies the item.</para>
       </customization>
+      <customization co="object" dd="p16786coll3" resourceType="text">
+         <para>Find Unicode Title in Sephardic Studies Collection Master Catalog and revise according to the Aki Yerushalayim standard if needed. (Reference available &lt;a href="https://drive.google.com/file/d/1LAvczCjqQc4tZFEa1xTxiEEYfiPUfq3t/view"&gt;here&lt;/a&gt;.)</para>
+         <para>Use a space, colon, space (" : ") to indicate the break between title and subtitle, even if no colon appears on title page.</para>
+         <para>Only Romanize the portion of the title that will be included in the Title field.</para>
+         <para>Following the title and colon, record a minimum of five words of the subtitle, followed by an ellipsis (“…”) if not recording the complete subtitle.</para>
+         <para>Subtitles should be lowercase, including the first word, except for proper nouns.</para>
+         <para>Names of languages are not capitalized in romanized Ladino (i.e.: Judeo Spanish is rendered as djudeo espanyol).</para>
+         <para>Do not romanize rashe tevot (Hebrew abbreviations).</para>
+         <para>Words of Hebrew-Aramaic origin should be romanized according to Aki Yerushalayim standards.</para>
+         <para>In cases where resources are printed in romanized Ladino, transcribe the title into this field exactly as it appears, even if it doesn’t conform to the Aki Yerushalayim standard.</para>
+         <para>All compound objects must have a title.</para>
+      </customization>
+      <customization co="object" dd="p16786coll3" resourceType="song">
+         <para>Construct as follows:</para>
+         <para>Audio: [song title]</para>
+         <para>(Do not enter square brackets around the song title.)</para>
+         <para>Romanize song titles according to the &lt;a href="https://drive.google.com/file/d/1LAvczCjqQc4tZFEa1xTxiEEYfiPUfq3t/view"&gt;Aki Yerushalayim standard&lt;/a&gt;.</para>
+         <para>All compound objects must have a title.</para>
+      </customization>
+      <customization co="object" dd="p16786coll3" resourceType="oh">
+         <para>Construct as follows:</para>
+         <para>[interviewee name] interview</para>
+         <para>Provide the interviewee name in natural order.</para>
+         <para>(Do not enter square brackets around the interviewee name.)</para>
+         <para>All compound objects must have a title.</para>
+      </customization>
+      <customization co="item" dd="p16786coll3" resourceType="text">
+         <para>Every page must have a title.</para>
+         <para>Use the page number or description as the item title.</para>
+         <para>Use sentence-case capitalization.</para>
+         <para>Do not spell out page numbers, use numerals.</para>
+         <para>All compound-object items must have a title.</para>
+      </customization>
+      <customization co="item" dd="p16786coll3" resourceType="song">
+         <para>Construct as follows for audio-file (.mp3/.wav/etc.) items:</para>
+         <para>[song title] - audio</para>
+         <para>Enter the song title romanized according to Aki Yerushalayim.</para>
+         <para>Construct as follows for image-file (.jpg) items which are images of singers:</para>
+         <para>Image of [singer name], singer</para>
+         <para>Provide the singer name in natural order.</para>
+         <para>Construct as follows for image-file (.pdf) items which are digitized sheet music:</para>
+         <para>Musical Transcription: [song title]</para>
+         <para>(Do not enter square brackets around song titles or singer names.)</para>
+         <para>All compound-object items--audio files and image files--must have a title.</para>
+      </customization>
+      <customization co="item" dd="p16786coll3" resourceType="oh">
+         <para>Construct as follows for audio file (.mp3/.wav/etc.) items which are interview recordings:</para>
+         <para>[interviewee name] interview, audio</para>
+         <para>Construct as follows for image-file (.jpg) items which are images of interviewees:</para>
+         <para>Image of [interviewee name]</para>
+         <para>Provide the interviewee name in natural order.</para>
+         <para>Construct as follows for image-file (.jpg) items which are interview transcripts:</para>
+         <para>[interviewee name] interview, transcript</para>
+         <para>All compound-object items--audio files and image files--must have a title.</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="no">
@@ -170,6 +225,30 @@
       <customization co="item" dd="gd">
          <para>Cheese Sunday and Clean Monday during Apokears, 1992 in Flamboro, Sohos, and Pondismeno (video).</para>
          <para>Cheese Sunday and Clean Monday during Apokears, 1992 in Flamboro, Sohos, and Pondismeno (table of contents).</para>
+      </customization>
+      <!-- BMR: Finalize SSDC examples -->
+      <customization co="object" dd="p16786coll3" resourceType="text">
+         <para>Pavlo i Virjinia : romanso</para>
+      </customization>
+      <customization co="object" dd="p16786coll3" resourceType="song">
+         <para>Audio: Alavar kero al Dyo</para>
+      </customization>
+      <customization co="object" dd="p16786coll3" resourceType="oh">
+         <para>Solomon Maimon interview</para>
+      </customization>
+      <customization co="item" dd="p16786coll3" resourceType="text">
+         <para>Title page</para>
+         <para>Page 1</para>
+      </customization>
+      <customization co="item" dd="p16786coll3" resourceType="song">
+         <para>La Muerte del Duque de Gandía (í-a) - audio</para>
+         <para>Image of Bohora Cornell (Coronel), singer</para>
+         <para>Musical Transcription: La Muerte del Duque de Gandí</para>
+      </customization>
+      <customization co="item" dd="p16786coll3" resourceType="oh">
+         <para>Solomon Maimon interview, audio</para>
+         <para>Image of Solomon Maimon</para>
+         <para>Solomon Maimon interview, transcript</para>
       </customization>
    </examples>
    <additionalInfo/>
@@ -249,6 +328,7 @@
          <change date="2018-03-26">added info for uwtoh</change>
          <change date="2018-05-17">added info for krab; added cdm compound object</change>
          <change date="2020-05-19">added customizations for Greek Dances.</change>
+         <change date="2021-10-27">Add custom instructions and examples for Sephardic Studies Digital Collection - p16786coll3</change>
       </changeLog>
    </history>
 </property>

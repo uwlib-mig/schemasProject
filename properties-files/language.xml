@@ -1,11 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?><property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd"><uid>p50</uid><labels>
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+   xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+   <uid>p50</uid>
+   <labels>
       <platformIndependent>language</platformIndependent>
       <dc>language</dc>
-   </labels><uwRequired>
+   </labels>
+   <uwRequired>
       <uwStandalone>no</uwStandalone>
       <uwObject>no</uwObject>
       <uwItem>no</uwItem>
-   </uwRequired><cdm>
+   </uwRequired>
+   <cdm>
       <label>Language</label>
       <cdmDatatype>text</cdmDatatype>
       <cdmLarge>no</cdmLarge>
@@ -13,9 +20,11 @@
       <hidden>no</hidden>
       <cdmRequired>no</cdmRequired>
       <cdmControlledVocab>no</cdmControlledVocab>
-   </cdm><dspace>
+   </cdm>
+   <dspace>
       <dspaceProperty/>
-   </dspace><descriptions>
+   </dspace>
+   <descriptions>
       <definition>
          <para>A language of the resource.</para>
       </definition>
@@ -31,7 +40,29 @@
       <customization co="object" dd="uwtoh">
          <para>Name of language(s) used in the interview fully spelled out.</para>
       </customization>
-   </descriptions><examples>
+      <customization co="object" dd="p16786coll3" resourceType="text">
+         <para>Enter language names, fully spelled out, as they appear in the &lt;a href="https://iso639-3.sil.org/code_tables/639/data"&gt;ISO 639 Code Tables&lt;/a&gt; "Language Name(s)" column. Note that Ladino is listed as such, and not as Judeo-Spanish or Judezmo.</para>
+         <para>Do not enter languages that only appear on the title page or final pages (i.e. in advertisements).</para>
+         <para>For Aramaic-language resources, simply enter "Aramaic".</para>
+         <para>Separate multiple values using a semicolon and space (“; “).</para>
+         <para>Order of values does not matter.</para>
+         <para>Required for all compound objects.</para>
+      </customization>
+      <customization co="object" dd="p16786coll3" resourceType="oh song">
+         <para>Enter language names, fully spelled out, as they appear in the &lt;a href="https://iso639-3.sil.org/code_tables/639/data"&gt;ISO 639 Code Tables&lt;/a&gt; "Language Name(s)" column. Note that Ladino is listed as such, and not as Judeo-Spanish or Judezmo.</para>
+         <para>For Aramaic-language resources, simply enter "Aramaic".</para>
+         <para>Separate multiple values using a semicolon and space (“; “).</para>
+         <para>Order of values does not matter.</para>
+         <para>Required for all compound objects.</para>
+      </customization>
+      <customization co="no" dd="p16786coll3">
+         <para>Enter language names, fully spelled out, as they appear in the &lt;a href="https://iso639-3.sil.org/code_tables/639/data"&gt;ISO 639 Code Tables&lt;/a&gt; "Language Name(s)" column. Note that Ladino is listed as such, and not as Judeo-Spanish or Judezmo.</para>
+         <para>Separate multiple values using a semicolon and space (“; “).</para>
+         <para>Order of values does not matter.</para>
+         <para>Required for all standalone objects.</para>
+      </customization>
+   </descriptions>
+   <examples>
       <example co="no">
          <para>English</para>
          <para>Spanish</para>
@@ -44,12 +75,28 @@
          <para>English</para>
          <para>Spanish</para>
       </example>
-   </examples><additionalInfo>
-      <admin co="object"/>
-   </additionalInfo><marc>
+      <customization dd="p16786coll3" co="object" resourceType="text">
+         <para>Ladino</para>
+         <para>Hebrew</para>
+         <para>Ladino; Hebrew</para>
+      </customization>
+      <customization dd="p16786coll3" co="object" resourceType="oh song">
+         <para>English</para>
+         <para>Spanish</para>
+         <para>English; Spanish</para>
+      </customization>
+      <customization dd="p16786coll3" co="no">
+         <para>Ladino</para>
+         <para>Hebrew</para>
+         <para>Ladino; Hebrew</para>
+      </customization>
+   </examples>
+   <additionalInfo/>
+   <marc>
       <dcgMarcMapping/>
       <marcNotes/>
-   </marc><xsd>
+   </marc>
+   <xsd>
       <typeInfo level="object">
          <typeAttribute>xs:string</typeAttribute>
       </typeInfo>
@@ -65,5 +112,7 @@
       <justification>MIG requested this field for UWT Oral Histories, allowing language to be indexed, as we do with other oral histories.</justification>
       <changeLog>
          <change date="2019-04-21">Moved uwtoh instructions to a customization; created instruction for @co="all" to accommodate use of property with rp.</change>
+         <change date="2021-03-20">Add custom CO and standalone instructions and examples, and admin note, for Sephardic Studies Digital Collection (p16786coll3).</change>
       </changeLog>
-   </history></property>
+   </history>
+</property>

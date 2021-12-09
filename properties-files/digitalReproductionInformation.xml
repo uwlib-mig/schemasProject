@@ -1,11 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?><property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd"><uid>p31</uid><labels>
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+   xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+   <uid>p31</uid>
+   <labels>
       <platformIndependent>digitalReproductionInformation</platformIndependent>
       <dc>description</dc>
-   </labels><uwRequired>
+   </labels>
+   <uwRequired>
       <uwStandalone>no</uwStandalone>
       <uwObject>no</uwObject>
       <uwItem>no</uwItem>
-   </uwRequired><cdm>
+   </uwRequired>
+   <cdm>
       <label>Digital Reproduction Information</label>
       <cdmDatatype>text</cdmDatatype>
       <cdmLarge>no</cdmLarge>
@@ -13,9 +20,11 @@
       <hidden>no</hidden>
       <cdmRequired>no</cdmRequired>
       <cdmControlledVocab>no</cdmControlledVocab>
-   </cdm><dspace>
+   </cdm>
+   <dspace>
       <dspaceProperty/>
-   </dspace><descriptions>
+   </dspace>
+   <descriptions>
       <definition>
          <para>Description of the digital conversion process, date scanned, etc.</para>
       </definition>
@@ -29,29 +38,52 @@
       <instructions co="item">
          <para>Input a paragraph with pertinent information on the digital conversion process of the compound object item.</para>
       </instructions>
-   </descriptions><examples>
+      <customization co="item" dd="p16786coll3" resourceType="text">
+         <para>If available, provide any details not included elsewhere regarding the digitization of the text.</para>
+         <para>Note that this property is implemented at the compound-object item level, which necessitates the repetition of values.</para>
+      </customization>
+      <customization co="item" dd="p16786coll3" resourceType="song">
+         <para>If available, provide any details not included elsewhere regarding the digitization of the audio recording.</para>
+         <para>Note that this property is implemented at the compound-object item level, which necessitates the repetition of values.</para>
+      </customization>
+   </descriptions>
+   <examples>
       <example co="no">
          <para>Scanned from a photographic print using a Microtek Scanmaker 9600XL at 72 dpi in JPEG format at compression rate 3.      10/1998.</para>
       </example>
-      <example co="object">
+      <!-- <example co="object">
          <para>Scanned from original text or image at 400 dpi, saved in TIFF format, resized and enhanced using Adobe Photoshop, and imported as JPEG2000 using Contentdm software's JPEG2000 Extension. 2006.</para>
-      </example>
+      </example> -->
       <example co="item">
          <para>Scanned from original text or image at 400 dpi, saved in TIFF format, resized and enhanced using Adobe Photoshop, and imported as JPEG2000 using Contentdm software's JPEG2000 Extension. 2006.</para>
       </example>
       <customization co="no" dd="krab">
          <para>Sample rate: 96KHz. Bit depth: 24. Issues encountered: Repaired several faulty splices. Date of transfer: 2019-01-04. Applicable conservation treatments: Baked and repaired several splices. De-noise and de-hum (iZotrope RX5).</para>
       </customization>
-   </examples><additionalInfo/><marc>
+      <customization co="item" dd="p16786coll3" resourceType="song oh">
+         <!-- using the krab example and an example from SCOHDD to give an indication for SSDC values -->
+         <para>Sample rate: 96KHz. Bit depth: 24. Issues encountered: Repaired several faulty splices. Date of transfer: 2019-01-04. Applicable conservation treatments: Baked and repaired several splices. De-noise and de-hum (iZotrope RX5).</para>
+         <para>Digital, stereo. Copied from analog recording to compact disc. Converted to 24 bit/48kHz Broadcast WAV format files by University of Washington Libraries in 2010.</para>
+      </customization>
+   </examples>
+   <additionalInfo>
+      <admin co="all" dd4para="p16786coll3">
+         <para>As of 2021-11-01, no digital reproduction information is available for incoming additions to the SSDC - p16786coll3; so, the property is not being implemented for textual resources, ballads, or OHs at this time.</para>
+         <para>As of 2021-11-01, retaining the property in ssdc-combined-map.xml for potential 1) use with standalone objects and/or 2) implementation in future.</para>
+      </admin>
+   </additionalInfo>
+   <marc>
       <dcgMarcMapping/>
       <marcNotes>
          <para/>
       </marcNotes>
-   </marc><xsd>
+   </marc>
+   <xsd>
       <typeInfo level="standalone object item">
          <typeAttribute>xs:string</typeAttribute>
       </typeInfo>
-   </xsd><rdf>
+   </xsd>
+   <rdf>
       <cdmRdf>
          <dpla>
             <map>dct:description</map>
@@ -59,7 +91,8 @@
             <class>WebResource</class>
          </dpla>
       </cdmRdf>
-   </rdf><history>
+   </rdf>
+   <history>
       <dateCreated>
          <range>
             <start>2000-01-01</start>
@@ -73,5 +106,8 @@
          <change date="2018-03-27">Added item info.</change>
          <change date="2020-05-19">Commented-out instructions/item to suppress from Greek Dances.</change>
          <change date="2020-06-03">Commented out object description acc to MIG decision and re-instated the item!</change>
+         <change date="2021-10-23">Comment out object example (in addition to instructions) per MIG decision referenced in 2020-06-03 change note.</change>
+         <change date="2021-10-23">Add custom instructions for Sephardic Studies Digital Collection - p16786coll3; add the krab example to help provide an indication for use with SSDC song recording values.</change>
       </changeLog>
-   </history></property>
+   </history>
+</property>

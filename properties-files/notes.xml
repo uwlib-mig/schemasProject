@@ -59,6 +59,16 @@
          <para>Enter any information of importance that is not represented elsewhere.</para>
          <para>Each separate "note" should be a paragraph. Additional notes can be added, separated from the previous note using a blank line.</para>
       </customization>
+      <customization co="object" dd="p16786coll3" resourceType="text song oh">
+         <para>Enter any information of importance that is not represented elsewhere.</para>
+         <para>Start each distinct note entry on a new line.</para>
+         <para>When entering values in a spreadsheet, note that depending on the spreadsheet-editing application, CTRL + ENTER, ALT + ENTER, or another key combination can be used to enter a new line within a cell.</para>
+      </customization>
+      <customization co="no" dd="p16786coll3">
+         <para>Enter any information of importance that is not represented elsewhere.</para>
+         <para>Start each distinct note entry on a new line.</para>
+         <para>When entering values in a spreadsheet, note that depending on the spreadsheet-editing application, CTRL + ENTER, ALT + ENTER, or another key combination can be used to enter a new line within a cell.</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="no">
@@ -117,6 +127,22 @@
       <customization co="item" dd="gd">
          <para>The digitization process caused corruption starting at 7:02 and ending at 7:13.</para>
       </customization>
+      <customization co="object" dd="p16786coll3" resourceType="text">
+         <para>Title value taken from cover, title page missing from digitized volume.</para>
+      </customization>
+      <customization co="object" dd="p16786coll3" resourceType="song">
+         <para>Song from father's pizmonim manuscript.</para>
+         <para>Uniquely Sephardic in origin. Given its subject matter, this ballad has been transmitted both orally and in written form, in Pesach hagaddahs. The only extant versions are from the Eastern tradition and one version from Crypto Portuguese Jews. Thus, an earlier version must have existed among Peninsular Jews. There is no evidence of its existence among non-Jews.</para>
+      </customization>
+      <customization co="object" dd="p16786coll3" resourceType="oh">
+         <para>Rabbi Maimon discusses his education at Yeshiva University (00:05:30), his return to Seattle and installment as rabbi (00:10:50), and challenges faced by the Sephardic community in Seattle (00:10:12).</para>
+      </customization>
+      <customization co="no" dd="p16786coll3">
+         <para>Title value taken from cover, title page missing from digitized volume.</para>
+         <para>Song from father's pizmonim manuscript.</para>
+         <para>Uniquely Sephardic in origin. Given its subject matter, this ballad has been transmitted both orally and in written form, in Pesach hagaddahs. The only extant versions are from the Eastern tradition and one version from Crypto Portuguese Jews. Thus, an earlier version must have existed among Peninsular Jews. There is no evidence of its existence among non-Jews.</para>
+         <para>Rabbi Maimon discusses his education at Yeshiva University (00:05:30), his return to Seattle and installment as rabbi (00:10:50), and challenges faced by the Sephardic community in Seattle (00:10:12).</para>
+      </customization>
    </examples>
    <additionalInfo>
       <admin co="all">
@@ -168,6 +194,7 @@
          <change date="2019-04-21">Added examples for krab.</change>
          <change date="2019-05-19">Added cdm compound object info for krab</change>
          <change date="2020-05-19">Added customizations for Greek Dances. This should have been unecessary for co=object and co=no, but the fallback to those instructions when a customization was not present failed because of the presence of a customization for co-item. Code commented for repair.</change>
+         <change date="2021-10-26">Add custom instructions and examples for Sephardic Studies Digital Collection - p16786coll3.</change>
       </changeLog>
    </history>
 </property>
