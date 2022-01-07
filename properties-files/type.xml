@@ -124,6 +124,7 @@
       </customization>
       <customization co="item" dd="p16786coll3" resourceType="text">
          <para>Text</para>
+         <para>StillImage</para>
          <para>StillImage; Text</para>
       </customization>
       <customization co="item" dd="p16786coll3" resourceType="song">
