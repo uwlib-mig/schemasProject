@@ -44,7 +44,7 @@
             <para>Be sure to provide the value 'xyz' for the Cataloging property to indicate to cataloging staff that revision of the unstructured value is needed.</para>
             <para>Separate multiple entries with a semicolon and space (“; “).</para>
             <para>Order of values does not matter.</para>
-            <para>When adapting existing metadata for upload, include only the place name in the value for Recording Location.</para>
+            <para>When reusing existing metadata, include only the place name in the value for Recording Location.</para>
             <para>Add any other relevant information as a value for the Notes property.</para>
             <para>For example, adapt existing value “Seattle, in her home” as:</para>
             <para>Recording Location: Seattle, Washington, USA</para>
