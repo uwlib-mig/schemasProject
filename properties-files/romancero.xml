@@ -39,7 +39,7 @@
         </instructions>
         <customization co="object" dd="p16786coll3" resourceType="song">
             <!-- redundant; see schemasProject issue #25 -->
-            <para>Search for the song title on pages 219-221 of "&lt;a href="https://alliance-primo.hosted.exlibrisgroup.com/permalink/f/kjtuig/CP71363340660001451"&gt;"Romances judeo-españoles de Oriente : nueva recolección"&lt;/a&gt;."
+            <para>Search for the song title on pages 219-221 of "&lt;a href="https://alliance-primo.hosted.exlibrisgroup.com/permalink/f/kjtuig/CP71363340660001451"&gt;Romances judeo-españoles de Oriente : nueva recolección&lt;/a&gt;."
             </para>
             <para>Separate multiple thematic elements with a semicolon and space ("; ").</para>
             <para>Begin each new thematic element with a capital letter.</para>
