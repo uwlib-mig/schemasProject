@@ -38,7 +38,7 @@
         <customization co="object" dd="p16786coll3" resourceType="song">
             <para>Provide any references to other Sephardic ballad collections given for this ballad as it is described in &lt;a href="https://alliance-primo.hosted.exlibrisgroup.com/permalink/f/kjtuig/CP71363340660001451"&gt;"Romances judeo-españoles de Oriente : nueva recolección"&lt;/a&gt;.</para>
             <para>Locate the song in "Romances judeo-españoles de Oriente: nueva recolección" by Rina Benmayor and Judith H. Mauleón.</para>
-            <para>Copy the list of cross references, including the abbreviation and numeric page number, which appears after the word "bibliographia."</para>
+            <para>&lt;br/&gt;Copy the list of cross references, including the abbreviation and numeric page number, which appears after the word "bibliographia."</para>
             <para>Separate multiple values with a semicolon and space ("; ").</para>
             <para>Legend: MP = Menendez Pidal; CAT-IND = Armistead and Silverman; RJEO = Romances judeo-españoles de Oriente.</para>
         </customization>
