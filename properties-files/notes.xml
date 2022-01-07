@@ -59,8 +59,18 @@
          <para>Enter any information of importance that is not represented elsewhere.</para>
          <para>Each separate "note" should be a paragraph. Additional notes can be added, separated from the previous note using a blank line.</para>
       </customization>
-      <customization co="object" dd="p16786coll3" resourceType="text song oh">
+      <customization co="object" dd="p16786coll3" resourceType="text">
          <para>Enter any information of importance that is not represented elsewhere.</para>
+         <para>Start each distinct note entry on a new line.</para>
+         <para>When entering values in a spreadsheet, note that depending on the spreadsheet-editing application, CTRL + ENTER, ALT + ENTER, or another key combination can be used to enter a new line within a cell.</para>
+      </customization>
+      <customization co="object" dd="p16786coll3" resourceType="song oh">
+         <para>Enter any information of importance that is not represented elsewhere.</para>
+         <para>When reusing existing metadata, only the place name will be included the value for Recording Location.</para>
+         <para>Any additional information present in existing metadata which will not be used in the Recording Location value may be included here.</para>
+         <para>For example, adapt existing value “Seattle, in her home” as:</para>
+         <para>Recording Location: Seattle, Washington, USA</para>
+         <para>Notes: Recorded in the home of [name].</para>
          <para>Start each distinct note entry on a new line.</para>
          <para>When entering values in a spreadsheet, note that depending on the spreadsheet-editing application, CTRL + ENTER, ALT + ENTER, or another key combination can be used to enter a new line within a cell.</para>
       </customization>
