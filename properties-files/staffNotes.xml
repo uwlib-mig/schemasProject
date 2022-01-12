@@ -38,17 +38,39 @@
          <para>Input your staff notes however you wish.</para>
       </instructions>
       <customization co="object" dd="p16786coll3" resourceType="text">
-         <para>Values in this field will be used by University of Washington Libraries (UWL) cataloging staff to assign controlled values such as Library of Congress Subject Headings to the resource.</para>
-         <para>For textual resources:</para>
+         <para>Staff Notes values are hidden in the public CONTENTdm interface.</para>
+         <para>These values will be used by University of Washington Libraries (UWL) cataloging staff to assign controlled values for the following fields for textual resources:</para>
+         <para>Subjects (LCSH)</para>
+         <para>Genre/Form (LCGFT)</para>
+         <para>Related OCLC Record</para>
+         <para>Printer Location</para>
+         <para>Publisher Location</para>
+         <para>&lt;br/&gt;For textual resources Staff Notes:</para>
          <para>Briefly summarize the book's genre, subject, and intended use.</para>
          <para>Descriptions of novels should briefly summarize the arc of the story.</para>
          <para>Religious texts, such as prayer books and bibles, should note for which Jewish holiday and/or ritual they are used.</para>
          <para>Note if the work is a translation, and the author and language of the original text.</para>
          <para>Required for all textual-resource compound objects which will require subject or genre/form analysis from UWL cataloging staff.</para>
       </customization>
-      <customization co="object" dd="p16786coll3" resourceType="song oh">
-         <para>For ballad recordings and oral histories:</para>
-         <para>[🚧 2021-10-27: Prop values for ballads and oral histories which will be assigned/revised by UWL catalogers are being determined.]</para>
+      <customization co="object" dd="p16786coll3" resourceType="song">
+         <para>Staff Notes values are hidden in the public CONTENTdm interface.</para>
+         <para>These values will be used by University of Washington Libraries (UWL) cataloging staff to assign controlled values for the following fields for ballad recordings:</para>
+         <para>Genre/Form (LCGFT)</para>
+         <para>Performer Birthplace</para>
+         <para>Recording Location</para>
+         <para>&lt;br/&gt;For ballad-recording Staff Notes:</para>
+         <para>🚧 🚧 🚧</para>
+      </customization>
+      <customization co="object" dd="p16786coll3" resourceType="oh">
+         <para>Staff Notes values are hidden in the public CONTENTdm interface.</para>
+         <para>These values will be used by University of Washington Libraries (UWL) cataloging staff to assign controlled values for the following fields for oral histories:</para>
+         <para>Subjects (LCSH)</para>
+         <para>Genre/Form (LCGFT)</para>
+         <para>Geographic Coverage</para>
+         <para>Interviewee Birthplace</para>
+         <para>Recording Location</para>
+         <para>&lt;br/&gt;For oral histories Staff Notes:</para>
+         <para>🚧 🚧 🚧</para>
       </customization>
    </descriptions>
    <examples>
