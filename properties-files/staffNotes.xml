@@ -59,7 +59,8 @@
          <para>Performer Birthplace</para>
          <para>Recording Location</para>
          <para>&lt;br/&gt;For ballad-recording Staff Notes:</para>
-         <para>🚧 🚧 🚧</para>
+         <para>Catalogers will the use unstructured values provided for Performer Birthplace and Recording Location to create structured values for these fields, so Staff Notes will not be required for them.</para>
+         <para>🚧 🚧</para>
       </customization>
       <customization co="object" dd="p16786coll3" resourceType="oh">
          <para>Staff Notes values are hidden in the public CONTENTdm interface.</para>
@@ -69,8 +70,8 @@
          <para>Geographic Coverage</para>
          <para>Interviewee Birthplace</para>
          <para>Recording Location</para>
-         <para>&lt;br/&gt;For oral histories Staff Notes:</para>
-         <para>🚧 🚧 🚧</para>
+         <para>Catalogers will the use unstructured values provided for Interviewee Birthplace and Recording Location to create structured values for these fields, so Staff Notes will not be required for them.</para>
+         <para>🚧 🚧</para>
       </customization>
    </descriptions>
    <examples>
