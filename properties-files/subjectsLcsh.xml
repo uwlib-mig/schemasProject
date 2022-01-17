@@ -98,11 +98,18 @@
          <para>Markets—Washington (State)—Seattle</para>
          <para>McGraw, John Harte, 1911—Statues—Washington (State)—Seattle; Log buildings—Alaska—Fort Yukon</para>
       </example>
-      <!-- request example values from Laura Lins;
-         may need separate examples for text / song / oh -->
-      <customization co="object" dd="p16786coll3" resourceType="text song oh">
-         <para>[Values provided by cataloging staff:]</para>
-         <para>🚧</para>
+      <customization co="object" dd="p16786coll3" resourceType="text">
+         <para>High holidays--Liturgy--Texts</para>
+         <para>Sacred songs</para>
+         <para>Bible. Ruth--Commentaries</para>
+         <para>Ladino language--Grammar--Textbooks</para>
+      </customization>
+      <customization co="object" dd="p16786coll3" resourceType="oh">         
+         <para>Sephardim--Washington (State)--Interviews</para>
+         <para>Jews--Washington (State)--Interviews</para>
+         <para>Jews--Washington (State)--History</para>
+         <para>Temple de Hirsch (Seattle, Wash.)</para>
+         <para>Fish trade--Washington (State)--History</para>
       </customization>
    </examples>
    <additionalInfo/>
