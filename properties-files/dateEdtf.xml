@@ -13,7 +13,7 @@
       <uwItem>no</uwItem>
    </uwRequired>
    <cdm>
-      <label>Date Edtf</label>
+      <label>Date (EDTF)</label>
       <cdmDatatype>text</cdmDatatype>
       <cdmLarge>no</cdmLarge>
       <searchable>yes</searchable>
