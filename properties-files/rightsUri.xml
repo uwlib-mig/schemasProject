@@ -13,7 +13,7 @@
       <uwItem>no</uwItem>
    </uwRequired>
    <cdm>
-      <label>Rights Uri</label>
+      <label>Rights URI</label>
       <cdmDatatype>text</cdmDatatype>
       <cdmLarge>no</cdmLarge>
       <searchable>no</searchable>
