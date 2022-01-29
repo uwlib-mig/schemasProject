@@ -67,8 +67,10 @@
          <para>Enter "Dance films" (a term from the Library of Congress Genre/Forms Terms).</para>
       </customization>
       <customization co="object" dd="p16786coll3" resourceType="text">
-         <para>Enter the following value:</para>
+         <!-- og_library_mig > ... > object_type_enumerations -->
+         <para>Enter one of the following values:</para>
          <para>book</para>
+         <para>newpaper</para>
       </customization>
       <customization co="object" dd="p16786coll3" resourceType="song">
          <para>Enter the following value:</para>
@@ -112,7 +114,9 @@
          <para>Dance films</para>
       </customization>
       <customization co="object" dd="p16786coll3" resourceType="text">
+         <!-- og_library_mig > ... > object_type_enumerations -->
          <para>book</para>
+         <para>newpaper</para>
       </customization>
       <customization co="object" dd="p16786coll3" resourceType="song">
          <para>ballads</para>
