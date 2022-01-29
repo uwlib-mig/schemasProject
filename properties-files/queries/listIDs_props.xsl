@@ -10,6 +10,9 @@
                 for duplicate uids
                 for missing uids: grab the filename
                 etc. -->
+            <key>
+                <xsl:text> uid | platformIndependentLabel </xsl:text>
+            </key>
             <xsl:apply-templates
                 select="collection('../?select=*.xml')/pf:property">
                 <!-- remove p's; sort numerically -->
@@ -19,11 +22,11 @@
     </xsl:template>
 
     <xsl:template match="pf:property">
-        <prop_uid_platformIndependentLabel>
+        <prop>
             <xsl:value-of select="pf:uid"/>
             <xsl:text> | </xsl:text>
             <xsl:value-of select="pf:labels/pf:platformIndependent"/>
-        </prop_uid_platformIndependentLabel>
+        </prop>
     </xsl:template>
 
 </xsl:stylesheet>

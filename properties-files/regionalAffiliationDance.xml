@@ -32,7 +32,6 @@
         <instructions co="no">
             <para>Enter the name of the place the dance is from.</para>
             <para>Separate multiple entries using a semi-colon.</para>
-            <!-- BMR note: Here and elsewhere, why not create live links? -->
             <para>Use the GeoNet (https://community.esri.com/) form of the name, if available. If not, use the most common form/spelling.</para>
         </instructions>
         <instructions co="object">
@@ -72,7 +71,7 @@
         <created4Coll>Greek Dances</created4Coll>
         <justification>Needed a field to describe the place associated with a dance depicted.</justification>
         <changeLog>
-            <change></change>
+            <change>No change to prop file, but prop was removed from the collection MAP per collection-manager request.</change>
         </changeLog>
     </history>
 </property>

@@ -634,6 +634,13 @@
                 <xs:list>
                     <xs:simpleType>
                         <xs:restriction base="xs:token">
+                            <xs:enumeration value="default">
+                                <xs:annotation>
+                                    <xs:documentation>Created for use in Greek Dances collection.</xs:documentation>
+                                    <xs:documentation>Intended for use when only one resource format/genre/type will be included in a given collection, and there is no need to distinguish between property use for one format/genre/type of resource vs. another.</xs:documentation>
+                                </xs:annotation>
+                            </xs:enumeration>
+                        <xs:restriction base="xs:token">
                             <xs:enumeration value="text">
                                 <xs:annotation>
                                     <xs:documentation>Created for Sephardic Studies Digital

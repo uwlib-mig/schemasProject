@@ -7,15 +7,14 @@
     <ddName>Hunt (Yvonne) Greek Folk Dance Collection</ddName>
     <ddPartOfProject/>
     <originalCreationDate>2020-05-11</originalCreationDate>
-    <latestUpdate>2020-06-03</latestUpdate>
+    <latestUpdate>2022-01-19</latestUpdate>
     <metadataLiaisons>
-        <metadataLiaison>Mary St. Germaine</metadataLiaison>
-        <metadataLiaison>Theo Gerontakos</metadataLiaison>
+        <metadataLiaison>Benjamin Riesenberg - &lt;a href="mailto:ries07@uw.edu"&gt;ries07@uw.edu&lt;/a&gt;</metadataLiaison>
     </metadataLiaisons>
     <cdmCo>yes</cdmCo>
     <standalone>no</standalone>
-    <cdmCode>gd</cdmCode>
-    <!-- Get code above from AG -->
+    <!-- to do add CONTENTdm coll alias -->
+    <cdmCode>hygfdc</cdmCode>
     <properties>
         <xi:include href="../../properties-files/title.xml"/>
         <xi:include href="../../properties-files/source.xml"/>
@@ -28,7 +27,8 @@
         <xi:include href="../../properties-files/instrumentsDepicted.xml"/>
         <xi:include href="../../properties-files/eventsDepicted.xml"/>
         <xi:include href="../../properties-files/notes.xml"/> 
-        <xi:include href="../../properties-files/regionalAffiliationDance.xml"/>
+        <!-- 2022-01-19 removed per request of collection manager MSSG -->
+        <!-- <xi:include href="../../properties-files/regionalAffiliationDance.xml"/> -->
         <xi:include href="../../properties-files/regionalAffiliationGroup.xml"/>
         <xi:include href="../../properties-files/videoLocations.xml"/>
         <xi:include href="../../properties-files/latitude.xml"/>
