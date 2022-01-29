@@ -27,7 +27,7 @@
     </dspace>
     <descriptions>
         <definition>
-            <para>The complete name including file extension of a digital file representing a resource to be described by one or more property/value pairs in CONTENTdm.</para>
+            <para>The complete name including file extension of a digital file representing a resource to be described by one or more property/value pairs in CONTENTdm. For use when entering metadata in spreadsheets.</para>
         </definition>
         <instructions co="object">
             <para>Enter the name of the digital file representing the compound object, that is, an access item.</para>
@@ -38,22 +38,14 @@
         <instructions co="no">
             <para>Enter the name of the digital file representing the standalone object, that is, an access item.</para>
         </instructions>
-        <customization co="object" dd="p16786coll3" resourceType="oh song text">
-            <para>When entering values in a metadata spreadsheet, each row will include values describing a resource--either a compound object, compound-object item, or standalone object.</para>
-            <para>Each row must include the filename of the digital file representing the resource described--that is, an access item--provided as a value for this property.</para>
-            <para>Enter the filename of a file which will represent the compound object.</para>
-            <para>For textual resources, this is customarily the book cover image.</para>
-            <para>For ballads, this is customarily an image file (photograph) depicting the singer.</para>
-            <para>For oral histories, this is customarily an image file (photograph) depicting the interviewee.</para>
-        </customization>
         <customization co="item" dd="p16786coll3" resourceType="text">
             <para>When entering values in a metadata spreadsheet, each row will include values describing a resource--either a compound object, compound-object item, or standalone object.</para>
-            <para>Each row must include the filename of the digital file representing the resource described--that is, an access item--provided as a value for this property.</para>
+            <para>Each row describing either a compound-object item or a standalone object must include a filename provided as a value for this property.</para>
             <para>Enter the filename of the image file for the page described in the spreadsheet row.</para>
         </customization>
         <customization co="item" dd="p16786coll3" resourceType="song oh">
             <para>When entering values in a metadata spreadsheet, each row will include values describing a resource--either a compound object, compound-object item, or standalone object.</para>
-            <para>Each row must include the filename of the digital file representing the resource described--that is, an access item--provided as a value for this property.</para>
+            <para>Each row describing either a compound-object item or a standalone object must include a filename provided as a value for this property.</para>
             <para>For ballads, compound-object items will either be audio files, image files (photographs) of a singer, or musical transcriptions (image or PDF files).</para>
             <para>For oral histories, compound-object items will either be audio files, image files (photographs) of an interviewee, or transcripts (PDF files).</para>
         </customization>
