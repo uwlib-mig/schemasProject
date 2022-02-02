@@ -17,8 +17,7 @@
       <dspaceProperty/>
    </dspace><descriptions>
       <definition>
-         <para>The name of the architect or firm who created the architectural work depicted in the image. I
-        </para>
+         <para>The name of the architect or firm who created the architectural work depicted in the image.</para>
       </definition>
       <instructions co="no">
          <para>Input Lastname, Firstname for all personal names. Use LC Authority File for form of name, if available.</para>
