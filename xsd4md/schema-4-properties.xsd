@@ -23,7 +23,7 @@
         <xs:documentation>Schema to validate properties used by UW Libraries.</xs:documentation>
     </xs:annotation>
 
-    <xs:element name="property" type="propertyType"> </xs:element>
+    <xs:element name="property" type="propertyType"/> 
 
     <xs:complexType name="propertyType">
         <xs:sequence>
@@ -640,7 +640,6 @@
                                     <xs:documentation>Intended for use when only one resource format/genre/type will be included in a given collection, and there is no need to distinguish between property use for one format/genre/type of resource vs. another.</xs:documentation>
                                 </xs:annotation>
                             </xs:enumeration>
-                        <xs:restriction base="xs:token">
                             <xs:enumeration value="text">
                                 <xs:annotation>
                                     <xs:documentation>Created for Sephardic Studies Digital
@@ -668,7 +667,6 @@
             </xs:simpleType>
         </xs:restriction>
     </xs:simpleType>
-
     <xs:complexType name="exPara"/>
 
 </xs:schema>
