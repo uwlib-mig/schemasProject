@@ -29,6 +29,7 @@
         <definition>
             <para>The complete name including file extension of a digital file representing a resource to be described by one or more property/value pairs in CONTENTdm. For use when entering metadata in spreadsheets.</para>
         </definition>
+        <!-- per 2022 info from Anne Graham, no file name should be provided at the CO-level, only at the CO-item-level -->
         <instructions co="object">
             <para>Enter the name of the digital file representing the compound object, that is, an access item.</para>
         </instructions>
@@ -51,6 +52,7 @@
         </customization>
     </descriptions>
     <examples>
+        <!-- per 2022 info from Anne Graham, no file name should be provided at the CO-level, only at the CO-item-level -->
         <example co="object">
             <para>cover.jpg</para>
             <para>ballad_singer_photo_001.jpg</para>
@@ -75,6 +77,11 @@
             <para>86_El_Robo_de_Elena.mp3</para>
             <para>Estrea_Chiprut.jpg</para>
             <para>La_Muerte_del_Duque_de_Gandía.pdf</para>
+        </customization>
+        <customization co="item" dd="p16786coll3" resourceType="oh">
+            <para>interview_001_audio.mp3</para>
+            <para>interviewee_001_photo.jpg</para>
+            <para>interview_001_transcript.pdf</para>
         </customization>
     </examples>
     <additionalInfo>
