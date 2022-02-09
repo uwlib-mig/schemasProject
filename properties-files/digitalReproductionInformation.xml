@@ -38,13 +38,15 @@
       <instructions co="item">
          <para>Input a paragraph with pertinent information on the digital conversion process of the compound object item.</para>
       </instructions>
-      <customization co="item" dd="p16786coll3" resourceType="text">
-         <para>If available, provide any details not included elsewhere regarding the digitization of the text.</para>
-         <para>Note that this property is implemented at the compound-object item level, which necessitates the repetition of values.</para>
+      <customization co="object" dd="p16786coll3" resourceType="text">
+         <para>If available, provide details regarding the digitization of the text.</para>
+         <para>For texts, digital reproduction details are assumed to be the same or similar for all compound-object items (pages), so information should be recorded at the compound-object level.</para>
       </customization>
       <customization co="item" dd="p16786coll3" resourceType="song">
-         <para>If available, provide any details not included elsewhere regarding the digitization of the audio recording.</para>
-         <para>Note that this property is implemented at the compound-object item level, which necessitates the repetition of values.</para>
+         <para>If available and applicable, provide details regarding the digitization of ballad compound-object items (singer photo, audio file, etc.).</para>
+      </customization>
+      <customization co="item" dd="p16786coll3" resourceType="oh">
+         <para>If available and applicable, provide details regarding the digitization of oral history compound-object items (interviewee photos, audio file, etc.).</para>
       </customization>
    </descriptions>
    <examples>
@@ -60,6 +62,9 @@
       <customization co="no" dd="krab">
          <para>Sample rate: 96KHz. Bit depth: 24. Issues encountered: Repaired several faulty splices. Date of transfer: 2019-01-04. Applicable conservation treatments: Baked and repaired several splices. De-noise and de-hum (iZotrope RX5).</para>
       </customization>
+      <customization co="object" dd="p16786coll3" resourceType="text">
+         <para>Scanned from original text or image at 400 dpi, saved in TIFF format, resized and enhanced using Adobe Photoshop, and imported as JPEG2000 using Contentdm software's JPEG2000 Extension. 2006.</para>
+      </customization>
       <customization co="item" dd="p16786coll3" resourceType="song oh">
          <!-- using the krab example and an example from SCOHDD to give an indication for SSDC values -->
          <para>Sample rate: 96KHz. Bit depth: 24. Issues encountered: Repaired several faulty splices. Date of transfer: 2019-01-04. Applicable conservation treatments: Baked and repaired several splices. De-noise and de-hum (iZotrope RX5).</para>
@@ -68,8 +73,8 @@
    </examples>
    <additionalInfo>
       <admin co="all" dd4para="p16786coll3">
-         <para>As of 2021-11-01, no digital reproduction information is available for incoming additions to the SSDC - p16786coll3; so, the property is not being implemented for textual resources, ballads, or OHs at this time.</para>
-         <para>As of 2021-11-01, retaining the property in ssdc-combined-map.xml for potential 1) use with standalone objects and/or 2) implementation in future.</para>
+         <para>Contravening MIG decision with regard to use of this property at CO-level.</para>
+         <para>For texts (COs) with hundreds of pages (CO-items), digital reproduction info would (where available) be the same for each CO-item/page. Seems much preferable to provide one value at the CO-level in this case.</para>
       </admin>
    </additionalInfo>
    <marc>
