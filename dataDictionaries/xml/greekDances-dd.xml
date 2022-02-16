@@ -27,12 +27,17 @@
         <xi:include href="../../properties-files/instrumentsDepicted.xml"/>
         <xi:include href="../../properties-files/eventsDepicted.xml"/>
         <xi:include href="../../properties-files/notes.xml"/> 
-        <!-- 2022-01-19 removed per request of collection manager MSSG -->
-        <!-- <xi:include href="../../properties-files/regionalAffiliationDance.xml"/> -->
+        <!-- 
+            2022-01-19 Remove per collection-manager request
+        <xi:include href="../../properties-files/regionalAffiliationDance.xml"/> 
+        -->
         <xi:include href="../../properties-files/regionalAffiliationGroup.xml"/>
         <xi:include href="../../properties-files/videoLocations.xml"/>
+        <!--
+            2022-02-15 Remove lat/long props per collection-manager request 
         <xi:include href="../../properties-files/latitude.xml"/>
         <xi:include href="../../properties-files/longitude.xml"/>
+        -->
         <xi:include href="../../properties-files/objectType.xml"/>
         <xi:include href="../../properties-files/digitalCollection.xml"/>
         <xi:include href="../../properties-files/digitalIdNumber.xml"/>
