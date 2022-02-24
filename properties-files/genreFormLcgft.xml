@@ -26,7 +26,7 @@
     </dspace>
     <descriptions>
         <definition>
-            <para></para>
+            <para>The genre or form of the resource, expressed using values selected from the Library of Congress Genre/Form Terms.</para>
         </definition>
         <instructions co="all">
             <para>Values for this property are taken from the Library of Congress Genre/Form Terms.</para>
