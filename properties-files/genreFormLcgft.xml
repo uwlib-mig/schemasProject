@@ -26,7 +26,7 @@
     </dspace>
     <descriptions>
         <definition>
-            <para>The genre or form of the resource, expressed using values selected from the Library of Congress Genre/Form Terms.</para>
+            <para>The genre or form of the resource, expressed using values selected from Library of Congress Genre/Form Terms.</para>
         </definition>
         <instructions co="all">
             <para>Values for this property are taken from the Library of Congress Genre/Form Terms.</para>
@@ -63,11 +63,20 @@
         </customization>
     </descriptions>
     <examples>
-        <!-- request example values from Laura Lins -->
+        <!-- NEED DEFAULT LCGFT EXAMPLES -->
         <example co="object"></example>
+        <example co="item"></example>
         <example co="no"></example>
-        <customization co="object" dd="p16786coll3"></customization>
-        <customization co="no" dd="p16786coll3"></customization>
+        <customization co="object" dd="p16786coll3" resourceType="text">
+            <para>Sacred works</para>
+            <para>Textbooks</para>
+        </customization>
+        <customization co="object" dd="p16786coll3" resourceType="song">
+            <para>Ballads</para>
+        </customization>
+        <customization co="object" dd="p16786coll3" resourceType="oh">
+            <para>Oral histories</para>
+        </customization>
     </examples>
     <additionalInfo></additionalInfo>
     <marc>
