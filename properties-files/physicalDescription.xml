@@ -65,6 +65,7 @@
          <para>If pages are not numbered, record a number of pages in Arabic numerals followed by a space (“ “) and “pages”.</para>
          <para>Optionally, record an unnumbered page count before or after an Arabic- and/or Roman-numbered page count, separating with a comma and space (“, “).</para>
          <para>&lt;br/&gt;Recording physical dimensions:</para>
+         <para>Add this information following page information, separating with a comma and space (“, “).</para>
          <para>Record the height of the volume in centimeters.</para>
          <para>Record the height using Arabic numerals.</para>
          <para>Use a space and “cm” (no following punctuation) after the numeral(s) (“ cm”).</para>
@@ -156,13 +157,12 @@
          <para>1/4" Open Reel Tape: 1.5mil Polyester Brand Unknown; Stereo</para>
       </customization>
       <customization co="object" dd="p16786coll3" resourceType="text">
-         <para>xi pages</para>
-         <para>25 pages</para>
-         <para>xi, 25 pages</para>
-         <para>15 unnumbered pages</para>
-         <para>xi, 25 pages, 15 unnumbered pages</para>
-         <para>2 unnumbered pages, 300 pages</para>
-         <para>&lt;br/&gt;21 cm</para>
+         <para>xi pages, 25 cm</para>
+         <para>25 pages, 25 cm</para>
+         <para>xi, 25 pages, 25 cm</para>
+         <para>15 unnumbered pages, 30 cm</para>
+         <para>xi, 25 pages, 15 unnumbered pages, 30 cm</para>
+         <para>2 unnumbered pages, 300 pages, 35 cm</para>
       </customization>
       <customization co="item" dd="p16786coll3" resourceType="song">
          <para>00:32:23</para>
