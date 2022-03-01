@@ -11,7 +11,7 @@
         <uwItem>no</uwItem>
     </uwRequired>
     <cdm>
-        <label>Video Locations</label>
+        <label>Video Location</label>
         <cdmDatatype>text</cdmDatatype>
         <cdmLarge>no</cdmLarge>
         <searchable>yes</searchable>
@@ -62,7 +62,7 @@
         <created4Coll>Greek Dances</created4Coll>
         <justification>Needed a field to enter the place where the dances were video recorded.</justification>
         <changeLog>
-            <change></change>
+            <change date="2022-02-28">Change property label to singular. Most properties-files labels are singular (?); attempting to normalize. BMR</change>
         </changeLog>
     </history>
 </property>
