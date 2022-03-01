@@ -39,6 +39,11 @@
             <para>Separate multiple entries using a semi-colon.</para>
             <para>Use GeoNet (https://community.esri.com/) form of the name, if available. If not, use the most common form/spelling.</para>
         </instructions>
+        <customization co="object" dd="gd" resourceType="default">
+            <para>Enter the name of the place the group is from.</para>
+            <para>Separate multiple places using a semi-colon.</para>
+            <para>Record the form of each place name as found in the text &lt;a href="https://alliance-primo.hosted.exlibrisgroup.com/permalink/f/kjtuig/CP71232515330001451"&gt;A Nest of Gold&lt;/a&gt;.</para>
+        </customization>
     </descriptions>
     <examples>
         <example co="no">
@@ -49,6 +54,11 @@
             <para>Skotoussa (Kentriki Makedonia, Greece)</para>
             <para>Irakleia (Kentriki Makedonia, Greece)</para>
         </example>
+        <customization co="object" dd="gd">
+            <para>Skotoussa (Kentriki Makedonia, Greece)</para>
+            <para>Irakleia (Kentriki Makedonia, Greece)</para>
+            <para>Skotoussa (Kentriki Makedonia, Greece); Irakleia (Kentriki Makedonia, Greece)</para>
+        </customization>
     </examples>
     <additionalInfo>
         <admin co="all">
@@ -71,7 +81,7 @@
         <created4Coll>Greek Dances</created4Coll>
         <justification>Needed a field to describe the group associated with a dance depicted.</justification>
         <changeLog>
-            <change></change>
+            <change date="2022-02-28">Per collection-manager request, change guidance to source place names from the text A Nest of Gold.</change>
         </changeLog>
     </history>
 </property>
