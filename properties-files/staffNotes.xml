@@ -39,18 +39,24 @@
       </instructions>
       <customization co="object" dd="p16786coll3" resourceType="text">
          <para>Staff Notes values are hidden in the public CONTENTdm interface.</para>
-         <para>These values will be used by University of Washington Libraries (UWL) cataloging staff to assign controlled values for the following fields for textual resources:</para>
+         <para>These values will be used by University of Washington Libraries (UWL) cataloging staff to assign controlled values for the following fields for textual resources.</para>
+         <para>&lt;br/&gt;For books, catalogers may supply values for:</para>
          <para>Subjects (LCSH)</para>
          <para>Genre/Form (LCGFT)</para>
          <para>Related OCLC Record</para>
          <para>Printer Location</para>
          <para>Publisher Location</para>
-         <para>&lt;br/&gt;For textual resources Staff Notes:</para>
-         <para>Briefly summarize the book's genre, subject, and intended use.</para>
+         <para>&lt;br/&gt;For ephemera, catalogers may supply values for:</para>
+         <para>Subjects (LCSH)</para>
+         <para>Genre/Form (LCGFT)</para>
+         <para>&lt;br/&gt;To facilitate cataloging of books:</para>
+         <para>Briefly summarize the genre, subject, and intended use.</para>
          <para>Descriptions of novels should briefly summarize the arc of the story.</para>
-         <para>Religious texts, such as prayer books and bibles, should note for which Jewish holiday and/or ritual they are used.</para>
+         <para>For religious texts, such as prayer books and bibles, note for which Jewish holiday and/or ritual they are used.</para>
          <para>Note if the work is a translation, and the author and language of the original text.</para>
-         <para>Required for all textual-resource compound objects which will require subject or genre/form analysis from UWL cataloging staff.</para>
+         <para>&lt;br/&gt;To facilitate cataloging of ephemera:</para>
+         <para>🚧 🚧 🚧</para>
+         <para>&lt;br/&gt;Required for all textual-resource compound objects which will require subject or genre/form analysis from UWL cataloging staff.</para>
       </customization>
       <customization co="object" dd="p16786coll3" resourceType="song">
          <para>Staff Notes values are hidden in the public CONTENTdm interface.</para>
@@ -93,8 +99,11 @@
          <para>Note 2023-05-01: Found an incorrect Digital Collection value; please recheck these values.</para>
       </customization>
       <customization co="object" dd="p16786coll3" resourceType="text">
+         <para>For books:</para>
          <para>A Ladino translation of the French novel "Paul et Virginie" by Bernardin de Saint-Pierre (1737-1814). This short love story, set in the 18th century on a French island, tells of a man a woman separated by distance and circumstance, never to be united before their untimely deaths.</para>
          <para>This is a parallel Hebrew-Ladino translation of the Book of Ruth with corresponding commentary in Ladino. The Book of Ruth is part of the Old Testament found in the section known as Ketuvim (Writings). It is traditionally read on the Jewish holiday of Shavuot (Feast of Weeks).</para>
+         <para>&lt;br/&gt;For ephemera:</para>
+         <para>🚧 🚧 🚧</para>
       </customization>
       <customization co="object" dd="p16786coll3" resourceType="song">
          <para>N/A</para>
