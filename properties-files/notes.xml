@@ -61,6 +61,9 @@
       </customization>
       <customization co="object" dd="p16786coll3" resourceType="text">
          <para>Enter any information of importance that is not represented elsewhere.</para>
+         <para>Prioritize information that might affect a user's understanding or use of the resource, such as missing pages or alternative titles not captured in the various title properties.</para>
+         <para>May include notes about property values taken from information provided by previous catalogers when these values cannot be found in the resource.</para>
+         <para>May include information about property values taken from alternative locations in the resource (other than title page, title page verso, etc.).</para>
          <para>Start each distinct note entry on a new line.</para>
          <para>When entering values in a spreadsheet, note that depending on the spreadsheet-editing application, CTRL + ENTER, ALT + ENTER, or another key combination can be used to enter a new line within a cell.</para>
       </customization>
@@ -139,6 +142,8 @@
       </customization>
       <customization co="object" dd="p16786coll3" resourceType="text">
          <para>Title value taken from cover, title page missing from digitized volume.</para>
+         <para>Editor value taken from introduction.</para>
+         <para>Publisher location from previous cataloger.</para>
       </customization>
       <customization co="object" dd="p16786coll3" resourceType="song">
          <para>Song from father's pizmonim manuscript.</para>
