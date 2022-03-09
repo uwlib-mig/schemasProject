@@ -88,7 +88,7 @@
          <para>Values for this property must come from the &lt;a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7"&gt;DCMI Type Vocabulary&lt;/a&gt;.</para>
          <para>&lt;br/&gt;For video-file compound-object items, use the following value:</para>
          <para>MovingImage</para>
-         <para>For documents providing information about or summaries of videos, use the following value:</para>
+         <para>For document compound-object items providing information about or summaries of videos, use the following value:</para>
          <para>Text</para>
       </customization>
    </descriptions>
