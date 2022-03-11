@@ -55,7 +55,8 @@
          <para>For religious texts, such as prayer books and bibles, note for which Jewish holiday and/or ritual they are used.</para>
          <para>Note if the work is a translation, and the author and language of the original text.</para>
          <para>&lt;br/&gt;To facilitate cataloging of ephemera:</para>
-         <para>🚧 🚧 🚧</para>
+         <para>Record any relevant information characterizing the resource which isn’t included in values for any other metadata field.</para>
+         <para>Translate non-English text or terminology to aid cataloging staff in metadata creation.</para>
          <para>&lt;br/&gt;Required for all textual-resource compound objects which will require subject or genre/form analysis from UWL cataloging staff.</para>
       </customization>
       <customization co="object" dd="p16786coll3" resourceType="song">
@@ -103,7 +104,8 @@
          <para>A Ladino translation of the French novel "Paul et Virginie" by Bernardin de Saint-Pierre (1737-1814). This short love story, set in the 18th century on a French island, tells of a man a woman separated by distance and circumstance, never to be united before their untimely deaths.</para>
          <para>This is a parallel Hebrew-Ladino translation of the Book of Ruth with corresponding commentary in Ladino. The Book of Ruth is part of the Old Testament found in the section known as Ketuvim (Writings). It is traditionally read on the Jewish holiday of Shavuot (Feast of Weeks).</para>
          <para>&lt;br/&gt;For ephemera:</para>
-         <para>🚧 🚧 🚧</para>
+         <para>This is a wedding certificate decorated with a floral pattern behind a picture of a menorah (Jewish candelabra) and an open book with the words “Siman Tov u-Mazal Tov,” a Hebrew phrase often used to congratulate a couple on their wedding. </para>
+         <para>The Ladino text in this cigarette advertisement reads “A high-quality product.”</para>
       </customization>
       <customization co="object" dd="p16786coll3" resourceType="song">
          <para>N/A</para>
