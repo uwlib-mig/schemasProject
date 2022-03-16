@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+    <uid>p144</uid>
+    <labels>
+        <platformIndependent>regionalAffiliationGroupLcnaf</platformIndependent>
+        <dc>coverage</dc>
+    </labels>
+    <uwRequired>
+        <uwStandalone>no</uwStandalone>
+        <uwObject>no</uwObject>
+        <uwItem>no</uwItem>
+    </uwRequired>
+    <cdm>
+        <label>Regional Affiliation (Group) (LCNAF)</label>
+        <cdmDatatype>text</cdmDatatype>
+        <cdmLarge>no</cdmLarge>
+        <searchable>yes</searchable>
+        <hidden>no</hidden>
+        <cdmRequired>no</cdmRequired>
+        <cdmControlledVocab>no</cdmControlledVocab>
+    </cdm>
+    <dspace>
+        <dspaceProperty/>
+    </dspace>
+    <descriptions>
+        <definition>
+            <!-- this definition needs work?? -->
+            <para>Location from where the group(s) represented in the resource derives.</para>
+        </definition>
+        <instructions co="no">
+            <para>Enter the name of the place the group is from.</para>
+            <para>Separate multiple entries using a semi-colon.</para>
+            <para>Place names must be taken from the Library of Congress Name Authority File.</para>
+        </instructions>
+        <instructions co="object">
+            <para>Enter the name of the place the group is from.</para>
+            <para>Separate multiple entries using a semi-colon.</para>
+            <para>Place names must be taken from the Library of Congress Name Authority File.</para>
+        </instructions>
+        <customization co="object" dd="gd" resourceType="default">
+            <para>Enter the name of the place the group is from.</para>
+            <para>Separate multiple places using a semi-colon.</para>
+            <para>Place names must be taken from the Library of Congress Name Authority File.</para>
+        </customization>
+    </descriptions>
+    <examples>
+        <example co="no"/>
+        <example co="object"/>
+        <customization co="object" dd="gd">
+            <para>🚧 🚧 🚧</para>
+        </customization>
+    </examples>
+    <additionalInfo>
+        <admin co="all">
+            <para>In CONTENTdm, map to DC map = Coverage-Spatial.</para>
+            <para>(BMR) This property should be considered equivalent to p108. This is a use case for building functionality to use custom labels for the same property in different collections.</para>
+        </admin>
+    </additionalInfo>
+    <marc>
+        <dcgMarcMapping/>
+    </marc>
+    <xsd>
+        <typeInfo level="standalone object">
+            <typeAttribute>xs:string</typeAttribute>
+        </typeInfo>
+    </xsd>
+    <rdf>
+        <owlDatatypeProperty>yes</owlDatatypeProperty>
+    </rdf>
+    <history>
+        <dateCreated>
+            <single>2022-03-15</single>
+        </dateCreated>
+        <created4Coll>Greek Dances</created4Coll>
+        <justification>Collection manager wanted to provide two forms for each place name, form taken from a given text and form from LCNAF.</justification>
+        <changeLog>
+            <change/>
+        </changeLog>
+    </history>
+</property>
