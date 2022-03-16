@@ -65,6 +65,9 @@
         <xi:include href="../../properties-files/restrictions.xml"/>
         <xi:include href="../../properties-files/rightsUri.xml"/>
         <xi:include href="../../properties-files/orderingInformation.xml"/>
+        <xi:include href="../../properties-files/repository.xml"/>
+        <xi:include href="../../properties-files/repositoryCollection.xml"/>
+        <xi:include href="../../properties-files/repositoryCollectionGuide.xml"/>
         <xi:include href="../../properties-files/type.xml"/>
         <xi:include href="../../properties-files/extent.xml"/>
         <xi:include href="../../properties-files/digitalFormat.xml"/>
