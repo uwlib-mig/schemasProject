@@ -27,6 +27,7 @@
     </dspace>
     <descriptions>
         <definition>
+            <!-- this definition needs work?? -->
             <para>Location from where the group(s) represented in the resource derives.</para>
         </definition>
         <instructions co="no">
@@ -48,16 +49,16 @@
     <examples>
         <example co="no">
             <para>Skotoussa (Kentriki Makedonia, Greece)</para>
-            <para>Irakleia (Kentriki Makedonia, Greece)</para>
+            <para>Iraklia (Kentriki Macedonia, Greece)</para>
         </example>
         <example co="object">
             <para>Skotoussa (Kentriki Makedonia, Greece)</para>
-            <para>Irakleia (Kentriki Makedonia, Greece)</para>
+            <para>Iraklia (Kentriki Macedonia, Greece)</para>
         </example>
         <customization co="object" dd="gd">
             <para>Skotoussa (Kentriki Makedonia, Greece)</para>
-            <para>Irakleia (Kentriki Makedonia, Greece)</para>
-            <para>Skotoussa (Kentriki Makedonia, Greece); Irakleia (Kentriki Makedonia, Greece)</para>
+            <para>Iraklia (Kentriki Macedonia, Greece)</para>
+            <para>Skotoussa (Kentriki Makedonia, Greece); Iraklia (Kentriki Macedonia, Greece)</para>
         </customization>
     </examples>
     <additionalInfo>
