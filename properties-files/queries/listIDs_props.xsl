@@ -6,17 +6,17 @@
     <xsl:output method="xml" indent="yes"/>
     <xsl:template match="/">
         <get_info>
-            <!-- BMR: TO DO, add any needed tests
-                for duplicate uids
-                for missing uids: grab the filename
-                etc. -->
+            <!-- BMR: TO DO
+                TEST for duplicate uids
+                FOR missing uids - grab filename -->
             <key>
                 <xsl:text> uid | platformIndependentLabel </xsl:text>
             </key>
+            <start_list/>
             <xsl:apply-templates
                 select="collection('../?select=*.xml')/pf:property">
                 <!-- remove p's; sort numerically -->
-                <xsl:sort order="descending" select="translate(pf:uid, 'p', '')" data-type="number"/>
+                <xsl:sort order="ascending" select="translate(pf:uid, 'p', '')" data-type="number"/>
             </xsl:apply-templates>
         </get_info>
     </xsl:template>
