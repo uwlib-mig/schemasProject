@@ -32,7 +32,9 @@
         <xi:include href="../../properties-files/regionalAffiliationDance.xml"/> 
         -->
         <xi:include href="../../properties-files/regionalAffiliationGroup.xml"/>
+        <xi:include href="../../properties-files/regionalAffiliationGroupLcnaf.xml"/>
         <xi:include href="../../properties-files/videoLocations.xml"/>
+        <xi:include href="../../properties-files/videoLocationsLcnaf.xml"/>
         <!--
             2022-02-15 Remove lat/long props per collection-manager request 
         <xi:include href="../../properties-files/latitude.xml"/>
