@@ -50,6 +50,13 @@
          <para>Use media types listed at &lt;a href="http://www.iana.org/assignments/media-types/index.html"&gt;http://www.iana.org/assignments/media-types/index.html&lt;/a&gt;.</para>
          <para>For audio WAVE files, enter "audio/wav".</para>
       </customization>
+      <customization co="item" dd="gd" resourceType="default">
+         <para>Enter the file format of the compound-object item (video file or table of contents).</para>
+         <para>&lt;br/&gt;For .mp4 files enter the following:</para>
+         <para>video/mp4</para>
+         <para>&lt;br/&gt;For .pdf files enter the following:</para>
+         <para>application/pdf</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="item">
@@ -66,6 +73,10 @@
          <para>text/plain</para>
          <para>video/mp4</para>
       </example>
+      <customization co="item" dd="gd" resourceType="default">
+         <para>video/mp4</para>
+         <para>application/pdf</para>
+      </customization>
       <!-- MIG decision 2020-05: do not include this property in the object description
       <example co="object">
          <para>video/mp4; application/pdf</para>
