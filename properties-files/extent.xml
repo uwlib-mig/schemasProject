@@ -64,14 +64,11 @@
          <para>Duration should be entered hh:mm:ss. </para>
       </customization>
       <customization co="item" dd="gd">
-         <para>Do not use for items in compound objects.</para>
-         <para>Enter extent of video file in the object description.</para>
-      </customization>
-      <customization co="no" dd="gd">
-         <para>Enter the extent of digital access file.</para>
-         <para>Enter duration of the video file.</para>
-         <para>Duration should be entered hh:mm:ss.</para>
-         <para>Do not enter a value for the extent of the pdf file.</para>
+         <para>For video files (.mp4 files):</para>
+         <para>Enter duration (runtime) of the video file.</para>
+         <para>Format runtime as HH:MM:SS.</para>
+         <para>&lt;br/&gt;For tables of contents (.pdf files):</para>
+         <para>Do not enter a value.</para>
       </customization>
       <customization co="item" dd="p16786coll3" resourceType="oh song">
          <para>For audio files, enter the runtime of the digital access file.</para>
@@ -102,8 +99,6 @@
          <para>01:28:14</para>
       </customization>
       <customization co="item" dd="gd">
-      </customization>
-      <customization co="no" dd="gd">
          <para>00:12:58</para>
          <para>01:28:14</para>
       </customization>
@@ -135,7 +130,9 @@
          <typeAttribute>xs:string</typeAttribute>
       </customTypeInfo>
    </xsd>
-   <rdf><owlDatatypeProperty>yes</owlDatatypeProperty></rdf>
+   <rdf>
+      <owlDatatypeProperty>yes</owlDatatypeProperty>
+   </rdf>
    <history>
       <dateCreated>
          <range>
@@ -153,6 +150,7 @@
          <change date="2020-05-19">Entered customizations for Greek Dances.</change>
          <change date="2020-06-03">removed object description in accordance with MIG decision.</change>
          <change date="2021-10-25">Add custom description and examples for Sephardic Studies Digital Collection - p16786coll3.</change>
+         <change date="2022-03-24">Change implementation for Greek Dances. Per MIG decision 2020-05, use at the CO-item level, not at CO level.</change>
       </changeLog>
    </history>
 </property>
