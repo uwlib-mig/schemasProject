@@ -1,11 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?><property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd"><uid>p73</uid><labels>
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+   xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+   <uid>p73</uid>
+   <labels>
       <platformIndependent>repositoryCollectionGuide</platformIndependent>
       <dc>none</dc>
-   </labels><uwRequired>
+   </labels>
+   <uwRequired>
       <uwStandalone>no</uwStandalone>
       <uwObject>no</uwObject>
       <uwItem>no</uwItem>
-   </uwRequired><cdm>
+   </uwRequired>
+   <cdm>
       <label>Repository Collection Guide</label>
       <cdmDatatype>text</cdmDatatype>
       <cdmLarge>no</cdmLarge>
@@ -13,9 +20,11 @@
       <hidden>no</hidden>
       <cdmRequired>no</cdmRequired>
       <cdmControlledVocab>no</cdmControlledVocab>
-   </cdm><dspace>
+   </cdm>
+   <dspace>
       <dspaceProperty/>
-   </dspace><descriptions>
+   </dspace>
+   <descriptions>
       <definition>
          <para>URI to an EAD finding aid.</para>
       </definition>
@@ -37,37 +46,52 @@
       <customization co="item" dd="krab">
          <para>Enter only the URI to the EAD finding aid: "http://archiveswest.orbiscascade.org/ark:/80444/xv69396."</para>
       </customization>
-   </descriptions><examples>
+      <customization co="object" dd="p16786coll3" resourceType="text song oh">
+         <para>Where applicable, this value will be entered by University of Washington Libraries Special Collections Staff following transfer of collection resources.</para>
+         <para>Where a finding aid for an archival collection including the resource exists, the value will be the Ark URL for this finding aid in ArchivesWest.</para>
+      </customization>
+   </descriptions>
+   <examples>
       <example co="no">
          <para>[none]</para>
       </example>
       <customization co="no" dd="krab">
-         <para>http://archiveswest.orbiscascade.org/ark:/80444/xv69396</para></customization>
+         <para>http://archiveswest.orbiscascade.org/ark:/80444/xv69396</para>
+      </customization>
       <customization co="object" dd="krab">
-         <para>http://archiveswest.orbiscascade.org/ark:/80444/xv69396</para></customization>
+         <para>http://archiveswest.orbiscascade.org/ark:/80444/xv69396</para>
+      </customization>
       <customization co="item" dd="krab">
-         <para>http://archiveswest.orbiscascade.org/ark:/80444/xv69396</para></customization>
-   </examples><additionalInfo>
+         <para>http://archiveswest.orbiscascade.org/ark:/80444/xv69396</para>
+      </customization>
+      <customization co="object" dd="p16786coll3" resourceType="text song oh">
+         <para>🚧 🚧 🚧</para>
+      </customization>
+   </examples>
+   <additionalInfo>
       <admin co="no">
          <para/>
       </admin>
       <generalNotes co="no">
          <para/>
       </generalNotes>
-   </additionalInfo><marc>
+   </additionalInfo>
+   <marc>
       <dcgMarcMapping/>
       <marcNotes>
          <para/>
       </marcNotes>
-   </marc><xsd>
+   </marc>
+   <xsd>
       <typeInfo level="standalone object">
          <typeAttribute>xs:anyURI</typeAttribute>
       </typeInfo>
       <typeInfo level="item">
          <empty/>
       </typeInfo>
-   </xsd><rdf>
-   </rdf><history>
+   </xsd>
+   <rdf> </rdf>
+   <history>
       <dateCreated>
          <range>
             <start>2000-01-01</start>
@@ -81,4 +105,5 @@
          <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
          <change date="2019-04-21">Added a customization for rp standalone instructions.</change>
       </changeLog>
-   </history></property>
+   </history>
+</property>
