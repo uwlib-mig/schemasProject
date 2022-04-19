@@ -60,11 +60,11 @@
       <customization co="item" dd="uwtoh">
          <para>Enter "Oral histories"</para>
       </customization>
-      <customization co="no" dd="gd">
-         <para>Enter "Dance films" (a term from the Library of Congress Genre/Forms Terms).</para>
+      <customization co="no" dd="gd" resourceType="default">
+         <para>Enter "video recordings".</para>
       </customization>
-      <customization co="object" dd="gd">
-         <para>Enter "Dance films" (a term from the Library of Congress Genre/Forms Terms).</para>
+      <customization co="object" dd="gd" resourceType="default">
+         <para>Enter "video recordings".</para>
       </customization>
       <customization co="object" dd="p16786coll3" resourceType="text">
          <!-- og_library_mig > ... > object_type_enumerations -->
@@ -107,11 +107,11 @@
       <customization co="item" dd="uwtoh">
          <para>Oral histories</para>
       </customization>
-      <customization co="no" dd="gd">
-         <para>Dance films</para>
+      <customization co="no" dd="gd" resourceType="default">
+         <para>video recordings</para>
       </customization>
-      <customization co="object" dd="gd">
-         <para>Dance films</para>
+      <customization co="object" dd="gd" resourceType="default">
+         <para>video recordings</para>
       </customization>
       <customization co="object" dd="p16786coll3" resourceType="text">
          <!-- og_library_mig > ... > object_type_enumerations -->
@@ -201,6 +201,7 @@
          <change date="2020-05-18">Changed label from Object Type to Genre.</change>
          <change date="2020-05-19">Commented-out instructions/@co=item to duppress in Greek Dances. Also changes label from Genre to Object Type.</change>
          <change date="2021-10-26">Add custom instructions and examples for Sephardic Studies Digital Collection - p16786coll3.</change>
+         <change date="2022-04-19">Update guidance and examples for Greek Dances MAP. Use Object Type to provide "video recordings", an uncontrolled Object Type value used in other collections. For "Dance films", an LCGFT, use Genre/Form (LCGFT).</change>
       </changeLog>
    </history>
 </property>
