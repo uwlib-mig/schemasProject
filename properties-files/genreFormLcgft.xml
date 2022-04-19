@@ -53,6 +53,12 @@
             <para>Do not provide a value for this property.</para>
             <para>Be sure to provide the value 'xyz' for the Cataloging property to indicate to cataloging staff that a value is needed.</para>
         </customization>
+        <customization co="no" dd="gd" resourceType="default">
+            <para>Enter "Dance films".</para>
+        </customization>
+        <customization co="object" dd="gd" resourceType="default">
+            <para>Enter "Dance films".</para>
+        </customization>
         <customization co="no" dd="p16786coll3">
             <para>University of Washington Libraries (UWL) cataloging staff will provide a value or values for this property.</para>
             <para>For metadata creation taking place outside the UWL Cataloging and Metadata Services unit:</para>
@@ -67,6 +73,12 @@
         <example co="object"></example>
         <example co="item"></example>
         <example co="no"></example>
+        <customization co="no" dd="gd" resourceType="default">
+            <para>Dance films</para>
+        </customization>
+        <customization co="object" dd="gd" resourceType="default">
+            <para>Dance films</para>
+        </customization>
         <customization co="object" dd="p16786coll3" resourceType="text">
             <para>Sacred works</para>
             <para>Textbooks</para>
@@ -88,13 +100,13 @@
         <dateCreated>
             <range>
                 <start>2021-09-16</start>
-                <end></end>
+                <end>2022-04-19</end>
             </range>
         </dateCreated>
         <created4Coll>Sephardic Studies Digital Collection - p16786coll3</created4Coll>
         <justification>"Genre" property exists in &lt;a href="https://www.lib.washington.edu/cams/mig/datadicts/special-collections-oral-histories-data-dictionary"&gt;Special Collections Oral Histories Data Dictionary&lt;/a&gt;, defining (with some changes and added specificity) for continued use and output to HTML MAPs.</justification>
         <changeLog>
-            <change></change>
+            <change date="2022-04-19">Implement property for the Greek Dances MAP.</change>
         </changeLog>
     </history>
 </property>
