@@ -110,18 +110,19 @@
       <customization co="no" dd="gd">
          <para>Ener a brief descriptive phrase that describes the video segment.</para>
          <para>Titles can be divised generally using the following facets in this order: who, what, where, when. </para>
-         <para>Create a note in the Notes field describing the source of title informtion ("Title provided by University of Washington Libraries staff," "Title taken from text attached to resource," "Title provided by Yvonne Hunt," etc.).</para>
-         <para>All items must have a title.</para>
+         <para>All standalone objects must have a title.</para>
       </customization>
       <customization co="object" dd="gd">
          <para>Enter a brief descriptive phrase that describes the video segment.</para>
          <para>Titles can be devised generally using the following facets in this order: who, what, where, when. </para>
-         <para>Create a note in the Notes field describing the source of title informtion ("Title provided by University of Washington Libraries staff," "Title taken from text attached to resource," "Title provided by Yvonne Hunt," etc.).</para>
-         <para>All items must have a title.</para>
+         <para>All compound objects must have a title.</para>
       </customization>
       <customization co="item" dd="gd">
-         <para>All items must have a title.</para>
-         <para>Enter a brief title that identifies the item.</para>
+         <para>All compound-object items must have a title.</para>
+         <para>For video file compound-object items, enter the following:</para>
+         <para>[compound-object title] (video)</para>
+         <para>For table of contents compound-object items, enter the following:</para>
+         <para>[compound-object title] (table of contents)</para>
       </customization>
       <customization co="object" dd="p16786coll3" resourceType="text">
          <para>Find Unicode Title in Sephardic Studies Collection Master Catalog and revise according to the Aki Yerushalayim standard if needed. (Reference available &lt;a href="https://drive.google.com/drive/folders/178p999G1zCUMaMi8kAVtNiW8BF3RAYZa?usp=sharing"&gt;here&lt;/a&gt;.)</para>
@@ -222,14 +223,14 @@
          <para>Women Protest 04</para>
       </customization>
       <customization co="no" dd="gd">
-         <para>Cheese Sunday and Clean Monday during Apokears, 1992 in Flamboro, Sohos, and Pondismeno.</para>
+         <para>Cheese Sunday and Clean Monday during Apokears, 1992 in Flamboro, Sohos, and Pondismeno</para>
       </customization>
       <customization co="object" dd="gd">
-         <para>Cheese Sunday and Clean Monday during Apokears, 1992 in Flamboro, Sohos, and Pondismeno.</para>
+         <para>Cheese Sunday and Clean Monday during Apokears, 1992 in Flamboro, Sohos, and Pondismeno</para>
       </customization>
       <customization co="item" dd="gd">
-         <para>Cheese Sunday and Clean Monday during Apokears, 1992 in Flamboro, Sohos, and Pondismeno (video).</para>
-         <para>Cheese Sunday and Clean Monday during Apokears, 1992 in Flamboro, Sohos, and Pondismeno (table of contents).</para>
+         <para>Cheese Sunday and Clean Monday during Apokears, 1992 in Flamboro, Sohos, and Pondismeno (video)</para>
+         <para>Cheese Sunday and Clean Monday during Apokears, 1992 in Flamboro, Sohos, and Pondismeno (table of contents)</para>
       </customization>
       <!-- BMR: Finalize SSDC examples -->
       <customization co="object" dd="p16786coll3" resourceType="text">
