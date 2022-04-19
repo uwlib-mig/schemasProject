@@ -40,6 +40,7 @@
         <xi:include href="../../properties-files/latitude.xml"/>
         <xi:include href="../../properties-files/longitude.xml"/>
         -->
+        <xi:include href="../../properties-files/genreFormLcgft.xml"/>
         <xi:include href="../../properties-files/objectType.xml"/>
         <xi:include href="../../properties-files/digitalCollection.xml"/>
         <xi:include href="../../properties-files/digitalIdNumber.xml"/>
