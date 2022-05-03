@@ -44,6 +44,10 @@
       <customization co="object" dd="uwtoh">
          <para>Enter the following URI from rightsstatements.org: http://rightsstatements.org/vocab/InC-EDU/1.0/ .</para>
       </customization>
+      <customization co="object" dd="gd" resourceType="default">
+         <para>Enter the following value:</para>
+         <para>http://rightsstatements.org/vocab/InC/1.0/</para>
+      </customization>
       <customization co="object" dd="p16786coll3" resourceType="text song oh">
          <para>Unless otherwise instructed, enter the following URI: &lt;a href="http://rightsstatements.org/vocab/CNE/1.0/"&gt;http://rightsstatements.org/vocab/CNE/1.0/&lt;/a&gt;.</para>
          <para>Required for all compound objects.</para>
@@ -68,6 +72,9 @@
       </example>
       <customization co="object" dd="uwtoh">
          <para>http://rightsstatements.org/vocab/InC-EDU/1.0/</para>
+      </customization>
+      <customization co="object" dd="gd" resourceType="default">
+         <para>http://rightsstatements.org/vocab/InC/1.0/</para>
       </customization>
       <customization co="object" dd="p16786coll3" resourceType="text song oh">
          <para>http://rightsstatements.org/vocab/CNE/1.0/</para>
