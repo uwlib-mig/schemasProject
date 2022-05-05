@@ -35,14 +35,21 @@
         <instructions co="object">
             <para>Enter a citation to the source resource.</para>
         </instructions>
+        <customization co="object" dd="gd" resourceType="default">
+            <para>Provide a value describing the source resource from which video files have been derived.</para>
+            <para>Construct values as follows:</para>
+            <para>Field tape made in [place or places] in [date] by Yvonne Hunt.</para>
+            <para>If no date is available for the source field tape, omit the “in [date]” portion.</para>
+            <para></para>
+        </customization>
     </descriptions>
     <examples>
-        <example co="no">
-            <para>Hunt, Yvonne M. Celebration of St. Marina in the Pyrgos section of the village of Mavrothalassa in the Serres region, July 17, 19??. Hunt tape 62.</para>
+        <example co="all">
+            <!-- NEED DEFAULT EXAMPLE VALUES -->
         </example>
-        <example co="object">
-            <para>Hunt, Yvonne M. Celebration of St. Marina in the Pyrgos section of the village of Mavrothalassa in the Serres region, July 17, 19??. Hunt tape 62.</para>
-        </example>
+        <customization co="object" dd="gd" resourceType="default">
+            <para>Field tape made in Melenikitsi in 1996 by Yvonne Hunt.</para>
+        </customization>
     </examples>
     <additionalInfo>
         <admin co="object">
@@ -67,7 +74,8 @@
         <created4Coll>Greek Dances</created4Coll>
         <justification>Needed to cite the source video for the video segments loaded into Cdm.</justification>
         <changeLog>
-            <change></change>
+            <change date="2022-05-05">Delete default examples; these no longer matched the guidance for Source as implemented in the Greek golk dances collection.</change>
+            <change date="2022-05-05">Add new guidance and examples for the Greek folk dances collection.</change>
         </changeLog>
     </history>
 </property>
