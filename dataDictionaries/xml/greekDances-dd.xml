@@ -54,7 +54,10 @@
         <xi:include href="../../properties-files/originalFormat.xml"/>
         <xi:include href="../../properties-files/digitalReproductionInformation.xml"/>
         <xi:include href="../../properties-files/staffNotes.xml"/>
+        <!--
+            2022-05-06 Remove institution, unsure what it is for
         <xi:include href="../../properties-files/institution.xml"/>
+        -->
         <xi:include href="../../properties-files/discNumber.xml"/>
     </properties>
 </migDataDictionary>
