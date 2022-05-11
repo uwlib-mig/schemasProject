@@ -53,6 +53,7 @@
             <para>Iraklia (Kentriki Macedonia, Greece)</para>
         </example>
         <customization co="object" dd="gd">
+            <para>Kimisi (Greece)</para>
             <para>Skotoussa (Kentriki Makedonia, Greece)</para>
             <para>Iraklia (Kentriki Macedonia, Greece)</para>
             <para>Skotoussa (Kentriki Makedonia, Greece); Iraklia (Kentriki Macedonia, Greece)</para>
@@ -79,6 +80,7 @@
         <changeLog>
             <change date="2022-02-28">Change property label to singular. Most properties-files labels are singular (?); attempting to normalize. BMR</change>
             <change date="2022-02-28">Per collection-manager request, change guidance to source place names from the text A Nest of Gold.</change>
+            <change date="2022-05-11">Add example for Greek dances MAP</change>
         </changeLog>
     </history>
 </property>

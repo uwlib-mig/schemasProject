@@ -44,7 +44,7 @@
         <example co="no"/>
         <example co="object"/>
         <customization co="object" dd="gd">
-            <para>🚧 🚧 🚧</para>
+            <para>Koimēsē (Greece)</para>
         </customization>
     </examples>
     <additionalInfo>
@@ -67,7 +67,7 @@
         <created4Coll>Greek Dances</created4Coll>
         <justification>Collection manager wanted to provide two forms for each place name, form taken from a given text and form from LCNAF.</justification>
         <changeLog>
-            <change/>
+            <change date="2022-05-11">Add example for Greek dances MAP</change>
         </changeLog>
     </history>
 </property>
