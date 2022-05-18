@@ -42,6 +42,8 @@
             <para>Be sure to provide the value 'xyz' for the Cataloging property to indicate to cataloging staff that a value is needed if applicable.</para>
             <para>When the resource does not use English, be sure to use the Staff Notes property to provide information which will allow cataloging staff to identify any related records.</para>
             <para>For details about the information needed by cataloging staff, contact the collection manager(s) or metadata liaison(s).</para>
+            <para>For UWL cataloging staff:</para>
+            <para>Separate multiple values with a semicolon.</para>
         </customization>
     </descriptions>
     <examples>
@@ -53,6 +55,7 @@
             <para>[Values provided by cataloging staff:]</para>
             <para>37917418</para>
             <para>27382728</para>
+            <para>37917418; 27382728</para>
         </customization>
     </examples>
     <!-- Omit:
