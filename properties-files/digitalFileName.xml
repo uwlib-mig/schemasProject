@@ -17,7 +17,7 @@
         <label>Original File Name</label>
         <cdmDatatype>text</cdmDatatype>
         <cdmLarge>no</cdmLarge>
-        <searchable>yes</searchable>
+        <searchable>no</searchable>
         <hidden>yes</hidden>
         <cdmRequired>no</cdmRequired>
         <cdmControlledVocab>no</cdmControlledVocab>
