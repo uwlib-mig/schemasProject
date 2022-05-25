@@ -64,7 +64,7 @@
          <para>Enter the duration of the resource.</para>
          <para>Duration should be entered hh:mm:ss. </para>
       </customization>
-      <customization co="item" dd="gd">
+      <customization co="item" dd="greekdancing">
          <para>For video files (.mp4 files):</para>
          <para>Enter duration (runtime) of the video file.</para>
          <para>Format runtime as HH:MM:SS.</para>
@@ -99,7 +99,7 @@
          <para>00:12:58</para>
          <para>01:28:14</para>
       </customization>
-      <customization co="item" dd="gd">
+      <customization co="item" dd="greekdancing">
          <para>00:12:58</para>
          <para>01:28:14</para>
       </customization>

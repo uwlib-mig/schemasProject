@@ -79,12 +79,12 @@
          <para>For image-file compound-object items which are interview transcripts, provide the following value:</para>
          <para>Text</para>
       </customization>
-      <customization co="object" dd="gd">
+      <customization co="object" dd="greekdancing">
          <para>Values for this property must come from the &lt;a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7"&gt;DCMI Type Vocabulary&lt;/a&gt;.</para>
          <para>&lt;br/&gt;For compound-object video resources, use the following value:</para>
          <para>MovingImage</para>
       </customization>
-      <customization co="item" dd="gd">
+      <customization co="item" dd="greekdancing">
          <para>Values for this property must come from the &lt;a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7"&gt;DCMI Type Vocabulary&lt;/a&gt;.</para>
          <para>&lt;br/&gt;For video-file compound-object items, use the following value:</para>
          <para>MovingImage</para>
@@ -116,14 +116,14 @@
       <customization co="no" dd="krab">
          <para>Sound</para>
       </customization>
-      <customization co="object" dd="gd">
+      <customization co="object" dd="greekdancing">
          <para>MovingImage</para>
       </customization>
-      <customization co="item" dd="gd">
+      <customization co="item" dd="greekdancing">
          <para>MovingImage</para>
          <para>Text</para>
       </customization>
-      <customization co="no" dd="gd">
+      <customization co="no" dd="greekdancing">
          <para>MovingImage</para>
       </customization>
       <!-- See MIG 2021-11-02 notes for SSDC - p16786coll3 - implementation -->

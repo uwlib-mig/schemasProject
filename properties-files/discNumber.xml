@@ -40,7 +40,7 @@
         <dcgMarcMapping></dcgMarcMapping>
     </marc>
     <xsd>
-        <typeInfo dd="gd">
+        <typeInfo dd="greekdancing">
             <typeAttribute>xs:string</typeAttribute>
         </typeInfo>
     </xsd>

@@ -60,10 +60,10 @@
       <customization co="item" dd="uwtoh">
          <para>Enter "Oral histories"</para>
       </customization>
-      <customization co="no" dd="gd" resourceType="default">
+      <customization co="no" dd="greekdancing" resourceType="default">
          <para>Enter "video recordings".</para>
       </customization>
-      <customization co="object" dd="gd" resourceType="default">
+      <customization co="object" dd="greekdancing" resourceType="default">
          <para>Enter "video recordings".</para>
       </customization>
       <customization co="object" dd="p16786coll3" resourceType="text">
@@ -107,10 +107,10 @@
       <customization co="item" dd="uwtoh">
          <para>Oral histories</para>
       </customization>
-      <customization co="no" dd="gd" resourceType="default">
+      <customization co="no" dd="greekdancing" resourceType="default">
          <para>video recordings</para>
       </customization>
-      <customization co="object" dd="gd" resourceType="default">
+      <customization co="object" dd="greekdancing" resourceType="default">
          <para>video recordings</para>
       </customization>
       <customization co="object" dd="p16786coll3" resourceType="text">

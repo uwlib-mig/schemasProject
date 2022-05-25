@@ -53,15 +53,15 @@
          <para>Enter the name given to the digital collection.</para>
          <para>Enter "KRAB FM Lesbian-Feminist Radio Program Recordings, 1971-1982"</para>
       </customization>
-      <customization co="no" dd="gd">
+      <customization co="no" dd="greekdancing">
          <para>Enter the name given to the digital collection.</para>
          <para>Enter "Hunt (Yvonne) Greek Folk Dance Collection"</para>
       </customization>
-      <customization co="item" dd="gd">
+      <customization co="item" dd="greekdancing">
          <para>Enter the name given to the digital collection.</para>
          <para>Enter "Hunt (Yvonne) Greek Folk Dance Collection"</para>
       </customization>
-      <customization co="object" dd="gd">
+      <customization co="object" dd="greekdancing">
          <para>Enter the name given to the digital collection.</para>
          <para>Enter "Hunt (Yvonne) Greek Folk Dance Collection"</para>
       </customization>
@@ -106,13 +106,13 @@
       <customization co="no" dd="krab">
          <para>KRAB FM Lesbian-Feminist Radio Program Recordings</para>
       </customization>
-      <customization co="object" dd="gd">
+      <customization co="object" dd="greekdancing">
          <para>Hunt (Yvonne) Greek Folk Dance Collection</para>
       </customization>
-      <customization co="item" dd="gd">
+      <customization co="item" dd="greekdancing">
          <para>Hunt (Yvonne) Greek Folk Dance Collection</para>
       </customization>
-      <customization co="no" dd="gd">
+      <customization co="no" dd="greekdancing">
          <para>Hunt (Yvonne) Greek Folk Dance Collection</para>
       </customization>
       <customization co="object" dd="p16786coll3" resourceType="text song oh">

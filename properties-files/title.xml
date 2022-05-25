@@ -107,17 +107,17 @@
          <para>If possible construct as follows: [Name of show] [##]</para>
          <para>When devising a title, also create a note describing the source of title informtion.</para>
       </customization>
-      <customization co="no" dd="gd">
+      <customization co="no" dd="greekdancing">
          <para>Ener a brief descriptive phrase that describes the video segment.</para>
          <para>Titles can be divised generally using the following facets in this order: who, what, where, when. </para>
          <para>All standalone objects must have a title.</para>
       </customization>
-      <customization co="object" dd="gd">
+      <customization co="object" dd="greekdancing">
          <para>Enter a brief descriptive phrase that describes the video segment.</para>
          <para>Titles can be devised generally using the following facets in this order: who, what, where, when. </para>
          <para>All compound objects must have a title.</para>
       </customization>
-      <customization co="item" dd="gd">
+      <customization co="item" dd="greekdancing">
          <para>All compound-object items must have a title.</para>
          <para>For video file compound-object items, enter the following:</para>
          <para>[compound-object title] (video)</para>
@@ -222,13 +222,13 @@
       <customization co="item" dd="krab">
          <para>Women Protest 04</para>
       </customization>
-      <customization co="no" dd="gd">
+      <customization co="no" dd="greekdancing">
          <para>Cheese Sunday and Clean Monday during Apokreas, 1992 in Flamboro, Sohos, and Pondismeno</para>
       </customization>
-      <customization co="object" dd="gd">
+      <customization co="object" dd="greekdancing">
          <para>Cheese Sunday and Clean Monday during Apokreas, 1992 in Flamboro, Sohos, and Pondismeno</para>
       </customization>
-      <customization co="item" dd="gd">
+      <customization co="item" dd="greekdancing">
          <para>Cheese Sunday and Clean Monday during Apokreas, 1992 in Flamboro, Sohos, and Pondismeno (video)</para>
          <para>Cheese Sunday and Clean Monday during Apokreas, 1992 in Flamboro, Sohos, and Pondismeno (table of contents)</para>
       </customization>

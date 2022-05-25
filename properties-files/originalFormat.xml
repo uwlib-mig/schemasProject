@@ -68,7 +68,7 @@
       <customization co="no" dd="p16786coll3">
          <para>🚧 🚧 🚧</para>
       </customization>
-      <customization co="item" dd="gd" resourceType="default">
+      <customization co="item" dd="greekdancing" resourceType="default">
          <para>Enter the original format.</para>
          <para>&lt;br/&gt;For video content taken from VHS tapes, use the following value from the &lt;a href="http://www.rdaregistry.info/termList/RDACarrierType/"&gt;RDA Carrier Type&lt;/a&gt; vocabulary:</para>
          <para>videocassette</para>
@@ -107,7 +107,7 @@
          <para>online resource</para>
          <para>sheet</para>
       </customization>
-      <customization co="item" dd="gd" resourceType="default">
+      <customization co="item" dd="greekdancing" resourceType="default">
          <para>videocassette</para>
          <para>application/msword</para>
       </customization>

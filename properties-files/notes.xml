@@ -48,14 +48,14 @@
          <para>Enter any descriptive narrative information of importance about the project and its subjects that is not recorded elsewhere.</para>
          <para>Each separate "note" should be a paragraph. Additional notes can be added, separated from the previous note using a blank line.</para>
       </customization>
-      <customization co="item" dd="gd">
+      <customization co="item" dd="greekdancing">
          <para>Notes should not be needed to describe the items but may be used if appropriate.</para>
       </customization>
-      <customization co="no" dd="gd">
+      <customization co="no" dd="greekdancing">
          <para>Enter any information of importance that is not represented elsewhere.</para>
          <para>Each separate "note" should be a paragraph. Additional notes can be added, separated from the previous note using a blank line.</para>
       </customization>
-      <customization co="object" dd="gd">
+      <customization co="object" dd="greekdancing">
          <para>Enter any information of importance that is not represented elsewhere.</para>
          <para>Each separate "note" should be a paragraph. Additional notes can be added, separated from the previous note using a blank line.</para>
       </customization>
@@ -129,15 +129,15 @@
          <para>Episode was never broadcast; date of episode noted on container: October 7, 1984.</para>
          <para>Interview was conducted during the occupation of the Sun newspaper offices in Leeds by the the Women Against Violence Against Women organization.</para>
       </customization>
-      <customization co="object" dd="gd">
+      <customization co="object" dd="greekdancing">
          <para>Filmed on Cheese Sunday and Clean Monday during Apokreas, 1992.</para>
          <para>“Dracula” appears and entertains the crowd.</para>
       </customization>
-      <customization co="no" dd="gd">
+      <customization co="no" dd="greekdancing">
          <para>Filmed on Cheese Sunday and Clean Monday during Apokreas, 1992.</para>
          <para>“Dracula” appears and entertains the crowd.</para>
       </customization>
-      <customization co="item" dd="gd">
+      <customization co="item" dd="greekdancing">
          <para>The digitization process caused corruption starting at 7:02 and ending at 7:13.</para>
       </customization>
       <customization co="object" dd="p16786coll3" resourceType="text">

@@ -13,8 +13,7 @@
     </metadataLiaisons>
     <cdmCo>yes</cdmCo>
     <standalone>no</standalone>
-    <!-- to do add CONTENTdm coll alias -->
-    <cdmCode>hygfdc</cdmCode>
+    <cdmCode>greekdancing</cdmCode>
     <properties>
         <xi:include href="../../properties-files/title.xml"/>
         <xi:include href="../../properties-files/source.xml"/>
@@ -27,19 +26,10 @@
         <xi:include href="../../properties-files/instrumentsDepicted.xml"/>
         <xi:include href="../../properties-files/eventsDepicted.xml"/>
         <xi:include href="../../properties-files/notes.xml"/> 
-        <!-- 
-            2022-01-19 Remove per collection-manager request
-        <xi:include href="../../properties-files/regionalAffiliationDance.xml"/> 
-        -->
         <xi:include href="../../properties-files/regionalAffiliationGroup.xml"/>
         <xi:include href="../../properties-files/regionalAffiliationGroupLcnaf.xml"/>
         <xi:include href="../../properties-files/videoLocations.xml"/>
         <xi:include href="../../properties-files/videoLocationsLcnaf.xml"/>
-        <!--
-            2022-02-15 Remove lat/long props per collection-manager request 
-        <xi:include href="../../properties-files/latitude.xml"/>
-        <xi:include href="../../properties-files/longitude.xml"/>
-        -->
         <xi:include href="../../properties-files/genreFormLcgft.xml"/>
         <xi:include href="../../properties-files/objectType.xml"/>
         <xi:include href="../../properties-files/digitalCollection.xml"/>
@@ -54,10 +44,8 @@
         <xi:include href="../../properties-files/originalFormat.xml"/>
         <xi:include href="../../properties-files/digitalReproductionInformation.xml"/>
         <xi:include href="../../properties-files/staffNotes.xml"/>
-        <!--
-            2022-05-06 Remove institution, unsure what it is for
-        <xi:include href="../../properties-files/institution.xml"/>
-        -->
+        <xi:include href="../../properties-files/digitalFileName.xml"/>
         <xi:include href="../../properties-files/discNumber.xml"/>
+        <xi:include href="../../properties-files/institution.xml"/>
     </properties>
 </migDataDictionary>

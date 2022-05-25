@@ -35,12 +35,12 @@
         <instructions co="object">
             <para>Enter the name of the dance or dances depicted.</para>
         </instructions>
-        <customization dd="gd" co="no">
+        <customization dd="greekdancing" co="no">
             <para>Enter the name of the dance or dances depicted.</para>
             <para>Enter the name of the dance as provided by Yvonne Hunt.</para>
             <para>Separate multiple values with a semi-colon.</para>
         </customization>
-        <customization dd="gd" co="object">
+        <customization dd="greekdancing" co="object">
             <para>Enter the name of the dance or dances depicted.</para>
             <para>Enter the name of the dance as provided by Yvonne Hunt.</para>
             <para>Separate multiple values with a semi-colon.</para>

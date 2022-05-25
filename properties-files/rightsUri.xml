@@ -44,7 +44,7 @@
       <customization co="object" dd="uwtoh">
          <para>Enter the following URI from rightsstatements.org: http://rightsstatements.org/vocab/InC-EDU/1.0/ .</para>
       </customization>
-      <customization co="object" dd="gd" resourceType="default">
+      <customization co="object" dd="greekdancing" resourceType="default">
          <para>Enter the following value:</para>
          <para>http://rightsstatements.org/vocab/InC/1.0/</para>
       </customization>
@@ -73,7 +73,7 @@
       <customization co="object" dd="uwtoh">
          <para>http://rightsstatements.org/vocab/InC-EDU/1.0/</para>
       </customization>
-      <customization co="object" dd="gd" resourceType="default">
+      <customization co="object" dd="greekdancing" resourceType="default">
          <para>http://rightsstatements.org/vocab/InC/1.0/</para>
       </customization>
       <customization co="object" dd="p16786coll3" resourceType="text song oh">

@@ -9,30 +9,27 @@
         <dc>none</dc>
     </labels>
     <uwRequired>
-        <uwStandalone>no</uwStandalone>
+        <uwStandalone>yes</uwStandalone>
         <uwObject>no</uwObject>
-        <uwItem>no</uwItem>
+        <uwItem>yes</uwItem>
     </uwRequired>
     <cdm>
-        <label/>
-        <cdmDatatype>uwAdministrative</cdmDatatype>
-        <cdmLarge>notApplicable</cdmLarge>
-        <searchable>notApplicable</searchable>
-        <hidden>notApplicable</hidden>
+        <label>Original File Name</label>
+        <cdmDatatype>text</cdmDatatype>
+        <cdmLarge>no</cdmLarge>
+        <searchable>yes</searchable>
+        <hidden>yes</hidden>
         <cdmRequired>no</cdmRequired>
-        <cdmControlledVocab>notApplicable</cdmControlledVocab>
+        <cdmControlledVocab>no</cdmControlledVocab>
     </cdm>
     <dspace>
         <dspaceProperty/>
     </dspace>
     <descriptions>
         <definition>
-            <para>The complete name including file extension of a digital file representing a resource to be described by one or more property/value pairs in CONTENTdm. For use when entering metadata in spreadsheets.</para>
+            <para>The complete name including file extension of a digital file representing a resource to be described by one or more property/value pairs in CONTENTdm.</para>
         </definition>
         <!-- per 2022 info from Anne Graham, no file name should be provided at the CO-level, only at the CO-item-level -->
-        <instructions co="object">
-            <para>Enter the name of the digital file representing the compound object, that is, an access item.</para>
-        </instructions>
         <instructions co="item">
             <para>Enter the name of the digital file representing the compound-object item, that is, an access item.</para>
         </instructions>
@@ -105,7 +102,7 @@
         <created4Coll>Sephardic Studies Digital Collection - p16786coll3</created4Coll>
         <justification>Property exists in &lt;a href="https://www.lib.washington.edu/cams/mig/datadicts/special-collections-oral-histories-data-dictionary"&gt;Special Collections Oral Histories Data Dictionary&lt;/a&gt;, defining for continued use and output to HTML MAPs.</justification>
         <changeLog>
-            <change/>
+            <change date="2022-05-24">Update property per information from ITS-DS. Original File Name information is desired for CONTENTdm resources. Used settings made by ITS-DS for the Greek dances collection to update property info.</change>
         </changeLog>
     </history>
 </property>

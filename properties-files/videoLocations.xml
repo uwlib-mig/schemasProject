@@ -37,7 +37,7 @@
             <para>Separate multiple places using a semi-colon.</para>
             <para>Use the GeoNet (https://community.esri.com/) form of the name, if available. If not, use the most common form/spelling.</para>
         </instructions>
-        <customization co="object" dd="gd" resourceType="default">
+        <customization co="object" dd="greekdancing" resourceType="default">
             <para>Enter the name of the places in which the video segments were recorded.</para>
             <para>Separate multiple places using a semi-colon.</para>
             <para>Record the form of each place name as found in the text &lt;a href="https://alliance-primo.hosted.exlibrisgroup.com/permalink/f/kjtuig/CP71232515330001451"&gt;A Nest of Gold&lt;/a&gt;.</para>
@@ -52,7 +52,7 @@
             <para>Skotoussa (Kentriki Makedonia, Greece)</para>
             <para>Iraklia (Kentriki Macedonia, Greece)</para>
         </example>
-        <customization co="object" dd="gd">
+        <customization co="object" dd="greekdancing">
             <para>Kimisi (Greece)</para>
             <para>Skotoussa (Kentriki Makedonia, Greece)</para>
             <para>Iraklia (Kentriki Macedonia, Greece)</para>

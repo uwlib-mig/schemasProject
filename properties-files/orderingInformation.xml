@@ -54,7 +54,7 @@
          <para>Enter the instructions for ordering.</para>
          <para>Enter: "To order a reproduction, inquire about permissions, or for information about prices see:  http://www.lib.washington.edu/specialcollections/services/reproduction/reproduction."</para>
       </customization>
-      <customization co="object" dd="gd">
+      <customization co="object" dd="greekdancing">
          <para>Items in the Hunt (Yvonne) Greek Folk Dance Collection cannot be ordered at this time.</para>
          <para>Enter "Items cannot be ordered."</para>
       </customization>
@@ -96,7 +96,7 @@
          <para>To order a reproduction, inquire about permissions, or for information about prices see:  http://www.lib.washington.edu/specialcollections/services/reproduction/reproduction.</para>
          <para>Please cite the Digital ID Number.</para>
       </customization>
-      <customization co="object" dd="gd">
+      <customization co="object" dd="greekdancing">
          <para>Items cannot be ordered.</para>
       </customization>
       <customization co="object" dd="p16786coll3" resourceType="text song oh">

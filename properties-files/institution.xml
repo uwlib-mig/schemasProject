@@ -27,13 +27,17 @@
    <descriptions>
       <!-- BMR note: Confirming that these definitions are as they should be... -->
       <definition>
-         <para>[Uncertain]</para>
+         <para>Information for the purpose of facilitating browsing in the University of Washington Libraries Digital Collections online interface.</para>
       </definition>
       <instructions co="no">
          <para>[Uncertain]</para>
       </instructions>
       <instructions co="object">
          <para>[Uncertain]</para>
+      </instructions>
+      <instructions co="item">
+         <para>Enter the following value:</para>
+         <para></para>
       </instructions>
       <!-- DO NOT USE FOR ITEMS, MIG decision 2020-06
       <instructions co="item">
@@ -42,10 +46,23 @@
       <customization co="item" dd="civilwar">
          <para>Enter "Special Collections"</para>
       </customization>
+      <customization co="object" dd="p16786coll3" resourceType="oh song text">
+         <para>Use the following value:</para>
+         <para>special collections</para>
+      </customization>
+      <customization co="no" dd="p16786coll3">
+         <para>Use the following value:</para>
+         <para>special collections</para>
+      </customization>
+      <customization co="object" dd="greekdancing" resourceType="default">
+         <para>Use the following value:</para>
+         <para>uw faculty, library, and teaching collections</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="no">
-         <para>[none]</para>
+         <para>uw faculty, library, and teaching collections</para>
+         <para>special collections</para>
       </example>
       <!--
       <example co="item">
@@ -56,6 +73,15 @@
       </example>
       <customization co="item" dd="civilwar">
          <para>Special Collections</para>
+      </customization>
+      <customization co="object" dd="p16786coll3" resourceType="oh song text">
+         <para>special collections</para>
+      </customization>
+      <customization co="no" dd="p16786coll3" resourceType="oh song text">
+         <para>special collections</para>
+      </customization>
+      <customization co="object" dd="greekdancing" resourceType="default">
+         <para>uw faculty, library, and teaching collections</para>
       </customization>
    </examples>
    <additionalInfo>
@@ -104,6 +130,7 @@
          <change/>
          <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
          <change date="2020-06-20">Removed ITEM from output per MIG decision</change>
+         <change date="2022-05-24">Update element for use in Sephardic Studies, Greek dances.</change>
       </changeLog>
    </history>
 </property>

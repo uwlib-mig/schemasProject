@@ -79,11 +79,10 @@
         <xi:include href="../../properties-files/physicalDescription.xml"/>
         <xi:include href="../../properties-files/timecodeStart.xml"/><!-- NEW timecodeStart -->
         <xi:include href="../../properties-files/digitalReproductionInformation.xml"/>
-        
-        <!-- ADMIN / CONTENTDM PROPS -->
         <xi:include href="../../properties-files/cataloging.xml"/>
         <xi:include href="../../properties-files/staffNotes.xml"/>
         <xi:include href="../../properties-files/digitalFileName.xml"/><!-- NEW digitalFileName -->
+        <xi:include href="../../properties-files/institution.xml"/>
         
         <!-- omitting admin props which 
             don't require input from Sephardic Studies staff or cataloging staff:

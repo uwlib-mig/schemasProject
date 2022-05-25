@@ -53,7 +53,7 @@
       <customization co="no" dd="krab">
          <para>Input the following text: "To order a reproduction, inquire about permissions, or for information about prices see:  http://www.lib.washington.edu/specialcollections/services/reproduction/reproduction."</para>
       </customization>
-      <customization co="object" dd="gd" resourceType="default">
+      <customization co="object" dd="greekdancing" resourceType="default">
          <para>Enter the following value:</para>
          <para>Permission granted to make items available online by the videographer and the holding library, the Public Library of Serres, Greece. Reproductions not available.</para>
       </customization>
@@ -95,7 +95,7 @@
       <customization co="no" dd="krab">
          <para>To order a reproduction, inquire about permissions, or for information about prices see:  http://www.lib.washington.edu/specialcollections/services/reproduction/reproduction.</para>
       </customization>
-      <customization co="object" dd="gd" resourceType="default">
+      <customization co="object" dd="greekdancing" resourceType="default">
          <para>Permission granted to make items available online by the videographer and the holding library, the Public Library of Serres, Greece. Reproductions not available.</para>
       </customization>
       <customization co="object" dd="p16786coll3" resourceType="text song oh">
