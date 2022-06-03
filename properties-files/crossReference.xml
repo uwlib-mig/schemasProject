@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
     <uid>p133</uid>
     <labels>
@@ -22,7 +23,7 @@
         <cdmControlledVocab>no</cdmControlledVocab>
     </cdm>
     <dspace>
-        <dspaceProperty></dspaceProperty>
+        <dspaceProperty/>
     </dspace>
     <descriptions>
         <definition>
@@ -38,9 +39,14 @@
         <customization co="object" dd="p16786coll3" resourceType="song">
             <para>Provide any references to other Sephardic ballad collections given for this ballad as it is described in &lt;a href="https://alliance-primo.hosted.exlibrisgroup.com/permalink/f/kjtuig/CP71363340660001451"&gt;"Romances judeo-españoles de Oriente : nueva recolección"&lt;/a&gt;.</para>
             <para>Locate the song in "Romances judeo-españoles de Oriente: nueva recolección" by Rina Benmayor and Judith H. Mauleón.</para>
-            <para>&lt;br/&gt;Copy the list of cross references, including the abbreviation and numeric page number, which appears after the word "bibliographia."</para>
+            <para>&lt;br/&gt;Copy the list of cross references--including the resource (or an abbreviation denoting a resource) and numeric page number--which appears after the word "bibliographia."</para>
+            <para>Include full titles for each abbreviation.</para>
             <para>Separate multiple values with a semicolon and space ("; ").</para>
-            <para>Legend: MP = Menendez Pidal; CAT-IND = Armistead and Silverman; RJEO = Romances judeo-españoles de Oriente.</para>
+            <para>Resource abbreviations are as follows:</para>
+            <para>AMP - Armistead, Samuel G., with the collaboration of Selma Margaretten, Paloma Montero, and Ana Valenciano and with musical transcriptions edited by Israel J. Katz. El romancero judeo-español en el Archivo Menéndez Pidal (Catálogo-índice de romances y canciones) (Catálogo-índice de romances y canciones ) 3 vols. Madrid: Catedra-Seminario Menéndez Pidal, 1977, 387; 393; 358 pp. &lt;a href="http://bit.ly/1NMq6Pt"&gt;bit.ly/1NMq6Pt&lt;/a&gt;</para>
+            <para>FLSJ - Armistead, Samuel G. and Joseph H. Silverman. Folk Literature of the Sephardic Jews. Series in eight volumes. Catalog online at: &lt;a href="http://www.sephardifolklit.org/"&gt;http://www.sephardifolklit.org/&lt;/a&gt;</para>
+            <para>MP - Menéndez Pidal, Ramón. “Catálogo del romancero judío-español,"" Cultura Española, 4 (1906), 1045–1077; 5 (1907), 161–199. &lt;a href="http://bit.ly/1NT9xPL"&gt;bit.ly/1NT9xPL&lt;/a&gt;</para>
+            <para>RJEO - Benmayor, R. Romances judeo-españoles de Oriente: Nueva recolección. Musical transcriptions by Judith H. Mauleón. Madrid: Gredos, 1979.</para>
         </customization>
         <customization co="object" dd="p16786coll3" resourceType="text">
             <para>Optional: Provide information about one or more sources which provide additional information about the resource.</para>
@@ -57,15 +63,19 @@
             <para>https://en.wikipedia.org/wiki/Application_profile</para>
         </example>
         <customization co="object" dd="p16786coll3" resourceType="song">
-            <para>RJEO 25b; MP 43</para>
+            <para>RJEO 5a; AMP F7; MP 45; FLSJ IX, 45.</para>
+            <para>RJEO - Benmayor, R. Romances judeo-españoles de Oriente: Nueva recolección. Musical transcriptions by Judith H. Mauleón. Madrid: Gredos, 1979.</para>
+            <para>AMP - Armistead, Samuel G., with the collaboration of Selma Margaretten, Paloma Montero, and Ana Valenciano and with musical transcriptions edited by Israel J. Katz. El romancero judeo-español en el Archivo Menéndez Pidal (Catálogo-índice de romances y canciones) (Catálogo-índice de romances y canciones ) 3 vols. Madrid: Catedra-Seminario Menéndez Pidal, 1977, 387; 393; 358 pp. http://bit.ly/1NMq6Pt</para>
+            <para>MP - Menéndez Pidal, Ramón. “Catálogo del romancero judío-español,"" Cultura Española, 4 (1906), 1045–1077; 5 (1907), 161–199. http://bit.ly/1NT9xPL</para>
+            <para>FLSJ - Armistead, Samuel G. and Joseph H. Silverman. Folk Literature of the Sephardic Jews. Series in eight volumes. Catalog online at: http://www.sephardifolklit.org/</para>
         </customization>
     </examples>
-    <additionalInfo></additionalInfo>
+    <additionalInfo/>
     <marc>
-        <dcgMarcMapping></dcgMarcMapping>
+        <dcgMarcMapping/>
     </marc>
-    <xsd></xsd>
-    <rdf></rdf>
+    <xsd/>
+    <rdf/>
     <history>
         <dateCreated>
             <range>
@@ -76,7 +86,7 @@
         <created4Coll>Sephardic Studies Digital Collection - p16786coll3</created4Coll>
         <justification>Collection owner would like to provde information about other ballad collections containing a given resource.</justification>
         <changeLog>
-            <change></change>
+            <change date="2022-06-02">Update guidance and examples to match metadata coming from project team.</change>
         </changeLog>
     </history>
 </property>
