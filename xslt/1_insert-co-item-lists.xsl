@@ -6,8 +6,7 @@
     
     <xsl:output method="xml" indent="yes"/>
 
-    <!-- to do: need full list of collection IDs  -->
-    <xsl:variable name="collectionId">p16786coll3</xsl:variable>
+    <xsl:variable name="collectionId">p16786coll9</xsl:variable>
     <xsl:variable name="base"
         select="concat('https://server16786.contentdm.oclc.org/cgi-bin/showfile.exe?CISOROOT=/', $collectionId, '&amp;CISOPTR=')"/>
     
