@@ -46,7 +46,7 @@
          <para>For Aramaic-language resources, simply enter "Aramaic".</para>
          <para>Separate multiple values using a semicolon and space (“; “).</para>
          <para>Order of values does not matter.</para>
-         <para>Required for all compound objects.</para>
+         <para>Required for all compound objects where applicable.</para>
       </customization>
       <customization co="object" dd="p16786coll3" resourceType="oh song">
          <para>Enter language names, fully spelled out, as they appear in the &lt;a href="https://iso639-3.sil.org/code_tables/639/data"&gt;ISO 639 Code Tables&lt;/a&gt; "Language Name(s)" column. Note that Ladino is listed as such, and not as Judeo-Spanish or Judezmo.</para>
