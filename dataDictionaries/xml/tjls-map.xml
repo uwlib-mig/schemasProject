@@ -41,7 +41,7 @@
         <xi:include href="../../properties-files/digitalFormat.xml"/>
         <xi:include href="../../properties-files/originalFormat.xml"/>
         <xi:include href="../../properties-files/cataloging.xml"/>
-        <xi:include href="../../properties-files/digitalFileName.xml"/>
         <xi:include href="../../properties-files/digitalReproductionInformation.xml"/>
+        <xi:include href="../../properties-files/digitalFileName.xml"/>
     </properties>
 </migDataDictionary>
