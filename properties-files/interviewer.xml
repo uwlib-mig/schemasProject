@@ -51,6 +51,19 @@
          <para>Separate multiple entries with a semicolon and space (“; “).</para>
          <para>Order of values does not matter.</para>
       </customization>
+      <customization co="object" dd="temp_alias_001" resourceType="default">
+         <para>Enter the name(s) of the person or persons who conducted the interview.</para>
+         <para>&lt;br/&gt;</para>
+         <para>Most interviews in this collection feature the same interviewers. For these, use the example values provided below.</para>
+         <para>&lt;br/&gt;</para>
+         <para>When appropriate, search the Library of Congress Name Authority File &lt;a href="https://id.loc.gov/authorities/names.html"&gt;via id.loc.gov&lt;/a&gt; for the interviewer.</para>
+         <para>If a potential match is found, confirm that it is the person associated with the resource. It may be helpful to review information included in the web display such as source(s) of information and occupation (for persons), and/or to follow the links provided for exact and/or closely matching concepts from other schemes.</para>
+         <para>Copy the form of name as it appears at the top of the page, including dates.</para>
+         <para>&lt;br/&gt;</para>
+         <para>If no record exists, format personal names as follows: </para>
+         <para>[Last Name], [First Name]</para>
+         <para>Separate multiple values with semicolons.</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="object">
@@ -77,6 +90,9 @@
       </customization>
       <customization co="object" dd="p16786coll3" resourceType="oh">
          <para>Droker, Howard</para>
+      </customization>
+      <customization co="object" dd="temp_alias_001" resourceType="default">
+         <para>Hanneman, Mary L. (Mary Louise); Hoffman, Lisa M. (Lisa Mae)</para>
       </customization>
    </examples>
    <additionalInfo/>
