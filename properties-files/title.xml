@@ -184,6 +184,29 @@
          <para>[interviewee name] interview, transcript</para>
          <para>All compound-object items--audio files and image files--must have a title.</para>
       </customization>
+      <customization co="object" dd="temp_alias_001" resourceType="default">
+         <para>All compound objects must have a title.</para>
+         <para>For interviews with individuals, construct as follows:</para>
+         <para>[English First Name] [Japanese First Name] [(Maiden Name)*] [Last Name] interview</para>
+         <para>*Include a maiden name if provided. Put the maiden name in parentheses.</para>
+         <para>&lt;br/&gt;</para>
+         <para>For interviews with two people, include both names and construct as follows:</para>
+         <para>[English First Name] [Japanese First Name] [(Maiden Name)*] [Last Name] and [English First Name] [Japanese First Name] [(Maiden Name)] [Last Name] interview</para>
+         <para>&lt;br/&gt;</para>
+         <para>For group interviews (with 3 or more interviewees), input the name of the group as indicated on the video file. Individual interviewee names will be listed in the interviewee field.</para>
+      </customization>
+      <customization co="item" dd="temp_alias_001" resourceType="default">
+         <para>Construct compound-object item titles using the Title value for the compound object.</para>
+         <para>&lt;br/&gt;</para>
+         <para>For video files, construct as follows:</para>
+         <para>[compound-object title], video</para>
+         <para>&lt;br/&gt;</para>
+         <para>For audio files, construct as follows:</para>
+         <para>[compound-object title], audio</para>
+         <para>&lt;br/&gt;</para>
+         <para>For transcript files, construct as follows:</para>
+         <para>[compound-object title], transcript</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="no">
@@ -264,6 +287,22 @@
          <para>Solomon Maimon interview, audio</para>
          <para>Image of Solomon Maimon</para>
          <para>Solomon Maimon interview, transcript</para>
+      </customization>
+      <customization co="object" dd="temp_alias_001" resourceType="default">
+         <para>Sally Sumeko Shirasago interview</para>
+         <para>Robert Mitsuhiro Takasugi interview</para>
+         <para>Betty Hiroko (Fukuhara) Yoshioka interview</para>
+         <para>Harue Koano Ozaki and Sam Saburo Ozaki interview</para>
+         <para>Oakland Buddhist Church group interview</para>
+      </customization>
+      <customization co="item" dd="temp_alias_001" resourceType="default">
+         <para>Sally Sumeko Shirasago interview, video</para>
+         <para>Sally Sumeko Shirasago interview, transcript</para>
+         <para>Betty Hiroko (Fukuhara) Yoshioka interview, video</para>
+         <para>Betty Hiroko (Fukuhara) Yoshioka interview, audio</para>
+         <para>Betty Hiroko (Fukuhara) Yoshioka interview, transcript</para>
+         <para>Oakland Buddhist Church group interview, video</para>
+         <para>Oakland Buddhist Church group interview, transcript</para>
       </customization>
    </examples>
    <additionalInfo/>
