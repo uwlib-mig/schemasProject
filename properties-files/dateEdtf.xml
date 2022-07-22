@@ -138,6 +138,22 @@
          <para>If the value of Date of Broadcast is not any of the above, consult the EDTF spedification to determine the appropriate notation.</para>
          <para>Date-Edtf value should agree with dates values entered in Date of Broadcast and Dates fields.</para>
       </customization>
+      <customization co="object" dd="temp_alias_001" resourceType="default">
+         <para>Record a value for the Date field prior to recording this value.</para>
+         <para>&lt;br/&gt;</para>
+         <para>Reformat the Date field value to express the value using the Library of Congress Extended Date Time Format (EDTF). The &lt;a href="https://www.loc.gov/standards/datetime/"&gt;most recent version of EDTF&lt;/a&gt; is available online.</para>
+         <para>&lt;br/&gt;</para>
+         <para>Reformat the Date value as follows:</para>
+         <para>If the value of Date is “YYYY”, enter “YYYY”.</para>
+         <para>If the value of Date is “YYYY?”, enter “YYYY?”.</para>
+         <para>If the value of Date is “[month] YYYY” enter “YYYY-MM”. </para>
+         <para>If the value of Date is “[month] DD, YYYY”, enter “YYYY-MM-DD".</para>
+         <para>If the value of Date is “between YYYY and YYYY”, enter “YYYY/YYYY”.</para>
+         <para>If the value of Date is “between [month] YYYY and [month] YYYY”, enter “YYYY-MM/YYYY-MM”.</para>
+         <para>If the value of Date is " between [month] DD, YYYY and [month] DD, YYYY”, enter “YYYY-MM-DD/YYYY-MM-DD".</para>
+         <para>If the value of Date is “between YYYY and YYYY?”, enter “YYYY?/YYYY?”.</para>
+         <para>If the value of Date is not as in any of the above examples, use &lt;a href="https://www.loc.gov/standards/datetime/"&gt;the EDTF specification&lt;/a&gt; to format a value, and/or contact the collection manager or metadata liaison.</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="no">
@@ -179,6 +195,16 @@
          <para>If Date of Broadcast field = "January 2008" then Date EDTF = "2008-01"</para>
          <para>If Date of Broadcast field = "between 1930 and 1939" then Date EDTF = "1930/1939"</para>
          <para>If Date of Broadcast field = "between 1855 and 1999?" then Date EDTF = "1855?/1999?"</para>
+      </customization>
+      <customization co="object" dd="temp_alias_001" resourceType="default">
+         <para>[If Date field is “2005”] 2005</para>
+         <para>[If Date field is “2005?”] 2005?</para>
+         <para>[If Date field is “March 2005”] 2005-03</para>
+         <para>[If Date field is “March 11, 2005”] 2005-03-11</para>
+         <para>[If Date field is “between 2005 and 2006”] 2005/2006</para>
+         <para>[If Date field is “between January 2005 and February 2005”] 2005-01/2005-02</para>
+         <para>[If Date field is “between January 15, 2005 and February 01, 2005”] 2005-01-15/2005-02-01</para>
+         <para>[If Date field is “between 2005 and 2006?”] 2005?/2006?</para>
       </customization>
    </examples>
    <additionalInfo>
