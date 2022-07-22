@@ -120,6 +120,23 @@
          <para>If no date present on item, generate an estimate based on similar items in other collections: &lt;a href="http://catdir.loc.gov/catdir/toc/becites/ladino/63062107a.html"&gt;LOC Ladino catalog&lt;/a&gt;, &lt;a href="https://hollis.harvard.edu/primo-explore/search?vid=HVD2&amp;sortby=rank&amp;lang=en_US"&gt;Harvard University Library&lt;/a&gt;, and the &lt;a href="https://web.nli.org.il/sites/nli/English/library/Pages/default.aspx"&gt;National Library of Israel&lt;/a&gt; are viable options.</para>
          <para>Required for all standalone objects.</para>
       </customization>
+      <customization co="object" dd="temp_alias_001" resourceType="default">
+         <para>Enter the date on which the interview took place.</para>
+         <para>&lt;br/&gt;</para>
+         <para>This value will be used to create values for the Date (EDTF) and Dates fields.</para>
+         <para>If the interview took place over a range of days, enter a range of dates, following the guidance below.</para>
+         <para>&lt;br/&gt;</para>
+         <para>Enter the date or date range using one of the following formats:</para>
+         <para>YYYY</para>
+         <para>YYYY?</para>
+         <para>[month] YYYY</para>
+         <para>[month] DD, YYYY</para>
+         <para>between YYYY and YYYY</para>
+         <para>between [month] YYYY and [month] YYYY</para>
+         <para>between [month] DD, YYYY and [month] DD, YYYY</para>
+         <para>between YYYY and YYYY?</para>
+         <para>If the date of interview is unknown, enter an approximate date using either “YYYY?” or “between YYYY and YYYY?”.</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="no">
@@ -157,6 +174,16 @@
          <para>ca. 1900</para>
          <para>not before 1900</para>
          <para>after 1900 [example of estimate]</para>
+      </customization>
+      <customization co="object" dd="temp_alias_001" resourceType="default">
+         <para>2005</para>
+         <para>2005?</para>
+         <para>March 2005</para>
+         <para>March 11, 2005</para>
+         <para>between 2005 and 2006</para>
+         <para>between January 2005 and February 2005</para>
+         <para>between January 15, 2005 and February 01, 2005</para>
+         <para>between 2005 and 2006?</para>
       </customization>
    </examples>
    <additionalInfo/>
