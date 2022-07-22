@@ -84,6 +84,13 @@
          <para>For oral histories, be sure to record a value for the Index property which provides needed information for UWL cataloging staff to perform subject analysis. Cataloging staff may also use transcripts for subject analysis.</para>
          <para>For details about the information needed by cataloging staff, contact the collection manager(s) or metadata liaison(s).</para>
       </customization>
+      <customization co="object" dd="temp_alias_001">
+         <para>University of Washington Libraries (UWL) cataloging staff will provide a value or values for this property.</para>
+         <para>&lt;br/&gt;</para>
+         <para>For initial metadata creation outside the UWL Cataloging and Metadata Services unit:</para>
+         <para>Do not provide a value for this property.</para>
+         <para>Be sure to provide the value 'xyz' for the Cataloging property to indicate to cataloging staff that a value is needed.</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="no">
@@ -110,6 +117,9 @@
          <para>Jews--Washington (State)--History</para>
          <para>Temple de Hirsch (Seattle, Wash.)</para>
          <para>Fish trade--Washington (State)--History</para>
+      </customization>
+      <customization co="object" dd="temp_alias_001" resourceType="default">
+         <para>&#x1F6A7; &#x1F6A7; &#x1F6A7;</para>
       </customization>
    </examples>
    <additionalInfo/>

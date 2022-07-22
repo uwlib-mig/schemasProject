@@ -120,6 +120,18 @@
          <para>This field is indexed and enables date searching in CONTENTdm.</para>
          <para>The Dates value should agree with date values entered in Date-Edtf and Date fields.</para>
       </customization>
+      <customization co="object" dd="temp_alias_001" resourceType="default">
+         <para>This field is indexed and enables searching by year in CONTENTdm, but values are not visible to users.</para>
+         <para>&lt;br/&gt;</para>
+         <para>Create a value for the Date field prior to creating this value.</para>
+         <para>Reformat the Date field value according to the instructions below, entering date information as a year or years only.</para>
+         <para>When the value of Date is “YYYY”, enter YYYY.</para>
+         <para>When the value of Date is “YYYY?”, enter an eleven-year date range, with five years on either side of the uncertain date. Do not use commas or other punctuation to separate years.</para>
+         <para>When the value of Date is “[month] YYYY”, enter the year only in the following format: YYYY.</para>
+         <para>When the value of Date is “[month] DD, YYYY”, enter the year only in the following format: YYYY.</para>
+         <para>When the value of Date is “between YYYY and YYYY”, enter all years in the date range as YYYY. Do not use commas or other punctuation to separate years.</para>
+         <para>When the value of Date is “between YYYY and YYYY?”, enter all years in the date range as YYYY, plus five years before the earliest date and five years after the latest date. Do not use commas or other punctuation to separate years.</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="no">
@@ -140,6 +152,16 @@
          <para>1939 1940 1941 1942 1943 1944 1945</para>
          <para>1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950</para>
       </example>
+      <customization co="object" dd="temp_alias_001" resourceType="default">
+         <para>[If Date field is "2005"] 2005</para>
+         <para>[If Date field is "2005?"] 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010</para>
+         <para>[If Date field is "March 2005"] 2005</para>
+         <para>[If Date field is "March 11, 2005"] 2005</para>
+         <para>[If Date field is "between 2005 and 2006"] 2005 2006</para>
+         <para>[If Date field is “between January 2005 and February 2005”] 2005</para>
+         <para>[If Date field is “between January 15, 2005 and February 01, 2005”] 2005</para>
+         <para>[If Date field is "between 2005 and 2006?"] 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011</para>
+      </customization>
    </examples>
    <additionalInfo/>
    <marc>

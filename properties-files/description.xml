@@ -34,12 +34,22 @@
          <para>Note any key events, organizations, perspectives, and significant names that may have come up in the interview.</para>
          <para>When appropriate, note interviewees contributions to encouraging a diverse and inclusive campus.</para>
       </customization>
+      <customization co="object" dd="temp_alias_001" resourceType="default">
+         <para>Provide a brief summary of the interview.</para>
+         <para>Write in present tense.</para>
+         <para>Use the full name of the interviewee in the first sentence.</para>
+         <para>For each subsequent mention of the interviewee's name, use only the last name.</para>
+         <para>Include any key events, buildings, individuals, etc. that may have come up in the interview as appropriate.</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="object"/>
       <example co="no"/>
       <customization co="object" dd="uwtoh">
          <para>Joao Fonseca discusses his years in the UWT Liberal Studies / Interdisciplinary Arts and Sciences from 1990 to present. Fonseca addresses the development of the department from its founding to its establishment as a school in 2014. Describes the many contributions of Wiliam Richardson and Michael Allen. Includes a description of the acquisition and display of Buster Simpson's "Parapet Relay" iron and bronze sidewalk plaques, referencing the role of the Washington State Art Commission.</para>
+      </customization>
+      <customization co="object" dd="temp_alias_001" resourceType="default">
+         <para>Robert Mitsuhiro Takasugi reflects on his childhood growing up in Tacoma and attending the Japanese Language school. Takasugi contrasts his experiences attending American public school with the Japanese Language School. In addition to covering family history, Takasugi recounts the moral and cultural lessons he received at the school and examines what it means to be Japanese.</para>
       </customization>
    </examples>
    <additionalInfo>

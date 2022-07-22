@@ -58,6 +58,17 @@
             <para>Separate multiple entries with a semicolon and space (“; “).</para>
             <para>Order of values does not matter.</para>
         </customization>
+        <customization co="object" dd="temp_alias_001" resourceType="default">
+            <para>Enter the name(s) of organizations mentioned.</para>
+            <para>&lt;br/&gt;</para>
+            <para>When appropriate, search the &lt;a href="https://id.loc.gov/authorities/names.html"&gt;Library of Congress Name Authority File via id.loc.gov&lt;/a&gt; for the organization.</para>
+            <para>If a potential match is found, confirm that it is the organization associated with the resource. It may be helpful to review information included in the web display such as source(s) of information, and/or to follow the links provided for exact and/or closely matching concepts from other schemes.</para>
+            <para>Copy the form of name as it appears at the top of the page, including dates.</para>
+            <para>You may provide the value 'xyz' for the Cataloging property to indicate to cataloging staff that review of controlled forms of names is requested.</para>
+            <para>&lt;br/&gt;</para>
+            <para>If no record exists, enter the name(s) used by interviewees.</para>
+            <para>Separate multiple values with a semicolon.</para>
+        </customization>
     </descriptions>
     <examples>
         <!-- DRAFT defaults for object, standalone -->
@@ -75,6 +86,14 @@
         <customization co="object" dd="p16786coll3" resourceType="oh">
             <para>Congregation Ezra Bessaroth</para>
             <para>Congregation Ezra Bessaroth; Longacres Race Track</para>
+        </customization>
+        <customization co="object" dd="temp_alias_001" resourceType="default">
+            <para>Tacoma Lumber Company; Superior Hotel; Stadium High School</para>
+            <para>Methodist Church; Buddhist Church; Baptist Church</para>
+            <para>Lincoln High School (Tacoma, Wash.)</para>
+            <para>Japanese American Citizens' League</para>
+            <para>Fort Lewis (Wash.)</para>
+            <para>Airway Market</para>
         </customization>
     </examples>
     <additionalInfo></additionalInfo>
