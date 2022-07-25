@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+    <uid>p146</uid>
+    <labels>
+        <platformIndependent>collection_page_category</platformIndependent>
+        <dc>none</dc>
+    </labels>
+    <uwRequired>
+        <uwStandalone>no</uwStandalone>
+        <uwObject>no</uwObject>
+        <uwItem>no</uwItem>
+    </uwRequired>
+    <cdm>
+        <label>collection_page_category</label>
+        <cdmDatatype>text</cdmDatatype>
+        <cdmLarge>no</cdmLarge>
+        <searchable>no</searchable>
+        <hidden>yes</hidden>
+        <cdmRequired>no</cdmRequired>
+        <cdmControlledVocab>no</cdmControlledVocab>
+    </cdm>
+    <dspace>
+        <dspaceProperty/>
+    </dspace>
+    <descriptions>
+        <definition>
+            <para>A category for the resource, for use in presenting resources by category on a collection landing page.</para>
+        </definition>
+        <instructions co="object">
+            <para>Provide the category within which the resource should be presented on the collection landing page.</para>
+        </instructions>
+        <instructions co="no">
+            <para>Provide the category within which the resource should be presented on the collection landing page.</para>
+        </instructions>
+        <!-- BMR: I don't think this element should be used for COitems -->
+    </descriptions>
+    <examples>
+        <example co="object">
+            <para>Novelesque Ballad - Various subjects</para>
+            <para>Institutional Publications</para>
+            <para>Ephemera</para>
+        </example>
+        <example co="no">
+            <para>Novelesque Ballad - Various subjects</para>
+            <para>Institutional Publications</para>
+            <para>Ephemera</para>
+        </example>
+        <!-- BMR: I don't think this element should be used for COitems -->
+    </examples>
+    <additionalInfo/>
+    <marc>
+        <dcgMarcMapping/>
+    </marc>
+    <xsd/>
+    <rdf/>
+    <history>
+        <dateCreated>
+            <single>2022-07-25</single>
+        </dateCreated>
+        <created4Coll>Sephardic Studies Digital Collection at the University of Washington - CONTENTdm alias p16786coll3</created4Coll>
+        <justification>Needed a field to store categories for use in organizing resources on the landing page.</justification>
+        <changeLog>
+            <change/>
+        </changeLog>
+    </history>
+
+</property>
