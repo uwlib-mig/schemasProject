@@ -5,7 +5,7 @@
     xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
     <uid>p146</uid>
     <labels>
-        <platformIndependent>collection_page_category</platformIndependent>
+        <platformIndependent>collectionPageCategory</platformIndependent>
         <dc>none</dc>
     </labels>
     <uwRequired>
@@ -14,7 +14,7 @@
         <uwItem>no</uwItem>
     </uwRequired>
     <cdm>
-        <label>collection_page_category</label>
+        <label>collectionPageCategory</label>
         <cdmDatatype>text</cdmDatatype>
         <cdmLarge>no</cdmLarge>
         <searchable>no</searchable>
