@@ -40,6 +40,14 @@
          <para>Enter the order number.</para>
          <para>Order number sequence must be obtained from appropriate staff.</para>
       </instructions>
+      <customization co="object" dd="temp_alias_001" resourceType="default">
+         <para>Do not enter values for Digital ID Number.</para>
+         <para>Digital ID Numbers will be assigned by ITS-DS staff when resources and metadata are loaded to the collection.</para>
+      </customization>
+      <customization co="item" dd="temp_alias_001" resourceType="default">
+         <para>Do not enter values for Digital ID Number.</para>
+         <para>Digital ID Numbers will be assigned by ITS-DS staff when resources and metadata are loaded to the collection.</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="no">
@@ -63,6 +71,16 @@
          <para>OWTOH201802-Audio</para>
          <para>UWTOH201802-Image</para>
          <para>UWTOH201802-Transcript</para>
+      </customization>
+      <customization co="object" dd="temp_alias_001" resourceType="default">
+         <para>OHC0676</para>
+         <para>OHC0010</para>
+      </customization>
+      <customization co="item" dd="temp_alias_001" resourceType="default">
+         <para>OHC0676-Video</para>
+         <para>OHC0676-Transcript</para>
+         <para>OHC0010-Audio</para>
+         <para>OHC0010-Transcript</para>
       </customization>
    </examples>
    <additionalInfo>
@@ -99,7 +117,7 @@
       <created4Coll>Special Collections Oral Histories Collections</created4Coll>
       <justification>Special Collections wants a identifier for each object in CONTENTdm</justification>
       <changeLog>
-         <change/>
+         <change date="2022-07-27">Add custom guidance and examples for Tacoma Japanese Language School Project - temp_alias_001 - these may be broadly applicable, as present plan is for ITS-DS to assign these values, not collection managers</change>
       </changeLog>
    </history>
 </property>
