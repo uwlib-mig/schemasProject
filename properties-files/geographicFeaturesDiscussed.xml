@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd">
+    <uid>p147</uid>
+    <labels>
+        <platformIndependent>geographicFeaturesDiscussed</platformIndependent>
+        <dc>none</dc>
+    </labels>
+    <uwRequired>
+        <uwStandalone>no</uwStandalone>
+        <uwObject>no</uwObject>
+        <uwItem>no</uwItem>
+    </uwRequired>
+    <cdm>
+        <label>Geographic Features Discussed</label>
+        <cdmDatatype>text</cdmDatatype>
+        <cdmLarge>no</cdmLarge>
+        <searchable>yes</searchable>
+        <hidden>no</hidden>
+        <cdmRequired>no</cdmRequired>
+        <cdmControlledVocab>yes</cdmControlledVocab>
+    </cdm>
+    <dspace>
+        <dspaceProperty></dspaceProperty>
+    </dspace>
+    <descriptions>
+        <definition>
+            <para>Geographic features given significant attention in the resource.</para>
+        </definition>
+        <customization co="object" dd="temp_alias_001" resourceType="default">
+            <para>Enter the names of geographic features which are given significant attention in the resource.</para>
+            <para>Note that geographic features can be natural, artificial (human-caused), or abstract.</para>
+            <para>For this collection, values for the element may include primarily buildings. Take forms of names from the Tacoma Public Library Online Digital Collections &lt;a href="https://cdm17061.contentdm.oclc.org/digital/collection/p17061coll1"&gt;Tacoma-Pierce County Buildings Index&lt;/a&gt; where available.</para>
+            <para>To record locations (cities, states, countries) discussed, do not use this element; use the Geographic Coverage element.</para>
+            <para>Separate multiple entries with a semicolon and space (“; “).</para>
+        </customization>
+    </descriptions>
+    <examples>
+        <example co="object">
+            <!-- not drafting any default instructions or examples at this time -->
+        </example>
+        <customization co="object" dd="temp_alias_001" resourceType="default">
+            <para>Stadium High School</para>
+            <para>Broadway Hotel</para>
+            <para>Traveler’s Hotel</para>
+            <para>McCarver Junior High School</para>
+            <para>Lincoln High School</para>
+            <para>Union Laundry</para>
+        </customization> 
+    </examples>
+</property>
+
