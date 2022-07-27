@@ -56,6 +56,10 @@
          <para>Unless otherwise instructed, enter the following URI: &lt;a href="http://rightsstatements.org/vocab/CNE/1.0/"&gt;http://rightsstatements.org/vocab/CNE/1.0/&lt;/a&gt;.</para>
          <para>Required for all standalone objects.</para>
       </customization>
+      <customization co="object" dd="temp_alias_001" resourceType="default">
+         <para>Use the following value:</para>
+         <para>&lt;a href="http://rightsstatements.org/vocab/InC-EDU/1.0/"&gt;http://rightsstatements.org/vocab/InC-EDU/1.0/&lt;/a&gt;</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="no">
@@ -81,6 +85,9 @@
       </customization>
       <customization co="no" dd="p16786coll3">
          <para>http://rightsstatements.org/vocab/CNE/1.0/</para>
+      </customization>
+      <customization co="object" dd="temp_alias_001" resourceType="default">
+         <para>http://rightsstatements.org/vocab/InC-EDU/1.0/</para>
       </customization>
    </examples>
    <additionalInfo>
@@ -129,6 +136,7 @@
          <change date="2020-06-03">removed cdm compound object ITEM descriptions after MIG decided they're not wanted</change>
          <change date="2021-10-26">Add customizations for Sephardic Studies Digital Collection - p16786coll3.</change>
          <change date="2022-05-03">Update guidance and example for the Greek folk dances collection.</change>
+         <change date="2022-07-27">Add guidance and example for the Tacoma Japanese Language School Project - temp_alias_001</change>
       </changeLog>
    </history>
 </property>

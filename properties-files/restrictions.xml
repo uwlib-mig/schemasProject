@@ -26,7 +26,7 @@
    </dspace>
    <descriptions>
       <definition>
-         <para>Any restrictions on the use of an image.</para>
+         <para>Any restrictions on the use of a resource.</para>
       </definition>
       <instructions co="no">
          <para>Input the following text: "For information on permissions for use and reproductions please visit UW Libraries Special Collections "Reproductions: Order Photographs &amp; Scans" page: http://www.lib.washington.edu/specialcoll/service/reproduction.html."</para>
@@ -67,6 +67,12 @@
          <para>Enter the following value:</para>
          <para>To inquire about permissions, contact sephstud@uw.edu. Please cite the Sephardic Studies Accession Number.</para>
       </customization>
+      <customization co="object" dd="temp_alias_001" resourceType="default">
+         <para>Use the following value:</para>
+         <para>This item is protected by copyright and/or related rights.</para>
+         <para>Permission must be obtained for any use or reproduction which is not educational and not-for-profit.</para>
+         <para>Please contact the University of Washington Tacoma Library with any inquiries about use of the collection.</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="no">
@@ -103,6 +109,11 @@
       </customization>
       <customization co="no" dd="p16786coll3">
          <para>To inquire about permissions, contact sephstud@uw.edu. Please cite the Sephardic Studies Accession Number.</para>
+      </customization>
+      <customization co="object" dd="temp_alias_001" resourceType="default">
+         <para>This item is protected by copyright and/or related rights.</para>
+         <para>Permission must be obtained for any use or reproduction which is not educational and not-for-profit.</para>
+         <para>Please contact the University of Washington Tacoma Library with any inquiries about use of the collection.</para>
       </customization>
    </examples>
    <additionalInfo>
@@ -168,7 +179,9 @@
          <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
          <change date="2020-06-03">removed cdm compound object ITEM descriptions after MIG decided they're not wanted</change>
          <change date="2021-10-26">Add customizations for Sephardic Studies Digital Collection - p16786coll3.</change>
-         <change date="2022-05-03">Update guidance and example for the Greek folk dances collection.</change>
+         <change date="2022-05-03">Update guidance and example for the Greek folk dances collection - greekdancing</change>
+         <change date="2022-07-27">Add guidance and examples for the Tacoma Japanese Language School Project - temp_alias_001</change>
+         <change date="2022-07-27">Update definition, which had used "restrictions on the use of an image" to "use of a resource"</change>
       </changeLog>
    </history>
 </property>
