@@ -61,6 +61,12 @@
          <para>Order of values does not matter.</para>
          <para>Required for all standalone objects.</para>
       </customization>
+      <customization co="object" dd="temp_alias_001" resourceType="default">
+         <para>Enter language names, fully spelled out, as they appear in the &lt;a href="https://iso639-3.sil.org/code_tables/639/data"&gt;ISO 639 Code Tables&lt;/a&gt; "Language Name(s)" column.</para>
+         <para>Separate multiple values using a semicolon and space (“; “).</para>
+         <para>Order of values does not matter.</para>
+         <para>Required for all compound objects.</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="no">
@@ -90,6 +96,10 @@
          <para>Hebrew</para>
          <para>Ladino; Hebrew</para>
       </customization>
+      <customization co="object" dd="temp_alias_001" resourceType="default">
+         <para>English</para>
+         <para>Japanese</para>
+      </customization>
    </examples>
    <additionalInfo/>
    <marc>
@@ -113,6 +123,7 @@
       <changeLog>
          <change date="2019-04-21">Moved uwtoh instructions to a customization; created instruction for @co="all" to accommodate use of property with rp.</change>
          <change date="2021-03-20">Add custom CO and standalone instructions and examples, and admin note, for Sephardic Studies Digital Collection (p16786coll3).</change>
+         <change date="2022-07-27">Add guidance and examples for the Tacoma Japanese Language School collection - temp_alias_001</change>
       </changeLog>
    </history>
 </property>
