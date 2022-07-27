@@ -3,7 +3,7 @@
     xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     id="0014"
     xsi:schemaLocation="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-dds.xsd">
-    <ddName>Tacoma Japanese Language School Collection</ddName>
+    <ddName>Tacoma Japanese Language School Project</ddName>
     <ddPartOfProject/>
     <originalCreationDate>2022-07-21</originalCreationDate>
     <latestUpdate>2022-07-21</latestUpdate>
@@ -25,7 +25,7 @@
         <xi:include href="../../properties-files/genreFormLcgft.xml"/>
         <xi:include href="../../properties-files/individualsDiscussed.xml"/>
         <xi:include href="../../properties-files/organizationsDiscussed.xml"/>
-        <!-- NEW ELEMENT Geographic Features Discussed -->
+        <xi:include href="../../properties-files/geographicFeaturesDiscussed.xml"/> <!-- NEW ELEMENT -->
         <xi:include href="../../properties-files/geographicCoverage.xml"/>
         <xi:include href="../../properties-files/language.xml"/>
         <xi:include href="../../properties-files/digitalCollection.xml"/>
