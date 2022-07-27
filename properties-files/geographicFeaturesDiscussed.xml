@@ -50,5 +50,21 @@
             <para>Union Laundry</para>
         </customization> 
     </examples>
+    <additionalInfo></additionalInfo>
+    <marc>
+        <dcgMarcMapping></dcgMarcMapping>
+    </marc>
+    <xsd></xsd>
+    <rdf></rdf>
+    <history>
+        <dateCreated>
+            <single>2022-07-27</single>
+        </dateCreated>
+        <created4Coll>Tacoma Japanese Language School - temp_alias_001</created4Coll>
+        <justification>Collection team wanted to records man-made features of interest such as buildings.</justification>
+        <changeLog>
+            <change></change>
+        </changeLog>
+    </history>
 </property>
 
