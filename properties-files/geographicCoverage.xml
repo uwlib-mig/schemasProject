@@ -26,6 +26,7 @@
    </dspace>
    <descriptions>
       <definition>
+         <!-- BMR: Where does the term 'spatial characteristics' come from? Is this a term of art? Would it be easier to just say 'locations'? -->
          <para>The spatial characteristics given significant attention in the resource.</para>
       </definition>
       <instructions co="no">
@@ -57,6 +58,22 @@
          <para>Cataloging staff will use this information to create a structured value.</para>
          <para>Separate multiple entries with a semicolon and space (“; “).</para>
          <para>&lt;br/&gt;For UWL cataloging staff creating structured values:</para>
+         <para>Forms of the names should be derived from the Library of Congress Authority File.</para>
+         <para>Enter as follows:</para>
+         <para>Country--State or Province--City</para>
+         <para>For neighborhoods or other types of locales below the city level, enter an LCSH heading in the Subjects (LCSH) field.</para>
+         <para>Separate multiple entries with a semicolon and space (“; “).</para>
+      </customization>
+      <customization co="object" dd="temp_alias_001" resourceType="default">
+         <para>For initial metadata creation outside the UWL Cataloging and Metadata Services unit:</para>
+         <para>Enter broad and local geographic locations given significant attention in the resource in natural language.</para>
+         <para>Provide sufficient information to disambiguate place names as needed. As a rule, include more information rather than less.</para>
+         <para>For example, when providing the name of a city, also provide state, region, and/or country names. </para>
+         <para>Cataloging staff will use this information to create a structured value.</para>
+         <para>Be sure to provide the value 'xyz' for the Cataloging property to indicate to cataloging staff that review is needed.</para>
+         <para>Separate multiple entries with a semicolon and space (“; “).</para>
+         <para>&lt;br/&gt;</para>
+         <para>For UWL cataloging staff creating structured values:</para>
          <para>Forms of the names should be derived from the Library of Congress Authority File.</para>
          <para>Enter as follows:</para>
          <para>Country--State or Province--City</para>
@@ -99,6 +116,12 @@
          <para>United States--Washington (State)--Tacoma</para>
          <para>Greece--Rhodes</para>
       </customization>
+      <customization co="object" dd="temp_alias_001" resourceType="default">
+         <para>[Natural language value for review by cataloging staff:] </para>
+         <para>Tacoma, Washington, USA</para>
+         <para>[Structured value provided by cataloging staff:]</para>
+         <para>United States--Washington (State)--Tacoma</para>
+      </customization>
    </examples>
    <additionalInfo>
       <admin co="object">
@@ -131,7 +154,7 @@
       <created4Coll>Special Collections Oral History Collections</created4Coll>
       <justification>We wanted a property dedicated to describing the geographic coverage in an interview.</justification>
       <changeLog>
-         <change/>
+         <change date="2022-07-27">Add custom guidance and examples for Tacoma Japanese Language School - temp_alias_001 - add comment on element definition</change>
       </changeLog>
    </history>
 </property>
