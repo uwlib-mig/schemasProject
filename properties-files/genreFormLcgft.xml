@@ -114,6 +114,7 @@
         <justification>"Genre" property exists in &lt;a href="https://www.lib.washington.edu/cams/mig/datadicts/special-collections-oral-histories-data-dictionary"&gt;Special Collections Oral Histories Data Dictionary&lt;/a&gt;, defining (with some changes and added specificity) for continued use and output to HTML MAPs.</justification>
         <changeLog>
             <change date="2022-04-19">Implement property for the Greek Dances MAP.</change>
+            <change date="2022-07-27">Add guidance and examples for the Tacoma Japanese Language School Project - temp_alias_001</change>
         </changeLog>
     </history>
 </property>

@@ -58,6 +58,11 @@
          <para>Use the following value:</para>
          <para>uw faculty, library, and teaching collections</para>
       </customization>
+      <customization co="object" dd="temp_alias_001" resourceType="default">
+         <para>Values for this field are not visible to users, but they facilitate searching across collections within the University of Washington Libraries Digital Collections.</para>
+         <para>Enter the following value:</para>
+         <para>uw tacoma digital collections</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="no">
@@ -82,6 +87,9 @@
       </customization>
       <customization co="object" dd="greekdancing" resourceType="default">
          <para>uw faculty, library, and teaching collections</para>
+      </customization>
+      <customization co="object" dd="temp_alias_001" resourceType="default">
+         <para>uw tacoma digital collections</para>
       </customization>
    </examples>
    <additionalInfo>
@@ -131,6 +139,7 @@
          <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
          <change date="2020-06-20">Removed ITEM from output per MIG decision</change>
          <change date="2022-05-24">Update element for use in Sephardic Studies, Greek dances.</change>
+         <change date="2022-07-27">Add guidance and example for Tacoma Japanese Language Project - temp_alias_001</change>
       </changeLog>
    </history>
 </property>

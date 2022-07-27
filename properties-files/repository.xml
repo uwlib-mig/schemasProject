@@ -65,6 +65,14 @@
          <para>Value will be as follows:</para>
          <para>University of Washington Libraries. Special Collections</para>
       </customization>
+      <customization co="object" dd="temp_alias_001" resourceType="default">
+         <para>Use the following value:</para>
+         <para>University of Washington Tacoma Library</para>
+      </customization>
+      <customization co="item" dd="temp_alias_001" resourceType="default">
+         <para>Use the following value:</para>
+         <para>University of Washington Tacoma Library</para>
+      </customization>
       <!-- removed item instructions -->
    </descriptions>
    <examples>
@@ -98,6 +106,12 @@
       </customization>
       <customization co="item" dd="p16786coll3" resourceType="text song oh">
          <para>University of Washington Libraries. Special Collections</para>
+      </customization>
+      <customization co="object" dd="temp_alias_001" resourceType="default">
+         <para>University of Washington Tacoma Library</para>
+      </customization>
+      <customization co="item" dd="temp_alias_001" resourceType="default">
+         <para>University of Washington Tacoma Library</para>
       </customization>
       <!-- removed item examples -->
    </examples>
