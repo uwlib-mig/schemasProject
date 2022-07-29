@@ -57,6 +57,12 @@
          <para>&lt;br/&gt;For .pdf files enter the following:</para>
          <para>application/pdf</para>
       </customization>
+      <customization co="item" dd="temp_alias_001" resourceType="default">
+         <para>Enter the file format of the compound-object item.</para>
+         <para>This should be the format of the file given as a value for the Original File Name property.</para>
+         <para>Use media type values from the &lt;a href="http://www.iana.org/assignments/media-types/index.html"&gt;IANA media types registries&lt;/a&gt;.</para>
+         <para>For audio WAVE files, use "audio/wav".</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="item">
@@ -81,6 +87,12 @@
       <example co="object">
          <para>video/mp4; application/pdf</para>
       </example>-->
+      <customization co="item" dd="temp_alias_001" resourceType="default">
+         <para>video/mp4</para>
+         <para>audio/mpeg</para>
+         <para>audio/wav</para>
+         <para>application/pdf</para>
+      </customization>
    </examples>
    <additionalInfo/>
    <marc>
@@ -109,7 +121,7 @@
          <change date="2020-06-03">removed object description in accordance with MIG decision.</change>
          <change date="2021-10-23">Encode URL in instructions for output to HTML as a link.</change>
          <change date="2021-10-23">Add custom instructions for SSDC coitems.</change>
+         <change date="2022-07-28">Add guidance/examples for Tacoma Japanese Language School Project - temp_alias_001</change>
       </changeLog>
-
    </history>
 </property>

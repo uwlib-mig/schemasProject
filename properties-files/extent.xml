@@ -75,6 +75,11 @@
          <para>For audio files, enter the runtime of the digital access file.</para>
          <para>Format runtime as HH:MM:SS.</para>
       </customization>
+      <customization co="item" dd="temp_alias_001" resourceType="default">
+         <para>For audio and video files, enter the runtime of the digital access file.</para>
+         <para>Format runtime as follows:</para>
+         <para>HH:MM:SS</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="item">
@@ -104,6 +109,9 @@
          <para>01:28:14</para>
       </customization>
       <customization co="item" dd="p16786coll3" resourceType="oh song">
+         <para>00:12:58</para>
+      </customization>
+      <customization co="item" dd="temp_alias_001" resourceType="default">
          <para>00:12:58</para>
       </customization>
    </examples>
@@ -153,6 +161,7 @@
          <change date="2021-10-25">Add custom description and examples for Sephardic Studies Digital Collection - p16786coll3.</change>
          <change date="2022-03-24">Change implementation for Greek Dances. Per MIG decision 2020-05, use at the CO-item level, not at CO level.</change>
          <change date="2022-05-17">Change DC map value from format to extent. NOTE that for many collections, the extent field includes a description of a source resource, and so the format mapping makes sense. For more recent collections, however, Extent values are limited to extent info. For these collections, DC map should be extent. A reason why field properties should be customizable at the collection level (as they are in CONTENTdm admin).</change>
+         <change date="2022-07-28">Add guidance and examples for the Tacoma Japanese Language School Project - temp_alias_001</change>
       </changeLog>
    </history>
 </property>

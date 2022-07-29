@@ -47,6 +47,12 @@
             <para>For ballads, compound-object items will either be audio files, image files (photographs) of a singer, or musical transcriptions (image or PDF files).</para>
             <para>For oral histories, compound-object items will either be audio files, image files (photographs) of an interviewee, or transcripts (PDF files).</para>
         </customization>
+        <customization co="item" dd="temp_alias_001" resourceType="default">
+            <para>Provide the name of a file which is to be loaded as a CONTENTdm compound-object item.</para>
+            <para>When entering values in a metadata spreadsheet, each row will describe either a compound object or compound-object item.</para>
+            <para>A filename must be provided for every compound-object item. Filenames should not be provided for compound objects.</para>
+            <para>For oral histories, compound-object items will be video files, audio files, and transcripts (PDF files).</para>
+        </customization>
     </descriptions>
     <examples>
         <!-- per 2022 info from Anne Graham, no file name should be provided at the CO-level, only at the CO-item-level -->
@@ -80,6 +86,11 @@
             <para>interviewee_001_photo.jpg</para>
             <para>interview_001_transcript.pdf</para>
         </customization>
+        <customization co="item" dd="temp_alias_001" resourceType="default">
+            <para>shirasago_interview_video_001.mp4</para>
+            <para>shirasago_interview_audio_001.mp3</para>
+            <para>shirasago_interview_transcript_001.pdf</para>
+        </customization>
     </examples>
     <additionalInfo>
         <admin co="all" dd4para="p16786coll3">
@@ -102,7 +113,8 @@
         <created4Coll>Sephardic Studies Digital Collection - p16786coll3</created4Coll>
         <justification>Property exists in &lt;a href="https://www.lib.washington.edu/cams/mig/datadicts/special-collections-oral-histories-data-dictionary"&gt;Special Collections Oral Histories Data Dictionary&lt;/a&gt;, defining for continued use and output to HTML MAPs.</justification>
         <changeLog>
-            <change date="2022-05-24">Update property per information from ITS-DS. Original File Name information is desired for CONTENTdm resources. Used settings made by ITS-DS for the Greek dances collection to update property info.</change>
+            <change date="2022-05-24">Update property per information from ITS-DS. 'Original File Name' information is desired for CONTENTdm resources. Used settings made by ITS-DS for the Greek dances collection to update property info.</change>
+            <change date="2022-07-28">Add guidance for Tacoma Japanese Language School Project - temp_alias_001</change>
         </changeLog>
     </history>
 </property>

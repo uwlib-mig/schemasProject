@@ -48,6 +48,9 @@
       <customization co="item" dd="p16786coll3" resourceType="oh">
          <para>If available and applicable, provide details regarding the digitization of oral history compound-object items (interviewee photos, audio file, etc.).</para>
       </customization>
+      <customization co="item" dd="temp_alias_001" resourceType="default">
+         <para>&#x1F6A7; &#x1F6A7; &#x1F6A7;</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="no">
@@ -69,6 +72,9 @@
          <!-- using the krab example and an example from SCOHDD to give an indication for SSDC values -->
          <para>Sample rate: 96KHz. Bit depth: 24. Issues encountered: Repaired several faulty splices. Date of transfer: 2019-01-04. Applicable conservation treatments: Baked and repaired several splices. De-noise and de-hum (iZotrope RX5).</para>
          <para>Digital, stereo. Copied from analog recording to compact disc. Converted to 24 bit/48kHz Broadcast WAV format files by University of Washington Libraries in 2010.</para>
+      </customization>
+      <customization co="item" dd="temp_alias_001" resourceType="default">
+         <para>&#x1F6A7; &#x1F6A7; &#x1F6A7;</para>
       </customization>
    </examples>
    <additionalInfo>
