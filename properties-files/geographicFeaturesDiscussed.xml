@@ -6,7 +6,7 @@
     <uid>p147</uid>
     <labels>
         <platformIndependent>geographicFeaturesDiscussed</platformIndependent>
-        <dc>none</dc>
+        <dc>spatial</dc>
     </labels>
     <uwRequired>
         <uwStandalone>no</uwStandalone>
