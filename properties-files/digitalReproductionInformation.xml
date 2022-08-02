@@ -49,7 +49,9 @@
          <para>If available and applicable, provide details regarding the digitization of oral history compound-object items (interviewee photos, audio file, etc.).</para>
       </customization>
       <customization co="item" dd="temp_alias_001" resourceType="default">
-         <para>&#x1F6A7; &#x1F6A7; &#x1F6A7;</para>
+         <para>Use the following value:</para>
+         <para>Original carriers were DVCAM tapes, standard definition 720x480 NTSC.</para>
+         <para>DVCAM tapes digitized with a non-linear editing program, converted to .mov files using H264 compression.</para>
       </customization>
    </descriptions>
    <examples>
@@ -74,7 +76,8 @@
          <para>Digital, stereo. Copied from analog recording to compact disc. Converted to 24 bit/48kHz Broadcast WAV format files by University of Washington Libraries in 2010.</para>
       </customization>
       <customization co="item" dd="temp_alias_001" resourceType="default">
-         <para>&#x1F6A7; &#x1F6A7; &#x1F6A7;</para>
+         <para>Original carriers were DVCAM tapes, standard definition 720x480 NTSC.</para>
+         <para>DVCAM tapes digitized with a non-linear editing program, converted to .mov files using H264 compression.</para>
       </customization>
    </examples>
    <additionalInfo>
