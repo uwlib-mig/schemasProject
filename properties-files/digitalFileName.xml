@@ -93,9 +93,8 @@
         </customization>
     </examples>
     <additionalInfo>
-        <admin co="all" dd4para="p16786coll3">
-            <para>The digitalFileName property is conceived of as useful for metadata spreadsheets, in which a filename must be provided along with each set of values in a given row.</para>
-            <para>The digitalFileName property is not conceived of as a property which will display in the public CONTENTdm UI.</para>
+        <admin co="all" dd4para="all">
+            <para>The Original File Name element is conceived of as useful also for metadata spreadsheets, in which a filename must be provided for each row corresponding to either a standalone object or compound-object item.</para>
         </admin>
     </additionalInfo>
     <marc>
@@ -115,6 +114,7 @@
         <changeLog>
             <change date="2022-05-24">Update property per information from ITS-DS. 'Original File Name' information is desired for CONTENTdm resources. Used settings made by ITS-DS for the Greek dances collection to update property info.</change>
             <change date="2022-07-28">Add guidance for Tacoma Japanese Language School Project - temp_alias_001</change>
+            <change date="2022-08-06">Update additionalInfo > admin note</change>
         </changeLog>
     </history>
 </property>
