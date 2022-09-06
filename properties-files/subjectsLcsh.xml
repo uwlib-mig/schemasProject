@@ -182,6 +182,7 @@
          <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
          <change date="2019-05-19">Added info for krab; added info for cdm compound objects</change>
          <change date="2021-10-25">Add customizations for the Sephardic Studies Digital Collection - p16786coll3</change>
+         <change date="2022-08-06">Add example values for Tacoma Japanese Language School Project - temp_alias_001</change>
       </changeLog>
    </history>
 </property>
