@@ -25,7 +25,7 @@
         <xi:include href="../../properties-files/genreFormLcgft.xml"/>
         <xi:include href="../../properties-files/individualsDiscussed.xml"/>
         <xi:include href="../../properties-files/organizationsDiscussed.xml"/>
-        <xi:include href="../../properties-files/geographicFeaturesDiscussed.xml"/> <!-- NEW ELEMENT -->
+        <xi:include href="../../properties-files/placesDiscussed.xml"/> <!-- NEW ELEMENT -->
         <xi:include href="../../properties-files/geographicCoverage.xml"/>
         <xi:include href="../../properties-files/language.xml"/>
         <xi:include href="../../properties-files/digitalCollection.xml"/>
