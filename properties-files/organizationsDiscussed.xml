@@ -6,7 +6,8 @@
     <uid>p137</uid>
     <labels>
         <platformIndependent>organizationsDiscussed</platformIndependent>
-        <dc>none</dc>
+        <!-- 2022-09-20 'none' to 'subject' per MIG 2022-09-14 -->
+        <dc>subject</dc>
     </labels>
     <uwRequired>
         <uwStandalone>no</uwStandalone>
