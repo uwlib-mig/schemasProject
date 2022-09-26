@@ -206,6 +206,9 @@
          <para>&lt;br/&gt;</para>
          <para>For transcript files, construct as follows:</para>
          <para>[compound-object title], transcript</para>
+         <para>&lt;br/&gt;</para>
+         <para>In cases where more than one item of the same category (audio file, video file, etc.) is included in the compound object, add additional numbering as appropriate.</para>
+         <para>If such tems have a sequential relationship to one another, additional numbering should reflect the sequence. If the sequential relationship is known from an original carrier, this may be indicated along with additional numbering (see example values).</para>
       </customization>
    </descriptions>
    <examples>
@@ -297,12 +300,16 @@
       </customization>
       <customization co="item" dd="temp_alias_001" resourceType="default">
          <para>Sally Sumeko Shirasago interview, video</para>
+         <para>Sally Sumeko Shirasago interview, audio</para>
          <para>Sally Sumeko Shirasago interview, transcript</para>
-         <para>Betty Hiroko (Fukuhara) Yoshioka interview, video</para>
-         <para>Betty Hiroko (Fukuhara) Yoshioka interview, audio</para>
-         <para>Betty Hiroko (Fukuhara) Yoshioka interview, transcript</para>
-         <para>Oakland Buddhist Church group interview, video</para>
+         <para>&lt;br/&gt;</para>
+         <para>Oakland Buddhist Church group interview, video 1</para>
+         <para>Oakland Buddhist Church group interview, video 2</para>
          <para>Oakland Buddhist Church group interview, transcript</para>
+         <para>&lt;br/&gt;</para>
+         <para>Betty Hiroko (Fukuhara) Yoshioka interview, audio, audiocassette side 1</para>
+         <para>Betty Hiroko (Fukuhara) Yoshioka interview, audio, audiocassette side 2</para>
+         <para>Betty Hiroko (Fukuhara) Yoshioka interview, transcript</para>
       </customization>
    </examples>
    <additionalInfo/>
