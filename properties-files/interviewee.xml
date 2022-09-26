@@ -54,15 +54,12 @@
       <customization co="object" dd="temp_alias_001" resourceType="default">
          <para>Enter the name of person(s) interviewed.</para>
          <para>&lt;br/&gt;</para>
-         <para>When appropriate, search the Library of Congress Name Authority File &lt;a href="https://id.loc.gov/authorities/names.html"&gt;via id.loc.gov&lt;/a&gt; for the interviewee.</para>
-         <para>If a potential match is found, confirm that it is the person associated with the resource. It may be helpful to review information included in the web display such as source(s) of information and occupation (for persons), and/or to follow the links provided for exact and/or closely matching concepts from other schemes.</para>
-         <para>Copy the form of name as it appears at the top of the page, including dates.</para>
-         <para>You may provide the value 'xyz' for the Cataloging property to indicate to cataloging staff that review of controlled forms of names is requested.</para>
-         <para>&lt;br/&gt;</para>
-         <para>If no record exists, format personal names as follows:</para>
+         <para>Format personal names as follows:</para>
          <para>[Last Name], [English First Name] [Japanese First Name] [(Maiden name)*]</para>
          <para>*Include a maiden name if provided. Put the maiden name in parentheses.</para>
          <para>Separate multiple values with semicolons.</para>
+         <para>&lt;br/&gt;</para>
+         <para>UW Libraries cataloging staff: Retain name information entered by project metadata creators; do not replace with LCNAF forms of name.</para>
       </customization>
    </descriptions>
    <examples>
