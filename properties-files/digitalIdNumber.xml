@@ -79,7 +79,8 @@
       <customization co="item" dd="temp_alias_001" resourceType="default">
          <para>OHC0676-Video</para>
          <para>OHC0676-Transcript</para>
-         <para>OHC0010-Audio</para>
+         <para>OHC0010-Audio-01</para>
+         <para>OHC0010-Audio-02</para>
          <para>OHC0010-Transcript</para>
       </customization>
    </examples>
