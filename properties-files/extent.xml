@@ -79,6 +79,10 @@
          <para>For audio and video files, enter the runtime of the digital access file.</para>
          <para>Format runtime as follows:</para>
          <para>HH:MM:SS</para>
+         <para>&lt;br/&gt;</para>
+         <para>For PDF files (transcripts), enter the number of pages.</para>
+         <para>Format pages as follows, using Arabic numerals:</para>
+         <para>12 pages</para>
       </customization>
    </descriptions>
    <examples>
@@ -113,6 +117,7 @@
       </customization>
       <customization co="item" dd="temp_alias_001" resourceType="default">
          <para>00:12:58</para>
+         <para>22 pages</para>
       </customization>
    </examples>
    <additionalInfo>
