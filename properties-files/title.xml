@@ -119,10 +119,11 @@
       </customization>
       <customization co="item" dd="greekdancing">
          <para>All compound-object items must have a title.</para>
+         <para>&lt;br/&gt;</para>
          <para>For video file compound-object items, enter the following:</para>
-         <para>[compound-object title] (video)</para>
+         <para>Video</para>
          <para>For table of contents compound-object items, enter the following:</para>
-         <para>[compound-object title] (table of contents)</para>
+         <para>Table of contents</para>
       </customization>
       <customization co="object" dd="p16786coll3" resourceType="text">
          <para>Find Unicode Title in Sephardic Studies Collection Master Catalog and revise according to the Aki Yerushalayim standard if needed. (Reference available &lt;a href="https://drive.google.com/drive/folders/178p999G1zCUMaMi8kAVtNiW8BF3RAYZa?usp=sharing"&gt;here&lt;/a&gt;.)</para>
@@ -255,8 +256,8 @@
          <para>Cheese Sunday and Clean Monday during Apokreas, 1992 in Flamboro, Sohos, and Pondismeno</para>
       </customization>
       <customization co="item" dd="greekdancing">
-         <para>Cheese Sunday and Clean Monday during Apokreas, 1992 in Flamboro, Sohos, and Pondismeno (video)</para>
-         <para>Cheese Sunday and Clean Monday during Apokreas, 1992 in Flamboro, Sohos, and Pondismeno (table of contents)</para>
+         <para>Video</para>
+         <para>Table of contents</para>
       </customization>
       <!-- BMR: Finalize SSDC examples -->
       <customization co="object" dd="p16786coll3" resourceType="text">
