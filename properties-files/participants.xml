@@ -38,19 +38,20 @@
         <instructions co="object">
             <para>Enter the names of the participants and performers seen in the resource.</para>
             <para>Enter the names in inverted form.</para>
+            <para>Use the form of the name in the LC Name Authority File when possible.</para>
             <para>Separate multiple names with a semi-colon.</para>
-            <para>Use the form of the name in the LC Name Authoruity File when possible.</para>
+            <para>A participant role may be added in parenthesis following the name.</para>
         </instructions>
     </descriptions>
     <examples>
         <example co="no">
-            <para>Dramalis, Y.</para>
-            <para>Barbas, Yiannis; Meros, Christos; Karakostas, Christos</para>
+            <para>Ilias, Jimmy (teacher)</para>
+            <para>Meros, Christos (clarinetist); Karakostas, Christos (clarinetist)</para>
             <para>Sinopoulos, Sokrates, 1974-</para>
         </example>
         <example co="object">
-            <para>Dramalis, Y.</para>
-            <para>Barbas, Yiannis; Meros, Christos; Karakostas, Christos</para>
+            <para>Ilias, Jimmy (teacher)</para>
+            <para>Meros, Christos (clarinetist); Karakostas, Christos (clarinetist)</para>
             <para>Sinopoulos, Sokrates, 1974-</para>
         </example>
         <customization co="object" dd="p16786coll3" resourceType="song">
@@ -77,6 +78,7 @@
         <justification>Needed property for naming the participants seen in the videos.</justification>
         <changeLog>
             <change date="2021-10-03">Change labels to singular to match other UWCdm prop labels in use (see artist, author, client, engineer, etc.)</change>
+            <change date="2023-02-17">Update guidance and examples for Greek Dances.</change>
         </changeLog>
     </history>
 </property>
