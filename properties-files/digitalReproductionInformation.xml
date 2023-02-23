@@ -53,6 +53,10 @@
          <para>Original carriers were DVCAM tapes, standard definition 720x480 NTSC.</para>
          <para>DVCAM tapes digitized with a non-linear editing program, converted to .mov files using H264 compression.</para>
       </customization>
+      <customization co="item" dd="greekdancing" resourceType="default">
+         <para>Use the following value:</para>
+         <para>&lt;br/&gt;VHS tapes were converted to a 10 bit FFV1/MKV preservation copy and a DV file (mezzanine file), now in digital storage, and from the DV files, mp4 files were generated, then used to create clips in streaming-optimized mp4, H.264 at adaptive low bit rate.</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="no">
@@ -78,6 +82,9 @@
       <customization co="item" dd="temp_alias_001" resourceType="default">
          <para>Original carriers were DVCAM tapes, standard definition 720x480 NTSC.</para>
          <para>DVCAM tapes digitized with a non-linear editing program, converted to .mov files using H264 compression.</para>
+      </customization>
+      <customization co="item" dd="greekdancing" resourceType="default">
+         <para>VHS tapes were converted to a 10 bit FFV1/MKV preservation copy and a DV file (mezzanine file), now in digital storage, and from the DV files, mp4 files were generated, then used to create clips in streaming-optimized mp4, H.264 at adaptive low bit rate.</para>
       </customization>
    </examples>
    <additionalInfo>
@@ -122,6 +129,7 @@
          <change date="2020-06-03">Commented out object description acc to MIG decision and re-instated the item!</change>
          <change date="2021-10-23">Comment out object example (in addition to instructions) per MIG decision referenced in 2020-06-03 change note.</change>
          <change date="2021-10-23">Add custom instructions for Sephardic Studies Digital Collection - p16786coll3; add the krab example to help provide an indication for use with SSDC song recording values.</change>
+         <change date="2023-02-23">Update Digital Reproduction Information value for Greek dances collection.</change>
       </changeLog>
    </history>
 </property>
