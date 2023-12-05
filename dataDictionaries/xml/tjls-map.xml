@@ -2,7 +2,8 @@
 <migDataDictionary xmlns="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries"
     xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     id="0014"
-    xsi:schemaLocation="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-dds.xsd">
+    xsi:schemaLocation="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries 
+    ../../xsd4md/schema-4-dds.xsd">
     <ddName>Tacoma Japanese Language School Project</ddName>
     <ddPartOfProject/>
     <originalCreationDate>2022-07-21</originalCreationDate>
