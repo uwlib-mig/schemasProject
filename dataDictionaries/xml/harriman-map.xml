@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<migDataDictionary xmlns="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries"
+    xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    id="0014"
+    xsi:schemaLocation="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries 
+    ../../xsd4md/schema-4-dds.xsd">
+    <ddName>Harriman Alaska Expedition of 1899</ddName>
+    <ddPartOfProject></ddPartOfProject>
+    <originalCreationDate>2023-12-05</originalCreationDate>
+    <latestUpdate>2023-12-05</latestUpdate>
+    <metadataLiaisons>
+        <metadataLiaison>Benjamin Riesenberg - &lt;a href="mailto:ries07@uw.edu"&gt;ries07@uw.edu&lt;/a&gt;</metadataLiaison>
+    </metadataLiaisons>
+    <!-- docTopContent element may be used here if desired -->
+    <cdmCo>no</cdmCo>
+    <standalone>yes</standalone>
+    <cdmCode>harriman</cdmCode>
+    <!-- is this ^^^ the CONTENTdm alias? -->
+    <properties>
+        <xi:include href="../../properties-files/title.xml"/>
+        <xi:include href="../../properties-files/photographer.xml"/>
+        <xi:include href="../../properties-files/dateEdtf.xml"/>
+        <xi:include href="../../properties-files/date.xml"/>
+        <xi:include href="../../properties-files/dates.xml"/>
+        <xi:include href="../../properties-files/notes.xml"/>
+        <xi:include href="../../properties-files/subjectsLctgm.xml"/>
+        <xi:include href="../../properties-files/subjectsLcsh.xml"/>
+        <xi:include href="../../properties-files/locationDepicted.xml"/>
+        <xi:include href="../../properties-files/digitalCollection.xml"/>
+        <xi:include href="../../properties-files/orderNumber.xml"/>
+        <xi:include href="../../properties-files/orderingInformation.xml"/>
+        <xi:include href="../../properties-files/citationInformation.xml"/>
+        <xi:include href="../../properties-files/negativeNumber.xml"/>
+        <xi:include href="../../properties-files/repository.xml"/>
+        <xi:include href="../../properties-files/repositoryCollection.xml"/>
+        <xi:include href="../../properties-files/repositoryCollectionGuide.xml"/>
+        <xi:include href="../../properties-files/objectType.xml"/>
+        <xi:include href="../../properties-files/physicalDescription.xml"/>
+        <xi:include href="../../properties-files/digitalReproductionInformation.xml"/>
+        <xi:include href="../../properties-files/studioLocation.xml"/>
+        <xi:include href="../../properties-files/originalCreator.xml"/>
+        <xi:include href="../../properties-files/studioName.xml"/>
+        <xi:include href="../../properties-files/photographersReferenceNumber.xml"/>
+        <xi:include href="../../properties-files/contributor.xml"/>
+        <xi:include href="../../properties-files/acquisition.xml"/>
+        <xi:include href="../../properties-files/rightsUri.xml"/>
+        <xi:include href="../../properties-files/restrictions.xml"/>
+        <xi:include href="../../properties-files/type.xml"/>
+        <xi:include href="../../properties-files/institution.xml"/>
+        <xi:include href="../../properties-files/cataloging.xml"/>
+        <xi:include href="../../properties-files/deprecatedValues.xml"/>
+        <!--<xi:include href="../../properties-files/"/>-->
+    </properties>
+</migDataDictionary>
