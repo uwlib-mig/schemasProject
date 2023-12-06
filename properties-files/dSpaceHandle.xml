@@ -1,11 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?><property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md http://faculty.washington.edu/tgis/schemasProject/xsd4md/schema-4-properties.xsd"><uid>p32</uid><labels>
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+   xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md    ../xsd4md/schema-4-properties.xsd">
+   <uid>p32</uid>
+   <labels>
       <platformIndependent>dSpaceHandle</platformIndependent>
       <dc>hasFormat</dc>
-   </labels><uwRequired>
+   </labels>
+   <uwRequired>
       <uwStandalone>no</uwStandalone>
       <uwObject>no</uwObject>
       <uwItem>no</uwItem>
-   </uwRequired><cdm>
+   </uwRequired>
+   <cdm>
       <label>DSpace Handle</label>
       <cdmDatatype>text</cdmDatatype>
       <cdmLarge>no</cdmLarge>
@@ -13,9 +20,11 @@
       <hidden>no</hidden>
       <cdmRequired>no</cdmRequired>
       <cdmControlledVocab>no</cdmControlledVocab>
-   </cdm><dspace>
+   </cdm>
+   <dspace>
       <dspaceProperty/>
-   </dspace><descriptions>
+   </dspace>
+   <descriptions>
       <definition>
          <para>Handle of equivalent resource in University of Washington Library's ResearchWorks institutional repository (built on the DSpace platform).</para>
       </definition>
@@ -26,25 +35,31 @@
       <instructions co="item">
          <para>Enter the the DSpace handle for the item stored in ResearchWorks.</para>
       </instructions>
-   </descriptions><examples>
+   </descriptions>
+   <examples>
       <example co="object">
-         <para>http://hdl.handle.net/1773/40345</para> 
+         <para>http://hdl.handle.net/1773/40345</para>
       </example>
       <example co="item">
-         <para>http://hdl.handle.net/1773/40345</para> 
+         <para>http://hdl.handle.net/1773/40345</para>
       </example>
-   </examples><additionalInfo/><marc>
+   </examples>
+   <additionalInfo/>
+   <marc>
       <dcgMarcMapping/>
       <marcNotes>
          <para/>
       </marcNotes>
-   </marc><xsd>
+   </marc>
+   <xsd>
       <typeInfo level="standalone object">
          <typeAttribute>xs:string</typeAttribute>
       </typeInfo>
-   </xsd><rdf>
+   </xsd>
+   <rdf>
       <sameAs/>
-   </rdf><history>
+   </rdf>
+   <history>
       <dateCreated>
          <single>2018-03-26</single>
       </dateCreated>
@@ -53,4 +68,5 @@
       <changeLog>
          <change/>
       </changeLog>
-   </history></property>
+   </history>
+</property>
