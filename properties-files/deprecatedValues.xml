@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md
+    ../xsd4md/schema-4-properties.xsd">
+    <uid>p148</uid>
+    <labels>
+        <platformIndependent>deprecated_values</platformIndependent>
+        <dc>none</dc>
+    </labels>
+    <uwRequired>
+        <uwStandalone>no</uwStandalone>
+        <uwObject>no</uwObject>
+        <uwItem>no</uwItem>
+    </uwRequired>
+    <cdm>
+        <label>deprecated_values</label>
+        <cdmDatatype>text</cdmDatatype>
+        <cdmLarge>yes</cdmLarge>
+        <searchable>yes</searchable>
+        <hidden>yes</hidden>
+        <cdmRequired>no</cdmRequired>
+        <cdmControlledVocab>no</cdmControlledVocab>
+    </cdm>
+    <dspace>
+        <dspaceProperty></dspaceProperty>
+    </dspace>
+    <descriptions>
+        <definition>
+            <para>Metadata values which contain harmful language and have been deprecated.</para>
+        </definition>
+        <instructions co="no">
+            <para>This field is not visible to users.</para>
+            <para>Use the deprecated_values field to record metadata values which have been removed or replaced, in whole or in part, because they contain harmful language.</para>
+            <para>The field should not be used when making minor corrections, eliminating typographical errors, or removing or replacing values for reasons other than to remediate harmful language in digital-collections metadata.</para>
+            <para>If a value is removed or replaced for a field which already has deprecated values recorded, add the new value to existing deprecated_values field contents (do not overwrite or delete existing contents).</para>
+            <para>Enter a value including three components: </para>
+            <para>1) The label of the field where a value was replaced or removed. Use the field label at the time of change, if field labels in the collection have changed over time.</para>
+            <para>2) The entire value which was replaced or removed. Even if a portion of the deprecated value remains in the new value, record the entire value here.</para>
+            <para>3) The date on which the change was made. Format dates using the &lt;a href="https://www.loc.gov/standards/datetime/"&gt;Extended Date/Time Format (EDTF) Specification.&lt;a/&gt;</para>
+            <para>Separate each of these components with two pipe (‘|’) characters, so that values are structured as follows:</para>
+            <para>[1. FIELD NAME] || [2. DEPRECATED VALUE] || [3. DATE VALUE REPLACED OR REMOVED]</para>
+            <para>Separate multiple values with a double semicolon--;;.</para>
+        </instructions>
+    </descriptions>
+    <examples>
+        <example co="no">
+            <para>Title || Eskimos in umiaks alongside the GEO. W. ELDER, Plover Bay, Siberia, July 1899. || 2023-10</para>
+            <para>Title || Eskimo summer house, or topek, constructed of reindeer skins stretched over poles, Plover Bay, Siberia, July 1899. || 2023-10;; Subjects (LCTGM) || Yuit Eskimos--Structures--Russia (Federation)--Plover Bay || 2023-10;; Subjects (LCSH) || Yuit Eskimos--Dwellings--Russia (Federation)--Plover Bay || 2023-10</para>
+        </example>
+    </examples>
+    <additionalInfo></additionalInfo>
+    <marc>
+        <dcgMarcMapping></dcgMarcMapping>
+    </marc>
+    <xsd></xsd>
+    <rdf></rdf>
+    <history>
+        <dateCreated>
+            <single>2023-12-05</single>
+        </dateCreated>
+        <created4Coll>Harriman Alaska Expedition of 1899</created4Coll>
+        <justification>A record of metadata values which are removed or replaced as including harmful language was desired. More information available in MIG element documentation and meeting notes.</justification>
+        <changeLog>
+            <change></change>
+        </changeLog>
+    </history>
+</property>
