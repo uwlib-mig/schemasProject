@@ -1,11 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?><property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md    ../xsd4md/schema-4-properties.xsd"><uid>p66</uid><labels>
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+   xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md    ../xsd4md/schema-4-properties.xsd">
+   <uid>p66</uid>
+   <labels>
       <platformIndependent>photographersReferenceNumber</platformIndependent>
       <dc>identifier</dc>
-   </labels><uwRequired>
+   </labels>
+   <uwRequired>
       <uwStandalone>no</uwStandalone>
       <uwObject>no</uwObject>
       <uwItem>no</uwItem>
-   </uwRequired><cdm>
+   </uwRequired>
+   <cdm>
       <label>Photographer's Reference Number</label>
       <cdmDatatype>text</cdmDatatype>
       <cdmLarge>no</cdmLarge>
@@ -13,37 +20,48 @@
       <hidden>yes</hidden>
       <cdmRequired>no</cdmRequired>
       <cdmControlledVocab>no</cdmControlledVocab>
-   </cdm><dspace>
+   </cdm>
+   <dspace>
       <dspaceProperty/>
-   </dspace><descriptions>
+   </dspace>
+   <descriptions>
       <definition>
          <para>University of Washington Libraries' reference number for a photographer.</para>
       </definition>
       <instructions co="no">
          <para>Input along with photographer's name; usually linked with the entry in the Photographer field.</para>
       </instructions>
-   </descriptions><examples>
+      <customization co="no" dd="harriman">
+         <para>The Photographer's reference number along with the name of the photographer provides a unique identification for the image.</para>
+         <para>Input along with photographer's name; usually linked with the entry in the Photographer field.</para>
+      </customization>
+   </descriptions>
+   <examples>
       <example co="no">
          <para>Hegg 236</para>
          <para>A. Curtis 23876</para>
       </example>
-   </examples><additionalInfo>
+   </examples>
+   <additionalInfo>
       <generalNotes co="no">
          <para>The Photographer's Reference Number along with the name of the photographer provides a unique identification for the image.</para>
       </generalNotes>
-   </additionalInfo><marc>
+   </additionalInfo>
+   <marc>
       <dcgMarcMapping/>
       <marcNotes>
          <para/>
       </marcNotes>
-   </marc><xsd>
+   </marc>
+   <xsd>
       <typeInfo level="standalone object">
          <typeAttribute>xs:string</typeAttribute>
       </typeInfo>
       <typeInfo level="item">
          <empty/>
       </typeInfo>
-   </xsd><rdf>
+   </xsd>
+   <rdf>
       <cdmRdf>
          <dpla>
             <map>bf:identifiedBy</map>
@@ -61,7 +79,8 @@
             </node>
          </dpla>
       </cdmRdf>
-   </rdf><history>
+   </rdf>
+   <history>
       <dateCreated>
          <range>
             <start>2000-01-01</start>
@@ -74,4 +93,5 @@
          <change/>
          <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
       </changeLog>
-   </history></property>
+   </history>
+</property>
