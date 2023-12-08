@@ -73,6 +73,9 @@
          <para>Permission must be obtained for any use or reproduction which is not educational and not-for-profit.</para>
          <para>Please contact the University of Washington Tacoma Library with any inquiries about use of the collection.</para>
       </customization>
+      <customization co="no" dd="harriman">
+         <para>&#x1F6A7; &#x1F6A7; &#x1F6A7;</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="no">
@@ -114,6 +117,9 @@
          <para>This item is protected by copyright and/or related rights.</para>
          <para>Permission must be obtained for any use or reproduction which is not educational and not-for-profit.</para>
          <para>Please contact the University of Washington Tacoma Library with any inquiries about use of the collection.</para>
+      </customization>
+      <customization co="no" dd="harriman">
+         <para>&#x1F6A7; &#x1F6A7; &#x1F6A7;</para>
       </customization>
    </examples>
    <additionalInfo>
