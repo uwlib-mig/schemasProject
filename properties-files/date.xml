@@ -137,11 +137,28 @@
          <para>between YYYY and YYYY?</para>
          <para>If the date of interview is unknown, enter an approximate date using either “YYYY?” or “between YYYY and YYYY?”.</para>
       </customization>
+      <customization co="no" dd="harriman">
+         <para>Date of creation of the original resource.</para>
+         <para>If the resource is a photograph, the date the original photograph was taken.</para>
+         <para>&lt;br/&gt;Enter the date using one of the following formats:</para>
+         <para>YYYY</para>
+         <para>YYYY?</para>
+         <para>[month spelled out] [day], YYYY</para>
+         <para>[month spelled out], YYYY</para>
+         <para>between YYYY and YYYY</para>
+         <para>between YYYY and YYYY?</para>
+         <para>&lt;br/&gt;In CONTENTdm, this field is used for display purposes only and should be user-friendly.</para>
+         <para>Date value should agree with date values entered in Date (EDTF) and Dates fields.</para>
+         <para>If the date when the image/resource in hand was produced is known, and is different from that of the original image, so note in the Notes field.</para>
+         <para>If the date is unknown, enter an approximate date using one of the two above formats that express uncertainty, namely YYYY? or between YYYY and YYYY?.</para>
+         <para>If none of the date formats above are adequate, use a custom date format.</para>
+         <para>UW Libraries staff: For additional information see &lt;a href="https://staff.lib.uw.edu/groups/mig/initiatives-work/date-dates-date-edtf-explained"&gt;Date/Dates/Date-EDTF Explained&lt;a/&gt;.</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="no">
          <para>1940</para>
-         <para>1940?    [this expresses a probable year, an uncertain year, etc.]</para>
+         <para>1940?</para>
          <para>May 9, 2001</para>
          <para>March, 2001</para>
          <para>between 1946 and 1952</para>

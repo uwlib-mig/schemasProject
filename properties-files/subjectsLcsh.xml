@@ -91,11 +91,16 @@
          <para>Do not provide a value for this property.</para>
          <para>Be sure to provide the value 'xyz' for the Cataloging property to indicate to cataloging staff that a value is needed.</para>
       </customization>
+      <customization co="no" dd="harriman">
+         <para>Terms in this field are taken from the LC Subject Headings list (LCSH). LCSH and the National Authority File (LCNAF) will also be used for persons, objects, and places with proper names.</para>
+         <para>Separate multiple values using a semicolon and space ("; ").</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="no">
          <para>Markets—Washington (State)—Seattle</para>
          <para>McGraw, John Harte, 1911—Statues—Washington (State)—Seattle; Log buildings—Alaska—Fort Yukon</para>
+         <para>Markets--Washington (State)--Seattle; Suzzallo, Henry, 1875-1933--Statues; Log buildings--Alaska--Skagway</para>
       </example>
       <example co="object">
          <para>Markets—Washington (State)—Seattle</para>

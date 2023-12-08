@@ -132,6 +132,22 @@
          <para>When the value of Date is “between YYYY and YYYY”, enter all years in the date range as YYYY. Do not use commas or other punctuation to separate years.</para>
          <para>When the value of Date is “between YYYY and YYYY?”, enter all years in the date range as YYYY, plus five years before the earliest date and five years after the latest date. Do not use commas or other punctuation to separate years.</para>
       </customization>
+      <customization co="no" dd="harriman">
+         <para>Date of creation of the original resource.</para>
+         <para>The Dates value should agree with values for the Date-EDTF and Date fields. This field is indexed and enables date searching in CONTENTdm.</para>
+         <para>Enter a year or years only. Do not use commas or other punctuation to separate years.</para>
+         <para>&lt;br/&gt;If the value of Date is "YYYY", enter: YYYY</para>
+         <para>If the value of Date is "[month], YYYY", enter the year only in the following format: YYYY</para>
+         <para>If the value of Date value is “[month] DD, YYYY”, enter the year only in the following format: YYYY</para>
+         <para>If the value of Date is “between YYYY and YYYY”, enter all years in the date range in the following format: YYYY YYYY YYYY YYYY</para>
+         <para>For a Date value which is an uncertain year (for example, “YYYY?”):</para>
+         <para>&lt;br/&gt;If research or available information about the resource can be used to produce a probable year or range of years, enter this.</para>
+         <para>If no additional information is available, enter an eleven-year range by adding five years on either side of the uncertain year.</para>
+         <para>&lt;br/&gt;For a Date value which is an uncertain range of years (for example, “between YYYY and YYYY?”):</para>
+         <para>If research or available information about the resource can be used to produce a probable range of years, enter this.</para>
+         <para>If no additional information is available, enter all years in the uncertain date range, plus the five years before the range and the five years after the range.</para>
+         <para>UW Libraries staff: For additional information see &lt;a href="https://staff.lib.uw.edu/groups/mig/initiatives-work/date-dates-date-edtf-explained"&gt;Date/Dates/Date-EDTF Explained&lt;a/&gt;.</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="no">
@@ -161,6 +177,16 @@
          <para>[If Date field is “between January 2005 and February 2005”] 2005</para>
          <para>[If Date field is “between January 15, 2005 and February 01, 2005”] 2005</para>
          <para>[If Date field is "between 2005 and 2006?"] 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011</para>
+      </customization>
+      <customization co="no" dd="harriman">
+         <para>[Date: 1932] 1932</para>
+         <para>[Date: February, 1932] 1932</para>
+         <para>[Date: February 26, 1932] 1932</para>
+         <para>[Date: 1932-02-26] 1932</para>
+         <para>[Date: between 1931 and 1933] 1931 1932 1933</para>
+         <para>[Date: between January 1931 and July 1933] 1931 1932 1933</para>
+         <para>[Date: 1944?] 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949</para>
+         <para>[Date: between 1939 and 1945?] 1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950</para>
       </customization>
    </examples>
    <additionalInfo/>

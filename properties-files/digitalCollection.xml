@@ -90,6 +90,11 @@
          <para>Use the following value:</para>
          <para>Tacoma Japanese Language School Project</para>
       </customization>
+      <customization co="no" dd="harriman">
+         <para>Enter the name of the digital collection the resource belongs to.</para>
+         <para>&lt;br/&gt;Use the following value:</para>
+         <para>Harriman Alaska Expedition Collection</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="no">
@@ -139,6 +144,9 @@
       </customization>
       <customization co="item" dd="temp_alias_001" resourceType="default">
          <para>Tacoma Japanese Language School Project</para>
+      </customization>
+      <customization co="no" dd="harriman">
+         <para>Harriman Alaska Expedition Collection</para>
       </customization>
    </examples>
    <additionalInfo>
