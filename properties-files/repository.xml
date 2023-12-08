@@ -77,12 +77,12 @@
    </descriptions>
    <examples>
       <example co="no">
-         <para>University of Washington Libraries, Special Collections Division</para>
+         <para>University of Washington Libraries. Special Collections</para>
          <para>Eastern Washington State Historical Society/Cheney Cowles</para>
          <para>Museum Museum of History and Industry, Seattle</para>
       </example>
       <example co="object">
-         <para>University of Washington Libraries, Special Collections Division</para>
+         <para>University of Washington Libraries. Special Collections</para>
          <para>Eastern Washington State Historical Society/Cheney Cowles</para>
          <para>Museum Museum of History and Industry, Seattle</para>
       </example>
@@ -90,13 +90,13 @@
          <para>University of Washington Tacoma Library</para>
       </customization>
       <customization co="no" dd="krab">
-         <para>University of Washington Libraries, Special Collections</para>
+         <para>University of Washington Libraries. Special Collections</para>
       </customization>
       <customization co="object" dd="krab">
-         <para>University of Washington Libraries, Special Collections</para>
+         <para>University of Washington Libraries. Special Collections</para>
       </customization>
       <customization co="item" dd="krab">
-         <para>University of Washington Libraries, Special Collections</para>
+         <para>University of Washington Libraries. Special Collections</para>
       </customization>
       <customization co="object" dd="greekdancing" resourceType="default">
          <para>University of Washington Libraries. Special Collections</para>
@@ -114,6 +114,9 @@
          <para>University of Washington Tacoma Library</para>
       </customization>
       <!-- removed item examples -->
+      <customization co="no" dd="harriman">
+         <para>University of Washington Libraries, Special Collections</para>
+      </customization>
    </examples>
    <additionalInfo/>
    <marc>
@@ -174,6 +177,7 @@
          <change date="2019-05-20">Added cdm compound object info for krab.</change>
          <change date="2020-05-19">Commented-out instructions/@co=item to supress from Greek Dances.</change>
          <change date="2022-05-11">Update instructions for Greek Dances</change>
+         <change date="2023-12-07">Update example "University of Washington Libraries. Special Collections" per instruction from Digital Collections Curator.</change>
       </changeLog>
    </history>
 </property>
