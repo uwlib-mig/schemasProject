@@ -29,10 +29,12 @@
          <para>Any restrictions on the use of a resource.</para>
       </definition>
       <instructions co="no">
-         <para>Input the following text: "For information on permissions for use and reproductions please visit UW Libraries Special Collections "Reproductions: Order Photographs &amp; Scans" page: http://www.lib.washington.edu/specialcoll/service/reproduction.html."</para>
+         <para>Input the following text:</para>
+         <para>For information on permissions for use and reproductions please visit UW Libraries Special Collections Use Permissions page: http://www.lib.washington.edu/specialcollections/services/permission-for-use</para>
       </instructions>
       <instructions co="object">
-         <para>Input the following text: "For information on permissions for use and reproductions please visit UW Libraries Special Collections "Reproductions: Order Photographs &amp; Scans" page: http://www.lib.washington.edu/specialcoll/service/reproduction.html."</para>
+         <para>Input the following text:</para>
+         <para>For information on permissions for use and reproductions please visit UW Libraries Special Collections Use Permissions page: http://www.lib.washington.edu/specialcollections/services/permission-for-use</para>
       </instructions>
       <!-- MIG decision 2020-05: NO RIGHTS URI FOR ITEMS IN CDM COMPOUND OBJECTS
       <instructions co="item">
@@ -74,15 +76,16 @@
          <para>Please contact the University of Washington Tacoma Library with any inquiries about use of the collection.</para>
       </customization>
       <customization co="no" dd="harriman">
-         <para>&#x1F6A7; &#x1F6A7; &#x1F6A7;</para>
+         <para>Input the following text:</para>
+         <para>For information on permissions for use and reproductions please visit UW Libraries Special Collections Use Permissions page: http://www.lib.washington.edu/specialcollections/services/permission-for-use</para>
       </customization>
    </descriptions>
    <examples>
       <example co="no">
-         <para>For information on permissions for use and reproductions please visit UW Libraries Special Collections "Reproductions: Order Photographs &amp; Scans" page: http://www.lib.washington.edu/specialcoll/service/reproduction.html.</para>
+         <para>For information on permissions for use and reproductions please visit UW Libraries Special Collections Use Permissions page: http://www.lib.washington.edu/specialcollections/services/permission-for-use</para>
       </example>
       <example co="object">
-         <para>For information on permissions for use and reproductions please visit UW Libraries Special Collections "Reproductions: Order Photographs &amp; Scans" page: http://www.lib.washington.edu/specialcoll/service/reproduction.html.</para>
+         <para>For information on permissions for use and reproductions please visit UW Libraries Special Collections Use Permissions page: http://www.lib.washington.edu/specialcollections/services/permission-for-use</para>
       </example>
       <!--
       <example co="item">
@@ -119,7 +122,7 @@
          <para>Please contact the University of Washington Tacoma Library with any inquiries about use of the collection.</para>
       </customization>
       <customization co="no" dd="harriman">
-         <para>&#x1F6A7; &#x1F6A7; &#x1F6A7;</para>
+         <para>For information on permissions for use and reproductions please visit UW Libraries Special Collections Use Permissions page: &lt;a href="http://www.lib.washington.edu/specialcollections/services/permission-for-use"&gt;http://www.lib.washington.edu/specialcollections/services/permission-for-use&lt;/a&gt;</para>
       </customization>
    </examples>
    <additionalInfo>
@@ -188,6 +191,7 @@
          <change date="2022-05-03">Update guidance and example for the Greek folk dances collection - greekdancing</change>
          <change date="2022-07-27">Add guidance and examples for the Tacoma Japanese Language School Project - temp_alias_001</change>
          <change date="2022-07-27">Update definition, which had used "restrictions on the use of an image" to "use of a resource"</change>
+         <change date="2024-01-02">Update default guidance, examples and Harriman guidance, examples (replace defunct URL with functioning one)</change>
       </changeLog>
    </history>
 </property>
