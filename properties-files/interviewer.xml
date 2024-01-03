@@ -32,13 +32,13 @@
          <para>Enter the name of the person who interviewed the subject.</para>
          <para>Format of personal name: Lastname, Firstname.</para>
          <para>Use LC Name Authority File for form of name when available: http://authorities.loc.gov or http://id.loc.gov/</para>
-         <para>Separate multiple values with a semi-colon.</para>
+         <para>Separate multiple values with a semicolon.</para>
       </instructions>
       <instructions co="no">
          <para>Enter the name of the person who interviewed the subject.</para>
          <para>Format of personal name: Lastname, Firstname.</para>
          <para>Use LC Name Authority File for form of name when available: http://authorities.loc.gov or http://id.loc.gov/</para>
-         <para>Separate multiple values with a semi-colon.</para>
+         <para>Separate multiple values with a semicolon.</para>
       </instructions>
       <customization co="object" dd="p16786coll3" resourceType="oh">
          <para>Provide the name of the interviewer.</para>

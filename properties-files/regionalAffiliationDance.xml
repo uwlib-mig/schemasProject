@@ -31,12 +31,12 @@
         </definition>
         <instructions co="no">
             <para>Enter the name of the place the dance is from.</para>
-            <para>Separate multiple entries using a semi-colon.</para>
+            <para>Separate multiple entries using a semicolon.</para>
             <para>Use the GeoNet (https://community.esri.com/) form of the name, if available. If not, use the most common form/spelling.</para>
         </instructions>
         <instructions co="object">
             <para>Enter the name of the place the dance is from.</para>
-            <para>Separate multiple entries using a semi-colon.</para>
+            <para>Separate multiple entries using a semicolon.</para>
             <para>Use the GeoNet (https://community.esri.com/) form of the name, if available. If not, use the most common form/spelling.</para>
         </instructions>
     </descriptions>

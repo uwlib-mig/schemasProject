@@ -22,7 +22,7 @@
       <instructions co="no">
          <para>Enter the type of representation that best describes the drawing.</para>
          <para>Input a term or terms from the Getty Art and Architecture Thesaurus.</para>
-         <para>Separate multiple values with a semi-colon and space.</para>
+         <para>Separate multiple values with a semicolon and space.</para>
       </instructions>
    </descriptions><examples>
       <example co="no">

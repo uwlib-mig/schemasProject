@@ -31,12 +31,12 @@
         </definition>
         <instructions co="no">
             <para>Enter the name of the events seen in the segments.</para>
-            <para>Separate multiple events using a semi-colon.</para>
+            <para>Separate multiple events using a semicolon.</para>
             <para>Use the form of the event name provided by Yvonne Hunt.</para>
         </instructions>
         <instructions co="object">
             <para>Enter the name of the events seen in the segments.</para>
-            <para>Separate multiple events using a semi-colon.</para>
+            <para>Separate multiple events using a semicolon.</para>
             <para>Use the form of the event name provided by Yvonne Hunt.</para>
         </instructions>
     </descriptions>

@@ -21,11 +21,11 @@
       </definition>
       <instructions co="no">
          <para>Enter the project name.</para>
-         <para>Separate multiple values with a semi-colon and space.</para>
+         <para>Separate multiple values with a semicolon and space.</para>
       </instructions>
       <instructions co="object">
          <para>Enter the project name.</para>
-         <para>Separate multiple values with a semi-colon and space.</para>
+         <para>Separate multiple values with a semicolon and space.</para>
       </instructions>
    </descriptions><examples>
       <example co="no">

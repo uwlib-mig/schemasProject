@@ -32,14 +32,14 @@
         <instructions co="no">
             <para>Enter the names of the participants and performers seen in the resource.</para>
             <para>Enter the names in inverted form.</para>
-            <para>Separate multiple names with a semi-colon.</para>
+            <para>Separate multiple names with a semicolon.</para>
             <para>Use the form of the name in the LC Name Authority File when possible.</para>
         </instructions>
         <instructions co="object">
             <para>Enter the names of the participants and performers seen in the resource.</para>
             <para>Enter the names in inverted form.</para>
             <para>Use the form of the name in the LC Name Authority File when possible.</para>
-            <para>Separate multiple names with a semi-colon.</para>
+            <para>Separate multiple names with a semicolon.</para>
             <para>A participant role may be added in parenthesis following the name.</para>
         </instructions>
     </descriptions>

@@ -38,12 +38,12 @@
         <customization dd="greekdancing" co="no">
             <para>Enter the name of the dance or dances depicted.</para>
             <para>Enter the name of the dance as provided by Yvonne Hunt.</para>
-            <para>Separate multiple values with a semi-colon.</para>
+            <para>Separate multiple values with a semicolon.</para>
         </customization>
         <customization dd="greekdancing" co="object">
             <para>Enter the name of the dance or dances depicted.</para>
             <para>Enter the name of the dance as provided by Yvonne Hunt.</para>
-            <para>Separate multiple values with a semi-colon.</para>
+            <para>Separate multiple values with a semicolon.</para>
         </customization>
     </descriptions>
     <examples>

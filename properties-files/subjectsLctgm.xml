@@ -31,38 +31,38 @@
       <!-- default instructions should be updated to indicate preference for LCSH over LCTGM -->
       <instructions co="no">
          <para>Terms in this field are taken from the LC Thesaurus for Graphic Materials.</para>
-         <para>Separate multiple headings with a semi-colon.</para>
+         <para>Separate multiple headings with a semicolon.</para>
       </instructions>
       <instructions co="object">
          <para>Terms in this field are taken from the LC Thesaurus for Graphic Materials.</para>
-         <para>Separate multiple headings with a semi-colon.</para>
+         <para>Separate multiple headings with a semicolon.</para>
       </instructions>
       <instructions co="item">
          <para>Terms in this field are taken from the LC Thesaurus for Graphic Materials.</para>
-         <para>Separate multiple headings with a semi-colon.</para>
+         <para>Separate multiple headings with a semicolon.</para>
       </instructions>
       <customization co="object" dd="uwtoh">
          <para>Leave empty; UW Libraries catalogers will provide LCTGM subjects.</para>
          <para>Terms in this field will be taken from the LC Thesaurus for Graphic Materials.</para>
-         <para>Multiple headings will be separated with a semi-colon.</para>
+         <para>Multiple headings will be separated with a semicolon.</para>
       </customization>
       <customization co="no" dd="krab">
          <para>Leave empty; UW Libraries catalogers will provide LCTGM subjects.</para>
          <para>Be sure to enter the value "xyz" in the "Cataloging" field to alert catalogers that these items need subject headings.</para>
          <para>Terms in this field are taken from the LC Thesaurus for Graphic Materials.</para>
-         <para>Separate multiple headings with a semi-colon.</para>
+         <para>Separate multiple headings with a semicolon.</para>
       </customization>
       <customization co="object" dd="krab">
          <para>Leave empty; UW Libraries catalogers will provide LCTGM subjects.</para>
          <para>Be sure to enter the value "xyz" in the "Cataloging" field to alert catalogers that these items need subject headings.</para>
          <para>Terms in this field are taken from the LC Thesaurus for Graphic Materials.</para>
-         <para>Separate multiple headings with a semi-colon.</para>
+         <para>Separate multiple headings with a semicolon.</para>
       </customization>
       <customization co="item" dd="krab">
          <para>Leave empty; UW Libraries catalogers will provide LCTGM subjects.</para>
          <para>Be sure to enter the value "xyz" in the "Cataloging" field to alert catalogers that these items need subject headings.</para>
          <para>Terms in this field are taken from the LC Thesaurus for Graphic Materials.</para>
-         <para>Separate multiple headings with a semi-colon.</para>
+         <para>Separate multiple headings with a semicolon.</para>
       </customization>
       <customization co="no" dd="harriman">
          <para>The Library of Congress &lt;a href="https://www.loc.gov/rr/print/tgm1/"&gt;Thesaurus for Graphic Materials I: Subject Terms&lt;/a&gt; (TGM I) will be used only when no appropriate term for a particular object or concept is available in LCSH.</para>

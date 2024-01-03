@@ -22,7 +22,7 @@
       <instructions co="no">
          <para>Terms in this field are not taken from and specific controlled vocabulary.</para>
          <para>Preferred: use LC Thesaurus for Graphic Materials headings when possble, then LC Subject Headings if available. Anothe source can be used but is not preferred.</para>
-         <para>Separate multiple headings with a semi-colon.</para>
+         <para>Separate multiple headings with a semicolon.</para>
       </instructions>
       <customization co="no" dd="neareast">
          <para>Enter a heading naming the specific building or object; also enter a term describing the general type of object or building pictured.</para>

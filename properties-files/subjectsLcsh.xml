@@ -31,42 +31,42 @@
       <instructions co="no">
          <para>Values for this property are taken from the LC Subject Headings list (LCSH) at http://authorities.loc.gov or http://id.loc.gov.</para>
          <para>For images, use LCSH only when TGM has no appropriate term to describe the resource.</para>
-         <para>Separate multiple headings with a semi-colon.</para>
+         <para>Separate multiple headings with a semicolon.</para>
       </instructions>
       <instructions co="object">
          <para>Values in this property are taken from the LC Subject Headings list (LCSH) at http://authorities.loc.gov or http://id.loc.gov.</para>
          <para>For images, use LCSH only when TGM has no appropriate term to describe the resource.</para>
-         <para>Separate multiple headings with a semi-colon.</para>
+         <para>Separate multiple headings with a semicolon.</para>
       </instructions>
       <instructions co="item">
          <para>Values in this property are taken from the LC Subject Headings list (LCSH) at http://authorities.loc.gov or http://id.loc.gov.</para>
          <para>For images, use LCSH only when TGM has no appropriate term to describe the resource.</para>
-         <para>Separate multiple headings with a semi-colon.</para>
+         <para>Separate multiple headings with a semicolon.</para>
       </instructions>
       <customization co="object" dd="uwtoh">
          <para>Leave empty; UW Libraries catalogers will provide LSCH subjects.</para>
          <para>Be sure to enter the value "xyz" in the "Cataloging" field to alert catalogers that these items need subject headings.</para>
          <para>Values for this property will be taken from the LC Subject Headings list (LCSH) at http://authorities.loc.gov or http://id.loc.gov.</para>
-         <para>Multiple headings will be separated with a semi-colon.</para>
+         <para>Multiple headings will be separated with a semicolon.</para>
          <para>topical headings and headings for places with proper names which are not entered in the Geographic Coverage field below (this includes neighborhoods) will be entered here..</para>
       </customization>
       <customization co="no" dd="krab">
          <para>Leave empty; UW Libraries catalogers will provide LSCH subjects.</para>
          <para>Be sure to enter the value "xyz" in the "Cataloging" field to alert catalogers that these items need subject headings.</para>
          <para>Values for this property are taken from the LC Subject Headings list (LCSH) at http://authorities.loc.gov or http://id.loc.gov.</para>
-         <para>Separate multiple headings with a semi-colon.</para>
+         <para>Separate multiple headings with a semicolon.</para>
       </customization>
       <customization co="object" dd="krab">
          <para>Leave empty; UW Libraries catalogers will provide LSCH subjects.</para>
          <para>Be sure to enter the value "xyz" in the "Cataloging" field to alert catalogers that these items need subject headings.</para>
          <para>Values for this property are taken from the LC Subject Headings list (LCSH) at http://authorities.loc.gov or http://id.loc.gov.</para>
-         <para>Separate multiple headings with a semi-colon.</para>
+         <para>Separate multiple headings with a semicolon.</para>
       </customization>
       <customization co="item" dd="krab">
          <para>Leave empty; UW Libraries catalogers will provide LSCH subjects.</para>
          <para>Be sure to enter the value "xyz" in the "Cataloging" field to alert catalogers that these items need subject headings.</para>
          <para>Values for this property are taken from the LC Subject Headings list (LCSH) at http://authorities.loc.gov or http://id.loc.gov.</para>
-         <para>Separate multiple headings with a semi-colon.</para>
+         <para>Separate multiple headings with a semicolon.</para>
       </customization>
       <customization co="object" dd="p16786coll3" resourceType="text">
          <para>University of Washington Libraries (UWL) cataloging staff will provide a value or values for this property.</para>

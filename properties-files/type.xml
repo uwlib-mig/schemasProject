@@ -42,7 +42,7 @@
       <!-- MIG decision 2020-05: do not include this property in the object description
          <instructions co="object">
          <para>Input a value from the Dublin Core Type Vocabulary at http://dublincore.org/documents/dcmi-terms/.</para>
-         <para>Separate multiple values with a semi-colon.</para>
+         <para>Separate multiple values with a semicolon.</para>
       </instructions>-->  
       <!-- See MIG 2021-11-02 notes for SSDC - p16786coll3 - implementation -->
       <customization co="object" dd="p16786coll3" resourceType="song oh">

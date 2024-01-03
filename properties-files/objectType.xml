@@ -31,20 +31,20 @@
       <instructions co="no">
          <para>Input a term or terms taken from a controlled source. Recommended: LC Thesaurus for Graphic Materials.</para>
          <para>Enter the heading exactly as it appears in the thesaurus.</para>
-         <para>Separate multiple values with a semi-colon and space.</para>
+         <para>Separate multiple values with a semicolon and space.</para>
       </instructions>
       <instructions co="object">
          <para>Input a term taken from a controlled source. Recommended: LC Thesaurus for Graphic Materials (still images), Library of Congress Subject Headings (oral histories).</para>
          <para>If more than one term is applicable, list the form of the item digitaized first.</para>
          <para>Enter the heading exactly as it appears in the controlled source.</para>
-         <para>Separate multiple values with a semi-colon and space.</para>
+         <para>Separate multiple values with a semicolon and space.</para>
       </instructions>
       <!--
       <instructions co="item">
          <para>Optional: input a term taken from a controlled source. Recommended: LC Thesaurus for Graphic Materials (still images), Library of Congress Subject Headings (oral histories).</para>
          <para>Not required for all compound object items. Use as needed. Recommended: enter type values when the collection resources are mixed media.</para>
          <para>Enter the heading exactly as it appears in the controlled source.</para>
-         <para>Separate multiple values with a semi-colon and space.</para>
+         <para>Separate multiple values with a semicolon and space.</para>
       </instructions>
       -->
       <customization co="item" dd="civilwar">
@@ -52,7 +52,7 @@
          <para>Recommended but not required for all compound object items.</para>
          <para>Especially important to enter when the collection resources are mixed media.</para>
          <para>Enter the heading exactly as it appears in the controlled source.</para>
-         <para>Separate multiple values with a semi-colon and space.</para>
+         <para>Separate multiple values with a semicolon and space.</para>
       </customization>
       <customization co="object" dd="uwtoh">
          <para>Enter "Oral histories"</para>

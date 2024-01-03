@@ -35,7 +35,7 @@
         </instructions>
         <instructions co="object">
             <para>Enter names of the musical instruments seen in the video segments.</para>
-            <para>Separate multiple instruments using a semi-colon.</para>
+            <para>Separate multiple instruments using a semicolon.</para>
             <para>Use the form of the name provided by Yvonne Hunt.</para>
         </instructions>
     </descriptions>

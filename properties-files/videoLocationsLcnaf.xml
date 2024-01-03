@@ -26,17 +26,17 @@
         <definition><para>Location in which the moving images were recorded.</para></definition>
         <instructions co="no">
             <para>Enter the name of the places in which the video segments were recorded.</para>
-            <para>Separate multiple places using a semi-colon.</para>
+            <para>Separate multiple places using a semicolon.</para>
             <para>Place names must be taken from the Library of Congress Name Authority File.</para>
         </instructions>
         <instructions co="object">
             <para>Enter the name of the places in which the video segments were recorded.</para>
-            <para>Separate multiple places using a semi-colon.</para>
+            <para>Separate multiple places using a semicolon.</para>
             <para>Place names must be taken from the Library of Congress Name Authority File.</para>
         </instructions>
         <customization co="object" dd="greekdancing" resourceType="default">
             <para>Enter the name of the places in which the video segments were recorded.</para>
-            <para>Separate multiple places using a semi-colon.</para>
+            <para>Separate multiple places using a semicolon.</para>
             <para>Place names must be taken from the Library of Congress Name Authority File.</para>
         </customization>
     </descriptions>

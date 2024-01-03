@@ -26,7 +26,7 @@
       <instructions co="object">
          <para>Input Lastname, Firstname for all personal names. Use LC Authority File for form of name, if available.</para>
          <para>Enter the name of the photographer or firm associated with the creation of the image(s) contained in the resource. It should represent as closely as possible the creator’s name or the company’s name at the time of the creation of the image(s). Can be the same entry as in the Studio Name field. Includes both personal and corporate names.</para>
-         <para>Separate multiple values with a semi-colon.</para>
+         <para>Separate multiple values with a semicolon.</para>
       </instructions>
    </descriptions><examples>
       <example co="all">

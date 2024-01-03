@@ -47,7 +47,7 @@
          <para>When the original is non-digital, use a label from one of the entries of the RDA Registry's RDA Carrier Type Vocabulary currently available at https://www.rdaregistry.info/termList/RDACarrierType/</para>
          <para>When the original is digital, use media types listed at http://www.iana.org/assignments/media-types/index.html</para>
          <para>For audio WAVE files, enter audio/wav.</para>
-         <para>Separate multiple formats with a semi-colon.</para>
+         <para>Separate multiple formats with a semicolon.</para>
       </instructions> -->
       <customization co="item" dd="p16786coll3" resourceType="song">
          <para>Values for Original Format must be taken from the &lt;a href="http://www.rdaregistry.info/termList/RDACarrierType/"&gt;RDA Carrier Type&lt;/a&gt; vocabulary.</para>

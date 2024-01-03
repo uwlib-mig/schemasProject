@@ -22,7 +22,7 @@
       <instructions co="no">
          <para>If the studio location is noted on the front of the photograph, or is known to the cataloger, it is provided in Studio Location field.</para>
          <para>Input in standard hierarchical form separated by a dash (equivalent to two hyphens).</para>
-         <para>If there is more than one studio location noted, separate them by semi-colons.</para>
+         <para>If there is more than one studio location noted, separate them by semicolons.</para>
       </instructions>
    </descriptions><examples>
       <example co="no">

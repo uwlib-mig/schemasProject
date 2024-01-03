@@ -31,14 +31,14 @@
       <instructions co="no">
          <para>Input lastname, firstname or the corporate body name.</para>
          <para>Use LC Authority File for form of name, if available.</para>
-         <para>Multiple names are okay; separate multiple names with a semi-colon.</para>
+         <para>Multiple names are okay; separate multiple names with a semicolon.</para>
          <para>If the Creator is determined from a resource other than the item, create a Note.</para>
          <para>If there is no author, leave the field blank.</para>
       </instructions>
       <instructions co="object">
          <para>Input lastname, firstname or the corporate body name.</para>
          <para>Use LC Authority File for form of name, if available.</para>
-         <para>Multiple names are okay; separate multiple names with a semi-colon.</para>
+         <para>Multiple names are okay; separate multiple names with a semicolon.</para>
          <para>If the Creator is determined from a resource other than the item, create a Note.</para>
          <para>If there is no author, leave the field blank.</para>
       </instructions>
