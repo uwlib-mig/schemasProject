@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<migDataDictionary xmlns="http://www.lib.washington.edu/msd/mig/schemas/dataDictionaries"
+    xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    id="0015"
+    xsi:schemaLocation="https://www.lib.washington.edu/cams/mig/datadicts 
+    ../../xsd4md/schema-4-dds.xsd">
+    <!-- BMR: I don't know what the function of ^^^ migDataDictionary/@id is -->
+    <ddName>Collection Name TBD</ddName>
+    <!-- element should be 'collectionName' -->
+    <ddPartOfProject/>
+    <originalCreationDate>2024-01-25</originalCreationDate>
+    <latestUpdate>2024-01-25</latestUpdate>
+    <!-- not needed ^^^ if commit history exists??  -->
+    <metadataLiaisons>
+        <metadataLiaison>Benjamin Riesenberg - &lt;a href="mailto:ries07@uw.edu"&gt;ries07@uw.edu&lt;/a&gt;</metadataLiaison>
+    </metadataLiaisons>
+    <cdmCo>no</cdmCo>
+    <standalone>yes</standalone>
+    <cdmCode>becker</cdmCode>
+    <properties>
+        <xi:include href="../../properties-files/title.xml"/>
+        <xi:include href="../../properties-files/photographer.xml"/>
+        <xi:include href="../../properties-files/dateEdtf.xml"/>
+        <xi:include href="../../properties-files/date.xml"/>
+        <xi:include href="../../properties-files/dates.xml"/>
+        <xi:include href="../../properties-files/subjectsLcsh.xml"/>
+        <xi:include href="../../properties-files/locationDepicted.xml"/>
+        <xi:include href="../../properties-files/digitalCollection.xml"/>
+        <xi:include href="../../properties-files/orderingInformation.xml"/>
+        <xi:include href="../../properties-files/repository.xml"/>
+        <xi:include href="../../properties-files/repositoryCollection.xml"/>
+        <xi:include href="../../properties-files/repositoryCollectionGuide.xml"/>
+        <xi:include href="../../properties-files/objectType.xml"/>
+        <xi:include href="../../properties-files/physicalDescription.xml"/>
+        <xi:include href="../../properties-files/digitalReproductionInformation.xml"/>
+        <xi:include href="../../properties-files/rightsUri.xml"/>
+        <xi:include href="../../properties-files/restrictions.xml"/>
+        <xi:include href="../../properties-files/type.xml"/>
+        <xi:include href="../../properties-files/institution.xml"/>
+        <xi:include href="../../properties-files/cataloging.xml"/>
+    </properties>
+</migDataDictionary>
+    
