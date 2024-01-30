@@ -86,10 +86,23 @@
                         </xs:restriction>
                     </xs:simpleType>
                 </xs:attribute>
-                <xs:attribute name="dd" type="xs:string"/>
+                <xs:attribute name="dd" type="dd_type"/>
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
+    
+    <!-- allow multiple, space-delimited collection aliases -->
+    <xs:simpleType name="dd_type">
+        <xs:restriction>
+            <xs:simpleType>
+                <xs:list>
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string"/>
+                    </xs:simpleType>
+                </xs:list>
+            </xs:simpleType>
+        </xs:restriction>
+    </xs:simpleType>
 
     <xs:complexType name="cdmType">
         <xs:sequence>
@@ -196,7 +209,7 @@
                 </xs:restriction>
             </xs:simpleType>
         </xs:attribute>
-        <xs:attribute name="dd" type="xs:string"/>
+        <xs:attribute name="dd" type="dd_type"/>
     </xs:complexType>
 
     <xs:complexType name="simpleTypeType">
@@ -621,7 +634,7 @@
         </xs:annotation>
         <xs:complexContent>
             <xs:extension base="paraType4co">
-                <xs:attribute name="dd" type="xs:string"/>
+                <xs:attribute name="dd" type="dd_type"/>
                 <xs:attribute name="resourceType" type="resourceType_attr_type"/>
             </xs:extension>
         </xs:complexContent>
