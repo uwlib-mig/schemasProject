@@ -28,6 +28,7 @@
       <definition>
          <para>Prominent date for the resource, such as the date of creation of the original resource.</para>
       </definition>
+      <!-- to do: update default 'no' 'object' guidance based on most recent guidance used for Harriman, Becker -->
       <instructions co="no">
          <para>Reflects the date in the "Date" field.</para>
          <para>Express all dates, including date ranges, using Library of Congress' Extended Date Time Format.</para>
@@ -72,7 +73,7 @@
          <para>If the value of Date is not any of the above, consult the EDTF spedification to determine the appropriate notation.</para>
          <para>Date-Edtf value should agree with dates values entered in Date and Dates fields.</para>
       </customization>
-      <customization co="no" dd="harriman">
+      <customization co="no" dd="harriman becker">
          <para>Date of creation of the original resource.</para>
          <para>Reflects the date in the "Date" field.</para>
          <para>Express all dates, including date ranges, using Library of Congress' Extended Date Time Format.</para>

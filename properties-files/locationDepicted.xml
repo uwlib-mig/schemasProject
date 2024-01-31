@@ -73,6 +73,9 @@
          <para>United States--Alaska—Fort Yukon</para>
          <para>Canada—Yukon—Dawson</para>
       </customization>
+      <customization co="no" dd="becker">
+         <para>&#x1F6A7; &#x1F6A7; &#x1F6A7;</para>
+      </customization>
    </examples>
    <additionalInfo>
       <admin co="object">

@@ -132,7 +132,7 @@
          <para>When the value of Date is “between YYYY and YYYY”, enter all years in the date range as YYYY. Do not use commas or other punctuation to separate years.</para>
          <para>When the value of Date is “between YYYY and YYYY?”, enter all years in the date range as YYYY, plus five years before the earliest date and five years after the latest date. Do not use commas or other punctuation to separate years.</para>
       </customization>
-      <customization co="no" dd="harriman">
+      <customization co="no" dd="harriman becker">
          <para>Date of creation of the original resource.</para>
          <para>The Dates value should agree with values for the Date-EDTF and Date fields. This field is indexed and enables date searching in CONTENTdm.</para>
          <para>Enter a year or years only. Do not use commas or other punctuation to separate years.</para>
@@ -140,7 +140,7 @@
          <para>If the value of Date is "[month], YYYY", enter the year only in the following format: YYYY</para>
          <para>If the value of Date value is “[month] DD, YYYY”, enter the year only in the following format: YYYY</para>
          <para>If the value of Date is “between YYYY and YYYY”, enter all years in the date range in the following format: YYYY YYYY YYYY YYYY</para>
-         <para>For a Date value which is an uncertain year (for example, “YYYY?”):</para>
+         <para>&lt;br/&gt;For a Date value which is an uncertain year (for example, “YYYY?”):</para>
          <para>&lt;br/&gt;If research or available information about the resource can be used to produce a probable year or range of years, enter this.</para>
          <para>If no additional information is available, enter an eleven-year range by adding five years on either side of the uncertain year.</para>
          <para>&lt;br/&gt;For a Date value which is an uncertain range of years (for example, “between YYYY and YYYY?”):</para>

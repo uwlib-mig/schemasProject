@@ -91,7 +91,7 @@
          <para>Do not provide a value for this property.</para>
          <para>Be sure to provide the value 'xyz' for the Cataloging property to indicate to cataloging staff that a value is needed.</para>
       </customization>
-      <customization co="no" dd="harriman">
+      <customization co="no" dd="harriman becker">
          <para>Terms in this field are taken from the LC Subject Headings list (LCSH). LCSH and the National Authority File (LCNAF) will also be used for persons, objects, and places with proper names.</para>
          <para>Separate multiple values using a semicolon and space ("; ").</para>
       </customization>
