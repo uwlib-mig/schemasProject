@@ -20,8 +20,8 @@
     <properties>
         <xi:include href="../../properties-files/title.xml"/>
         <xi:include href="../../properties-files/photographer.xml"/>
-        <xi:include href="../../properties-files/dateEdtf.xml"/>
         <xi:include href="../../properties-files/date.xml"/>
+        <xi:include href="../../properties-files/dateEdtf.xml"/>
         <xi:include href="../../properties-files/dates.xml"/>
         <xi:include href="../../properties-files/subjectsLcsh.xml"/>
         <xi:include href="../../properties-files/locationDepicted.xml"/>
