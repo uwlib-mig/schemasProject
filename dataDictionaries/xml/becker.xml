@@ -24,6 +24,7 @@
         <xi:include href="../../properties-files/dateEdtf.xml"/>
         <xi:include href="../../properties-files/dates.xml"/>
         <xi:include href="../../properties-files/subjectsLcsh.xml"/>
+        <xi:include href="../../properties-files/description.xml"/>
         <xi:include href="../../properties-files/locationDepicted.xml"/>
         <xi:include href="../../properties-files/digitalCollection.xml"/>
         <xi:include href="../../properties-files/orderingInformation.xml"/>
