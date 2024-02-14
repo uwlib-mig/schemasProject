@@ -28,13 +28,18 @@
       <definition>
          <para>An account of the resource.</para>
       </definition>
-      <instructions co="object"/>
+      <instructions co="object">
+         <para>&#x1F6A7;&#x1F6A7;&#x1F6A7;</para>
+      </instructions>
+      <instructions co="no">
+         <para>&#x1F6A7;&#x1F6A7;&#x1F6A7;</para>
+      </instructions>
       <customization co="object" dd="uwtoh">
          <para>Provide a brief abstract of the interview, summarizing the topics discussed.</para>
          <para>Note any key events, organizations, perspectives, and significant names that may have come up in the interview.</para>
          <para>When appropriate, note interviewees contributions to encouraging a diverse and inclusive campus.</para>
       </customization>
-      <customization co="object" dd="temp_alias_001" resourceType="default">
+      <customization co="object" dd="temp_alias_001" objectType="default">
          <para>Provide a brief summary of the interview.</para>
          <para>Write in present tense.</para>
          <para>Use the full name of the interviewee in the first sentence.</para>
@@ -43,12 +48,16 @@
       </customization>
    </descriptions>
    <examples>
-      <example co="object"/>
-      <example co="no"/>
+      <example co="object">
+         <para>&#x1F6A7;&#x1F6A7;&#x1F6A7;</para>
+      </example>
+      <example co="no">
+         <para>&#x1F6A7;&#x1F6A7;&#x1F6A7;</para>
+      </example>
       <customization co="object" dd="uwtoh">
          <para>Joao Fonseca discusses his years in the UWT Liberal Studies / Interdisciplinary Arts and Sciences from 1990 to present. Fonseca addresses the development of the department from its founding to its establishment as a school in 2014. Describes the many contributions of Wiliam Richardson and Michael Allen. Includes a description of the acquisition and display of Buster Simpson's "Parapet Relay" iron and bronze sidewalk plaques, referencing the role of the Washington State Art Commission.</para>
       </customization>
-      <customization co="object" dd="temp_alias_001" resourceType="default">
+      <customization co="object" dd="temp_alias_001" objectType="default">
          <para>Robert Mitsuhiro Takasugi reflects on his childhood growing up in Tacoma and attending the Japanese Language school. Takasugi contrasts his experiences attending American public school with the Japanese Language School. In addition to covering family history, Takasugi recounts the moral and cultural lessons he received at the school and examines what it means to be Japanese.</para>
       </customization>
    </examples>
