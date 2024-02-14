@@ -126,7 +126,7 @@
          <para>For table of contents compound-object items, enter the following:</para>
          <para>Table of contents</para>
       </customization>
-      <customization co="object" dd="p16786coll3" resourceType="text">
+      <customization co="object" dd="p16786coll3" objectType="text">
          <para>Find Unicode Title in Sephardic Studies Collection Master Catalog and revise according to the Aki Yerushalayim standard if needed. (Reference available &lt;a href="https://drive.google.com/drive/folders/178p999G1zCUMaMi8kAVtNiW8BF3RAYZa?usp=sharing"&gt;here&lt;/a&gt;.)</para>
          <para>Use a space, colon, space (" : ") to indicate the break between title and subtitle, even if no colon appears on title page.</para>
          <para>Only Romanize the portion of the title that will be included in the Title field.</para>
@@ -138,21 +138,21 @@
          <para>In cases where resources are printed in romanized Ladino, transcribe the title into this field exactly as it appears, even if it doesn’t conform to the Aki Yerushalayim standard.</para>
          <para>All compound objects must have a title.</para>
       </customization>
-      <customization co="object" dd="p16786coll3" resourceType="song">
+      <customization co="object" dd="p16786coll3" objectType="song">
          <para>Construct as follows:</para>
          <para>Audio: [song title]</para>
          <para>(Do not enter square brackets around the song title.)</para>
          <para>Romanize song titles according to the Aki Yerushalayim standard. (Reference available &lt;a href="https://drive.google.com/drive/folders/178p999G1zCUMaMi8kAVtNiW8BF3RAYZa?usp=sharing"&gt;here&lt;/a&gt;.)</para>
          <para>All compound objects must have a title.</para>
       </customization>
-      <customization co="object" dd="p16786coll3" resourceType="oh">
+      <customization co="object" dd="p16786coll3" objectType="oh">
          <para>Construct as follows:</para>
          <para>[interviewee name] interview</para>
          <para>Provide the interviewee name in natural order.</para>
          <para>(Do not enter square brackets around the interviewee name.)</para>
          <para>All compound objects must have a title.</para>
       </customization>
-      <customization co="item" dd="p16786coll3" resourceType="text">
+      <customization co="item" dd="p16786coll3" objectType="text">
          <para>Every page must have a title.</para>
          <para>Provide the page number as the item title.</para>
          <para>Where there is no pagination, a description of the page contents may be used as an item title.</para>
@@ -164,7 +164,7 @@
          <para>For pages where pagination is indicated using a Hebrew letter, provide this in parentheses following the Arabic numeral(s).</para>
          <para>For pages without any pagination in this case (usually the pages facing those marked with a Hebrew letter), enter "(unnumbered)" following the Arabic numeral(s).</para>
       </customization>
-      <customization co="item" dd="p16786coll3" resourceType="song">
+      <customization co="item" dd="p16786coll3" objectType="song">
          <para>Construct as follows for audio-file (.mp3/.wav/etc.) items:</para>
          <para>[song title] - audio</para>
          <para>Enter the song title romanized according to Aki Yerushalayim.</para>
@@ -176,7 +176,7 @@
          <para>(Do not enter square brackets around song titles or singer names.)</para>
          <para>All compound-object items--audio files and image files--must have a title.</para>
       </customization>
-      <customization co="item" dd="p16786coll3" resourceType="oh">
+      <customization co="item" dd="p16786coll3" objectType="oh">
          <para>Construct as follows for audio file (.mp3/.wav/etc.) items which are interview recordings:</para>
          <para>[interviewee name] interview, audio</para>
          <para>Construct as follows for image-file (.jpg) items which are images of interviewees:</para>
@@ -186,7 +186,7 @@
          <para>[interviewee name] interview, transcript</para>
          <para>All compound-object items--audio files and image files--must have a title.</para>
       </customization>
-      <customization co="object" dd="temp_alias_001" resourceType="default">
+      <customization co="object" dd="temp_alias_001" objectType="default">
          <para>All compound objects must have a title.</para>
          <para>For interviews with individuals, construct as follows:</para>
          <para>[English First Name] [Japanese First Name] [(Maiden Name)*] [Last Name] interview</para>
@@ -197,7 +197,7 @@
          <para>&lt;br/&gt;</para>
          <para>For group interviews (with 3 or more interviewees), input the name of the group as indicated on the video file. Individual interviewee names will be listed in the interviewee field.</para>
       </customization>
-      <customization co="item" dd="temp_alias_001" resourceType="default">
+      <customization co="item" dd="temp_alias_001" objectType="default">
          <para>Construct compound-object item titles using the Title value for the compound object.</para>
          <para>&lt;br/&gt;</para>
          <para>For video files, construct as follows:</para>
@@ -212,6 +212,7 @@
          <para>In cases where more than one item of the same category (audio file, video file, etc.) is included in the compound object, add additional numbering as appropriate.</para>
          <para>If such items have a sequential relationship to one another, additional numbering should reflect the sequence. If the sequential relationship is known from an original carrier, this may be indicated along with additional numbering (see example values).</para>
       </customization>
+      <customization co="no" dd="becker" objectType="document"></customization>
    </descriptions>
    <examples>
       <example co="no">

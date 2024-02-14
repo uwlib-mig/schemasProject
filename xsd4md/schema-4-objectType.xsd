@@ -4,7 +4,7 @@
     targetNamespace="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
     xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md">
 
-    <!-- resourceType_attr_type added 2021-10 -->
+    <!-- schema structure allows multiple, whitespace delimited values -->
     <xs:simpleType name="objectType_attr_type">
         <xs:restriction>
             <xs:simpleType>

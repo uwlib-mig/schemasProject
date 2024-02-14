@@ -55,7 +55,7 @@
          <para>Input a term or terms describing the format of the original resource in which data, sound, images, etc., are stored.</para>
          <para>Enter the phrase describing the original resource provided by the digitization agency.</para>
       </customization>
-      <customization co="object" dd="p16786coll3" resourceType="text">
+      <customization co="object" dd="p16786coll3" objectType="text">
          <para>For textual resources, Physical Description is recorded at the compound-object level.</para>
          <para>If information is available, provide a description of the physical resource from which the digital surrogate (compound object) was created.</para>
          <para>If information is available, include both the number of pages and a measurement for the volume.</para>
@@ -70,7 +70,7 @@
          <para>Record the height using Arabic numerals.</para>
          <para>Use a space and “cm” (no following punctuation) after the numeral(s) (“ cm”).</para>
       </customization>
-      <customization co="item" dd="p16786coll3" resourceType="song">
+      <customization co="item" dd="p16786coll3" objectType="song">
          <para>For ballad recordings, Physical Description is recorded at the compound-object-item level.</para>
          <para>If information is available, provide a description of the physical resource from which the digital surrogate (compound-object item) was created.</para>
          <para>&lt;br/&gt;For audio-file items (song recordings), if information is available, provide a runtime for the analog media from which the audio file was created.</para>
@@ -84,7 +84,7 @@
          <para>Use a space and “cm” (no following punctuation) after the numeral(s) (“ cm”), to record as:</para>
          <para>[height] cm</para>
       </customization>
-      <customization co="item" dd="p16786coll3" resourceType="oh">
+      <customization co="item" dd="p16786coll3" objectType="oh">
          <para>For oral histories, Physical Description is recorded at the compound-object-item level.</para>
          <para>For SSDC oral history audio files and transcript files which are born-digital, do not record a Physical Description value.</para>
          <para>&lt;br/&gt;For image-file items (photographs of interviewees), if information is available, provide a measurement or measurements of the physical media from which image files were created.</para>
@@ -92,7 +92,7 @@
          <para>Use a space and “cm” (no following punctuation) after the measurements (“ cm”), to record as:</para>
          <para>[height] x [width] cm</para>
       </customization>
-      <customization co="item" dd="p16786coll3" resourceType="oh"></customization>
+      <customization co="item" dd="p16786coll3" objectType="oh"></customization>
       <customization co="no" dd="harriman">
          <para>Includes additional descriptive information about type of material or medium, color, and dimensions.</para>
          <para>Terms for visual materials should be taken from &lt;a href="http://www.loc.gov/rr/print/gm/graphmat.html"&gt;Graphic Materials: Rules for Describing Original Items and Historical Collections&lt;/a&gt;.</para>
@@ -160,7 +160,7 @@
       <customization co="no" dd="krab">
          <para>1/4" Open Reel Tape: 1.5mil Polyester Brand Unknown; Stereo</para>
       </customization>
-      <customization co="object" dd="p16786coll3" resourceType="text">
+      <customization co="object" dd="p16786coll3" objectType="text">
          <para>xi pages, 25 cm</para>
          <para>25 pages, 25 cm</para>
          <para>xi, 25 pages, 25 cm</para>
@@ -168,12 +168,12 @@
          <para>xi, 25 pages, 15 unnumbered pages, 30 cm</para>
          <para>2 unnumbered pages, 300 pages, 35 cm</para>
       </customization>
-      <customization co="item" dd="p16786coll3" resourceType="song">
+      <customization co="item" dd="p16786coll3" objectType="song">
          <para>00:32:23</para>
          <para>10 x 15 cm</para>
          <para>28 cm</para>
       </customization>
-      <customization co="item" dd="p16786coll3" resourceType="oh">
+      <customization co="item" dd="p16786coll3" objectType="oh">
          <para>10 x 15 cm</para>
       </customization>
       <customization co="no" dd="harriman">

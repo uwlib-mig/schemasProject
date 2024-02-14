@@ -51,25 +51,25 @@
       <customization co="item" dd="krab">
          <para>Enter the name of the institution in which the original item is held: "University of Washington Libraries, Special Collections."</para>
       </customization>
-      <customization co="object" dd="greekdancing" resourceType="default">
+      <customization co="object" dd="greekdancing" objectType="default">
          <para>Enter the following value:</para>
          <para>University of Washington Libraries. Special Collections</para>
       </customization>
-      <customization co="object" dd="p16786coll3" resourceType="text song oh">
+      <customization co="object" dd="p16786coll3" objectType="text song oh">
          <para>This value will be entered by University of Washington Libraries Special Collections Staff following transfer of collection resources.</para>
          <para>Value will be as follows:</para>
          <para>University of Washington Libraries. Special Collections</para>
       </customization>
-      <customization co="item" dd="p16786coll3" resourceType="text song oh">
+      <customization co="item" dd="p16786coll3" objectType="text song oh">
          <para>This value will be entered by University of Washington Libraries Special Collections Staff following transfer of collection resources.</para>
          <para>Value will be as follows:</para>
          <para>University of Washington Libraries. Special Collections</para>
       </customization>
-      <customization co="object" dd="temp_alias_001" resourceType="default">
+      <customization co="object" dd="temp_alias_001" objectType="default">
          <para>Use the following value:</para>
          <para>University of Washington Tacoma Library</para>
       </customization>
-      <customization co="item" dd="temp_alias_001" resourceType="default">
+      <customization co="item" dd="temp_alias_001" objectType="default">
          <para>Use the following value:</para>
          <para>University of Washington Tacoma Library</para>
       </customization>
@@ -98,19 +98,19 @@
       <customization co="item" dd="krab">
          <para>University of Washington Libraries. Special Collections</para>
       </customization>
-      <customization co="object" dd="greekdancing" resourceType="default">
+      <customization co="object" dd="greekdancing" objectType="default">
          <para>University of Washington Libraries. Special Collections</para>
       </customization>
-      <customization co="object" dd="p16786coll3" resourceType="text song oh">
+      <customization co="object" dd="p16786coll3" objectType="text song oh">
          <para>University of Washington Libraries. Special Collections</para>
       </customization>
-      <customization co="item" dd="p16786coll3" resourceType="text song oh">
+      <customization co="item" dd="p16786coll3" objectType="text song oh">
          <para>University of Washington Libraries. Special Collections</para>
       </customization>
-      <customization co="object" dd="temp_alias_001" resourceType="default">
+      <customization co="object" dd="temp_alias_001" objectType="default">
          <para>University of Washington Tacoma Library</para>
       </customization>
-      <customization co="item" dd="temp_alias_001" resourceType="default">
+      <customization co="item" dd="temp_alias_001" objectType="default">
          <para>University of Washington Tacoma Library</para>
       </customization>
       <!-- removed item examples -->

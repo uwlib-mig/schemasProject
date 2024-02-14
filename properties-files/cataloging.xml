@@ -37,7 +37,7 @@
       <instructions co="item">
          <para>Enter "xyz" to denote that the item requires subject headings from local catalogers.</para>
       </instructions>
-      <customization co="object" dd="p16786coll3" resourceType="oh song text">
+      <customization co="object" dd="p16786coll3" objectType="oh song text">
          <para>For metadata creation taking place outside the UWL Cataloging and Metadata Services unit:</para>
          <para>Enter "xyz" to request the creation and/or review of values for one or more of the following fields by UWL cataloging staff:</para>
          <para>&lt;br/&gt;Subjects (LCSH)</para>
@@ -57,7 +57,7 @@
          <para>Related OCLC Record</para>
          <para>Geographic fields: Geographic Coverage, Interviewee Birthplace, Performer Birthplace, Recording Location, Printer Location, Publisher Location</para>
       </customization>
-      <customization co="object" dd="temp_alias_001" resourceType="default">
+      <customization co="object" dd="temp_alias_001" objectType="default">
          <para>Values for this field are not visible to users, but they facilitate work by UW Libraries cataloging staff.</para>
          <para>For metadata creation taking place outside the UWL Cataloging and Metadata Services unit:</para>
          <para>Enter "xyz" to request the creation and/or review of values for one or more of the following fields by UWL cataloging staff.</para>

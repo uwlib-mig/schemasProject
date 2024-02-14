@@ -44,11 +44,11 @@
       <customization co="object" dd="uwtoh">
          <para>Enter the following URI from rightsstatements.org: http://rightsstatements.org/vocab/InC-EDU/1.0/ .</para>
       </customization>
-      <customization co="object" dd="greekdancing" resourceType="default">
+      <customization co="object" dd="greekdancing" objectType="default">
          <para>Enter the following value:</para>
          <para>http://rightsstatements.org/vocab/InC/1.0/</para>
       </customization>
-      <customization co="object" dd="p16786coll3" resourceType="text song oh">
+      <customization co="object" dd="p16786coll3" objectType="text song oh">
          <para>Unless otherwise instructed, enter the following URI: &lt;a href="http://rightsstatements.org/vocab/CNE/1.0/"&gt;http://rightsstatements.org/vocab/CNE/1.0/&lt;/a&gt;.</para>
          <para>Required for all compound objects.</para>
       </customization>
@@ -56,7 +56,7 @@
          <para>Unless otherwise instructed, enter the following URI: &lt;a href="http://rightsstatements.org/vocab/CNE/1.0/"&gt;http://rightsstatements.org/vocab/CNE/1.0/&lt;/a&gt;.</para>
          <para>Required for all standalone objects.</para>
       </customization>
-      <customization co="object" dd="temp_alias_001" resourceType="default">
+      <customization co="object" dd="temp_alias_001" objectType="default">
          <para>Use the following value:</para>
          <para>&lt;a href="http://rightsstatements.org/vocab/InC-EDU/1.0/"&gt;http://rightsstatements.org/vocab/InC-EDU/1.0/&lt;/a&gt;</para>
       </customization>
@@ -77,16 +77,16 @@
       <customization co="object" dd="uwtoh">
          <para>http://rightsstatements.org/vocab/InC-EDU/1.0/</para>
       </customization>
-      <customization co="object" dd="greekdancing" resourceType="default">
+      <customization co="object" dd="greekdancing" objectType="default">
          <para>http://rightsstatements.org/vocab/InC/1.0/</para>
       </customization>
-      <customization co="object" dd="p16786coll3" resourceType="text song oh">
+      <customization co="object" dd="p16786coll3" objectType="text song oh">
          <para>http://rightsstatements.org/vocab/CNE/1.0/</para>
       </customization>
       <customization co="no" dd="p16786coll3">
          <para>http://rightsstatements.org/vocab/CNE/1.0/</para>
       </customization>
-      <customization co="object" dd="temp_alias_001" resourceType="default">
+      <customization co="object" dd="temp_alias_001" objectType="default">
          <para>http://rightsstatements.org/vocab/InC-EDU/1.0/</para>
       </customization>
    </examples>
