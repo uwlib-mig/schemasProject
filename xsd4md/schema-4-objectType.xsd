@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    targetNamespace="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+    xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md">
+
+    <!-- resourceType_attr_type added 2021-10 -->
+    <xs:simpleType name="objectType_attr_type">
+        <xs:restriction>
+            <xs:simpleType>
+                <xs:list>
+                    <xs:simpleType>
+                        <xs:restriction base="xs:token">
+                            <!-- not aligned with LCTGM -->
+                            <xs:enumeration value="default">
+                                <xs:annotation>
+                                    <xs:documentation>Created for use in Greek Dances
+                                        collection.</xs:documentation>
+                                    <xs:documentation>Intended for use when only one resource
+                                        format/genre/type will be included in a given collection,
+                                        and there is no need to distinguish between property use for
+                                        one format/genre/type of resource vs.
+                                        another.</xs:documentation>
+                                </xs:annotation>
+                            </xs:enumeration>
+                            <!-- not aligned with LCTGM -->
+                            <xs:enumeration value="text">
+                                <xs:annotation>
+                                    <xs:documentation>Created for Sephardic Studies Digital
+                                        Collection - p16786coll3; coll. includes textual
+                                        resources</xs:documentation>
+                                </xs:annotation>
+                            </xs:enumeration>
+                            <!-- not aligned with LCTGM -->
+                            <xs:enumeration value="song">
+                                <xs:annotation>
+                                    <xs:documentation>Created for Sephardic Studies Digital
+                                        Collection - p16786coll3; coll includes audio recordings of
+                                        song performances</xs:documentation>
+                                </xs:annotation>
+                            </xs:enumeration>
+                            <!-- not aligned with LCTGM -->
+                            <xs:enumeration value="oh">
+                                <xs:annotation>
+                                    <xs:documentation>Created for Sephardic Studies Digital
+                                        Collection - p16786coll3; coll includes oral
+                                        histories</xs:documentation>
+                                </xs:annotation>
+                            </xs:enumeration>
+                            <xs:enumeration value="documents">
+                                <xs:annotation>
+                                    <xs:documentation>Created for Becker/Cambodia, to describe digitized notes</xs:documentation>
+                                    <xs:appinfo>http://id.loc.gov/authorities/genreForms/gf2014026163</xs:appinfo>
+                                </xs:annotation>
+                            </xs:enumeration>
+                            <xs:enumeration value="photographs">
+                                <xs:annotation>
+                                    <xs:documentation>Created for Becker/Cambodia, to describe digitized photographs</xs:documentation>
+                                    <xs:appinfo>http://id.loc.gov/authorities/genreForms/gf2017027249</xs:appinfo>
+                                </xs:annotation>
+                            </xs:enumeration>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:list>
+            </xs:simpleType>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

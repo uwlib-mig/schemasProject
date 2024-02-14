@@ -5,7 +5,7 @@
     xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md">
 
     <!-- version 0.2.1 2021-10-16
-        1 add new simpleType/attribute resourceType_attr_type -->
+        1 add new simpleType/attribute objectType_attr_type -->
 
     <!-- vesion 0.2 2017-11-06 
          1 added new element uwRequired with subelements
@@ -15,9 +15,9 @@
 
     <xs:import namespace="http://www.w3.org/XML/1998/namespace"
         schemaLocation="http://www.w3.org/2001/03/xml.xsd"/>
-
     <xs:import namespace="http://www.w3.org/2001/XMLSchema"
         schemaLocation="https://www.w3.org/2001/XMLSchema.xsd"/>
+    <xs:include schemaLocation="schema-4-objectType.xsd"/>
 
     <xs:annotation>
         <xs:documentation>Schema to validate properties used by UW Libraries.</xs:documentation>
@@ -635,51 +635,11 @@
         <xs:complexContent>
             <xs:extension base="paraType4co">
                 <xs:attribute name="dd" type="dd_type"/>
-                <xs:attribute name="resourceType" type="resourceType_attr_type"/>
+                <xs:attribute name="objectType" type="objectType_attr_type"/>
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>
 
-    <!-- resourceType_attr_type added 2021-10 -->
-    <xs:simpleType name="resourceType_attr_type">
-        <xs:restriction>
-            <xs:simpleType>
-                <xs:list>
-                    <xs:simpleType>
-                        <xs:restriction base="xs:token">
-                            <xs:enumeration value="default">
-                                <xs:annotation>
-                                    <xs:documentation>Created for use in Greek Dances collection.</xs:documentation>
-                                    <xs:documentation>Intended for use when only one resource format/genre/type will be included in a given collection, and there is no need to distinguish between property use for one format/genre/type of resource vs. another.</xs:documentation>
-                                </xs:annotation>
-                            </xs:enumeration>
-                            <xs:enumeration value="text">
-                                <xs:annotation>
-                                    <xs:documentation>Created for Sephardic Studies Digital
-                                        Collection - p16786coll3; coll. includes textual
-                                        resources</xs:documentation>
-                                </xs:annotation>
-                            </xs:enumeration>
-                            <xs:enumeration value="song">
-                                <xs:annotation>
-                                    <xs:documentation>Created for Sephardic Studies Digital
-                                        Collection - p16786coll3; coll includes audio recordings of
-                                        song performances</xs:documentation>
-                                </xs:annotation>
-                            </xs:enumeration>
-                            <xs:enumeration value="oh">
-                                <xs:annotation>
-                                    <xs:documentation>Created for Sephardic Studies Digital
-                                        Collection - p16786coll3; coll includes oral
-                                        histories</xs:documentation>
-                                </xs:annotation>
-                            </xs:enumeration>
-                        </xs:restriction>
-                    </xs:simpleType>
-                </xs:list>
-            </xs:simpleType>
-        </xs:restriction>
-    </xs:simpleType>
     <xs:complexType name="exPara"/>
 
 </xs:schema>
