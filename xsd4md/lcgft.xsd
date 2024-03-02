@@ -11,7 +11,25 @@
                 <xs:list>
                     <xs:simpleType>
                         <xs:restriction base="xs:token">
-                            <!-- not aligned with LCTGM -->
+                            <xs:enumeration value="Records_(Documents)">
+                                <xs:annotation>
+                                    <xs:documentation>Created for Becker/Cambodia, to describe digitized notes</xs:documentation>
+                                    <xs:appinfo>http://id.loc.gov/authorities/genreForms/gf2014026163</xs:appinfo>
+                                </xs:annotation>
+                            </xs:enumeration>
+                            <xs:enumeration value="Photographs">
+                                <xs:annotation>
+                                    <xs:documentation>Created for Becker/Cambodia, to describe digitized photographs</xs:documentation>
+                                    <xs:appinfo>http://id.loc.gov/authorities/genreForms/gf2017027249</xs:appinfo>
+                                </xs:annotation>
+                            </xs:enumeration>
+                            <xs:enumeration value="Newsletters">
+                                <xs:annotation>
+                                    <xs:documentation>Created for Becker/Cambodia, to describe digitized newsletters</xs:documentation>
+                                    <xs:appinfo>http://id.loc.gov/authorities/genreForms/gf2014026131</xs:appinfo>
+                                </xs:annotation>
+                            </xs:enumeration>
+                            <!-- TO DO: REPLACE below; not aligned with LCTGM -->
                             <xs:enumeration value="default">
                                 <xs:annotation>
                                     <xs:documentation>Created for use in Greek Dances
@@ -23,7 +41,6 @@
                                         another.</xs:documentation>
                                 </xs:annotation>
                             </xs:enumeration>
-                            <!-- not aligned with LCTGM -->
                             <xs:enumeration value="text">
                                 <xs:annotation>
                                     <xs:documentation>Created for Sephardic Studies Digital
@@ -31,7 +48,6 @@
                                         resources</xs:documentation>
                                 </xs:annotation>
                             </xs:enumeration>
-                            <!-- not aligned with LCTGM -->
                             <xs:enumeration value="song">
                                 <xs:annotation>
                                     <xs:documentation>Created for Sephardic Studies Digital
@@ -39,24 +55,11 @@
                                         song performances</xs:documentation>
                                 </xs:annotation>
                             </xs:enumeration>
-                            <!-- not aligned with LCTGM -->
                             <xs:enumeration value="oh">
                                 <xs:annotation>
                                     <xs:documentation>Created for Sephardic Studies Digital
                                         Collection - p16786coll3; coll includes oral
                                         histories</xs:documentation>
-                                </xs:annotation>
-                            </xs:enumeration>
-                            <xs:enumeration value="documents">
-                                <xs:annotation>
-                                    <xs:documentation>Created for Becker/Cambodia, to describe digitized notes</xs:documentation>
-                                    <xs:appinfo>http://id.loc.gov/authorities/genreForms/gf2014026163</xs:appinfo>
-                                </xs:annotation>
-                            </xs:enumeration>
-                            <xs:enumeration value="photographs">
-                                <xs:annotation>
-                                    <xs:documentation>Created for Becker/Cambodia, to describe digitized photographs</xs:documentation>
-                                    <xs:appinfo>http://id.loc.gov/authorities/genreForms/gf2017027249</xs:appinfo>
                                 </xs:annotation>
                             </xs:enumeration>
                         </xs:restriction>
