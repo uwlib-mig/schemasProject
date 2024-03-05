@@ -2,7 +2,7 @@
 <property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <uid>p96</uid>
     <labels>
-        <platformIndependent>Producer</platformIndependent>
+        <platformIndependent>producer</platformIndependent>
         <dc>contributor</dc>
     </labels>
     <uwRequired>
