@@ -98,7 +98,7 @@
       <property>p93 | architectFirm</property>
       <property>p94 | architectsPeople</property>
       <property>p95 | featuredContributor</property>
-      <property>p96 | Producer</property>
+      <property>p96 | producer</property>
       <property>p97 | dateOfBroadcast</property>
       <property>p98 | timePeriodDiscussed</property>
       <property>p99 | contentNotes</property>
@@ -152,7 +152,6 @@
       <property>p148 | deprecated_values</property>
    </by_pid>
    <by_label>
-      <property>p96 | Producer</property>
       <property>p1 | acquisition</property>
       <property>p91 | affiliationDepartment</property>
       <property>p92 | affiliationRole</property>
@@ -257,6 +256,7 @@
       <property>p68 | printLocation</property>
       <property>p121 | printer</property>
       <property>p122 | printerLocation</property>
+      <property>p96 | producer</property>
       <property>p69 | project</property>
       <property>p119 | publisher</property>
       <property>p120 | publisherLocation</property>
