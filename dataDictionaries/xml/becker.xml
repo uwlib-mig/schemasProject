@@ -19,6 +19,7 @@
     <cdmCode>becker</cdmCode>
     <properties>
         <xi:include href="../../properties-files/title.xml"/>
+        <xi:include href="../../properties-files/titleNonLatin.xml"/>
         <xi:include href="../../properties-files/author.xml"/>
         <xi:include href="../../properties-files/contributor.xml"/>
         <xi:include href="../../properties-files/photographer.xml"/>
@@ -29,9 +30,10 @@
         <xi:include href="../../properties-files/genreFormLcgft.xml"/>
         <xi:include href="../../properties-files/description.xml"/>
         <xi:include href="../../properties-files/eventsDepicted.xml"/>
+        <xi:include href="../../properties-files/organizationsDiscussed.xml"/>
+        <xi:include href="../../properties-files/locationDepicted.xml"/>
         <xi:include href="../../properties-files/contentNotes.xml"/>
         <xi:include href="../../properties-files/notes.xml"/>
-        <xi:include href="../../properties-files/locationDepicted.xml"/>
         <xi:include href="../../properties-files/language.xml"/>
         <xi:include href="../../properties-files/digitalCollection.xml"/>
         <xi:include href="../../properties-files/digitalIdNumber.xml"/>
