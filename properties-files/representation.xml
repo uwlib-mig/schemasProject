@@ -1,11 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?><property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md    ../xsd4md/schema-4-properties.xsd"><uid>p74</uid><labels>
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+   xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md    ../xsd4md/schema-4-properties.xsd">
+   <uid>p74</uid>
+   <labels>
       <platformIndependent>representation</platformIndependent>
       <dc>none</dc>
-   </labels><uwRequired>
+   </labels>
+   <uwRequired>
       <uwStandalone>no</uwStandalone>
       <uwObject>no</uwObject>
       <uwItem>no</uwItem>
-   </uwRequired><cdm>
+   </uwRequired>
+   <cdm>
       <label>Representation</label>
       <cdmDatatype>text</cdmDatatype>
       <cdmLarge>no</cdmLarge>
@@ -13,18 +20,21 @@
       <hidden>no</hidden>
       <cdmRequired>no</cdmRequired>
       <cdmControlledVocab>yes</cdmControlledVocab>
-   </cdm><dspace>
+   </cdm>
+   <dspace>
       <dspaceProperty/>
-   </dspace><descriptions>
+   </dspace>
+   <descriptions>
       <definition>
-         <para>A drawing's type of represention.</para>
+         <para>A drawing's type of representation.</para>
       </definition>
       <instructions co="no">
          <para>Enter the type of representation that best describes the drawing.</para>
          <para>Input a term or terms from the Getty Art and Architecture Thesaurus.</para>
          <para>Separate multiple values with a semicolon and space.</para>
       </instructions>
-   </descriptions><examples>
+   </descriptions>
+   <examples>
       <example co="no">
          <para>Elevations</para>
          <para>Cross Section</para>
@@ -32,18 +42,23 @@
          <para>Longitudinal sections</para>
          <para>Details</para>
       </example>
-   </examples><additionalInfo/><marc>
+   </examples>
+   <additionalInfo/>
+   <marc>
       <dcgMarcMapping/>
       <marcNotes>
          <para/>
       </marcNotes>
-   </marc><xsd>
+   </marc>
+   <xsd>
       <typeInfo level="standalone">
          <typeAttribute>xs:string</typeAttribute>
       </typeInfo>
-   </xsd><rdf>
+   </xsd>
+   <rdf>
       <sameAs/>
-   </rdf><history>
+   </rdf>
+   <history>
       <dateCreated>
          <range>
             <start>2006-01-01</start>
@@ -55,4 +70,5 @@
       <changeLog>
          <change/>
       </changeLog>
-   </history></property>
+   </history>
+</property>
