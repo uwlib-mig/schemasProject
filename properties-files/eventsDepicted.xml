@@ -30,15 +30,18 @@
             <para>Event depicted in the resource.</para>
         </definition>
         <instructions co="no">
-            <para>Enter the name of the events seen in the segments.</para>
-            <para>Separate multiple events using a semicolon.</para>
-            <para>Use the form of the event name provided by Yvonne Hunt.</para>
+            <!-- this should be custom, not default -->
+            <para>Record the name(s) of events depicted in the resource.</para>
+            <para>Separate multiple named events using a semicolon.</para>
         </instructions>
         <instructions co="object">
+            <para>&#x1F6A7;&#x1F6A7;&#x1F6A7;</para>
+        </instructions>
+        <customization co="object" dd="greekdancing" objectType="default">
             <para>Enter the name of the events seen in the segments.</para>
             <para>Separate multiple events using a semicolon.</para>
             <para>Use the form of the event name provided by Yvonne Hunt.</para>
-        </instructions>
+        </customization>
     </descriptions>
     <examples>
         <example co="no">
