@@ -31,7 +31,10 @@
             <para>A name for the resource in non-Latin script.</para>
         </definition>
         <instructions co="all">
-            <para>Provide a name for the resource in non-Latin script.</para>
+            <para>Record a name for the resource in non-Latin script, if applicable.</para>
+        </instructions>
+        <instructions co="no">
+            <para>Record a name for the resource in non-Latin script, if applicable.</para>
         </instructions>
         <customization co="object" dd="p16786coll3" resourceType="text">
             <para>Enter the Ladino title in Hebrew script as it appears on the title page.</para>
@@ -59,6 +62,10 @@
     <examples>
         <!-- BMR TO-DO: Draft default examples for object, standalone -->
         <example co="all">
+            <para>פאב׳לו אי ב׳ירז׳יניאה: רומאנסו</para>
+            <para>白鯨</para>
+        </example>
+        <example co="no">
             <para>פאב׳לו אי ב׳ירז׳יניאה: רומאנסו</para>
             <para>白鯨</para>
         </example>
