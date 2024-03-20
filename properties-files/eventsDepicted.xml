@@ -30,12 +30,12 @@
             <para>Event depicted in the resource.</para>
         </definition>
         <instructions co="no">
-            <!-- this should be custom, not default -->
             <para>Record the name(s) of events depicted in the resource.</para>
             <para>Separate multiple named events using a semicolon.</para>
         </instructions>
         <instructions co="object">
-            <para>&#x1F6A7;&#x1F6A7;&#x1F6A7;</para>
+            <para>Record the name(s) of events depicted in the resource.</para>
+            <para>Separate multiple named events using a semicolon.</para>
         </instructions>
         <customization co="object" dd="greekdancing" objectType="default">
             <para>Enter the name of the events seen in the segments.</para>
