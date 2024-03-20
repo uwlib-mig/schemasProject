@@ -29,13 +29,11 @@
          <para>The topic of the resource.</para>
       </definition>
       <instructions co="no">
-         <para>Values for this property are taken from the LC Subject Headings list (LCSH) at http://authorities.loc.gov or http://id.loc.gov.</para>
-         <para>For images, use LCSH only when TGM has no appropriate term to describe the resource.</para>
+         <para>Values for this property are taken from the LC Subject Headings list (LCSH) at &lt;a href="http://authorities.loc.gov"&gt;http://authorities.loc.gov&lt;/a&gt; or &lt;a href="http://id.loc.gov"&gt;http://id.loc.gov&lt;/a&gt;.</para>
          <para>Separate multiple headings with a semicolon.</para>
       </instructions>
       <instructions co="object">
-         <para>Values in this property are taken from the LC Subject Headings list (LCSH) at http://authorities.loc.gov or http://id.loc.gov.</para>
-         <para>For images, use LCSH only when TGM has no appropriate term to describe the resource.</para>
+         <para>Values for this property are taken from the LC Subject Headings list (LCSH) at &lt;a href="http://authorities.loc.gov"&gt;http://authorities.loc.gov&lt;/a&gt; or &lt;a href="http://id.loc.gov"&gt;http://id.loc.gov&lt;/a&gt;.</para>
          <para>Separate multiple headings with a semicolon.</para>
       </instructions>
       <instructions co="item">
@@ -94,6 +92,14 @@
       <customization co="no" dd="harriman becker">
          <para>Terms in this field are taken from the LC Subject Headings list (LCSH). LCSH and the National Authority File (LCNAF) will also be used for persons, objects, and places with proper names.</para>
          <para>Separate multiple values using a semicolon and space ("; ").</para>
+      </customization>
+      <customization co="no" dd="becker" objectType="Newsletters Photographs Records_(Documents)">
+         <para>University of Washington Libraries (UWL) cataloging staff will provide a value or values for this property.</para>
+         <para>&lt;br/&gt;</para>
+         <para>For initial metadata creation outside the UWL Cataloging and Metadata Services unit:</para>
+         <para>Do not provide a value for this property.</para>
+         <para>Be sure to provide the value 'xyz' for the Cataloging property to indicate to cataloging staff that a value is needed.</para>
+         <para>Recording values for Description and/or Notes fields where applicable is helpful for cataloging staff performing subject analysis.</para>
       </customization>
    </descriptions>
    <examples>
@@ -188,6 +194,7 @@
          <change date="2019-05-19">Added info for krab; added info for cdm compound objects</change>
          <change date="2021-10-25">Add customizations for the Sephardic Studies Digital Collection - p16786coll3</change>
          <change date="2022-08-06">Add example values for Tacoma Japanese Language School Project - temp_alias_001</change>
+         <change date="2024-03-20">Update guidance to reflect that LCSH is now preferred over LCTGM for digital collections metadata</change>
       </changeLog>
    </history>
 </property>
