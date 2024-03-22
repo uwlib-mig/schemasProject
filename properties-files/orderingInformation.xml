@@ -73,12 +73,14 @@
    </descriptions>
    <examples>
       <example co="no">
-         <para>To order a reproduction, inquire about permissions, or for information about prices see:  http://www.lib.washington.edu/specialcollections/services/reproduction/reproduction.</para>
+         <para>To order a reproduction, inquire about permissions, or for information about prices see: &lt;a href="http://www.lib.washington.edu/specialcollections/services/reproduction/reproduction"&gt;http://www.lib.washington.edu/specialcollections/services/reproduction/reproduction&lt;/a&gt;.</para>
          <para>Please cite the Order Number or the Digital ID Number.</para>
+         <para>&lt;br/&gt;Reproductions are not available for order.</para>
       </example>
       <example co="object">
-         <para>To order a reproduction, inquire about permissions, or for information about prices see:  http://www.lib.washington.edu/specialcollections/services/reproduction/reproduction.</para>
+         <para>To order a reproduction, inquire about permissions, or for information about prices see: &lt;a href="http://www.lib.washington.edu/specialcollections/services/reproduction/reproduction"&gt;http://www.lib.washington.edu/specialcollections/services/reproduction/reproduction&lt;/a&gt;.</para>
          <para>Please cite the Order Number or the Digital ID Number.</para>
+         <para>&lt;br/&gt;Reproductions are not available for order.</para>
       </example>
       <!--
       <example co="item">
