@@ -92,7 +92,6 @@
          <para>Use a space and “cm” (no following punctuation) after the measurements (“ cm”), to record as:</para>
          <para>[height] x [width] cm</para>
       </customization>
-      <customization co="item" dd="p16786coll3" objectType="oh"></customization>
       <customization co="no" dd="harriman">
          <para>Includes additional descriptive information about type of material or medium, color, and dimensions.</para>
          <para>Terms for visual materials should be taken from &lt;a href="http://www.loc.gov/rr/print/gm/graphmat.html"&gt;Graphic Materials: Rules for Describing Original Items and Historical Collections&lt;/a&gt;.</para>
@@ -107,7 +106,7 @@
          <para>1 volume</para>
          <para>3 photographs</para>
          <para>1 map</para>
-         <para>Other possibilities:</para>
+         <para>&lt;br/&gt;Other possibilities:</para>
          <para>Glass, b/w ; 6 1/2 x 8 1/2 in.</para>
          <para>Silver gelatin, b&amp;w; 6 x 8 in.</para>
          <para>1 leaf : 20 x 12.5 cm, folded to 19.5 x 12.25 cm.</para>
