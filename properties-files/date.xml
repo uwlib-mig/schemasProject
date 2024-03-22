@@ -79,11 +79,19 @@
          <para>If the date is unknown, enter an approximate date using one of the two above formats that express uncertainty, namely YYYY? or between YYYY and YYYY?.</para>
          <para>If none of the date formats above are adequate, use a custom date format.</para>
       </customization>
-      <customization co="no" dd="becker" objectType="Newsletters">
-         <para>&#x1F6A7;&#x1F6A7;&#x1F6A7;</para>
-      </customization>
-      <customization co="no" dd="becker" objectType="Records_(Documents)">
-         <para>&#x1F6A7;&#x1F6A7;&#x1F6A7;</para>
+      <customization co="no" dd="becker" objectType="Newsletters Records_(Documents)">
+         <para>Record a date of publication taken from the resource, using one of the following formats.</para>
+         <para>&lt;br/&gt;YYYY</para>
+         <para>YYYY?</para>
+         <para>[month spelled out] [day], YYYY</para>
+         <para>[month spelled out], YYYY</para>
+         <para>between YYYY and YYYY</para>
+         <para>between YYYY and YYYY?</para>
+         <para>&lt;br/&gt;In CONTENTdm, this field is used for display purposes only and should be user-friendly.</para>
+         <para>Date value should agree with date values entered in Date-Edtf and Dates fields.</para>
+         <para>If the date when the image/resource in hand was produced is known, and is different from that of the original image, so note in the Notes field.</para>
+         <para>If the date is unknown, enter an approximate date using one of the two above formats that express uncertainty, namely YYYY? or between YYYY and YYYY?.</para>
+         <para>If none of the date formats above are adequate, use a custom date format.</para>
       </customization>
       <customization co="no" dd="ac">
          <para>Enter the date of the execution of the drawing.</para>
