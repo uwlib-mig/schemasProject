@@ -49,15 +49,15 @@
          <para>United States--Washington (State)—Seattle</para>
          <para>United States--Alaska—Fort Yukon</para>
          <para>Canada—Yukon—Dawson </para>
-         <para>Croatia--Zagreb [use current form, even though Yugoslavia was the name when the photo was taken]</para>
-         <para>Russia (Federation)--Leningradskaia oblast--Saint Petersburg [use current form, even though it was called Leningrad in Soviet Union, when photo was taken]</para>
+         <para>Croatia--Zagreb&lt;br/&gt;[*use current form, even though Yugoslavia was the name when the photo was taken]</para>
+         <para>Russia (Federation)--Leningradskaia oblast--Saint Petersburg&lt;br/&gt;[*use current form, even though it was called Leningrad in Soviet Union, when photo was taken]</para>
       </example>
       <example co="object">
          <para>United States--Washington (State)—Seattle</para>
          <para>United States--Alaska—Fort Yukon</para>
          <para>Canada—Yukon—Dawson</para>
-         <para>Croatia--Zagreb [use current form, even though Yugoslavia was the name when the photo was taken]</para>
-         <para>Russia (Federation)--Leningradskaia oblast--Saint Petersburg [use current form, even though it was called Leningrad in Soviet Union, when photo was taken]</para>
+         <para>Croatia--Zagreb&lt;br/&gt;[*use current form, even though Yugoslavia was the name when the photo was taken]</para>
+         <para>Russia (Federation)--Leningradskaia oblast--Saint Petersburg&lt;br/&gt;[*use current form, even though it was called Leningrad in Soviet Union, when photo was taken]</para>
       </example>
       <customization co="no" dd="neareast">
          <para>Egypt</para>
@@ -72,9 +72,6 @@
          <para>Russia--Siberia--Plover Bay</para>
          <para>United States--Alaska—Fort Yukon</para>
          <para>Canada—Yukon—Dawson</para>
-      </customization>
-      <customization co="no" dd="becker">
-         <para>&#x1F6A7; &#x1F6A7; &#x1F6A7;</para>
       </customization>
    </examples>
    <additionalInfo>
