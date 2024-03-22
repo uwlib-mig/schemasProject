@@ -28,12 +28,11 @@
         <xi:include href="../../properties-files/dates.xml"/>
         <xi:include href="../../properties-files/subjectsLcsh.xml"/>
         <xi:include href="../../properties-files/genreFormLcgft.xml"/>
-        <xi:include href="../../properties-files/description.xml"/>
+        <xi:include href="../../properties-files/notes.xml"/>
         <xi:include href="../../properties-files/eventsDepicted.xml"/>
         <xi:include href="../../properties-files/organizationsDiscussed.xml"/>
         <xi:include href="../../properties-files/locationDepicted.xml"/>
         <xi:include href="../../properties-files/contentNotes.xml"/>
-        <xi:include href="../../properties-files/notes.xml"/>
         <xi:include href="../../properties-files/language.xml"/>
         <xi:include href="../../properties-files/digitalCollection.xml"/>
         <xi:include href="../../properties-files/digitalIdNumber.xml"/>
@@ -41,7 +40,6 @@
         <xi:include href="../../properties-files/repository.xml"/>
         <xi:include href="../../properties-files/repositoryCollection.xml"/>
         <xi:include href="../../properties-files/repositoryCollectionGuide.xml"/>
-        <xi:include href="../../properties-files/objectType.xml"/>
         <xi:include href="../../properties-files/physicalDescription.xml"/>
         <xi:include href="../../properties-files/digitalReproductionInformation.xml"/>
         <xi:include href="../../properties-files/rightsUri.xml"/>
