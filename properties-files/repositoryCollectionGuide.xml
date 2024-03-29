@@ -46,9 +46,15 @@
       <customization co="item" dd="krab">
          <para>Enter only the URI to the EAD finding aid: "http://archiveswest.orbiscascade.org/ark:/80444/xv69396."</para>
       </customization>
-      <customization co="object" dd="p16786coll3" resourceType="text song oh">
+      <customization co="object" dd="p16786coll3" objectType="text song oh">
          <para>Where applicable, this value will be entered by University of Washington Libraries Special Collections Staff following transfer of collection resources.</para>
          <para>Where a finding aid for an archival collection including the resource exists, the value will be the Ark URL for this finding aid in ArchivesWest.</para>
+      </customization>
+      <customization co="no" dd="becker" objectType="*">
+         <para>If the Repository Collection value is "Elizabeth Becker Cambodia and Khmer Rouge Collection, 1970-1988" record the following value:</para>
+         <para>&lt;a href="https://archiveswest.orbiscascade.org/ark:80444/xv40194?q=elizabeth%20becker"&gt;https://archiveswest.orbiscascade.org/ark:80444/xv40194?q=elizabeth%20becker&lt;/a&gt;</para>
+         <para>If the Repository Collection value is "Elizabeth Becker Photographs and Tapes of Cambodia, 1978" record the following value:</para>
+         <para>&lt;a href="https://archiveswest.orbiscascade.org/ark:80444/xv965258?q=elizabeth%20becker"&gt;https://archiveswest.orbiscascade.org/ark:80444/xv965258?q=elizabeth%20becker&lt;/a&gt;</para>
       </customization>
    </descriptions>
    <examples>
@@ -64,11 +70,15 @@
       <customization co="item" dd="krab">
          <para>http://archiveswest.orbiscascade.org/ark:/80444/xv69396</para>
       </customization>
-      <customization co="object" dd="p16786coll3" resourceType="text song oh">
+      <customization co="object" dd="p16786coll3" objectType="text song oh">
          <para>🚧 🚧 🚧</para>
       </customization>
       <customization co="no" dd="harriman">
          <para>&lt;a href="http://archiveswest.orbiscascade.org/ark:/80444/xv20530"&lt;a&gt;http://archiveswest.orbiscascade.org/ark:/80444/xv20530&lt;a/&gt;</para>
+      </customization>
+      <customization co="no" dd="becker" objectType="*">
+         <para>&lt;a href="https://archiveswest.orbiscascade.org/ark:80444/xv40194?q=elizabeth%20becker"&gt;https://archiveswest.orbiscascade.org/ark:80444/xv40194?q=elizabeth%20becker&lt;/a&gt;</para>
+         <para>&lt;a href="https://archiveswest.orbiscascade.org/ark:80444/xv965258?q=elizabeth%20becker"&gt;https://archiveswest.orbiscascade.org/ark:80444/xv965258?q=elizabeth%20becker&lt;/a&gt;</para>
       </customization>
    </examples>
    <additionalInfo>
