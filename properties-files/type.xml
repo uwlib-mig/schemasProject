@@ -115,6 +115,15 @@
          <para>For compound-object items which are transcripts (document files), use the following value:</para>
          <para>Text</para>
       </customization>
+      <customization co="no" dd="becker" objectType="*">
+         <para>Values for this property must come from the &lt;a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7"&gt;DCMI Type Vocabulary&lt;/a&gt;.</para>
+         <para>&lt;br/&gt;For photographs, record the following value:</para>
+         <para>StillImage</para>
+         <para>For newsletters and documents without images, record the following value:</para>
+         <para>Text</para>
+         <para>For newsletters and documents without images, record the following value:</para>
+         <para>Text; StillImage</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="no">
@@ -181,6 +190,11 @@
          <para>MovingImage</para>
          <para>Sound</para>
          <para>Text</para>
+      </customization>
+      <customization co="no" dd="becker" objectType="*">
+         <para>StillImage</para>
+         <para>Text</para>
+         <para>Text; StillImage</para>
       </customization>
    </examples>
    <additionalInfo/>
