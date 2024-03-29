@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md    ../xsd4md/schema-4-properties.xsd">
     <uid>p128</uid>
     <labels>
@@ -22,7 +23,7 @@
         <cdmControlledVocab>yes</cdmControlledVocab>
     </cdm>
     <dspace>
-        <dspaceProperty></dspaceProperty>
+        <dspaceProperty/>
     </dspace>
     <descriptions>
         <definition>
@@ -72,49 +73,61 @@
             <para>Oral histories</para>
         </customization>
         <customization co="no" dd="*" objectType="Newsletters">
-            <para>Use the following value taken from Library of Congress Genre/Form Terms:</para>
-            <para>&lt;br/&gt;Newsletters</para>
+            <para>&#x1F4DA; For review/input by cataloging staff</para>
+            <para>&lt;br/&gt;Use the following value taken from Library of Congress Genre/Form Terms:</para>
+            <para>Newsletters</para>
         </customization>
         <customization co="no" dd="*" objectType="Photographs">
-            <para>Use the following value taken from Library of Congress Genre/Form Terms:</para>
-            <para>&lt;br/&gt;Photographs</para>
+            <para>&#x1F4DA; For review/input by cataloging staff</para>
+            <para>&lt;br/&gt;Use the following value taken from Library of Congress Genre/Form Terms:</para>
+            <para>Photographs</para>
         </customization>
         <customization co="no" dd="*" objectType="Records_(Documents)">
-            <para>Use the following value taken from Library of Congress Genre/Form Terms:</para>
-            <para>&lt;br/&gt;Records (Documents)</para>
+            <para>&#x1F4DA; For review/input by cataloging staff</para>
+            <para>&lt;br/&gt;Use the following value taken from Library of Congress Genre/Form Terms:</para>
+            <para>Records (Documents)</para>
         </customization>
     </descriptions>
     <examples>
         <!-- NEED DEFAULT LCGFT EXAMPLES -->
-        <example co="object"></example>
-        <example co="item"></example>
-        <example co="no"></example>
-        <customization co="no" dd="greekdancing" resourceType="default">
+        <example co="object"/>
+        <example co="item"/>
+        <example co="no"/>
+        <customization co="no" dd="greekdancing" objectType="default">
             <para>Dance films</para>
         </customization>
-        <customization co="object" dd="greekdancing" resourceType="default">
+        <customization co="object" dd="greekdancing" objectType="default">
             <para>Dance films</para>
         </customization>
-        <customization co="object" dd="p16786coll3" resourceType="text">
+        <customization co="object" dd="p16786coll3" objectType="text">
             <para>Sacred works</para>
             <para>Textbooks</para>
         </customization>
-        <customization co="object" dd="p16786coll3" resourceType="song">
+        <customization co="object" dd="p16786coll3" objectType="song">
             <para>Ballads</para>
         </customization>
-        <customization co="object" dd="p16786coll3" resourceType="oh">
+        <customization co="object" dd="p16786coll3" objectType="oh">
             <para>Oral histories</para>
         </customization>
-        <customization co="object" dd="temp_alias_001" resourceType="default">
+        <customization co="object" dd="temp_alias_001" objectType="default">
             <para>Oral histories</para>
+        </customization>
+        <customization co="no" dd="*" objectType="Newsletters">
+            <para>Newsletters</para>
+        </customization>
+        <customization co="no" dd="*" objectType="Photographs">
+            <para>Photographs</para>
+        </customization>
+        <customization co="no" dd="*" objectType="Records_(Documents)">
+            <para>Records (Documents)</para>
         </customization>
     </examples>
-    <additionalInfo></additionalInfo>
+    <additionalInfo/>
     <marc>
-        <dcgMarcMapping></dcgMarcMapping>
+        <dcgMarcMapping/>
     </marc>
-    <xsd></xsd>
-    <rdf></rdf>
+    <xsd/>
+    <rdf/>
     <history>
         <dateCreated>
             <range>
