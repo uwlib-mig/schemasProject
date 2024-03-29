@@ -43,6 +43,11 @@
          <para>For neighborhoods or other types of locales below the city level, enter an LCSH heading in the Subjects (LCSH) field above.</para>
          <para>Separate multiple entries with a semicolon .</para>
       </instructions>
+      <customization co="no" dd="becker" objectType="*">
+         <para>&#x1F4DA; For review/input by cataloging staff</para>
+         <para>&lt;br/&gt;Use the form of geographic name from the Library of Congress Name Authority File and/or Library of Congress Subject Headings, if available.</para>
+         <para>Separate multiple entries with a semicolon and space (“; “).</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="no">
