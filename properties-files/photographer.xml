@@ -37,6 +37,17 @@
          <para>Enter the name of the photographer or firm associated with the creation of the image(s) contained in the resource. It should represent as closely as possible the creator’s name or the company’s name at the time of the creation of the image(s). Can be the same entry as in the Studio Name field. Includes both personal and corporate names.</para>
          <para>Separate multiple values with a semicolon.</para>
       </instructions>
+      <customization co="no" dd="becker" objectType="Photographs">
+         <para>&#x1F4DA; For review/input by cataloging staff</para>
+         <para>&lt;br/&gt;Use the form of personal or corporate name from the Library of Congress Name Authority File, if available.</para>
+         <para>For photographs by Elizabeth Becker, record the following form of name:</para>
+         <para>Becker, Elizabeth (Journalist)</para>
+         <para>&lt;br/&gt;Input personal names using the following format:</para>
+         <para>[last name], [first name]</para>
+         <para>Separate multiple entries with a semicolon and space (“; “).</para>
+         <para>If the photographer is determined from a resource other than the item, create a Note.</para>
+         <para>If there no photographer can be identified, leave the field blank.</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="all">
