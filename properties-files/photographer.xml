@@ -46,7 +46,7 @@
          <para>[last name], [first name]</para>
          <para>Separate multiple entries with a semicolon and space (“; “).</para>
          <para>If the photographer is determined from a resource other than the item, create a Note.</para>
-         <para>If there no photographer can be identified, leave the field blank.</para>
+         <para>If no photographer can be identified, leave the field blank.</para>
       </customization>
    </descriptions>
    <examples>
