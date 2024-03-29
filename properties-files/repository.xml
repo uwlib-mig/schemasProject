@@ -73,7 +73,10 @@
          <para>Use the following value:</para>
          <para>University of Washington Tacoma Library</para>
       </customization>
-      <!-- removed item instructions -->
+      <customization co="no" dd="becker" objectType="*">
+         <para>Record the following value:</para>
+         <para>University of Washington Libraries. Special Collections</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="no">
@@ -113,9 +116,11 @@
       <customization co="item" dd="temp_alias_001" objectType="default">
          <para>University of Washington Tacoma Library</para>
       </customization>
-      <!-- removed item examples -->
       <customization co="no" dd="harriman">
          <para>University of Washington Libraries, Special Collections</para>
+      </customization>
+      <customization co="no" dd="becker" objectType="*">
+         <para>University of Washington Libraries. Special Collections</para>
       </customization>
    </examples>
    <additionalInfo/>
