@@ -38,6 +38,15 @@
          <para>Use LC Authority File for form of name, if available.</para>
          <para>Input Lastname, Firstname for all personal names.</para>
       </instructions>
+      <customization co="no" dd="becker" objectType="Newsletters Records_(Documents)">
+         <para>&#x1F4DA; For review/input by cataloging staff</para>
+         <para>&lt;br/&gt;Use the form of personal or corporate name from the Library of Congress Name Authority File, if available.</para>
+         <para>&lt;br/&gt;Input personal names using the following format:</para>
+         <para>[last name], [first name]</para>
+         <para>Separate multiple entries with a semicolon and space (“; “).</para>
+         <para>If the contributor is determined from a resource other than the item, create a Note.</para>
+         <para>If no contributor can be identified, leave the field blank.</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="no">
