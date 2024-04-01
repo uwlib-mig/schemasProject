@@ -55,6 +55,9 @@
       <example co="object">
          <para>University of Washington Libraries. Special Collections</para>
       </example>
+      <customization co="no" dd="becker" objectType="Newsletters Records_(Documents)">
+         <para>&#x1F6A7;&#x1F6A7;&#x1F6A7;</para>
+      </customization>
    </examples>
    <additionalInfo/>
    <marc>
