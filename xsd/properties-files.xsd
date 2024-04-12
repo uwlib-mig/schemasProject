@@ -1,27 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    targetNamespace="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
-    xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md">
+<xs:schema targetNamespace="https://uwlib-mig.github.io/schemasProject/xsd/"
+    xmlns="https://uwlib-mig.github.io/schemasProject/xsd/"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
-    <!-- version 0.2.1 2021-10-16
-        1 add new simpleType/attribute objectType_attr_type -->
-
-    <!-- vesion 0.2 2017-11-06 
-         1 added new element uwRequired with subelements
-         2 removed /cdm/uwRequired
-         3 added attribute to /property/xsd: @level
-         -->
-
+    <xs:include schemaLocation="genre_form.xsd"/>
     <xs:import namespace="http://www.w3.org/XML/1998/namespace"
         schemaLocation="http://www.w3.org/2001/03/xml.xsd"/>
     <xs:import namespace="http://www.w3.org/2001/XMLSchema"
         schemaLocation="https://www.w3.org/2001/XMLSchema.xsd"/>
-    <xs:include schemaLocation="lcgft.xsd"/>
-
-    <xs:annotation>
-        <xs:documentation>Schema to validate properties used by UW Libraries.</xs:documentation>
-    </xs:annotation>
 
     <xs:element name="property" type="propertyType"/> 
 
