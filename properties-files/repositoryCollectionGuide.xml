@@ -52,9 +52,9 @@
       </customization>
       <customization co="no" dd="becker" objectType="*">
          <para>If the Repository Collection value is "Elizabeth Becker Cambodia and Khmer Rouge Collection, 1970-1988" record the following value:</para>
-         <para>&lt;a href="https://archiveswest.orbiscascade.org/ark:80444/xv40194?q=elizabeth%20becker"&gt;https://archiveswest.orbiscascade.org/ark:80444/xv40194?q=elizabeth%20becker&lt;/a&gt;</para>
+         <para>&lt;a href="https://archiveswest.orbiscascade.org/ark:80444/xv40194"&gt;https://archiveswest.orbiscascade.org/ark:80444/xv40194&lt;/a&gt;</para>
          <para>If the Repository Collection value is "Elizabeth Becker Photographs and Tapes of Cambodia, 1978" record the following value:</para>
-         <para>&lt;a href="https://archiveswest.orbiscascade.org/ark:80444/xv965258?q=elizabeth%20becker"&gt;https://archiveswest.orbiscascade.org/ark:80444/xv965258?q=elizabeth%20becker&lt;/a&gt;</para>
+         <para>&lt;a href="https://archiveswest.orbiscascade.org/ark:80444/xv965258"&gt;https://archiveswest.orbiscascade.org/ark:80444/xv965258&lt;/a&gt;</para>
       </customization>
    </descriptions>
    <examples>
@@ -77,8 +77,8 @@
          <para>&lt;a href="http://archiveswest.orbiscascade.org/ark:/80444/xv20530"&lt;a&gt;http://archiveswest.orbiscascade.org/ark:/80444/xv20530&lt;a/&gt;</para>
       </customization>
       <customization co="no" dd="becker" objectType="*">
-         <para>&lt;a href="https://archiveswest.orbiscascade.org/ark:80444/xv40194?q=elizabeth%20becker"&gt;https://archiveswest.orbiscascade.org/ark:80444/xv40194?q=elizabeth%20becker&lt;/a&gt;</para>
-         <para>&lt;a href="https://archiveswest.orbiscascade.org/ark:80444/xv965258?q=elizabeth%20becker"&gt;https://archiveswest.orbiscascade.org/ark:80444/xv965258?q=elizabeth%20becker&lt;/a&gt;</para>
+         <para>&lt;a href="https://archiveswest.orbiscascade.org/ark:80444/xv40194"&gt;https://archiveswest.orbiscascade.org/ark:80444/xv40194&lt;/a&gt;</para>
+         <para>&lt;a href="https://archiveswest.orbiscascade.org/ark:80444/xv965258"&gt;https://archiveswest.orbiscascade.org/ark:80444/xv965258&lt;/a&gt;</para>
       </customization>
    </examples>
    <additionalInfo>
