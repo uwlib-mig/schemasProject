@@ -1,0 +1,986 @@
+[
+    {
+        "alias": "\/alaskawcanada",
+        "name": "Alaska, Western Canada and United States",
+        "path": "\/cdm\/sites\/16786\/data\/alaskawcanada",
+        "secondary_alias": "alaskawcanada"
+    },
+    {
+        "alias": "\/ayp",
+        "name": "Alaska Yukon Pacific Exposition Photographs",
+        "path": "\/cdm\/sites\/16786\/data\/ayp",
+        "secondary_alias": "ayp"
+    },
+    {
+        "alias": "\/loc",
+        "name": "American Indians of the Pacific Northwest -- Image Portion",
+        "path": "\/cdm\/sites\/16786\/data\/loc",
+        "secondary_alias": "loc"
+    },
+    {
+        "alias": "\/lctext",
+        "name": "American Indians of the Pacific Northwest -- Textual Portion",
+        "path": "\/cdm\/sites\/16786\/data\/lctext",
+        "secondary_alias": "lctext"
+    },
+    {
+        "alias": "\/neareast",
+        "name": "Ancient Near East Photograph Collection",
+        "path": "\/cdm\/sites\/16786\/data\/neareast",
+        "secondary_alias": "neareast"
+    },
+    {
+        "alias": "\/ac",
+        "name": "Architecture of the Pacific Northwest",
+        "path": "\/cdm\/sites\/16786\/data\/ac",
+        "secondary_alias": "ac"
+    },
+    {
+        "alias": "\/p16786coll17",
+        "name": "Asian Architecture Collection - Photographs by Patricia Young",
+        "path": "\/cdm\/sites\/16786\/data\/p16786coll17",
+        "secondary_alias": "p16786coll17"
+    },
+    {
+        "alias": "\/barnes",
+        "name": "Barnes (Albert H.) Photographs of Western Washington, 1895-1920",
+        "path": "\/cdm\/sites\/16786\/data\/barnes",
+        "secondary_alias": "barnes"
+    },
+    {
+        "alias": "\/imlsblackhs",
+        "name": "Black Heritage Society (KCS)",
+        "path": "\/cdm\/sites\/16786\/data\/imlsblackhs",
+        "secondary_alias": "imlsblackhs"
+    },
+    {
+        "alias": "\/boydBraas",
+        "name": "Boyd and Braas Photographs of Seattle and Washington State",
+        "path": "\/cdm\/sites\/16786\/data\/boydBraas",
+        "secondary_alias": "boydBraas"
+    },
+    {
+        "alias": "\/bcmedia",
+        "name": "Broadcast Media Collection",
+        "path": "\/cdm\/sites\/16786\/data\/bcmedia",
+        "secondary_alias": "bcmedia"
+    },
+    {
+        "alias": "\/p16786coll1",
+        "name": "Brumfield (William Craft) Russian Architecture Digital Collection",
+        "path": "\/cdm\/sites\/16786\/data\/p16786coll1",
+        "secondary_alias": "p16786coll1"
+    },
+    {
+        "alias": "\/eurasia",
+        "name": "Central Eurasia Image Database",
+        "path": "\/cdm\/sites\/16786\/data\/eurasia",
+        "secondary_alias": "eurasia"
+    },
+    {
+        "alias": "\/iww",
+        "name": "Centralia Tragedy and the Industrial Workers of the World Collection, 1912-1932",
+        "path": "\/cdm\/sites\/16786\/data\/iww",
+        "secondary_alias": "iww"
+    },
+    {
+        "alias": "\/chandless",
+        "name": "Chandless (Robert Henry) Photographs of China, 1898-1908",
+        "path": "\/cdm\/sites\/16786\/data\/chandless",
+        "secondary_alias": "chandless"
+    },
+    {
+        "alias": "\/chernobyl",
+        "name": "Chernobyl, the Destroyed Russian Nuclear Reactor",
+        "path": "\/cdm\/sites\/16786\/data\/chernobyl",
+        "secondary_alias": "chernobyl"
+    },
+    {
+        "alias": "\/buildings",
+        "name": "Cities and Buildings Database",
+        "path": "\/cdm\/sites\/16786\/data\/buildings",
+        "secondary_alias": "buildings"
+    },
+    {
+        "alias": "\/civilwar",
+        "name": "Civil War Letters",
+        "path": "\/cdm\/sites\/16786\/data\/civilwar",
+        "secondary_alias": "civilwar"
+    },
+    {
+        "alias": "\/civilworks",
+        "name": "Civil Works Administration Photographs of King County, 1933-1934",
+        "path": "\/cdm\/sites\/16786\/data\/civilworks",
+        "secondary_alias": "civilworks"
+    },
+    {
+        "alias": "\/cchs",
+        "name": "Clallam County Historical Society (CMP)",
+        "path": "\/cdm\/sites\/16786\/data\/cchs",
+        "secondary_alias": "cchs"
+    },
+    {
+        "alias": "\/CMPindiv",
+        "name": "Community Museum Individual Contributors (CMP)",
+        "path": "\/cdm\/sites\/16786\/data\/CMPindiv",
+        "secondary_alias": "CMPindiv"
+    },
+    {
+        "alias": "\/cobb",
+        "name": "Cobb (John N.) Photographs of the Fishing Industry, 1897-1917",
+        "path": "\/cdm\/sites\/16786\/data\/cobb",
+        "secondary_alias": "cobb"
+    },
+    {
+        "alias": "\/curtis",
+        "name": "Curtis (Asahel) Photo Company Photographs",
+        "path": "\/cdm\/sites\/16786\/data\/curtis",
+        "secondary_alias": "curtis"
+    },
+    {
+        "alias": "\/p16786coll7",
+        "name": "Darrington Historical Society's SR 530 Landslide Collection",
+        "path": "\/cdm\/sites\/16786\/data\/p16786coll7",
+        "secondary_alias": "3"
+    },
+    {
+        "alias": "\/dearmassar",
+        "name": "Dearborn & Massar Photographs of Pacific Northwest Architecture",
+        "path": "\/cdm\/sites\/16786\/data\/dearmassar",
+        "secondary_alias": "dearmassar"
+    },
+    {
+        "alias": "\/dp",
+        "name": "Decorated and Decorative Paper Collection",
+        "path": "\/cdm\/sites\/16786\/data\/dp",
+        "secondary_alias": "dp"
+    },
+    {
+        "alias": "\/desmo",
+        "name": "Des Moines Historical Society Museum (KCS)",
+        "path": "\/cdm\/sites\/16786\/data\/desmo",
+        "secondary_alias": "desmo"
+    },
+    {
+        "alias": "\/donaldson",
+        "name": "Donaldson (Lauren R) Collection of South Pacific Radiological Surveys, 1946-1964",
+        "path": "\/cdm\/sites\/16786\/data\/donaldson",
+        "secondary_alias": "donaldson"
+    },
+    {
+        "alias": "\/advert",
+        "name": "Early Advertising of the West, 1867-1918",
+        "path": "\/cdm\/sites\/16786\/data\/advert",
+        "secondary_alias": "advert"
+    },
+    {
+        "alias": "\/imlseastside",
+        "name": "Eastside Heritage Center (KCS)",
+        "path": "\/cdm\/sites\/16786\/data\/imlseastside",
+        "secondary_alias": "imlseastside"
+    },
+    {
+        "alias": "\/ethnomusic",
+        "name": "Ethnomusicology Musical Instrument Collection",
+        "path": "\/cdm\/sites\/16786\/data\/ethnomusic",
+        "secondary_alias": "ethnomusic"
+    },
+    {
+        "alias": "\/pnwlabor",
+        "name": "Everett Massacre of 1916 Collection",
+        "path": "\/cdm\/sites\/16786\/data\/pnwlabor",
+        "secondary_alias": "pnwlabor"
+    },
+    {
+        "alias": "\/costumehist",
+        "name": "Fashion Plate Collection",
+        "path": "\/cdm\/sites\/16786\/data\/costumehist",
+        "secondary_alias": "costumehist"
+    },
+    {
+        "alias": "\/fera",
+        "name": "Federal Emergency Relief Administration (FERA) Photographs of King County, 1933-",
+        "path": "\/cdm\/sites\/16786\/data\/fera",
+        "secondary_alias": "fera"
+    },
+    {
+        "alias": "\/ftm",
+        "name": "Forks Timber Museum (CMP)",
+        "path": "\/cdm\/sites\/16786\/data\/ftm",
+        "secondary_alias": "ftm"
+    },
+    {
+        "alias": "\/fishimages",
+        "name": "Freshwater and Marine Image Bank",
+        "path": "\/cdm\/sites\/16786\/data\/fishimages",
+        "secondary_alias": "fishimages"
+    },
+    {
+        "alias": "\/epic",
+        "name": "Glaciers and Landforms Photograph Collection",
+        "path": "\/cdm\/sites\/16786\/data\/epic",
+        "secondary_alias": "epic"
+    },
+    {
+        "alias": "\/gar",
+        "name": "Grand Army of the Republic Civil War Portraits",
+        "path": "\/cdm\/sites\/16786\/data\/gar",
+        "secondary_alias": "gar"
+    },
+    {
+        "alias": "\/grandcoulee",
+        "name": "Grand Coulee Dam Construction, 1933-1942",
+        "path": "\/cdm\/sites\/16786\/data\/grandcoulee",
+        "secondary_alias": "grandcoulee"
+    },
+    {
+        "alias": "\/harriman",
+        "name": "Harriman Alaska Expedition of 1899",
+        "path": "\/cdm\/sites\/16786\/data\/harriman",
+        "secondary_alias": "harriman"
+    },
+    {
+        "alias": "\/hegg",
+        "name": "Hegg (Eric A.) Photographs of Alaska and the Klondike, 1897-1901",
+        "path": "\/cdm\/sites\/16786\/data\/hegg",
+        "secondary_alias": "hegg"
+    },
+    {
+        "alias": "\/hester",
+        "name": "Hester (Wilhelm) Photographs",
+        "path": "\/cdm\/sites\/16786\/data\/hester",
+        "secondary_alias": "hester"
+    },
+    {
+        "alias": "\/historicalbookarts",
+        "name": "Historical Book Arts Collection",
+        "path": "\/cdm\/sites\/16786\/data\/historicalbookarts",
+        "secondary_alias": "historicalbookarts"
+    },
+    {
+        "alias": "\/childrens",
+        "name": "Historical Children's Literature Collection",
+        "path": "\/cdm\/sites\/16786\/data\/childrens",
+        "secondary_alias": "childrens"
+    },
+    {
+        "alias": "\/indocc",
+        "name": "Industries and Occupations Photographs",
+        "path": "\/cdm\/sites\/16786\/data\/indocc",
+        "secondary_alias": "indocc"
+    },
+    {
+        "alias": "\/ic",
+        "name": "International Collections",
+        "path": "\/cdm\/sites\/16786\/data\/ic",
+        "secondary_alias": "ic"
+    },
+    {
+        "alias": "\/jackson",
+        "name": "Jackson (Henry M.) Collection",
+        "path": "\/cdm\/sites\/16786\/data\/jackson",
+        "secondary_alias": "jackson"
+    },
+    {
+        "alias": "\/katims",
+        "name": "Katims (Milton) Audio Collection",
+        "path": "\/cdm\/sites\/16786\/data\/katims",
+        "secondary_alias": "katims"
+    },
+    {
+        "alias": "\/kiehl",
+        "name": "Kiehl (H. Ambrose) Photograph Collection",
+        "path": "\/cdm\/sites\/16786\/data\/kiehl",
+        "secondary_alias": "kiehl"
+    },
+    {
+        "alias": "\/kccollects",
+        "name": "King County Collects Heritage Collection",
+        "path": "\/cdm\/sites\/16786\/data\/kccollects",
+        "secondary_alias": "kccollects"
+    },
+    {
+        "alias": "\/clarkkinsey",
+        "name": "Kinsey Brothers Photographs of the Lumber Industry, 1890-1945",
+        "path": "\/cdm\/sites\/16786\/data\/clarkkinsey",
+        "secondary_alias": "clarkkinsey"
+    },
+    {
+        "alias": "\/p16786coll5",
+        "name": "Korean Graphic Novel Cover Art",
+        "path": "\/cdm\/sites\/16786\/data\/p16786coll5",
+        "secondary_alias": "1"
+    },
+    {
+        "alias": "\/korean",
+        "name": "Korean Literary Collection",
+        "path": "\/cdm\/sites\/16786\/data\/korean",
+        "secondary_alias": "korean"
+    },
+    {
+        "alias": "\/landreau",
+        "name": "Landreau Collection on Turkish Carpet Weaving and Village Life",
+        "path": "\/cdm\/sites\/16786\/data\/landreau",
+        "secondary_alias": "landreau"
+    },
+    {
+        "alias": "\/laroche",
+        "name": "La Roche (Frank) Photographs, 1888-1910",
+        "path": "\/cdm\/sites\/16786\/data\/laroche",
+        "secondary_alias": "laroche"
+    },
+    {
+        "alias": "\/lee",
+        "name": "Lee (James Patrick) Photographs of Seattle, 1904-1940",
+        "path": "\/cdm\/sites\/16786\/data\/lee",
+        "secondary_alias": "lee"
+    },
+    {
+        "alias": "\/ll",
+        "name": "Lindsley (Lawrence Denny) Photographs of Washington State, 1875-1971",
+        "path": "\/cdm\/sites\/16786\/data\/ll",
+        "secondary_alias": "ll"
+    },
+    {
+        "alias": "\/mcrc",
+        "name": "Makah Cultural Collection (CMP)",
+        "path": "\/cdm\/sites\/16786\/data\/mcrc",
+        "secondary_alias": "mcrc"
+    },
+    {
+        "alias": "\/imlsmvhs",
+        "name": "Maple Valley Historical Society (KCS)",
+        "path": "\/cdm\/sites\/16786\/data\/imlsmvhs",
+        "secondary_alias": "imlsmvhs"
+    },
+    {
+        "alias": "\/mckenneyhall",
+        "name": "McKenney and Hall Indian Tribes of North America",
+        "path": "\/cdm\/sites\/16786\/data\/mckenneyhall",
+        "secondary_alias": "mckenneyhall"
+    },
+    {
+        "alias": "\/mhm",
+        "name": "Medieval and Historical Manuscripts",
+        "path": "\/cdm\/sites\/16786\/data\/mhm",
+        "secondary_alias": "mhm"
+    },
+    {
+        "alias": "\/meed",
+        "name": "Meed (William E.) Photographs of the Yukon Territory, 1898-1907",
+        "path": "\/cdm\/sites\/16786\/data\/meed",
+        "secondary_alias": "meed"
+    },
+    {
+        "alias": "\/menus",
+        "name": "Menus Collection",
+        "path": "\/cdm\/sites\/16786\/data\/menus",
+        "secondary_alias": "menus"
+    },
+    {
+        "alias": "\/hupy",
+        "name": "Modern Photographers Collection",
+        "path": "\/cdm\/sites\/16786\/data\/hupy",
+        "secondary_alias": "hupy"
+    },
+    {
+        "alias": "\/p16786coll8",
+        "name": "Morell (Karen L.) Africa, Trinidad, and New Orleans Multimedia Collection",
+        "path": "\/cdm\/sites\/16786\/data\/p16786coll8",
+        "secondary_alias": "4"
+    },
+    {
+        "alias": "\/mshchem",
+        "name": "Mount St. Helens Post-Eruption Chemistry Database",
+        "path": "\/cdm\/sites\/16786\/data\/mshchem",
+        "secondary_alias": "mshchem"
+    },
+    {
+        "alias": "\/mtsthelens",
+        "name": "Mount St. Helens Succession Collection",
+        "path": "\/cdm\/sites\/16786\/data\/mtsthelens",
+        "secondary_alias": "mtsthelens"
+    },
+    {
+        "alias": "\/mtn",
+        "name": "Mountaineers Photograph Album Collection",
+        "path": "\/cdm\/sites\/16786\/data\/mtn",
+        "secondary_alias": "mtn"
+    },
+    {
+        "alias": "\/filmarch",
+        "name": "Moving Image Collection",
+        "path": "\/cdm\/sites\/16786\/data\/filmarch",
+        "secondary_alias": "filmarch"
+    },
+    {
+        "alias": "\/imlsmohai",
+        "name": "Museum of History and Industry",
+        "path": "\/cdm\/sites\/16786\/data\/imlsmohai",
+        "secondary_alias": "imlsmohai"
+    },
+    {
+        "alias": "\/mm",
+        "name": "Music Library Digital Scores Collection",
+        "path": "\/cdm\/sites\/16786\/data\/mm",
+        "secondary_alias": "mm"
+    },
+    {
+        "alias": "\/napoleon",
+        "name": "Napoleonic Period Collection of Political Caricatures",
+        "path": "\/cdm\/sites\/16786\/data\/napoleon",
+        "secondary_alias": "napoleon"
+    },
+    {
+        "alias": "\/nmai",
+        "name": "National Museum of the American Indian (CMP)",
+        "path": "\/cdm\/sites\/16786\/data\/nmai",
+        "secondary_alias": "nmai"
+    },
+    {
+        "alias": "\/nps",
+        "name": "National Park Service (CMP)",
+        "path": "\/cdm\/sites\/16786\/data\/nps",
+        "secondary_alias": "nps"
+    },
+    {
+        "alias": "\/iraqdiaries",
+        "name": "NewBook Digital Texts Project",
+        "path": "\/cdm\/sites\/16786\/data\/iraqdiaries",
+        "secondary_alias": "iraqdiaries"
+    },
+    {
+        "alias": "\/nap",
+        "name": "Nikkei Newspapers Digital Archive (\u65e5\u7cfb\u65b0\u805e)",
+        "path": "\/cdm\/sites\/16786\/data\/nap",
+        "secondary_alias": "nap"
+    },
+    {
+        "alias": "\/19thcenturyactors",
+        "name": "Nineteenth (19th) Century Actors and Theater Photographs",
+        "path": "\/cdm\/sites\/16786\/data\/19thcenturyactors",
+        "secondary_alias": "19thcenturyactors"
+    },
+    {
+        "alias": "\/nol",
+        "name": "North Olympic Library System (CMP)",
+        "path": "\/cdm\/sites\/16786\/data\/nol",
+        "secondary_alias": "nol"
+    },
+    {
+        "alias": "\/reports",
+        "name": "Northwest Historical Annual Reports Collection",
+        "path": "\/cdm\/sites\/16786\/data\/reports",
+        "secondary_alias": "reports"
+    },
+    {
+        "alias": "\/imlsrailway",
+        "name": "Northwest Railway Museum (KCS)",
+        "path": "\/cdm\/sites\/16786\/data\/imlsrailway",
+        "secondary_alias": "imlsrailway"
+    },
+    {
+        "alias": "\/nowell",
+        "name": "Nowell (Frank H.) Photographs of Alaska, 1901-1909",
+        "path": "\/cdm\/sites\/16786\/data\/nowell",
+        "secondary_alias": "nowell"
+    },
+    {
+        "alias": "\/ohc",
+        "name": "Oral History Collection",
+        "path": "\/cdm\/sites\/16786\/data\/ohc",
+        "secondary_alias": "ohc"
+    },
+    {
+        "alias": "\/pcarch",
+        "name": "Pacific Coast Architecture",
+        "path": "\/cdm\/sites\/16786\/data\/pcarch",
+        "secondary_alias": "pcarch"
+    },
+    {
+        "alias": "\/pacfish",
+        "name": "Pacific Fisherman Journal, 1911-1913",
+        "path": "\/cdm\/sites\/16786\/data\/pacfish",
+        "secondary_alias": "pacfish"
+    },
+    {
+        "alias": "\/pioneerlife",
+        "name": "Pacific Northwest Historical Documents Collection",
+        "path": "\/cdm\/sites\/16786\/data\/pioneerlife",
+        "secondary_alias": "pioneerlife"
+    },
+    {
+        "alias": "\/pnwhm",
+        "name": "Pacific Northwest Historical Monographs",
+        "path": "\/cdm\/sites\/16786\/data\/pnwhm",
+        "secondary_alias": "pnwhm"
+    },
+    {
+        "alias": "\/p16786coll16",
+        "name": "Pacific Northwest Political Marches and Rallies",
+        "path": "\/cdm\/sites\/16786\/data\/p16786coll16",
+        "secondary_alias": "p16786coll16"
+    },
+    {
+        "alias": "\/sm",
+        "name": "Pacific Northwest Sheet Music Collection",
+        "path": "\/cdm\/sites\/16786\/data\/sm",
+        "secondary_alias": "sm"
+    },
+    {
+        "alias": "\/ptec",
+        "name": "Pamphlet and Textual Documents Collection",
+        "path": "\/cdm\/sites\/16786\/data\/ptec",
+        "secondary_alias": "ptec"
+    },
+    {
+        "alias": "\/panoram",
+        "name": "Panoramic Photographs Collection",
+        "path": "\/cdm\/sites\/16786\/data\/panoram",
+        "secondary_alias": "panoram"
+    },
+    {
+        "alias": "\/payne",
+        "name": "Payne (Blanche) Regional Costume Photograph and Drawing Collection",
+        "path": "\/cdm\/sites\/16786\/data\/payne",
+        "secondary_alias": "payne"
+    },
+    {
+        "alias": "\/peiser",
+        "name": "Peiser (Theodore E.) Photographs of Washington State, 1864-1910",
+        "path": "\/cdm\/sites\/16786\/data\/peiser",
+        "secondary_alias": "peiser"
+    },
+    {
+        "alias": "\/pwb",
+        "name": "People Without Borders (CMP)",
+        "path": "\/cdm\/sites\/16786\/data\/pwb",
+        "secondary_alias": "pwb"
+    },
+    {
+        "alias": "\/pickett",
+        "name": "Pickett (Lee) Photographs of Washington State, 1909-1936",
+        "path": "\/cdm\/sites\/16786\/data\/pickett",
+        "secondary_alias": "pickett"
+    },
+    {
+        "alias": "\/plants",
+        "name": "Plants of Western Washington Collection",
+        "path": "\/cdm\/sites\/16786\/data\/plants",
+        "secondary_alias": "plants"
+    },
+    {
+        "alias": "\/ptleader",
+        "name": "Port Townsend Leader",
+        "path": "\/cdm\/sites\/16786\/data\/ptleader",
+        "secondary_alias": "ptleader"
+    },
+    {
+        "alias": "\/portraits",
+        "name": "Portraits Collection",
+        "path": "\/cdm\/sites\/16786\/data\/portraits",
+        "secondary_alias": "portraits"
+    },
+    {
+        "alias": "\/norris",
+        "name": "Prior and Norris Vaudeville Troupe Photographs and Ephemera, 1886-1915",
+        "path": "\/cdm\/sites\/16786\/data\/norris",
+        "secondary_alias": "norris"
+    },
+    {
+        "alias": "\/prosch_washington",
+        "name": "Prosch Albums, 1851-1906",
+        "path": "\/cdm\/sites\/16786\/data\/prosch_washington",
+        "secondary_alias": "prosch_washington"
+    },
+    {
+        "alias": "\/psc",
+        "name": "Puget Sound Chemist Collection",
+        "path": "\/cdm\/sites\/16786\/data\/psc",
+        "secondary_alias": "psc"
+    },
+    {
+        "alias": "\/imlsmaritime",
+        "name": "Puget Sound Maritime Historical Society (KCS)",
+        "path": "\/cdm\/sites\/16786\/data\/imlsmaritime",
+        "secondary_alias": "imlsmaritime"
+    },
+    {
+        "alias": "\/glacier",
+        "name": "Rainier National Park Mountain-Glacier Wonderland Photograph Album",
+        "path": "\/cdm\/sites\/16786\/data\/glacier",
+        "secondary_alias": "glacier"
+    },
+    {
+        "alias": "\/imlsrvhs",
+        "name": "Rainier Valley Historical Society (KCS)",
+        "path": "\/cdm\/sites\/16786\/data\/imlsrvhs",
+        "secondary_alias": "imlsrvhs"
+    },
+    {
+        "alias": "\/imlsrenton",
+        "name": "Renton Historical Museum (KCS)",
+        "path": "\/cdm\/sites\/16786\/data\/imlsrenton",
+        "secondary_alias": "imlsrenton"
+    },
+    {
+        "alias": "\/salmon",
+        "name": "Salmon in the Pacific Northwest and Alaska Collection, 1890-1961",
+        "path": "\/cdm\/sites\/16786\/data\/salmon",
+        "secondary_alias": "salmon"
+    },
+    {
+        "alias": "\/sarvant",
+        "name": "Sarvant (Henry M.) Photographs of Washington State and the Yukon, 1892-1912",
+        "path": "\/cdm\/sites\/16786\/data\/sarvant",
+        "secondary_alias": "sarvant"
+    },
+    {
+        "alias": "\/sayre",
+        "name": "Sayre (J. Willis) Collection of Theatrical Photographs",
+        "path": "\/cdm\/sites\/16786\/data\/sayre",
+        "secondary_alias": "sayre"
+    },
+    {
+        "alias": "\/seattle",
+        "name": "Seattle Photographs",
+        "path": "\/cdm\/sites\/16786\/data\/seattle",
+        "secondary_alias": "seattle"
+    },
+    {
+        "alias": "\/ww-swps",
+        "name": "Seattle Power and Water Supply Collection",
+        "path": "\/cdm\/sites\/16786\/data\/ww-swps",
+        "secondary_alias": "ww-swps"
+    },
+    {
+        "alias": "\/p16786coll3",
+        "name": "Sephardic Studies Collection of the University of Washington",
+        "path": "\/cdm\/sites\/16786\/data\/p16786coll3",
+        "secondary_alias": "p16786coll3"
+    },
+    {
+        "alias": "\/imlsshoreline",
+        "name": "Shoreline Historical Museum (KCS)",
+        "path": "\/cdm\/sites\/16786\/data\/imlsshoreline",
+        "secondary_alias": "imlsshoreline"
+    },
+    {
+        "alias": "\/skinner",
+        "name": "Skinner (G. William) Map Collection",
+        "path": "\/cdm\/sites\/16786\/data\/skinner",
+        "secondary_alias": "skinner"
+    },
+    {
+        "alias": "\/social",
+        "name": "Society and Culture Collection",
+        "path": "\/cdm\/sites\/16786\/data\/social",
+        "secondary_alias": "social"
+    },
+    {
+        "alias": "\/saohc",
+        "name": "South Asian Oral History Project",
+        "path": "\/cdm\/sites\/16786\/data\/saohc",
+        "secondary_alias": "saohc"
+    },
+    {
+        "alias": "\/stereo",
+        "name": "Stereocard Collection",
+        "path": "\/cdm\/sites\/16786\/data\/stereo",
+        "secondary_alias": "stereo"
+    },
+    {
+        "alias": "\/archps",
+        "name": "Student Papers on the Architecture of Puget Sound, 1959-1970s",
+        "path": "\/cdm\/sites\/16786\/data\/archps",
+        "secondary_alias": "archps"
+    },
+    {
+        "alias": "\/tacomacomm",
+        "name": "Tacoma Community History Project",
+        "path": "\/cdm\/sites\/16786\/data\/tacomacomm",
+        "secondary_alias": "tacomacomm"
+    },
+    {
+        "alias": "\/farquharson",
+        "name": "Tacoma Narrows Bridge Collection",
+        "path": "\/cdm\/sites\/16786\/data\/farquharson",
+        "secondary_alias": "farquharson"
+    },
+    {
+        "alias": "\/tacoma",
+        "name": "Tacoma Then and Again",
+        "path": "\/cdm\/sites\/16786\/data\/tacoma",
+        "secondary_alias": "tacoma"
+    },
+    {
+        "alias": "\/tahirler",
+        "name": "Tahirler Project",
+        "path": "\/cdm\/sites\/16786\/data\/tahirler",
+        "secondary_alias": "tahirler"
+    },
+    {
+        "alias": "\/ThaiIndex",
+        "name": "Thai Journal Index",
+        "path": "\/cdm\/sites\/16786\/data\/ThaiIndex",
+        "secondary_alias": "ThaiIndex"
+    },
+    {
+        "alias": "\/mohai-thompson",
+        "name": "Thompson (J. W.) Collection, Museum of History and Industry",
+        "path": "\/cdm\/sites\/16786\/data\/mohai-thompson",
+        "secondary_alias": "mohai-thompson"
+    },
+    {
+        "alias": "\/thwaites",
+        "name": "Thwaites (John E.) Photographs of Alaska, 1905-1920",
+        "path": "\/cdm\/sites\/16786\/data\/thwaites",
+        "secondary_alias": "thwaites"
+    },
+    {
+        "alias": "\/todd",
+        "name": "Todd (Calvin F.) Photographs of Seattle, 1905-1930",
+        "path": "\/cdm\/sites\/16786\/data\/todd",
+        "secondary_alias": "todd"
+    },
+    {
+        "alias": "\/tollcan",
+        "name": "Tollman and Canaris Photographs of the Salmon Industry in Washington State, 1893",
+        "path": "\/cdm\/sites\/16786\/data\/tollcan",
+        "secondary_alias": "tollcan"
+    },
+    {
+        "alias": "\/transportation",
+        "name": "Transportation Photographs",
+        "path": "\/cdm\/sites\/16786\/data\/transportation",
+        "secondary_alias": "transportation"
+    },
+    {
+        "alias": "\/p16786coll14",
+        "name": "UW Bothell Cascadia Library Art Tour",
+        "path": "\/cdm\/sites\/16786\/data\/p16786coll14",
+        "secondary_alias": "11"
+    },
+    {
+        "alias": "\/p16786coll20",
+        "name": "CCUWBee Native Bee Collection",
+        "path": "\/cdm\/sites\/16786\/data\/p16786coll20",
+        "secondary_alias": "p16786coll20"
+    },
+    {
+        "alias": "\/uwb4",
+        "name": "UW Bothell Community Voices Collection",
+        "path": "\/cdm\/sites\/16786\/data\/uwb4",
+        "secondary_alias": "uwb4"
+    },
+    {
+        "alias": "\/p16786coll19",
+        "name": "UW Bothell Diversity Center Archive",
+        "path": "\/cdm\/sites\/16786\/data\/p16786coll19",
+        "secondary_alias": "p16786coll19"
+    },
+    {
+        "alias": "\/p16786coll12",
+        "name": "UW Bothell Feminist Community Archive of Washington",
+        "path": "\/cdm\/sites\/16786\/data\/p16786coll12",
+        "secondary_alias": "7"
+    },
+    {
+        "alias": "\/p16786coll15",
+        "name": "UW Bothell Washington Prison History Project Archive",
+        "path": "\/cdm\/sites\/16786\/data\/p16786coll15",
+        "secondary_alias": "p16786coll15"
+    },
+    {
+        "alias": "\/uwb2",
+        "name": "UW Bothell Wetlands Collection",
+        "path": "\/cdm\/sites\/16786\/data\/uwb2",
+        "secondary_alias": "uwb2"
+    },
+    {
+        "alias": "\/uwcampus",
+        "name": "UW Campus Photographs",
+        "path": "\/cdm\/sites\/16786\/data\/uwcampus",
+        "secondary_alias": "uwcampus"
+    },
+    {
+        "alias": "\/uwib",
+        "name": "UW Image Bank",
+        "path": "\/cdm\/sites\/16786\/data\/uwib",
+        "secondary_alias": "uwib"
+    },
+    {
+        "alias": "\/libart",
+        "name": "UW Libraries Art Collection",
+        "path": "\/cdm\/sites\/16786\/data\/libart",
+        "secondary_alias": "libart"
+    },
+    {
+        "alias": "\/daily",
+        "name": "UW Student Newspapers Archive",
+        "path": "\/cdm\/sites\/16786\/data\/daily",
+        "secondary_alias": "daily"
+    },
+    {
+        "alias": "\/p16786coll18",
+        "name": "UW Tacoma Oral History, Founding Stories",
+        "path": "\/cdm\/sites\/16786\/data\/p16786coll18",
+        "secondary_alias": "p16786coll18"
+    },
+    {
+        "alias": "\/uwdocs",
+        "name": "UW Yearbooks and Documents",
+        "path": "\/cdm\/sites\/16786\/data\/uwdocs",
+        "secondary_alias": "uwdocs"
+    },
+    {
+        "alias": "\/ua",
+        "name": "Urban Archives",
+        "path": "\/cdm\/sites\/16786\/data\/ua",
+        "secondary_alias": "ua"
+    },
+    {
+        "alias": "\/vanolinda",
+        "name": "Van Olinda (Oliver S.) Photographs of Puget Sound, 1880s-1930s",
+        "path": "\/cdm\/sites\/16786\/data\/vanolinda",
+        "secondary_alias": "vanolinda"
+    },
+    {
+        "alias": "\/protests",
+        "name": "Vietnam War Era Ephemera Collection",
+        "path": "\/cdm\/sites\/16786\/data\/protests",
+        "secondary_alias": "protests"
+    },
+    {
+        "alias": "\/waite",
+        "name": "Waite (Alvin H.) Photographs of Tacoma and Washington State, 1892-1907",
+        "path": "\/cdm\/sites\/16786\/data\/waite",
+        "secondary_alias": "waite"
+    },
+    {
+        "alias": "\/posters",
+        "name": "War Poster Collection",
+        "path": "\/cdm\/sites\/16786\/data\/posters",
+        "secondary_alias": "posters"
+    },
+    {
+        "alias": "\/warner",
+        "name": "Warner (Arthur Churchill) Photographs of Washington State and Alaska, 1884-1945",
+        "path": "\/cdm\/sites\/16786\/data\/warner",
+        "secondary_alias": "warner"
+    },
+    {
+        "alias": "\/jhp",
+        "name": "Washington State Jewish Archives",
+        "path": "\/cdm\/sites\/16786\/data\/jhp",
+        "secondary_alias": "jhp"
+    },
+    {
+        "alias": "\/wastate",
+        "name": "Washington State Localities Photographs",
+        "path": "\/cdm\/sites\/16786\/data\/wastate",
+        "secondary_alias": "wastate"
+    },
+    {
+        "alias": "\/watson",
+        "name": "Watson (Dwight) Photographs of Washington State, 1933-1943",
+        "path": "\/cdm\/sites\/16786\/data\/watson",
+        "secondary_alias": "watson"
+    },
+    {
+        "alias": "\/ww-text",
+        "name": "Western Waters Texts",
+        "path": "\/cdm\/sites\/16786\/data\/ww-text",
+        "secondary_alias": "ww-text"
+    },
+    {
+        "alias": "\/imlswrvm",
+        "name": "White River Valley Museum (KCS)",
+        "path": "\/cdm\/sites\/16786\/data\/imlswrvm",
+        "secondary_alias": "imlswrvm"
+    },
+    {
+        "alias": "\/imlswingluke",
+        "name": "Wing Luke Asian Museum (KCS)",
+        "path": "\/cdm\/sites\/16786\/data\/imlswingluke",
+        "secondary_alias": "imlswingluke"
+    },
+    {
+        "alias": "\/wwr",
+        "name": "Women Who Rock Oral History Collection",
+        "path": "\/cdm\/sites\/16786\/data\/wwr",
+        "secondary_alias": "wwr"
+    },
+    {
+        "alias": "\/maps",
+        "name": "World and Regional Maps, 16th to 19th Centuries",
+        "path": "\/cdm\/sites\/16786\/data\/maps",
+        "secondary_alias": "maps"
+    },
+    {
+        "alias": "\/wto",
+        "name": "WTO Seattle Collection",
+        "path": "\/cdm\/sites\/16786\/data\/wto",
+        "secondary_alias": "wto"
+    },
+    {
+        "alias": "\/antartica",
+        "name": "Antarctica",
+        "path": "\/cdm\/sites\/16786\/data\/antartica",
+        "secondary_alias": "antartica"
+    },
+    {
+        "alias": "\/becker",
+        "name": "Becker (Elizabeth) Collection",
+        "path": "\/cdm\/sites\/16786\/data\/becker",
+        "secondary_alias": "becker"
+    },
+    {
+        "alias": "\/dia",
+        "name": "Denny Islamic Art Photographs",
+        "path": "\/cdm\/sites\/16786\/data\/dia",
+        "secondary_alias": "dia"
+    },
+    {
+        "alias": "\/elchichon",
+        "name": "El Chichon",
+        "path": "\/cdm\/sites\/16786\/data\/elchichon",
+        "secondary_alias": "elchichon"
+    },
+    {
+        "alias": "\/hawaiianvolcanoes",
+        "name": "Hawaiian Volcanoes",
+        "path": "\/cdm\/sites\/16786\/data\/hawaiianvolcanoes",
+        "secondary_alias": "hawaiianvolcanoes"
+    },
+    {
+        "alias": "\/greekdancing",
+        "name": "Hunt (Yvonne) Greek Folk Dance Collection",
+        "path": "\/cdm\/sites\/16786\/data\/greekdancing",
+        "secondary_alias": "greekdancing"
+    },
+    {
+        "alias": "\/pubbind",
+        "name": "Publisher's Bindings",
+        "path": "\/cdm\/sites\/16786\/data\/pubbind",
+        "secondary_alias": "pubbind"
+    },
+    {
+        "alias": "\/uwtjls",
+        "name": "Tacoma Japanese Language School Project",
+        "path": "\/cdm\/sites\/16786\/data\/uwtjls",
+        "secondary_alias": "uwtjls"
+    },
+    {
+        "alias": "\/p16786coll2",
+        "name": "Test Collection",
+        "path": "\/cdm\/sites\/16786\/data\/p16786coll2",
+        "secondary_alias": "p16786coll2"
+    },
+    {
+        "alias": "\/p16786coll6",
+        "name": "URLs",
+        "path": "\/cdm\/sites\/16786\/data\/p16786coll6",
+        "secondary_alias": "2"
+    }
+]

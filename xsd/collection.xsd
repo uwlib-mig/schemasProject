@@ -1,0 +1,851 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns="https://uwlib-mig.github.io/schemasProject/xsd/"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           targetNamespace="https://uwlib-mig.github.io/schemasProject/xsd/"
+           elementFormDefault="qualified">
+    
+   <!-- schema structure allows multiple, whitespace delimited values -->
+   <xs:simpleType name="collection_type">
+      <xs:restriction>
+         <xs:simpleType>
+            <xs:list>
+               <xs:simpleType>
+                  <xs:restriction xmlns:fn="http://www.w3.org/2005/xpath-functions" base="xs:token">
+                     <xs:enumeration value="*">
+                        <xs:annotation>
+                           <xs:documentation>Use this value to indicate that the guidance or example value applies to all collections, in the absence of content tagged for a specific collection(s).</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <!--temp alias may be used if collection alias has not yet been determined-->
+                     <xs:enumeration value="temp_alias_001"/>
+                     <xs:enumeration value="temp_alias_002"/>
+                     <xs:enumeration value="temp_alias_003"/>
+                     <!--existing collection aliases-->
+                     <xs:enumeration value="alaskawcanada">
+                        <xs:annotation>
+                           <xs:documentation>Alaska, Western Canada and United States</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="ayp">
+                        <xs:annotation>
+                           <xs:documentation>Alaska Yukon Pacific Exposition Photographs</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="loc">
+                        <xs:annotation>
+                           <xs:documentation>American Indians of the Pacific Northwest -- Image Portion</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="lctext">
+                        <xs:annotation>
+                           <xs:documentation>American Indians of the Pacific Northwest -- Textual Portion</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="neareast">
+                        <xs:annotation>
+                           <xs:documentation>Ancient Near East Photograph Collection</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="ac">
+                        <xs:annotation>
+                           <xs:documentation>Architecture of the Pacific Northwest</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="p16786coll17">
+                        <xs:annotation>
+                           <xs:documentation>Asian Architecture Collection - Photographs by Patricia Young</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="barnes">
+                        <xs:annotation>
+                           <xs:documentation>Barnes (Albert H.) Photographs of Western Washington, 1895-1920</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="imlsblackhs">
+                        <xs:annotation>
+                           <xs:documentation>Black Heritage Society (KCS)</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="boydBraas">
+                        <xs:annotation>
+                           <xs:documentation>Boyd and Braas Photographs of Seattle and Washington State</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="bcmedia">
+                        <xs:annotation>
+                           <xs:documentation>Broadcast Media Collection</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="p16786coll1">
+                        <xs:annotation>
+                           <xs:documentation>Brumfield (William Craft) Russian Architecture Digital Collection</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="eurasia">
+                        <xs:annotation>
+                           <xs:documentation>Central Eurasia Image Database</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="iww">
+                        <xs:annotation>
+                           <xs:documentation>Centralia Tragedy and the Industrial Workers of the World Collection, 1912-1932</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="chandless">
+                        <xs:annotation>
+                           <xs:documentation>Chandless (Robert Henry) Photographs of China, 1898-1908</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="chernobyl">
+                        <xs:annotation>
+                           <xs:documentation>Chernobyl, the Destroyed Russian Nuclear Reactor</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="buildings">
+                        <xs:annotation>
+                           <xs:documentation>Cities and Buildings Database</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="civilwar">
+                        <xs:annotation>
+                           <xs:documentation>Civil War Letters</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="civilworks">
+                        <xs:annotation>
+                           <xs:documentation>Civil Works Administration Photographs of King County, 1933-1934</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="cchs">
+                        <xs:annotation>
+                           <xs:documentation>Clallam County Historical Society (CMP)</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="CMPindiv">
+                        <xs:annotation>
+                           <xs:documentation>Community Museum Individual Contributors (CMP)</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="cobb">
+                        <xs:annotation>
+                           <xs:documentation>Cobb (John N.) Photographs of the Fishing Industry, 1897-1917</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="curtis">
+                        <xs:annotation>
+                           <xs:documentation>Curtis (Asahel) Photo Company Photographs</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="3">
+                        <xs:annotation>
+                           <xs:documentation>Darrington Historical Society's SR 530 Landslide Collection</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="dearmassar">
+                        <xs:annotation>
+                           <xs:documentation>Dearborn &amp; Massar Photographs of Pacific Northwest Architecture</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="dp">
+                        <xs:annotation>
+                           <xs:documentation>Decorated and Decorative Paper Collection</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="desmo">
+                        <xs:annotation>
+                           <xs:documentation>Des Moines Historical Society Museum (KCS)</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="donaldson">
+                        <xs:annotation>
+                           <xs:documentation>Donaldson (Lauren R) Collection of South Pacific Radiological Surveys, 1946-1964</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="advert">
+                        <xs:annotation>
+                           <xs:documentation>Early Advertising of the West, 1867-1918</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="imlseastside">
+                        <xs:annotation>
+                           <xs:documentation>Eastside Heritage Center (KCS)</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="ethnomusic">
+                        <xs:annotation>
+                           <xs:documentation>Ethnomusicology Musical Instrument Collection</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="pnwlabor">
+                        <xs:annotation>
+                           <xs:documentation>Everett Massacre of 1916 Collection</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="costumehist">
+                        <xs:annotation>
+                           <xs:documentation>Fashion Plate Collection</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="fera">
+                        <xs:annotation>
+                           <xs:documentation>Federal Emergency Relief Administration (FERA) Photographs of King County, 1933-</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="ftm">
+                        <xs:annotation>
+                           <xs:documentation>Forks Timber Museum (CMP)</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="fishimages">
+                        <xs:annotation>
+                           <xs:documentation>Freshwater and Marine Image Bank</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="epic">
+                        <xs:annotation>
+                           <xs:documentation>Glaciers and Landforms Photograph Collection</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="gar">
+                        <xs:annotation>
+                           <xs:documentation>Grand Army of the Republic Civil War Portraits</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="grandcoulee">
+                        <xs:annotation>
+                           <xs:documentation>Grand Coulee Dam Construction, 1933-1942</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="harriman">
+                        <xs:annotation>
+                           <xs:documentation>Harriman Alaska Expedition of 1899</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="hegg">
+                        <xs:annotation>
+                           <xs:documentation>Hegg (Eric A.) Photographs of Alaska and the Klondike, 1897-1901</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="hester">
+                        <xs:annotation>
+                           <xs:documentation>Hester (Wilhelm) Photographs</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="historicalbookarts">
+                        <xs:annotation>
+                           <xs:documentation>Historical Book Arts Collection</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="childrens">
+                        <xs:annotation>
+                           <xs:documentation>Historical Children's Literature Collection</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="indocc">
+                        <xs:annotation>
+                           <xs:documentation>Industries and Occupations Photographs</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="ic">
+                        <xs:annotation>
+                           <xs:documentation>International Collections</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="jackson">
+                        <xs:annotation>
+                           <xs:documentation>Jackson (Henry M.) Collection</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="katims">
+                        <xs:annotation>
+                           <xs:documentation>Katims (Milton) Audio Collection</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="kiehl">
+                        <xs:annotation>
+                           <xs:documentation>Kiehl (H. Ambrose) Photograph Collection</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="kccollects">
+                        <xs:annotation>
+                           <xs:documentation>King County Collects Heritage Collection</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="clarkkinsey">
+                        <xs:annotation>
+                           <xs:documentation>Kinsey Brothers Photographs of the Lumber Industry, 1890-1945</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="1">
+                        <xs:annotation>
+                           <xs:documentation>Korean Graphic Novel Cover Art</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="korean">
+                        <xs:annotation>
+                           <xs:documentation>Korean Literary Collection</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="landreau">
+                        <xs:annotation>
+                           <xs:documentation>Landreau Collection on Turkish Carpet Weaving and Village Life</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="laroche">
+                        <xs:annotation>
+                           <xs:documentation>La Roche (Frank) Photographs, 1888-1910</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="lee">
+                        <xs:annotation>
+                           <xs:documentation>Lee (James Patrick) Photographs of Seattle, 1904-1940</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="ll">
+                        <xs:annotation>
+                           <xs:documentation>Lindsley (Lawrence Denny) Photographs of Washington State, 1875-1971</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="mcrc">
+                        <xs:annotation>
+                           <xs:documentation>Makah Cultural Collection (CMP)</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="imlsmvhs">
+                        <xs:annotation>
+                           <xs:documentation>Maple Valley Historical Society (KCS)</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="mckenneyhall">
+                        <xs:annotation>
+                           <xs:documentation>McKenney and Hall Indian Tribes of North America</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="mhm">
+                        <xs:annotation>
+                           <xs:documentation>Medieval and Historical Manuscripts</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="meed">
+                        <xs:annotation>
+                           <xs:documentation>Meed (William E.) Photographs of the Yukon Territory, 1898-1907</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="menus">
+                        <xs:annotation>
+                           <xs:documentation>Menus Collection</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="hupy">
+                        <xs:annotation>
+                           <xs:documentation>Modern Photographers Collection</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="4">
+                        <xs:annotation>
+                           <xs:documentation>Morell (Karen L.) Africa, Trinidad, and New Orleans Multimedia Collection</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="mshchem">
+                        <xs:annotation>
+                           <xs:documentation>Mount St. Helens Post-Eruption Chemistry Database</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="mtsthelens">
+                        <xs:annotation>
+                           <xs:documentation>Mount St. Helens Succession Collection</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="mtn">
+                        <xs:annotation>
+                           <xs:documentation>Mountaineers Photograph Album Collection</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="filmarch">
+                        <xs:annotation>
+                           <xs:documentation>Moving Image Collection</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="imlsmohai">
+                        <xs:annotation>
+                           <xs:documentation>Museum of History and Industry</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="mm">
+                        <xs:annotation>
+                           <xs:documentation>Music Library Digital Scores Collection</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="napoleon">
+                        <xs:annotation>
+                           <xs:documentation>Napoleonic Period Collection of Political Caricatures</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="nmai">
+                        <xs:annotation>
+                           <xs:documentation>National Museum of the American Indian (CMP)</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="nps">
+                        <xs:annotation>
+                           <xs:documentation>National Park Service (CMP)</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="iraqdiaries">
+                        <xs:annotation>
+                           <xs:documentation>NewBook Digital Texts Project</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="nap">
+                        <xs:annotation>
+                           <xs:documentation>Nikkei Newspapers Digital Archive (日系新聞)</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="19thcenturyactors">
+                        <xs:annotation>
+                           <xs:documentation>Nineteenth (19th) Century Actors and Theater Photographs</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="nol">
+                        <xs:annotation>
+                           <xs:documentation>North Olympic Library System (CMP)</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="reports">
+                        <xs:annotation>
+                           <xs:documentation>Northwest Historical Annual Reports Collection</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="imlsrailway">
+                        <xs:annotation>
+                           <xs:documentation>Northwest Railway Museum (KCS)</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="nowell">
+                        <xs:annotation>
+                           <xs:documentation>Nowell (Frank H.) Photographs of Alaska, 1901-1909</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="ohc">
+                        <xs:annotation>
+                           <xs:documentation>Oral History Collection</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="pcarch">
+                        <xs:annotation>
+                           <xs:documentation>Pacific Coast Architecture</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="pacfish">
+                        <xs:annotation>
+                           <xs:documentation>Pacific Fisherman Journal, 1911-1913</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="pioneerlife">
+                        <xs:annotation>
+                           <xs:documentation>Pacific Northwest Historical Documents Collection</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="pnwhm">
+                        <xs:annotation>
+                           <xs:documentation>Pacific Northwest Historical Monographs</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="p16786coll16">
+                        <xs:annotation>
+                           <xs:documentation>Pacific Northwest Political Marches and Rallies</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="sm">
+                        <xs:annotation>
+                           <xs:documentation>Pacific Northwest Sheet Music Collection</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="ptec">
+                        <xs:annotation>
+                           <xs:documentation>Pamphlet and Textual Documents Collection</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="panoram">
+                        <xs:annotation>
+                           <xs:documentation>Panoramic Photographs Collection</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="payne">
+                        <xs:annotation>
+                           <xs:documentation>Payne (Blanche) Regional Costume Photograph and Drawing Collection</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="peiser">
+                        <xs:annotation>
+                           <xs:documentation>Peiser (Theodore E.) Photographs of Washington State, 1864-1910</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="pwb">
+                        <xs:annotation>
+                           <xs:documentation>People Without Borders (CMP)</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="pickett">
+                        <xs:annotation>
+                           <xs:documentation>Pickett (Lee) Photographs of Washington State, 1909-1936</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="plants">
+                        <xs:annotation>
+                           <xs:documentation>Plants of Western Washington Collection</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="ptleader">
+                        <xs:annotation>
+                           <xs:documentation>Port Townsend Leader</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="portraits">
+                        <xs:annotation>
+                           <xs:documentation>Portraits Collection</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="norris">
+                        <xs:annotation>
+                           <xs:documentation>Prior and Norris Vaudeville Troupe Photographs and Ephemera, 1886-1915</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="prosch_washington">
+                        <xs:annotation>
+                           <xs:documentation>Prosch Albums, 1851-1906</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="psc">
+                        <xs:annotation>
+                           <xs:documentation>Puget Sound Chemist Collection</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="imlsmaritime">
+                        <xs:annotation>
+                           <xs:documentation>Puget Sound Maritime Historical Society (KCS)</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="glacier">
+                        <xs:annotation>
+                           <xs:documentation>Rainier National Park Mountain-Glacier Wonderland Photograph Album</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="imlsrvhs">
+                        <xs:annotation>
+                           <xs:documentation>Rainier Valley Historical Society (KCS)</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="imlsrenton">
+                        <xs:annotation>
+                           <xs:documentation>Renton Historical Museum (KCS)</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="salmon">
+                        <xs:annotation>
+                           <xs:documentation>Salmon in the Pacific Northwest and Alaska Collection, 1890-1961</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="sarvant">
+                        <xs:annotation>
+                           <xs:documentation>Sarvant (Henry M.) Photographs of Washington State and the Yukon, 1892-1912</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="sayre">
+                        <xs:annotation>
+                           <xs:documentation>Sayre (J. Willis) Collection of Theatrical Photographs</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="seattle">
+                        <xs:annotation>
+                           <xs:documentation>Seattle Photographs</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="ww-swps">
+                        <xs:annotation>
+                           <xs:documentation>Seattle Power and Water Supply Collection</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="p16786coll3">
+                        <xs:annotation>
+                           <xs:documentation>Sephardic Studies Collection of the University of Washington</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="imlsshoreline">
+                        <xs:annotation>
+                           <xs:documentation>Shoreline Historical Museum (KCS)</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="skinner">
+                        <xs:annotation>
+                           <xs:documentation>Skinner (G. William) Map Collection</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="social">
+                        <xs:annotation>
+                           <xs:documentation>Society and Culture Collection</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="saohc">
+                        <xs:annotation>
+                           <xs:documentation>South Asian Oral History Project</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="stereo">
+                        <xs:annotation>
+                           <xs:documentation>Stereocard Collection</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="archps">
+                        <xs:annotation>
+                           <xs:documentation>Student Papers on the Architecture of Puget Sound, 1959-1970s</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="tacomacomm">
+                        <xs:annotation>
+                           <xs:documentation>Tacoma Community History Project</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="farquharson">
+                        <xs:annotation>
+                           <xs:documentation>Tacoma Narrows Bridge Collection</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="tacoma">
+                        <xs:annotation>
+                           <xs:documentation>Tacoma Then and Again</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="tahirler">
+                        <xs:annotation>
+                           <xs:documentation>Tahirler Project</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="ThaiIndex">
+                        <xs:annotation>
+                           <xs:documentation>Thai Journal Index</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="mohai-thompson">
+                        <xs:annotation>
+                           <xs:documentation>Thompson (J. W.) Collection, Museum of History and Industry</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="thwaites">
+                        <xs:annotation>
+                           <xs:documentation>Thwaites (John E.) Photographs of Alaska, 1905-1920</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="todd">
+                        <xs:annotation>
+                           <xs:documentation>Todd (Calvin F.) Photographs of Seattle, 1905-1930</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="tollcan">
+                        <xs:annotation>
+                           <xs:documentation>Tollman and Canaris Photographs of the Salmon Industry in Washington State, 1893</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="transportation">
+                        <xs:annotation>
+                           <xs:documentation>Transportation Photographs</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="11">
+                        <xs:annotation>
+                           <xs:documentation>UW Bothell Cascadia Library Art Tour</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="p16786coll20">
+                        <xs:annotation>
+                           <xs:documentation>CCUWBee Native Bee Collection</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="uwb4">
+                        <xs:annotation>
+                           <xs:documentation>UW Bothell Community Voices Collection</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="p16786coll19">
+                        <xs:annotation>
+                           <xs:documentation>UW Bothell Diversity Center Archive</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="7">
+                        <xs:annotation>
+                           <xs:documentation>UW Bothell Feminist Community Archive of Washington</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="p16786coll15">
+                        <xs:annotation>
+                           <xs:documentation>UW Bothell Washington Prison History Project Archive</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="uwb2">
+                        <xs:annotation>
+                           <xs:documentation>UW Bothell Wetlands Collection</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="uwcampus">
+                        <xs:annotation>
+                           <xs:documentation>UW Campus Photographs</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="uwib">
+                        <xs:annotation>
+                           <xs:documentation>UW Image Bank</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="libart">
+                        <xs:annotation>
+                           <xs:documentation>UW Libraries Art Collection</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="daily">
+                        <xs:annotation>
+                           <xs:documentation>UW Student Newspapers Archive</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="p16786coll18">
+                        <xs:annotation>
+                           <xs:documentation>UW Tacoma Oral History, Founding Stories</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="uwdocs">
+                        <xs:annotation>
+                           <xs:documentation>UW Yearbooks and Documents</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="ua">
+                        <xs:annotation>
+                           <xs:documentation>Urban Archives</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="vanolinda">
+                        <xs:annotation>
+                           <xs:documentation>Van Olinda (Oliver S.) Photographs of Puget Sound, 1880s-1930s</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="protests">
+                        <xs:annotation>
+                           <xs:documentation>Vietnam War Era Ephemera Collection</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="waite">
+                        <xs:annotation>
+                           <xs:documentation>Waite (Alvin H.) Photographs of Tacoma and Washington State, 1892-1907</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="posters">
+                        <xs:annotation>
+                           <xs:documentation>War Poster Collection</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="warner">
+                        <xs:annotation>
+                           <xs:documentation>Warner (Arthur Churchill) Photographs of Washington State and Alaska, 1884-1945</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="jhp">
+                        <xs:annotation>
+                           <xs:documentation>Washington State Jewish Archives</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="wastate">
+                        <xs:annotation>
+                           <xs:documentation>Washington State Localities Photographs</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="watson">
+                        <xs:annotation>
+                           <xs:documentation>Watson (Dwight) Photographs of Washington State, 1933-1943</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="ww-text">
+                        <xs:annotation>
+                           <xs:documentation>Western Waters Texts</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="imlswrvm">
+                        <xs:annotation>
+                           <xs:documentation>White River Valley Museum (KCS)</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="imlswingluke">
+                        <xs:annotation>
+                           <xs:documentation>Wing Luke Asian Museum (KCS)</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="wwr">
+                        <xs:annotation>
+                           <xs:documentation>Women Who Rock Oral History Collection</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="maps">
+                        <xs:annotation>
+                           <xs:documentation>World and Regional Maps, 16th to 19th Centuries</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="wto">
+                        <xs:annotation>
+                           <xs:documentation>WTO Seattle Collection</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="antartica">
+                        <xs:annotation>
+                           <xs:documentation>Antarctica</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="becker">
+                        <xs:annotation>
+                           <xs:documentation>Becker (Elizabeth) Collection</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="dia">
+                        <xs:annotation>
+                           <xs:documentation>Denny Islamic Art Photographs</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="elchichon">
+                        <xs:annotation>
+                           <xs:documentation>El Chichon</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="hawaiianvolcanoes">
+                        <xs:annotation>
+                           <xs:documentation>Hawaiian Volcanoes</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="greekdancing">
+                        <xs:annotation>
+                           <xs:documentation>Hunt (Yvonne) Greek Folk Dance Collection</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="pubbind">
+                        <xs:annotation>
+                           <xs:documentation>Publisher's Bindings</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="uwtjls">
+                        <xs:annotation>
+                           <xs:documentation>Tacoma Japanese Language School Project</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="p16786coll2">
+                        <xs:annotation>
+                           <xs:documentation>Test Collection</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                     <xs:enumeration value="2">
+                        <xs:annotation>
+                           <xs:documentation>URLs</xs:documentation>
+                        </xs:annotation>
+                     </xs:enumeration>
+                  </xs:restriction>
+               </xs:simpleType>
+            </xs:list>
+         </xs:simpleType>
+      </xs:restriction>
+   </xs:simpleType>
+</xs:schema>
