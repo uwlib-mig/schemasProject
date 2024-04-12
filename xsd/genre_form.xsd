@@ -16,7 +16,7 @@
                             <!-- default -->
                             <xs:enumeration value="*">
                                 <xs:annotation>
-                                    <xs:documentation>Use this value to indicate that the guidance or example value applies to all genre/forms in a given collection.</xs:documentation>
+                                    <xs:documentation>Use this value to indicate that the guidance or example value applies to all genre/forms, in the absence of content tagged for a specific genre/form(s).</xs:documentation>
                                 </xs:annotation>
                             </xs:enumeration>
                             

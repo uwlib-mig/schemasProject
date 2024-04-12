@@ -3,8 +3,13 @@
     xmlns="https://uwlib-mig.github.io/schemasProject/xsd/"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-
+    
+    <!-- update to include online schemas once stable, use
+    https://uwlib-mig.github.io/schemasProject/xsd/genre_form.xsd
+    https://uwlib-mig.github.io/schemasProject/xsd/collection.xsd -->
+    <xs:include schemaLocation="collection.xsd"/>
     <xs:include schemaLocation="genre_form.xsd"/>
+    
     <xs:import namespace="http://www.w3.org/XML/1998/namespace"
         schemaLocation="http://www.w3.org/2001/03/xml.xsd"/>
     <xs:import namespace="http://www.w3.org/2001/XMLSchema"
