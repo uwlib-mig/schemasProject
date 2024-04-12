@@ -178,6 +178,10 @@
       <customization co="no" dd="harriman">
          <para>silver gelatin, b&amp;w</para>
       </customization>
+      <customization co="no" dd="becker" objectType="Photographs">
+         <para>Black &amp; white photographic negative</para>
+         <para>Color slide</para>
+      </customization>
    </examples>
    <additionalInfo/>
    <marc>

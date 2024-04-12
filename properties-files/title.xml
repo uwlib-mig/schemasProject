@@ -260,16 +260,16 @@
          <para>Video</para>
          <para>Table of contents</para>
       </customization>
-      <customization co="object" dd="p16786coll3" resourceType="text">
+      <customization co="object" dd="p16786coll3" objectType="text">
          <para>Pavlo i Virjinia : romanso</para>
       </customization>
-      <customization co="object" dd="p16786coll3" resourceType="song">
+      <customization co="object" dd="p16786coll3" objectType="song">
          <para>Audio: Alavar kero al Dyo</para>
       </customization>
-      <customization co="object" dd="p16786coll3" resourceType="oh">
+      <customization co="object" dd="p16786coll3" objectType="oh">
          <para>Solomon Maimon interview</para>
       </customization>
-      <customization co="item" dd="p16786coll3" resourceType="text">
+      <customization co="item" dd="p16786coll3" objectType="text">
          <para>Cover</para>
          <para>Inside cover</para>
          <para>Title page</para>
@@ -282,24 +282,24 @@
          <para>Page 4 (ג)</para>
          <para>Page 5 (unnumbered)</para>
       </customization>
-      <customization co="item" dd="p16786coll3" resourceType="song">
+      <customization co="item" dd="p16786coll3" objectType="song">
          <para>La Muerte del Duque de Gandía (í-a) - audio</para>
          <para>Image of Bohora Cornell (Coronel), singer</para>
          <para>Musical Transcription: La Muerte del Duque de Gandí</para>
       </customization>
-      <customization co="item" dd="p16786coll3" resourceType="oh">
+      <customization co="item" dd="p16786coll3" objectType="oh">
          <para>Solomon Maimon interview, audio</para>
          <para>Image of Solomon Maimon</para>
          <para>Solomon Maimon interview, transcript</para>
       </customization>
-      <customization co="object" dd="temp_alias_001" resourceType="default">
+      <customization co="object" dd="temp_alias_001" objectType="default">
          <para>Sally Sumeko Shirasago interview</para>
          <para>Robert Mitsuhiro Takasugi interview</para>
          <para>Betty Hiroko (Fukuhara) Yoshioka interview</para>
          <para>Harue Koano Ozaki and Sam Saburo Ozaki interview</para>
          <para>Oakland Buddhist Church group interview</para>
       </customization>
-      <customization co="item" dd="temp_alias_001" resourceType="default">
+      <customization co="item" dd="temp_alias_001" objectType="default">
          <para>Sally Sumeko Shirasago interview, video</para>
          <para>Sally Sumeko Shirasago interview, audio</para>
          <para>Sally Sumeko Shirasago interview, transcript</para>
@@ -311,6 +311,14 @@
          <para>Betty Hiroko (Fukuhara) Yoshioka interview, audio, audiocassette side 1</para>
          <para>Betty Hiroko (Fukuhara) Yoshioka interview, audio, audiocassette side 2</para>
          <para>Betty Hiroko (Fukuhara) Yoshioka interview, transcript</para>
+      </customization>
+      <customization co="no" dd="becker" objectType="Photographs">
+         <para>Two men outside a Khmer Rouge technical school and factory</para>
+         <para>A girl working in a metalshop classroom- Khmer Rouge technical school and factory</para>
+         <para>Portrait of Pol Pot</para>
+      </customization>
+      <customization co="no" dd="becker" objectType="Records_(Documents)">
+         <para>Typewritten notes after just arriving in Phnom Penh, Cambodia</para>
       </customization>
    </examples>
    <additionalInfo/>
