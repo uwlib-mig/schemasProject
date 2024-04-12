@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+<xs:schema targetNamespace="https://uwlib-mig.github.io/schemasProject/xsd/"
+    xmlns="https://uwlib-mig.github.io/schemasProject/xsd/"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    targetNamespace="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
-    xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md">
+    elementFormDefault="qualified">
 
     <!-- schema structure allows multiple, whitespace delimited values -->
     <xs:simpleType name="objectType_attr_type">
