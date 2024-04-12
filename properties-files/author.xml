@@ -87,6 +87,9 @@
       <customization co="no" dd="p16786coll3">
          <para>Saint-Pierre, Bernardin de, 1737-1814.</para>
       </customization>
+      <customization co="no" dd="becker" objectType="Newsletters Records_(Documents)">
+         <para>Becker, Elizabeth (Journalist)</para>
+      </customization>
    </examples>
    <additionalInfo>
       <admin co="all" dd4para="p16786coll3">
@@ -115,7 +118,7 @@
             <end>2017-06-29</end>
          </range>
       </dateCreated>
-      <created4Coll>Special Collections Civil War Letters Collection, and Special Collections Pamphlet and Textul Collection</created4Coll>
+      <created4Coll>Special Collections Civil War Letters Collection, and Special Collections Pamphlet and Textual Collection</created4Coll>
       <justification>Wanted a way to distinguish authors of text.</justification>
       <changeLog>
          <change/>
