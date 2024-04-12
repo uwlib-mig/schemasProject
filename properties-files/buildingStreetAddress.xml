@@ -1,11 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?><property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md    ../xsd4md/schema-4-properties.xsd"><uid>p9</uid><labels>
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="https://uwlib-mig.github.io/schemasProject/xsd/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xsi:schemaLocation="https://uwlib-mig.github.io/schemasProject/xsd/
+    https://uwlib-mig.github.io/schemasProject/xsd/properties_files.xsd">
+    <uid>p9</uid>
+    <labels>
         <platformIndependent>buildingStreetAddress</platformIndependent>
         <dc>none</dc>
-    </labels><uwRequired>
+    </labels>
+    <uwRequired>
         <uwStandalone>no</uwStandalone>
         <uwObject>no</uwObject>
         <uwItem>no</uwItem>
-    </uwRequired><cdm>
+    </uwRequired>
+    <cdm>
         <label>Building Street Address</label>
         <cdmDatatype>text</cdmDatatype>
         <cdmLarge>no</cdmLarge>
@@ -13,9 +22,11 @@
         <hidden>no</hidden>
         <cdmRequired>no</cdmRequired>
         <cdmControlledVocab>no</cdmControlledVocab>
-    </cdm><dspace>
+    </cdm>
+    <dspace>
         <dspaceProperty/>
-    </dspace><descriptions>
+    </dspace>
+    <descriptions>
         <definition>
             <para>The street addresss of the building created using the drawing.</para>
         </definition>
@@ -25,23 +36,29 @@
             <para>Enter the street address as it is commonly known.</para>
             <para>Enter the best street address available at which the building is located.</para>
         </instructions>
-    </descriptions><examples>
+    </descriptions>
+    <examples>
         <example co="no">
             <para>2702 Broadway E.</para>
             <para>3103 Mt. Rainier Drive</para>
         </example>
-    </examples><additionalInfo/><marc>
+    </examples>
+    <additionalInfo/>
+    <marc>
         <dcgMarcMapping/>
         <marcNotes>
             <para/>
         </marcNotes>
-    </marc><xsd>
+    </marc>
+    <xsd>
         <typeInfo level="standalone">
             <typeAttribute>xs:string</typeAttribute>
         </typeInfo>
-    </xsd><rdf>
+    </xsd>
+    <rdf>
         <sameAs/>
-    </rdf><history>
+    </rdf>
+    <history>
         <dateCreated>
             <range>
                 <start>2005-01-01</start>
@@ -54,4 +71,5 @@
         <changeLog>
             <change/>
         </changeLog>
-    </history></property>
+    </history>
+</property>

@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md    ../xsd4md/schema-4-properties.xsd">
+<property xmlns="https://uwlib-mig.github.io/schemasProject/xsd/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xsi:schemaLocation="https://uwlib-mig.github.io/schemasProject/xsd/
+    https://uwlib-mig.github.io/schemasProject/xsd/properties_files.xsd">
     <uid>p97</uid>
     <labels>
         <platformIndependent>dateOfBroadcast</platformIndependent>
@@ -20,10 +24,12 @@
         <cdmControlledVocab>no</cdmControlledVocab>
     </cdm>
     <dspace>
-        <dspaceProperty></dspaceProperty>
+        <dspaceProperty/>
     </dspace>
     <descriptions>
-        <definition><para>Date of broadcast of the resource.</para></definition>
+        <definition>
+            <para>Date of broadcast of the resource.</para>
+        </definition>
         <instructions co="no">
             <para>Enter the date the program was first broadcast.</para>
             <para>Enter the date using one of the following formats:</para>
@@ -112,7 +118,9 @@
     </xsd>
     <rdf/>
     <history>
-        <dateCreated><single>2019-04-21</single></dateCreated>
+        <dateCreated>
+            <single>2019-04-21</single>
+        </dateCreated>
         <created4Coll>krab</created4Coll>
         <justification>This is a dct:date issued, not yet in the registry. Special Collections anted a property to describe the date a radio program was first aired, not the date of creation.</justification>
         <changeLog>

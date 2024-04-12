@@ -1,11 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?><property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md    ../xsd4md/schema-4-properties.xsd"><uid>p18</uid><labels>
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="https://uwlib-mig.github.io/schemasProject/xsd/"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+   xmlns:xs="http://www.w3.org/2001/XMLSchema"
+   xsi:schemaLocation="https://uwlib-mig.github.io/schemasProject/xsd/
+   https://uwlib-mig.github.io/schemasProject/xsd/properties_files.xsd">
+   <uid>p18</uid>
+   <labels>
       <platformIndependent>condition</platformIndependent>
       <dc>none</dc>
-   </labels><uwRequired>
+   </labels>
+   <uwRequired>
       <uwStandalone>no</uwStandalone>
       <uwObject>no</uwObject>
       <uwItem>no</uwItem>
-   </uwRequired><cdm>
+   </uwRequired>
+   <cdm>
       <label>Condition</label>
       <cdmDatatype>text</cdmDatatype>
       <cdmLarge>no</cdmLarge>
@@ -13,9 +22,11 @@
       <hidden>no</hidden>
       <cdmRequired>no</cdmRequired>
       <cdmControlledVocab>no</cdmControlledVocab>
-   </cdm><dspace>
+   </cdm>
+   <dspace>
       <dspaceProperty/>
-   </dspace><descriptions>
+   </dspace>
+   <descriptions>
       <definition>
          <para>Note on the scanned print photograph when that print photograph was in less than good condition.</para>
       </definition>
@@ -23,27 +34,33 @@
          <para>Enter a phrase describing the compromised condition.</para>
          <para>Terms currently in use include: "badly faded," "badly faded, torn and brittle," "brittle mount," "faded," "faded.creased,taped," "mended with cello tape, then mounted to board (tape on underside)," "mended with tape," "mended with transparent tape," "poor, multiple types of damage."</para>
       </instructions>
-   </descriptions><examples>
+   </descriptions>
+   <examples>
       <example co="no">
          <para>faded</para>
          <para>badly faded</para>
          <para>brittle mount</para>
       </example>
-   </examples><additionalInfo/><marc>
+   </examples>
+   <additionalInfo/>
+   <marc>
       <dcgMarcMapping/>
       <marcNotes>
          <para/>
       </marcNotes>
-   </marc><xsd>
+   </marc>
+   <xsd>
       <typeInfo level="standalone object">
          <typeAttribute>xs:string</typeAttribute>
       </typeInfo>
       <typeInfo level="item">
          <empty/>
       </typeInfo>
-   </xsd><rdf>
+   </xsd>
+   <rdf>
       <sameAs/>
-   </rdf><history>
+   </rdf>
+   <history>
       <dateCreated>
          <range>
             <start>2000-01-01</start>
@@ -54,6 +71,8 @@
       <justification>Special Collections wanted a field to state that the resource digitized was in a compromised condition.</justification>
       <changeLog>
          <change/>
-         <change date="2017-10-23">changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
+         <change date="2017-10-23"
+            >changed //cdm/required to //cdm/cdmRequired and //cdm/uwRequired to assist in halting use of the cdm "required" feature while, at the same time, indicating that UW-cdm collections must use, or not use, a given property; also changed @xsi:schemaLocation.</change>
       </changeLog>
-   </history></property>
+   </history>
+</property>

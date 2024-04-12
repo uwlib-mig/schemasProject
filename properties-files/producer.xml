@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<property xmlns="https://uwlib-mig.github.io/schemasProject/xsd/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xsi:schemaLocation="https://uwlib-mig.github.io/schemasProject/xsd/
+    https://uwlib-mig.github.io/schemasProject/xsd/properties_files.xsd">
     <uid>p96</uid>
     <labels>
         <platformIndependent>producer</platformIndependent>

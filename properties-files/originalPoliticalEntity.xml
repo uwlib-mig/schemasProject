@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md"
-   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema"
-   xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md    ../xsd4md/schema-4-properties.xsd">
+<property xmlns="https://uwlib-mig.github.io/schemasProject/xsd/"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+   xmlns:xs="http://www.w3.org/2001/XMLSchema"
+   xsi:schemaLocation="https://uwlib-mig.github.io/schemasProject/xsd/
+   https://uwlib-mig.github.io/schemasProject/xsd/properties_files.xsd">
    <uid>p63</uid>
    <labels>
       <platformIndependent>originalPoliticalEntity</platformIndependent>

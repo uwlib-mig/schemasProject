@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md    ../xsd4md/schema-4-properties.xsd">
+<property xmlns="https://uwlib-mig.github.io/schemasProject/xsd/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xsi:schemaLocation="https://uwlib-mig.github.io/schemasProject/xsd/
+    https://uwlib-mig.github.io/schemasProject/xsd/properties_files.xsd">
     <uid>p145</uid>
     <labels>
-        <platformIndependent>videoLocations</platformIndependent>
+        <platformIndependent>videoLocationsLcnaf</platformIndependent>
         <dc>coverage</dc>
     </labels>
     <uwRequired>
@@ -20,10 +24,12 @@
         <cdmControlledVocab>no</cdmControlledVocab>
     </cdm>
     <dspace>
-        <dspaceProperty></dspaceProperty>
+        <dspaceProperty/>
     </dspace>
     <descriptions>
-        <definition><para>Location in which the moving images were recorded.</para></definition>
+        <definition>
+            <para>Location in which the moving images were recorded.</para>
+        </definition>
         <instructions co="no">
             <para>Enter the name of the places in which the video segments were recorded.</para>
             <para>Separate multiple places using a semicolon.</para>
@@ -54,16 +60,20 @@
         </admin>
     </additionalInfo>
     <marc>
-        <dcgMarcMapping></dcgMarcMapping>
+        <dcgMarcMapping/>
     </marc>
     <xsd>
         <typeInfo level="standalone object">
             <typeAttribute>xs:string</typeAttribute>
         </typeInfo>
     </xsd>
-    <rdf><owlDatatypeProperty>yes</owlDatatypeProperty></rdf>
+    <rdf>
+        <owlDatatypeProperty>yes</owlDatatypeProperty>
+    </rdf>
     <history>
-        <dateCreated><single>2022-03-15</single></dateCreated>
+        <dateCreated>
+            <single>2022-03-15</single>
+        </dateCreated>
         <created4Coll>Greek Dances</created4Coll>
         <justification>Collection manager wanted to provide two forms for each place name, form taken from a given text and form from LCNAF.</justification>
         <changeLog>
@@ -71,7 +81,3 @@
         </changeLog>
     </history>
 </property>
-
-
-
-

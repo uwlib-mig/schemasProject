@@ -1,11 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?><property xmlns="http://faculty.washington.edu/tgis/schemasProject/xsd4md" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://faculty.washington.edu/tgis/schemasProject/xsd4md    ../xsd4md/schema-4-properties.xsd"><uid>p4</uid><labels>
+<?xml version="1.0" encoding="UTF-8"?>
+<property xmlns="https://uwlib-mig.github.io/schemasProject/xsd/"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+   xmlns:xs="http://www.w3.org/2001/XMLSchema"
+   xsi:schemaLocation="https://uwlib-mig.github.io/schemasProject/xsd/
+   https://uwlib-mig.github.io/schemasProject/xsd/properties_files.xsd">
+   <uid>p4</uid>
+   <labels>
       <platformIndependent>artist</platformIndependent>
       <dc>creator</dc>
-   </labels><uwRequired>
+   </labels>
+   <uwRequired>
       <uwStandalone>no</uwStandalone>
       <uwObject>no</uwObject>
       <uwItem>no</uwItem>
-   </uwRequired><cdm>
+   </uwRequired>
+   <cdm>
       <label>Artist</label>
       <cdmDatatype>text</cdmDatatype>
       <cdmLarge>no</cdmLarge>
@@ -13,9 +22,11 @@
       <hidden>no</hidden>
       <cdmRequired>no</cdmRequired>
       <cdmControlledVocab>no</cdmControlledVocab>
-   </cdm><dspace>
+   </cdm>
+   <dspace>
       <dspaceProperty/>
-   </dspace><descriptions>
+   </dspace>
+   <descriptions>
       <definition>
          <para>The name of the artist or firm who created the art work depicted in the image. Most often this art work will be associated with an architectural work also depicted in the image. The name should represent as closely as possible the creator’s name or the company’s name at the time of the creation of the image. Includes both personal and corporate names.
         </para>
@@ -23,22 +34,28 @@
       <instructions co="no">
          <para>Input Lastname, Firstname for all personal names. Use LC Authority File for form of name, if available.</para>
       </instructions>
-   </descriptions><examples>
+   </descriptions>
+   <examples>
       <example co="no">
          <para>Knox, Andrew (Sandy) N.</para>
          <para>Steinbrueck, Victor</para>
       </example>
-   </examples><additionalInfo/><marc>
+   </examples>
+   <additionalInfo/>
+   <marc>
       <dcgMarcMapping/>
       <marcNotes/>
-   </marc><xsd>
+   </marc>
+   <xsd>
       <typeInfo level="standalone">
          <typeAttribute>xs:string</typeAttribute>
       </typeInfo>
-    
-   </xsd><rdf>
+
+   </xsd>
+   <rdf>
       <sameAs/>
-   </rdf><history>
+   </rdf>
+   <history>
       <dateCreated>
          <range>
             <start>2006-01-01</start>
@@ -49,6 +66,7 @@
       <justification>Engineer was known frequently enough in Architecture of the Pacific Northwest to warrant the use of this field.</justification>
       <changeLog>
          <change/>
-         
+
       </changeLog>
-   </history></property>
+   </history>
+</property>
