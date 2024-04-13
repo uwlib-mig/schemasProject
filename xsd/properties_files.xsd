@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema targetNamespace="https://uwlib-mig.github.io/schemasProject/xsd/"
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    targetNamespace="https://uwlib-mig.github.io/schemasProject/xsd/"
     xmlns="https://uwlib-mig.github.io/schemasProject/xsd/"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    elementFormDefault="qualified">
     
     <!-- update to include online schemas once stable, use
     https://uwlib-mig.github.io/schemasProject/xsd/genre_form.xsd
     https://uwlib-mig.github.io/schemasProject/xsd/collection.xsd -->
-    <xs:include schemaLocation="collection.xsd"/>
+    <xs:include schemaLocation="coll_alias.xsd"/>
     <xs:include schemaLocation="genre_form.xsd"/>
     
     <xs:import namespace="http://www.w3.org/XML/1998/namespace"
@@ -420,6 +421,7 @@
             <!-- other relations of the external property can be added as needed -->
         </xs:sequence>
     </xs:complexType>
+    
     <!-- below are the expected prefixes listed as elements:
             <xs:element name="dc"/>
             <xs:element name="dct" type="dcterms"/>
@@ -572,42 +574,20 @@
         <xs:sequence>
             <xs:element name="para" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
-        <xs:attribute name="co" use="required">
-            <xs:simpleType>
-                <xs:restriction base="xs:string">
-                    <xs:enumeration value="no"/>
-                    <xs:enumeration value="object"/>
-                    <xs:enumeration value="item"/>
-                    <!-- the following 3 types of COs eliminated 2017-06-29;
-                     we may want them for generalNotes however:
-                    <xs:enumeration value="objectAndStandalone"/>
-                    <xs:enumeration value="itemAndStandalone/"/>
-                    <xs:enumeration value="coAll"/>-->
-                    <xs:enumeration value="all"/>
-                    <xs:enumeration value="agnostic"/>
-                </xs:restriction>
-            </xs:simpleType>
-        </xs:attribute>
-        <!-- dd4para attribute is hastily and probably poorly implemented to 
-            allow output of additionalInfo > admin [@dd4para] information to a specific MAP (dd) -->
+        <xs:attribute name="co" type="co_attribute_type" use="required"/>      
         <xs:attribute name="dd4para" type="xs:string" use="optional">
         </xs:attribute>
     </xs:complexType>
-
-    <!-- below global attribute does not seem necessary
-    <xs:attribute name="co">
-        <xs:simpleType>
-            <xs:restriction base="xs:string">
-                <xs:enumeration value="no"/>
-                <xs:enumeration value="object"/>
-                <xs:enumeration value="item"/>
-                <xs:enumeration value="coAll"/>
-                <xs:enumeration value="all"/>
-                <xs:enumeration value="agnostic"/>
-            </xs:restriction>
-        </xs:simpleType>
-    </xs:attribute>
-    -->
+    
+    <xs:simpleType name="co_attribute_type">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="no"/>
+            <xs:enumeration value="object"/>
+            <xs:enumeration value="item"/>
+            <xs:enumeration value="all"/>
+            <xs:enumeration value="agnostic"/>
+        </xs:restriction>
+    </xs:simpleType>
 
     <xs:element name="customization" type="custParaType"/>
 
@@ -627,7 +607,7 @@
         <xs:complexContent>
             <xs:extension base="paraType4co">
                 <xs:attribute name="dd" type="dd_type"/>
-                <xs:attribute name="objectType" type="objectType_attr_type"/>
+                <xs:attribute name="objectType" type="genre_form_type"/>
             </xs:extension>
         </xs:complexContent>
     </xs:complexType>

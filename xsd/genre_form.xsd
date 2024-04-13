@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema targetNamespace="https://uwlib-mig.github.io/schemasProject/xsd/"
-    xmlns="https://uwlib-mig.github.io/schemasProject/xsd/"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    targetNamespace="https://uwlib-mig.github.io/schemasProject/xsd/"
+    xmlns="https://uwlib-mig.github.io/schemasProject/xsd/"
     elementFormDefault="qualified">
 
     <!-- schema structure allows multiple, whitespace delimited values -->
-    <xs:simpleType name="objectType_attr_type">
+    <xs:simpleType name="genre_form_type">
         <xs:restriction>
             <xs:simpleType>
                 <xs:list>
@@ -21,7 +21,7 @@
                             </xs:enumeration>
                             
                             <!-- LCGFT -->
-                            <xs:enumeration value="Records_(Documents)">
+                            <xs:enumeration value="Records_\(Documents\)">
                                 <xs:annotation>
                                     <xs:documentation>Created for Becker/Cambodia, to describe digitized notes</xs:documentation>
                                     <xs:appinfo>http://id.loc.gov/authorities/genreForms/gf2014026163</xs:appinfo>
