@@ -26,6 +26,8 @@
             <xs:enumeration value="temp_alias_001"/>
             <xs:enumeration value="temp_alias_002"/>
             <xs:enumeration value="temp_alias_003"/>
+            <xsl:comment>legacy 'dd' (data dictionary) values used to indicate collection</xsl:comment>
+            <xs:enumeration value="uwtoh"/>
             <xsl:comment>existing collection aliases</xsl:comment>
             <xsl:for-each select="$collection_list/fn:array/fn:map">
                 <xs:enumeration value="{fn:string[@key = 'secondary_alias']}">
