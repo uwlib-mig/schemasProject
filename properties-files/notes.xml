@@ -61,7 +61,7 @@
          <para>Enter any information of importance that is not represented elsewhere.</para>
          <para>Each separate "note" should be a paragraph. Additional notes can be added, separated from the previous note using a blank line.</para>
       </customization>
-      <customization co="object" dd="p16786coll3" resourceType="text">
+      <customization co="object" dd="p16786coll3" genre_form="text">
          <para>Enter any information of importance that is not represented elsewhere.</para>
          <para>Prioritize information that might affect a user's understanding or use of the resource, such as missing pages or alternative titles not captured in the various title properties.</para>
          <para>May include notes about property values taken from information provided by previous catalogers when these values cannot be found in the resource.</para>
@@ -69,7 +69,7 @@
          <para>Start each distinct note entry on a new line.</para>
          <para>When entering values in a spreadsheet, note that depending on the spreadsheet-editing application, CTRL + ENTER, ALT + ENTER, or another key combination can be used to enter a new line within a cell.</para>
       </customization>
-      <customization co="object" dd="p16786coll3" resourceType="song oh">
+      <customization co="object" dd="p16786coll3" genre_form="song oh">
          <para>Enter any information of importance that is not represented elsewhere.</para>
          <para>When reusing existing metadata, only the place name will be included the value for Recording Location.</para>
          <para>Any additional information present in existing metadata which will not be used in the Recording Location value may be included here.</para>
@@ -142,17 +142,17 @@
       <customization co="item" dd="greekdancing">
          <para>The digitization process caused corruption starting at 7:02 and ending at 7:13.</para>
       </customization>
-      <customization co="object" dd="p16786coll3" resourceType="text">
+      <customization co="object" dd="p16786coll3" genre_form="text">
          <para>Title value taken from cover, title page missing from digitized volume.</para>
          <para>Editor value taken from introduction.</para>
          <para>Publisher location from previous cataloger.</para>
       </customization>
-      <customization co="object" dd="p16786coll3" resourceType="song">
+      <customization co="object" dd="p16786coll3" genre_form="song">
          <para>Song from father's pizmonim manuscript.</para>
          <para>Uniquely Sephardic in origin. Given its subject matter, this ballad has been transmitted both orally and in written form, in Pesach hagaddahs. The only extant versions are from the Eastern tradition and one version from Crypto Portuguese Jews. Thus, an earlier version must have existed among Peninsular Jews. There is no evidence of its existence among non-Jews.</para>
          <para>Recorded in the home of Jack Azose.</para>
       </customization>
-      <customization co="object" dd="p16786coll3" resourceType="oh">
+      <customization co="object" dd="p16786coll3" genre_form="oh">
          <para>Rabbi Maimon discusses his education at Yeshiva University (00:05:30), his return to Seattle and installment as rabbi (00:10:50), and challenges faced by the Sephardic community in Seattle (00:10:12).</para>
          <para>Recorded in the home of Rabbi Maimon.</para>
       </customization>
@@ -167,10 +167,10 @@
          <para>Letterpress printed on album page: On the Beach--Port Clarence.</para>
          <para>Photograph taken by Dr. Clinton Hart Merriam, Chief of the Biological Survey, U.S. Department of Agriculture, member of the 1899 Harriman Alaska Expedition.</para>
       </customization>
-      <customization co="no" dd="becker" objectType="Photographs">
+      <customization co="no" dd="becker" genre_form="Photographs">
          <para>Becker notes, Book One, pp. 10-11: “Technical school/factory [...] was opened in 1977 with a group of 300 students. At the second stage there were 500 students, now at 3rd stage with 700 students; 300 boys and 400 girls in the program, the students learn theory one day, practice the next. [...] There are 5 sections; machine shop, machine repair, electrical shop, foundry, and assembly of spray pumps for insecticides. The class schedule turns out to be the national work schedule: 7-11 break 2-5 ...holidays on 10, 20 and 30th of each month. Also the students grow "strategic crops"- sweet potatoes, vegetables, water lilies plus pigs, poultry, cows, ducks, rabbits, rice provided by the state... It is a 6-month study program. He said that half had already gone off to work in factories…” [...] “on our walk to the bldg, ptd out the fish breed pool, papaya trees, then we peek into classroom as teachers...the children look extremely young. they are intense, their concentration extraordinary and they seem nervous in front of foreigners...slogans on the walls say things like: we the communist party are correct and clear-sighted...or, to be determined is to always carry out work very rapidly and by leaps and bounds...we are told students range in age of 12 thru 18...we go into a practice room where youngsters are assembling electrical equipment. [...] mumm sez ‘in europe there are many engineers who can not do this, can not thread wires in a dynamo"...others have taken parts from an old car in need of repair and are fixing...one a 200 kilowatt generator, another a 500 kilowatt generator...after parts are reparied the generators are sent back to coops. only pictures of angkor wat or slogans appear in the rooms. we pass rooms where putting together an amplifier for a sound system in a coop” [end of notes...] </para>
       </customization>
-      <customization co="no" dd="becker" objectType="Records_(Documents)">
+      <customization co="no" dd="becker" genre_form="Records_(Documents)">
          <para>For associated photographs, see December 11, 1978, photographs from Elizabeth Becker Cambodia and Khmer Rouge Collection, 1970-1988.</para>
       </customization>
    </examples>

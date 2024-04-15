@@ -44,7 +44,7 @@
         <instructions co="all">
             <para>Provide the name of a person or corporate body who previously owned a physical or digital resource.</para>
         </instructions>
-        <customization co="object" dd="p16786coll3" resourceType="text song oh">
+        <customization co="object" dd="p16786coll3" genre_form="text song oh">
             <para>When searching for donor or lender in Sephardic Studies Collection Master Catalog, some contributions will be recorded as "Person A via Person B," or as "Person A / Person B."</para>
             <para>In such a case, Person A is the former owner, and their name belongs in this field.</para>
             <para>When appropriate, search the &lt;a href="https://id.loc.gov/authorities/names.html"&gt;Library of Congress Name Authority File&lt;/a&gt; via id.loc.gov for the lender name.</para>

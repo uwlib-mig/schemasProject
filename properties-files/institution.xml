@@ -48,7 +48,7 @@
       <customization co="item" dd="civilwar">
          <para>Enter "Special Collections"</para>
       </customization>
-      <customization co="object" dd="p16786coll3" objectType="oh song text">
+      <customization co="object" dd="p16786coll3" genre_form="oh song text">
          <para>Use the following value:</para>
          <para>special collections</para>
       </customization>
@@ -56,16 +56,16 @@
          <para>Use the following value:</para>
          <para>special collections</para>
       </customization>
-      <customization co="object" dd="greekdancing" objectType="default">
+      <customization co="object" dd="greekdancing" genre_form="default">
          <para>Use the following value:</para>
          <para>uw faculty, library, and teaching collections</para>
       </customization>
-      <customization co="object" dd="temp_alias_001" objectType="default">
+      <customization co="object" dd="temp_alias_001" genre_form="default">
          <para>Values for this field are not visible to users, but they facilitate searching across collections within the University of Washington Libraries Digital Collections.</para>
          <para>Enter the following value:</para>
          <para>uw tacoma digital collections</para>
       </customization>
-      <customization co="no" dd="becker" objectType="Newsletters Photographs Records_(Documents)">
+      <customization co="no" dd="becker" genre_form="Newsletters Photographs Records_(Documents)">
          <para>Record the following value for all items:</para>
          <para>uw faculty, library, and teaching collections</para>
       </customization>
@@ -85,19 +85,19 @@
       <customization co="item" dd="civilwar">
          <para>Special Collections</para>
       </customization>
-      <customization co="object" dd="p16786coll3" objectType="oh song text">
+      <customization co="object" dd="p16786coll3" genre_form="oh song text">
          <para>special collections</para>
       </customization>
-      <customization co="no" dd="p16786coll3" objectType="oh song text">
+      <customization co="no" dd="p16786coll3" genre_form="oh song text">
          <para>special collections</para>
       </customization>
-      <customization co="object" dd="greekdancing" objectType="default">
+      <customization co="object" dd="greekdancing" genre_form="default">
          <para>uw faculty, library, and teaching collections</para>
       </customization>
-      <customization co="object" dd="temp_alias_001" objectType="default">
+      <customization co="object" dd="temp_alias_001" genre_form="default">
          <para>uw tacoma digital collections</para>
       </customization>
-      <customization co="no" dd="becker" objectType="Newsletters Photographs Records_(Documents)">
+      <customization co="no" dd="becker" genre_form="Newsletters Photographs Records_(Documents)">
          <para>uw faculty, library, and teaching collections</para>
       </customization>
    </examples>

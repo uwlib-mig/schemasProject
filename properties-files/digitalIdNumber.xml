@@ -42,15 +42,15 @@
          <para>Enter the order number.</para>
          <para>Order number sequence must be obtained from appropriate staff.</para>
       </instructions>
-      <customization co="object" dd="temp_alias_001" objectType="default">
+      <customization co="object" dd="temp_alias_001" genre_form="default">
          <para>Do not enter values for Digital ID Number.</para>
          <para>Digital ID Numbers will be assigned by ITS-DS staff when resources and metadata are loaded to the collection.</para>
       </customization>
-      <customization co="item" dd="temp_alias_001" objectType="default">
+      <customization co="item" dd="temp_alias_001" genre_form="default">
          <para>Do not enter values for Digital ID Number.</para>
          <para>Digital ID Numbers will be assigned by ITS-DS staff when resources and metadata are loaded to the collection.</para>
       </customization>
-      <customization co="no" dd="becker" objectType="*">
+      <customization co="no" dd="becker" genre_form="*">
          <para>Do not enter values for Digital ID Number.</para>
          <para>Digital ID Numbers will be assigned by ITS-DS staff when resources and metadata are loaded to the collection.</para>
       </customization>
@@ -78,11 +78,11 @@
          <para>UWTOH201802-Image</para>
          <para>UWTOH201802-Transcript</para>
       </customization>
-      <customization co="object" dd="temp_alias_001" objectType="default">
+      <customization co="object" dd="temp_alias_001" genre_form="default">
          <para>OHC0676</para>
          <para>OHC0010</para>
       </customization>
-      <customization co="item" dd="temp_alias_001" objectType="default">
+      <customization co="item" dd="temp_alias_001" genre_form="default">
          <para>OHC0676-Video</para>
          <para>OHC0676-Transcript</para>
          <para>OHC0010-Audio-01</para>

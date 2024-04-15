@@ -35,7 +35,7 @@
         <instructions co="all">
             <para>Provide a number for an OCLC record related to the digital resource, for example, a record for a physical item from which the digital surrogate was created.</para>
         </instructions>
-        <customization co="object" dd="p16786coll3" resourceType="text">
+        <customization co="object" dd="p16786coll3" genre_form="text">
             <para>University of Washington Libraries (UWL) cataloging staff will provide a value or values for this property if applicable.</para>
             <para>For metadata creation taking place outside the University of Washington Libraries (UWL) Cataloging and Metadata Services unit:</para>
             <para>Do not provide a value for this property.</para>
@@ -51,7 +51,7 @@
             <para>37917418</para>
             <para>27382728</para>
         </example>
-        <customization co="object" dd="p16786coll3" resourceType="text">
+        <customization co="object" dd="p16786coll3" genre_form="text">
             <para>[Values provided by cataloging staff:]</para>
             <para>37917418</para>
             <para>27382728</para>

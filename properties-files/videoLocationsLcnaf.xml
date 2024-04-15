@@ -40,7 +40,7 @@
             <para>Separate multiple places using a semicolon.</para>
             <para>Place names must be taken from the Library of Congress Name Authority File.</para>
         </instructions>
-        <customization co="object" dd="greekdancing" resourceType="default">
+        <customization co="object" dd="greekdancing" genre_form="default">
             <para>Enter the name of the places in which the video segments were recorded.</para>
             <para>Separate multiple places using a semicolon.</para>
             <para>Place names must be taken from the Library of Congress Name Authority File.</para>

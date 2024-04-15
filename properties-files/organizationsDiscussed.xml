@@ -40,7 +40,7 @@
             <para>Provide the name or names of an organization or organizations given significant attention in the resource.</para>
             <para>If possible, use a controlled form for each organization's name.</para>
         </instructions>
-        <customization co="object" dd="p16786coll3" objectType="oh">
+        <customization co="object" dd="p16786coll3" genre_form="oh">
             <para>Provide the name or names of an organization or organizations given significant attention in the interview.</para>
             <para>When appropriate, search the &lt;a href="https://id.loc.gov/authorities/names.html"&gt;Library of Congress Name Authority File&lt;/a&gt; via id.loc.gov for the names of organizations discussed in the oral history.</para>
             <para>If a potential match is found, confirm that it is the organization associated with the resource: it may be helpful to review information included in the web display such as source(s) of information, and/or to follow the links provided for exact and/or closely matching concepts from other schemes.</para>
@@ -60,7 +60,7 @@
             <para>Separate multiple entries with a semicolon and space (“; “).</para>
             <para>Order of values does not matter.</para>
         </customization>
-        <customization co="object" dd="temp_alias_001" objectType="default">
+        <customization co="object" dd="temp_alias_001" genre_form="default">
             <para>Enter the name(s) of organizations mentioned.</para>
             <para>&lt;br/&gt;</para>
             <para>When appropriate, search the &lt;a href="https://id.loc.gov/authorities/names.html"&gt;Library of Congress Name Authority File via id.loc.gov&lt;/a&gt; for the organization.</para>
@@ -71,7 +71,7 @@
             <para>If no record exists, enter the name(s) used by interviewees.</para>
             <para>Separate multiple values with a semicolon.</para>
         </customization>
-        <customization co="no" dd="becker" objectType="*">
+        <customization co="no" dd="becker" genre_form="*">
             <para>&#x1F4DA; For review/input by cataloging staff</para>
             <para>&lt;br/&gt;Use the form of corporate name from the Library of Congress Name Authority File, if available.</para>
             <para>Separate multiple entries with a semicolon and space (“; “).</para>
@@ -90,11 +90,11 @@
             <para>International Longshoremen's Association. Local 38-97 (Tacoma, Wash.)</para>
             <para>United States. Central Intelligence Agency. Conflict Issues Division</para>
         </example>
-        <customization co="object" dd="p16786coll3" objectType="oh">
+        <customization co="object" dd="p16786coll3" genre_form="oh">
             <para>Congregation Ezra Bessaroth</para>
             <para>Congregation Ezra Bessaroth; Longacres Race Track</para>
         </customization>
-        <customization co="object" dd="temp_alias_001" objectType="default">
+        <customization co="object" dd="temp_alias_001" genre_form="default">
             <para>Tacoma Lumber Company; Superior Hotel; Stadium High School</para>
             <para>Methodist Church; Buddhist Church; Baptist Church</para>
             <para>Lincoln High School (Tacoma, Wash.)</para>

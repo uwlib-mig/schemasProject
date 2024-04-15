@@ -67,7 +67,7 @@
          <para>If the date is unknown, enter an approximate date using one of the two above formats that express uncertainty, namely YYYY? or between YYYY and YYYY?.</para>
          <para>If none of the date formats above are adequate, use a custom date format.</para>
       </instructions>
-      <customization co="no" dd="becker" objectType="Photographs">
+      <customization co="no" dd="becker" genre_form="Photographs">
          <para>Record the date the image was captured using one of the following formats.</para>
          <para>&lt;br/&gt;YYYY</para>
          <para>YYYY?</para>
@@ -81,7 +81,7 @@
          <para>If the date is unknown, enter an approximate date using one of the two above formats that express uncertainty, namely YYYY? or between YYYY and YYYY?.</para>
          <para>If none of the date formats above are adequate, use a custom date format.</para>
       </customization>
-      <customization co="no" dd="becker" objectType="Newsletters Records_(Documents)">
+      <customization co="no" dd="becker" genre_form="Newsletters Records_(Documents)">
          <para>Record a date of publication taken from the resource, using one of the following formats.</para>
          <para>&lt;br/&gt;YYYY</para>
          <para>YYYY?</para>
@@ -124,7 +124,7 @@
          <para>If the date is unknown, enter an approximate date using one of the two above formats that express uncertainty, namely YYYY? or between YYYY and YYYY?.</para>
          <para>If none of the date formats above are adequate, use a custom date format.</para>
       </customization>
-      <customization co="object" dd="p16786coll3" objectType="text">
+      <customization co="object" dd="p16786coll3" genre_form="text">
          <para>Enter the date (generally a year only) as reflected on the title page.</para>
          <para>If only the lunar or Gregorian year is recorded, only enter that year. Do not convert between calendar systems.</para>
          <para>If both Gregorian and lunar years are recorded, only enter the Gregorian year.</para>
@@ -132,12 +132,12 @@
          <para>If no date present on item, generate an estimate based on similar items in other collections: &lt;a href="http://catdir.loc.gov/catdir/toc/becites/ladino/63062107a.html"&gt;LOC Ladino catalog&lt;/a&gt;, &lt;a href="https://hollis.harvard.edu/primo-explore/search?vid=HVD2&amp;sortby=rank&amp;lang=en_US"&gt;Harvard University Library&lt;/a&gt;, and the &lt;a href="https://web.nli.org.il/sites/nli/English/library/Pages/default.aspx"&gt;National Library of Israel&lt;/a&gt; are viable options.</para>
          <para>Required for all compound objects.</para>
       </customization>
-      <customization co="object" dd="p16786coll3" objectType="song">
+      <customization co="object" dd="p16786coll3" genre_form="song">
          <para>Enter the date on which the recording was made.</para>
          <para>Use a YYYY-MM-DD format if month and day information is available.</para>
          <para>Use a YYYY-MM or YYYY format if month and/or day information is not available.</para>
       </customization>
-      <customization co="object" dd="p16786coll3" objectType="oh">
+      <customization co="object" dd="p16786coll3" genre_form="oh">
          <para>Enter the date on which the interview was recorded.</para>
          <para>Use a YYYY-MM-DD format if month and day information is available.</para>
          <para>Use a YYYY-MM or YYYY format if month and/or day information is not available.</para>
@@ -151,7 +151,7 @@
          <para>If no date present on item, generate an estimate based on similar items in other collections: &lt;a href="http://catdir.loc.gov/catdir/toc/becites/ladino/63062107a.html"&gt;LOC Ladino catalog&lt;/a&gt;, &lt;a href="https://hollis.harvard.edu/primo-explore/search?vid=HVD2&amp;sortby=rank&amp;lang=en_US"&gt;Harvard University Library&lt;/a&gt;, and the &lt;a href="https://web.nli.org.il/sites/nli/English/library/Pages/default.aspx"&gt;National Library of Israel&lt;/a&gt; are viable options.</para>
          <para>Required for all standalone objects.</para>
       </customization>
-      <customization co="object" dd="temp_alias_001" objectType="default">
+      <customization co="object" dd="temp_alias_001" genre_form="default">
          <para>Enter the date on which the interview took place.</para>
          <para>&lt;br/&gt;</para>
          <para>This value will be used to create values for the Date (EDTF) and Dates fields.</para>
@@ -203,14 +203,14 @@
          <para>between 1946 and 1952</para>
          <para>between 1901 and 1960?</para>
       </example>
-      <customization co="object" dd="p16786coll3" objectType="text">
+      <customization co="object" dd="p16786coll3" genre_form="text">
          <para>5651 [example of lunar year]</para>
          <para>1923 [example of Gregorian year]</para>
          <para>ca. 1900</para>
          <para>not before 1900</para>
          <para>after 1900 [example of estimate]</para>
       </customization>
-      <customization co="object" dd="p16786coll3" objectType="song oh">
+      <customization co="object" dd="p16786coll3" genre_form="song oh">
          <para>2020-03-15</para>
          <para>2019-04</para>
          <para>2018</para>
@@ -223,7 +223,7 @@
          <para>not before 1900</para>
          <para>after 1900 [example of estimate]</para>
       </customization>
-      <customization co="object" dd="temp_alias_001" objectType="default">
+      <customization co="object" dd="temp_alias_001" genre_form="default">
          <para>2005</para>
          <para>2005?</para>
          <para>March 2005</para>

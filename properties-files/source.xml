@@ -36,7 +36,7 @@
         <instructions co="object">
             <para>Enter a citation to the source resource.</para>
         </instructions>
-        <customization co="object" dd="greekdancing" resourceType="default">
+        <customization co="object" dd="greekdancing" genre_form="default">
             <para>Provide a value describing the source resource from which video files have been derived.</para>
             <para>Construct values as follows:</para>
             <para>Field tape made in [place or places] in [date] by Yvonne Hunt.</para>
@@ -48,7 +48,7 @@
         <example co="all">
             <!-- NEED DEFAULT EXAMPLE VALUES -->
         </example>
-        <customization co="object" dd="greekdancing" resourceType="default">
+        <customization co="object" dd="greekdancing" genre_form="default">
             <para>Field tape made in Melenikitsi in 1996 by Yvonne Hunt.</para>
         </customization>
     </examples>

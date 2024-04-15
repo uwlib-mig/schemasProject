@@ -35,7 +35,7 @@
             <para>The Library of Congress Genre/Form Terms are available as PDF files at &lt;a href="https://www.loc.gov/aba/publications/FreeLCGFT/freelcgft.html"&gt;https://www.loc.gov/aba/publications/FreeLCGFT/freelcgft.html&lt;/a&gt;, and can also be &lt;a href="https://id.loc.gov/authorities/genreForms.html"&gt;searched via id.loc.gov&lt;/a&gt;.</para>
         </instructions>
         <!-- confirm which resource types (aside from text) that LCGFT will be provided for -->
-        <customization co="object" dd="p16786coll3" objectType="text">
+        <customization co="object" dd="p16786coll3" genre_form="text">
             <para>University of Washington Libraries (UWL) cataloging staff will provide a value or values for this property.</para>
             <para>For metadata creation taking place outside the UWL Cataloging and Metadata Services unit:</para>
             <para>Do not provide a value for this property.</para>
@@ -43,22 +43,22 @@
             <para>For textual resources, be sure to use the Staff Notes property to provide an informal description which will provide cataloging staff with the information needed to provide genre and form terms.</para>
             <para>For details about the information needed by cataloging staff, contact the collection manager(s) or metadata liaison(s).</para>
         </customization>
-        <customization co="object" dd="p16786coll3" objectType="song">
+        <customization co="object" dd="p16786coll3" genre_form="song">
             <para>University of Washington Libraries (UWL) cataloging staff will provide a value or values for this property.</para>
             <para>For metadata creation taking place outside the UWL Cataloging and Metadata Services unit:</para>
             <para>Do not provide a value for this property.</para>
             <para>Be sure to provide the value 'xyz' for the Cataloging property to indicate to cataloging staff that a value is needed.</para>
         </customization>
-        <customization co="object" dd="p16786coll3" objectType="oh">
+        <customization co="object" dd="p16786coll3" genre_form="oh">
             <para>University of Washington Libraries (UWL) cataloging staff will provide a value or values for this property.</para>
             <para>For metadata creation taking place outside the UWL Cataloging and Metadata Services unit:</para>
             <para>Do not provide a value for this property.</para>
             <para>Be sure to provide the value 'xyz' for the Cataloging property to indicate to cataloging staff that a value is needed.</para>
         </customization>
-        <customization co="no" dd="greekdancing" objectType="default">
+        <customization co="no" dd="greekdancing" genre_form="default">
             <para>Enter "Dance films".</para>
         </customization>
-        <customization co="object" dd="greekdancing" objectType="default">
+        <customization co="object" dd="greekdancing" genre_form="default">
             <para>Enter "Dance films".</para>
         </customization>
         <customization co="no" dd="p16786coll3">
@@ -69,21 +69,21 @@
             <para>When the resource does not use English, be sure to use the Staff Notes property to provide an informal description which will provide cataloging staff with the information needed to provide genre and form terms.</para>
             <para>For details about the information needed by cataloging staff, contact the collection manager(s) or metadata liaison(s).</para>
         </customization>
-        <customization co="object" dd="temp_alias_001" objectType="default">
+        <customization co="object" dd="temp_alias_001" genre_form="default">
             <para>Use the following value taken from Library of Congress Genre/Form Terms:</para>
             <para>Oral histories</para>
         </customization>
-        <customization co="no" dd="*" objectType="Newsletters">
+        <customization co="no" dd="*" genre_form="Newsletters">
             <para>&#x1F4DA; For review/input by cataloging staff</para>
             <para>&lt;br/&gt;Use the following value taken from Library of Congress Genre/Form Terms:</para>
             <para>Newsletters</para>
         </customization>
-        <customization co="no" dd="*" objectType="Photographs">
+        <customization co="no" dd="*" genre_form="Photographs">
             <para>&#x1F4DA; For review/input by cataloging staff</para>
             <para>&lt;br/&gt;Use the following value taken from Library of Congress Genre/Form Terms:</para>
             <para>Photographs</para>
         </customization>
-        <customization co="no" dd="*" objectType="Records_(Documents)">
+        <customization co="no" dd="*" genre_form="Records_(Documents)">
             <para>&#x1F4DA; For review/input by cataloging staff</para>
             <para>&lt;br/&gt;Use the following value taken from Library of Congress Genre/Form Terms:</para>
             <para>Records (Documents)</para>
@@ -94,32 +94,32 @@
         <example co="object"/>
         <example co="item"/>
         <example co="no"/>
-        <customization co="no" dd="greekdancing" objectType="default">
+        <customization co="no" dd="greekdancing" genre_form="default">
             <para>Dance films</para>
         </customization>
-        <customization co="object" dd="greekdancing" objectType="default">
+        <customization co="object" dd="greekdancing" genre_form="default">
             <para>Dance films</para>
         </customization>
-        <customization co="object" dd="p16786coll3" objectType="text">
+        <customization co="object" dd="p16786coll3" genre_form="text">
             <para>Sacred works</para>
             <para>Textbooks</para>
         </customization>
-        <customization co="object" dd="p16786coll3" objectType="song">
+        <customization co="object" dd="p16786coll3" genre_form="song">
             <para>Ballads</para>
         </customization>
-        <customization co="object" dd="p16786coll3" objectType="oh">
+        <customization co="object" dd="p16786coll3" genre_form="oh">
             <para>Oral histories</para>
         </customization>
-        <customization co="object" dd="temp_alias_001" objectType="default">
+        <customization co="object" dd="temp_alias_001" genre_form="default">
             <para>Oral histories</para>
         </customization>
-        <customization co="no" dd="*" objectType="Newsletters">
+        <customization co="no" dd="*" genre_form="Newsletters">
             <para>Newsletters</para>
         </customization>
-        <customization co="no" dd="*" objectType="Photographs">
+        <customization co="no" dd="*" genre_form="Photographs">
             <para>Photographs</para>
         </customization>
-        <customization co="no" dd="*" objectType="Records_(Documents)">
+        <customization co="no" dd="*" genre_form="Records_(Documents)">
             <para>Records (Documents)</para>
         </customization>
     </examples>

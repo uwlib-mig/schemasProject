@@ -40,7 +40,7 @@
          <para>Use LC Authority File for form of name, if available.</para>
          <para>Input Lastname, Firstname for all personal names.</para>
       </instructions>
-      <customization co="no" dd="becker" objectType="Newsletters Records_(Documents)">
+      <customization co="no" dd="becker" genre_form="Newsletters Records_(Documents)">
          <para>&#x1F4DA; For review/input by cataloging staff</para>
          <para>&lt;br/&gt;Use the form of personal or corporate name from the Library of Congress Name Authority File, if available.</para>
          <para>&lt;br/&gt;Input personal names using the following format:</para>
@@ -57,7 +57,7 @@
       <example co="object">
          <para>University of Washington Libraries. Special Collections</para>
       </example>
-      <customization co="no" dd="becker" objectType="Newsletters Records_(Documents)">
+      <customization co="no" dd="becker" genre_form="Newsletters Records_(Documents)">
          <para>&#x1F6A7;&#x1F6A7;&#x1F6A7;</para>
       </customization>
    </examples>

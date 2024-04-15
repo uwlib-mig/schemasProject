@@ -42,7 +42,7 @@
       <customization co="object" dd="uwtoh">
          <para>Name of language(s) used in the interview fully spelled out.</para>
       </customization>
-      <customization co="object" dd="p16786coll3" objectType="text">
+      <customization co="object" dd="p16786coll3" genre_form="text">
          <para>Enter language names, fully spelled out, as they appear in the &lt;a href="https://iso639-3.sil.org/code_tables/639/data"&gt;ISO 639 Code Tables&lt;/a&gt; "Language Name(s)" column. Note that Ladino is listed as such, and not as Judeo-Spanish or Judezmo.</para>
          <para>Do not enter languages that only appear on the title page or final pages (i.e. in advertisements).</para>
          <para>For Aramaic-language resources, simply enter "Aramaic".</para>
@@ -50,7 +50,7 @@
          <para>Order of values does not matter.</para>
          <para>Required for all compound objects where applicable.</para>
       </customization>
-      <customization co="object" dd="p16786coll3" objectType="oh song">
+      <customization co="object" dd="p16786coll3" genre_form="oh song">
          <para>Enter language names, fully spelled out, as they appear in the &lt;a href="https://iso639-3.sil.org/code_tables/639/data"&gt;ISO 639 Code Tables&lt;/a&gt; "Language Name(s)" column. Note that Ladino is listed as such, and not as Judeo-Spanish or Judezmo.</para>
          <para>For Aramaic-language resources, simply enter "Aramaic".</para>
          <para>Separate multiple values using a semicolon and space (“; “).</para>
@@ -63,13 +63,13 @@
          <para>Order of values does not matter.</para>
          <para>Required for all standalone objects.</para>
       </customization>
-      <customization co="object" dd="temp_alias_001" objectType="default">
+      <customization co="object" dd="temp_alias_001" genre_form="default">
          <para>Enter language names, fully spelled out, as they appear in the &lt;a href="https://iso639-3.sil.org/code_tables/639/data"&gt;ISO 639 Code Tables&lt;/a&gt; "Language Name(s)" column.</para>
          <para>Separate multiple values using a semicolon and space (“; “).</para>
          <para>Order of values does not matter.</para>
          <para>Required for all compound objects.</para>
       </customization>
-      <customization co="no" dd="becker" objectType="Newsletters Records_(Documents)">
+      <customization co="no" dd="becker" genre_form="Newsletters Records_(Documents)">
          <para>Enter language names, fully spelled out, as they appear in the &lt;a href="https://iso639-3.sil.org/code_tables/639/data"&gt;ISO 639 Code Tables&lt;/a&gt; "Language Name(s)" column.</para>
          <para>Separate multiple values using a semicolon and space (“; “).</para>
          <para>Order of values does not matter.</para>
@@ -89,12 +89,12 @@
          <para>English</para>
          <para>Spanish</para>
       </example>
-      <customization dd="p16786coll3" co="object" objectType="text">
+      <customization dd="p16786coll3" co="object" genre_form="text">
          <para>Ladino</para>
          <para>Hebrew</para>
          <para>Ladino; Hebrew</para>
       </customization>
-      <customization dd="p16786coll3" co="object" objectType="oh song">
+      <customization dd="p16786coll3" co="object" genre_form="oh song">
          <para>English</para>
          <para>Spanish</para>
          <para>English; Spanish</para>
@@ -104,7 +104,7 @@
          <para>Hebrew</para>
          <para>Ladino; Hebrew</para>
       </customization>
-      <customization co="object" dd="temp_alias_001" objectType="default">
+      <customization co="object" dd="temp_alias_001" genre_form="default">
          <para>English</para>
          <para>Japanese</para>
       </customization>

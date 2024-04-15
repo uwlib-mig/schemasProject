@@ -51,7 +51,7 @@
          <para>For audio WAVE files, enter audio/wav.</para>
          <para>Separate multiple formats with a semicolon.</para>
       </instructions> -->
-      <customization co="item" dd="p16786coll3" resourceType="song">
+      <customization co="item" dd="p16786coll3" genre_form="song">
          <para>Values for Original Format must be taken from the &lt;a href="http://www.rdaregistry.info/termList/RDACarrierType/"&gt;RDA Carrier Type&lt;/a&gt; vocabulary.</para>
          <para>For ballad recordings, enter one of the following values depending on which compound-object item you are describing.</para>
          <para>For audio file items:</para>
@@ -59,7 +59,7 @@
          <para>For image files (singer photos) and digitized sheet music:</para>
          <para>sheet</para>
       </customization>
-      <customization co="item" dd="p16786coll3" resourceType="oh">
+      <customization co="item" dd="p16786coll3" genre_form="oh">
          <para>Values for Original Format must be taken from the &lt;a href="http://www.rdaregistry.info/termList/RDACarrierType/"&gt;RDA Carrier Type&lt;/a&gt; vocabulary.</para>
          <para>For oral histories, enter one of the following values depending on which compound-object item you are describing.</para>
          <para>For audio file items and for transcripts (.pdf or other document file formats):</para>
@@ -70,14 +70,14 @@
       <customization co="no" dd="p16786coll3">
          <para>🚧 🚧 🚧</para>
       </customization>
-      <customization co="item" dd="greekdancing" resourceType="default">
+      <customization co="item" dd="greekdancing" genre_form="default">
          <para>Enter the original format.</para>
          <para>&lt;br/&gt;For video content taken from VHS tapes, use the following value from the &lt;a href="http://www.rdaregistry.info/termList/RDACarrierType/"&gt;RDA Carrier Type&lt;/a&gt; vocabulary:</para>
          <para>videocassette</para>
          <para>&lt;br/&gt;For tables of contents created using MS Word, use the following value from the &lt;a href="https://www.iana.org/assignments/media-types/media-types.xhtml"&gt;IANA Media Types registry&lt;/a&gt;:</para>
          <para>application/msword</para>
       </customization>
-      <customization co="item" dd="temp_alias_001" resourceType="default">
+      <customization co="item" dd="temp_alias_001" genre_form="default">
          <para>Values for Original Format must be taken from the &lt;a href="http://www.rdaregistry.info/termList/RDACarrierType/"&gt;RDA Carrier Type vocabulary&lt;/a&gt;.</para>
          <para>For oral histories, enter one of the following values depending on which compound-object item you are describing.</para>
          <para>&lt;br/&gt;</para>
@@ -114,19 +114,19 @@
          <para>videocassette</para>
          <para>video/mp4</para>
       </example>
-      <customization co="item" dd="p16786coll3" resourceType="song">
+      <customization co="item" dd="p16786coll3" genre_form="song">
          <para>audiocassette</para>
          <para>sheet</para>
       </customization>
-      <customization co="item" dd="p16786coll3" resourceType="oh">
+      <customization co="item" dd="p16786coll3" genre_form="oh">
          <para>online resource</para>
          <para>sheet</para>
       </customization>
-      <customization co="item" dd="greekdancing" resourceType="default">
+      <customization co="item" dd="greekdancing" genre_form="default">
          <para>videocassette</para>
          <para>application/msword</para>
       </customization>
-      <customization co="item" dd="temp_alias_001" resourceType="default">
+      <customization co="item" dd="temp_alias_001" genre_form="default">
          <para>videocassette</para>
          <para>audiocassette</para>
          <para>online resource</para>

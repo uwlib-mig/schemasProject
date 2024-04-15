@@ -46,20 +46,20 @@
          <para>Use media types listed at &lt;a href="http://www.iana.org/assignments/media-types/index.html"&gt;http://www.iana.org/assignments/media-types/index.html&lt;/a&gt;.</para>
          <para>For audio WAVE files, enter "audio/wav".</para>
       </instructions>
-      <customization co="item" dd="p16786coll3" resourceType="oh song text">
+      <customization co="item" dd="p16786coll3" genre_form="oh song text">
          <para>Enter the file format of the file representing the compound-object item--that is, the access item.</para>
          <para>This should be the format of the file given as a value for the digitalFileName property.</para>
          <para>Use media types listed at &lt;a href="http://www.iana.org/assignments/media-types/index.html"&gt;http://www.iana.org/assignments/media-types/index.html&lt;/a&gt;.</para>
          <para>For audio WAVE files, enter "audio/wav".</para>
       </customization>
-      <customization co="item" dd="greekdancing" resourceType="default">
+      <customization co="item" dd="greekdancing" genre_form="default">
          <para>Enter the file format of the compound-object item (video file or table of contents).</para>
          <para>&lt;br/&gt;For .mp4 files enter the following:</para>
          <para>video/mp4</para>
          <para>&lt;br/&gt;For .pdf files enter the following:</para>
          <para>application/pdf</para>
       </customization>
-      <customization co="item" dd="temp_alias_001" resourceType="default">
+      <customization co="item" dd="temp_alias_001" genre_form="default">
          <para>Enter the file format of the compound-object item.</para>
          <para>This should be the format of the file given as a value for the Original File Name property.</para>
          <para>Use media type values from the &lt;a href="http://www.iana.org/assignments/media-types/index.html"&gt;IANA media types registries&lt;/a&gt;.</para>
@@ -81,7 +81,7 @@
          <para>text/plain</para>
          <para>video/mp4</para>
       </example>
-      <customization co="item" dd="greekdancing" resourceType="default">
+      <customization co="item" dd="greekdancing" genre_form="default">
          <para>video/mp4</para>
          <para>application/pdf</para>
       </customization>
@@ -89,7 +89,7 @@
       <example co="object">
          <para>video/mp4; application/pdf</para>
       </example>-->
-      <customization co="item" dd="temp_alias_001" resourceType="default">
+      <customization co="item" dd="temp_alias_001" genre_form="default">
          <para>video/mp4</para>
          <para>audio/mpeg</para>
          <para>audio/wav</para>

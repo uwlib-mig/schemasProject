@@ -37,7 +37,7 @@
         <instructions co="no">
             <para>Record a name for the resource in non-Latin script, if applicable.</para>
         </instructions>
-        <customization co="object" dd="p16786coll3" resourceType="text">
+        <customization co="object" dd="p16786coll3" genre_form="text">
             <para>Enter the Ladino title in Hebrew script as it appears on the title page.</para>
             <para>Record title exactly as found, even with printer errors.</para>
             <para>Roshe tevot (abbreviations) are considered part of the title and should be recorded.</para>
@@ -70,7 +70,7 @@
             <para>פאב׳לו אי ב׳ירז׳יניאה: רומאנסו</para>
             <para>白鯨</para>
         </example>
-        <customization co="object" dd="p16786coll3" resourceType="text">
+        <customization co="object" dd="p16786coll3" genre_form="text">
             <para>פאב׳לו אי ב׳ירז׳יניאה: רומאנסו</para>
         </customization>
     </examples>

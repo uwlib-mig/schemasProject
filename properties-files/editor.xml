@@ -30,7 +30,7 @@
         <definition>
             <para>A person or corporate body responsible for editing the textual or other content of the resource.</para>
         </definition>
-        <customization co="object" dd="p16786coll3" resourceType="text">
+        <customization co="object" dd="p16786coll3" genre_form="text">
             <para>Search the &lt;a href="https://id.loc.gov/authorities/names.html"&gt;Library of Congress Name Authority File&lt;/a&gt; via id.loc.gov for the editor name (usually an individual).</para>
             <para>If a potential match is found, confirm that it is the person associated with the resource. It may be helpful to review information included in the web display such as source(s) of information and occupation (for persons), and/or to follow the links provided for exact and/or closely matching concepts from other schemes.</para>
             <para>Copy the name string for use just as it appears at the top of the page, above the URI(s), including dates.</para>

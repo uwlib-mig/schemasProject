@@ -37,18 +37,18 @@
         <instructions co="no">
             <para>Enter the name of the digital file representing the standalone object, that is, an access item.</para>
         </instructions>
-        <customization co="item" dd="p16786coll3" resourceType="text">
+        <customization co="item" dd="p16786coll3" genre_form="text">
             <para>When entering values in a metadata spreadsheet, each row will include values describing a resource--either a compound object, compound-object item, or standalone object.</para>
             <para>Each row describing either a compound-object item or a standalone object must include a filename provided as a value for this property.</para>
             <para>Enter the filename of the image file for the page described in the spreadsheet row.</para>
         </customization>
-        <customization co="item" dd="p16786coll3" resourceType="song oh">
+        <customization co="item" dd="p16786coll3" genre_form="song oh">
             <para>When entering values in a metadata spreadsheet, each row will include values describing a resource--either a compound object, compound-object item, or standalone object.</para>
             <para>Each row describing either a compound-object item or a standalone object must include a filename provided as a value for this property.</para>
             <para>For ballads, compound-object items will either be audio files, image files (photographs) of a singer, or musical transcriptions (image or PDF files).</para>
             <para>For oral histories, compound-object items will either be audio files, image files (photographs) of an interviewee, or transcripts (PDF files).</para>
         </customization>
-        <customization co="item" dd="temp_alias_001" resourceType="default">
+        <customization co="item" dd="temp_alias_001" genre_form="default">
             <para>Provide the name of a file which is to be loaded as a CONTENTdm compound-object item.</para>
             <para>When entering values in a metadata spreadsheet, each row will describe either a compound object or compound-object item.</para>
             <para>A filename must be provided for every compound-object item. Filenames should not be provided for compound objects.</para>
@@ -74,20 +74,20 @@
             <para>20211023_postcard.jpg</para>
             <para>20211023_photo.jpg</para>
         </example>
-        <customization co="item" dd="p16786coll3" resourceType="text">
+        <customization co="item" dd="p16786coll3" genre_form="text">
             <para>ST-001.jpg</para>
         </customization>
-        <customization co="item" dd="p16786coll3" resourceType="song">
+        <customization co="item" dd="p16786coll3" genre_form="song">
             <para>86_El_Robo_de_Elena.mp3</para>
             <para>Estrea_Chiprut.jpg</para>
             <para>La_Muerte_del_Duque_de_Gandía.pdf</para>
         </customization>
-        <customization co="item" dd="p16786coll3" resourceType="oh">
+        <customization co="item" dd="p16786coll3" genre_form="oh">
             <para>interview_001_audio.mp3</para>
             <para>interviewee_001_photo.jpg</para>
             <para>interview_001_transcript.pdf</para>
         </customization>
-        <customization co="item" dd="temp_alias_001" resourceType="default">
+        <customization co="item" dd="temp_alias_001" genre_form="default">
             <para>shirasago_interview_video_001.mp4</para>
             <para>shirasago_interview_audio_001.mp3</para>
             <para>shirasago_interview_transcript_001.pdf</para>

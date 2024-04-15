@@ -36,7 +36,7 @@
             <para>Enter each discreet section in a new line.</para>
             <para>When possible, begin the line with temporal starting position of the section.</para>
         </customization>
-        <customization co="no" dd="becker" objectType="Newsletters Records_(Documents)">
+        <customization co="no" dd="becker" genre_form="Newsletters Records_(Documents)">
             <para>This field may be used to provide a listing of contents; for example a table or contents or a list of headings or sections in a document.</para>
         </customization>
     </descriptions>
@@ -49,7 +49,7 @@
             <para>example 2:</para>
             <para>Speaker: Critiques first issue of Dyke Magazine. The Well Dressed Dyke. Article on the Clit Papers (Collective Lesbian International Terrorists). Dykes Behind Bars.  "We at Amazon Media share the costs of purchasing the magazine." Continues to critique second edition. Names various musicians, review of Olivia Records. Mentions Linda Shear, article that she wrote on women’s music. Lesbian Connection magazine. Asked not to air Shear’s new tape or Living with Lesbians. Critiques Out and About newsletter published in Seattle.</para>
         </example>
-        <customization co="no" dd="becker" objectType="Newsletters Records_(Documents)">
+        <customization co="no" dd="becker" genre_form="Newsletters Records_(Documents)">
             <para>&#x1F6A7;&#x1F6A7;&#x1F6A7;</para>
         </customization>
     </examples>

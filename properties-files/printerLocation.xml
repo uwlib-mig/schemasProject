@@ -36,7 +36,7 @@
             <para>Provide a location, usually a city, associated with the printer of a resource.</para>
             <para>If possible, use a controlled form of the place name.</para>
         </instructions>
-        <customization co="object" dd="p16786coll3" resourceType="text">
+        <customization co="object" dd="p16786coll3" genre_form="text">
             <para>For metadata creation taking place outside the University of Washington Libraries (UWL) Cataloging and Metadata Services unit:</para>
             <para>Enter a location associated with the printer in natural language, providing sufficient information to disambiguate place names as needed.</para>
             <para>As a rule, include more information rather than less.</para>
@@ -61,7 +61,7 @@
             <para>United States—Washington (State)—Seattle</para>
             <para>Canada—Yukon Territory—Dawson</para>
         </example>
-        <customization co="object" dd="p16786coll3" resourceType="text">
+        <customization co="object" dd="p16786coll3" genre_form="text">
             <para>[Natural-language values for review by cataloging staff:]</para>
             <para>İzmir (Turkey)</para>
             <para>Jerusalem, Israel [Cherezli, Salomon Israel]; Istanbul, Turkey [Joseph, Benjamin Ben]</para>

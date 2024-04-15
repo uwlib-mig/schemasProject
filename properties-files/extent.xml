@@ -73,11 +73,11 @@
          <para>&lt;br/&gt;For tables of contents (.pdf files):</para>
          <para>Do not enter a value.</para>
       </customization>
-      <customization co="item" dd="p16786coll3" resourceType="oh song">
+      <customization co="item" dd="p16786coll3" genre_form="oh song">
          <para>For audio files, enter the runtime of the digital access file.</para>
          <para>Format runtime as HH:MM:SS.</para>
       </customization>
-      <customization co="item" dd="temp_alias_001" resourceType="default">
+      <customization co="item" dd="temp_alias_001" genre_form="default">
          <para>For audio and video files, enter the runtime of the digital access file as hours (HH), minutes (MM), and seconds (SS).</para>
          <para>Format value as follows:</para>
          <para>HH:MM:SS</para>
@@ -114,10 +114,10 @@
          <para>00:12:58</para>
          <para>01:28:14</para>
       </customization>
-      <customization co="item" dd="p16786coll3" resourceType="oh song">
+      <customization co="item" dd="p16786coll3" genre_form="oh song">
          <para>00:12:58</para>
       </customization>
-      <customization co="item" dd="temp_alias_001" resourceType="default">
+      <customization co="item" dd="temp_alias_001" genre_form="default">
          <para>00:12:58</para>
          <para>22 pages</para>
       </customization>

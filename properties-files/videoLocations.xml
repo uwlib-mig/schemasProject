@@ -38,7 +38,7 @@
             <para>Separate multiple places using a semicolon.</para>
             <para>Use the GeoNet (https://community.esri.com/) form of the name, if available. If not, use the most common form/spelling.</para>
         </instructions>
-        <customization co="object" dd="greekdancing" resourceType="default">
+        <customization co="object" dd="greekdancing" genre_form="default">
             <para>Enter the name of the places in which the video segments were recorded.</para>
             <para>Separate multiple places using a semicolon.</para>
             <para>Record the form of each place name as found in the text &lt;a href="https://alliance-primo.hosted.exlibrisgroup.com/permalink/f/kjtuig/CP71232515330001451"&gt;A Nest of Gold&lt;/a&gt;.</para>

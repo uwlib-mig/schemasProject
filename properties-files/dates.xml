@@ -108,7 +108,7 @@
          <para>This field is indexed and enables date searching in CONTENTdm.</para>
          <para>The Dates value should agree with date values entered in Date-Edtf and Date of Broadcast fields.</para>
       </customization>
-      <customization co="object" dd="p16786coll3" objectType="oh song text">
+      <customization co="object" dd="p16786coll3" genre_form="oh song text">
          <!-- use default co instructions with added note about conversion from lunar -->
          <para>Reflects the date in the "Date" field pertinent to the overall object.</para>
          <para>Creating well-formed values for resources in the Sephardic Studies Digital Collection may require first converting date values from lunar to Gregorian calendar systems.</para>
@@ -122,7 +122,7 @@
          <para>This field is indexed and enables date searching in CONTENTdm.</para>
          <para>The Dates value should agree with date values entered in Date-Edtf and Date fields.</para>
       </customization>
-      <customization co="object" dd="temp_alias_001" objectType="default">
+      <customization co="object" dd="temp_alias_001" genre_form="default">
          <para>This field is indexed and enables searching by year in CONTENTdm, but values are not visible to users.</para>
          <para>&lt;br/&gt;</para>
          <para>Create a value for the Date field prior to creating this value.</para>
@@ -170,7 +170,7 @@
          <para>1939 1940 1941 1942 1943 1944 1945</para>
          <para>1934 1935 1936 1937 1938 1939 1940 1941 1942 1943 1944 1945 1946 1947 1948 1949 1950</para>
       </example>
-      <customization co="object" dd="temp_alias_001" objectType="default">
+      <customization co="object" dd="temp_alias_001" genre_form="default">
          <para>[If Date field is "2005"] 2005</para>
          <para>[If Date field is "2005?"] 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010</para>
          <para>[If Date field is "March 2005"] 2005</para>

@@ -36,7 +36,7 @@
             <para>Provide a location, usually a city, where the resource was recorded.</para>
             <para>If possible, use a controlled form of the place name.</para>
         </instructions>
-        <customization co="object" dd="p16786coll3" resourceType="oh song">
+        <customization co="object" dd="p16786coll3" genre_form="oh song">
             <para>For metadata creation taking place outside the University of Washington Libraries (UWL) Cataloging and Metadata Services unit:</para>
             <para>Enter a recording location in natural language, providing sufficient information to disambiguate place names as needed.</para>
             <para>As a rule, include more information rather than less.</para>
@@ -63,7 +63,7 @@
             <!-- adopting examples from studioLocation for the time being -->
             <para>United States—Washington (State)—Seattle</para>
         </example>
-        <customization co="object" dd="p16786coll3" resourceType="song oh">
+        <customization co="object" dd="p16786coll3" genre_form="song oh">
             <para>[Natural-language values for review by cataloging staff:]</para>
             <para>Seattle, WA, USA</para>
             <para>&lt;br/&gt;[Structured values provided by cataloging staff:]</para>

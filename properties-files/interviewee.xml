@@ -42,7 +42,7 @@
          <para>Use LC Name Authority File for form of name when available: http://authorities.loc.gov or http://id.loc.gov/</para>
          <para>Separate multiple values with a semicolon.</para>
       </instructions>
-      <customization co="object" dd="p16786coll3" resourceType="oh">
+      <customization co="object" dd="p16786coll3" genre_form="oh">
          <para>Provide the name of the interviewee.</para>
          <para>When appropriate, search the &lt;a href="https://id.loc.gov/authorities/names.html"&gt;Library of Congress Name Authority File&lt;/a&gt; via id.loc.gov for the interviewee name.</para>
          <para>If a potential match is found, confirm that it is the person associated with the resource. It may be helpful to review information included in the web display such as source(s) of information and occupation (for persons), and/or to follow the links provided for exact and/or closely matching concepts from other schemes.</para>
@@ -53,7 +53,7 @@
          <para>Separate multiple entries with a semicolon and space (“; “).</para>
          <para>Order of values does not matter.</para>
       </customization>
-      <customization co="object" dd="temp_alias_001" resourceType="default">
+      <customization co="object" dd="temp_alias_001" genre_form="default">
          <para>Enter the name of person(s) interviewed.</para>
          <para>&lt;br/&gt;</para>
          <para>Format personal names as follows:</para>
@@ -82,10 +82,10 @@
          <para>Honey, Michael K.</para>
          <para>Ellis, Joe, 1947-</para>
       </customization>
-      <customization co="object" dd="p16786coll3" resourceType="oh">
+      <customization co="object" dd="p16786coll3" genre_form="oh">
          <para>Maimon, Solomon</para>
       </customization>
-      <customization co="object" dd="temp_alias_001" resourceType="default">
+      <customization co="object" dd="temp_alias_001" genre_form="default">
          <para>Hattori, Fumi (Sato)</para>
          <para>Hayashi, June Mieko (Shirozu)</para>
          <para>Takasugi, Robert Mitsuhiro</para>

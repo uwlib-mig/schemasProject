@@ -67,27 +67,27 @@
          <para>Enter the name given to the digital collection.</para>
          <para>Enter "Hunt (Yvonne) Greek Folk Dance Collection"</para>
       </customization>
-      <customization co="object" dd="p16786coll3" objectType="text song oh">
+      <customization co="object" dd="p16786coll3" genre_form="text song oh">
          <para>Enter the following value:</para>
          <para>Sephardic Studies Digital Collection at the University of Washington</para>
          <para>Required for all compound objects.</para>
       </customization>
-      <customization co="item" dd="p16786coll3" objectType="text song oh">
+      <customization co="item" dd="p16786coll3" genre_form="text song oh">
          <para>Enter the following value:</para>
          <para>Sephardic Studies Digital Collection at the University of Washington</para>
          <para>Required for all compound-object items.</para>
       </customization>
-      <customization co="no" dd="p16786coll3" objectType="text song oh">
+      <customization co="no" dd="p16786coll3" genre_form="text song oh">
          <para>Enter the following value:</para>
          <para>Sephardic Studies Digital Collection at the University of Washington</para>
          <para>Required for all standalone objects.</para>
       </customization>
-      <customization co="object" dd="temp_alias_001" objectType="default">
+      <customization co="object" dd="temp_alias_001" genre_form="default">
          <para>Enter the name of the digital collection the resource belongs to.</para>
          <para>Use the following value:</para>
          <para>Tacoma Japanese Language School Project</para>
       </customization>
-      <customization co="item" dd="temp_alias_001" objectType="default">
+      <customization co="item" dd="temp_alias_001" genre_form="default">
          <para>Enter the name of the digital collection the resource belongs to.</para>
          <para>Use the following value:</para>
          <para>Tacoma Japanese Language School Project</para>
@@ -97,7 +97,7 @@
          <para>&lt;br/&gt;Use the following value:</para>
          <para>Harriman Alaska Expedition Collection</para>
       </customization>
-      <customization co="no" dd="becker" objectType="Newsletters Photographs Records_(Documents)">
+      <customization co="no" dd="becker" genre_form="Newsletters Photographs Records_(Documents)">
          <para>Record the following value:</para>
          <para>&#x1F6A7;&#x1F6A7;&#x1F6A7;</para>
       </customization>
@@ -136,25 +136,25 @@
       <customization co="no" dd="greekdancing">
          <para>Hunt (Yvonne) Greek Folk Dance Collection</para>
       </customization>
-      <customization co="object" dd="p16786coll3" objectType="text song oh">
+      <customization co="object" dd="p16786coll3" genre_form="text song oh">
          <para>Sephardic Studies Digital Collection at the University of Washington</para>
       </customization>
-      <customization co="item" dd="p16786coll3" objectType="text song oh">
+      <customization co="item" dd="p16786coll3" genre_form="text song oh">
          <para>Sephardic Studies Digital Collection at the University of Washington</para>
       </customization>
       <customization co="no" dd="p16786coll3">
          <para>Sephardic Studies Digital Collection at the University of Washington</para>
       </customization>
-      <customization co="object" dd="temp_alias_001" objectType="default">
+      <customization co="object" dd="temp_alias_001" genre_form="default">
          <para>Tacoma Japanese Language School Project</para>
       </customization>
-      <customization co="item" dd="temp_alias_001" objectType="default">
+      <customization co="item" dd="temp_alias_001" genre_form="default">
          <para>Tacoma Japanese Language School Project</para>
       </customization>
       <customization co="no" dd="harriman">
          <para>Harriman Alaska Expedition Collection</para>
       </customization>
-      <customization co="no" dd="becker" objectType="*">
+      <customization co="no" dd="becker" genre_form="*">
          <para>&#x1F6A7;&#x1F6A7;&#x1F6A7;</para>
       </customization>
    </examples>

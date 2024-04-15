@@ -42,14 +42,14 @@
          <para>Note any key events, organizations, perspectives, and significant names that may have come up in the interview.</para>
          <para>When appropriate, note interviewees contributions to encouraging a diverse and inclusive campus.</para>
       </customization>
-      <customization co="object" dd="temp_alias_001" objectType="default">
+      <customization co="object" dd="temp_alias_001" genre_form="default">
          <para>Provide a brief summary of the interview.</para>
          <para>Write in present tense.</para>
          <para>Use the full name of the interviewee in the first sentence.</para>
          <para>For each subsequent mention of the interviewee's name, use only the last name.</para>
          <para>Include any key events, buildings, individuals, etc. that may have come up in the interview as appropriate.</para>
       </customization>
-      <customization co="no" dd="becker" objectType="*">
+      <customization co="no" dd="becker" genre_form="*">
          <para>This field may be used to provide a more lengthy description of the resource than is possible for the Title field, where values should be kept brief.</para>
       </customization>
    </descriptions>
@@ -63,14 +63,14 @@
       <customization co="object" dd="uwtoh">
          <para>Joao Fonseca discusses his years in the UWT Liberal Studies / Interdisciplinary Arts and Sciences from 1990 to present. Fonseca addresses the development of the department from its founding to its establishment as a school in 2014. Describes the many contributions of Wiliam Richardson and Michael Allen. Includes a description of the acquisition and display of Buster Simpson's "Parapet Relay" iron and bronze sidewalk plaques, referencing the role of the Washington State Art Commission.</para>
       </customization>
-      <customization co="object" dd="temp_alias_001" objectType="default">
+      <customization co="object" dd="temp_alias_001" genre_form="default">
          <para>Robert Mitsuhiro Takasugi reflects on his childhood growing up in Tacoma and attending the Japanese Language school. Takasugi contrasts his experiences attending American public school with the Japanese Language School. In addition to covering family history, Takasugi recounts the moral and cultural lessons he received at the school and examines what it means to be Japanese.</para>
       </customization>
-      <customization co="no" dd="becker" objectType="Photographs">
+      <customization co="no" dd="becker" genre_form="Photographs">
          <para>Khmer Rouge Technical school and factory outside of Phnom Penh, Cambodia: Two men walking towards the photographer; two large buildings in the background.  This was one stop on a tour curated by Khmer Rouge regime officials for American photojournalist Elizabeth Becker, British scholar Malcolm Caldwell, and American journalist Richard Dudman.</para>
          <para>This is a portrait of Pol Pot, taken by Elizabeth Becker, during a visit to Democratic Kampuchea in December 1978.  The tour was curated by Khmer Rouge officials for American journalist Elizabeth Becker, British scholar Malcolm Caldwell, and American journalist Richard Dudman.</para>
       </customization>
-      <customization co="no" dd="becker" objectType="Records_(Documents)">
+      <customization co="no" dd="becker" genre_form="Records_(Documents)">
          <para>This document contains eleven pages of typed notes written by Elizabeth Becker documenting the arrival and first two days of a tour curated by Khmer Rouge regime officials for American journalist Elizabeth Becker, British scholar Malcolm Caldwell, and American journalist Richard Dudman, covering December 10th and 11th, 1978.  The notes detail the group's arrival by plane into Phnom Penh, Cambodia, transport from the airport by Khmer Rouge officials to their guest residence in Phnom Penh, Elizabeth's impressions of Phnom Penh and how it had changed compared to her previous times there.  The notes also discuss their guide, Prasit's, answers to her questions about the situation in Cambodia and Khmer Rouge policies.  On December 11th, the group is taken on a guided tour via boat up the Tonle Sap River, where they dock and visit a technical school/factory, which she describes (see December 11, 1978, photographs from Elizabeth Becker Cambodia and Khmer Rouge Collection, 1970-1988).</para>
       </customization>
    </examples>

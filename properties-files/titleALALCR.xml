@@ -34,7 +34,7 @@
         <instructions co="all">
             <para>Provide a non-Latin script title which has been Romanized according to the ALA-LC Romanization Tables.</para>
         </instructions>
-        <customization co="object" dd="p16786coll3" resourceType="text">
+        <customization co="object" dd="p16786coll3" genre_form="text">
             <para>Search for Romanized title in &lt;a href="http://catdir.loc.gov/catdir/toc/becites/ladino/63062107a.html"&gt;LOC Ladino catalog.&lt;/a&gt;</para>
             <para>If a potential match is found, confirm that it is the correct title. It may be helpful to review information included in the web display such as the publisher, printer, and publisher/printer locations.</para>
             <para>Copy the Romanized title just as it appears in the LOC record, usually following the period after the author name.</para>

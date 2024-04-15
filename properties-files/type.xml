@@ -46,17 +46,17 @@
          <para>Separate multiple values with a semicolon.</para>
       </instructions>-->  
       <!-- See MIG 2021-11-02 notes for SSDC - p16786coll3 - implementation -->
-      <customization co="object" dd="p16786coll3" objectType="song oh">
+      <customization co="object" dd="p16786coll3" genre_form="song oh">
          <para>Values for this property must come from the &lt;a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7"&gt;DCMI Type Vocabulary&lt;/a&gt;.</para>
          <para>For ballad, and oral history compound objects, provide the following value:</para>
          <para>Sound</para>
       </customization>
-      <customization co="object" dd="p16786coll3" objectType="text">
+      <customization co="object" dd="p16786coll3" genre_form="text">
          <para>Values for this property must come from the &lt;a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7"&gt;DCMI Type Vocabulary&lt;/a&gt;.</para>
          <para>For textual-resource compound objects, provide the following value:</para>
          <para>Text</para>
       </customization>
-      <customization co="item" dd="p16786coll3" objectType="text">
+      <customization co="item" dd="p16786coll3" genre_form="text">
          <para>Values for this property must come from the &lt;a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7"&gt;DCMI Type Vocabulary&lt;/a&gt;.</para>
          <para>For image-file compound-object items (digitized pages), provide one or both of the following values depending on content:</para>
          <para>Text</para>
@@ -64,7 +64,7 @@
          <para>&lt;br/&gt;Separate multiple entries with a semicolon and space (“; “).</para>
          <para>Order of values does not matter.</para>
       </customization>
-      <customization co="item" dd="p16786coll3" objectType="song">
+      <customization co="item" dd="p16786coll3" genre_form="song">
          <para>For audio-file compound-object items (ballad recordings), provide the following value:</para>
          <para>Sound</para>
          <para>For image-file compound-object items which are performer photographs, provide the following value:</para>
@@ -72,7 +72,7 @@
          <para>For image-file compound-object items which are digitized sheet music, provide the following value:</para>
          <para>Image</para>
       </customization>
-      <customization co="item" dd="p16786coll3" objectType="oh">
+      <customization co="item" dd="p16786coll3" genre_form="oh">
          <para>For audio-file compound-object items (interview recordings), provide the following value:</para>
          <para>Sound</para>
          <para>For image-file compound-object items which are interviewee photographs, provide the following value:</para>
@@ -92,7 +92,7 @@
          <para>For document compound-object items providing information about or summaries of videos, use the following value:</para>
          <para>Text</para>
       </customization>
-      <customization co="object" dd="temp_alias_001" objectType="default">
+      <customization co="object" dd="temp_alias_001" genre_form="default">
          <para>Values for this property must come from the &lt;a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7"&gt;DCMI Type Vocabulary&lt;/a&gt;.</para>
          <para>&lt;br/&gt;</para>
          <para>For compound objects which feature an interview video, use the following value:</para>
@@ -104,7 +104,7 @@
          <para>For compound objects which include both the video and audio versions of an interview, use the following value:</para>
          <para>MovingImage; Sound</para>
       </customization>
-      <customization co="item" dd="temp_alias_001" objectType="default">
+      <customization co="item" dd="temp_alias_001" genre_form="default">
          <para>Values for this property must come from the &lt;a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7"&gt;DCMI Type Vocabulary&lt;/a&gt;.</para>
          <para>&lt;br/&gt;</para>
          <para>For compound-object items which are video files, use the following value:</para>
@@ -116,7 +116,7 @@
          <para>For compound-object items which are transcripts (document files), use the following value:</para>
          <para>Text</para>
       </customization>
-      <customization co="no" dd="becker" objectType="*">
+      <customization co="no" dd="becker" genre_form="*">
          <para>Values for this property must come from the &lt;a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7"&gt;DCMI Type Vocabulary&lt;/a&gt;.</para>
          <para>&lt;br/&gt;For photographs, record the following value:</para>
          <para>StillImage</para>
@@ -161,38 +161,38 @@
          <para>MovingImage</para>
       </customization>
       <!-- See MIG 2021-11-02 notes for SSDC - p16786coll3 - implementation -->
-      <customization co="object" dd="p16786coll3" objectType="song oh">
+      <customization co="object" dd="p16786coll3" genre_form="song oh">
          <para>Sound</para>
       </customization>
-      <customization co="object" dd="p16786coll3" objectType="text">
+      <customization co="object" dd="p16786coll3" genre_form="text">
          <para>Text</para>
       </customization>
-      <customization co="item" dd="p16786coll3" objectType="text">
+      <customization co="item" dd="p16786coll3" genre_form="text">
          <para>Text</para>
          <para>StillImage</para>
          <para>StillImage; Text</para>
       </customization>
-      <customization co="item" dd="p16786coll3" objectType="song">
+      <customization co="item" dd="p16786coll3" genre_form="song">
          <para>Sound</para>
          <para>StillImage</para>
          <para>Image</para>
       </customization>
-      <customization co="item" dd="p16786coll3" objectType="oh">
+      <customization co="item" dd="p16786coll3" genre_form="oh">
          <para>Sound</para>
          <para>StillImage</para>
          <para>Text</para>
       </customization>
-      <customization co="object" dd="temp_alias_001" objectType="default">
+      <customization co="object" dd="temp_alias_001" genre_form="default">
          <para>MovingImage</para>
          <para>Sound</para>
          <para>MovingImage; Sound</para>
       </customization>
-      <customization co="item" dd="temp_alias_001" objectType="default">
+      <customization co="item" dd="temp_alias_001" genre_form="default">
          <para>MovingImage</para>
          <para>Sound</para>
          <para>Text</para>
       </customization>
-      <customization co="no" dd="becker" objectType="*">
+      <customization co="no" dd="becker" genre_form="*">
          <para>StillImage</para>
          <para>Text</para>
          <para>Text; StillImage</para>

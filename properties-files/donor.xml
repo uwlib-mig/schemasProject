@@ -31,7 +31,7 @@
         <definition>
             <para>A person or corporate body who donated a physical item to the University of Washington Libraries or an affiliated academic unit.</para>
         </definition>
-        <customization co="object" dd="p16786coll3" resourceType="text">
+        <customization co="object" dd="p16786coll3" genre_form="text">
             <para>Find donor name in Sephardic Studies Collection Master Catalog.</para>
             <para>Contributor is considered a donor if the catalog notes that the item is property of Sephardic Studies.</para>
             <para>When appropriate, search the &lt;a href="https://id.loc.gov/authorities/names.html"&gt;Library of Congress Name Authority File&lt;/a&gt; via id.loc.gov for the donor name.</para>
@@ -44,7 +44,7 @@
             <para>Order does not matter.</para>
             <para>Either a donor or lender value must be provided for every compound object.</para>
         </customization>
-        <customization co="object" dd="p16786coll3" resourceType="song oh">
+        <customization co="object" dd="p16786coll3" genre_form="song oh">
             <para>Find donor name in Sephardic Studies Collection Master Catalog; the item may be recorded on the Ladino Audio Archive tab.</para>
             <para>Check both the main collection tab and Ladino Audio Archive tab for the correct file.</para>
             <para>Contributor is considered a donor if the catalog notes that the item is property of Sephardic Studies.</para>

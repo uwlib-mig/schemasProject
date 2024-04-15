@@ -32,11 +32,11 @@
         <definition>
             <para>A number assigned to each resource in the Sephardic Studies Digital Collection Master Catalog; each resource's number is unique in the Catalog.</para>
         </definition>
-        <customization co="object" dd="p16786coll3" resourceType="text">
+        <customization co="object" dd="p16786coll3" genre_form="text">
             <para>Find the item in Sephardic Studies Collection Master Catalog in column AX (File Name) and enter its corresponding number here.</para>
             <para>Required for all compound objects.</para>
         </customization>
-        <customization co="object" dd="p16786coll3" resourceType="song oh">
+        <customization co="object" dd="p16786coll3" genre_form="song oh">
             <para>Find the item in Sephardic Studies Collection Master Catalog in column AX (File Name) and enter its corresponding number here.</para>
             <para>If a match is not found, search the Sephardic Studies Collection Master Catalog's Ladino Audio Archive tab in column P (Digitized File Name) and enter its corresponding number here.</para>
             <para>Required for all compound objects.</para>
@@ -50,10 +50,10 @@
         <example co="all">
             <para>ST00495</para>
         </example>
-        <customization co="object" dd="p16786coll3" resourceType="text">
+        <customization co="object" dd="p16786coll3" genre_form="text">
             <para>ST00495</para>
         </customization>
-        <customization co="object" dd="p16786coll3" resourceType="song oh">
+        <customization co="object" dd="p16786coll3" genre_form="song oh">
             <para>LAA0003</para>
         </customization>
     </examples>

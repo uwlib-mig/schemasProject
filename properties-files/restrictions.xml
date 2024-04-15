@@ -57,11 +57,11 @@
       <customization co="no" dd="krab">
          <para>Input the following text: "To order a reproduction, inquire about permissions, or for information about prices see:  http://www.lib.washington.edu/specialcollections/services/reproduction/reproduction."</para>
       </customization>
-      <customization co="object" dd="greekdancing" objectType="default">
+      <customization co="object" dd="greekdancing" genre_form="default">
          <para>Enter the following value:</para>
          <para>Permission granted to make items available online by the videographer and the holding library, the Public Library of Serres, Greece. Reproductions not available.</para>
       </customization>
-      <customization co="object" dd="p16786coll3" objectType="text song oh">
+      <customization co="object" dd="p16786coll3" genre_form="text song oh">
          <para>Required for all compound objects.</para>
          <para>Enter the following value:</para>
          <para>To inquire about permissions, contact sephstud@uw.edu. Please cite the Sephardic Studies Accession Number.</para>
@@ -71,7 +71,7 @@
          <para>Enter the following value:</para>
          <para>To inquire about permissions, contact sephstud@uw.edu. Please cite the Sephardic Studies Accession Number.</para>
       </customization>
-      <customization co="object" dd="temp_alias_001" objectType="default">
+      <customization co="object" dd="temp_alias_001" genre_form="default">
          <para>Use the following value:</para>
          <para>This item is protected by copyright and/or related rights.</para>
          <para>Permission must be obtained for any use or reproduction which is not educational and not-for-profit.</para>
@@ -109,16 +109,16 @@
       <customization co="no" dd="krab">
          <para>To order a reproduction, inquire about permissions, or for information about prices see:  http://www.lib.washington.edu/specialcollections/services/reproduction/reproduction.</para>
       </customization>
-      <customization co="object" dd="greekdancing" objectType="default">
+      <customization co="object" dd="greekdancing" genre_form="default">
          <para>Permission granted to make items available online by the videographer and the holding library, the Public Library of Serres, Greece. Reproductions not available.</para>
       </customization>
-      <customization co="object" dd="p16786coll3" objectType="text song oh">
+      <customization co="object" dd="p16786coll3" genre_form="text song oh">
          <para>To inquire about permissions, contact sephstud@uw.edu. Please cite the Sephardic Studies Accession Number.</para>
       </customization>
       <customization co="no" dd="p16786coll3">
          <para>To inquire about permissions, contact sephstud@uw.edu. Please cite the Sephardic Studies Accession Number.</para>
       </customization>
-      <customization co="object" dd="temp_alias_001" objectType="default">
+      <customization co="object" dd="temp_alias_001" genre_form="default">
          <para>This item is protected by copyright and/or related rights.</para>
          <para>Permission must be obtained for any use or reproduction which is not educational and not-for-profit.</para>
          <para>Please contact the University of Washington Tacoma Library with any inquiries about use of the collection.</para>

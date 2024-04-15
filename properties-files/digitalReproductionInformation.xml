@@ -40,22 +40,22 @@
       <instructions co="item">
          <para>Input a paragraph with pertinent information on the digital conversion process of the compound object item.</para>
       </instructions>
-      <customization co="object" dd="p16786coll3" objectType="text">
+      <customization co="object" dd="p16786coll3" genre_form="text">
          <para>If available, provide details regarding the digitization of the text.</para>
          <para>For texts, digital reproduction details are assumed to be the same or similar for all compound-object items (pages), so information should be recorded at the compound-object level.</para>
       </customization>
-      <customization co="item" dd="p16786coll3" objectType="song">
+      <customization co="item" dd="p16786coll3" genre_form="song">
          <para>If available and applicable, provide details regarding the digitization of ballad compound-object items (singer photo, audio file, etc.).</para>
       </customization>
-      <customization co="item" dd="p16786coll3" objectType="oh">
+      <customization co="item" dd="p16786coll3" genre_form="oh">
          <para>If available and applicable, provide details regarding the digitization of oral history compound-object items (interviewee photos, audio file, etc.).</para>
       </customization>
-      <customization co="item" dd="temp_alias_001" objectType="default">
+      <customization co="item" dd="temp_alias_001" genre_form="default">
          <para>Use the following value:</para>
          <para>Original carriers were DVCAM tapes, standard definition 720x480 NTSC.</para>
          <para>DVCAM tapes digitized with a non-linear editing program, converted to .mov files using H264 compression.</para>
       </customization>
-      <customization co="item" dd="greekdancing" objectType="default">
+      <customization co="item" dd="greekdancing" genre_form="default">
          <para>Use the following value:</para>
          <para>&lt;br/&gt;VHS tapes were converted to a 10 bit FFV1/MKV preservation copy and a DV file (mezzanine file), now in digital storage, and from the DV files, mp4 files were generated, then used to create clips in streaming-optimized mp4, H.264 at adaptive low bit rate.</para>
       </customization>
@@ -73,19 +73,19 @@
       <customization co="no" dd="krab">
          <para>Sample rate: 96KHz. Bit depth: 24. Issues encountered: Repaired several faulty splices. Date of transfer: 2019-01-04. Applicable conservation treatments: Baked and repaired several splices. De-noise and de-hum (iZotrope RX5).</para>
       </customization>
-      <customization co="object" dd="p16786coll3" objectType="text">
+      <customization co="object" dd="p16786coll3" genre_form="text">
          <para>Scanned from original text or image at 400 dpi, saved in TIFF format, resized and enhanced using Adobe Photoshop, and imported as JPEG2000 using Contentdm software's JPEG2000 Extension. 2006.</para>
       </customization>
-      <customization co="item" dd="p16786coll3" objectType="song oh">
+      <customization co="item" dd="p16786coll3" genre_form="song oh">
          <!-- using the krab example and an example from SCOHDD to give an indication for SSDC values -->
          <para>Sample rate: 96KHz. Bit depth: 24. Issues encountered: Repaired several faulty splices. Date of transfer: 2019-01-04. Applicable conservation treatments: Baked and repaired several splices. De-noise and de-hum (iZotrope RX5).</para>
          <para>Digital, stereo. Copied from analog recording to compact disc. Converted to 24 bit/48kHz Broadcast WAV format files by University of Washington Libraries in 2010.</para>
       </customization>
-      <customization co="item" dd="temp_alias_001" objectType="default">
+      <customization co="item" dd="temp_alias_001" genre_form="default">
          <para>Original carriers were DVCAM tapes, standard definition 720x480 NTSC.</para>
          <para>DVCAM tapes digitized with a non-linear editing program, converted to .mov files using H264 compression.</para>
       </customization>
-      <customization co="item" dd="greekdancing" objectType="default">
+      <customization co="item" dd="greekdancing" genre_form="default">
          <para>VHS tapes were converted to a 10 bit FFV1/MKV preservation copy and a DV file (mezzanine file), now in digital storage, and from the DV files, mp4 files were generated, then used to create clips in streaming-optimized mp4, H.264 at adaptive low bit rate.</para>
       </customization>
    </examples>

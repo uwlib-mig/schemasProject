@@ -35,7 +35,7 @@
             <para>Provide the name of a person who created a resource which is a video recording.</para>
             <para>If possible, use a controlled form of name.</para>
         </instructions>
-        <customization co="object" dd="p16786coll3" resourceType="oh">
+        <customization co="object" dd="p16786coll3" genre_form="oh">
             <para>Provide the name of the videographer--the person who created the video recording.</para>
             <para>When appropriate, search the &lt;a href="https://id.loc.gov/authorities/names.html"&gt;Library of Congress Name Authority File&lt;/a&gt; via id.loc.gov for the videographer name.</para>
             <para>If a potential match is found, confirm that it is the person associated with the resource. It may be helpful to review information included in the web display such as source(s) of information and occupation (for persons), and/or to follow the links provided for exact and/or closely matching concepts from other schemes.</para>
@@ -51,7 +51,7 @@
         <example co="all">
             <para>Meyers, Richard D.</para>
         </example>
-        <customization co="object" dd="p16786coll3" resourceType="oh">
+        <customization co="object" dd="p16786coll3" genre_form="oh">
             <para>Meyers, Richard D.</para>
         </customization>
     </examples>
