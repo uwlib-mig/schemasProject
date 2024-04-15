@@ -21,6 +21,9 @@
                      <xs:enumeration value="temp_alias_001"/>
                      <xs:enumeration value="temp_alias_002"/>
                      <xs:enumeration value="temp_alias_003"/>
+                     <!-- legacy 'dd' (data dictionary) values used to indicate collection -->
+                     <xs:enumeration value="uwtoh"/>
+                     <xs:enumeration value="krab"/>
                      <!--existing collection aliases-->
                      <xs:enumeration value="alaskawcanada">
                         <xs:annotation>
