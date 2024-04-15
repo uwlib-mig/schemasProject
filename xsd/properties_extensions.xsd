@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    targetNamespace="https://uwlib-mig.github.io/schemasProject/xsd/"
+    xmlns="https://uwlib-mig.github.io/schemasProject/xsd/"
+    elementFormDefault="qualified">
+    
+    <xs:annotation>
+        <xs:documentation>2024-04-14</xs:documentation>
+        <xs:documentation>properties-files data structures defined here are not currently used in properties-files-to-HTML MAP workflow.</xs:documentation>
+        <xs:documentation>Some of the data structured defined here were intended for use with additional code previously included in schemasProject.</xs:documentation>
+        <xs:documentation>See https://github.com/uwlib-mig/schemasProject/tree/e772cf41c7db2e6c10ea89a5379da8fec078e546</xs:documentation>
+    </xs:annotation>
+    
+    <xs:include schemaLocation="properties_files.xsd"/>
+    
+    <!-- Note on "admin:"
+     any info to help administer the metadata;
+     inputting assistance goes in desciptions/instructions;
+     further assistance "understanding" the metadata: "generalNotes"-->
+    <xs:complexType name="additionalInfoType">
+        <xs:sequence>
+            <!-- Originally thought 2 elements needed in this sequence;
+                 as work progressed, it seemed one was better;
+                 recommended: do not use <admin>, use <generalNotes> ;
+                 both will be retained to validate legacy data;
+                 XSLTs should output both elements as if they were the same-->
+            <xs:element name="admin" type="custom_para_type" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="generalNotes" type="custom_para_type" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="marcType">
+        <xs:sequence>
+            <xs:element name="dcgMarcMapping" type="dcgType"/>
+            <xs:element name="dcgNotes" type="paraType" minOccurs="0"/>
+            <xs:element name="marcNotes" type="paraType" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="dcgType">
+        <xs:sequence>
+            <xs:element name="field" type="xs:integer" minOccurs="0"/>
+            <xs:element name="subfield" type="xs:string" minOccurs="0"/>
+            <xs:element name="indicators" type="xs:integer" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="xsdType">
+        <xs:sequence>
+            <xs:element name="typeInfo" minOccurs="0" maxOccurs="unbounded" type="typeInfoType"/>
+            <xs:element name="customTypeInfo" minOccurs="0" maxOccurs="unbounded"
+                type="typeInfoType"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="typeInfoType">
+        <xs:sequence>
+            <xs:element name="typeAttribute" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:QName">
+                            <xs:attribute name="minOccurs" type="xs:integer"/>
+                            <xs:attribute name="maxOccurs" type="xs:integer"/>
+                            <xs:attribute name="fixed"/>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="simpleType" type="localSimpleType" minOccurs="0"/>
+            <xs:element name="complexType" type="localComplexType" minOccurs="0"/>
+            <xs:element name="empty" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attribute name="level">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="standalone"/>
+                    <xs:enumeration value="object"/>
+                    <xs:enumeration value="item"/>
+                    <xs:enumeration value="standalone object"/>
+                    <xs:enumeration value="standalone item"/>
+                    <xs:enumeration value="object item"/>
+                    <xs:enumeration value="standalone object item"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="dd" type="dd_type"/>
+    </xs:complexType>
+    
+    <!-- name = simpleType type = xs:localSimpleType was specified above but resulted in error -->
+    <xs:simpleType name="localSimpleType">
+        <xs:annotation>
+            <xs:documentation>name = simpleType type = xs:localSimpleType was specified above but resulted in error</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    
+    <!-- name = complexType type = xs:localComplexType was specified above but resulted in error -->
+    <xs:simpleType name="localComplexType">
+        <xs:annotation>
+            <xs:documentation>name = complexType type = xs:localComplexType was specified above but resulted in error</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    
+    <xs:complexType name="rdfType">
+        <xs:sequence minOccurs="0">
+            <xs:element name="schemaInfo" type="schemaInfoType" minOccurs="0"/>
+            <xs:element name="cdmRdf" type="cdmRdfType" minOccurs="0"/>
+            <xs:element name="owlDatatypeProperty" type="yesNo" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="schemaInfoType">
+        <xs:sequence>
+            <xs:element name="type" minOccurs="1" maxOccurs="unbounded">
+                <xs:simpleType>
+                    <xs:restriction base="xs:anyURI">
+                        <xs:pattern value="(http|https):\/\/[\w\W]+"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="isDefinedBy" minOccurs="0" maxOccurs="unbounded">
+                <xs:simpleType>
+                    <xs:restriction base="xs:anyURI">
+                        <xs:pattern value="(http|https):\/\/[\w\W]+"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="seeAlso" minOccurs="0" maxOccurs="unbounded">
+                <xs:simpleType>
+                    <xs:restriction base="xs:anyURI">
+                        <xs:pattern value="(http|https):\/\/[\w\W]+"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="externalProperty" minOccurs="0" maxOccurs="unbounded"
+                type="externalPropertyType"/>
+            <xs:element name="localNote" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="cdmRdfType">
+        <xs:sequence>
+            <xs:element name="dpla" type="dplaType" minOccurs="0"/>
+            <xs:element name="bibframe" type="bibframeType" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="dplaType">
+        <xs:sequence>
+            <xs:element name="map" minOccurs="1" maxOccurs="unbounded">
+                <!-- property in dpla map to which cdm property is mapped; multiple OK; if more than 1, additional must have @class -->
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute name="class" type="dplaClassType"/>
+                            <!-- below attribute spec caused error -->
+                            <!--<xs:attribute ref="xml:lang"/>-->
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="object">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="rdfObjectType">
+                            <!-- below attribute spec caused error -->
+                            <!--<xs:attribute ref="xml:lang"/>-->
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="class" type="dplaClassType" maxOccurs="unbounded"/>
+            <xs:element name="process" type="xs:string" minOccurs="0"/>
+            <xs:element name="condition" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="test" type="xs:string"/>
+                        <xs:element name="p" type="xs:string"/>
+                        <xs:element name="o" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="node" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="triple" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="p">
+                                        <xs:complexType>
+                                            <xs:simpleContent>
+                                                <xs:extension base="xs:string">
+                                                    <!-- below attribute spec caused error -->
+                                                    <!--<xs:attribute ref="xml:lang"/>-->
+                                                </xs:extension>
+                                            </xs:simpleContent>
+                                        </xs:complexType>
+                                    </xs:element>
+                                    <xs:element name="o">
+                                        <xs:complexType>
+                                            <xs:simpleContent>
+                                                <xs:extension base="xs:string">
+                                                    <xs:attribute name="lit" type="yesNo"/>
+                                                    <xs:attribute name="node">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:enumeration value="xml"/>
+                                                                <xs:enumeration value="rdf"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:attribute>
+                                                </xs:extension>
+                                            </xs:simpleContent>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="bibframeType"/>
+    
+    <xs:complexType name="externalPropertyType">
+        <xs:sequence>
+            <xs:element name="uri">
+                <xs:simpleType>
+                    <xs:restriction base="xs:anyURI">
+                        <xs:pattern value="(http|https):\/\/[\w\W]+"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="relation">
+                <xs:simpleType>
+                    <xs:restriction base="xs:anyURI">
+                        <xs:pattern value="(http|https):\/\/[\w\W]+"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <!-- Above: "relation" as a pseudo-triple: subject=local property, predicate=value of "relation," object=external property. -->
+            <xs:element name="domain">
+                <xs:simpleType>
+                    <xs:union>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:anyURI">
+                                <xs:pattern value="(http|https):\/\/[\w\W]+"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:enumeration value="undefined"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:union>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="range">
+                <xs:simpleType>
+                    <xs:union>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:anyURI">
+                                <xs:pattern value="(http|https):\/\/[\w\W]+"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:enumeration value="undefined"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:union>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="equivalentProperty" minOccurs="0" maxOccurs="unbounded">
+                <xs:simpleType>
+                    <xs:restriction base="xs:anyURI">
+                        <xs:pattern value="(http|https):\/\/[\w\W]+"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="inverseOf" minOccurs="0" maxOccurs="unbounded">
+                <xs:simpleType>
+                    <xs:restriction base="xs:anyURI">
+                        <xs:pattern value="(http|https):\/\/[\w\W]+"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <!-- other relations of the external property can be added as needed -->
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:simpleType name="rdfObjectType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="uri"/>
+            <xs:enumeration value="bnode"/>
+            <xs:enumeration value="literal"/>
+            <xs:enumeration value="none"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="dplaClassType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="SourceResource"/>
+            <xs:enumeration value="WebResource"/>
+            <xs:enumeration value="Aggregation"/>
+            <xs:enumeration value="Collection"/>
+            <xs:enumeration value="Rights"/>
+            <xs:enumeration value="Agent"/>
+            <xs:enumeration value="uri"/>
+            <xs:enumeration value="Literal"/>
+            <!-- Is this class needed? -->
+            <xs:enumeration value="none"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <!-- below are the expected prefixes listed as elements:
+            <xs:element name="dc"/>
+            <xs:element name="dct" type="dcterms"/>
+            <xs:element name="dpla"/>
+            <xs:element name="edm"/>
+            <xs:element name="foaf"/>
+            <xs:element name="gn"/>
+            <xs:element name="madsrdf"/>
+            <xs:element name="owl"/>
+            <xs:element name="rdf"/>
+            <xs:element name="rdfs"/>
+            <xs:element name="schema"/>
+            <xs:element name="skos"/>
+            <xs:element name="uwext"/>
+            <xs:element name="uwp"/>
+            <xs:element name="uwrecon"/>
+            <xs:element name="void"/>
+            <xs:element name="vra"/>
+            <xs:element name="wao"/>
+            <xs:element name="wgs84"/>
+            <xs:element name="other"/>
+            <xs:element name="rdfEmpty"/>
+       -->
+    
+    <xs:complexType name="historyType">
+        <xs:sequence>
+            <xs:element name="dateCreated">
+                <xs:complexType>
+                    <xs:choice>
+                        <xs:element name="single" type="xs:date"/>
+                        <xs:element name="range">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="start" type="xs:date"/>
+                                    <xs:element name="end" type="xs:date"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:choice>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="created4Coll" type="xs:string"/>
+            <!-- justification needs to be a type=para -->
+            <xs:element name="justification" type="xs:string"/>
+            <xs:element name="changeLog">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="change" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:simpleContent>
+                                    <xs:extension base="xs:string">
+                                        <xs:attribute name="date" type="xs:date"/>
+                                    </xs:extension>
+                                </xs:simpleContent>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+</xs:schema>
