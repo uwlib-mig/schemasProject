@@ -61,14 +61,13 @@
         </customization>
     </descriptions>
     <examples>
-        <!-- BMR TO-DO: Draft default examples for object, standalone -->
         <example co="all">
-            <para>פאב׳לו אי ב׳ירז׳יניאה: רומאנסו</para>
-            <para>白鯨</para>
+            <para>&lt;br/&gt;פאב׳לו אי ב׳ירז׳יניאה: רומאנסו&lt;br/&gt;</para>
+            <para>&lt;br/&gt;白鯨&lt;br/&gt;</para>
         </example>
         <example co="no">
-            <para>פאב׳לו אי ב׳ירז׳יניאה: רומאנסו</para>
-            <para>白鯨</para>
+            <para>&lt;br/&gt;&lt;br/&gt;פאב׳לו אי ב׳ירז׳יניאה: רומאנסו&lt;br/&gt;</para>
+            <para>&lt;br/&gt;白鯨&lt;br/&gt;</para>
         </example>
         <customization co="object" dd="p16786coll3" genre_form="text">
             <para>פאב׳לו אי ב׳ירז׳יניאה: רומאנסו</para>
