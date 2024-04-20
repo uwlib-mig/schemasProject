@@ -75,7 +75,7 @@
          <para>Use the following value:</para>
          <para>University of Washington Tacoma Library</para>
       </customization>
-      <customization co="no" dd="becker" genre_form="*">
+      <customization co="no" dd="becker">
          <para>Record the following value:</para>
          <para>University of Washington Libraries. Special Collections</para>
       </customization>

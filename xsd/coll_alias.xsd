@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   targetNamespace="https://uwlib-mig.github.io/schemasProject/xsd/"
-   xmlns="https://uwlib-mig.github.io/schemasProject/xsd/"
-   elementFormDefault="qualified">
+<xs:schema xmlns="https://uwlib-mig.github.io/schemasProject/xsd/"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           targetNamespace="https://uwlib-mig.github.io/schemasProject/xsd/"
+           elementFormDefault="qualified">
     
    <!-- schema structure allows multiple, whitespace delimited values -->
    <xs:simpleType name="coll_alias_type">
@@ -12,6 +12,7 @@
             <xs:list>
                <xs:simpleType>
                   <xs:restriction xmlns:fn="http://www.w3.org/2005/xpath-functions" base="xs:token">
+                     <!-- default '*' -->
                      <xs:enumeration value="*">
                         <xs:annotation>
                            <xs:documentation>Use this value to indicate that the guidance or example value applies to all collections, in the absence of content tagged for a specific collection(s).</xs:documentation>
