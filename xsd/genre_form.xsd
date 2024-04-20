@@ -12,8 +12,7 @@
                 <xs:list>
                     <xs:simpleType>
                         <xs:restriction base="xs:token">
-                            
-                            <!-- default -->
+                            <!-- default '*' -->
                             <xs:enumeration value="*">
                                 <xs:annotation>
                                     <xs:documentation>Use this value to indicate that the guidance or example value applies to all genre/forms, in the absence of content tagged for a specific genre/form(s).</xs:documentation>
@@ -21,7 +20,7 @@
                             </xs:enumeration>
                             
                             <!-- LCGFT -->
-                            <xs:enumeration value="Records_\(Documents\)">
+                            <xs:enumeration value="Records_(Documents)">
                                 <xs:annotation>
                                     <xs:documentation>Created for Becker/Cambodia, to describe digitized notes</xs:documentation>
                                     <xs:appinfo>http://id.loc.gov/authorities/genreForms/gf2014026163</xs:appinfo>
