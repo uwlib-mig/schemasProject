@@ -36,6 +36,12 @@
                                     <xs:appinfo>http://id.loc.gov/authorities/genreForms/gf2014026131</xs:appinfo>
                                 </xs:annotation>
                             </xs:enumeration>
+                            <xs:enumeration value="Oral_histories">
+                                <xs:annotation>
+                                    <xs:documentation>Created for Sephardic Studies Digital Collection - p16786coll3; coll includes oral histories.</xs:documentation>
+                                    <xs:appinfo>http://id.loc.gov/authorities/genreForms/gf2011026431</xs:appinfo>
+                                </xs:annotation>
+                            </xs:enumeration>
                             
                             <!-- used in properties-files for legacy MAPs -->
                             <xs:enumeration value="default">
@@ -53,11 +59,6 @@
                             <xs:enumeration value="song">
                                 <xs:annotation>
                                     <xs:documentation>Created for Sephardic Studies Digital Collection - p16786coll3; coll includes audio recordings of song performances.</xs:documentation>
-                                </xs:annotation>
-                            </xs:enumeration>
-                            <xs:enumeration value="oh">
-                                <xs:annotation>
-                                    <xs:documentation>Created for Sephardic Studies Digital Collection - p16786coll3; coll includes oral histories.</xs:documentation>
                                 </xs:annotation>
                             </xs:enumeration>
                         </xs:restriction>
