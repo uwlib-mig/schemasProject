@@ -44,7 +44,7 @@
             <para>Order does not matter.</para>
             <para>Either a donor or lender value must be provided for every compound object.</para>
         </customization>
-        <customization co="object" dd="p16786coll3" genre_form="song Oral_histories">
+        <customization co="object" dd="p16786coll3" genre_form="Ballads Oral_histories">
             <para>Find donor name in Sephardic Studies Collection Master Catalog; the item may be recorded on the Ladino Audio Archive tab.</para>
             <para>Check both the main collection tab and Ladino Audio Archive tab for the correct file.</para>
             <para>Contributor is considered a donor if the catalog notes that the item is property of Sephardic Studies.</para>

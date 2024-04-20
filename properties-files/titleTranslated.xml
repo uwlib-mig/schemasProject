@@ -33,7 +33,7 @@
         <instructions co="all">
             <para>Provide a name for the resource by translating an existing title.</para>
         </instructions>
-        <customization co="object" dd="p16786coll3" genre_form="song">
+        <customization co="object" dd="p16786coll3" genre_form="Ballads">
             <para>Translate the song title.</para>
             <para>Use title-case capitalization.</para>
             <para>Do not use a period at the end of the translated title.</para>
@@ -43,7 +43,7 @@
         <example co="all">
             <para>The Abduction of Helen of Troy</para>
         </example>
-        <customization co="object" dd="p16786coll3" genre_form="song">
+        <customization co="object" dd="p16786coll3" genre_form="Ballads">
             <para>The Abduction of Helen of Troy</para>
         </customization>
     </examples>

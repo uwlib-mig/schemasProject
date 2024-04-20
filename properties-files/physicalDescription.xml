@@ -72,7 +72,7 @@
          <para>Record the height using Arabic numerals.</para>
          <para>Use a space and “cm” (no following punctuation) after the numeral(s) (“ cm”).</para>
       </customization>
-      <customization co="item" dd="p16786coll3" genre_form="song">
+      <customization co="item" dd="p16786coll3" genre_form="Ballads">
          <para>For ballad recordings, Physical Description is recorded at the compound-object-item level.</para>
          <para>If information is available, provide a description of the physical resource from which the digital surrogate (compound-object item) was created.</para>
          <para>&lt;br/&gt;For audio-file items (song recordings), if information is available, provide a runtime for the analog media from which the audio file was created.</para>
@@ -169,7 +169,7 @@
          <para>xi, 25 pages, 15 unnumbered pages, 30 cm</para>
          <para>2 unnumbered pages, 300 pages, 35 cm</para>
       </customization>
-      <customization co="item" dd="p16786coll3" genre_form="song">
+      <customization co="item" dd="p16786coll3" genre_form="Ballads">
          <para>00:32:23</para>
          <para>10 x 15 cm</para>
          <para>28 cm</para>

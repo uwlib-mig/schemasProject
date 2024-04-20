@@ -53,7 +53,7 @@
       <customization co="item" dd="krab">
          <para>Enter collection name and number, represented as a phrase: "KRAB-FM Lesbian-Feminist Radio Program recordings 6115-001."</para>
       </customization>
-      <customization co="object" dd="p16786coll3" genre_form="text song Oral_histories">
+      <customization co="object" dd="p16786coll3" genre_form="text Ballads Oral_histories">
          <para>Where applicable, this value will be entered by University of Washington Libraries Special Collections Staff following transfer of collection resources.</para>
          <para>Where a finding aid for an archival collection including the resource exists, the value will be constructed using the collection name and accession number given there.</para>
       </customization>
@@ -82,7 +82,7 @@
       <customization co="item" dd="krab">
          <para>KRAB-FM Lesbian-Feminist Radio Program recordings 6115-001</para>
       </customization>
-      <customization co="object" dd="p16786coll3" genre_form="text song Oral_histories">
+      <customization co="object" dd="p16786coll3" genre_form="text Ballads Oral_histories">
          <para>🚧 🚧 🚧</para>
       </customization>
       <customization co="no" dd="harriman">

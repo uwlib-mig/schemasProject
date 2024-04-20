@@ -61,7 +61,7 @@
          <para>Translate non-English text or terminology to aid cataloging staff in metadata creation.</para>
          <para>&lt;br/&gt;Required for all textual-resource compound objects which will require subject or genre/form analysis from UWL cataloging staff.</para>
       </customization>
-      <customization co="object" dd="p16786coll3" genre_form="song">
+      <customization co="object" dd="p16786coll3" genre_form="Ballads">
          <para>Staff Notes values are hidden in the public CONTENTdm interface.</para>
          <para>These values will be used by University of Washington Libraries (UWL) cataloging staff to assign controlled values for the following fields for ballad recordings:</para>
          <para>Genre/Form (LCGFT)</para>
@@ -109,7 +109,7 @@
          <para>This is a wedding certificate decorated with a floral pattern behind a picture of a menorah (Jewish candelabra) and an open book with the words “Siman Tov u-Mazal Tov,” a Hebrew phrase often used to congratulate a couple on their wedding. </para>
          <para>The Ladino text in this cigarette advertisement reads “A high-quality product.”</para>
       </customization>
-      <customization co="object" dd="p16786coll3" genre_form="song">
+      <customization co="object" dd="p16786coll3" genre_form="Ballads">
          <para>N/A</para>
       </customization>
       <customization co="object" dd="p16786coll3" genre_form="Oral_histories">

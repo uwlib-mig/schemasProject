@@ -44,7 +44,7 @@
             <para>Order of values does not matter.</para>
             <para>Either a lender or donor value must be provided for every compound object.</para>
         </customization>
-        <customization co="object" dd="p16786coll3" genre_form="song Oral_histories">
+        <customization co="object" dd="p16786coll3" genre_form="Ballads Oral_histories">
             <para>Find lender name in Sephardic Studies Collection Master Catalog; the item may be recorded on the Ladino Audio Archive tab.</para>
             <para>Check both the main collection tab and Ladino Audio Archive tab for the correct file.</para>
             <para>Contributor is considered a lender if the catalog notes that item is still property of that individual.</para>
@@ -77,7 +77,7 @@
         <example co="no">
             <para>Maimon, Rabbi Solomon</para>
         </example>
-        <customization co="object" dd="p16786coll3" genre_form="text song Oral_histories">
+        <customization co="object" dd="p16786coll3" genre_form="text Ballads Oral_histories">
             <para>Maimon, Rabbi Solomon</para>
         </customization>
     </examples>

@@ -69,7 +69,7 @@
          <para>Start each distinct note entry on a new line.</para>
          <para>When entering values in a spreadsheet, note that depending on the spreadsheet-editing application, CTRL + ENTER, ALT + ENTER, or another key combination can be used to enter a new line within a cell.</para>
       </customization>
-      <customization co="object" dd="p16786coll3" genre_form="song Oral_histories">
+      <customization co="object" dd="p16786coll3" genre_form="Ballads Oral_histories">
          <para>Enter any information of importance that is not represented elsewhere.</para>
          <para>When reusing existing metadata, only the place name will be included the value for Recording Location.</para>
          <para>Any additional information present in existing metadata which will not be used in the Recording Location value may be included here.</para>
@@ -147,7 +147,7 @@
          <para>Editor value taken from introduction.</para>
          <para>Publisher location from previous cataloger.</para>
       </customization>
-      <customization co="object" dd="p16786coll3" genre_form="song">
+      <customization co="object" dd="p16786coll3" genre_form="Ballads">
          <para>Song from father's pizmonim manuscript.</para>
          <para>Uniquely Sephardic in origin. Given its subject matter, this ballad has been transmitted both orally and in written form, in Pesach hagaddahs. The only extant versions are from the Eastern tradition and one version from Crypto Portuguese Jews. Thus, an earlier version must have existed among Peninsular Jews. There is no evidence of its existence among non-Jews.</para>
          <para>Recorded in the home of Jack Azose.</para>

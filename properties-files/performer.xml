@@ -34,7 +34,7 @@
         <instructions co="all">
             <para>Provide the name of a performer who is seen, heard, or otherwise featured in the resource.</para>
         </instructions>
-        <customization co="object" dd="p16786coll3" genre_form="song">
+        <customization co="object" dd="p16786coll3" genre_form="Ballads">
             <para>Provide the names of other people who may be heard performing in the recording.</para>
             <para>This can include singers or other performers.</para>
             <para>When appropriate, search the &lt;a href="https://id.loc.gov/authorities/names.html"&gt;Library of Congress Name Authority File&lt;/a&gt; via id.loc.gov for the name of a performer who may be heard in the song recording.</para>
@@ -52,7 +52,7 @@
             <para>Azose, Louise</para>
             <para>Azose, Jack; Azose, Louise</para>
         </example>
-        <customization co="object" dd="p16786coll3" genre_form="song">
+        <customization co="object" dd="p16786coll3" genre_form="Ballads">
             <para>Azose, Louise</para>
             <para>Azose, Jack; Azose, Louise</para>
         </customization>

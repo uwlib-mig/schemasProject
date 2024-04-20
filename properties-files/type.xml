@@ -46,7 +46,7 @@
          <para>Separate multiple values with a semicolon.</para>
       </instructions>-->  
       <!-- See MIG 2021-11-02 notes for SSDC - p16786coll3 - implementation -->
-      <customization co="object" dd="p16786coll3" genre_form="song Oral_histories">
+      <customization co="object" dd="p16786coll3" genre_form="Ballads Oral_histories">
          <para>Values for this property must come from the &lt;a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7"&gt;DCMI Type Vocabulary&lt;/a&gt;.</para>
          <para>For ballad, and oral history compound objects, provide the following value:</para>
          <para>Sound</para>
@@ -64,7 +64,7 @@
          <para>&lt;br/&gt;Separate multiple entries with a semicolon and space (“; “).</para>
          <para>Order of values does not matter.</para>
       </customization>
-      <customization co="item" dd="p16786coll3" genre_form="song">
+      <customization co="item" dd="p16786coll3" genre_form="Ballads">
          <para>For audio-file compound-object items (ballad recordings), provide the following value:</para>
          <para>Sound</para>
          <para>For image-file compound-object items which are performer photographs, provide the following value:</para>
@@ -161,7 +161,7 @@
          <para>MovingImage</para>
       </customization>
       <!-- See MIG 2021-11-02 notes for SSDC - p16786coll3 - implementation -->
-      <customization co="object" dd="p16786coll3" genre_form="song Oral_histories">
+      <customization co="object" dd="p16786coll3" genre_form="Ballads Oral_histories">
          <para>Sound</para>
       </customization>
       <customization co="object" dd="p16786coll3" genre_form="text">
@@ -172,7 +172,7 @@
          <para>StillImage</para>
          <para>StillImage; Text</para>
       </customization>
-      <customization co="item" dd="p16786coll3" genre_form="song">
+      <customization co="item" dd="p16786coll3" genre_form="Ballads">
          <para>Sound</para>
          <para>StillImage</para>
          <para>Image</para>

@@ -32,7 +32,7 @@
         </definition>
         <!-- need default instructions -->
         <instructions co="all"/>
-        <customization co="object" dd="p16786coll3" genre_form="song">
+        <customization co="object" dd="p16786coll3" genre_form="Ballads">
             <para>For metadata creation taking place outside the University of Washington Libraries (UWL) Cataloging and Metadata Services unit:</para>
             <para>Enter a performer birthplace in natural language, providing sufficient information to disambiguate place names as needed.</para>
             <para>As a rule, include more information rather than less.</para>
@@ -53,7 +53,7 @@
     </descriptions>
     <examples>
         <example co="all"/>
-        <customization co="object" dd="p16786coll3" genre_form="song">
+        <customization co="object" dd="p16786coll3" genre_form="Ballads">
             <para>[Natural-language values for review by cataloging staff:]</para>
             <para>Ortaköy (Istanbul, Turkey)</para>
             <para>&lt;br/&gt;[Structured values provided by cataloging staff:]</para>

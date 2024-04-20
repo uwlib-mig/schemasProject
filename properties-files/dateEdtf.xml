@@ -59,7 +59,7 @@
          <para>If the value of Date is not any of the above, consult the EDTF spedification to determine the appropriate notation.</para>
          <para>Date-Edtf value should agree with dates values entered in Date and Dates fields.</para>
       </instructions>
-      <customization co="object" dd="p16786coll3" genre_form="Oral_histories text song">
+      <customization co="object" dd="p16786coll3" genre_form="Oral_histories text Ballads">
          <!-- use default co instructions with added note about conversion from lunar -->
          <para>Reflects the date in the "Date" field.</para>
          <para>Express all dates, including date ranges, using Library of Congress' Extended Date Time Format.</para>

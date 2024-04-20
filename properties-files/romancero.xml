@@ -38,7 +38,7 @@
             <para>Begin each new thematic element with a capital letter.</para>
             <para>If no match is found, do not provide a value.</para>
         </instructions>
-        <customization co="object" dd="p16786coll3" genre_form="song">
+        <customization co="object" dd="p16786coll3" genre_form="Ballads">
             <!-- redundant; see schemasProject issue #25 -->
             <para>Search for the song title on pages 219-221 of "&lt;a href="https://alliance-primo.hosted.exlibrisgroup.com/permalink/f/kjtuig/CP71363340660001451"&gt;Romances judeo-españoles de Oriente : nueva recolección&lt;/a&gt;."
             </para>
@@ -52,7 +52,7 @@
             <para>Capture and seduction by taking aboard ship</para>
             <para>Girl enticed into boat and abducted; Capture by luring; Capture and seduction by taking aboard ship; Apple tree as symbol of seduction</para>
         </example>
-        <customization co="object" dd="p16786coll3" genre_form="song">
+        <customization co="object" dd="p16786coll3" genre_form="Ballads">
             <para>Capture and seduction by taking aboard ship</para>
             <para>Girl enticed into boat and abducted; Capture by luring; Capture and seduction by taking aboard ship; Apple tree as symbol of seduction</para>
         </customization>

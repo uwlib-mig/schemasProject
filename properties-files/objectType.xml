@@ -74,7 +74,7 @@
          <para>book</para>
          <para>newspaper</para>
       </customization>
-      <customization co="object" dd="p16786coll3" genre_form="song">
+      <customization co="object" dd="p16786coll3" genre_form="Ballads">
          <para>Enter the following value:</para>
          <para>ballads</para>
       </customization>
@@ -129,7 +129,7 @@
          <para>book</para>
          <para>newspaper</para>
       </customization>
-      <customization co="object" dd="p16786coll3" genre_form="song">
+      <customization co="object" dd="p16786coll3" genre_form="Ballads">
          <para>ballads</para>
       </customization>
       <customization co="object" dd="p16786coll3" genre_form="Oral_histories">

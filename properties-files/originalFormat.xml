@@ -51,7 +51,7 @@
          <para>For audio WAVE files, enter audio/wav.</para>
          <para>Separate multiple formats with a semicolon.</para>
       </instructions> -->
-      <customization co="item" dd="p16786coll3" genre_form="song">
+      <customization co="item" dd="p16786coll3" genre_form="Ballads">
          <para>Values for Original Format must be taken from the &lt;a href="http://www.rdaregistry.info/termList/RDACarrierType/"&gt;RDA Carrier Type&lt;/a&gt; vocabulary.</para>
          <para>For ballad recordings, enter one of the following values depending on which compound-object item you are describing.</para>
          <para>For audio file items:</para>
@@ -114,7 +114,7 @@
          <para>videocassette</para>
          <para>video/mp4</para>
       </example>
-      <customization co="item" dd="p16786coll3" genre_form="song">
+      <customization co="item" dd="p16786coll3" genre_form="Ballads">
          <para>audiocassette</para>
          <para>sheet</para>
       </customization>

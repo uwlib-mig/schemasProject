@@ -33,7 +33,7 @@
         <instructions co="all">
             <para>Provide the name of a primary performer who is seen, heard, or otherwise featured in the resource.</para>
         </instructions>
-        <customization co="object" dd="p16786coll3" genre_form="song">
+        <customization co="object" dd="p16786coll3" genre_form="Ballads">
             <para>Provide the name of the primary singer featured in the recording.</para>
             <para>When appropriate, search the &lt;a href="https://id.loc.gov/authorities/names.html"&gt;Library of Congress Name Authority File&lt;/a&gt; via id.loc.gov for the name of the singer.</para>
             <para>If a potential match is found, confirm that it is the person associated with the resource. It may be helpful to review information included in the web display such as source(s) of information and occupation (for persons), and/or to follow the links provided for exact and/or closely matching concepts from other schemes.</para>
@@ -49,7 +49,7 @@
         <example co="all">
             <para>Azose, Jack</para>
         </example>
-        <customization co="object" dd="p16786coll3" genre_form="song">
+        <customization co="object" dd="p16786coll3" genre_form="Ballads">
             <para>Azose, Jack</para>
         </customization>
     </examples>

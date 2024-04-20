@@ -73,7 +73,7 @@
          <para>&lt;br/&gt;For tables of contents (.pdf files):</para>
          <para>Do not enter a value.</para>
       </customization>
-      <customization co="item" dd="p16786coll3" genre_form="Oral_histories song">
+      <customization co="item" dd="p16786coll3" genre_form="Oral_histories Ballads">
          <para>For audio files, enter the runtime of the digital access file.</para>
          <para>Format runtime as HH:MM:SS.</para>
       </customization>
@@ -114,7 +114,7 @@
          <para>00:12:58</para>
          <para>01:28:14</para>
       </customization>
-      <customization co="item" dd="p16786coll3" genre_form="Oral_histories song">
+      <customization co="item" dd="p16786coll3" genre_form="Oral_histories Ballads">
          <para>00:12:58</para>
       </customization>
       <customization co="item" dd="temp_alias_001" genre_form="default">

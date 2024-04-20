@@ -139,7 +139,7 @@
          <para>In cases where resources are printed in romanized Ladino, transcribe the title into this field exactly as it appears, even if it doesn’t conform to the Aki Yerushalayim standard.</para>
          <para>All compound objects must have a title.</para>
       </customization>
-      <customization co="object" dd="p16786coll3" genre_form="song">
+      <customization co="object" dd="p16786coll3" genre_form="Ballads">
          <para>Construct as follows:</para>
          <para>Audio: [song title]</para>
          <para>(Do not enter square brackets around the song title.)</para>
@@ -165,7 +165,7 @@
          <para>For pages where pagination is indicated using a Hebrew letter, provide this in parentheses following the Arabic numeral(s).</para>
          <para>For pages without any pagination in this case (usually the pages facing those marked with a Hebrew letter), enter "(unnumbered)" following the Arabic numeral(s).</para>
       </customization>
-      <customization co="item" dd="p16786coll3" genre_form="song">
+      <customization co="item" dd="p16786coll3" genre_form="Ballads">
          <para>Construct as follows for audio-file (.mp3/.wav/etc.) items:</para>
          <para>[song title] - audio</para>
          <para>Enter the song title romanized according to Aki Yerushalayim.</para>
@@ -264,7 +264,7 @@
       <customization co="object" dd="p16786coll3" genre_form="text">
          <para>Pavlo i Virjinia : romanso</para>
       </customization>
-      <customization co="object" dd="p16786coll3" genre_form="song">
+      <customization co="object" dd="p16786coll3" genre_form="Ballads">
          <para>Audio: Alavar kero al Dyo</para>
       </customization>
       <customization co="object" dd="p16786coll3" genre_form="Oral_histories">
@@ -283,7 +283,7 @@
          <para>Page 4 (ג)</para>
          <para>Page 5 (unnumbered)</para>
       </customization>
-      <customization co="item" dd="p16786coll3" genre_form="song">
+      <customization co="item" dd="p16786coll3" genre_form="Ballads">
          <para>La Muerte del Duque de Gandía (í-a) - audio</para>
          <para>Image of Bohora Cornell (Coronel), singer</para>
          <para>Musical Transcription: La Muerte del Duque de Gandí</para>
