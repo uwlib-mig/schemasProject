@@ -120,9 +120,9 @@
          <para>Values for this property must come from the &lt;a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7"&gt;DCMI Type Vocabulary&lt;/a&gt;.</para>
          <para>&lt;br/&gt;For photographs, record the following value:</para>
          <para>StillImage</para>
-         <para>For newsletters and documents without images, record the following value:</para>
+         <para>&lt;br/&gt;For newsletters and documents without images, record the following value:</para>
          <para>Text</para>
-         <para>For newsletters and documents without images, record the following value:</para>
+         <para>&lt;br/&gt;For newsletters and documents with images, record the following value:</para>
          <para>Text; StillImage</para>
       </customization>
    </descriptions>
