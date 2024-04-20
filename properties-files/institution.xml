@@ -27,15 +27,14 @@
       <dspaceProperty/>
    </dspace>
    <descriptions>
-      <!-- BMR note: Confirming that these definitions are as they should be... -->
       <definition>
          <para>Information for the purpose of facilitating browsing in the University of Washington Libraries Digital Collections online interface.</para>
       </definition>
       <instructions co="no">
-         <para>[Uncertain]</para>
+         <para>&#x1F6A7;&#x1F6A7;&#x1F6A7;</para>
       </instructions>
       <instructions co="object">
-         <para>[Uncertain]</para>
+         <para>&#x1F6A7;&#x1F6A7;&#x1F6A7;</para>
       </instructions>
       <instructions co="item">
          <para>Enter the following value:</para>
