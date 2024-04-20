@@ -7,17 +7,15 @@
 
     <!-- schema structure allows multiple, whitespace delimited values -->
     <xs:simpleType name="genre_form_type">
+        <xs:annotation>
+            <xs:documentation>Where genre/form string taken from LCGFT and includes whitespace, use '_'.</xs:documentation>
+            <xs:documentation>Related: contentdm_maps/xsl/functions.xsl - xsl:function cdmm:render_genre_form</xs:documentation>
+        </xs:annotation>
         <xs:restriction>
             <xs:simpleType>
                 <xs:list>
                     <xs:simpleType>
                         <xs:restriction base="xs:token">
-                            <!-- default '*' -->
-                            <xs:enumeration value="*">
-                                <xs:annotation>
-                                    <xs:documentation>Use this value to indicate that the guidance or example value applies to all genre/forms, in the absence of content tagged for a specific genre/form(s).</xs:documentation>
-                                </xs:annotation>
-                            </xs:enumeration>
                             
                             <!-- LCGFT -->
                             <xs:enumeration value="Records_(Documents)">
