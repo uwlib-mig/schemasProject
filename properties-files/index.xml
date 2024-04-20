@@ -34,7 +34,7 @@
         <instructions co="all">
             <para>Enter an abridged transcript, or list of contents, for the resource.</para>
         </instructions>
-        <customization co="object" dd="p16786coll3" genre_form="oh">
+        <customization co="object" dd="p16786coll3" genre_form="Oral_histories">
             <para>Enter an abridged transcript or a list of contents.</para>
             <para>Start each list entry on a new line preceded by a hyphen.</para>
             <para>When entering index values in a spreadsheet, note that depending on the spreadsheet-editing application, CTRL + ENTER, ALT + ENTER, or another key combination can be used to enter a new line within a cell.</para>
@@ -50,7 +50,7 @@
     <examples>
         <example co="object"/>
         <example co="no"/>
-        <customization co="object" dd="p16786coll3" genre_form="oh">
+        <customization co="object" dd="p16786coll3" genre_form="Oral_histories">
             <para>Topics presented in order of discussion on recording:</para>
             <para>- More on civil rights and local activism.</para>
             <para>- Phone rings in the background</para>

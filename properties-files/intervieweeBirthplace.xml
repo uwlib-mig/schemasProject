@@ -39,7 +39,7 @@
             <para>Provide the place of birth of a person interviewed.</para>
             <para>Provide a controlled form of the place name if possible.</para>
         </instructions>
-        <customization co="object" dd="p16786coll3" genre_form="oh">
+        <customization co="object" dd="p16786coll3" genre_form="Oral_histories">
             <para>For metadata creation taking place outside the University of Washington Libraries (UWL) Cataloging and Metadata Services unit:</para>
             <para>Enter the place of birth of the interviewee in natural language, providing sufficient information to disambiguate place names as needed.</para>
             <para>As a rule, include more information rather than less.</para>
@@ -65,7 +65,7 @@
             <para>Pakistan—Lahore</para>
             <para>United States—Washington (State)—Bellingham</para>
         </example>
-        <customization co="object" dd="p16786coll3" genre_form="oh">
+        <customization co="object" dd="p16786coll3" genre_form="Oral_histories">
             <para>[Natural-language values for review by cataloging staff:]</para>
             <para>Seattle, Washington, United States</para>
             <para>Thessaloniki, Greece [Naar, Albert]; Istanbul, Turkey [Saltiel, Jack]</para>

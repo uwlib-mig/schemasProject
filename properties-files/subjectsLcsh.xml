@@ -76,7 +76,7 @@
          <para>For textual resources, be sure to record a staffNotes value which provides the needed information for UWL cataloging staff to perform subject analysis.</para>
          <para>For details about the information needed by cataloging staff, contact the collection manager(s) or metadata liaison(s).</para>
       </customization>
-      <customization co="object" dd="p16786coll3" genre_form="oh">
+      <customization co="object" dd="p16786coll3" genre_form="Oral_histories">
          <para>University of Washington Libraries (UWL) cataloging staff will provide a value or values for this property.</para>
          <para>For metadata creation taking place outside the UWL Cataloging and Metadata Services unit:</para>
          <para>Do not provide a value for this property.</para>
@@ -122,7 +122,7 @@
          <para>Bible. Ruth--Commentaries</para>
          <para>Ladino language--Grammar--Textbooks</para>
       </customization>
-      <customization co="object" dd="p16786coll3" genre_form="oh">         
+      <customization co="object" dd="p16786coll3" genre_form="Oral_histories">         
          <para>Sephardim--Washington (State)--Interviews</para>
          <para>Jews--Washington (State)--Interviews</para>
          <para>Jews--Washington (State)--History</para>

@@ -47,7 +47,7 @@
       <customization co="item" dd="p16786coll3" genre_form="song">
          <para>If available and applicable, provide details regarding the digitization of ballad compound-object items (singer photo, audio file, etc.).</para>
       </customization>
-      <customization co="item" dd="p16786coll3" genre_form="oh">
+      <customization co="item" dd="p16786coll3" genre_form="Oral_histories">
          <para>If available and applicable, provide details regarding the digitization of oral history compound-object items (interviewee photos, audio file, etc.).</para>
       </customization>
       <customization co="item" dd="temp_alias_001" genre_form="default">
@@ -76,7 +76,7 @@
       <customization co="object" dd="p16786coll3" genre_form="text">
          <para>Scanned from original text or image at 400 dpi, saved in TIFF format, resized and enhanced using Adobe Photoshop, and imported as JPEG2000 using Contentdm software's JPEG2000 Extension. 2006.</para>
       </customization>
-      <customization co="item" dd="p16786coll3" genre_form="song oh">
+      <customization co="item" dd="p16786coll3" genre_form="song Oral_histories">
          <!-- using the krab example and an example from SCOHDD to give an indication for SSDC values -->
          <para>Sample rate: 96KHz. Bit depth: 24. Issues encountered: Repaired several faulty splices. Date of transfer: 2019-01-04. Applicable conservation treatments: Baked and repaired several splices. De-noise and de-hum (iZotrope RX5).</para>
          <para>Digital, stereo. Copied from analog recording to compact disc. Converted to 24 bit/48kHz Broadcast WAV format files by University of Washington Libraries in 2010.</para>

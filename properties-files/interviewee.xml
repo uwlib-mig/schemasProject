@@ -42,7 +42,7 @@
          <para>Use LC Name Authority File for form of name when available: http://authorities.loc.gov or http://id.loc.gov/</para>
          <para>Separate multiple values with a semicolon.</para>
       </instructions>
-      <customization co="object" dd="p16786coll3" genre_form="oh">
+      <customization co="object" dd="p16786coll3" genre_form="Oral_histories">
          <para>Provide the name of the interviewee.</para>
          <para>When appropriate, search the &lt;a href="https://id.loc.gov/authorities/names.html"&gt;Library of Congress Name Authority File&lt;/a&gt; via id.loc.gov for the interviewee name.</para>
          <para>If a potential match is found, confirm that it is the person associated with the resource. It may be helpful to review information included in the web display such as source(s) of information and occupation (for persons), and/or to follow the links provided for exact and/or closely matching concepts from other schemes.</para>
@@ -82,7 +82,7 @@
          <para>Honey, Michael K.</para>
          <para>Ellis, Joe, 1947-</para>
       </customization>
-      <customization co="object" dd="p16786coll3" genre_form="oh">
+      <customization co="object" dd="p16786coll3" genre_form="Oral_histories">
          <para>Maimon, Solomon</para>
       </customization>
       <customization co="object" dd="temp_alias_001" genre_form="default">

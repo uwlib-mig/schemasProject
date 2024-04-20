@@ -36,7 +36,7 @@
             <para>Find the item in Sephardic Studies Collection Master Catalog in column AX (File Name) and enter its corresponding number here.</para>
             <para>Required for all compound objects.</para>
         </customization>
-        <customization co="object" dd="p16786coll3" genre_form="song oh">
+        <customization co="object" dd="p16786coll3" genre_form="song Oral_histories">
             <para>Find the item in Sephardic Studies Collection Master Catalog in column AX (File Name) and enter its corresponding number here.</para>
             <para>If a match is not found, search the Sephardic Studies Collection Master Catalog's Ladino Audio Archive tab in column P (Digitized File Name) and enter its corresponding number here.</para>
             <para>Required for all compound objects.</para>
@@ -53,7 +53,7 @@
         <customization co="object" dd="p16786coll3" genre_form="text">
             <para>ST00495</para>
         </customization>
-        <customization co="object" dd="p16786coll3" genre_form="song oh">
+        <customization co="object" dd="p16786coll3" genre_form="song Oral_histories">
             <para>LAA0003</para>
         </customization>
     </examples>

@@ -146,7 +146,7 @@
          <para>Romanize song titles according to the Aki Yerushalayim standard. (Reference available &lt;a href="https://drive.google.com/drive/folders/178p999G1zCUMaMi8kAVtNiW8BF3RAYZa?usp=sharing"&gt;here&lt;/a&gt;.)</para>
          <para>All compound objects must have a title.</para>
       </customization>
-      <customization co="object" dd="p16786coll3" genre_form="oh">
+      <customization co="object" dd="p16786coll3" genre_form="Oral_histories">
          <para>Construct as follows:</para>
          <para>[interviewee name] interview</para>
          <para>Provide the interviewee name in natural order.</para>
@@ -177,7 +177,7 @@
          <para>(Do not enter square brackets around song titles or singer names.)</para>
          <para>All compound-object items--audio files and image files--must have a title.</para>
       </customization>
-      <customization co="item" dd="p16786coll3" genre_form="oh">
+      <customization co="item" dd="p16786coll3" genre_form="Oral_histories">
          <para>Construct as follows for audio file (.mp3/.wav/etc.) items which are interview recordings:</para>
          <para>[interviewee name] interview, audio</para>
          <para>Construct as follows for image-file (.jpg) items which are images of interviewees:</para>
@@ -267,7 +267,7 @@
       <customization co="object" dd="p16786coll3" genre_form="song">
          <para>Audio: Alavar kero al Dyo</para>
       </customization>
-      <customization co="object" dd="p16786coll3" genre_form="oh">
+      <customization co="object" dd="p16786coll3" genre_form="Oral_histories">
          <para>Solomon Maimon interview</para>
       </customization>
       <customization co="item" dd="p16786coll3" genre_form="text">
@@ -288,7 +288,7 @@
          <para>Image of Bohora Cornell (Coronel), singer</para>
          <para>Musical Transcription: La Muerte del Duque de Gandí</para>
       </customization>
-      <customization co="item" dd="p16786coll3" genre_form="oh">
+      <customization co="item" dd="p16786coll3" genre_form="Oral_histories">
          <para>Solomon Maimon interview, audio</para>
          <para>Image of Solomon Maimon</para>
          <para>Solomon Maimon interview, transcript</para>

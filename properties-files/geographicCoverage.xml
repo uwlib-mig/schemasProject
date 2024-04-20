@@ -52,7 +52,7 @@
          <para>For neighborhoods or other types of locales below the city level, enter an LCSH heading in the Subjects (LCSH) field above.</para>
          <para>Separate multiple entries with a semicolon.</para>
       </instructions>
-      <customization co="object" dd="p16786coll3" genre_form="oh">
+      <customization co="object" dd="p16786coll3" genre_form="Oral_histories">
          <para>For metadata creation taking place outside the UWL Cataloging and Metadata Services unit:</para>
          <para>Enter broad and local geographic locations given significant attention in the resource in natural language, providing sufficient information to disambiguate place names as needed.</para>
          <para>As a rule, include more information rather than less.</para>
@@ -110,7 +110,7 @@
          <para>Pakistan—Lahore</para>
          <para>United States—Washington (State)—Bellingham</para>
       </customization>
-      <customization co="object" dd="p16786coll3" genre_form="oh">
+      <customization co="object" dd="p16786coll3" genre_form="Oral_histories">
          <para>[Natural-language values for review by cataloging staff:]</para>
          <para>Tacoma, Washington, USA</para>
          <para>Rhodes, Greece</para>

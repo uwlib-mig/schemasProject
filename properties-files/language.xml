@@ -50,7 +50,7 @@
          <para>Order of values does not matter.</para>
          <para>Required for all compound objects where applicable.</para>
       </customization>
-      <customization co="object" dd="p16786coll3" genre_form="oh song">
+      <customization co="object" dd="p16786coll3" genre_form="Oral_histories song">
          <para>Enter language names, fully spelled out, as they appear in the &lt;a href="https://iso639-3.sil.org/code_tables/639/data"&gt;ISO 639 Code Tables&lt;/a&gt; "Language Name(s)" column. Note that Ladino is listed as such, and not as Judeo-Spanish or Judezmo.</para>
          <para>For Aramaic-language resources, simply enter "Aramaic".</para>
          <para>Separate multiple values using a semicolon and space (“; “).</para>
@@ -94,7 +94,7 @@
          <para>Hebrew</para>
          <para>Ladino; Hebrew</para>
       </customization>
-      <customization dd="p16786coll3" co="object" genre_form="oh song">
+      <customization dd="p16786coll3" co="object" genre_form="Oral_histories song">
          <para>English</para>
          <para>Spanish</para>
          <para>English; Spanish</para>

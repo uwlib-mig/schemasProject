@@ -39,7 +39,7 @@
       <instructions co="item">
          <para>Enter "xyz" to denote that the item requires subject headings from local catalogers.</para>
       </instructions>
-      <customization co="object" dd="p16786coll3" genre_form="oh song text">
+      <customization co="object" dd="p16786coll3" genre_form="Oral_histories song text">
          <para>For metadata creation taking place outside the UWL Cataloging and Metadata Services unit:</para>
          <para>Enter "xyz" to request the creation and/or review of values for one or more of the following fields by UWL cataloging staff:</para>
          <para>&lt;br/&gt;Subjects (LCSH)</para>

@@ -35,7 +35,7 @@
         <instructions co="all">
             <para>Provide the names of individuals given significant attention in the resource.</para>
         </instructions>
-        <customization co="object" dd="p16786coll3" genre_form="oh">
+        <customization co="object" dd="p16786coll3" genre_form="Oral_histories">
             <para>Provide names of individuals given significant attention in the interview.</para>
             <para>When appropriate, search the &lt;a href="https://id.loc.gov/authorities/names.html"&gt;Library of Congress Name Authority File&lt;/a&gt; via id.loc.gov for the names of individuals discussed in the oral history.</para>
             <para>If a potential match is found, confirm that it is the person associated with the resource. It may be helpful to review information included in the web display such as source(s) of information and occupation (for persons), and/or to follow the links provided for exact and/or closely matching concepts from other schemes.</para>
@@ -70,7 +70,7 @@
     </descriptions>
     <examples>
         <example co="all"></example>
-        <customization co="object" dd="p16786coll3" genre_form="oh">
+        <customization co="object" dd="p16786coll3" genre_form="Oral_histories">
             <para>Adatto, Albert; Maimon, Bension</para>
         </customization>
         <customization co="no" dd="p16786coll3">

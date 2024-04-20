@@ -42,7 +42,7 @@
             <para>Each row describing either a compound-object item or a standalone object must include a filename provided as a value for this property.</para>
             <para>Enter the filename of the image file for the page described in the spreadsheet row.</para>
         </customization>
-        <customization co="item" dd="p16786coll3" genre_form="song oh">
+        <customization co="item" dd="p16786coll3" genre_form="song Oral_histories">
             <para>When entering values in a metadata spreadsheet, each row will include values describing a resource--either a compound object, compound-object item, or standalone object.</para>
             <para>Each row describing either a compound-object item or a standalone object must include a filename provided as a value for this property.</para>
             <para>For ballads, compound-object items will either be audio files, image files (photographs) of a singer, or musical transcriptions (image or PDF files).</para>
@@ -82,7 +82,7 @@
             <para>Estrea_Chiprut.jpg</para>
             <para>La_Muerte_del_Duque_de_Gandía.pdf</para>
         </customization>
-        <customization co="item" dd="p16786coll3" genre_form="oh">
+        <customization co="item" dd="p16786coll3" genre_form="Oral_histories">
             <para>interview_001_audio.mp3</para>
             <para>interviewee_001_photo.jpg</para>
             <para>interview_001_transcript.pdf</para>

@@ -108,7 +108,7 @@
          <para>This field is indexed and enables date searching in CONTENTdm.</para>
          <para>The Dates value should agree with date values entered in Date-Edtf and Date of Broadcast fields.</para>
       </customization>
-      <customization co="object" dd="p16786coll3" genre_form="oh song text">
+      <customization co="object" dd="p16786coll3" genre_form="Oral_histories song text">
          <!-- use default co instructions with added note about conversion from lunar -->
          <para>Reflects the date in the "Date" field pertinent to the overall object.</para>
          <para>Creating well-formed values for resources in the Sephardic Studies Digital Collection may require first converting date values from lunar to Gregorian calendar systems.</para>

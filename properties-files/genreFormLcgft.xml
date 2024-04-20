@@ -49,7 +49,7 @@
             <para>Do not provide a value for this property.</para>
             <para>Be sure to provide the value 'xyz' for the Cataloging property to indicate to cataloging staff that a value is needed.</para>
         </customization>
-        <customization co="object" dd="p16786coll3" genre_form="oh">
+        <customization co="object" dd="p16786coll3" genre_form="Oral_histories">
             <para>University of Washington Libraries (UWL) cataloging staff will provide a value or values for this property.</para>
             <para>For metadata creation taking place outside the UWL Cataloging and Metadata Services unit:</para>
             <para>Do not provide a value for this property.</para>
@@ -107,7 +107,7 @@
         <customization co="object" dd="p16786coll3" genre_form="song">
             <para>Ballads</para>
         </customization>
-        <customization co="object" dd="p16786coll3" genre_form="oh">
+        <customization co="object" dd="p16786coll3" genre_form="Oral_histories">
             <para>Oral histories</para>
         </customization>
         <customization co="object" dd="temp_alias_001" genre_form="default">

@@ -86,7 +86,7 @@
          <para>Use a space and “cm” (no following punctuation) after the numeral(s) (“ cm”), to record as:</para>
          <para>[height] cm</para>
       </customization>
-      <customization co="item" dd="p16786coll3" genre_form="oh">
+      <customization co="item" dd="p16786coll3" genre_form="Oral_histories">
          <para>For oral histories, Physical Description is recorded at the compound-object-item level.</para>
          <para>For SSDC oral history audio files and transcript files which are born-digital, do not record a Physical Description value.</para>
          <para>&lt;br/&gt;For image-file items (photographs of interviewees), if information is available, provide a measurement or measurements of the physical media from which image files were created.</para>
@@ -174,7 +174,7 @@
          <para>10 x 15 cm</para>
          <para>28 cm</para>
       </customization>
-      <customization co="item" dd="p16786coll3" genre_form="oh">
+      <customization co="item" dd="p16786coll3" genre_form="Oral_histories">
          <para>10 x 15 cm</para>
       </customization>
       <customization co="no" dd="harriman">

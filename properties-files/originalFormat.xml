@@ -59,7 +59,7 @@
          <para>For image files (singer photos) and digitized sheet music:</para>
          <para>sheet</para>
       </customization>
-      <customization co="item" dd="p16786coll3" genre_form="oh">
+      <customization co="item" dd="p16786coll3" genre_form="Oral_histories">
          <para>Values for Original Format must be taken from the &lt;a href="http://www.rdaregistry.info/termList/RDACarrierType/"&gt;RDA Carrier Type&lt;/a&gt; vocabulary.</para>
          <para>For oral histories, enter one of the following values depending on which compound-object item you are describing.</para>
          <para>For audio file items and for transcripts (.pdf or other document file formats):</para>
@@ -118,7 +118,7 @@
          <para>audiocassette</para>
          <para>sheet</para>
       </customization>
-      <customization co="item" dd="p16786coll3" genre_form="oh">
+      <customization co="item" dd="p16786coll3" genre_form="Oral_histories">
          <para>online resource</para>
          <para>sheet</para>
       </customization>

@@ -70,7 +70,7 @@
          <para>&lt;br/&gt;Staff notes should not be necessary for UWL catalogers entering structured values for ballad recordings.</para>
          <para>Other staff notes may be entered as needed.</para>
       </customization>
-      <customization co="object" dd="p16786coll3" genre_form="oh">
+      <customization co="object" dd="p16786coll3" genre_form="Oral_histories">
          <para>Staff Notes values are hidden in the public CONTENTdm interface.</para>
          <para>These values will be used by University of Washington Libraries (UWL) cataloging staff to assign controlled values for the following fields for oral histories:</para>
          <para>Subjects (LCSH)</para>
@@ -112,7 +112,7 @@
       <customization co="object" dd="p16786coll3" genre_form="song">
          <para>N/A</para>
       </customization>
-      <customization co="object" dd="p16786coll3" genre_form="oh">
+      <customization co="object" dd="p16786coll3" genre_form="Oral_histories">
          <para>Interviewee discusses time spent in Los Angeles in great detail.</para>
          <para>Interviewee discusses experiences of religious discrimination in great detail.</para>
       </customization>

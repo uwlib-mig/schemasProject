@@ -137,7 +137,7 @@
          <para>Use a YYYY-MM-DD format if month and day information is available.</para>
          <para>Use a YYYY-MM or YYYY format if month and/or day information is not available.</para>
       </customization>
-      <customization co="object" dd="p16786coll3" genre_form="oh">
+      <customization co="object" dd="p16786coll3" genre_form="Oral_histories">
          <para>Enter the date on which the interview was recorded.</para>
          <para>Use a YYYY-MM-DD format if month and day information is available.</para>
          <para>Use a YYYY-MM or YYYY format if month and/or day information is not available.</para>
@@ -210,7 +210,7 @@
          <para>not before 1900</para>
          <para>after 1900 [example of estimate]</para>
       </customization>
-      <customization co="object" dd="p16786coll3" genre_form="song oh">
+      <customization co="object" dd="p16786coll3" genre_form="song Oral_histories">
          <para>2020-03-15</para>
          <para>2019-04</para>
          <para>2018</para>

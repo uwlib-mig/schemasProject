@@ -46,7 +46,7 @@
          <para>Use media types listed at &lt;a href="http://www.iana.org/assignments/media-types/index.html"&gt;http://www.iana.org/assignments/media-types/index.html&lt;/a&gt;.</para>
          <para>For audio WAVE files, enter "audio/wav".</para>
       </instructions>
-      <customization co="item" dd="p16786coll3" genre_form="oh song text">
+      <customization co="item" dd="p16786coll3" genre_form="Oral_histories song text">
          <para>Enter the file format of the file representing the compound-object item--that is, the access item.</para>
          <para>This should be the format of the file given as a value for the digitalFileName property.</para>
          <para>Use media types listed at &lt;a href="http://www.iana.org/assignments/media-types/index.html"&gt;http://www.iana.org/assignments/media-types/index.html&lt;/a&gt;.</para>
