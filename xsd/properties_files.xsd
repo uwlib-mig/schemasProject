@@ -252,7 +252,6 @@
                 <xs:list>
                     <xs:simpleType>
                         <xs:restriction base="xs:token">
-                            <!-- TO DO : replace 'all' with '*' to match usage for genre_form_type, coll_alias_type -->
                             <xs:enumeration value="all"/>
                             <xs:enumeration value="no">
                                 <xs:annotation>
