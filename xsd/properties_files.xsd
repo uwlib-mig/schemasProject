@@ -230,7 +230,6 @@
             <xs:element name="para" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
         <xs:attribute name="co" type="cdm_object_type_type" use="required"/>
-        <xs:attribute name="genre_form" type="genre_form_type"/>
     </xs:complexType>
 
     <xs:complexType name="custom_para_type">
@@ -245,6 +244,8 @@
     <xs:simpleType name="cdm_object_type_type">
         <xs:annotation>
             <xs:documentation>Use attributes of the type cdm_object_type_type to associate content with a particular kind of CONTENTdm object -- standalone item (sometimes also called standalone object), compound object, or compound-object item (that is, an item which is 'contained' in a compound object.</xs:documentation>
+            <xs:documentation>Related: contentdm_maps/xsd/xml_map.xsd - map_structure_cdm_object_type_type</xs:documentation>
+            <xs:documentation>Related: contentdm_maps/xsl/functions.xsl - xsl:function cdmm:convert_object_type_notation</xs:documentation>
         </xs:annotation>
         <xs:restriction>
             <xs:simpleType>
