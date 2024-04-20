@@ -9,6 +9,7 @@
     <xs:simpleType name="genre_form_type">
         <xs:annotation>
             <xs:documentation>Where genre/form string taken from LCGFT includes whitespace, replace with '_'.</xs:documentation>
+            <xs:documentation>WARNING: Use of '/' in genre/form strings (xs:enumerations below) may cause problems when creating HTML @id values.</xs:documentation>
             <xs:documentation>Related: contentdm_maps/xsl/functions.xsl - xsl:function cdmm:render_genre_form</xs:documentation>
         </xs:annotation>
         <xs:restriction>
