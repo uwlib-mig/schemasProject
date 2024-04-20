@@ -48,7 +48,7 @@
             <para>For ballads, compound-object items will either be audio files, image files (photographs) of a singer, or musical transcriptions (image or PDF files).</para>
             <para>For oral histories, compound-object items will either be audio files, image files (photographs) of an interviewee, or transcripts (PDF files).</para>
         </customization>
-        <customization co="item" dd="temp_alias_001" genre_form="default">
+        <customization co="item" dd="temp_alias_001" genre_form="Oral_histories">
             <para>Provide the name of a file which is to be loaded as a CONTENTdm compound-object item.</para>
             <para>When entering values in a metadata spreadsheet, each row will describe either a compound object or compound-object item.</para>
             <para>A filename must be provided for every compound-object item. Filenames should not be provided for compound objects.</para>
@@ -87,7 +87,7 @@
             <para>interviewee_001_photo.jpg</para>
             <para>interview_001_transcript.pdf</para>
         </customization>
-        <customization co="item" dd="temp_alias_001" genre_form="default">
+        <customization co="item" dd="temp_alias_001" genre_form="Oral_histories">
             <para>shirasago_interview_video_001.mp4</para>
             <para>shirasago_interview_audio_001.mp3</para>
             <para>shirasago_interview_transcript_001.pdf</para>

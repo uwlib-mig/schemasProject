@@ -30,7 +30,7 @@
         <definition>
             <para>Geographic features given significant attention in the resource.</para>
         </definition>
-        <customization co="object" dd="temp_alias_001" genre_form="default">
+        <customization co="object" dd="temp_alias_001" genre_form="Oral_histories">
             <para>Enter the names of geographic features which are given significant attention in the resource.</para>
             <para>Note that geographic features can be natural, artificial (human-caused), or abstract.</para>
             <para>For this collection, values for the element may include primarily buildings. Take forms of names from the Tacoma Public Library Online Digital Collections &lt;a href="https://cdm17061.contentdm.oclc.org/digital/collection/p17061coll1"&gt;Tacoma-Pierce County Buildings Index&lt;/a&gt; where available.</para>
@@ -42,7 +42,7 @@
         <example co="object">
             <!-- not drafting any default instructions or examples at this time -->
         </example>
-        <customization co="object" dd="temp_alias_001" genre_form="default">
+        <customization co="object" dd="temp_alias_001" genre_form="Oral_histories">
             <para>Stadium High School</para>
             <para>Broadway Hotel</para>
             <para>Traveler’s Hotel</para>

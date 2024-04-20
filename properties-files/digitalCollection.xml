@@ -82,12 +82,12 @@
          <para>Sephardic Studies Digital Collection at the University of Washington</para>
          <para>Required for all standalone objects.</para>
       </customization>
-      <customization co="object" dd="temp_alias_001" genre_form="default">
+      <customization co="object" dd="temp_alias_001" genre_form="Oral_histories">
          <para>Enter the name of the digital collection the resource belongs to.</para>
          <para>Use the following value:</para>
          <para>Tacoma Japanese Language School Project</para>
       </customization>
-      <customization co="item" dd="temp_alias_001" genre_form="default">
+      <customization co="item" dd="temp_alias_001" genre_form="Oral_histories">
          <para>Enter the name of the digital collection the resource belongs to.</para>
          <para>Use the following value:</para>
          <para>Tacoma Japanese Language School Project</para>
@@ -145,10 +145,10 @@
       <customization co="no" dd="p16786coll3">
          <para>Sephardic Studies Digital Collection at the University of Washington</para>
       </customization>
-      <customization co="object" dd="temp_alias_001" genre_form="default">
+      <customization co="object" dd="temp_alias_001" genre_form="Oral_histories">
          <para>Tacoma Japanese Language School Project</para>
       </customization>
-      <customization co="item" dd="temp_alias_001" genre_form="default">
+      <customization co="item" dd="temp_alias_001" genre_form="Oral_histories">
          <para>Tacoma Japanese Language School Project</para>
       </customization>
       <customization co="no" dd="harriman">

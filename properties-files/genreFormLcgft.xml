@@ -69,7 +69,7 @@
             <para>When the resource does not use English, be sure to use the Staff Notes property to provide an informal description which will provide cataloging staff with the information needed to provide genre and form terms.</para>
             <para>For details about the information needed by cataloging staff, contact the collection manager(s) or metadata liaison(s).</para>
         </customization>
-        <customization co="object" dd="temp_alias_001" genre_form="default">
+        <customization co="object" dd="temp_alias_001" genre_form="Oral_histories">
             <para>Use the following value taken from Library of Congress Genre/Form Terms:</para>
             <para>Oral histories</para>
         </customization>
@@ -110,7 +110,7 @@
         <customization co="object" dd="p16786coll3" genre_form="Oral_histories">
             <para>Oral histories</para>
         </customization>
-        <customization co="object" dd="temp_alias_001" genre_form="default">
+        <customization co="object" dd="temp_alias_001" genre_form="Oral_histories">
             <para>Oral histories</para>
         </customization>
         <customization co="no" dd="*" genre_form="Newsletters">

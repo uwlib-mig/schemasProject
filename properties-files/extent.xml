@@ -77,7 +77,7 @@
          <para>For audio files, enter the runtime of the digital access file.</para>
          <para>Format runtime as HH:MM:SS.</para>
       </customization>
-      <customization co="item" dd="temp_alias_001" genre_form="default">
+      <customization co="item" dd="temp_alias_001" genre_form="Oral_histories">
          <para>For audio and video files, enter the runtime of the digital access file as hours (HH), minutes (MM), and seconds (SS).</para>
          <para>Format value as follows:</para>
          <para>HH:MM:SS</para>
@@ -117,7 +117,7 @@
       <customization co="item" dd="p16786coll3" genre_form="Oral_histories Ballads">
          <para>00:12:58</para>
       </customization>
-      <customization co="item" dd="temp_alias_001" genre_form="default">
+      <customization co="item" dd="temp_alias_001" genre_form="Oral_histories">
          <para>00:12:58</para>
          <para>22 pages</para>
       </customization>

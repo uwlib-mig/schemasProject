@@ -92,7 +92,7 @@
          <para>For document compound-object items providing information about or summaries of videos, use the following value:</para>
          <para>Text</para>
       </customization>
-      <customization co="object" dd="temp_alias_001" genre_form="default">
+      <customization co="object" dd="temp_alias_001" genre_form="Oral_histories">
          <para>Values for this property must come from the &lt;a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7"&gt;DCMI Type Vocabulary&lt;/a&gt;.</para>
          <para>&lt;br/&gt;</para>
          <para>For compound objects which feature an interview video, use the following value:</para>
@@ -104,7 +104,7 @@
          <para>For compound objects which include both the video and audio versions of an interview, use the following value:</para>
          <para>MovingImage; Sound</para>
       </customization>
-      <customization co="item" dd="temp_alias_001" genre_form="default">
+      <customization co="item" dd="temp_alias_001" genre_form="Oral_histories">
          <para>Values for this property must come from the &lt;a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7"&gt;DCMI Type Vocabulary&lt;/a&gt;.</para>
          <para>&lt;br/&gt;</para>
          <para>For compound-object items which are video files, use the following value:</para>
@@ -116,7 +116,7 @@
          <para>For compound-object items which are transcripts (document files), use the following value:</para>
          <para>Text</para>
       </customization>
-      <customization co="no" dd="becker" genre_form="*">
+      <customization co="no" dd="becker">
          <para>Values for this property must come from the &lt;a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#section-7"&gt;DCMI Type Vocabulary&lt;/a&gt;.</para>
          <para>&lt;br/&gt;For photographs, record the following value:</para>
          <para>StillImage</para>
@@ -182,12 +182,12 @@
          <para>StillImage</para>
          <para>Text</para>
       </customization>
-      <customization co="object" dd="temp_alias_001" genre_form="default">
+      <customization co="object" dd="temp_alias_001" genre_form="Oral_histories">
          <para>MovingImage</para>
          <para>Sound</para>
          <para>MovingImage; Sound</para>
       </customization>
-      <customization co="item" dd="temp_alias_001" genre_form="default">
+      <customization co="item" dd="temp_alias_001" genre_form="Oral_histories">
          <para>MovingImage</para>
          <para>Sound</para>
          <para>Text</para>

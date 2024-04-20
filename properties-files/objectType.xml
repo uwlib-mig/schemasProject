@@ -85,7 +85,7 @@
       <customization co="no" dd="p16786coll3">
          <para>Contact the collection manager(s) or metadata liaison(s) regarding appropriate Object Type values for standalone objects in the collection.</para>
       </customization>
-      <customization co="object" dd="temp_alias_001" genre_form="default">
+      <customization co="object" dd="temp_alias_001" genre_form="Oral_histories">
          <para>Enter the following value:</para>
          <para>oral histories</para>
          <para>Do not capitalize.</para>
@@ -135,7 +135,7 @@
       <customization co="object" dd="p16786coll3" genre_form="Oral_histories">
          <para>oral histories</para>
       </customization>
-      <customization co="object" dd="temp_alias_001" genre_form="default">
+      <customization co="object" dd="temp_alias_001" genre_form="Oral_histories">
          <para>oral histories</para>
       </customization>
       <customization co="no" dd="harriman">

@@ -156,7 +156,7 @@
          <para>If the value of Date of Broadcast is not any of the above, consult the EDTF spedification to determine the appropriate notation.</para>
          <para>Date-Edtf value should agree with dates values entered in Date of Broadcast and Dates fields.</para>
       </customization>
-      <customization co="object" dd="temp_alias_001" genre_form="default">
+      <customization co="object" dd="temp_alias_001" genre_form="Oral_histories">
          <para>Record a value for the Date field prior to recording this value.</para>
          <para>&lt;br/&gt;</para>
          <para>Reformat the Date field value to express the value using the Library of Congress Extended Date Time Format (EDTF). The &lt;a href="https://www.loc.gov/standards/datetime/"&gt;most recent version of EDTF&lt;/a&gt; is available online.</para>
@@ -214,7 +214,7 @@
          <para>If Date of Broadcast field = "between 1930 and 1939" then Date EDTF = "1930/1939"</para>
          <para>If Date of Broadcast field = "between 1855 and 1999?" then Date EDTF = "1855?/1999?"</para>
       </customization>
-      <customization co="object" dd="temp_alias_001" genre_form="default">
+      <customization co="object" dd="temp_alias_001" genre_form="Oral_histories">
          <para>[If Date field is “2005”] 2005</para>
          <para>[If Date field is “2005?”] 2005?</para>
          <para>[If Date field is “March 2005”] 2005-03</para>

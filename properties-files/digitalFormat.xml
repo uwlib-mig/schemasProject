@@ -59,7 +59,7 @@
          <para>&lt;br/&gt;For .pdf files enter the following:</para>
          <para>application/pdf</para>
       </customization>
-      <customization co="item" dd="temp_alias_001" genre_form="default">
+      <customization co="item" dd="temp_alias_001" genre_form="Oral_histories">
          <para>Enter the file format of the compound-object item.</para>
          <para>This should be the format of the file given as a value for the Original File Name property.</para>
          <para>Use media type values from the &lt;a href="http://www.iana.org/assignments/media-types/index.html"&gt;IANA media types registries&lt;/a&gt;.</para>
@@ -89,7 +89,7 @@
       <example co="object">
          <para>video/mp4; application/pdf</para>
       </example>-->
-      <customization co="item" dd="temp_alias_001" genre_form="default">
+      <customization co="item" dd="temp_alias_001" genre_form="Oral_histories">
          <para>video/mp4</para>
          <para>audio/mpeg</para>
          <para>audio/wav</para>

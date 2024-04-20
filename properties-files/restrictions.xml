@@ -71,7 +71,7 @@
          <para>Enter the following value:</para>
          <para>To inquire about permissions, contact sephstud@uw.edu. Please cite the Sephardic Studies Accession Number.</para>
       </customization>
-      <customization co="object" dd="temp_alias_001" genre_form="default">
+      <customization co="object" dd="temp_alias_001" genre_form="Oral_histories">
          <para>Use the following value:</para>
          <para>This item is protected by copyright and/or related rights.</para>
          <para>Permission must be obtained for any use or reproduction which is not educational and not-for-profit.</para>
@@ -118,7 +118,7 @@
       <customization co="no" dd="p16786coll3">
          <para>To inquire about permissions, contact sephstud@uw.edu. Please cite the Sephardic Studies Accession Number.</para>
       </customization>
-      <customization co="object" dd="temp_alias_001" genre_form="default">
+      <customization co="object" dd="temp_alias_001" genre_form="Oral_histories">
          <para>This item is protected by copyright and/or related rights.</para>
          <para>Permission must be obtained for any use or reproduction which is not educational and not-for-profit.</para>
          <para>Please contact the University of Washington Tacoma Library with any inquiries about use of the collection.</para>

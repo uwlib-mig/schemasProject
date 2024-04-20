@@ -63,7 +63,7 @@
          <para>Order of values does not matter.</para>
          <para>Required for all standalone objects.</para>
       </customization>
-      <customization co="object" dd="temp_alias_001" genre_form="default">
+      <customization co="object" dd="temp_alias_001" genre_form="Oral_histories">
          <para>Enter language names, fully spelled out, as they appear in the &lt;a href="https://iso639-3.sil.org/code_tables/639/data"&gt;ISO 639 Code Tables&lt;/a&gt; "Language Name(s)" column.</para>
          <para>Separate multiple values using a semicolon and space (“; “).</para>
          <para>Order of values does not matter.</para>
@@ -104,7 +104,7 @@
          <para>Hebrew</para>
          <para>Ladino; Hebrew</para>
       </customization>
-      <customization co="object" dd="temp_alias_001" genre_form="default">
+      <customization co="object" dd="temp_alias_001" genre_form="Oral_histories">
          <para>English</para>
          <para>Japanese</para>
       </customization>

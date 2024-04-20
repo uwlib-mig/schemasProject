@@ -77,7 +77,7 @@
          <para>&lt;br/&gt;For tables of contents created using MS Word, use the following value from the &lt;a href="https://www.iana.org/assignments/media-types/media-types.xhtml"&gt;IANA Media Types registry&lt;/a&gt;:</para>
          <para>application/msword</para>
       </customization>
-      <customization co="item" dd="temp_alias_001" genre_form="default">
+      <customization co="item" dd="temp_alias_001" genre_form="Oral_histories">
          <para>Values for Original Format must be taken from the &lt;a href="http://www.rdaregistry.info/termList/RDACarrierType/"&gt;RDA Carrier Type vocabulary&lt;/a&gt;.</para>
          <para>For oral histories, enter one of the following values depending on which compound-object item you are describing.</para>
          <para>&lt;br/&gt;</para>
@@ -126,7 +126,7 @@
          <para>videocassette</para>
          <para>application/msword</para>
       </customization>
-      <customization co="item" dd="temp_alias_001" genre_form="default">
+      <customization co="item" dd="temp_alias_001" genre_form="Oral_histories">
          <para>videocassette</para>
          <para>audiocassette</para>
          <para>online resource</para>

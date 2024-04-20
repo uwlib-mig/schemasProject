@@ -68,7 +68,7 @@
          <para>Enter the following value:</para>
          <para>Reproductions are not available for order.</para>
       </customization>
-      <customization co="object" dd="temp_alias_001" genre_form="default">
+      <customization co="object" dd="temp_alias_001" genre_form="Oral_histories">
          <para>Enter the following value:</para>
          <para>Reproductions are not available for order.</para>
       </customization>
@@ -113,7 +113,7 @@
       <customization co="no" dd="p16786coll3">
          <para>Reproductions are not available for order.</para>
       </customization>
-      <customization co="object" dd="temp_alias_001" genre_form="default">
+      <customization co="object" dd="temp_alias_001" genre_form="Oral_histories">
          <para>Reproductions are not available for order.</para>
       </customization>
    </examples>

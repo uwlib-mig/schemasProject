@@ -58,7 +58,7 @@
          <para>Unless otherwise instructed, enter the following URI: &lt;a href="http://rightsstatements.org/vocab/CNE/1.0/"&gt;http://rightsstatements.org/vocab/CNE/1.0/&lt;/a&gt;.</para>
          <para>Required for all standalone objects.</para>
       </customization>
-      <customization co="object" dd="temp_alias_001" genre_form="default">
+      <customization co="object" dd="temp_alias_001" genre_form="Oral_histories">
          <para>Use the following value:</para>
          <para>&lt;a href="http://rightsstatements.org/vocab/InC-EDU/1.0/"&gt;http://rightsstatements.org/vocab/InC-EDU/1.0/&lt;/a&gt;</para>
       </customization>
@@ -88,7 +88,7 @@
       <customization co="no" dd="p16786coll3">
          <para>http://rightsstatements.org/vocab/CNE/1.0/</para>
       </customization>
-      <customization co="object" dd="temp_alias_001" genre_form="default">
+      <customization co="object" dd="temp_alias_001" genre_form="Oral_histories">
          <para>http://rightsstatements.org/vocab/InC-EDU/1.0/</para>
       </customization>
    </examples>

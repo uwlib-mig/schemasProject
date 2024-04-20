@@ -67,11 +67,11 @@
          <para>Value will be as follows:</para>
          <para>University of Washington Libraries. Special Collections</para>
       </customization>
-      <customization co="object" dd="temp_alias_001" genre_form="default">
+      <customization co="object" dd="temp_alias_001" genre_form="Oral_histories">
          <para>Use the following value:</para>
          <para>University of Washington Tacoma Library</para>
       </customization>
-      <customization co="item" dd="temp_alias_001" genre_form="default">
+      <customization co="item" dd="temp_alias_001" genre_form="Oral_histories">
          <para>Use the following value:</para>
          <para>University of Washington Tacoma Library</para>
       </customization>
@@ -112,10 +112,10 @@
       <customization co="item" dd="p16786coll3" genre_form="text Ballads Oral_histories">
          <para>University of Washington Libraries. Special Collections</para>
       </customization>
-      <customization co="object" dd="temp_alias_001" genre_form="default">
+      <customization co="object" dd="temp_alias_001" genre_form="Oral_histories">
          <para>University of Washington Tacoma Library</para>
       </customization>
-      <customization co="item" dd="temp_alias_001" genre_form="default">
+      <customization co="item" dd="temp_alias_001" genre_form="Oral_histories">
          <para>University of Washington Tacoma Library</para>
       </customization>
       <customization co="no" dd="harriman">

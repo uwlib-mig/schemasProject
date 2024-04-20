@@ -50,7 +50,7 @@
       <customization co="item" dd="p16786coll3" genre_form="Oral_histories">
          <para>If available and applicable, provide details regarding the digitization of oral history compound-object items (interviewee photos, audio file, etc.).</para>
       </customization>
-      <customization co="item" dd="temp_alias_001" genre_form="default">
+      <customization co="item" dd="temp_alias_001" genre_form="Oral_histories">
          <para>Use the following value:</para>
          <para>Original carriers were DVCAM tapes, standard definition 720x480 NTSC.</para>
          <para>DVCAM tapes digitized with a non-linear editing program, converted to .mov files using H264 compression.</para>
@@ -81,7 +81,7 @@
          <para>Sample rate: 96KHz. Bit depth: 24. Issues encountered: Repaired several faulty splices. Date of transfer: 2019-01-04. Applicable conservation treatments: Baked and repaired several splices. De-noise and de-hum (iZotrope RX5).</para>
          <para>Digital, stereo. Copied from analog recording to compact disc. Converted to 24 bit/48kHz Broadcast WAV format files by University of Washington Libraries in 2010.</para>
       </customization>
-      <customization co="item" dd="temp_alias_001" genre_form="default">
+      <customization co="item" dd="temp_alias_001" genre_form="Oral_histories">
          <para>Original carriers were DVCAM tapes, standard definition 720x480 NTSC.</para>
          <para>DVCAM tapes digitized with a non-linear editing program, converted to .mov files using H264 compression.</para>
       </customization>

@@ -57,7 +57,7 @@
             <para>Separate multiple entries with a semicolon and space (“; “).</para>
             <para>Order of values does not matter.</para>
         </customization>
-        <customization co="object" dd="temp_alias_001" genre_form="default">
+        <customization co="object" dd="temp_alias_001" genre_form="Oral_histories">
             <para>Enter the name(s) of individual(s) mentioned.</para>
             <para>&lt;br/&gt;</para>
             <para>Format personal names as follows:</para>
@@ -76,7 +76,7 @@
         <customization co="no" dd="p16786coll3">
             <para>Adatto, Albert; Maimon, Bension</para>
         </customization>
-        <customization co="object" dd="temp_alias_001" genre_form="default">
+        <customization co="object" dd="temp_alias_001" genre_form="Oral_histories">
             <para>Yone, Nakako</para>
             <para>Yamasaki, Masato</para>
             <para>Hata, Jack</para>

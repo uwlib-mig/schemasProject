@@ -60,7 +60,7 @@
             <para>Separate multiple entries with a semicolon and space (“; “).</para>
             <para>Order of values does not matter.</para>
         </customization>
-        <customization co="object" dd="temp_alias_001" genre_form="default">
+        <customization co="object" dd="temp_alias_001" genre_form="Oral_histories">
             <para>Enter the name(s) of organizations mentioned.</para>
             <para>&lt;br/&gt;</para>
             <para>When appropriate, search the &lt;a href="https://id.loc.gov/authorities/names.html"&gt;Library of Congress Name Authority File via id.loc.gov&lt;/a&gt; for the organization.</para>
@@ -71,7 +71,7 @@
             <para>If no record exists, enter the name(s) used by interviewees.</para>
             <para>Separate multiple values with a semicolon.</para>
         </customization>
-        <customization co="no" dd="becker" genre_form="*">
+        <customization co="no" dd="becker">
             <para>&#x1F4DA; For review/input by cataloging staff</para>
             <para>&lt;br/&gt;Use the form of corporate name from the Library of Congress Name Authority File, if available.</para>
             <para>Separate multiple entries with a semicolon and space (“; “).</para>
@@ -94,7 +94,7 @@
             <para>Congregation Ezra Bessaroth</para>
             <para>Congregation Ezra Bessaroth; Longacres Race Track</para>
         </customization>
-        <customization co="object" dd="temp_alias_001" genre_form="default">
+        <customization co="object" dd="temp_alias_001" genre_form="Oral_histories">
             <para>Tacoma Lumber Company; Superior Hotel; Stadium High School</para>
             <para>Methodist Church; Buddhist Church; Baptist Church</para>
             <para>Lincoln High School (Tacoma, Wash.)</para>
