@@ -6,7 +6,7 @@
     https://uwlib-mig.github.io/schemasProject/xsd/properties_files.xsd">
     <uid>p103</uid>
     <labels>
-        <platformIndependent>participant</platformIndependent>
+        <platformIndependent>participants</platformIndependent>
         <dc>contributor</dc>
     </labels>
     <uwRequired>

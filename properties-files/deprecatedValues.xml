@@ -6,7 +6,7 @@
     https://uwlib-mig.github.io/schemasProject/xsd/properties_files.xsd">
     <uid>p148</uid>
     <labels>
-        <platformIndependent>deprecated_values</platformIndependent>
+        <platformIndependent>deprecatedValues</platformIndependent>
         <dc>none</dc>
     </labels>
     <uwRequired>
