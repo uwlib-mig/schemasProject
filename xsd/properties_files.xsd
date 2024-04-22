@@ -11,9 +11,6 @@
         <xs:documentation>**With exceptions such as element 'dspace', 'uwCustom', etc.</xs:documentation>
     </xs:annotation>
     
-    <!-- update to include online schemas once stable, use
-    https://uwlib-mig.github.io/schemasProject/xsd/genre_form.xsd
-    https://uwlib-mig.github.io/schemasProject/xsd/collection.xsd -->
     <xs:include schemaLocation="coll_alias.xsd"/>
     <xs:include schemaLocation="genre_form.xsd"/>
     <xs:include schemaLocation="properties_extensions.xsd"/>
