@@ -72,6 +72,11 @@
          <para>Enter the following value:</para>
          <para>Reproductions are not available for order.</para>
       </customization>
+      <customization co="no" dd="becker" genre_form="Newsletters Records_(Documents) Photographs">
+         <para>Record the following value:</para>
+         <para>&lt;br/&gt;For information about ordering reproductions, see:</para>
+         <para>&lt;a href="http://www.lib.washington.edu/specialcollections/services/reproduction/reproduction"&gt;http://www.lib.washington.edu/specialcollections/services/reproduction/reproduction&lt;/a&gt;</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="no">
@@ -115,6 +120,9 @@
       </customization>
       <customization co="object" dd="temp_alias_001" genre_form="Oral_histories">
          <para>Reproductions are not available for order.</para>
+      </customization>
+      <customization co="no" dd="becker" genre_form="Newsletters Records_(Documents) Photographs">
+         <para>For information about ordering reproductions, see: http://www.lib.washington.edu/specialcollections/services/reproduction/reproduction</para>
       </customization>
    </examples>
    <additionalInfo>

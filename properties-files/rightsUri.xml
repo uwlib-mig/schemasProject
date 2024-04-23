@@ -62,6 +62,10 @@
          <para>Use the following value:</para>
          <para>&lt;a href="http://rightsstatements.org/vocab/InC-EDU/1.0/"&gt;http://rightsstatements.org/vocab/InC-EDU/1.0/&lt;/a&gt;</para>
       </customization>
+      <customization co="no" dd="becker" genre_form="Newsletters Photographs Records_(Documents)">
+         <para>Record the following value:</para>
+         <para>&lt;a href="http://rightsstatements.org/vocab/InC-NC/1.0/"&gt;http://rightsstatements.org/vocab/InC-NC/1.0/&lt;/a&gt;</para>
+      </customization>
    </descriptions>
    <examples>
       <example co="no">
@@ -90,6 +94,9 @@
       </customization>
       <customization co="object" dd="temp_alias_001" genre_form="Oral_histories">
          <para>http://rightsstatements.org/vocab/InC-EDU/1.0/</para>
+      </customization>
+      <customization co="no" dd="becker" genre_form="Newsletters Photographs Records_(Documents)">
+         <para>http://rightsstatements.org/vocab/InC-NC/1.0/</para>
       </customization>
    </examples>
    <additionalInfo>

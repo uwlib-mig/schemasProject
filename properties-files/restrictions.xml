@@ -31,12 +31,14 @@
          <para>Any restrictions on the use of a resource.</para>
       </definition>
       <instructions co="no">
-         <para>Input the following text:</para>
-         <para>For information on permissions for use and reproductions please visit UW Libraries Special Collections Use Permissions page: http://www.lib.washington.edu/specialcollections/services/permission-for-use</para>
+         <para>Record the following value:</para>
+         <para>For information on permissions for use and reproductions please visit UW Libraries Special Collections Use Permissions page:</para>
+         <para>&lt;a href="http://www.lib.washington.edu/specialcollections/services/permission-for-use"&gt;http://www.lib.washington.edu/specialcollections/services/permission-for-use&lt;/a&gt;</para>
       </instructions>
       <instructions co="object">
          <para>Input the following text:</para>
-         <para>For information on permissions for use and reproductions please visit UW Libraries Special Collections Use Permissions page: http://www.lib.washington.edu/specialcollections/services/permission-for-use</para>
+         <para>For information on permissions for use and reproductions please visit UW Libraries Special Collections Use Permissions page:</para>
+         <para>&lt;a href="http://www.lib.washington.edu/specialcollections/services/permission-for-use"&gt;http://www.lib.washington.edu/specialcollections/services/permission-for-use&lt;/a&gt;</para>
       </instructions>
       <!-- MIG decision 2020-05: NO RIGHTS URI FOR ITEMS IN CDM COMPOUND OBJECTS
       <instructions co="item">
