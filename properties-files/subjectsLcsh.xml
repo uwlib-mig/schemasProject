@@ -95,7 +95,7 @@
          <para>Terms in this field are taken from the LC Subject Headings list (LCSH). LCSH and the National Authority File (LCNAF) will also be used for persons, objects, and places with proper names.</para>
          <para>Separate multiple values using a semicolon and space ("; ").</para>
       </customization>
-      <customization co="no" dd="becker" genre_form="*">
+      <customization co="no" dd="becker">
          <para>&#x1F4DA; For review/input by cataloging staff</para>
          <para>&lt;br/&gt;Cataloging staff will record values for this property.</para>
          <para>Be sure to provide the value 'xyz' for the Cataloging property to indicate to cataloging staff that a value is needed.</para>
@@ -135,8 +135,8 @@
          <para>Japanese Americans---Washington (State)--Tacoma</para>
          <para>Japanese Americans--History</para>
          <para>Japanese Americans--Ethnic identity</para>
-         <para>Nihonga Gakka (Tacoma, Wash)</para>
-         <para>Japanese langauge--Study and teaching</para>
+         <para>Nihonga Gakka (Tacoma, Wash.)</para>
+         <para>Japanese language--Study and teaching</para>
          <para>Schools, Japanese--Washington (State)--Tacoma</para>
       </customization>
    </examples>
@@ -172,7 +172,7 @@
                   <o>http://id.loc.gov/authorities/subjects</o>
                </triple>
                <triple>
-                  <p xml:lang="en">dpla:providedLabel</p>
+                  <p>dpla:providedLabel</p>
                   <o>value-of</o>
                </triple>
             </node>
